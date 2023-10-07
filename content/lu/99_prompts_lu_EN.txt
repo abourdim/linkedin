@@ -1,0 +1,353 @@
+==============================================================================
+JOB SEARCH PROMPTS — LUXEMBOURG
+Embedded Software Engineer | Abdelhak Bourdim | March 2026
+For use with ChatGPT, Claude, or any AI assistant
+==============================================================================
+
+TABLE OF CONTENTS
+-----------------
+1.  Generate cover letter FR for Luxembourg company
+2.  Generate cover letter EN for Luxembourg company
+3.  LinkedIn connection request for Luxembourg professionals
+4.  LinkedIn message to recruiter in Luxembourg
+5.  Prepare for technical interview at Luxembourg company
+6.  Analyze Luxembourg job posting
+7.  Salary negotiation for Luxembourg (13th month, cheques-repas, pension)
+8.  Compare cross-border vs resident status
+9.  Adapt CV for specific Luxembourg company
+10. Networking message for Luxembourg tech meetup
+11. Research Luxembourg company before interview
+
+
+==============================================================================
+PROMPT 1 — Generate Cover Letter FR for Luxembourg Company
+==============================================================================
+
+You are an expert at writing cover letters for the Luxembourg job market.
+Write a cover letter in French for the following position:
+
+Position: [JOB TITLE — e.g., Ingenieur Logiciel Embarque Senior]
+Company: [COMPANY NAME — e.g., SES, IEE, Cebi, Post Luxembourg]
+Location: [CITY — e.g., Betzdorf, Luxembourg City, Kockelscheuer]
+Source: [LinkedIn / jobs.lu / Moovijob / ADEM / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. French professional format adapted to Luxembourg
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific Luxembourg company
+5. Mention availability and openness to cross-border/resident status
+6. Emphasize multilingualism (major asset in Luxembourg)
+7. End with an appropriate French closing formula
+8. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about Luxembourg's tech ecosystem.
+
+
+==============================================================================
+PROMPT 2 — Generate Cover Letter EN for Luxembourg Company
+==============================================================================
+
+You are an expert at writing cover letters for the Luxembourg job market.
+Write a cover letter in English for the following position:
+
+Position: [JOB TITLE — e.g., Senior Embedded Software Engineer]
+Company: [COMPANY NAME — e.g., SES, IEE, Cebi, Post Luxembourg]
+Location: [CITY — e.g., Betzdorf, Luxembourg City, Kockelscheuer]
+Source: [LinkedIn / jobs.lu / Moovijob / ADEM / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional English format adapted to Luxembourg
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific Luxembourg company
+5. Mention availability and openness to cross-border/resident status
+6. Emphasize multilingualism (major asset in Luxembourg)
+7. End with an appropriate closing
+8. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about Luxembourg's tech ecosystem and propose specific value.
+
+
+==============================================================================
+PROMPT 3 — LinkedIn Connection Request for Luxembourg Professionals
+==============================================================================
+
+Ready to copy-paste (max 300 characters).
+Replace fields [IN BRACKETS].
+
+--- Version 1: Recruiter (FR) ---
+Bonjour [FIRST NAME], je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded au Luxembourg. Serait-il possible d'echanger ? Cordialement, Abdelhak
+
+--- Version 2: Technical manager (FR) ---
+Bonjour [FIRST NAME], ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez [COMPANY] au Luxembourg m'interesse beaucoup. Au plaisir d'echanger. Abdelhak
+
+--- Version 3: Recruiter (EN) ---
+Hi [FIRST NAME], I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). Exploring embedded roles in Luxembourg. Would love to connect. Best, Abdelhak
+
+--- Version 4: Hiring manager (EN) ---
+Hi [FIRST NAME], senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at [COMPANY] in Luxembourg caught my interest. Happy to connect. Abdelhak
+
+--- Version 5: Peer (EN) ---
+Hi [FIRST NAME], fellow embedded engineer here. I've been following [COMPANY]'s work in Luxembourg with interest. Exploring opportunities in the Grand Duchy. Would be great to connect. Abdelhak
+
+
+==============================================================================
+PROMPT 4 — LinkedIn Message to Recruiter in Luxembourg
+==============================================================================
+
+Write a short LinkedIn message (100-150 words) in English to reach out to a recruiter in Luxembourg.
+
+Recipient: [RECRUITER NAME — e.g., Sophie Martin]
+Company: [NAME — e.g., CTG Luxembourg, Alter Domus, SES]
+Context: [internal recruiter / recruitment agency / technical manager]
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Trilingual: French, English, Arabic (asset for Luxembourg)
+- Mobility: cross-border France/Luxembourg or relocation
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in the company and Luxembourg ecosystem
+3. Be concise and direct
+4. Mention multilingualism as added value for Luxembourg's multicultural environment
+5. Propose a brief conversation without being pushy
+
+
+==============================================================================
+PROMPT 5 — Prepare for Technical Interview at Luxembourg Company
+==============================================================================
+
+You are an expert in technical interviews for embedded software engineer positions in Luxembourg.
+Prepare me for an interview at [COMPANY] for the [JOB TITLE] position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. 10 likely technical questions for this role, with detailed answers based on my experience
+2. 5 behavioral questions (STAR format) with example answers from my career
+3. 5 questions I should ask the company (showing interest and seniority)
+4. 3 Luxembourg-specific questions: labor law, collective agreement, benefits (13th month, meal vouchers, supplementary pension plan)
+5. How to approach the cross-border vs resident topic if it comes up
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Adapt to Luxembourg's multicultural and multilingual context
+- Mention specific tools and methods
+
+
+==============================================================================
+PROMPT 6 — Analyze Luxembourg Job Posting
+==============================================================================
+
+You are an expert in embedded recruitment in Luxembourg.
+Here is a job posting. Analyze it and help me prepare my application.
+
+Job posting:
+[PASTE THE FULL JOB POSTING TEXT HERE]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, available for CDI
+
+Perform the following tasks:
+1. Job analysis: identify required skills, nice-to-haves, and target profile
+2. Match score: rate my fit from 1 to 10, with justification
+3. Strengths: list my assets that best match this posting
+4. Gaps: identify any gaps and how to present them positively
+5. Cover letter: write a letter tailored to this specific posting (300-400 words)
+6. CV keywords: list keywords to emphasize (ATS optimization)
+7. Estimated salary: likely salary range in Luxembourg for this role (including 13th month, benefits)
+8. Luxembourg specifics: required languages, cross-border/resident status, tax advantages
+
+
+==============================================================================
+PROMPT 7 — Salary Negotiation for Luxembourg
+==============================================================================
+
+You are an expert in salary negotiation for the Luxembourg market.
+
+Proposed position: [TITLE]
+Company: [NAME]
+Location: [CITY — e.g., Luxembourg City, Kirchberg, Cloche d'Or]
+Contract type: CDI (permanent)
+Salary offer: [AMOUNT — e.g., 85,000 EUR/year]
+Status: [cross-border / resident]
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR
+
+Help me with:
+1. Evaluate the offer: is it within Luxembourg market range for this profile?
+2. Complete package: 13th month (mandatory by agreement?), meal vouchers (cheques-repas, usual amount), supplementary pension plan, health insurance, company car, bonus
+3. Negotiation points: what to negotiate beyond gross salary (remote work, extra vacation days, training, parking, commuting allowance)
+4. Cross-border vs Resident: tax impact, social security, practical implications
+5. Negotiation script: write 3 key phrases to negotiate professionally in Luxembourg
+6. Net calculation: estimate net salary (Luxembourg taxes if resident, French taxes if cross-border, social contributions ~12-15% employee)
+7. Things to avoid: common negotiation mistakes in Luxembourg
+
+
+==============================================================================
+PROMPT 8 — Compare Cross-Border vs Resident Status
+==============================================================================
+
+You are an expert in cross-border France-Luxembourg taxation and labor law.
+
+My situation:
+- French citizen
+- Senior embedded software engineer, expected gross salary: [AMOUNT — e.g., 85,000 EUR/year]
+- Family status: [single / married / children]
+- Current residence: [CITY IN FRANCE — e.g., Metz, Thionville, Longwy]
+- Workplace: [CITY IN LUXEMBOURG — e.g., Luxembourg City, Kirchberg]
+
+Compare in detail:
+1. Taxation: income tax (Luxembourg vs France scales), Luxembourg tax class (1, 1a, 2), tax credits, bilateral convention
+2. Social security: contribution rates, health coverage (CNS vs CPAM), dependency insurance, family benefits
+3. Retirement: Luxembourg pension, portability, quarters
+4. Cross-border advantages: no relocation needed, cheaper real estate in France, meal vouchers, mileage allowance
+5. Resident advantages: tax class 2 if married, child bonuses, proximity to work, integration, no remote work limit
+6. Remote work: 34-day rule for cross-border workers (France-Luxembourg agreement), tax implications if exceeded
+7. Net simulation: calculate net salary in both scenarios
+8. Recommendation: which status suits me best given my situation?
+
+Provide concrete and up-to-date figures.
+
+
+==============================================================================
+PROMPT 9 — Adapt CV for Specific Luxembourg Company
+==============================================================================
+
+You are an expert in CV optimization for the Luxembourg market.
+
+Target company: [NAME — e.g., SES, IEE, Cebi, Post Luxembourg, Ampacet]
+Target position: [TITLE — e.g., Senior Embedded Software Engineer]
+Job description: [PASTE THE JOB POSTING OR KEY POINTS]
+
+My full profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), V2G (E2-CAD)
+- Founder Workshop-DIY (robotics for youth)
+- Languages: FR native, EN professional, AR native
+
+Perform:
+1. Company analysis: sector, technologies used, culture, size, recent projects
+2. Priority keywords: terms to place at the top of CV to pass ATS filters
+3. Experience reordering: in what order to present my assignments to maximize impact
+4. Professional summary: write a 3-4 line summary adapted to this company
+5. Skills to highlight: ranked by relevance for this position
+6. Skills to downplay: which ones are off-topic for this application
+7. Languages section: how to present trilingualism for the Luxembourg market
+8. Cultural adaptation: Luxembourg-specific presentation in the CV
+
+
+==============================================================================
+PROMPT 10 — Networking Message for Luxembourg Tech Meetup
+==============================================================================
+
+Write a short message to introduce myself at a tech event / meetup in Luxembourg.
+
+Event: [NAME — e.g., Luxembourg Tech Meetup, Embedded Systems LU, IoT Luxembourg]
+Format: [LinkedIn message / email / 30-second oral introduction]
+Context: [networking / job search / knowledge sharing]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- Specialties: C/C++, RTOS, Embedded Linux, embedded cybersecurity
+- Critical standards: DO-178 (aero), IEC 62304 (medical), ISO 15118 (V2G)
+- Founder of Workshop-DIY (robotics for youth)
+- Trilingual FR/EN/AR
+
+Guidelines:
+1. Short and impactful (50-100 words for message, 30 seconds for oral)
+2. Mention what I can bring to the Luxembourg tech community
+3. Accessible and collegial tone, not salesy
+4. Show curiosity about Luxembourg's tech ecosystem
+5. Propose a concrete exchange (coffee, video call, collaboration)
+6. Adapt to the requested format (3 versions: LinkedIn, email, elevator pitch)
+
+
+==============================================================================
+PROMPT 11 — Research Luxembourg Company Before Interview
+==============================================================================
+
+You are an expert in strategic intelligence and interview preparation in Luxembourg.
+
+Company: [NAME — e.g., SES, IEE, Cebi, Post Luxembourg, Ampacet]
+Target position: [TITLE]
+Interview date: [DATE]
+
+Research and summarize:
+1. General information: headquarters, size, revenue, number of employees, founding year
+2. Core business: sector, products/services, key clients, market positioning
+3. Technical team: technologies used, tech stack, recent projects, patents
+4. Company culture: stated values, atmosphere (Glassdoor/Kununu), diversity, remote work
+5. Recent news: acquisitions, partnerships, fundraising, new products (last 6 months)
+6. Luxembourg presence: role in ecosystem, local partnerships, ties with government/LIST/SnT
+7. Competitors: main direct competitors in Luxembourg and Europe
+8. Relevant questions: 5 smart questions to ask in interview based on this research
+9. Talking points: elements of my profile that resonate with the company's projects
+10. Red flags: potential warning signs (turnover, negative reviews, restructuring)
+
+Goal: arrive at the interview with deep knowledge of the company and the Luxembourg context.
+
+
+==============================================================================
+HOW TO USE THESE PROMPTS
+==============================================================================
+
+1. Copy the prompt you need
+2. Replace fields [IN BRACKETS] with your information
+3. Paste into ChatGPT, Claude, or any AI
+4. Adapt the response to your personal style
+
+IMPORTANT: Never send AI-generated text without reviewing and personalizing it.
+AI is a support tool, not a replacement for your judgment.
+
+Recommended order for an application:
+1. Prompt 6  — Analyze the posting -> understand what the company wants
+2. Prompt 11 — Research the company -> know the context
+3. Prompt 9  — Adapt the CV -> personalize for the posting
+4. Prompt 1 or 2 — Cover letter -> apply
+5. Prompt 4  — LinkedIn message -> network in parallel
+6. Prompt 5  — Interview preparation -> before each interview
+7. Prompt 7  — Salary negotiation -> when you receive an offer
+8. Prompt 8  — Cross-border vs Resident -> to decide on status

@@ -1,0 +1,293 @@
+================================================================================
+     PLAN D'ACTION — RECHERCHE D'EMPLOI EN SUISSE ROMANDE
+     Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim
+     Date : Mars 2026
+================================================================================
+
+
+================================================================================
+PARTIE 1 — COMPRENDRE LE MARCHE
+================================================================================
+
+SECTEUR EMBARQUE EN SUISSE ROMANDE
+-----------------------------------
+- Le marche est actif : 100+ postes embedded ouverts en permanence en Suisse
+- Lausanne et Geneve sont des hubs technologiques majeurs
+- Secteurs porteurs : medical devices, horlogerie/precision, aerospace, automotive,
+  cleantech/energy, IoT, defense
+- Votre profil 20+ ans avec aeronautique + medical + cybersecurite est rare et recherche
+
+SALAIRE ATTENDU
+-----------------------------------
+- Junior (1-3 ans) : 65 000 - 85 000 CHF/an
+- Confirme (5-10 ans) : 95 000 - 110 000 CHF/an
+- Senior (10+ ans, votre profil) : 110 000 - 140 000 CHF/an
+- Tres senior / lead : 130 000 - 160 000+ CHF/an
+- En frontalier depuis la France : meme salaire brut, cout de vie reduit
+
+Note : ces chiffres sont bruts annuels. En Suisse, il y a generalement
+13 mois de salaire (le 13eme mois est standard).
+
+
+================================================================================
+PARTIE 2 — STATUT FRONTALIER (PERMIS G)
+================================================================================
+
+OPTION RECOMMANDEE : FRONTALIER DEPUIS LA HAUTE-SAVOIE
+-------------------------------------------------------
+Vous habitez en region parisienne. Deux strategies :
+
+OPTION A — Demenager pres de Geneve (frontalier)
+  - S'installer en Haute-Savoie (Annemasse, Annecy, Thonon, Gex)
+  - Permis G frontalier : travail en Suisse, residence en France
+  - Obligation de rentrer au domicile 1x par semaine minimum
+  - Pas de quota pour les francais (accord UE/CH)
+  - L'employeur fait la demande de permis G (2-6 semaines)
+  - Fiscalite : impot a la source en Suisse + impot en France (avec credit d'impot)
+  - Avantage : salaire suisse + cout de vie francais = pouvoir d'achat optimal
+
+OPTION B — S'installer directement en Suisse
+  - Permis B (resident) : demande par l'employeur
+  - Plus couteux (loyers Geneve ~2000-3000 CHF pour un appartement)
+  - Mais pas de contrainte de retour hebdomadaire
+
+OPTION C — Commencer a distance puis demenager
+  - Certains employeurs acceptent du remote partiel
+  - Commencer le poste, puis demenager apres 2-3 mois
+
+DEMARCHES PERMIS G
+-------------------
+1. Trouver un emploi (l'employeur doit avoir un contrat pret)
+2. L'employeur depose la demande de permis G au canton
+3. Delai : 2 a 6 semaines selon le canton
+4. Le permis G est valide 5 ans (contrat permanent) ou duree du contrat
+5. Renouvelable automatiquement tant que vous avez un emploi
+
+
+================================================================================
+PARTIE 3 — ADAPTER SON CV AU MARCHE SUISSE
+================================================================================
+
+DIFFERENCES CLEFS DU CV SUISSE
+-------------------------------
+1. PHOTO obligatoire (professionnelle, fond neutre)
+2. DATE DE NAISSANCE a inclure
+3. NATIONALITE a mentionner
+4. SITUATION FAMILIALE (optionnel mais courant)
+5. PERMIS : mentionner "Permis B" (voiture) et "Eligible permis G frontalier"
+6. FORMAT : 2 pages max, PDF, anti-chronologique
+7. LANGUE : rediger dans la langue de l'annonce (francais pour Romandie)
+8. TON : modeste, factuel, precis — eviter l'autopromotion excessive
+9. REFERENCES : "Sur demande" est acceptable
+10. PAS de titre "CV" en haut — commencer par le nom
+
+VOS ATOUTS SPECIFIQUES POUR LA SUISSE
+---------------------------------------
+- Francais natif + anglais professionnel + arabe = trilinguisme tres valorise
+- 20+ ans d'experience = profil senior recherche
+- Secteurs critiques (aero DO-178, medical IEC 62304) = gage de rigueur
+- Cybersecurite embarquee = competence rare et en demande
+- Association Workshop-DIY = engagement social apprecie en Suisse
+
+ACTIONS CV
+-----------
+[ ] Ajouter une photo professionnelle
+[ ] Ajouter date de naissance, nationalite, situation familiale
+[ ] Mentionner "Eligible permis G frontalier" ou "Permis B eligible"
+[ ] Adapter le format au standard suisse (sobre, professionnel)
+[ ] Preparer une version francaise (pour Romandie) et anglaise (pour multinationales)
+[ ] Rediger une lettre de motivation personnalisee par entreprise ciblee
+
+
+================================================================================
+PARTIE 4 — ENTREPRISES CIBLES EN SUISSE ROMANDE
+================================================================================
+
+MEDICAL DEVICES (votre experience GE Healthcare, Sorin, PK Vitality)
+---------------------------------------------------------------------
+- Medtronic — Tolochenaz (VD) — implants, dispositifs medicaux
+- Stryker — Geneve — chirurgie, orthopédie
+- Johnson & Johnson / DePuy Synthes — Le Locle, Zuchwil
+- MPS Micro Precision Systems — Bienne — micro-mecanique, medical
+- Distalmotion — Lausanne — robotique chirurgicale
+- Implantica — Lausanne — implants connectes
+- Sophia Genetics — Lausanne / Saint-Sulpice — genomique, IA medicale
+- Mindmaze — Lausanne — neurotechnologie
+
+HORLOGERIE & PRECISION (embedded C/C++ tres demande)
+------------------------------------------------------
+- Rolex — Geneve — electronique embarquee, R&D
+- Patek Philippe — Geneve
+- Omega / Swatch Group — Bienne
+- TAG Heuer — La Chaux-de-Fonds
+- Audemars Piguet — Le Brassus
+
+AEROSPACE & DEFENSE (votre experience Safran, Thales, Zodiac)
+---------------------------------------------------------------
+- RUAG Space — Zurich / Nyon — spatial
+- BEYOND GRAVITY (ex-RUAG Space) — Zurich / Nyon
+- Pilatus Aircraft — Stans (pas Romandie mais recrute)
+- CSEM — Neuchatel — R&D, capteurs, systemes embarques
+
+AUTOMOTIVE & CLEANTECH / V2G (votre experience E2-CAD, ISO 15118)
+-------------------------------------------------------------------
+- ABB E-mobility — Geneve / Zurich — bornes de recharge
+- Bcomp — Fribourg — materiaux composites auto
+- GreenMotion (ex, rachete par Eaton) — Lausanne — bornes EV
+- H55 — Sion — avions electriques
+- Leclanché — Yverdon — batteries / stockage energie
+
+IoT & CYBERSECURITE (votre experience Enedis, Linky)
+------------------------------------------------------
+- Kudelski Group — Cheseaux-sur-Lausanne — cybersecurite leader mondial
+- ID Quantique — Geneve — securite quantique
+- WISeKey — Geneve — cybersecurite IoT
+- Nagravision (Kudelski) — Cheseaux — securite digitale
+
+ELECTRONIQUE & SYSTEMES EMBARQUES
+------------------------------------
+- Ellisys — Lausanne — analyseurs de protocoles (USB, Bluetooth, WiFi)
+- Sensirion — Staefa (ZH) mais bureaux romands — capteurs
+- EM Microelectronic — Marin (NE) — microcontroleurs (Swatch Group)
+- CSEM — Neuchatel — centre de recherche en microtechnologie
+- Bobst — Lausanne — machines industrielles, systemes embarques
+- Logitech — Lausanne — peripheriques, embedded firmware
+
+SOCIETES DE CONSEIL / ESN (acces rapide au marche)
+-----------------------------------------------------
+- Zühlke — Lausanne — conseil en ingenierie
+- Altran (Capgemini Engineering) — Geneve, Lausanne
+- Akkodis (ex Modis) — Geneve
+- Alten — Geneve
+- Auctae — Romandie — recrutement tech embarque
+- EYRA Group — Geneve, Lausanne
+
+
+================================================================================
+PARTIE 5 — PLAN D'ACTION SEMAINE PAR SEMAINE
+================================================================================
+
+SEMAINE 1-2 : PREPARATION
+---------------------------
+[ ] Mettre a jour le CV au format suisse (photo, infos perso, format sobre)
+[ ] Preparer 2 versions : FR (Romandie) + EN (multinationales)
+[ ] Mettre a jour le profil LinkedIn (utiliser les fichiers 64-67 deja crees)
+[ ] Ajouter "Open to work" sur LinkedIn, cibler Suisse romande
+[ ] Rediger un modele de lettre de motivation adaptable
+[ ] Photo professionnelle (si pas deja faite)
+
+SEMAINE 2-3 : INSCRIPTION SUR LES JOB BOARDS
+-----------------------------------------------
+[ ] jobs.ch — le plus grand portail suisse
+[ ] jobup.ch — specifique Romandie
+[ ] indeed.ch — general
+[ ] swissdevjobs.ch — specialise IT/dev
+[ ] it-jobs-switzerland.ch — specialise IT
+[ ] glassdoor.ch — offres + avis entreprises
+[ ] linkedin.com — activer alertes "embedded" + "Lausanne" + "Geneve"
+
+SEMAINE 2-4 : CANDIDATURES SPONTANEES
+----------------------------------------
+[ ] Identifier 15-20 entreprises cibles (voir liste Partie 4)
+[ ] Candidature spontanee par email aux RH + manager technique
+[ ] Adapter chaque lettre de motivation a l'entreprise
+[ ] Cibler en priorite : Kudelski, Ellisys, CSEM, Medtronic, Bobst, Logitech, ABB
+
+SEMAINE 3-5 : NETWORKING
+--------------------------
+[ ] Connecter sur LinkedIn avec des ingenieurs embarques en Suisse romande
+[ ] Rejoindre des groupes LinkedIn : "Embedded Systems Switzerland",
+    "Swiss Engineering", "Suisse Romande Tech"
+[ ] Contacter les recruteurs specialises embarque en Suisse :
+    - Zuhlke, Auctae, Hays, Michael Page, Robert Walters
+[ ] Participer a des meetups tech a Geneve/Lausanne (meetup.com)
+[ ] Si possible, visiter le salon "EPHJ" (Geneve, juin) — horlogerie/medical/precision
+
+SEMAINE 4-8 : ENTRETIENS
+---------------------------
+[ ] Preparer les entretiens techniques (C/C++, RTOS, protocols, architecture)
+[ ] Preparer des questions sur le statut frontalier / permis G
+[ ] Connaitre les salaires du marche (ne pas sous-estimer sa valeur)
+[ ] Negocier : 13eme mois, jours de conges (20-25 jours standard en CH),
+    formation continue, teletravail partiel
+
+SEMAINE 8-12 : FINALISATION
+------------------------------
+[ ] Signer le contrat
+[ ] L'employeur demande le permis G
+[ ] Chercher un logement en Haute-Savoie si frontalier
+    (Annemasse, Saint-Julien-en-Genevois, Gex, Ferney-Voltaire)
+[ ] Ouvrir un compte bancaire suisse (ou utiliser Wise/Revolut)
+[ ] Souscrire une assurance maladie (LAMal ou CMU pour frontaliers)
+
+
+================================================================================
+PARTIE 6 — SITES ET RESSOURCES UTILES
+================================================================================
+
+JOB BOARDS
+-----------
+- jobs.ch — portail N1 en Suisse
+- jobup.ch — specialise Romandie
+- swissdevjobs.ch — jobs dev/IT en Suisse
+- it-jobs-switzerland.ch — jobs IT
+- indeed.ch — general
+- glassdoor.ch — offres + salaires + avis
+
+SALAIRES
+---------
+- jobs.ch/salary — calculateur de salaire
+- glassdoor.ch — fourchettes par entreprise
+- lohncheck.ch — comparateur de salaires suisse
+
+FRONTALIER
+-----------
+- guidedufrontalier.com — guide complet frontalier Franco-Suisse
+- frontaliers-grandest.eu — ressources frontaliers
+- travailler-en-suisse.ch — guide general
+
+PERMIS DE TRAVAIL
+------------------
+- sem.admin.ch — Secretariat d'Etat aux migrations (officiel)
+- ibani.com — guide permis G
+
+NETWORKING
+-----------
+- meetup.com — meetups tech Geneve/Lausanne
+- swissdevjobs.ch/blog — actualites tech Suisse
+- linkedin.com — groupes "Swiss Engineering", "Embedded Switzerland"
+
+
+================================================================================
+PARTIE 7 — CHECKLIST RECAPITULATIVE
+================================================================================
+
+DOCUMENTS A PREPARER
+---------------------
+[ ] CV format suisse (FR) — avec photo, date naissance, nationalite
+[ ] CV format suisse (EN) — pour multinationales
+[ ] Lettre de motivation modele (FR + EN)
+[ ] Profil LinkedIn a jour (deja fait : fichiers 64-67)
+[ ] Copies des diplomes
+[ ] Attestations employeurs / certificats de travail
+[ ] Photo professionnelle HD
+[ ] Portfolio / liens vers projets (workshop-diy.org)
+
+POINTS FORTS A METTRE EN AVANT
+--------------------------------
+1. +20 ans d'experience en embarque critique (aero, medical)
+2. Maitrise C/C++ bare metal + RTOS + Linux embarque
+3. Experience cybersecurite embarquee (pentest IoT, audit Linky)
+4. Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118
+5. Trilinguisme francais/anglais/arabe
+6. Fondateur Workshop-DIY (engagement social)
+7. Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement
+
+ERREURS A EVITER
+-----------------
+- Ne pas postuler sans adapter le CV au format suisse
+- Ne pas exagerer ou se survendre (culture suisse = modestie)
+- Ne pas ignorer la lettre de motivation (importante en Suisse)
+- Ne pas sous-estimer son salaire (vous valez 120K+ CHF)
+- Ne pas attendre une reponse : relancer apres 10 jours
+- Ne pas negliger le reseau : beaucoup de postes ne sont jamais publies

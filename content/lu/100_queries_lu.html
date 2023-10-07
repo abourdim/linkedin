@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requetes de Recherche LinkedIn — Emploi au Luxembourg</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #f3f6f9;
+  }
+
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 18mm 20mm 16mm 20mm;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 0; max-width: 100%; }
+    .no-print { display: none; }
+    h2 { break-after: avoid; }
+    .section { break-inside: avoid; }
+    .sector-card { break-inside: avoid; }
+  }
+
+  /* -- HEADER -- */
+  .doc-header {
+    text-align: center;
+    padding-bottom: 16pt;
+    margin-bottom: 18pt;
+    border-bottom: 3pt solid #0a66c2;
+  }
+
+  .doc-header h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #0a66c2;
+    letter-spacing: 0.5pt;
+    margin-bottom: 6pt;
+  }
+
+  .doc-header .subtitle {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #444;
+  }
+
+  .doc-header .date {
+    font-size: 9pt;
+    color: #777;
+    margin-top: 6pt;
+  }
+
+  /* -- SECTIONS -- */
+  .section {
+    margin-bottom: 20pt;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #fff;
+    background: #0a66c2;
+    padding: 7pt 14pt;
+    border-radius: 6pt;
+    margin-bottom: 12pt;
+    letter-spacing: 0.3pt;
+  }
+
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 6pt;
+    padding-bottom: 3pt;
+    border-bottom: 1.5pt solid #d0e3f5;
+  }
+
+  /* -- QUERY BOXES -- */
+  .query-list {
+    list-style: none;
+    margin-bottom: 12pt;
+  }
+
+  .query-list li {
+    margin-bottom: 5pt;
+  }
+
+  .query-box {
+    display: inline-block;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 9.5pt;
+    background: #f0f6fc;
+    color: #1a3a5c;
+    border: 1px solid #c8ddf0;
+    border-radius: 4pt;
+    padding: 4pt 10pt;
+    cursor: text;
+    user-select: all;
+    -webkit-user-select: all;
+  }
+
+  .query-num {
+    display: inline-block;
+    width: 18pt;
+    font-weight: 700;
+    color: #0a66c2;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* -- BOOLEAN HIGHLIGHT -- */
+  .boolean-section {
+    background: #fffbe6;
+    border: 1.5pt solid #e6d566;
+    border-radius: 6pt;
+    padding: 12pt 16pt;
+    margin-bottom: 12pt;
+  }
+
+  .boolean-section h3 {
+    color: #8a6d00;
+    border-bottom-color: #e6d566;
+    margin-bottom: 8pt;
+  }
+
+  .boolean-section .query-box {
+    background: #fff8d6;
+    border-color: #d4c44a;
+    color: #5c4a00;
+    font-size: 9pt;
+  }
+
+  .boolean-note {
+    font-size: 9pt;
+    color: #6b5900;
+    font-style: italic;
+    margin-bottom: 10pt;
+  }
+
+  /* -- SECTOR CARDS -- */
+  .sector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+    margin-bottom: 12pt;
+  }
+
+  .sector-card {
+    background: #f7fafd;
+    border: 1px solid #d0e3f5;
+    border-radius: 6pt;
+    padding: 10pt 12pt;
+    break-inside: avoid;
+  }
+
+  .sector-card .sector-name {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #fff;
+    background: #0a66c2;
+    display: inline-block;
+    padding: 2pt 10pt;
+    border-radius: 3pt;
+    margin-bottom: 7pt;
+  }
+
+  .sector-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sector-card li {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 8.5pt;
+    color: #1a3a5c;
+    background: #e8f0fb;
+    border-radius: 3pt;
+    padding: 3pt 8pt;
+    margin-bottom: 3pt;
+  }
+
+  /* -- FILTERS TABLE -- */
+  .filters-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12pt;
+    font-size: 9.5pt;
+  }
+
+  .filters-table th {
+    text-align: left;
+    background: #0a66c2;
+    color: #fff;
+    padding: 6pt 10pt;
+    font-weight: 600;
+    font-size: 9pt;
+  }
+
+  .filters-table th:first-child {
+    border-radius: 4pt 0 0 0;
+  }
+
+  .filters-table th:last-child {
+    border-radius: 0 4pt 0 0;
+  }
+
+  .filters-table td {
+    padding: 6pt 10pt;
+    border-bottom: 1px solid #e4ecf4;
+    vertical-align: top;
+  }
+
+  .filters-table tr:nth-child(even) td {
+    background: #f7fafd;
+  }
+
+  .filters-table .filter-name {
+    font-weight: 700;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+
+  .filters-table .filter-values {
+    color: #333;
+  }
+
+  .filters-table .filter-values em {
+    color: #777;
+    font-style: italic;
+  }
+
+  /* -- ALERTS -- */
+  .alert-list {
+    list-style: none;
+    counter-reset: alert-counter;
+    margin-bottom: 10pt;
+  }
+
+  .alert-list li {
+    counter-increment: alert-counter;
+    margin-bottom: 6pt;
+    padding: 7pt 12pt 7pt 40pt;
+    background: #f0f6fc;
+    border-left: 4pt solid #0a66c2;
+    border-radius: 0 5pt 5pt 0;
+    position: relative;
+    font-size: 9.5pt;
+  }
+
+  .alert-list li::before {
+    content: counter(alert-counter);
+    position: absolute;
+    left: 10pt;
+    top: 7pt;
+    width: 20pt;
+    height: 20pt;
+    background: #0a66c2;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 9pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .alert-list .alert-label {
+    font-weight: 700;
+    color: #0a66c2;
+  }
+
+  .alert-note {
+    font-size: 9pt;
+    color: #555;
+    font-style: italic;
+    margin-top: 6pt;
+  }
+
+  /* -- PEOPLE SEARCH -- */
+  .people-group {
+    margin-bottom: 10pt;
+  }
+
+  .people-group h3 {
+    font-size: 10pt;
+  }
+
+  /* -- GROUPS LIST -- */
+  .groups-list {
+    list-style: none;
+    counter-reset: group-counter;
+    column-count: 2;
+    column-gap: 16pt;
+    margin-bottom: 10pt;
+  }
+
+  .groups-list li {
+    counter-increment: group-counter;
+    padding: 5pt 8pt 5pt 30pt;
+    margin-bottom: 5pt;
+    background: #f7fafd;
+    border: 1px solid #d0e3f5;
+    border-radius: 4pt;
+    font-size: 9.5pt;
+    position: relative;
+    break-inside: avoid;
+  }
+
+  .groups-list li::before {
+    content: counter(group-counter);
+    position: absolute;
+    left: 8pt;
+    top: 5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+  }
+
+  /* -- RESOURCE GRID -- */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+    margin-bottom: 12pt;
+  }
+
+  .resource-card {
+    background: #f7fafd;
+    border: 1px solid #d0e3f5;
+    border-radius: 6pt;
+    padding: 10pt 12pt;
+    break-inside: avoid;
+  }
+
+  .resource-card .resource-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 6pt;
+  }
+
+  .resource-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .resource-card li {
+    font-size: 9pt;
+    color: #333;
+    padding: 2pt 0;
+  }
+
+  .resource-card a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+
+  .resource-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* -- TIPS -- */
+  .tips-list {
+    list-style: none;
+    margin-bottom: 10pt;
+  }
+
+  .tips-list li {
+    padding: 6pt 10pt 6pt 28pt;
+    margin-bottom: 5pt;
+    position: relative;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    background: #f9fbfd;
+    border-radius: 4pt;
+  }
+
+  .tips-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 8pt;
+    top: 6pt;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  .tips-list .tip-title {
+    font-weight: 700;
+    color: #0a66c2;
+  }
+
+  .tips-list .tip-sub {
+    display: block;
+    margin-top: 2pt;
+    padding-left: 8pt;
+    font-size: 8.5pt;
+    color: #555;
+  }
+
+  /* -- FOOTER -- */
+  .doc-footer {
+    margin-top: 18pt;
+    padding-top: 10pt;
+    border-top: 1.5pt solid #d0e3f5;
+    text-align: center;
+    font-size: 8pt;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <div class="doc-header">
+    <h1>Requetes de Recherche LinkedIn &mdash; Emploi au Luxembourg</h1>
+    <div class="subtitle">Ingenieur Logiciel Embarque Senior &mdash; Abdelhak Bourdim</div>
+    <div class="date">Mars 2026</div>
+  </div>
+
+
+  <!-- ============ SECTION 1 — PERSONNES ============ -->
+  <div class="section">
+    <h2>Section 1 &mdash; Recherche de personnes (networking)</h2>
+    <p style="font-size:9.5pt; color:#555; margin-bottom:10pt;">Utiliser l'onglet &laquo; Personnes &raquo; pour trouver des contacts strategiques :</p>
+
+    <div class="people-group">
+      <h3>Ingenieurs / Pairs</h3>
+      <ul class="query-list">
+        <li><span class="query-num">1.</span> <code class="query-box">embedded engineer Luxembourg</code></li>
+        <li><span class="query-num">2.</span> <code class="query-box">firmware developer Luxembourg</code></li>
+        <li><span class="query-num">3.</span> <code class="query-box">ingenieur logiciel embarque Luxembourg</code></li>
+        <li><span class="query-num">4.</span> <code class="query-box">embedded systems Luxembourg</code></li>
+        <li><span class="query-num">5.</span> <code class="query-box">C++ developer Luxembourg</code></li>
+      </ul>
+    </div>
+
+    <div class="people-group">
+      <h3>Recruteurs</h3>
+      <ul class="query-list">
+        <li><span class="query-num">6.</span> <code class="query-box">recruiter embedded Luxembourg</code></li>
+        <li><span class="query-num">7.</span> <code class="query-box">talent acquisition engineer Luxembourg</code></li>
+        <li><span class="query-num">8.</span> <code class="query-box">recruteur ingenieur Luxembourg</code></li>
+        <li><span class="query-num">9.</span> <code class="query-box">IT recruiter Luxembourg</code></li>
+      </ul>
+    </div>
+
+    <div class="people-group">
+      <h3>Managers / Decideurs</h3>
+      <ul class="query-list">
+        <li><span class="query-num">10.</span> <code class="query-box">hiring manager firmware Luxembourg</code></li>
+        <li><span class="query-num">11.</span> <code class="query-box">VP engineering Luxembourg</code></li>
+        <li><span class="query-num">12.</span> <code class="query-box">head of embedded Luxembourg</code></li>
+        <li><span class="query-num">13.</span> <code class="query-box">CTO embedded Luxembourg</code></li>
+        <li><span class="query-num">14.</span> <code class="query-box">engineering manager Luxembourg</code></li>
+        <li><span class="query-num">15.</span> <code class="query-box">R&amp;D director Luxembourg</code></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ============ SECTION 2 — EMPLOIS ============ -->
+  <div class="section">
+    <h2>Section 2 &mdash; Recherches d'emplois (onglet &laquo; Emplois &raquo;)</h2>
+
+    <h3>En anglais (plus de resultats)</h3>
+    <ol class="query-list">
+      <li><span class="query-num">1.</span> <code class="query-box">embedded software engineer Luxembourg</code></li>
+      <li><span class="query-num">2.</span> <code class="query-box">firmware engineer Luxembourg</code></li>
+      <li><span class="query-num">3.</span> <code class="query-box">embedded C C++ engineer Luxembourg</code></li>
+      <li><span class="query-num">4.</span> <code class="query-box">RTOS engineer Luxembourg</code></li>
+      <li><span class="query-num">5.</span> <code class="query-box">embedded Linux developer Luxembourg</code></li>
+      <li><span class="query-num">6.</span> <code class="query-box">senior firmware developer Luxembourg</code></li>
+      <li><span class="query-num">7.</span> <code class="query-box">embedded systems engineer Luxembourg</code></li>
+    </ol>
+
+    <h3>En francais</h3>
+    <ol class="query-list">
+      <li><span class="query-num">8.</span> <code class="query-box">ingenieur logiciel embarque Luxembourg</code></li>
+      <li><span class="query-num">9.</span> <code class="query-box">developpeur embarque Luxembourg</code></li>
+      <li><span class="query-num">10.</span> <code class="query-box">ingenieur firmware Luxembourg</code></li>
+      <li><span class="query-num">11.</span> <code class="query-box">ingenieur systemes embarques Luxembourg</code></li>
+      <li><span class="query-num">12.</span> <code class="query-box">developpeur C C++ embarque Luxembourg</code></li>
+    </ol>
+
+    <h3>Par entreprise cible</h3>
+    <ol class="query-list">
+      <li><span class="query-num">13.</span> <code class="query-box">embedded engineer SES</code></li>
+      <li><span class="query-num">14.</span> <code class="query-box">firmware engineer IEE Luxembourg</code></li>
+      <li><span class="query-num">15.</span> <code class="query-box">embedded engineer POST Luxembourg</code></li>
+      <li><span class="query-num">16.</span> <code class="query-box">software engineer Goodyear Luxembourg</code></li>
+      <li><span class="query-num">17.</span> <code class="query-box">embedded engineer ArcelorMittal</code></li>
+      <li><span class="query-num">18.</span> <code class="query-box">cybersecurity engineer INCERT</code></li>
+    </ol>
+  </div>
+
+
+  <!-- ============ SECTION 3 — ENTREPRISES ============ -->
+  <div class="section">
+    <h2>Section 3 &mdash; Recherche d'entreprises (onglet &laquo; Entreprises &raquo;)</h2>
+
+    <div class="sector-grid">
+      <div class="sector-card">
+        <div class="sector-name">Espace / Satellites</div>
+        <ul>
+          <li>SES satellites Luxembourg</li>
+          <li>OQ Technology Luxembourg</li>
+          <li>Euro-Composites Luxembourg</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Industrie / Automobile</div>
+        <ul>
+          <li>Goodyear Luxembourg</li>
+          <li>ArcelorMittal Luxembourg</li>
+          <li>IEE sensing Luxembourg</li>
+          <li>Ceratizit Luxembourg</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Telecom / Tech / IoT</div>
+        <ul>
+          <li>POST Luxembourg telecom</li>
+          <li>LuxProvide MeluXina</li>
+          <li>Amazon Luxembourg</li>
+          <li>Talkwalker Luxembourg</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Cybersecurite / Fintech</div>
+        <ul>
+          <li>INCERT Luxembourg</li>
+          <li>Clearstream Luxembourg</li>
+          <li>SIX Payment Services</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Consulting / ESN</div>
+        <ul>
+          <li>Alter Solutions Luxembourg</li>
+          <li>Devoteam Luxembourg</li>
+          <li>CGI Luxembourg</li>
+          <li>Sogeti / Capgemini Luxembourg</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============ SECTION 4 — JOB BOARDS ============ -->
+  <div class="section">
+    <h2>Section 4 &mdash; Job Boards specialises</h2>
+
+    <div class="resource-grid">
+      <div class="resource-card">
+        <div class="resource-title">jobs.lu (portail N&deg;1)</div>
+        <ul>
+          <li><a href="https://www.jobs.lu" target="_blank">jobs.lu</a> &mdash; embedded engineer</li>
+          <li><a href="https://www.jobs.lu" target="_blank">jobs.lu</a> &mdash; ingenieur embarque</li>
+          <li><a href="https://www.jobs.lu" target="_blank">jobs.lu</a> &mdash; firmware</li>
+          <li><a href="https://www.jobs.lu" target="_blank">jobs.lu</a> &mdash; C++ developer</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-title">moovijob.com (Grande Region)</div>
+        <ul>
+          <li><a href="https://www.moovijob.com" target="_blank">moovijob.com</a> &mdash; embedded Luxembourg</li>
+          <li><a href="https://www.moovijob.com" target="_blank">moovijob.com</a> &mdash; ingenieur embarque</li>
+          <li><a href="https://www.moovijob.com" target="_blank">moovijob.com</a> &mdash; firmware Luxembourg</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-title">ictjob.lu (specialise IT)</div>
+        <ul>
+          <li><a href="https://www.ictjob.lu" target="_blank">ictjob.lu</a> &mdash; embedded</li>
+          <li><a href="https://www.ictjob.lu" target="_blank">ictjob.lu</a> &mdash; firmware</li>
+          <li><a href="https://www.ictjob.lu" target="_blank">ictjob.lu</a> &mdash; C++ embedded</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <div class="resource-title">indeed.lu</div>
+        <ul>
+          <li><a href="https://lu.indeed.com" target="_blank">indeed.lu</a> &mdash; embedded software engineer</li>
+          <li><a href="https://lu.indeed.com" target="_blank">indeed.lu</a> &mdash; firmware engineer Luxembourg</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ============ SECTION 5 — GOOGLE ============ -->
+  <div class="section">
+    <h2>Section 5 &mdash; Recherche Google</h2>
+
+    <ol class="query-list">
+      <li><span class="query-num">1.</span> <code class="query-box">site:linkedin.com/jobs "embedded" "Luxembourg"</code></li>
+      <li><span class="query-num">2.</span> <code class="query-box">site:jobs.lu "embedded engineer"</code></li>
+      <li><span class="query-num">3.</span> <code class="query-box">"embedded software engineer" Luxembourg -staffing</code></li>
+      <li><span class="query-num">4.</span> <code class="query-box">"firmware engineer" Luxembourg emploi 2026</code></li>
+      <li><span class="query-num">5.</span> <code class="query-box">"ingenieur embarque" Luxembourg recrutement</code></li>
+      <li><span class="query-num">6.</span> <code class="query-box">"embedded" "C++" Luxembourg site:moovijob.com</code></li>
+      <li><span class="query-num">7.</span> <code class="query-box">"RTOS" OR "embedded Linux" Luxembourg emploi</code></li>
+      <li><span class="query-num">8.</span> <code class="query-box">"DO-178" OR "IEC 62304" Luxembourg engineer</code></li>
+      <li><span class="query-num">9.</span> <code class="query-box">"IoT" "embedded" Luxembourg POST</code></li>
+      <li><span class="query-num">10.</span> <code class="query-box">"frontalier" "embedded" Luxembourg</code></li>
+    </ol>
+  </div>
+
+
+  <!-- ============ SECTION 6 — GITHUB / COMMUNAUTE ============ -->
+  <div class="section">
+    <h2>Section 6 &mdash; GitHub / Communaute technique</h2>
+
+    <ol class="groups-list">
+      <li>github.com/topics/embedded-systems &mdash; contributeurs Luxembourg</li>
+      <li>meetup.com Luxembourg embedded systems</li>
+      <li>meetup.com Luxembourg IoT</li>
+      <li>silicon.lu &mdash; actualites tech Luxembourg</li>
+      <li>paperjam.lu &mdash; actualites business Luxembourg</li>
+      <li>Luxembourg Tech Community (Slack/Discord)</li>
+      <li>Embedded Systems Luxembourg (LinkedIn Group)</li>
+      <li>Evenements Moovijob Night</li>
+    </ol>
+  </div>
+
+
+  <!-- ============ SECTION 7 — RECRUTEURS ============ -->
+  <div class="section">
+    <h2>Section 7 &mdash; Recruteurs specialises</h2>
+
+    <div class="sector-grid">
+      <div class="sector-card">
+        <div class="sector-name">Cabinets internationaux</div>
+        <ul>
+          <li>Hays Luxembourg</li>
+          <li>Michael Page Luxembourg</li>
+          <li>Robert Half Luxembourg</li>
+          <li>Adecco Luxembourg</li>
+          <li>Randstad Luxembourg</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">ESN / Consulting</div>
+        <ul>
+          <li>Alter Solutions Luxembourg</li>
+          <li>Devoteam Luxembourg</li>
+          <li>CGI Luxembourg</li>
+          <li>Sogeti / Capgemini Luxembourg</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="font-size:9pt; color:#555; font-style:italic;">Mentionner : +20 ans embarque, C/C++, RTOS, Linux, DO-178, MISRA C, IEC 62304, ISO 15118.</p>
+  </div>
+
+
+  <!-- ============ SECTION 8 — BOOLEENNE ============ -->
+  <div class="section">
+    <h2>Section 8 &mdash; Recherche booleenne avancee</h2>
+
+    <div class="boolean-section">
+      <p class="boolean-note">LinkedIn accepte les operateurs <strong>AND</strong>, <strong>OR</strong> et les guillemets <strong>"..."</strong> dans la barre de recherche. Voici les requetes optimisees :</p>
+
+      <h3>Requete generale</h3>
+      <p style="margin-bottom:10pt;"><code class="query-box">"embedded" AND ("C++" OR "firmware") AND ("Luxembourg" OR "frontalier")</code></p>
+
+      <h3>Par technologie</h3>
+      <ul class="query-list">
+        <li><code class="query-box">("RTOS" OR "FreeRTOS" OR "VxWorks") AND "Luxembourg"</code></li>
+        <li><code class="query-box">("ARM Cortex" OR "STM32" OR "NXP") AND "Luxembourg"</code></li>
+        <li><code class="query-box">("embedded Linux" OR "Yocto" OR "Buildroot") AND "Luxembourg"</code></li>
+        <li><code class="query-box">("MISRA C" OR "DO-178" OR "IEC 62304") AND "Luxembourg"</code></li>
+      </ul>
+
+      <h3>Par entreprise</h3>
+      <ul class="query-list">
+        <li><code class="query-box">("SES" OR "satellite") AND "embedded" AND "Luxembourg"</code></li>
+        <li><code class="query-box">("IEE" OR "sensor") AND "embedded" AND "Luxembourg"</code></li>
+        <li><code class="query-box">("POST Luxembourg" OR "IoT") AND "embedded"</code></li>
+        <li><code class="query-box">("INCERT" OR "cybersecurity") AND "embedded" AND "Luxembourg"</code></li>
+        <li><code class="query-box">("Goodyear" OR "ArcelorMittal") AND ("embedded" OR "automation") AND "Luxembourg"</code></li>
+      </ul>
+
+      <h3>Par secteur</h3>
+      <ul class="query-list">
+        <li><code class="query-box">"embedded" AND ("satellite" OR "aerospace") AND "Luxembourg"</code></li>
+        <li><code class="query-box">"embedded" AND ("automotive" OR "sensor") AND "Luxembourg"</code></li>
+        <li><code class="query-box">"embedded" AND ("cybersecurity" OR "IoT security") AND "Luxembourg"</code></li>
+        <li><code class="query-box">"embedded" AND ("industry 4.0" OR "automation") AND "Luxembourg"</code></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ============ FOOTER ============ -->
+  <div class="doc-footer">
+    Abdelhak Bourdim &mdash; abdelhak.bourdim@gmail.com &mdash; Mars 2026
+  </div>
+
+</div>
+
+</body>
+</html>

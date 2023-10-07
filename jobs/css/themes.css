@@ -1,0 +1,323 @@
+/* ═══════════════════════════════════════════════════════════
+   THEMES — 7 Visual Themes for Job Search Portfolio
+   4 Standard + 3 Islamic-inspired
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── THEME 1: LIGHT ── */
+[data-theme="light"] {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-sidebar: #f0f2f5;
+  --bg-sidebar-header: #e4e6e9;
+  --bg-card: #ffffff;
+  --bg-pin: #f8f9fa;
+  --text-primary: #222222;
+  --text-secondary: #666666;
+  --text-sidebar: #333333;
+  --text-sidebar-active: #0a66c2;
+  --accent: #0a66c2;
+  --accent-hover: #004182;
+  --accent-light: rgba(10, 102, 194, 0.08);
+  --border: #dee2e6;
+  --border-accent: #0a66c2;
+  --sidebar-active: rgba(10, 102, 194, 0.1);
+  --sidebar-hover: rgba(0, 0, 0, 0.04);
+  --scrollbar-track: #f0f0f0;
+  --scrollbar-thumb: #c0c0c0;
+  --shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --pin-key-bg: #ffffff;
+  --pin-key-hover: #e8e8e8;
+  --pin-key-text: #333333;
+  --pin-dot-filled: #0a66c2;
+  --pin-dot-empty: #ccc;
+  --download-btn-bg: #0a66c2;
+  --download-btn-text: #ffffff;
+  --badge-bg: #e8f0fe;
+  --badge-text: #0a66c2;
+  --pattern-opacity: 0;
+}
+
+/* ── THEME 2: DARK ── */
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-sidebar: #0f1a2e;
+  --bg-sidebar-header: #0a1220;
+  --bg-card: #1e2a42;
+  --bg-pin: #0f1a2e;
+  --text-primary: #e6e6e6;
+  --text-secondary: #a0a0b0;
+  --text-sidebar: #c0c8d8;
+  --text-sidebar-active: #4da6ff;
+  --accent: #4da6ff;
+  --accent-hover: #80c0ff;
+  --accent-light: rgba(77, 166, 255, 0.1);
+  --border: #2a3a5a;
+  --border-accent: #4da6ff;
+  --sidebar-active: rgba(77, 166, 255, 0.15);
+  --sidebar-hover: rgba(255, 255, 255, 0.05);
+  --scrollbar-track: #1a1a2e;
+  --scrollbar-thumb: #3a4a6a;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --pin-key-bg: #1e2a42;
+  --pin-key-hover: #2a3a5a;
+  --pin-key-text: #e0e0e0;
+  --pin-dot-filled: #4da6ff;
+  --pin-dot-empty: #3a4a6a;
+  --download-btn-bg: #4da6ff;
+  --download-btn-text: #0a1220;
+  --badge-bg: rgba(77, 166, 255, 0.15);
+  --badge-text: #4da6ff;
+  --pattern-opacity: 0;
+}
+
+/* ── THEME 3: PROFESSIONAL BLUE ── */
+[data-theme="blue"] {
+  --bg-primary: #e8f0fe;
+  --bg-secondary: #d2e3fc;
+  --bg-sidebar: #1a5276;
+  --bg-sidebar-header: #143d5a;
+  --bg-card: #ffffff;
+  --bg-pin: #1a5276;
+  --text-primary: #1a2a4a;
+  --text-secondary: #4a5568;
+  --text-sidebar: #d0e8ff;
+  --text-sidebar-active: #ffffff;
+  --accent: #1a5276;
+  --accent-hover: #2980b9;
+  --accent-light: rgba(26, 82, 118, 0.08);
+  --border: #b4d0e7;
+  --border-accent: #1a5276;
+  --sidebar-active: rgba(255, 255, 255, 0.15);
+  --sidebar-hover: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: #d2e3fc;
+  --scrollbar-thumb: #7eb3e0;
+  --shadow: 0 2px 6px rgba(26, 82, 118, 0.15);
+  --shadow-lg: 0 4px 16px rgba(26, 82, 118, 0.2);
+  --pin-key-bg: #ffffff;
+  --pin-key-hover: #d2e3fc;
+  --pin-key-text: #1a5276;
+  --pin-dot-filled: #1a5276;
+  --pin-dot-empty: #b4d0e7;
+  --download-btn-bg: #1a5276;
+  --download-btn-text: #ffffff;
+  --badge-bg: #d2e3fc;
+  --badge-text: #1a5276;
+  --pattern-opacity: 0;
+}
+
+/* ── THEME 4: HIGH CONTRAST ── */
+[data-theme="contrast"] {
+  --bg-primary: #000000;
+  --bg-secondary: #111111;
+  --bg-sidebar: #111111;
+  --bg-sidebar-header: #000000;
+  --bg-card: #1a1a1a;
+  --bg-pin: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-sidebar: #ffffff;
+  --text-sidebar-active: #4da6ff;
+  --accent: #4da6ff;
+  --accent-hover: #80c0ff;
+  --accent-light: rgba(77, 166, 255, 0.15);
+  --border: #444444;
+  --border-accent: #4da6ff;
+  --sidebar-active: rgba(77, 166, 255, 0.2);
+  --sidebar-hover: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: #111111;
+  --scrollbar-thumb: #555555;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 4px 20px rgba(0, 0, 0, 0.6);
+  --pin-key-bg: #1a1a1a;
+  --pin-key-hover: #333333;
+  --pin-key-text: #ffffff;
+  --pin-dot-filled: #4da6ff;
+  --pin-dot-empty: #444444;
+  --download-btn-bg: #4da6ff;
+  --download-btn-text: #000000;
+  --badge-bg: rgba(77, 166, 255, 0.2);
+  --badge-text: #4da6ff;
+  --pattern-opacity: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ISLAMIC-INSPIRED THEMES
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── THEME 5: GOLDEN AGE (Islamic Golden Age) ── */
+[data-theme="golden-age"] {
+  --bg-primary: #fdf6e3;
+  --bg-secondary: #f5ead0;
+  --bg-sidebar: #1a237e;
+  --bg-sidebar-header: #0d1554;
+  --bg-card: #fffdf5;
+  --bg-pin: #1a237e;
+  --text-primary: #3e2723;
+  --text-secondary: #5d4037;
+  --text-sidebar: #e8d5a3;
+  --text-sidebar-active: #ffd54f;
+  --accent: #d4a017;
+  --accent-hover: #b8860b;
+  --accent-light: rgba(212, 160, 23, 0.1);
+  --border: #d4a017;
+  --border-accent: #d4a017;
+  --sidebar-active: rgba(255, 213, 79, 0.15);
+  --sidebar-hover: rgba(255, 213, 79, 0.08);
+  --scrollbar-track: #f5ead0;
+  --scrollbar-thumb: #d4a017;
+  --shadow: 0 2px 8px rgba(62, 39, 35, 0.12);
+  --shadow-lg: 0 4px 16px rgba(62, 39, 35, 0.18);
+  --pin-key-bg: #fffdf5;
+  --pin-key-hover: #f5ead0;
+  --pin-key-text: #3e2723;
+  --pin-dot-filled: #d4a017;
+  --pin-dot-empty: #d4a01744;
+  --download-btn-bg: #1a237e;
+  --download-btn-text: #ffd54f;
+  --badge-bg: rgba(212, 160, 23, 0.15);
+  --badge-text: #b8860b;
+  --pattern-opacity: 0.04;
+  --pattern-color: #d4a017;
+}
+
+/* ── THEME 6: ALHAMBRA (Nasrid Palace, Granada) ── */
+[data-theme="alhambra"] {
+  --bg-primary: #faf0e6;
+  --bg-secondary: #f0e0cc;
+  --bg-sidebar: #6d3a1a;
+  --bg-sidebar-header: #4e2a12;
+  --bg-card: #fffaf3;
+  --bg-pin: #6d3a1a;
+  --text-primary: #3b1a08;
+  --text-secondary: #6d4c30;
+  --text-sidebar: #f0d8b8;
+  --text-sidebar-active: #00bfa5;
+  --accent: #00897b;
+  --accent-hover: #00695c;
+  --accent-light: rgba(0, 137, 123, 0.08);
+  --border: #c4956a;
+  --border-accent: #00897b;
+  --sidebar-active: rgba(0, 191, 165, 0.15);
+  --sidebar-hover: rgba(255, 255, 255, 0.08);
+  --scrollbar-track: #f0e0cc;
+  --scrollbar-thumb: #c4956a;
+  --shadow: 0 2px 8px rgba(59, 26, 8, 0.12);
+  --shadow-lg: 0 4px 16px rgba(59, 26, 8, 0.18);
+  --pin-key-bg: #fffaf3;
+  --pin-key-hover: #f0e0cc;
+  --pin-key-text: #3b1a08;
+  --pin-dot-filled: #00897b;
+  --pin-dot-empty: #c4956a;
+  --download-btn-bg: #00897b;
+  --download-btn-text: #ffffff;
+  --badge-bg: rgba(0, 137, 123, 0.12);
+  --badge-text: #00695c;
+  --pattern-opacity: 0.035;
+  --pattern-color: #c4956a;
+}
+
+/* ── THEME 7: MEDINA (North African Medinas) ── */
+[data-theme="medina"] {
+  --bg-primary: #f5f0eb;
+  --bg-secondary: #e8ddd0;
+  --bg-sidebar: #c19a6b;
+  --bg-sidebar-header: #a07b50;
+  --bg-card: #faf7f2;
+  --bg-pin: #2e4da7;
+  --text-primary: #2c1810;
+  --text-secondary: #5a4030;
+  --text-sidebar: #2c1810;
+  --text-sidebar-active: #ffffff;
+  --accent: #2e4da7;
+  --accent-hover: #1a3580;
+  --accent-light: rgba(46, 77, 167, 0.08);
+  --border: #c19a6b;
+  --border-accent: #2e4da7;
+  --sidebar-active: rgba(255, 255, 255, 0.25);
+  --sidebar-hover: rgba(255, 255, 255, 0.12);
+  --scrollbar-track: #e8ddd0;
+  --scrollbar-thumb: #c19a6b;
+  --shadow: 0 2px 8px rgba(44, 24, 16, 0.1);
+  --shadow-lg: 0 4px 16px rgba(44, 24, 16, 0.15);
+  --pin-key-bg: #faf7f2;
+  --pin-key-hover: #e8ddd0;
+  --pin-key-text: #2c1810;
+  --pin-dot-filled: #2e4da7;
+  --pin-dot-empty: #c19a6b88;
+  --download-btn-bg: #2e4da7;
+  --download-btn-text: #ffffff;
+  --badge-bg: rgba(46, 77, 167, 0.1);
+  --badge-text: #2e4da7;
+  --pattern-opacity: 0.04;
+  --pattern-color: #c19a6b;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THEME TRANSITIONS
+   ═══════════════════════════════════════════════════════════ */
+body,
+.sidebar,
+.main-content,
+.header-bar,
+.pin-screen {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   GEOMETRIC ARABESQUE PATTERNS (Islamic themes only)
+   ═══════════════════════════════════════════════════════════ */
+[data-theme="golden-age"] .main-content,
+[data-theme="alhambra"] .main-content,
+[data-theme="medina"] .main-content {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='currentColor' stroke-width='0.5' opacity='1'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Cpath d='M20 0L40 20L60 0'/%3E%3Cpath d='M80 20L60 40L80 60'/%3E%3Cpath d='M60 80L40 60L20 80'/%3E%3Cpath d='M0 60L20 40L0 20'/%3E%3Ccircle cx='40' cy='40' r='12'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 80px 80px;
+}
+
+[data-theme="golden-age"] .main-content {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23d4a017' stroke-width='0.5' opacity='0.04'%3E%3Cpath d='M40 0L80 40L40 80L0 40Z'/%3E%3Cpath d='M20 0L40 20L60 0'/%3E%3Cpath d='M80 20L60 40L80 60'/%3E%3Cpath d='M60 80L40 60L20 80'/%3E%3Cpath d='M0 60L20 40L0 20'/%3E%3Ccircle cx='40' cy='40' r='12'/%3E%3Ccircle cx='40' cy='40' r='6'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+[data-theme="alhambra"] .main-content {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23c4956a' stroke-width='0.4' opacity='0.035'%3E%3Crect x='10' y='10' width='40' height='40' rx='2'/%3E%3Cpath d='M30 10L50 30L30 50L10 30Z'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3Cpath d='M30 0v10M60 30H50M30 60V50M0 30h10'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 60px;
+}
+
+[data-theme="medina"] .main-content {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='none' stroke='%23c19a6b' stroke-width='0.4' opacity='0.04'%3E%3Cpath d='M50 5 L60 20 L75 15 L70 30 L85 35 L75 45 L85 55 L70 60 L75 75 L60 70 L50 85 L40 70 L25 75 L30 60 L15 55 L25 45 L15 35 L30 30 L25 15 L40 20Z'/%3E%3Ccircle cx='50' cy='50' r='10'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 100px 100px;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   THEME SWITCHER DOTS
+   ═══════════════════════════════════════════════════════════ */
+.theme-dot[data-theme="light"] { background: #ffffff; border: 2px solid #dee2e6; }
+.theme-dot[data-theme="dark"] { background: #1a1a2e; border: 2px solid #3a4a6a; }
+.theme-dot[data-theme="blue"] { background: #1a5276; border: 2px solid #2980b9; }
+.theme-dot[data-theme="contrast"] { background: #000000; border: 2px solid #4da6ff; }
+.theme-dot[data-theme="golden-age"] { background: linear-gradient(135deg, #1a237e, #d4a017); border: 2px solid #d4a017; }
+.theme-dot[data-theme="alhambra"] { background: linear-gradient(135deg, #6d3a1a, #00897b); border: 2px solid #c4956a; }
+.theme-dot[data-theme="medina"] { background: linear-gradient(135deg, #c19a6b, #2e4da7); border: 2px solid #c19a6b; }
+
+.theme-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-dot:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.theme-dot.active {
+  transform: scale(1.25);
+  box-shadow: 0 0 0 3px var(--accent);
+}

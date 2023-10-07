@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Requetes de Recherche LinkedIn — Emploi en Suisse</title>
+<style>
+  @page {
+    size: A4;
+    margin: 14mm 16mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #f3f6f9;
+  }
+
+  .page {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 18mm 20mm 16mm 20mm;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 0; max-width: 100%; }
+    .no-print { display: none; }
+    h2 { break-after: avoid; }
+    .section { break-inside: avoid; }
+    .sector-card { break-inside: avoid; }
+  }
+
+  /* ── HEADER ── */
+  .doc-header {
+    text-align: center;
+    padding-bottom: 16pt;
+    margin-bottom: 18pt;
+    border-bottom: 3pt solid #0a66c2;
+  }
+
+  .doc-header h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #0a66c2;
+    letter-spacing: 0.5pt;
+    margin-bottom: 6pt;
+  }
+
+  .doc-header .subtitle {
+    font-size: 12pt;
+    font-weight: 600;
+    color: #444;
+  }
+
+  .doc-header .date {
+    font-size: 9pt;
+    color: #777;
+    margin-top: 6pt;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    margin-bottom: 20pt;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #fff;
+    background: #0a66c2;
+    padding: 7pt 14pt;
+    border-radius: 6pt;
+    margin-bottom: 12pt;
+    letter-spacing: 0.3pt;
+  }
+
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 6pt;
+    padding-bottom: 3pt;
+    border-bottom: 1.5pt solid #d0e3f5;
+  }
+
+  /* ── QUERY BOXES ── */
+  .query-list {
+    list-style: none;
+    margin-bottom: 12pt;
+  }
+
+  .query-list li {
+    margin-bottom: 5pt;
+  }
+
+  .query-box {
+    display: inline-block;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 9.5pt;
+    background: #f0f6fc;
+    color: #1a3a5c;
+    border: 1px solid #c8ddf0;
+    border-radius: 4pt;
+    padding: 4pt 10pt;
+    cursor: text;
+    user-select: all;
+    -webkit-user-select: all;
+  }
+
+  .query-num {
+    display: inline-block;
+    width: 18pt;
+    font-weight: 700;
+    color: #0a66c2;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  /* ── BOOLEAN HIGHLIGHT ── */
+  .boolean-section {
+    background: #fffbe6;
+    border: 1.5pt solid #e6d566;
+    border-radius: 6pt;
+    padding: 12pt 16pt;
+    margin-bottom: 12pt;
+  }
+
+  .boolean-section h3 {
+    color: #8a6d00;
+    border-bottom-color: #e6d566;
+    margin-bottom: 8pt;
+  }
+
+  .boolean-section .query-box {
+    background: #fff8d6;
+    border-color: #d4c44a;
+    color: #5c4a00;
+    font-size: 9pt;
+  }
+
+  .boolean-note {
+    font-size: 9pt;
+    color: #6b5900;
+    font-style: italic;
+    margin-bottom: 10pt;
+  }
+
+  /* ── SECTOR CARDS ── */
+  .sector-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10pt;
+    margin-bottom: 12pt;
+  }
+
+  .sector-card {
+    background: #f7fafd;
+    border: 1px solid #d0e3f5;
+    border-radius: 6pt;
+    padding: 10pt 12pt;
+    break-inside: avoid;
+  }
+
+  .sector-card .sector-name {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #fff;
+    background: #0a66c2;
+    display: inline-block;
+    padding: 2pt 10pt;
+    border-radius: 3pt;
+    margin-bottom: 7pt;
+  }
+
+  .sector-card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sector-card li {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 8.5pt;
+    color: #1a3a5c;
+    background: #e8f0fb;
+    border-radius: 3pt;
+    padding: 3pt 8pt;
+    margin-bottom: 3pt;
+  }
+
+  /* ── FILTERS TABLE ── */
+  .filters-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 12pt;
+    font-size: 9.5pt;
+  }
+
+  .filters-table th {
+    text-align: left;
+    background: #0a66c2;
+    color: #fff;
+    padding: 6pt 10pt;
+    font-weight: 600;
+    font-size: 9pt;
+  }
+
+  .filters-table th:first-child {
+    border-radius: 4pt 0 0 0;
+  }
+
+  .filters-table th:last-child {
+    border-radius: 0 4pt 0 0;
+  }
+
+  .filters-table td {
+    padding: 6pt 10pt;
+    border-bottom: 1px solid #e4ecf4;
+    vertical-align: top;
+  }
+
+  .filters-table tr:nth-child(even) td {
+    background: #f7fafd;
+  }
+
+  .filters-table .filter-name {
+    font-weight: 700;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+
+  .filters-table .filter-values {
+    color: #333;
+  }
+
+  .filters-table .filter-values em {
+    color: #777;
+    font-style: italic;
+  }
+
+  /* ── ALERTS ── */
+  .alert-list {
+    list-style: none;
+    counter-reset: alert-counter;
+    margin-bottom: 10pt;
+  }
+
+  .alert-list li {
+    counter-increment: alert-counter;
+    margin-bottom: 6pt;
+    padding: 7pt 12pt 7pt 40pt;
+    background: #f0f6fc;
+    border-left: 4pt solid #0a66c2;
+    border-radius: 0 5pt 5pt 0;
+    position: relative;
+    font-size: 9.5pt;
+  }
+
+  .alert-list li::before {
+    content: counter(alert-counter);
+    position: absolute;
+    left: 10pt;
+    top: 7pt;
+    width: 20pt;
+    height: 20pt;
+    background: #0a66c2;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 9pt;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  .alert-list .alert-label {
+    font-weight: 700;
+    color: #0a66c2;
+  }
+
+  .alert-note {
+    font-size: 9pt;
+    color: #555;
+    font-style: italic;
+    margin-top: 6pt;
+  }
+
+  /* ── PEOPLE SEARCH ── */
+  .people-group {
+    margin-bottom: 10pt;
+  }
+
+  .people-group h3 {
+    font-size: 10pt;
+  }
+
+  /* ── GROUPS LIST ── */
+  .groups-list {
+    list-style: none;
+    counter-reset: group-counter;
+    column-count: 2;
+    column-gap: 16pt;
+    margin-bottom: 10pt;
+  }
+
+  .groups-list li {
+    counter-increment: group-counter;
+    padding: 5pt 8pt 5pt 30pt;
+    margin-bottom: 5pt;
+    background: #f7fafd;
+    border: 1px solid #d0e3f5;
+    border-radius: 4pt;
+    font-size: 9.5pt;
+    position: relative;
+    break-inside: avoid;
+  }
+
+  .groups-list li::before {
+    content: counter(group-counter);
+    position: absolute;
+    left: 8pt;
+    top: 5pt;
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+  }
+
+  /* ── TIPS ── */
+  .tips-list {
+    list-style: none;
+    margin-bottom: 10pt;
+  }
+
+  .tips-list li {
+    padding: 6pt 10pt 6pt 28pt;
+    margin-bottom: 5pt;
+    position: relative;
+    font-size: 9.5pt;
+    line-height: 1.5;
+    background: #f9fbfd;
+    border-radius: 4pt;
+  }
+
+  .tips-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 8pt;
+    top: 6pt;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  .tips-list .tip-title {
+    font-weight: 700;
+    color: #0a66c2;
+  }
+
+  .tips-list .tip-sub {
+    display: block;
+    margin-top: 2pt;
+    padding-left: 8pt;
+    font-size: 8.5pt;
+    color: #555;
+  }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    margin-top: 18pt;
+    padding-top: 10pt;
+    border-top: 1.5pt solid #d0e3f5;
+    text-align: center;
+    font-size: 8pt;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <div class="doc-header">
+    <h1>Requetes de Recherche LinkedIn &mdash; Emploi en Suisse</h1>
+    <div class="subtitle">Ingenieur Logiciel Embarque Senior &mdash; Abdelhak Bourdim</div>
+    <div class="date">Mars 2026</div>
+  </div>
+
+
+  <!-- ============ PARTIE 1 — RECHERCHES PRINCIPALES ============ -->
+  <div class="section">
+    <h2>Partie 1 &mdash; Recherches principales (onglet &laquo; Emplois &raquo;)</h2>
+
+    <h3>En anglais (plus de resultats en Suisse)</h3>
+    <ol class="query-list">
+      <li><span class="query-num">1.</span> <code class="query-box">embedded software engineer</code></li>
+      <li><span class="query-num">2.</span> <code class="query-box">firmware engineer</code></li>
+      <li><span class="query-num">3.</span> <code class="query-box">embedded C C++ engineer</code></li>
+      <li><span class="query-num">4.</span> <code class="query-box">RTOS engineer</code></li>
+      <li><span class="query-num">5.</span> <code class="query-box">embedded Linux developer</code></li>
+      <li><span class="query-num">6.</span> <code class="query-box">senior firmware developer</code></li>
+      <li><span class="query-num">7.</span> <code class="query-box">embedded systems engineer</code></li>
+    </ol>
+
+    <h3>En francais (Romandie specifiquement)</h3>
+    <ol class="query-list">
+      <li><span class="query-num">1.</span> <code class="query-box">ingenieur logiciel embarque</code></li>
+      <li><span class="query-num">2.</span> <code class="query-box">developpeur embarque</code></li>
+      <li><span class="query-num">3.</span> <code class="query-box">ingenieur firmware</code></li>
+      <li><span class="query-num">4.</span> <code class="query-box">ingenieur systemes embarques</code></li>
+      <li><span class="query-num">5.</span> <code class="query-box">developpeur C C++ embarque</code></li>
+    </ol>
+  </div>
+
+
+  <!-- ============ PARTIE 2 — PAR SECTEUR ============ -->
+  <div class="section">
+    <h2>Partie 2 &mdash; Recherches ciblees par secteur</h2>
+
+    <div class="sector-grid">
+
+      <div class="sector-card">
+        <div class="sector-name">Medical</div>
+        <ul>
+          <li>embedded medical device engineer</li>
+          <li>firmware engineer medical</li>
+          <li>ingenieur embarque dispositifs medicaux</li>
+          <li>IEC 62304 engineer</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Aeronautique / Defense</div>
+        <ul>
+          <li>embedded aerospace engineer</li>
+          <li>firmware engineer DO-178</li>
+          <li>embedded avionics engineer</li>
+          <li>ingenieur embarque aeronautique</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Cybersecurite IoT</div>
+        <ul>
+          <li>embedded security engineer</li>
+          <li>IoT security engineer</li>
+          <li>cybersecurity embedded systems</li>
+          <li>ingenieur securite embarquee</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Vehicules electriques / V2G / Cleantech</div>
+        <ul>
+          <li>embedded engineer EV charging</li>
+          <li>V2G engineer</li>
+          <li>ISO 15118 engineer</li>
+          <li>firmware engineer electric vehicle</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Horlogerie / Precision</div>
+        <ul>
+          <li>firmware engineer microcontroller</li>
+          <li>embedded engineer precision</li>
+          <li>ingenieur firmware horlogerie</li>
+          <li>embedded C microcontroller Switzerland</li>
+        </ul>
+      </div>
+
+      <div class="sector-card">
+        <div class="sector-name">Societes de conseil / ESN</div>
+        <ul>
+          <li>embedded consultant engineer</li>
+          <li>ingenieur embarque consultant</li>
+          <li>embedded engineer consulting Switzerland</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ============ PARTIE 3 — BOOLEENNE ============ -->
+  <div class="section">
+    <h2>Partie 3 &mdash; Recherche booleenne avancee</h2>
+
+    <div class="boolean-section">
+      <p class="boolean-note">LinkedIn accepte les operateurs <strong>AND</strong>, <strong>OR</strong> et les guillemets <strong>"..."</strong> dans la barre de recherche. Voici les requetes optimisees :</p>
+
+      <h3>Requete generale</h3>
+      <p style="margin-bottom:10pt;"><code class="query-box">"embedded" AND ("C++" OR "firmware") AND ("Switzerland" OR "Suisse")</code></p>
+
+      <h3>Par technologie</h3>
+      <ul class="query-list">
+        <li><code class="query-box">("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Geneva" OR "Lausanne")</code></li>
+        <li><code class="query-box">("ARM Cortex" OR "STM32" OR "NXP") AND "Switzerland"</code></li>
+        <li><code class="query-box">("embedded Linux" OR "Yocto" OR "Buildroot") AND "Switzerland"</code></li>
+      </ul>
+
+      <h3>Par secteur</h3>
+      <ul class="query-list">
+        <li><code class="query-box">"embedded" AND ("medical" OR "IEC 62304") AND "Switzerland"</code></li>
+        <li><code class="query-box">"embedded" AND ("aerospace" OR "DO-178") AND "Switzerland"</code></li>
+        <li><code class="query-box">"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND "Switzerland"</code></li>
+        <li><code class="query-box">"embedded" AND ("cybersecurity" OR "IoT security") AND "Switzerland"</code></li>
+        <li><code class="query-box">("firmware" OR "embedded") AND ("watchmaking" OR "precision" OR "horlogerie") AND "Suisse"</code></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- ============ PARTIE 4 — FILTRES ============ -->
+  <div class="section">
+    <h2>Partie 4 &mdash; Filtres essentiels a activer</h2>
+    <p style="font-size:9.5pt; color:#555; margin-bottom:8pt;">Apres chaque recherche, appliquer ces filtres :</p>
+
+    <table class="filters-table">
+      <thead>
+        <tr>
+          <th style="width:25%;">Filtre</th>
+          <th>Valeur(s) recommandee(s)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="filter-name">Lieu</td>
+          <td class="filter-values">&laquo; Suisse &raquo; ou &laquo; Switzerland &raquo;<br>Plus precis : Lausanne, Geneve, Vaud, Neuchatel, Fribourg<br><em>Rayon : 50 km (couvre toute la Romandie)</em></td>
+        </tr>
+        <tr>
+          <td class="filter-name">Date de publication</td>
+          <td class="filter-values">&laquo; Semaine derniere &raquo; (offres fraiches, moins de concurrence)<br><em>&laquo; Mois dernier &raquo; si peu de resultats</em></td>
+        </tr>
+        <tr>
+          <td class="filter-name">Niveau d'experience</td>
+          <td class="filter-values">&laquo; Confirme &raquo; (Mid-Senior level)<br><em>&laquo; Directeur &raquo; si postes lead/architecte</em></td>
+        </tr>
+        <tr>
+          <td class="filter-name">Type de poste</td>
+          <td class="filter-values">&laquo; Temps plein &raquo; (Full-time)</td>
+        </tr>
+        <tr>
+          <td class="filter-name">Mode de travail</td>
+          <td class="filter-values">&laquo; Sur site &raquo; ou &laquo; Hybride &raquo;<br><em>&laquo; A distance &raquo; si disponible</em></td>
+        </tr>
+        <tr>
+          <td class="filter-name">Entreprise <em>(optionnel)</em></td>
+          <td class="filter-values">Filtrer par entreprise cible : Medtronic, Kudelski, CSEM, Logitech, ABB, Ellisys, Bobst, Rolex, etc.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <!-- ============ PARTIE 5 — ALERTES ============ -->
+  <div class="section">
+    <h2>Partie 5 &mdash; Alertes a creer (5 prioritaires)</h2>
+    <p style="font-size:9.5pt; color:#555; margin-bottom:10pt;">Creer une alerte pour chacune de ces recherches (cliquer sur &laquo; Definir une alerte &raquo; apres chaque recherche) :</p>
+
+    <ol class="alert-list">
+      <li><span class="alert-label">embedded software engineer</span> &mdash; Lieu : Switzerland</li>
+      <li><span class="alert-label">firmware engineer</span> &mdash; Lieu : Switzerland</li>
+      <li><span class="alert-label">ingenieur logiciel embarque</span> &mdash; Lieu : Suisse romande</li>
+      <li><span class="alert-label">embedded C++ RTOS</span> &mdash; Lieu : Switzerland</li>
+      <li><span class="alert-label">embedded Linux engineer</span> &mdash; Lieu : Switzerland</li>
+    </ol>
+
+    <p class="alert-note">Frequence recommandee : quotidienne (pour reagir rapidement)</p>
+  </div>
+
+
+  <!-- ============ PARTIE 6 — NETWORKING ============ -->
+  <div class="section">
+    <h2>Partie 6 &mdash; Recherche de personnes (networking)</h2>
+    <p style="font-size:9.5pt; color:#555; margin-bottom:10pt;">Utiliser l'onglet &laquo; Personnes &raquo; pour trouver des contacts strategiques :</p>
+
+    <div class="people-group">
+      <h3>Ingenieurs / Pairs</h3>
+      <ul class="query-list">
+        <li><code class="query-box">embedded engineer Switzerland</code></li>
+        <li><code class="query-box">firmware developer Lausanne</code></li>
+        <li><code class="query-box">ingenieur embarque Suisse romande</code></li>
+      </ul>
+    </div>
+
+    <div class="people-group">
+      <h3>Recruteurs</h3>
+      <ul class="query-list">
+        <li><code class="query-box">recruiter embedded Switzerland</code></li>
+        <li><code class="query-box">talent acquisition engineer Switzerland</code></li>
+        <li><code class="query-box">recruteur ingenieur Suisse</code></li>
+      </ul>
+    </div>
+
+    <div class="people-group">
+      <h3>Managers / Decideurs</h3>
+      <ul class="query-list">
+        <li><code class="query-box">hiring manager firmware Lausanne</code></li>
+        <li><code class="query-box">VP engineering Switzerland</code></li>
+        <li><code class="query-box">head of embedded Geneva</code></li>
+        <li><code class="query-box">CTO embedded Lausanne</code></li>
+        <li><code class="query-box">engineering manager Switzerland</code></li>
+      </ul>
+    </div>
+
+    <p style="font-size:9pt; color:#555; font-style:italic;">Puis utiliser les messages LinkedIn (fichier 71_prompts_job_search_CH.txt, prompts 3-6) pour les contacter.</p>
+  </div>
+
+
+  <!-- ============ PARTIE 7 — GROUPES ============ -->
+  <div class="section">
+    <h2>Partie 7 &mdash; Groupes LinkedIn a rejoindre</h2>
+    <p style="font-size:9.5pt; color:#555; margin-bottom:10pt;">Rechercher et rejoindre ces groupes (onglet &laquo; Groupes &raquo;) :</p>
+
+    <ol class="groups-list">
+      <li>Embedded Systems Switzerland</li>
+      <li>Swiss Engineering</li>
+      <li>Suisse Romande Tech</li>
+      <li>Embedded Software Engineers</li>
+      <li>RTOS and Embedded Systems</li>
+      <li>Swiss IT Jobs</li>
+      <li>IoT Switzerland</li>
+      <li>Swiss Startups &amp; Tech</li>
+      <li>Automotive Embedded Systems</li>
+      <li>Medical Device Engineers</li>
+    </ol>
+  </div>
+
+
+  <!-- ============ PARTIE 8 — CONSEILS ============ -->
+  <div class="section">
+    <h2>Partie 8 &mdash; Conseils pratiques</h2>
+
+    <ul class="tips-list">
+      <li>
+        <span class="tip-title">Frequence :</span> verifier LinkedIn 2x par jour (matin + soir)
+      </li>
+      <li>
+        <span class="tip-title">Reagir vite :</span> postuler dans les 48h (les offres en Suisse ferment vite)
+      </li>
+      <li>
+        <span class="tip-title">Varier les langues :</span> chercher en anglais ET en francais
+      </li>
+      <li>
+        <span class="tip-title">Combiner :</span> job boards + candidatures spontanees + networking
+      </li>
+      <li>
+        <span class="tip-title">Personnaliser :</span> adapter chaque candidature (ne pas envoyer du generique)
+      </li>
+      <li>
+        <span class="tip-title">Activer &laquo; Open to Work &raquo; :</span> visible pour les recruteurs uniquement
+        <span class="tip-sub">Titres : Embedded Software Engineer, Firmware Engineer<br>Lieu : Switzerland, Lausanne, Geneva<br>Type : Full-time &mdash; Demarrage : Immediat</span>
+      </li>
+      <li>
+        <span class="tip-title">Suivre les entreprises :</span> suivre les pages des entreprises cibles pour voir leurs publications et offres en avant-premiere
+      </li>
+      <li>
+        <span class="tip-title">Publier du contenu :</span> partager des articles techniques embedded pour augmenter votre visibilite aupres des recruteurs suisses
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- ============ FOOTER ============ -->
+  <div class="doc-footer">
+    Abdelhak Bourdim &mdash; abdelhak.bourdim@gmail.com &mdash; Mars 2026
+  </div>
+
+</div>
+
+</body>
+</html>

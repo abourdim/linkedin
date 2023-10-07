@@ -1,0 +1,155 @@
+================================================================================
+        2-MINUTE PITCH — JOB INTERVIEW (FRENCH MARKET)
+        "Tell me about yourself"
+        Abdelhak Bourdim — Senior Embedded Software Engineer
+================================================================================
+
+TIMING: ~2 minutes (280 words) — dynamic but composed pace
+CONTEXT: interview for an embedded role in France (Paris / Ile-de-France)
+
+
+================================================================================
+SCRIPT (memorize the blocks, don't read)
+================================================================================
+
+Hello, I'm Abdelhak Bourdim, a senior embedded software engineer
+with over 20 years of experience.
+
+                        [PAUSE — 3 sec]
+
+My core expertise is developing low-level embedded software —
+firmware, drivers, communication stacks — in C/C++ on ARM Cortex,
+STM32, Microchip, and NXP architectures, from bare metal to RTOS
+like FreeRTOS and VxWorks, and Embedded Linux.
+
+                        [PAUSE — 2 sec]
+
+What sets my career apart is the range of critical industries
+I've worked in:
+
+In aerospace, at Safran and Thales, I developed low-level drivers
+and application layers compliant with DO-178.
+
+In medical devices, at GE Healthcare and Sorin, I integrated
+CANOpen stacks and developed BLE modules for a pacemaker,
+compliant with IEC 62304.
+
+In IoT cybersecurity, at Enedis, I led security audits and
+penetration tests on Linky smart meter concentrators.
+
+And most recently, in EV charging at E2-CAD, I work on ISO 15118
+integration, V2G protocols, and charging station commissioning.
+
+                        [PAUSE — 2 sec]
+
+Beyond the technical side, I founded Workshop-DIY, a non-profit
+that delivers robotics and electronics workshops for young people.
+It reflects my passion for sharing knowledge, innovation, and
+taking initiative.
+
+                        [PAUSE — 2 sec]
+
+What interests me about your company is [ADAPT based on company
+— see variants below]. My multi-sector experience allows me to
+integrate quickly and bring a cross-functional perspective.
+
+I'm based in the Paris / Ile-de-France area and immediately
+available.
+
+I'd be happy to go into more detail about any of my projects.
+
+
+================================================================================
+PITCH STRUCTURE (cheat sheet)
+================================================================================
+
+  1. WHO I AM                → Name + title + 20 yrs          [10 sec]
+  2. WHAT I DO               → C/C++, RTOS, Linux, MCU        [15 sec]
+  3. MY PROOF (4 sectors):                                     [60 sec]
+     • Aero    → Safran, Thales (DO-178)
+     • Medical → GE Healthcare, Sorin (IEC 62304)
+     • Cyber   → Enedis, Linky (pentesting)
+     • V2G     → E2-CAD (ISO 15118, OCPP)
+  4. WHAT SETS ME APART      → Workshop-DIY, initiative        [15 sec]
+  5. WHY THIS COMPANY        → Adapt to sector/company         [15 sec]
+  6. CLOSE                   → Available, IDF based            [5 sec]
+
+                                            TOTAL = 2 min
+
+
+================================================================================
+DELIVERY TIPS (FRENCH MARKET)
+================================================================================
+
+• Natural, dynamic pace — more fluid than Swiss style, but stay composed
+• Maintain eye contact (or look at camera in video calls)
+• Show enthusiasm — this is valued in France
+• PAUSES remain important — they structure the narrative
+• Do NOT recite — know the blocks, not word for word
+• If the interviewer reacts, adapt and engage in dialogue
+• Have 3 anecdotes ready to go deeper on each sector
+• Do NOT mention salary expectations in the pitch
+• Emphasize teamwork and company culture
+
+
+================================================================================
+COMPANY-SPECIFIC VARIANTS (FRENCH MARKET)
+================================================================================
+
+1. AEROSPACE (Safran, Thales, Dassault):
+  → Emphasize Safran + Thales + Zodiac = 6+ years in aero
+  → Mention DO-178, MISRA C, Lauterbach TRACE32
+  → "I spent 6 years in aerospace, from Zodiac to Safran,
+     working on SSPC systems and defense radios. DO-178
+     rigor and traceability are at the core of how I work."
+  → HOOK: "What attracts me to [Safran/Thales/Dassault] is
+     the technical excellence and high-stakes safety projects."
+
+2. AUTOMOTIVE (Valeo, Stellantis):
+  → Emphasize Valeo experience, AUTOSAR, CAN/LIN buses
+  → Mention ISO 26262 (ASIL) compliance approach
+  → "My experience at Valeo allowed me to master AUTOSAR
+     environments and real-time constraints in automotive.
+     I understand V-cycle development and the sector's
+     quality requirements."
+  → HOOK: "What interests me at [Valeo/Stellantis] is the
+     transformation toward intelligent, connected vehicles."
+
+3. MEDICAL (bioMerieux, Air Liquide Medical):
+  → Emphasize GE Healthcare + Sorin + PK Vitality
+  → Mention IEC 62304, Doxygen, in vitro testing, FDA
+  → "Medical development demands rigorous documentation
+     and traceability — something I've practiced for years,
+     at GE Healthcare and at Sorin for pacemaker systems."
+  → HOOK: "What motivates me in medical devices is the
+     direct impact on patients' lives and the quality bar."
+
+4. IoT / ENERGY (Schneider Electric, EDF):
+  → Emphasize Enedis/Linky, pentesting, code audits, IoT security
+  → Mention Kali Linux, Nmap, Scapy, SDR, HackRF
+  → "Auditing Linky concentrators gave me a comprehensive
+     view of embedded system vulnerabilities and cybersecurity
+     challenges in the energy sector."
+  → HOOK: "What interests me at [Schneider/EDF] is the
+     convergence of embedded systems, IoT, and energy transition."
+
+5. EV / CLEANTECH (TotalEnergies, Renault):
+  → Emphasize E2-CAD, ISO 15118, OCPP, V2G
+  → Mention PLC, HomePlug Green PHY, test bench
+  → "Electric mobility is a passion of mine, and my current
+     V2G and ISO 15118 experience is directly applicable
+     to your charging projects."
+  → HOOK: "What motivates me at [TotalEnergies/Renault] is
+     contributing to the energy transition through technical
+     innovation."
+
+6. CONSULTING / ESN (Capgemini Engineering, Alten):
+  → Emphasize multi-sector versatility (7 sectors in 20 years)
+  → Mention fast adaptation to new environments
+  → "Over 20 years, I've worked in 7 different sectors —
+     aerospace, medical, automotive, IoT, cybersecurity,
+     EV charging, and industry — which allows me to adapt
+     very quickly to any new client context."
+  → HOOK: "What attracts me to an ESN like [Capgemini
+     Engineering/Alten] is the diversity of missions and
+     the opportunity to keep broadening my expertise."

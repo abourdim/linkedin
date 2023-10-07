@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Prompts for Job Search Gulf/GCC — Embedded Software Engineer</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; color: #222; line-height: 1.5; background: #fff; max-width: 210mm; margin: 0 auto; padding: 20px 28px; }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 4pt; letter-spacing: 0.5pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 20pt; }
+  h2 { font-size: 12pt; color: #fff; background: #0a66c2; padding: 5pt 12pt; border-radius: 4pt; margin: 20pt 0 8pt 0; letter-spacing: 0.8pt; }
+  h3 { font-size: 10pt; color: #0a66c2; margin: 12pt 0 4pt 0; padding-bottom: 2pt; border-bottom: 1pt solid #d0e3f3; }
+  .copy-box { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 8pt; font-size: 9.5pt; line-height: 1.55; color: #222; }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box { background: #f4f7fa; border: 1pt solid #d0e3f3; border-left: 3pt solid #0a66c2; border-radius: 0 4pt 4pt 0; padding: 12pt 16pt; margin-bottom: 10pt; font-size: 9.5pt; line-height: 1.6; color: #222; white-space: pre-wrap; word-wrap: break-word; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .instruction { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 6pt; }
+  .version-label { display: inline-block; background: #0a66c2; color: #fff; font-size: 8pt; font-weight: 700; padding: 2pt 8pt; border-radius: 3pt; margin-bottom: 6pt; letter-spacing: 0.3pt; }
+  .toc { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 12pt 18pt; margin-bottom: 16pt; }
+  .toc-title { font-size: 10pt; font-weight: 700; color: #0a66c2; margin-bottom: 6pt; }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li { font-size: 9pt; padding: 2pt 0; color: #333; }
+  .toc li a { color: #0a66c2; text-decoration: none; }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num { display: inline-block; width: 24pt; font-weight: 700; color: #0a66c2; }
+  .lang-tag { display: inline-block; font-size: 7.5pt; font-weight: 700; padding: 1pt 6pt; border-radius: 3pt; margin-left: 4pt; vertical-align: middle; }
+  .lang-fr { background: #e8f0fe; color: #0a66c2; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 8pt 14pt; margin-bottom: 6pt; font-size: 9.5pt; }
+  .guide-step strong { color: #0a66c2; }
+  .order-num { display: inline-block; background: #0a66c2; color: #fff; font-size: 9pt; font-weight: 700; width: 20pt; height: 20pt; line-height: 20pt; text-align: center; border-radius: 50%; margin-right: 6pt; }
+  .warning-box { background: #fef9e7; border: 1pt solid #f9e79f; border-left: 3pt solid #f39c12; border-radius: 0 4pt 4pt 0; padding: 10pt 14pt; margin: 10pt 0; font-size: 9pt; color: #7d6608; }
+  .warning-box strong { color: #b7950b; }
+  .note { font-size: 8pt; color: #888; font-style: italic; margin-top: 4pt; }
+  @media print { body { padding: 0; } h2 { break-after: avoid; } .prompt-box { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>AI Prompts for Job Search &mdash; Gulf / GCC</h1>
+<div class="subtitle">Embedded Software Engineer &bull; To use with ChatGPT, Claude, or any AI assistant &bull; Abdelhak Bourdim</div>
+
+<div class="toc">
+  <div class="toc-title">Table of Contents</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> Cover letter <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> Cover letter <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> LinkedIn connections <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> LinkedIn recruiter message <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> Technical interview prep (visa, relocation) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> Job posting analysis (AED/SAR) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> Salary negotiation (housing, flights, insurance) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> Visa &amp; relocation guide (UAE/Saudi/Qatar) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> CV adaptation for the Gulf <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> Networking message <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> Company research before interview <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&rarr;</span> How to use</a></li>
+  </ul>
+</div>
+
+<h2 id="prompt1">Prompt 1 &mdash; Cover Letter FR for Gulf Company <span class="lang-tag lang-fr">FR</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the Gulf/GCC job market.
+Write a cover letter in French for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Abu Dhabi, Dubai, Riyadh, Doha, Jeddah]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / Bayt.com / GulfTalent / Naukrigulf / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, immediately available, open to relocation to the Gulf region
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Format adapted to Gulf market: professional, respectful, highlighting international experience
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Show motivation for working in the Gulf region
+5. Mention availability for relocation and work visa
+6. Emphasize trilingualism FR/EN/AR (major asset in the Gulf)
+7. Reference experience with international industrial groups
+8. Tone: professional, confident, results-oriented</div>
+
+<h2 id="prompt2">Prompt 2 &mdash; Cover Letter EN for Gulf Company <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the Gulf/GCC job market.
+Write a cover letter in English for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Abu Dhabi, Dubai, Riyadh, Doha, Jeddah]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / Bayt.com / GulfTalent / Naukrigulf / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, immediately available, open to relocation to the Gulf region
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Format adapted to Gulf market: professional, confident, results-oriented
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Show genuine motivation for working in the Gulf region
+5. Mention availability for relocation and work visa sponsorship readiness
+6. Emphasize trilingualism FR/EN/AR (major asset in the Gulf)
+7. Reference experience with international industrial groups
+8. Tone: professional, confident, results-driven, no cliches
+
+If spontaneous application, show awareness of the company's role in Gulf economic diversification (Vision 2030, NEOM, etc.).</div>
+
+<h2 id="prompt3">Prompt 3 &mdash; LinkedIn Connection Requests <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<p class="instruction">Copy-paste directly (max 300 characters). Replace fields <span class="bracket">[IN BRACKETS]</span>.</p>
+
+<h3><span class="version-label">Version 1</span> Recruiter (FR)</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[PRENOM]</span>, je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded dans le Golfe. Serait-il possible d'echanger ? Cordialement, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Technical manager (FR)</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[PRENOM]</span>, ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez <span class="bracket">[ENTREPRISE]</span> m'interesse beaucoup. Trilingue FR/EN/AR. Au plaisir d'echanger. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Peer (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, senior embedded engineer here (20+ years, C/C++, RTOS, DO-178). Exploring embedded roles in the GCC region. Trilingual FR/EN/AR. Would love to connect. Best, Abdelhak</div>
+
+<h3><span class="version-label">Version 4</span> Recruiter (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, I'm a senior embedded software engineer (20+ years, C/C++, RTOS, Embedded Linux). Interested in opportunities in <span class="bracket">[UAE/Saudi Arabia/Qatar]</span>. Happy to connect. Abdelhak</div>
+
+<h3><span class="version-label">Version 5</span> Hiring manager (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, senior embedded engineer with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at <span class="bracket">[COMPANY]</span> in <span class="bracket">[CITY]</span> caught my interest. Native Arabic speaker. Happy to connect. Abdelhak</div>
+
+<h2 id="prompt4">Prompt 4 &mdash; LinkedIn Recruiter Message <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">Write a short LinkedIn message (100-150 words) to contact a recruiter in the Gulf.
+
+<strong>Recipient:</strong> <span class="bracket">[RECRUITER NAME &mdash; e.g., Ahmed Al-Rashid, Sophie Martin]</span>
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., ADNOC, Aramco, EDGE Group, Hays Middle East, Michael Page Gulf]</span>
+<strong>Context:</strong> <span class="bracket">[internal recruiter / recruitment agency / technical manager]</span>
+
+My profile summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales &mdash; DO-178) and medical (GE Healthcare &mdash; IEC 62304)
+- French citizen, immediately available, open to relocation
+- Trilingual: French, English, native Arabic (major asset in the Gulf)
+- International experience with major industrial groups
+
+Guidelines:
+1. Professional and respectful tone, adapted to Gulf culture
+2. Show specific interest in the company and the region
+3. Be concise and direct
+4. Mention trilingualism and native Arabic as added value
+5. Suggest an exchange without being pushy</div>
+
+<h2 id="prompt5">Prompt 5 &mdash; Technical Interview Preparation &mdash; Gulf <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in technical interviews for embedded software engineer positions in the Gulf (GCC).
+Prepare me for an interview at <span class="bracket">[COMPANY]</span> for the position <span class="bracket">[JOB TITLE]</span>.
+
+My profile:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. <strong>10 technical questions</strong> probable for this type of position, with detailed answers based on my experience
+2. <strong>5 behavioral questions</strong> (STAR style) with example answers from my career
+3. <strong>5 questions I should ask</strong> the company (showing my interest and seniority)
+4. <strong>5 Gulf-specific questions</strong>:
+   - Work visa process and residence permit
+   - Relocation package (housing, flight tickets, insurance)
+   - Taxation (tax-free salary, benefits in kind)
+   - Contract duration and renewal
+   - Company culture and multicultural environment
+5. <strong>How to approach the relocation package topic</strong> professionally
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Adapt to the multicultural context of the Gulf
+- Mention specific tools and methodologies</div>
+
+<h2 id="prompt6">Prompt 6 &mdash; Analyze a Gulf Job Posting <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in embedded recruitment in the Gulf (GCC).
+Here is a job posting. Analyze it and help me prepare my application.
+
+<strong>Job posting:</strong>
+<span class="bracket">[PASTE THE FULL JOB POSTING TEXT HERE]</span>
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, immediately available
+
+Perform the following tasks:
+1. <strong>Position analysis</strong>: identify required skills, nice-to-haves, and desired profile
+2. <strong>Match score</strong>: rate my match with the position from 1 to 10, with justification
+3. <strong>Strengths</strong>: list my assets that best match this offer
+4. <strong>Gaps</strong>: identify potential gaps and how to present them positively
+5. <strong>Cover letter</strong>: write a letter tailored to this specific offer (300-400 words)
+6. <strong>CV keywords</strong>: list keywords to highlight (ATS optimization)
+7. <strong>Estimated salary</strong>: probable salary range in AED/SAR/QAR depending on country, including benefits (housing, transport, flight tickets)
+8. <strong>Gulf specifics</strong>: visa, relocation package, company culture, contract duration</div>
+
+<h2 id="prompt7">Prompt 7 &mdash; Salary Negotiation in the Gulf <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in salary negotiation for the Gulf/GCC market.
+
+<strong>Proposed position:</strong> <span class="bracket">[TITLE]</span>
+<strong>Company:</strong> <span class="bracket">[NAME]</span>
+<strong>Location:</strong> <span class="bracket">[CITY AND COUNTRY &mdash; e.g., Abu Dhabi UAE, Riyadh Saudi Arabia, Doha Qatar]</span>
+<strong>Contract type:</strong> <span class="bracket">[2-year renewable / permanent]</span>
+<strong>Salary offer:</strong> <span class="bracket">[AMOUNT &mdash; e.g., 25,000 AED/month or 30,000 SAR/month]</span>
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR (native Arabic)
+
+Help me to:
+1. <strong>Evaluate the offer</strong>: is it within the Gulf market range for this profile and country?
+2. <strong>Full package</strong> to negotiate:
+   - Housing allowance (typical amount per city)
+   - Annual flight tickets (round-trip home country, family included)
+   - Health insurance (employee + family, international coverage)
+   - Children's schooling allowance (international schools)
+   - Transport allowance / company car
+   - End-of-service gratuity
+   - Annual leave (standard number of days)
+   - Repatriation ticket at end of contract
+3. <strong>Negotiation points</strong>: what to negotiate beyond base salary
+4. <strong>Tax comparison</strong>: tax-free Gulf salary vs gross salary in France (net simulation)
+5. <strong>Negotiation script</strong>: write 3 key phrases for professional negotiation
+6. <strong>Mistakes to avoid</strong>: common pitfalls in Gulf negotiations
+7. <strong>Legal aspects</strong>: local labor law, probation period, non-compete clause</div>
+
+<h2 id="prompt8">Prompt 8 &mdash; Visa &amp; Relocation Guide (UAE/Saudi Arabia/Qatar) <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in international mobility and relocation to the Gulf.
+
+<strong>My situation:</strong>
+- French citizenship
+- Senior embedded software engineer
+- Family situation: <span class="bracket">[single / married / children]</span>
+- Target country: <span class="bracket">[UAE / Saudi Arabia / Qatar / all three]</span>
+
+Compare in detail for the three countries:
+1. <strong>Work visa</strong>: visa types, application process, duration, conditions, sponsor
+2. <strong>Cost of living</strong>: housing, transport, food, schooling (by city: Dubai, Abu Dhabi, Riyadh, Jeddah, Doha)
+3. <strong>Taxation</strong>: income tax (0% UAE and Qatar, flat tax Saudi Arabia for expats?), VAT, social contributions
+4. <strong>Healthcare</strong>: mandatory coverage, quality of care, costs
+5. <strong>Housing</strong>: recommended neighborhoods for expats, rental ranges
+6. <strong>Transport</strong>: driving license, car, public transport
+7. <strong>Culture and lifestyle</strong>: social rules, freedom, leisure, French/Francophone community
+8. <strong>Safety</strong>: global ranking, environment for families
+9. <strong>Schooling</strong>: French/international schools, costs, availability
+10. <strong>Pros and cons</strong>: comparative table of the 3 countries
+11. <strong>Recommendation</strong>: which country suits me best given my situation?
+
+Provide concrete and up-to-date figures.</div>
+
+<h2 id="prompt9">Prompt 9 &mdash; Adapt CV for the Gulf <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in CV optimization for the Gulf/GCC market.
+
+<strong>Target company:</strong> <span class="bracket">[NAME &mdash; e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]</span>
+<strong>Target position:</strong> <span class="bracket">[TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Job description:</strong> <span class="bracket">[PASTE THE JOB POSTING OR KEY POINTS]</span>
+
+My full profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), V2G (E2-CAD)
+- Founder Workshop-DIY (robotics for youth)
+- Languages: FR native, EN professional, AR native
+
+Perform:
+1. <strong>Gulf CV specifics</strong>: professional photo (required?), date of birth, nationality, marital status, passport number
+2. <strong>Priority keywords</strong>: terms to place at the top of the CV to pass ATS filters
+3. <strong>Experience reordering</strong>: in what order to present my assignments for maximum impact
+4. <strong>Professional summary</strong>: write a 3-4 line summary adapted to the Gulf market
+5. <strong>Skills to highlight</strong>: ranked by relevance for this position
+6. <strong>Languages section</strong>: how to present trilingualism (native Arabic = major asset)
+7. <strong>References</strong>: should references be included? Expected format?
+8. <strong>Cultural adaptation</strong>: Gulf-specific presentation of the CV (length, format, personal information)</div>
+
+<h2 id="prompt10">Prompt 10 &mdash; Professional Networking Message &mdash; Gulf <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">Write a short message to introduce myself at a tech event / conference in the Gulf.
+
+<strong>Event:</strong> <span class="bracket">[NAME &mdash; e.g., GITEX Dubai, LEAP Riyadh, Qatar IT Conference, ADIPEC Abu Dhabi]</span>
+<strong>Format:</strong> <span class="bracket">[LinkedIn message / email / 30-second oral presentation]</span>
+<strong>Context:</strong> <span class="bracket">[networking / job search / knowledge sharing]</span>
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- Specialties: C/C++, RTOS, Embedded Linux, embedded cybersecurity
+- Critical standards: DO-178 (aerospace), IEC 62304 (medical), ISO 15118 (V2G)
+- Founder Workshop-DIY (robotics for youth)
+- Trilingual FR/EN/AR (native Arabic)
+
+Guidelines:
+1. Short and impactful (50-100 words for message, 30 seconds for oral)
+2. Mention what I can bring to the Gulf tech ecosystem
+3. Professional and respectful tone, adapted to Gulf culture
+4. Show interest in major projects (Vision 2030, NEOM, Smart Cities)
+5. Propose a concrete exchange (coffee, video call, collaboration)
+6. Adapt according to the requested format (3 versions: LinkedIn, email, elevator pitch)</div>
+
+<h2 id="prompt11">Prompt 11 &mdash; Research Gulf Company Before Interview <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in strategic intelligence and interview preparation in the Gulf (GCC).
+
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East, Honeywell ME]</span>
+<strong>Target position:</strong> <span class="bracket">[TITLE]</span>
+<strong>Interview date:</strong> <span class="bracket">[DATE]</span>
+
+Research and summarize:
+1. <strong>General information</strong>: headquarters, size, revenue, number of employees, founding year, ownership (state/private)
+2. <strong>Core business</strong>: sector, products/services, key clients, market positioning, role in national economy
+3. <strong>Technical team</strong>: technologies used, tech stack, recent projects, patents, technology partnerships
+4. <strong>Company culture</strong>: stated values, atmosphere (Glassdoor), diversity, nationalization policy (Emiratization/Saudization)
+5. <strong>Recent news</strong>: acquisitions, partnerships, funding rounds, new projects (last 6 months)
+6. <strong>Link to national visions</strong>: Vision 2030, economic diversification, digital transformation
+7. <strong>Competitors</strong>: main direct competitors in the region and internationally
+8. <strong>Relevant questions</strong>: 5 smart questions to ask during the interview based on this research
+9. <strong>Talking points</strong>: elements from my profile that resonate with the company's projects
+10. <strong>Red flags</strong>: potential warning signs (turnover, negative reviews, working conditions)
+11. <strong>Typical package</strong>: salary range and typical benefits for this company
+
+Goal: arrive at the interview with in-depth knowledge of the company and regional context.</div>
+
+<h2 id="guide">How to Use These Prompts</h2>
+
+<div class="guide-step"><span class="order-num">1</span> Copy the prompt you need</div>
+<div class="guide-step"><span class="order-num">2</span> Replace fields <span class="bracket">[IN BRACKETS]</span> with your information</div>
+<div class="guide-step"><span class="order-num">3</span> Paste into ChatGPT, Claude, or any other AI</div>
+<div class="guide-step"><span class="order-num">4</span> Adapt the response to your personal style</div>
+
+<div class="warning-box">
+  <strong>IMPORTANT:</strong> Never send AI-generated text without reviewing and personalizing it. AI is a support tool, not a replacement for your judgment.
+</div>
+
+<h3>Recommended Order for an Application</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>Prompt 6</strong> &mdash; Analyze the offer &rarr; understand what the company is looking for<br><br>
+  <span class="order-num">2</span> <strong>Prompt 11</strong> &mdash; Research the company &rarr; understand the context<br><br>
+  <span class="order-num">3</span> <strong>Prompt 9</strong> &mdash; Adapt the CV &rarr; customize for the Gulf<br><br>
+  <span class="order-num">4</span> <strong>Prompt 1 or 2</strong> &mdash; Cover letter &rarr; apply<br><br>
+  <span class="order-num">5</span> <strong>Prompt 4</strong> &mdash; LinkedIn message &rarr; networking in parallel<br><br>
+  <span class="order-num">6</span> <strong>Prompt 5</strong> &mdash; Interview preparation &rarr; before each interview<br><br>
+  <span class="order-num">7</span> <strong>Prompt 7</strong> &mdash; Salary negotiation &rarr; when you receive an offer<br><br>
+  <span class="order-num">8</span> <strong>Prompt 8</strong> &mdash; Relocation guide &rarr; to prepare your move
+</div>
+
+</body>
+</html>

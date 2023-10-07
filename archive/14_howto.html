@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Generator — How To Guide</title>
+<style>
+  :root {
+    --bg: #0f1923;
+    --card: #162232;
+    --card-hover: #1a2a3e;
+    --blue: #2e6db4;
+    --light-blue: #4a8fd4;
+    --cyan: #5ecfcf;
+    --green: #4caf50;
+    --orange: #ff9800;
+    --red: #e74c3c;
+    --text: #c8d6e5;
+    --text-dim: #7a8fa0;
+    --text-bright: #e8f0f8;
+    --border: #1e3450;
+    --code-bg: #0a1220;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 0;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #0d1626 0%, #1a2a4a 50%, #0d1626 100%);
+    border-bottom: 2px solid var(--blue);
+    padding: 50px 40px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .hero h1 span {
+    color: var(--light-blue);
+  }
+
+  .hero .subtitle {
+    font-size: 1.1em;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+
+  .hero .badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(46, 109, 180, 0.15);
+    border: 1px solid var(--blue);
+    color: var(--light-blue);
+    font-size: 0.8em;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+
+  /* ── Container ── */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px 24px 60px;
+  }
+
+  /* ── TOC ── */
+  .toc {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 30px;
+    margin-bottom: 40px;
+  }
+
+  .toc h2 {
+    font-size: 1em;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+  }
+
+  .toc ol {
+    list-style: none;
+    counter-reset: toc;
+    padding-left: 0;
+  }
+
+  .toc ol li {
+    counter-increment: toc;
+    margin-bottom: 6px;
+  }
+
+  .toc ol li a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.2s;
+  }
+
+  .toc ol li a:hover {
+    color: var(--cyan);
+  }
+
+  .toc ol li a::before {
+    content: counter(toc) ". ";
+    color: var(--light-blue);
+    font-weight: 700;
+    margin-right: 4px;
+  }
+
+  /* ── Sections ── */
+  .section {
+    margin-bottom: 40px;
+  }
+
+  h2.section-title {
+    font-size: 1.5em;
+    color: var(--text-bright);
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+
+  h2.section-title .num {
+    color: var(--light-blue);
+    margin-right: 8px;
+  }
+
+  h3 {
+    font-size: 1.1em;
+    color: var(--cyan);
+    margin: 18px 0 10px;
+  }
+
+  p {
+    margin-bottom: 12px;
+    color: var(--text);
+  }
+
+  /* ── Code blocks ── */
+  .code-block {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0;
+    margin: 12px 0 18px;
+    overflow: hidden;
+  }
+
+  .code-header {
+    background: #1a2a3e;
+    padding: 6px 14px;
+    font-size: 0.75em;
+    color: var(--text-dim);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .code-header .lang-tag {
+    background: rgba(46, 109, 180, 0.2);
+    color: var(--light-blue);
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+
+  pre {
+    padding: 14px 18px;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+    font-size: 0.88em;
+    line-height: 1.5;
+    color: var(--text);
+  }
+
+  code {
+    font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+  }
+
+  .inline-code {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    padding: 2px 7px;
+    border-radius: 3px;
+    font-size: 0.88em;
+    color: var(--cyan);
+  }
+
+  /* Syntax colors */
+  .cmd { color: #5ecfcf; }
+  .flag { color: #ff9800; }
+  .str { color: #8bc34a; }
+  .comment { color: #546e7a; font-style: italic; }
+  .output { color: #7a8fa0; }
+  .file { color: #ffcc02; }
+  .prompt { color: #4a8fd4; user-select: none; }
+
+  /* ── File tree ── */
+  .file-tree {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 18px 24px;
+    margin: 12px 0 18px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85em;
+    line-height: 1.8;
+  }
+
+  .file-tree .dir { color: var(--light-blue); font-weight: 700; }
+  .file-tree .html-file { color: #ff9800; }
+  .file-tree .py-file { color: #5ecfcf; }
+  .file-tree .pdf-file { color: #e74c3c; }
+  .file-tree .docx-file { color: #4caf50; }
+  .file-tree .guide-file { color: #ffcc02; }
+  .file-tree .dim { color: var(--text-dim); }
+
+  /* ── Tables ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 18px;
+    font-size: 0.9em;
+  }
+
+  thead th {
+    background: #1a2a3e;
+    color: var(--light-blue);
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--blue);
+  }
+
+  tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  tbody tr:hover {
+    background: rgba(46, 109, 180, 0.05);
+  }
+
+  /* ── Cards ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 16px 0;
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    transition: border-color 0.2s;
+  }
+
+  .card:hover {
+    border-color: var(--blue);
+  }
+
+  .card h4 {
+    color: var(--light-blue);
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+
+  .card p {
+    font-size: 0.88em;
+    color: var(--text-dim);
+    margin-bottom: 0;
+  }
+
+  .card .tag {
+    display: inline-block;
+    background: rgba(46, 109, 180, 0.12);
+    color: var(--light-blue);
+    font-size: 0.75em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+
+  /* ── Alert boxes ── */
+  .alert {
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    font-size: 0.9em;
+    border-left: 4px solid;
+  }
+
+  .alert-info {
+    background: rgba(46, 109, 180, 0.08);
+    border-color: var(--blue);
+    color: var(--light-blue);
+  }
+
+  .alert-warning {
+    background: rgba(255, 152, 0, 0.08);
+    border-color: var(--orange);
+    color: var(--orange);
+  }
+
+  .alert-success {
+    background: rgba(76, 175, 80, 0.08);
+    border-color: var(--green);
+    color: var(--green);
+  }
+
+  .alert strong {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ── Lists ── */
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  li {
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8em;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 700px) {
+    .card-grid { grid-template-columns: 1fr; }
+    .hero { padding: 30px 20px; }
+    .hero h1 { font-size: 1.8em; }
+    .container { padding: 20px 16px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<div class="hero">
+  <h1>CV <span>Generator</span> — How To</h1>
+  <p class="subtitle">Abdelhak Bourdim — Ingénieur Logiciel Embarqué Senior</p>
+  <div class="badge-row">
+    <span class="badge">PDF</span>
+    <span class="badge">DOCX</span>
+    <span class="badge">HTML/CSS</span>
+    <span class="badge">WeasyPrint</span>
+    <span class="badge">python-docx</span>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════ TOC ══════════ -->
+<div class="toc">
+  <h2>Table des matières</h2>
+  <ol>
+    <li><a href="#overview">Vue d'ensemble</a></li>
+    <li><a href="#files">Arborescence des fichiers</a></li>
+    <li><a href="#prereqs">Prérequis & Installation</a></li>
+    <li><a href="#generate-pdf">Générer les PDF</a></li>
+    <li><a href="#generate-docx">Générer les DOCX</a></li>
+    <li><a href="#edit-content">Modifier le contenu</a></li>
+    <li><a href="#edit-style">Modifier le style CSS (PDF)</a></li>
+    <li><a href="#edit-docx">Modifier le style DOCX</a></li>
+    <li><a href="#versions">Différences Version A vs B</a></li>
+    <li><a href="#troubleshooting">Dépannage</a></li>
+  </ol>
+</div>
+
+<!-- ══════════ 1. OVERVIEW ══════════ -->
+<div class="section" id="overview">
+  <h2 class="section-title"><span class="num">1.</span> Vue d'ensemble</h2>
+  <p>Ce système génère 2 versions du CV en 2 formats (PDF et DOCX), soit <strong>4 fichiers</strong> au total :</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <h4>Version A — Sidebar discrète</h4>
+      <p>Workshop-DIY mentionné dans le profil + section dédiée dans la sidebar (page 2). Idéal pour missions ESN / Freelance embarqué classique.</p>
+      <span class="tag">ESN / Freelance</span>
+    </div>
+    <div class="card">
+      <h4>Version B — Expérience complète</h4>
+      <p>Workshop-DIY en première position des expériences avec bloc highlight. Idéal pour CDI client final, rôles lead/chef de projet.</p>
+      <span class="tag">CDI / Lead technique</span>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <h4>Format PDF</h4>
+      <p>Design moderne avec sidebar bleu marine, initiales, dots de langues, tags de normes. Généré depuis HTML/CSS via WeasyPrint.</p>
+      <span class="tag">HTML → PDF</span>
+    </div>
+    <div class="card">
+      <h4>Format DOCX</h4>
+      <p>Format Word classique, facilement éditable dans LibreOffice/Word. Généré via python-docx. Pas de sidebar (limitation du format).</p>
+      <span class="tag">python-docx</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ 2. FILES ══════════ -->
+<div class="section" id="files">
+  <h2 class="section-title"><span class="num">2.</span> Arborescence des fichiers</h2>
+
+  <div class="file-tree">
+    <span class="dir">02_cv/</span><br>
+    ├── <span class="html-file">cv_version_A.html</span> <span class="dim">← Source HTML Version A</span><br>
+    ├── <span class="html-file">cv_version_B.html</span> <span class="dim">← Source HTML Version B</span><br>
+    ├── <span class="py-file">generate_pdf.py</span> <span class="dim">← Script génération PDF (WeasyPrint)</span><br>
+    ├── <span class="py-file">generate_docx.py</span> <span class="dim">← Script génération DOCX (python-docx)</span><br>
+    ├── <span class="pdf-file">cv_abdelhak_bourdim_VERSION_A.pdf</span> <span class="dim">← PDF final A</span><br>
+    ├── <span class="pdf-file">cv_abdelhak_bourdim_VERSION_B.pdf</span> <span class="dim">← PDF final B</span><br>
+    ├── <span class="docx-file">cv_abdelhak_bourdim_VERSION_A.docx</span> <span class="dim">← DOCX final A</span><br>
+    ├── <span class="docx-file">cv_abdelhak_bourdim_VERSION_B.docx</span> <span class="dim">← DOCX final B</span><br>
+    └── <span class="guide-file">howto.html</span> <span class="dim">← Ce guide</span>
+  </div>
+</div>
+
+<!-- ══════════ 3. PREREQS ══════════ -->
+<div class="section" id="prereqs">
+  <h2 class="section-title"><span class="num">3.</span> Prérequis & Installation</h2>
+
+  <h3>Python 3</h3>
+  <div class="code-block">
+    <div class="code-header">Vérification <span class="lang-tag">Terminal</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">python3</span> <span class="flag">--version</span>
+<span class="output">Python 3.10.x</span></pre>
+  </div>
+
+  <h3>Installation des dépendances</h3>
+  <div class="code-block">
+    <div class="code-header">Installation complète <span class="lang-tag">pip</span></div>
+<pre><span class="comment"># Pour les PDF (HTML → PDF)</span>
+<span class="prompt">$ </span><span class="cmd">pip install</span> <span class="str">weasyprint</span>
+
+<span class="comment"># Pour les DOCX</span>
+<span class="prompt">$ </span><span class="cmd">pip install</span> <span class="str">python-docx</span>
+
+<span class="comment"># Tout d'un coup</span>
+<span class="prompt">$ </span><span class="cmd">pip install</span> <span class="str">weasyprint python-docx</span></pre>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Note WeasyPrint</strong>
+    WeasyPrint nécessite des bibliothèques système (Pango, Cairo). Sur Ubuntu/Debian :<br>
+    <span class="inline-code">sudo apt install libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev</span>
+  </div>
+</div>
+
+<!-- ══════════ 4. GENERATE PDF ══════════ -->
+<div class="section" id="generate-pdf">
+  <h2 class="section-title"><span class="num">4.</span> Générer les PDF</h2>
+
+  <p>Les PDF sont générés à partir des fichiers HTML avec le moteur de rendu WeasyPrint. Le design (sidebar, couleurs, typographie) est défini en CSS dans les fichiers HTML.</p>
+
+  <div class="code-block">
+    <div class="code-header">Commandes <span class="lang-tag">Terminal</span></div>
+<pre><span class="comment"># Se placer dans le dossier</span>
+<span class="prompt">$ </span><span class="cmd">cd</span> ~/Downloads/02_cv/
+
+<span class="comment"># Générer les 2 versions PDF</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_pdf.py</span>
+<span class="output">CV PDF Generator
+========================================
+  [OK] Version A (sidebar) -> cv_abdelhak_bourdim_VERSION_A.pdf (43.4 KB)
+  [OK] Version B (experience) -> cv_abdelhak_bourdim_VERSION_B.pdf (44.2 KB)
+Done!</span>
+
+<span class="comment"># Générer une seule version</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_pdf.py</span> <span class="flag">a</span>    <span class="comment"># Version A uniquement</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_pdf.py</span> <span class="flag">b</span>    <span class="comment"># Version B uniquement</span></pre>
+  </div>
+
+  <div class="alert alert-success">
+    <strong>Pipeline : HTML → CSS → WeasyPrint → PDF</strong>
+    Modifier le fichier .html → Relancer le script → Nouveau PDF
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>Source</th><th>Sortie</th><th>Pages</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="inline-code">cv_version_A.html</span></td><td><span class="inline-code">cv_abdelhak_bourdim_VERSION_A.pdf</span></td><td>2</td></tr>
+      <tr><td><span class="inline-code">cv_version_B.html</span></td><td><span class="inline-code">cv_abdelhak_bourdim_VERSION_B.pdf</span></td><td>2</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══════════ 5. GENERATE DOCX ══════════ -->
+<div class="section" id="generate-docx">
+  <h2 class="section-title"><span class="num">5.</span> Générer les DOCX</h2>
+
+  <p>Les DOCX sont générés programmatiquement via python-docx. Le contenu et la mise en forme sont définis directement dans le script Python.</p>
+
+  <div class="code-block">
+    <div class="code-header">Commandes <span class="lang-tag">Terminal</span></div>
+<pre><span class="comment"># Générer les 2 versions DOCX</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_docx.py</span>
+<span class="output">CV DOCX Generator
+========================================
+  [OK] Version A -> cv_abdelhak_bourdim_VERSION_A.docx (40.3 KB)
+  [OK] Version B -> cv_abdelhak_bourdim_VERSION_B.docx (40.6 KB)
+Done!</span>
+
+<span class="comment"># Générer une seule version</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_docx.py</span> <span class="flag">a</span>    <span class="comment"># Version A uniquement</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> <span class="file">generate_docx.py</span> <span class="flag">b</span>    <span class="comment"># Version B uniquement</span></pre>
+  </div>
+
+  <div class="alert alert-info">
+    <strong>Pipeline : Python (python-docx) → DOCX</strong>
+    Modifier le script .py → Relancer → Nouveau DOCX
+  </div>
+</div>
+
+<!-- ══════════ 6. EDIT CONTENT ══════════ -->
+<div class="section" id="edit-content">
+  <h2 class="section-title"><span class="num">6.</span> Modifier le contenu</h2>
+
+  <h3>Pour les PDF (modifier le HTML)</h3>
+  <p>Ouvrir <span class="inline-code">cv_version_A.html</span> ou <span class="inline-code">cv_version_B.html</span> dans un éditeur de texte.</p>
+
+  <div class="code-block">
+    <div class="code-header">Exemple : ajouter une nouvelle expérience <span class="lang-tag">HTML</span></div>
+<pre><span class="comment">&lt;!-- Copier un bloc exp-block existant et modifier --&gt;</span>
+&lt;<span class="cmd">div</span> class=<span class="str">"exp-block"</span>&gt;
+  &lt;<span class="cmd">div</span> class=<span class="str">"exp-header"</span>&gt;
+    &lt;<span class="cmd">span</span> class=<span class="str">"exp-company"</span>&gt;Nouvelle Entreprise &amp;mdash; Ville&lt;/<span class="cmd">span</span>&gt;
+    &lt;<span class="cmd">span</span> class=<span class="str">"exp-dates"</span>&gt;Jan. 2026 &amp;ndash; En cours&lt;/<span class="cmd">span</span>&gt;
+  &lt;/<span class="cmd">div</span>&gt;
+  &lt;<span class="cmd">div</span> class=<span class="str">"exp-project"</span>&gt;Nom du projet&lt;/<span class="cmd">div</span>&gt;
+  &lt;<span class="cmd">div</span> class=<span class="str">"exp-intervention"</span>&gt;Description courte&lt;/<span class="cmd">div</span>&gt;
+  &lt;<span class="cmd">ul</span> class=<span class="str">"exp-bullets"</span>&gt;
+    &lt;<span class="cmd">li</span>&gt;Première réalisation&lt;/<span class="cmd">li</span>&gt;
+    &lt;<span class="cmd">li</span>&gt;Deuxième réalisation&lt;/<span class="cmd">li</span>&gt;
+  &lt;/<span class="cmd">ul</span>&gt;
+  &lt;<span class="cmd">div</span> class=<span class="str">"exp-env"</span>&gt;&lt;<span class="cmd">strong</span>&gt;Env :&lt;/<span class="cmd">strong</span>&gt; C, Python, etc.&lt;/<span class="cmd">div</span>&gt;
+&lt;/<span class="cmd">div</span>&gt;</pre>
+  </div>
+
+  <h3>Pour les DOCX (modifier le Python)</h3>
+  <p>Ouvrir <span class="inline-code">generate_docx.py</span> et modifier les fonctions de contenu.</p>
+
+  <div class="code-block">
+    <div class="code-header">Exemple : ajouter une expérience dans le DOCX <span class="lang-tag">Python</span></div>
+<pre><span class="comment"># Dans la fonction add_common_experiences() ou generate_version_b()</span>
+<span class="cmd">add_company_header</span>(doc, <span class="str">"Nouvelle Entreprise"</span>, <span class="str">"Ville"</span>, <span class="str">"Jan. 2026 – En cours"</span>)
+<span class="cmd">add_project_line</span>(doc, <span class="str">"Nom du projet"</span>, <span class="str">"Description courte"</span>)
+<span class="cmd">add_bullet</span>(doc, <span class="str">"Première réalisation"</span>)
+<span class="cmd">add_bullet</span>(doc, <span class="str">"Deuxième réalisation"</span>)
+<span class="cmd">add_env_line</span>(doc, <span class="str">"C, Python, etc."</span>)</pre>
+  </div>
+
+  <h3>Modifier les informations de contact</h3>
+
+  <div class="code-block">
+    <div class="code-header">Dans le HTML (PDF) <span class="lang-tag">HTML</span></div>
+<pre><span class="comment">&lt;!-- Chercher la section class="sidebar-section" avec Contact --&gt;</span>
+&lt;<span class="cmd">span</span>&gt;nouveau.email@example.com&lt;/<span class="cmd">span</span>&gt;
+&lt;<span class="cmd">span</span>&gt;+33 X XX XX XX XX&lt;/<span class="cmd">span</span>&gt;</pre>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">Dans le Python (DOCX) <span class="lang-tag">Python</span></div>
+<pre><span class="comment"># Chercher dans la fonction add_header()</span>
+run = p.add_run(<span class="str">"nouveau.email@example.com  |  +33 X XX XX XX XX  |  Ville"</span>)</pre>
+  </div>
+
+  <h3>Ajouter une compétence technique</h3>
+
+  <div class="code-block">
+    <div class="code-header">Dans le HTML (sidebar) <span class="lang-tag">HTML</span></div>
+<pre><span class="comment">&lt;!-- Trouver le skill-category correspondant --&gt;</span>
+&lt;<span class="cmd">div</span> class=<span class="str">"skill-value"</span>&gt;C, C++, Python, Bash, <span class="str">Rust</span>, Assembleur&lt;/<span class="cmd">div</span>&gt;</pre>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">Dans le Python (table) <span class="lang-tag">Python</span></div>
+<pre><span class="comment"># Chercher skills_data dans add_skills_table()</span>
+(<span class="str">"Langages"</span>, <span class="str">"C, C++, Python, Bash, Rust, Assembleur, Perl, Awk"</span>),</pre>
+  </div>
+</div>
+
+<!-- ══════════ 7. EDIT STYLE ══════════ -->
+<div class="section" id="edit-style">
+  <h2 class="section-title"><span class="num">7.</span> Modifier le style CSS (PDF)</h2>
+
+  <p>Tout le design du PDF est dans le bloc <span class="inline-code">&lt;style&gt;</span> en haut des fichiers HTML.</p>
+
+  <h3>Changer la couleur principale</h3>
+  <div class="code-block">
+    <div class="code-header">Remplacer le bleu par du vert par exemple <span class="lang-tag">CSS</span></div>
+<pre><span class="comment">/* Chercher/remplacer dans le &lt;style&gt; */</span>
+<span class="comment">/* Bleu actuel: */</span>   <span class="str">#1a2a4a</span>  →  <span class="str">#1a4a2a</span>  <span class="comment">/* sidebar background */</span>
+<span class="comment">/* Bleu accent: */</span>  <span class="str">#2e6db4</span>  →  <span class="str">#2eb46d</span>  <span class="comment">/* accents, bordures */</span>
+<span class="comment">/* Bleu clair: */</span>   <span class="str">#4a8fd4</span>  →  <span class="str">#4ad48f</span>  <span class="comment">/* titres sidebar */</span></pre>
+  </div>
+
+  <h3>Changer la police</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">CSS</span></div>
+<pre><span class="cmd">body</span> {
+  <span class="flag">font-family</span>: <span class="str">'Roboto'</span>, <span class="str">'Helvetica Neue'</span>, Arial, sans-serif;
+}</pre>
+  </div>
+
+  <h3>Ajuster les marges de page</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">CSS</span></div>
+<pre><span class="cmd">@page</span> {
+  <span class="flag">size</span>: A4;
+  <span class="flag">margin</span>: 0;  <span class="comment">/* 0 car le layout est en pleine page */</span>
+}
+
+<span class="comment">/* Ajuster le padding du contenu principal */</span>
+.<span class="cmd">main</span> {
+  <span class="flag">padding</span>: 14pt 16pt 10pt 18pt; <span class="comment">/* top right bottom left */</span>
+}</pre>
+  </div>
+
+  <h3>Ajuster la taille de la sidebar</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">CSS</span></div>
+<pre>.<span class="cmd">sidebar</span> {
+  <span class="flag">width</span>: 68mm;  <span class="comment">/* augmenter pour plus de place, diminuer pour plus de contenu principal */</span>
+}</pre>
+  </div>
+
+  <div class="alert alert-warning">
+    <strong>Attention au nombre de pages</strong>
+    Après modification du CSS, toujours vérifier que le CV tient sur 2 pages. Ajuster les <span class="inline-code">margin-bottom</span>, <span class="inline-code">padding</span> et <span class="inline-code">font-size</span> si nécessaire.
+  </div>
+</div>
+
+<!-- ══════════ 8. EDIT DOCX ══════════ -->
+<div class="section" id="edit-docx">
+  <h2 class="section-title"><span class="num">8.</span> Modifier le style DOCX</h2>
+
+  <p>Le style DOCX est défini par les constantes et paramètres dans <span class="inline-code">generate_docx.py</span>.</p>
+
+  <div class="code-block">
+    <div class="code-header">Couleurs (en haut du script) <span class="lang-tag">Python</span></div>
+<pre><span class="cmd">DARK_BLUE</span>   = RGBColor(<span class="str">0x1A</span>, <span class="str">0x3C</span>, <span class="str">0x6E</span>)  <span class="comment"># Titres de section</span>
+<span class="cmd">MEDIUM_BLUE</span> = RGBColor(<span class="str">0x2B</span>, <span class="str">0x57</span>, <span class="str">0x97</span>)  <span class="comment"># Noms d'entreprise</span>
+<span class="cmd">BLACK</span>       = RGBColor(<span class="str">0x2D</span>, <span class="str">0x2D</span>, <span class="str">0x2D</span>)  <span class="comment"># Texte courant</span>
+<span class="cmd">GRAY</span>        = RGBColor(<span class="str">0x55</span>, <span class="str">0x55</span>, <span class="str">0x55</span>)  <span class="comment"># Dates, sous-titres</span></pre>
+  </div>
+
+  <div class="code-block">
+    <div class="code-header">Marges et police (dans setup_doc) <span class="lang-tag">Python</span></div>
+<pre>section.top_margin = Cm(<span class="str">1.5</span>)
+section.left_margin = Cm(<span class="str">1.8</span>)
+style.font.name = <span class="str">'Calibri'</span>
+style.font.size = Pt(<span class="str">9.5</span>)</pre>
+  </div>
+</div>
+
+<!-- ══════════ 9. VERSIONS ══════════ -->
+<div class="section" id="versions">
+  <h2 class="section-title"><span class="num">9.</span> Différences Version A vs B</h2>
+
+  <table>
+    <thead>
+      <tr><th>Aspect</th><th>Version A</th><th>Version B</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Workshop-DIY</td><td>Mention dans le profil + encadré sidebar (page 2)</td><td>1ère expérience avec bloc highlight bleu</td></tr>
+      <tr><td>Cible</td><td>ESN / Freelance embarqué</td><td>CDI client final / Lead technique</td></tr>
+      <tr><td>Pages PDF</td><td>2</td><td>2</td></tr>
+      <tr><td>Sidebar page 2</td><td>Secteurs + Points forts + Asso + Formation</td><td>Secteurs + Points forts + Formation</td></tr>
+      <tr><td>Points forts</td><td>6 items (technique pur)</td><td>7 items (+ conception produit, pédagogie)</td></tr>
+      <tr><td>Compétences MCU</td><td>ESP32, Arduino ajoutés</td><td>ESP32, Arduino + Arduino IDE</td></tr>
+      <tr><td>Gestion</td><td>Git, Synergy, Jira...</td><td>Git, GitHub, Synergy, Jira...</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══════════ 10. TROUBLESHOOTING ══════════ -->
+<div class="section" id="troubleshooting">
+  <h2 class="section-title"><span class="num">10.</span> Dépannage</h2>
+
+  <h3>WeasyPrint ne s'installe pas</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">Terminal</span></div>
+<pre><span class="comment"># Installer les dépendances système (Ubuntu/Debian)</span>
+<span class="prompt">$ </span><span class="cmd">sudo apt install</span> libpango-1.0-0 libpangocairo-1.0-0 libgdk-pixbuf2.0-0 libffi-dev shared-mime-info
+
+<span class="comment"># Puis réinstaller</span>
+<span class="prompt">$ </span><span class="cmd">pip install</span> <span class="flag">--force-reinstall</span> weasyprint</pre>
+  </div>
+
+  <h3>Le PDF fait 3 pages au lieu de 2</h3>
+  <p>Réduire les espaces dans le CSS :</p>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">CSS</span></div>
+<pre><span class="comment">/* Réduire l'espace entre les blocs d'expérience */</span>
+.<span class="cmd">exp-block</span> { <span class="flag">margin-bottom</span>: <span class="str">6pt</span>; }  <span class="comment">/* au lieu de 8pt */</span>
+
+<span class="comment">/* Réduire la taille des bullets */</span>
+.<span class="cmd">exp-bullets</span> li { <span class="flag">font-size</span>: <span class="str">7.5pt</span>; }  <span class="comment">/* au lieu de 7.8pt */</span>
+
+<span class="comment">/* Réduire le padding de la sidebar */</span>
+.<span class="cmd">sidebar-section</span> { <span class="flag">padding</span>: <span class="str">8pt 14pt 5pt 14pt</span>; }</pre>
+  </div>
+
+  <h3>Erreur "No module named 'docx'"</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">Terminal</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">pip install</span> python-docx   <span class="comment"># ⚠️ pas "docx" mais "python-docx"</span></pre>
+  </div>
+
+  <h3>Les polices sont différentes sur un autre PC</h3>
+  <p>WeasyPrint utilise les polices système. Si Segoe UI n'est pas installée, il fallback sur Helvetica Neue puis Arial. Pour forcer une police :</p>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">Terminal</span></div>
+<pre><span class="comment"># Installer les polices Microsoft (optionnel)</span>
+<span class="prompt">$ </span><span class="cmd">sudo apt install</span> fonts-liberation ttf-mscorefonts-installer</pre>
+  </div>
+
+  <h3>Regénérer tout en une commande</h3>
+  <div class="code-block">
+    <div class="code-header"><span class="lang-tag">Terminal</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">cd</span> ~/Downloads/02_cv/ && <span class="cmd">python3</span> generate_pdf.py && <span class="cmd">python3</span> generate_docx.py</pre>
+  </div>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<div class="footer">
+  CV Generator &mdash; Abdelhak Bourdim &mdash; Dernière mise à jour : Février 2026
+</div>
+
+</div>
+</body>
+</html>

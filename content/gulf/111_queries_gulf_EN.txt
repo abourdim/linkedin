@@ -1,0 +1,223 @@
+================================================================================
+     LINKEDIN SEARCH QUERIES — JOB SEARCH IN THE GULF / GCC
+     Senior Embedded Software Engineer — Abdelhak Bourdim
+     Date: March 2026
+================================================================================
+
+
+================================================================================
+PART 1 — PEOPLE SEARCH (NETWORKING)
+================================================================================
+
+Use the "People" tab to find strategic contacts:
+
+ENGINEERS / PEERS
+------------------
+- embedded engineer UAE
+- firmware developer Abu Dhabi
+- embedded software engineer Saudi Arabia
+- RTOS engineer Dubai
+- embedded Linux developer GCC
+
+RECRUITERS
+-----------
+- recruiter embedded UAE
+- talent acquisition engineer Middle East
+- recruiter firmware Saudi Arabia
+- technical recruiter Gulf
+- hiring embedded engineer Dubai
+
+MANAGERS / DECISION MAKERS
+----------------------------
+- hiring manager firmware Abu Dhabi
+- VP engineering UAE
+- head of embedded Riyadh
+- CTO embedded Dubai
+- engineering manager Saudi Arabia
+- director embedded systems NEOM
+
+
+================================================================================
+PART 2 — MAIN JOB SEARCHES
+================================================================================
+
+IN ENGLISH (primary language for Gulf market)
+----------------------------------------------
+1. embedded software engineer
+2. firmware engineer
+3. embedded C C++ engineer
+4. RTOS engineer
+5. embedded Linux developer
+6. senior firmware developer
+7. embedded systems engineer
+8. embedded software developer UAE
+9. firmware engineer Saudi Arabia
+
+IN FRENCH (Francophone companies in the Gulf)
+----------------------------------------------
+1. ingenieur logiciel embarque
+2. developpeur embarque
+3. ingenieur firmware
+4. ingenieur systemes embarques
+
+
+================================================================================
+PART 3 — TARGET COMPANY SEARCHES
+================================================================================
+
+Search for these companies under the "Companies" tab:
+
+ENERGY / OIL & GAS
+- ADNOC (Abu Dhabi National Oil Company)
+- Saudi Aramco
+- QatarEnergy
+- ENOC (Emirates National Oil Company)
+
+DEFENSE / AEROSPACE
+- EDGE Group (Abu Dhabi)
+- Thales Middle East
+- MBDA UAE
+- Leonardo Middle East
+
+MEGA PROJECTS / SMART CITIES
+- NEOM (Saudi Arabia)
+- Masdar (Abu Dhabi)
+- KAEC (King Abdullah Economic City)
+
+TECHNOLOGY / INDUSTRIAL
+- Honeywell Middle East
+- Schneider Electric Middle East
+- Siemens Middle East
+- ABB Middle East
+- Bosch Middle East
+
+CONSULTING / RECRUITMENT
+- Hays Middle East
+- Michael Page Gulf
+- Robert Half UAE
+- Brunel Energy Middle East
+
+
+================================================================================
+PART 4 — JOB BOARDS
+================================================================================
+
+In addition to LinkedIn, use these platforms:
+
+1. Bayt.com — largest job site in the Middle East
+   Searches: embedded engineer, firmware engineer, C++ developer
+
+2. GulfTalent — specialized in executives and engineers in the Gulf
+   Searches: embedded software, firmware, RTOS
+
+3. Naukrigulf — popular in UAE and Saudi Arabia
+   Searches: embedded engineer, C/C++ developer
+
+4. Indeed Gulf (ae.indeed.com / sa.indeed.com)
+   Searches: embedded software engineer, firmware
+
+5. Glassdoor Middle East
+   Searches: embedded engineer UAE, firmware Saudi
+
+6. Dubizzle Jobs (UAE)
+   Searches: embedded developer, firmware engineer Dubai
+
+
+================================================================================
+PART 5 — TARGETED GOOGLE SEARCHES
+================================================================================
+
+Google searches to find postings outside LinkedIn:
+
+1. "embedded software engineer" site:bayt.com
+2. "firmware engineer" UAE OR "Saudi Arabia" site:gulftalent.com
+3. "embedded" "C++" "RTOS" Abu Dhabi OR Dubai OR Riyadh
+4. ADNOC embedded engineer careers
+5. Aramco firmware engineer jobs
+6. EDGE Group Abu Dhabi embedded careers
+7. NEOM embedded software engineer
+8. "embedded engineer" "Middle East" site:indeed.com
+9. Thales "Middle East" embedded careers
+
+
+================================================================================
+PART 6 — GITHUB / TECH COMMUNITY
+================================================================================
+
+Tech communities and meetups to join:
+
+1. GITEX Global (Dubai) — largest tech exhibition in the Middle East
+2. LEAP Conference (Riyadh) — Saudi Arabia tech conference
+3. Dubai Embedded Systems Meetup
+4. Saudi IoT Community
+5. Abu Dhabi Tech Network
+6. Qatar Technology Meetup
+7. Gulf Embedded Engineers (LinkedIn group)
+8. Middle East Makers Community
+
+
+================================================================================
+PART 7 — SPECIALIZED GULF RECRUITERS
+================================================================================
+
+Recruitment agencies to contact:
+
+1. Hays Middle East — engineering and tech recruitment
+2. Michael Page Gulf — executives and specialists
+3. Robert Half UAE — tech and finance
+4. Brunel Energy — oil, gas, energy
+5. Airswift — energy and infrastructure
+6. JAC Recruitment Middle East — tech and engineering
+7. Charterhouse Middle East — executive recruitment
+8. Nadia Recruitment — UAE, specialist for 30+ years
+
+
+================================================================================
+PART 8 — ADVANCED BOOLEAN SEARCH
+================================================================================
+
+LinkedIn accepts AND, OR operators and quotes "..." in the search bar.
+Here are the optimized queries:
+
+GENERAL QUERY
+--------------
+"embedded" AND ("C++" OR "firmware") AND ("UAE" OR "Saudi Arabia" OR "Qatar")
+
+BY TECHNOLOGY
+--------------
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Dubai" OR "Abu Dhabi" OR "Riyadh")
+("ARM Cortex" OR "STM32" OR "NXP") AND ("UAE" OR "Saudi Arabia")
+("embedded Linux" OR "Yocto" OR "Buildroot") AND ("Middle East" OR "Gulf")
+
+BY SECTOR
+----------
+"embedded" AND ("oil" OR "gas" OR "energy") AND ("UAE" OR "Saudi Arabia")
+"embedded" AND ("aerospace" OR "defense" OR "DO-178") AND ("Middle East")
+"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND ("Gulf" OR "UAE")
+"embedded" AND ("cybersecurity" OR "IoT security") AND ("Middle East")
+"embedded" AND ("smart city" OR "NEOM" OR "IoT") AND ("Saudi Arabia" OR "UAE")
+
+BY COMPANY
+-----------
+"embedded" AND ("ADNOC" OR "Aramco" OR "QatarEnergy")
+"embedded" AND ("EDGE Group" OR "Thales" OR "MBDA") AND ("Middle East")
+"firmware" AND ("Honeywell" OR "Schneider" OR "Siemens") AND ("Middle East")
+"embedded" AND "NEOM"
+
+
+================================================================================
+PRACTICAL TIPS
+================================================================================
+
+1. FREQUENCY: check LinkedIn and Bayt.com 2x daily
+2. ACT FAST: apply within 48 hours
+3. LANGUAGE: search primarily in English (Gulf business language)
+4. COMBINE: job boards + spontaneous applications + networking + recruiters
+5. CUSTOMIZE: tailor each application
+6. ACTIVATE "Open to Work": visible to recruiters only
+   - Titles: Embedded Software Engineer, Firmware Engineer
+   - Location: United Arab Emirates, Saudi Arabia, Qatar
+   - Type: Full-time
+   - Start: Immediate
+7. FOLLOW COMPANIES: follow ADNOC, Aramco, EDGE, NEOM, Thales ME
+8. PUBLISH CONTENT: share technical articles in English for regional visibility

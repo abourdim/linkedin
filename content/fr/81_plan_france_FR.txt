@@ -1,0 +1,328 @@
+================================================================================
+     PLAN D'ACTION — RECHERCHE D'EMPLOI EN FRANCE
+     Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim
+     Date : Mars 2026
+================================================================================
+
+
+================================================================================
+PARTIE 1 — COMPRENDRE LE MARCHE FRANCAIS
+================================================================================
+
+SECTEUR EMBARQUE EN FRANCE
+-----------------------------------
+- Le marche embarque francais est tres actif avec des milliers de postes ouverts
+- Toulouse = hub aeronautique et spatial mondial (Airbus, Thales, Safran)
+- Grenoble = hub semiconducteurs et microelectronique (STMicroelectronics, Schneider)
+- Paris / Ile-de-France = le plus grand bassin d'emploi embarque en France
+- Autres poles : Bordeaux (defense, aero), Nantes, Lyon, Sophia Antipolis
+- Secteurs porteurs : aeronautique, defense, automobile, medical, IoT, energie, telecom
+- Votre profil 20+ ans avec aeronautique + medical + cybersecurite est tres recherche
+
+SALAIRE ATTENDU
+-----------------------------------
+En Ile-de-France (IDF) :
+- Junior (1-5 ans) : 35 000 - 45 000 EUR/an
+- Confirme (5-10 ans) : 50 000 - 65 000 EUR/an
+- Senior (10-20 ans, votre profil) : 60 000 - 80 000 EUR/an
+- Expert / Lead technique : 75 000 - 90 000+ EUR/an
+
+En Province :
+- Junior : 30 000 - 40 000 EUR/an
+- Confirme : 42 000 - 55 000 EUR/an
+- Senior : 50 000 - 65 000 EUR/an
+
+Note : le 13eme mois n'est pas standard en France, il depend de la convention
+collective de l'entreprise. Les avantages courants incluent : mutuelle, tickets
+restaurant, prime de vacances, interessement/participation, RTT (reduction du
+temps de travail), teletravail partiel.
+
+
+================================================================================
+PARTIE 2 — STATUT ET DROIT AU TRAVAIL
+================================================================================
+
+VOTRE SITUATION : OPTIMALE
+-------------------------------
+- Nationalite francaise → aucun permis de travail necessaire
+- Deja base en Ile-de-France → pas de demenagement necessaire
+- Acces a tout le territoire national sans restriction
+- Couverture sociale complete : securite sociale, retraite, chomage
+- Eligible aux aides Pole Emploi si en recherche d'emploi
+
+TYPES DE CONTRATS COURANTS
+-------------------------------
+CDI (Contrat a Duree Indeterminee)
+  - Le contrat standard en France
+  - Periode d'essai : 4 mois (cadre), renouvelable une fois
+  - Protection sociale complete
+  - Preavis de depart : 3 mois (cadre)
+
+CDI de Chantier / CDI de Mission
+  - Courant dans les ESN (societes de conseil en ingenierie)
+  - CDI lie a une mission chez un client final
+  - Avantage : stabilite du CDI + diversite des missions
+
+CDD / Mission Freelance
+  - Moins courant pour les profils seniors
+  - Peut etre un bon moyen d'entrer chez un client final
+  - Portage salarial possible pour les missions freelance
+
+CONVENTION COLLECTIVE
+-------------------------------
+- La plupart des postes embarque relevent de la convention Syntec (ESN/conseil)
+  ou de la convention de la Metallurgie (industrie)
+- Convention Syntec : grille de salaires, RTT, prime vacances
+- Convention Metallurgie : nouvelle grille 2024, avantages specifiques par branche
+
+
+================================================================================
+PARTIE 3 — ENTREPRISES CIBLES EN FRANCE (35+)
+================================================================================
+
+AERONAUTIQUE & DEFENSE (votre experience Safran, Thales, Zodiac)
+-----------------------------------------------------------------
+- Safran — Paris, Massy, Villaroche — moteurs, systemes embarques avioniques
+- Thales — Velizy, Gennevilliers, Toulouse — avionique, defense, spatial
+- Dassault Aviation — Saint-Cloud, Merignac — avions de combat, Falcon
+- Naval Group — Paris, Toulon, Lorient — systemes navals, sous-marins
+- MBDA — Le Plessis-Robinson, Bourges — missiles, systemes de defense
+- Airbus Defence & Space — Toulouse, Elancourt — spatial, defense
+- Zodiac Aerospace / Safran Seats — Issoudun, Plaisir — equipements aeronautiques
+
+AUTOMOBILE & MOBILITE (votre experience E2-CAD, ISO 15118)
+----------------------------------------------------------
+- Valeo — Creteil, La Verriere — ADAS, eclairage, electrification
+- Stellantis (PSA+FCA) — Velizy, Poissy — vehicules, embedded ECU
+- Renault — Guyancourt, Lardy — vehicules electriques, ADAS
+- Forvia / Faurecia — Nanterre — equipementier, cockpit du futur
+- Continental — Toulouse, Rambouillet — ADAS, pneus connectes
+- Vitesco Technologies — Toulouse, Cergy — electrification, powertrain
+
+MEDICAL & SANTE (votre experience GE Healthcare, Sorin, PK Vitality)
+---------------------------------------------------------------------
+- bioMerieux — Marcy-l'Etoile (Lyon) — diagnostic in vitro, instruments
+- Air Liquide Medical Systems — Paris — equipements medicaux, respirateurs
+- Essilor / EssilorLuxottica — Charenton — dispositifs optiques, R&D embarquee
+
+IoT & TECH (votre experience Enedis, Linky)
+---------------------------------------------
+- Parrot — Paris — drones, systemes embarques, camera
+- Schneider Electric — Rueil-Malmaison, Grenoble — automatisme, IoT industriel
+- Legrand — Limoges — domotique, objets connectes
+- Devialet — Paris — audio haute fidelite, firmware embarque
+- STMicroelectronics — Grenoble, Crolles — semiconducteurs, microcontroleurs
+
+ENERGIE & UTILITIES
+--------------------
+- EDF — Paris, Saclay — systemes de controle, nucleaire
+- Enedis — Paris, Lyon — compteurs intelligents, IoT (votre experience Linky)
+- TotalEnergies — La Defense, Pau — systemes embarques industriels
+- Schneider Electric — Rueil-Malmaison — gestion d'energie, automatisme
+
+TELECOM
+--------
+- Orange — Paris, Chatillon — reseaux, IoT, objets connectes
+- Nokia (Paris-Saclay) — Nozay — infrastructure telecom, 5G
+
+ESN / SOCIETES DE CONSEIL EN INGENIERIE (acces rapide au marche)
+-----------------------------------------------------------------
+- Capgemini Engineering (ex-Altran) — Paris, Toulouse, toute la France
+- Alten — Boulogne-Billancourt — N1 du conseil en ingenierie en France
+- Akkodis (ex-Akka Technologies) — Paris, Lyon, Toulouse
+- Assystem — Paris, Lyon — nucleaire, aero, defense
+- Segula Technologies — Nanterre — automobile, aero, energie
+- Ausy (groupe Randstad) — Paris, Lyon — IT et ingenierie
+- SII — Paris, Toulouse, Rennes — systemes embarques, IT
+
+
+================================================================================
+PARTIE 4 — SITES D'EMPLOI ET JOB BOARDS
+================================================================================
+
+SITES GENERALISTES
+-------------------
+- linkedin.com — le plus important, activer "Open to work"
+- indeed.fr — grand volume d'offres, alertes email
+- apec.fr — specifique cadres, tres utilise en France
+- pole-emploi.fr (France Travail) — offres + aides + accompagnement
+- monster.fr — offres generalistes
+
+SITES SPECIALISES TECH / EMBARQUE
+-----------------------------------
+- welcometothejungle.com — startups et ETI tech, culture d'entreprise
+- frenchweb.fr — ecosysteme tech francais, offres
+- lesjeudis.com — specialise IT et ingenierie
+- chooseyourboss.com — offres tech avec details sur l'equipe
+
+SITES ESN / CONSEIL
+---------------------
+- capgemini-engineering.com/fr/careers
+- alten.fr/candidats
+- akkodis.com/fr/carrieres
+- assystem.com/fr/carrieres
+
+ALERTES RECOMMANDEES
+---------------------
+Configurer des alertes sur LinkedIn et Indeed avec ces mots-cles :
+- "ingenieur logiciel embarque"
+- "embedded software engineer"
+- "developpeur firmware"
+- "C/C++ embarque"
+- "RTOS embedded"
+- "ingenieur systemes embarques"
+Localisation : Paris, Ile-de-France, Toulouse, Grenoble
+
+
+================================================================================
+PARTIE 5 — PLAN D'ACTION SEMAINE PAR SEMAINE (8 SEMAINES)
+================================================================================
+
+SEMAINE 1 : PREPARATION DES DOCUMENTS
+----------------------------------------
+[ ] Mettre a jour le CV au format francais (2 pages, PDF, sobre)
+[ ] Preparer 2 versions : FR (standard) + EN (multinationales, ESN internationales)
+[ ] Mettre a jour le profil LinkedIn (utiliser les fichiers 64-67 deja crees)
+[ ] Activer "Open to work" sur LinkedIn, cibler France entiere + IDF
+[ ] Rediger un modele de lettre de motivation adaptable
+[ ] Preparer une liste de references professionnelles
+
+SEMAINE 2 : INSCRIPTION SUR LES JOB BOARDS
+----------------------------------------------
+[ ] linkedin.com — profil optimise + alertes "embedded" + "IDF"
+[ ] indeed.fr — creer un profil, deposer le CV, activer alertes
+[ ] apec.fr — creer un espace cadre, deposer le CV
+[ ] pole-emploi.fr — actualiser le dossier si inscrit
+[ ] welcometothejungle.com — creer un profil, suivre les entreprises cibles
+[ ] lesjeudis.com — deposer le CV, activer alertes
+[ ] monster.fr — deposer le CV
+
+SEMAINE 3 : CANDIDATURES DIRECTES (VAGUE 1)
+----------------------------------------------
+[ ] Identifier les 15 entreprises cibles prioritaires (voir Partie 3)
+[ ] Postuler directement sur les sites carrieres des grands groupes :
+    Safran, Thales, Dassault Aviation, Naval Group, Valeo, Stellantis
+[ ] Candidature spontanee par email aux RH + managers techniques
+[ ] Adapter chaque lettre de motivation a l'entreprise
+[ ] Cibler en priorite les groupes du secteur aero/defense (votre experience forte)
+
+SEMAINE 4 : ESN ET CANDIDATURES (VAGUE 2)
+--------------------------------------------
+[ ] Postuler aupres des ESN : Capgemini Engineering, Alten, Akkodis, Assystem, SII
+[ ] Contacter les recruteurs ESN directement sur LinkedIn
+[ ] Postuler pour les offres IoT/energie : Schneider, EDF, Enedis, STMicroelectronics
+[ ] Elargir aux entreprises medical : bioMerieux, Air Liquide Medical
+[ ] Relancer les candidatures de la semaine 3 si pas de reponse
+
+SEMAINE 5 : NETWORKING INTENSIF
+----------------------------------
+[ ] Connecter sur LinkedIn avec des ingenieurs embarques en France
+[ ] Rejoindre des groupes LinkedIn : "Embedded France", "Systemes Embarques",
+    "Ingenieurs Aeronautique France"
+[ ] Contacter les recruteurs specialises :
+    Hays, Michael Page, Robert Half, Spring, Expectra
+[ ] Participer a des meetups tech en IDF (meetup.com)
+[ ] Visiter des salons : Embedded World (Nuremberg), Salon du Bourget (si saison)
+
+SEMAINE 6 : ENTRETIENS (DEBUT)
+---------------------------------
+[ ] Preparer les entretiens techniques (C/C++, RTOS, protocols, architecture)
+[ ] Preparer les questions sur le poste, l'equipe, les projets
+[ ] Reviser les normes : DO-178, IEC 62304, MISRA C, ISO 15118
+[ ] Preparer des exemples concrets de realisations (methode STAR)
+[ ] S'entrainer aux entretiens en anglais (pour les multinationales)
+
+SEMAINE 7 : ENTRETIENS ET NEGOCIATION
+----------------------------------------
+[ ] Passer les entretiens techniques et RH
+[ ] Connaitre les salaires du marche (ne pas sous-estimer sa valeur)
+[ ] Negocier : salaire, teletravail (2-3j/semaine courant), RTT,
+    formation, mutuelle, tickets restaurant, prime
+[ ] Verifier la convention collective applicable
+[ ] Demander les details : equipe, stack technique, projets en cours
+
+SEMAINE 8 : FINALISATION
+---------------------------
+[ ] Comparer les offres recues
+[ ] Negocier les conditions finales
+[ ] Signer le contrat (CDI de preference)
+[ ] Organiser la transition (preavis si en poste, demarches Pole Emploi si non)
+[ ] Preparer l'integration : outils, documentation, onboarding
+
+
+================================================================================
+PARTIE 6 — SITES ET RESSOURCES UTILES
+================================================================================
+
+JOB BOARDS
+-----------
+- linkedin.com — reseau professionnel N1 en France
+- indeed.fr — grand volume d'offres
+- apec.fr — specifique cadres
+- welcometothejungle.com — startups et ETI tech
+- lesjeudis.com — IT et ingenierie
+- pole-emploi.fr — offres + accompagnement
+
+SALAIRES
+---------
+- glassdoor.fr — fourchettes par entreprise et poste
+- talent.com/salary — estimations de salaire France
+- apec.fr — etudes de remuneration cadres
+- journaldunet.com/business/salaire — barometre salaires
+
+DROIT DU TRAVAIL
+------------------
+- service-public.fr — informations officielles droit du travail
+- legifrance.gouv.fr — textes de loi, conventions collectives
+- syntec.fr — convention collective Syntec (ESN/conseil)
+
+NETWORKING
+-----------
+- meetup.com — meetups tech Paris/IDF, Toulouse, Grenoble
+- linkedin.com — groupes "Embedded France", "Systemes Embarques"
+- frenchweb.fr — actualites ecosysteme tech francais
+- embedded-france.org — association professionnelle de l'embarque
+
+FORMATION CONTINUE
+--------------------
+- cpf.gouv.fr — Compte Personnel de Formation (droits acquis)
+- opco-atlas.fr — OPCO pour les ESN (financement formation)
+- mooc-pole-emploi.fr — formations en ligne gratuites
+
+
+================================================================================
+PARTIE 7 — CHECKLIST RECAPITULATIVE
+================================================================================
+
+DOCUMENTS A PREPARER
+---------------------
+[ ] CV format francais (FR) — 2 pages, PDF, sobre et professionnel
+[ ] CV format anglais (EN) — pour multinationales et ESN internationales
+[ ] Lettre de motivation modele (FR + EN)
+[ ] Profil LinkedIn a jour (deja fait : fichiers 64-67)
+[ ] Copies des diplomes et attestations
+[ ] Certificats de travail / attestations employeurs
+[ ] References professionnelles (3-4 contacts)
+[ ] Portfolio / liens vers projets (workshop-diy.org)
+
+POINTS FORTS A METTRE EN AVANT
+--------------------------------
+1. +20 ans d'experience en embarque critique (aero, medical, defense)
+2. Maitrise C/C++ bare metal + RTOS + Linux embarque
+3. Experience cybersecurite embarquee (pentest IoT, audit Linky/Enedis)
+4. Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118
+5. Trilinguisme francais / anglais / arabe
+6. Fondateur Workshop-DIY (engagement associatif)
+7. Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement
+8. Nationalite francaise, base en IDF — disponibilite immediate
+
+ERREURS A EVITER
+-----------------
+- Ne pas postuler avec un CV generique (adapter a chaque poste)
+- Ne pas negliger la lettre de motivation (encore importante en France)
+- Ne pas sous-estimer son salaire (vous valez 65-80K EUR en IDF)
+- Ne pas attendre une reponse : relancer apres 10-15 jours
+- Ne pas negliger les ESN (acces rapide aux grands groupes)
+- Ne pas oublier le reseau : beaucoup de postes ne sont jamais publies
+- Ne pas ignorer les offres en province (Toulouse, Grenoble = hubs majeurs)
+- Ne pas refuser le teletravail partiel (tres courant en France, 2-3j/semaine)

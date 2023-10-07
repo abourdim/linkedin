@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelhak Bourdim — Job Search Portfolio</title>
+  <meta name="description" content="Senior Embedded Software Engineer — 20+ years — Job search toolkit for Switzerland, France, Luxembourg & Gulf">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/spa.css">
+  <style>
+    /* Inline critical: prevent FOUC */
+    body { background: #f8f9fa; }
+    .pin-screen { background: #f8f9fa; }
+  </style>
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PIN SCREEN — 6-digit access code
+       ═══════════════════════════════════════════════════════ -->
+  <div class="pin-screen" id="pin-screen">
+    <div class="pin-lock-icon">&#128274;</div>
+    <div class="pin-title" data-i18n="pin.title">Accès Sécurisé</div>
+    <div class="pin-subtitle" data-i18n="pin.subtitle">Entrez votre code PIN à 6 chiffres</div>
+    <div class="pin-dots" id="pin-dots">
+      <div class="pin-dot"></div>
+      <div class="pin-dot"></div>
+      <div class="pin-dot"></div>
+      <div class="pin-dot"></div>
+      <div class="pin-dot"></div>
+      <div class="pin-dot"></div>
+    </div>
+    <div class="pin-keypad" id="pin-keypad">
+      <button class="pin-key" data-key="1">1</button>
+      <button class="pin-key" data-key="2">2</button>
+      <button class="pin-key" data-key="3">3</button>
+      <button class="pin-key" data-key="4">4</button>
+      <button class="pin-key" data-key="5">5</button>
+      <button class="pin-key" data-key="6">6</button>
+      <button class="pin-key" data-key="7">7</button>
+      <button class="pin-key" data-key="8">8</button>
+      <button class="pin-key" data-key="9">9</button>
+      <button class="pin-key fn" data-key="delete">&#9003;</button>
+      <button class="pin-key" data-key="0">0</button>
+      <button class="pin-key fn" data-key="enter">&#10003;</button>
+    </div>
+    <div class="pin-error" id="pin-error"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       APP SHELL (hidden until PIN validated)
+       ═══════════════════════════════════════════════════════ -->
+  <div class="app-shell" id="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+
+      <!-- Profile -->
+      <div class="sidebar-profile">
+        <div class="sidebar-avatar">AB</div>
+        <div>
+          <div class="sidebar-name">Abdelhak Bourdim</div>
+          <div class="sidebar-title" data-i18n="sidebar.title">Ingénieur Embarqué Senior</div>
+        </div>
+      </div>
+
+      <!-- Country Tabs -->
+      <div class="country-tabs" id="country-tabs">
+        <button class="country-tab active" data-country="ch" title="Suisse">
+          &#127464;&#127469;
+          <span class="country-label">Suisse</span>
+        </button>
+        <button class="country-tab" data-country="fr" title="France">
+          &#127467;&#127479;
+          <span class="country-label">France</span>
+        </button>
+        <button class="country-tab" data-country="lu" title="Luxembourg">
+          &#127473;&#127482;
+          <span class="country-label">Luxem.</span>
+        </button>
+        <button class="country-tab" data-country="gulf" title="Golfe / GCC">
+          &#127462;&#127466;
+          <span class="country-label">Golfe</span>
+        </button>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="sidebar-nav" id="sidebar-nav">
+        <!-- Built dynamically by app.js -->
+      </nav>
+
+      <!-- Footer: Themes + Languages -->
+      <div class="sidebar-footer">
+        <div class="theme-switcher" id="theme-switcher">
+          <div class="theme-dot" data-theme="light" title="Light"></div>
+          <div class="theme-dot" data-theme="dark" title="Dark"></div>
+          <div class="theme-dot" data-theme="blue" title="Professional"></div>
+          <div class="theme-dot" data-theme="contrast" title="High Contrast"></div>
+          <div class="theme-dot" data-theme="golden-age" title="Golden Age"></div>
+          <div class="theme-dot" data-theme="alhambra" title="Alhambra"></div>
+          <div class="theme-dot" data-theme="medina" title="Medina"></div>
+        </div>
+        <div class="lang-switcher" id="lang-switcher">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ar">AR</button>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- Sidebar Overlay (mobile) -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="main-content">
+
+      <!-- Header Bar -->
+      <header class="header-bar">
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="breadcrumb" id="breadcrumb">
+          <span class="breadcrumb-section" id="breadcrumb-section"></span>
+          <span class="breadcrumb-separator">›</span>
+          <span class="breadcrumb-item" id="breadcrumb-item"></span>
+        </div>
+        <div class="header-actions">
+          <div class="edit-toggle">
+            <button class="edit-toggle-btn" id="edit-btn" title="Edit mode">&#9998;</button>
+          </div>
+          <div class="download-bar" id="download-bar">
+            <!-- Dynamic download buttons -->
+          </div>
+          <button class="header-btn" id="cmd-trigger" title="Ctrl+K">
+            &#128269; <span>Ctrl+K</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Content Area -->
+      <div class="content-area" id="content-area">
+        <iframe class="content-frame" id="content-frame" title="Document viewer" sandbox="allow-same-origin"></iframe>
+        <div class="jobs-panel" id="jobs-panel">
+          <!-- Dynamic job listings -->
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       COMMAND PALETTE (Ctrl+K)
+       ═══════════════════════════════════════════════════════ -->
+  <div class="cmd-overlay" id="cmd-overlay">
+    <div class="cmd-palette">
+      <input class="cmd-input" id="cmd-input" type="text" placeholder="Search documents, actions..." autocomplete="off">
+      <div class="cmd-results" id="cmd-results">
+        <!-- Dynamic results -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/pin.js"></script>
+  <script src="js/themes.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/downloads.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/jobs.js"></script>
+</body>
+</html>

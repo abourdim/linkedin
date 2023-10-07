@@ -1,0 +1,244 @@
+================================================================================
+     استعلامات البحث في LinkedIn — البحث عن عمل في فرنسا
+     مهندس برمجيات مدمجة أول — عبد الحق بورديم
+     التاريخ : مارس 2026
+================================================================================
+
+
+================================================================================
+الجزء 1 — عمليات البحث الرئيسية (تبويب "الوظائف")
+================================================================================
+
+بالفرنسية (السوق الفرنسي)
+-------------------------------
+1. ingenieur logiciel embarque
+2. developpeur embarque
+3. ingenieur firmware
+4. ingenieur systemes embarques
+5. developpeur C C++ embarque
+6. ingenieur embarque senior
+
+بالإنجليزية (الشركات متعددة الجنسيات في فرنسا)
+---------------------------------------------------
+1. embedded software engineer
+2. firmware engineer
+3. embedded C C++ engineer
+4. RTOS engineer
+5. embedded Linux developer
+6. senior firmware developer
+7. embedded systems engineer
+
+
+================================================================================
+الجزء 2 — عمليات بحث مستهدفة حسب القطاع
+================================================================================
+
+الطيران / الدفاع (Safran, Thales, Dassault, Airbus, MBDA)
+------------------------------------------------------------
+- ingenieur embarque aeronautique DO-178
+- firmware engineer DO-178
+- embedded avionics engineer
+- ingenieur logiciel embarque defense
+- embedded aerospace engineer France
+
+السيارات / AUTOSAR (Valeo, Stellantis, Faurecia, Continental, Renault)
+------------------------------------------------------------------------
+- embedded automotive AUTOSAR
+- ingenieur embarque automobile
+- AUTOSAR developer France
+- embedded software engineer automotive
+- ingenieur logiciel embarque vehicule
+
+الطبي (Medtronic, bioMerieux, Essilor, Stryker)
+--------------------------------------------------
+- embedded medical IEC 62304
+- ingenieur embarque dispositifs medicaux
+- firmware engineer medical France
+- embedded medical device engineer
+
+إنترنت الأشياء / الأمن السيبراني (Sigfox, Actility, Legrand, Schneider)
+---------------------------------------------------------------------------
+- IoT security engineer
+- ingenieur securite embarquee
+- embedded security engineer
+- ingenieur IoT embarque
+- firmware engineer IoT France
+
+المركبات الكهربائية / V2G / الطاقة
+--------------------------------------
+- embedded engineer EV charging
+- ingenieur embarque recharge electrique
+- V2G engineer France
+- ISO 15118 engineer
+- firmware engineer electric vehicle
+
+شركات الخدمات الرقمية / الاستشارات (Altran/Capgemini Engineering, Alten, Akkodis, Assystem)
+----------------------------------------------------------------------------------------------
+- ingenieur embarque consultant
+- embedded consultant engineer France
+- ingenieur embarque ESN
+- consultant firmware France
+
+
+================================================================================
+الجزء 3 — البحث المنطقي المتقدم (Boolean)
+================================================================================
+
+يقبل LinkedIn عوامل التشغيل AND و OR وعلامات الاقتباس "..." في شريط البحث.
+إليك الاستعلامات المحسّنة :
+
+الاستعلام العام
+-----------------
+"embedded" AND ("C++" OR "firmware") AND ("France" OR "Paris" OR "Ile-de-France")
+
+حسب التقنية
+--------------
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Paris" OR "Toulouse" OR "Grenoble")
+("ARM Cortex" OR "STM32" OR "NXP") AND "France"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "France"
+
+حسب القطاع
+-------------
+"embedded" AND ("aerospace" OR "DO-178" OR "aeronautique") AND "France"
+"embedded" AND ("automotive" OR "AUTOSAR" OR "ISO 26262") AND "France"
+"embedded" AND ("medical" OR "IEC 62304") AND "France"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "France"
+"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND "France"
+
+حسب المدينة / المنطقة
+------------------------
+("ingenieur embarque" OR "embedded engineer") AND ("Ile-de-France" OR "Paris" OR "Saclay")
+("firmware" OR "embarque") AND ("Toulouse" OR "Occitanie")
+("embedded" OR "firmware") AND ("Grenoble" OR "Isere" OR "Auvergne-Rhone-Alpes")
+("embarque" OR "embedded") AND ("Lyon" OR "Rhone")
+
+
+================================================================================
+الجزء 4 — الفلاتر الأساسية للتفعيل
+================================================================================
+
+بعد كل بحث، قم بتطبيق هذه الفلاتر :
+
+1. الموقع
+   - "France" (فرنسا)
+   - أكثر تحديداً : "Ile-de-France"، "Toulouse"، "Grenoble"، "Lyon"
+   - أخرى : "Sophia Antipolis"، "Bordeaux"، "Nantes"، "Rennes"
+   - النطاق : 30 كم (المدن الكبرى) أو 50 كم (المناطق الصناعية)
+
+2. تاريخ النشر
+   - "الأسبوع الماضي" (عروض جديدة، منافسة أقل)
+   - "الشهر الماضي" إذا كانت النتائج قليلة
+
+3. مستوى الخبرة
+   - "متمرس" (Mid-Senior level)
+   - "مدير" (لوظائف القيادة / الهندسة المعمارية)
+
+4. نوع الوظيفة
+   - "دوام كامل" (Full-time)
+   - المعادل الفرنسي : CDI (عقد دائم)
+
+5. نمط العمل
+   - "في الموقع" أو "هجين"
+   - "عن بُعد" إذا كان متاحاً
+
+6. الشركة (اختياري)
+   - تصفية حسب الشركة المستهدفة : Safran, Thales, Dassault, Airbus, Valeo,
+     Stellantis, Schneider Electric, STMicroelectronics, Alten,
+     Altran/Capgemini Engineering, Akkodis, Assystem, Sopra Steria
+
+
+================================================================================
+الجزء 5 — التنبيهات المطلوب إنشاؤها (5 ذات أولوية)
+================================================================================
+
+أنشئ تنبيهاً لكل من هذه عمليات البحث :
+(انقر على "تعيين تنبيه" بعد كل بحث)
+
+التنبيه 1 : embedded software engineer — الموقع : France
+التنبيه 2 : ingenieur logiciel embarque — الموقع : Ile-de-France
+التنبيه 3 : firmware engineer — الموقع : France
+التنبيه 4 : ingenieur embarque aeronautique DO-178 — الموقع : Toulouse
+التنبيه 5 : embedded C++ RTOS — الموقع : France
+
+التكرار الموصى به : يومي (للاستجابة بسرعة)
+
+
+================================================================================
+الجزء 6 — البحث عن أشخاص (التشبيك)
+================================================================================
+
+استخدم تبويب "الأشخاص" للعثور على جهات اتصال استراتيجية :
+
+المهندسون / الزملاء
+---------------------
+- embedded engineer France
+- firmware developer Toulouse
+- ingenieur embarque Paris
+- ingenieur embarque Grenoble
+
+المجنّدون
+-----------
+- recruiter embedded France
+- talent acquisition engineer France
+- recruteur ingenieur embarque France
+- recruteur ESN embarque
+
+المديرون / صناع القرار
+-------------------------
+- hiring manager firmware Paris
+- VP engineering France
+- head of embedded Paris
+- CTO embedded Toulouse
+- engineering manager Grenoble
+- responsable embarque France
+
+
+================================================================================
+الجزء 7 — مجموعات LinkedIn للانضمام إليها
+================================================================================
+
+ابحث عن هذه المجموعات وانضم إليها (تبويب "المجموعات") :
+
+1. Embedded Systems France
+2. French Tech
+3. Embedded Software Engineers
+4. RTOS and Embedded Systems
+5. Ingenieur Embarque France
+6. IoT France
+7. French Aerospace & Defense
+8. Automotive Embedded Systems
+9. Emploi IT France
+10. Medical Device Engineers
+
+
+================================================================================
+الجزء 8 — نصائح عملية (خاصة بفرنسا)
+================================================================================
+
+1. التكرار : تحقق من LinkedIn مرتين يومياً (صباحاً + مساءً)
+2. التصرف بسرعة : قدّم طلبك خلال 48 ساعة (المنافسة عالية في فرنسا)
+3. استخدم اللغتين : ابحث بالفرنسية والإنجليزية
+4. اجمع بين المنصات :
+   - LinkedIn + APEC (للمهندسين/الإطارات) + France Travail (بول إمبلوا سابقاً)
+   - Welcome to the Jungle (الشركات الناشئة/التقنية)
+   - Indeed France + Monster France
+5. خصّص : كيّف كل ترشيح (خطاب التغطية مطلوب غالباً في فرنسا،
+   الاتفاقيات الجماعية Syntec/Metallurgie)
+6. فعّل "Open to Work" : مرئي للمجنّدين فقط
+   - المسميات : Embedded Software Engineer, Firmware Engineer,
+     Ingenieur Logiciel Embarque
+   - الموقع : France, Paris, Ile-de-France, Toulouse, Grenoble, Lyon
+   - النوع : CDI / دوام كامل
+   - البدء : فوري
+7. تابع الشركات : تابع صفحات الشركات المستهدفة
+   (Safran, Thales, Valeo, Stellantis, Schneider Electric, Alten, Akkodis)
+   لمشاهدة منشوراتهم وعروض العمل مبكراً
+8. انشر محتوى : شارك مقالات تقنية عن الأنظمة المدمجة
+   لزيادة ظهورك أمام المجنّدين الفرنسيين
+9. خاص بفرنسا :
+   - تحقق من الاتفاقيات الجماعية (Syntec لشركات الاستشارات، Metallurgie للصناعة)
+     لمعرفة سلالم الرواتب
+   - شركات الخدمات الرقمية (Alten, Akkodis, Assystem) توظف بكثافة في المدمج
+   - Toulouse = قطب الطيران، Grenoble = قطب أشباه الموصلات/IoT،
+     Paris/IDF = جميع الصناعات، Sophia Antipolis = اتصالات/IoT
+   - وضع "Cadre" (إطار) هو المعيار للمهندسين في فرنسا

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pitch 2 Minutes &mdash; Golfe / GCC &mdash; Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 2pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 16pt; }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 18pt 0 10pt 0; letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt; color: #0a66c2;
+    margin: 14pt 0 6pt 0; padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+
+  /* Script box */
+  .script-box {
+    background: #f8fbfe;
+    border: 1.5pt solid #d0e3f3;
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.75;
+    color: #222;
+  }
+  .script-box p { margin-bottom: 10pt; }
+  .script-box .pause {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    margin: 8pt 0;
+  }
+  .script-box .sector { color: #1a5276; font-weight: 600; }
+  .script-box .company { color: #0a66c2; font-weight: 600; }
+  .script-box .norm { color: #888; font-style: italic; }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 6pt;
+    flex-wrap: wrap;
+    margin: 8pt 0 12pt;
+  }
+  .time-block {
+    flex: 1;
+    min-width: 100pt;
+    background: #eaf2f8;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    text-align: center;
+    border-top: 3pt solid #0a66c2;
+  }
+  .time-block .time-label {
+    font-size: 8pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; letter-spacing: 0.5pt;
+  }
+  .time-block .time-sec {
+    font-size: 16pt; font-weight: 700; color: #1a5276;
+    margin: 2pt 0;
+  }
+  .time-block .time-desc {
+    font-size: 7.5pt; color: #555;
+  }
+
+  /* Tips */
+  .tip-list { list-style: none; padding: 0; }
+  .tip-list li {
+    padding: 5pt 0 5pt 20pt;
+    position: relative;
+    font-size: 9.5pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+  .tip-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  /* Variant boxes */
+  .variant {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 10pt 14pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .variant-title {
+    font-size: 9.5pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; margin-bottom: 4pt;
+  }
+  .variant-focus { font-size: 9pt; color: #333; margin-bottom: 3pt; }
+  .variant-quote {
+    font-size: 9pt; color: #555; font-style: italic;
+    border-left: 2pt solid #ddd;
+    padding-left: 8pt; margin-top: 4pt;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .variant { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pitch 2 Minutes &mdash; Golfe / GCC</h1>
+<div class="subtitle">&laquo; Parlez-moi de vous &raquo; &bull; Abdelhak Bourdim &bull; Ing&eacute;nieur Logiciel Embarqu&eacute; Senior &bull; Cible : &Eacute;AU, Arabie Saoudite, Qatar</div>
+
+<!-- TIMING -->
+<h2>Structure &amp; Timing</h2>
+<div class="timeline">
+  <div class="time-block">
+    <div class="time-label">Qui je suis</div>
+    <div class="time-sec">10s</div>
+    <div class="time-desc">Nom, titre, 20+ ans</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ce que je fais</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">C/C++, RTOS, Linux, MCU</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Mes preuves</div>
+    <div class="time-sec">60s</div>
+    <div class="time-desc">5 secteurs critiques</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ma diff&eacute;rence</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Workshop-DIY, trilinguisme</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Pourquoi le Golfe</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Vision, m&eacute;gaprojets, &eacute;nergie</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ouverture</div>
+    <div class="time-sec">5s</div>
+    <div class="time-desc">Relocalisation, disponible</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<h2>Script</h2>
+<div class="script-box">
+  <p>Bonjour, je suis <strong>Abdelhak Bourdim</strong>, ing&eacute;nieur logiciel embarqu&eacute; senior avec <strong>plus de 20 ans d'exp&eacute;rience</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Mon m&eacute;tier, c'est de d&eacute;velopper du logiciel embarqu&eacute; bas niveau &mdash; firmware, drivers, stacks de communication &mdash; en <strong>C/C++</strong> sur des architectures <strong>ARM Cortex, STM32, Microchip</strong> et <strong>NXP</strong>, aussi bien en bare metal qu'avec des RTOS comme <strong>FreeRTOS</strong> et <strong>VxWorks</strong>, ou sous <strong>Linux embarqu&eacute;</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Ce qui fait la particularit&eacute; de mon parcours, c'est la diversit&eacute; des <strong>secteurs critiques</strong> dans lesquels j'ai travaill&eacute; :</p>
+
+  <p>En <span class="sector">a&eacute;ronautique</span>, chez <span class="company">Safran</span>, <span class="company">Thales</span> et <span class="company">Zodiac</span>, j'ai d&eacute;velopp&eacute; des drivers bas niveau et des couches applicatives conformes aux normes <span class="norm">DO-178</span> et <span class="norm">MISRA C</span> &mdash; plus de 6 ans dans ce secteur.</p>
+
+  <p>Dans le <span class="sector">m&eacute;dical</span>, chez <span class="company">GE Healthcare</span> et <span class="company">Sorin</span>, j'ai int&eacute;gr&eacute; des stacks CANOpen et d&eacute;velopp&eacute; des modules BLE pour pacemaker, conformes &agrave; l'<span class="norm">IEC 62304</span>.</p>
+
+  <p>En <span class="sector">cybers&eacute;curit&eacute; IoT</span>, chez <span class="company">Enedis</span>, j'ai men&eacute; des audits de s&eacute;curit&eacute; et des tests d'intrusion sur les concentrateurs Linky.</p>
+
+  <p>En <span class="sector">recharge de v&eacute;hicules &eacute;lectriques</span> chez <span class="company">E2-CAD</span>, j'ai travaill&eacute; sur l'int&eacute;gration <span class="norm">ISO 15118</span>, le protocole V2G et la mise en service de bornes de recharge.</p>
+
+  <p>Et en <span class="sector">terminaux de paiement</span> chez <span class="company">Cartadis</span>, 8 ann&eacute;es m'ont forg&eacute; une base solide en d&eacute;veloppement embarqu&eacute; complet, du driver jusqu'au chiffrement DES/RC4.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Au-del&agrave; de la technique, j'ai fond&eacute; <strong>Workshop-DIY</strong>, une association qui propose des ateliers de robotique et d'&eacute;lectronique pour les jeunes. &Ccedil;a illustre ma passion pour la transmission et l'innovation.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Ce qui m'attire dans la r&eacute;gion du <strong>Golfe</strong>, c'est l'ampleur des m&eacute;gaprojets &mdash; <strong>NEOM, Vision 2030</strong>, les initiatives Smart City &mdash; et la volont&eacute; d'investir massivement dans les syst&egrave;mes embarqu&eacute;s critiques, l'&eacute;nergie et la d&eacute;fense. Mon profil <strong>trilingue fran&ccedil;ais-anglais-arabe</strong>, avec l'arabe comme <strong>langue maternelle</strong>, est un atout naturel dans cette r&eacute;gion. Mon exp&eacute;rience multisectorielle dans des environnements &agrave; forte exigence de s&eacute;curit&eacute; r&eacute;pond directement aux besoins des secteurs p&eacute;trolier, d&eacute;fense et smart city.</p>
+
+  <p>Je suis pr&ecirc;t &agrave; me <strong>relocaliser</strong> aux &Eacute;AU, en Arabie Saoudite ou au Qatar, et <strong>disponible imm&eacute;diatement</strong>.</p>
+
+  <p><strong>C'est avec plaisir que je vous en dis plus sur mes r&eacute;alisations.</strong></p>
+</div>
+
+<!-- CONSEILS -->
+<h2>Conseils de Delivery</h2>
+<ul class="tip-list">
+  <li>Parler &agrave; un <strong>rythme naturel</strong> &mdash; ni trop rapide ni trop lent</li>
+  <li>Regarder dans les yeux (ou la cam&eacute;ra en visio)</li>
+  <li>Ton <strong>confiant et direct</strong> &mdash; valoriser son parcours sans arrogance</li>
+  <li>Les <strong>PAUSES</strong> sont essentielles &mdash; elles montrent la ma&icirc;trise</li>
+  <li>Ne PAS r&eacute;citer &mdash; conna&icirc;tre les blocs, pas le texte mot &agrave; mot</li>
+  <li>Si l'interlocuteur r&eacute;agit, s'adapter et dialoguer</li>
+  <li>Avoir 3 anecdotes pr&ecirc;tes pour approfondir chaque secteur</li>
+  <li>Valoriser l'<strong>arabe natif</strong> comme avantage cl&eacute; dans la r&eacute;gion</li>
+  <li>Montrer une connaissance des projets locaux (<strong>Vision 2030, NEOM</strong>, etc.)</li>
+  <li>Exprimer une volont&eacute; sinc&egrave;re de s'installer dans le Golfe</li>
+</ul>
+
+<!-- VARIANTES -->
+<h2>Variantes selon l'entreprise (Golfe / GCC)</h2>
+
+<div class="variant">
+  <div class="variant-title">ADNOC / Saudi Aramco (P&eacute;trole &amp; Gaz)</div>
+  <div class="variant-focus">&rarr; Insister sur syst&egrave;mes safety-critical, RTOS, Linux embarqu&eacute;, protocoles industriels &bull; DO-178, MISRA C = rigueur applicable aux syst&egrave;mes SCADA et contr&ocirc;le-commande</div>
+  <div class="variant-quote">&laquo; Mon exp&eacute;rience de 6 ans en a&eacute;ronautique certifi&eacute;e DO-178 et ma ma&icirc;trise des syst&egrave;mes embarqu&eacute;s critiques s'appliquent directement aux syst&egrave;mes de contr&ocirc;le-commande et SCADA dans le secteur p&eacute;trolier. L'arabe comme langue maternelle facilite l'int&eacute;gration dans les &eacute;quipes locales. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">EDGE Group (D&eacute;fense)</div>
+  <div class="variant-focus">&rarr; Insister sur a&eacute;ronautique (Safran, Thales, Zodiac), DO-178, MISRA C, syst&egrave;mes critiques &bull; 6+ ans en d&eacute;fense/a&eacute;ro, RTOS, s&eacute;curit&eacute; embarqu&eacute;e</div>
+  <div class="variant-quote">&laquo; Avec plus de 6 ans chez Safran, Thales et Zodiac sur des syst&egrave;mes embarqu&eacute;s critiques conformes DO-178, et une expertise en cybers&eacute;curit&eacute; IoT, mon profil est directement applicable aux programmes de d&eacute;fense d'EDGE Group. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Thales ME / Honeywell ME (A&eacute;rospatiale)</div>
+  <div class="variant-focus">&rarr; Insister sur continuit&eacute; avec Thales FR, DO-178, avionique, RTOS, drivers bas niveau &bull; Exp&eacute;rience directe chez Thales et Safran</div>
+  <div class="variant-quote">&laquo; J'ai d&eacute;j&agrave; travaill&eacute; chez Thales en France sur des syst&egrave;mes avioniques certifi&eacute;s DO-178. Rejoindre Thales au Moyen-Orient serait la continuit&eacute; naturelle de ce parcours, avec l'avantage de ma ma&icirc;trise native de l'arabe. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">NEOM / Smart City</div>
+  <div class="variant-focus">&rarr; Insister sur IoT, cybers&eacute;curit&eacute;, Linux embarqu&eacute;, protocoles de communication &bull; Linky audit + V2G + stacks de communication</div>
+  <div class="variant-quote">&laquo; Mon exp&eacute;rience en cybers&eacute;curit&eacute; IoT (audit Linky), en protocoles V2G et en stacks de communication embarqu&eacute;es correspond parfaitement aux enjeux des infrastructures intelligentes de NEOM. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Schneider Electric / Siemens Energy (&Eacute;nergie)</div>
+  <div class="variant-focus">&rarr; Insister sur ISO 15118, V2G, bornes de recharge, IoT industriel, Linux embarqu&eacute; &bull; Transition &eacute;nerg&eacute;tique, smart grid, syst&egrave;mes de contr&ocirc;le</div>
+  <div class="variant-quote">&laquo; Mon travail sur l'int&eacute;gration ISO 15118 et les protocoles V2G chez E2-CAD, combin&eacute; &agrave; ma ma&icirc;trise des syst&egrave;mes embarqu&eacute;s critiques et de Linux embarqu&eacute;, r&eacute;pond aux besoins de la transition &eacute;nerg&eacute;tique dans le Golfe. &raquo;</div>
+</div>
+
+</body>
+</html>

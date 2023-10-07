@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prompts for Job Search in France — Embedded Software Engineer</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; color: #222; line-height: 1.5; background: #fff; max-width: 210mm; margin: 0 auto; padding: 20px 28px; }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 4pt; letter-spacing: 0.5pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 20pt; }
+  h2 { font-size: 12pt; color: #fff; background: #0a66c2; padding: 5pt 12pt; border-radius: 4pt; margin: 20pt 0 8pt 0; letter-spacing: 0.8pt; }
+  h3 { font-size: 10pt; color: #0a66c2; margin: 12pt 0 4pt 0; padding-bottom: 2pt; border-bottom: 1pt solid #d0e3f3; }
+  .copy-box { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 8pt; font-size: 9.5pt; line-height: 1.55; color: #222; }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box { background: #f4f7fa; border: 1pt solid #d0e3f3; border-left: 3pt solid #0a66c2; border-radius: 0 4pt 4pt 0; padding: 12pt 16pt; margin-bottom: 10pt; font-size: 9.5pt; line-height: 1.6; color: #222; white-space: pre-wrap; word-wrap: break-word; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .instruction { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 6pt; }
+  .version-label { display: inline-block; background: #0a66c2; color: #fff; font-size: 8pt; font-weight: 700; padding: 2pt 8pt; border-radius: 3pt; margin-bottom: 6pt; letter-spacing: 0.3pt; }
+  .toc { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 12pt 18pt; margin-bottom: 16pt; }
+  .toc-title { font-size: 10pt; font-weight: 700; color: #0a66c2; margin-bottom: 6pt; }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li { font-size: 9pt; padding: 2pt 0; color: #333; }
+  .toc li a { color: #0a66c2; text-decoration: none; }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num { display: inline-block; width: 24pt; font-weight: 700; color: #0a66c2; }
+  .lang-tag { display: inline-block; font-size: 7.5pt; font-weight: 700; padding: 1pt 6pt; border-radius: 3pt; margin-left: 4pt; vertical-align: middle; }
+  .lang-fr { background: #e8f0fe; color: #0a66c2; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 8pt 14pt; margin-bottom: 6pt; font-size: 9.5pt; }
+  .guide-step strong { color: #0a66c2; }
+  .order-num { display: inline-block; background: #0a66c2; color: #fff; font-size: 9pt; font-weight: 700; width: 20pt; height: 20pt; line-height: 20pt; text-align: center; border-radius: 50%; margin-right: 6pt; }
+  .warning-box { background: #fef9e7; border: 1pt solid #f9e79f; border-left: 3pt solid #f39c12; border-radius: 0 4pt 4pt 0; padding: 10pt 14pt; margin: 10pt 0; font-size: 9pt; color: #7d6608; }
+  .warning-box strong { color: #b7950b; }
+  .note { font-size: 8pt; color: #888; font-style: italic; margin-top: 4pt; }
+  @media print { body { padding: 0; } h2 { break-after: avoid; } .prompt-box { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>Prompts for Job Search &mdash; France</h1>
+<div class="subtitle">Embedded Software Engineer &bull; For use with ChatGPT, Claude, or any AI assistant &bull; Abdelhak Bourdim &bull; March 2026</div>
+
+<div class="toc">
+  <div class="toc-title">Table of Contents</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> Generate a cover letter <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> Generate a cover letter <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> LinkedIn message to a recruiter <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> LinkedIn message to a hiring manager <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> LinkedIn connection requests <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> LinkedIn connection requests <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> Technical interview preparation <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> Technical interview preparation <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> Analyze a job posting <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> Post-interview follow-up <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> Salary negotiation <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&rarr;</span> Usage guide</a></li>
+  </ul>
+</div>
+
+<h2 id="prompt1">Prompt 1 &mdash; Generate a Cover Letter <span class="lang-tag lang-fr">FR</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the French job market.
+Write a cover letter in French for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., Safran Electronics &amp; Defense]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Massy, Ile-de-France]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / APEC / Indeed / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), mobile across France
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional French style: structured, engaging, factual
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific company
+5. Mention availability and mobility
+6. End with an appropriate French-style closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.</div>
+
+<h2 id="prompt2">Prompt 2 &mdash; Generate a Cover Letter <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the French job market.
+Write a cover letter in English for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., Thales]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Velizy, France]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / APEC / Indeed / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), mobile across France
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional style: structured, engaging, factual
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific company
+5. Mention availability and mobility
+6. End with an appropriate closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.</div>
+
+<h2 id="prompt3">Prompt 3 &mdash; LinkedIn Message to a Recruiter <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">Write a short LinkedIn message (100-150 words) in French to contact a recruiter in France.
+
+<strong>Recipient:</strong> <span class="bracket">[RECRUITER NAME &mdash; e.g., Sophie Martin]</span>
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., Capgemini Engineering]</span>
+<strong>Context:</strong> <span class="bracket">[internal recruiter / recruitment agency / technical manager]</span>
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales &mdash; DO-178) and medical (GE Healthcare &mdash; IEC 62304)
+- French citizen, available for CDI (permanent contract)
+- Mobile: Ile-de-France and all of France
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company
+3. Be concise and direct (recruiters receive dozens of messages)
+4. Propose an exchange without being pushy
+5. Highlight the value you can bring</div>
+
+<h2 id="prompt4">Prompt 4 &mdash; LinkedIn Message to a Hiring Manager <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">Write a short LinkedIn message (100-150 words) in English to reach out to a hiring manager in France.
+
+<strong>Recipient:</strong> <span class="bracket">[NAME &mdash; e.g., Jean-Pierre Dupont]</span>
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., Schneider Electric]</span>
+<strong>Their role:</strong> <span class="bracket">[e.g., VP Engineering / Head of Embedded Systems]</span>
+<strong>Context:</strong> <span class="bracket">[saw a job posting / spontaneous outreach / mutual connection]</span>
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales &mdash; DO-178) and medical (GE Healthcare &mdash; IEC 62304)
+- French citizen, available for CDI (permanent contract)
+- Mobile: Ile-de-France and all of France
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company or team
+3. Be concise and direct (managers are busy)
+4. Propose a brief conversation without being pushy
+5. Highlight the value you can bring</div>
+
+<h2 id="prompt5">Prompt 5 &mdash; LinkedIn Connection Requests <span class="lang-tag lang-fr">FR</span></h2>
+<p class="instruction">Ready to copy-paste (max 300 characters for a connection request). Replace fields <span class="bracket">[IN BRACKETS]</span>.</p>
+
+<h3><span class="version-label">Version 1</span> Recruiter</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[FIRST NAME]</span>, je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded en France. Serait-il possible d'echanger ? Cordialement, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Hiring manager</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[FIRST NAME]</span>, ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez <span class="bracket">[COMPANY]</span> m'interesse beaucoup. Au plaisir d'echanger. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Peer</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[FIRST NAME]</span>, ingenieur embarque ici aussi. Je suis votre travail chez <span class="bracket">[COMPANY]</span> avec interet. J'explore des opportunites en France. Ce serait un plaisir de connecter. Abdelhak</div>
+
+<h2 id="prompt6">Prompt 6 &mdash; LinkedIn Connection Requests <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">Ready to copy-paste (max 300 characters). Replace fields <span class="bracket">[IN BRACKETS]</span>.</p>
+
+<h3><span class="version-label">Version 1</span> Recruiter</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). I'm exploring embedded roles in France. Would love to connect. Best, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Hiring manager</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at <span class="bracket">[COMPANY]</span> caught my interest. Happy to connect. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Peer</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, fellow embedded engineer here. I've been following <span class="bracket">[COMPANY]</span>'s work with interest. Exploring opportunities in France. Would be great to connect. Abdelhak</div>
+
+<h2 id="prompt7">Prompt 7 &mdash; Technical Interview Preparation <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">You are an expert in technical interviews for embedded software engineer positions in France.
+Prepare me for an interview at <span class="bracket">[COMPANY]</span> for the <span class="bracket">[JOB TITLE]</span> position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. <strong>10 likely technical questions</strong> for this role, with detailed answers based on my experience
+2. <strong>5 behavioral questions</strong> (STAR format) with example answers from my career
+3. <strong>5 questions I should ask</strong> the company (showing interest and seniority)
+4. <strong>3 questions about working conditions</strong> (Syntec agreement, RTT, remote work)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay professional and factual
+- Mention specific tools and methods</div>
+
+<h2 id="prompt8">Prompt 8 &mdash; Technical Interview Preparation <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in technical interviews for embedded software engineer positions in France.
+Prepare me for an interview at <span class="bracket">[COMPANY]</span> for the <span class="bracket">[JOB TITLE]</span> position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. <strong>10 likely technical questions</strong> for this role, with detailed answers based on my experience
+2. <strong>5 behavioral questions</strong> (STAR format) with example answers from my career
+3. <strong>5 questions I should ask</strong> the company (showing interest and seniority)
+4. <strong>3 questions about working conditions</strong> (Syntec agreement, RTT, remote work)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay professional and factual
+- Mention specific tools and methods</div>
+
+<h2 id="prompt9">Prompt 9 &mdash; Analyze a Job Posting and Adapt My Application <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">You are an expert in embedded recruitment in France.
+Here is a job posting. Analyze it and help me prepare my application.
+
+<strong>Job posting:</strong>
+<span class="bracket">[PASTE THE COMPLETE JOB POSTING TEXT HERE]</span>
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), auto (Valeo), IoT cyber (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, available for CDI
+
+Perform the following tasks:
+1. <strong>Job analysis</strong>: identify required skills, nice-to-haves, and target profile
+2. <strong>Match score</strong>: rate my fit from 1 to 10, with justification
+3. <strong>Strengths</strong>: list my assets that best match this posting
+4. <strong>Gaps</strong>: identify potential gaps and how to address or present them positively
+5. <strong>Cover letter</strong>: write a letter tailored to this specific posting (300-400 words)
+6. <strong>CV keywords</strong>: list keywords to highlight in my CV for this posting (ATS optimization)
+7. <strong>Estimated salary</strong>: probable salary range for this position in France (IDF vs province)</div>
+
+<h2 id="prompt10">Prompt 10 &mdash; Post-Interview Follow-Up <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">Write a thank-you/follow-up email after an interview in France.
+
+<strong>Company:</strong> <span class="bracket">[NAME]</span>
+<strong>Contact:</strong> <span class="bracket">[NAME + TITLE &mdash; e.g., Marc Dupont, Embedded Team Lead]</span>
+<strong>Interview date:</strong> <span class="bracket">[DATE]</span>
+<strong>Key topics discussed:</strong> <span class="bracket">[NOTE 2-3 IMPORTANT TOPICS &mdash; e.g., RTOS migration, DO-178 testing, team of 8 engineers]</span>
+<strong>Language:</strong> <span class="bracket">[FR / EN]</span>
+
+Guidelines:
+1. Short (150-200 words maximum)
+2. Thank them for their time
+3. Reference a specific point from the discussion (show you listened)
+4. Reaffirm interest in the position without being pushy
+5. Professional, engaging tone (no excessive flattery)
+6. Offer to provide additional information if needed</div>
+
+<h2 id="prompt11">Prompt 11 &mdash; Salary Negotiation <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">You are an expert in salary negotiation for the French embedded systems market.
+
+<strong>Proposed position:</strong> <span class="bracket">[TITLE]</span>
+<strong>Company:</strong> <span class="bracket">[NAME]</span>
+<strong>Location:</strong> <span class="bracket">[CITY / REGION &mdash; e.g., Massy, Ile-de-France]</span>
+<strong>Contract type:</strong> CDI
+<strong>Salary offer:</strong> <span class="bracket">[AMOUNT &mdash; e.g., 65,000 EUR/year]</span>
+<strong>Collective agreement:</strong> <span class="bracket">[Syntec / Metallurgy / other]</span>
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR
+
+Help me:
+1. <strong>Evaluate the offer</strong>: is it within market range? (compare IDF vs province)
+2. <strong>Negotiation points</strong>: what to negotiate beyond salary (remote work, RTT, training, meal vouchers, profit-sharing, PEE, company car)
+3. <strong>Negotiation script</strong>: write 3 key phrases to negotiate professionally
+4. <strong>Net calculation</strong>: estimate net salary from gross (social charges in France ~22-25%)
+5. <strong>Things to avoid</strong>: common negotiation mistakes in France</div>
+
+<h2 id="guide">How to Use These Prompts</h2>
+
+<div class="guide-step"><span class="order-num">1</span> Copy the prompt you need</div>
+<div class="guide-step"><span class="order-num">2</span> Replace fields <span class="bracket">[IN BRACKETS]</span> with your information</div>
+<div class="guide-step"><span class="order-num">3</span> Paste into ChatGPT, Claude, or any other AI</div>
+<div class="guide-step"><span class="order-num">4</span> Adapt the response to your personal style</div>
+
+<div class="warning-box">
+  <strong>IMPORTANT:</strong> Never send an AI-generated text without reviewing and personalizing it. AI is a tool to assist you, not a replacement for your judgment.
+</div>
+
+<h3>Recommended Order for an Application</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>Prompt 9</strong> &mdash; Analyze the posting &rarr; understand what the company is looking for<br><br>
+  <span class="order-num">2</span> <strong>Prompt 1 or 2</strong> &mdash; Cover letter &rarr; apply<br><br>
+  <span class="order-num">3</span> <strong>Prompt 3 or 4</strong> &mdash; LinkedIn message &rarr; networking in parallel<br><br>
+  <span class="order-num">4</span> <strong>Prompt 7 or 8</strong> &mdash; Interview preparation &rarr; before each interview<br><br>
+  <span class="order-num">5</span> <strong>Prompt 10</strong> &mdash; Follow-up &rarr; after each interview<br><br>
+  <span class="order-num">6</span> <strong>Prompt 11</strong> &mdash; Negotiation &rarr; when you receive an offer
+</div>
+
+</body>
+</html>

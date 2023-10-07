@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pitch 2 Minutes — Luxembourg — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 2pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 16pt; }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 18pt 0 10pt 0; letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt; color: #0a66c2;
+    margin: 14pt 0 6pt 0; padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+
+  /* Script box */
+  .script-box {
+    background: #f8fbfe;
+    border: 1.5pt solid #d0e3f3;
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.75;
+    color: #222;
+  }
+  .script-box p { margin-bottom: 10pt; }
+  .script-box .pause {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    margin: 8pt 0;
+  }
+  .script-box .sector { color: #1a5276; font-weight: 600; }
+  .script-box .company { color: #0a66c2; font-weight: 600; }
+  .script-box .norm { color: #888; font-style: italic; }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 6pt;
+    flex-wrap: wrap;
+    margin: 8pt 0 12pt;
+  }
+  .time-block {
+    flex: 1;
+    min-width: 100pt;
+    background: #eaf2f8;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    text-align: center;
+    border-top: 3pt solid #0a66c2;
+  }
+  .time-block .time-label {
+    font-size: 8pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; letter-spacing: 0.5pt;
+  }
+  .time-block .time-sec {
+    font-size: 16pt; font-weight: 700; color: #1a5276;
+    margin: 2pt 0;
+  }
+  .time-block .time-desc {
+    font-size: 7.5pt; color: #555;
+  }
+
+  /* Tips */
+  .tip-list { list-style: none; padding: 0; }
+  .tip-list li {
+    padding: 5pt 0 5pt 20pt;
+    position: relative;
+    font-size: 9.5pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+  .tip-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  /* Variant boxes */
+  .variant {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 10pt 14pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .variant-title {
+    font-size: 9.5pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; margin-bottom: 4pt;
+  }
+  .variant-focus { font-size: 9pt; color: #333; margin-bottom: 3pt; }
+  .variant-quote {
+    font-size: 9pt; color: #555; font-style: italic;
+    border-left: 2pt solid #ddd;
+    padding-left: 8pt; margin-top: 4pt;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .variant { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pitch 2 Minutes &mdash; Luxembourg</h1>
+<div class="subtitle">&laquo; Parlez-moi de vous &raquo; &bull; Abdelhak Bourdim &bull; Ing&eacute;nieur Logiciel Embarqu&eacute; Senior &bull; Frontalier Lorraine</div>
+
+<!-- TIMING -->
+<h2>Structure &amp; Timing</h2>
+<div class="timeline">
+  <div class="time-block">
+    <div class="time-label">Qui je suis</div>
+    <div class="time-sec">10s</div>
+    <div class="time-desc">Nom, titre, 20+ ans</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ce que je fais</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">C/C++, RTOS, Linux, MCU</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Mes preuves</div>
+    <div class="time-sec">60s</div>
+    <div class="time-desc">4 secteurs critiques</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ma diff&eacute;rence</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Workshop-DIY</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Pourquoi le Luxembourg</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">&Eacute;cosyst&egrave;me, multiculturel</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ouverture</div>
+    <div class="time-sec">5s</div>
+    <div class="time-desc">Frontalier, disponible</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<h2>Script</h2>
+<div class="script-box">
+  <p>Bonjour, je suis <strong>Abdelhak Bourdim</strong>, ing&eacute;nieur logiciel embarqu&eacute; senior avec <strong>plus de 20 ans d'exp&eacute;rience</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Mon m&eacute;tier, c'est de d&eacute;velopper du logiciel embarqu&eacute; bas niveau &mdash; firmware, drivers, stacks de communication &mdash; en <strong>C/C++</strong> sur des architectures <strong>ARM Cortex, STM32, Microchip</strong> et <strong>NXP</strong>, aussi bien en bare metal qu'avec des RTOS comme <strong>FreeRTOS</strong> et <strong>VxWorks</strong>, ou sous <strong>Linux embarqu&eacute;</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Ce qui fait la particularit&eacute; de mon parcours, c'est la diversit&eacute; des <strong>secteurs critiques</strong> dans lesquels j'ai travaill&eacute; :</p>
+
+  <p>En <span class="sector">a&eacute;ronautique</span>, chez <span class="company">Safran</span>, <span class="company">Thales</span> et <span class="company">Zodiac</span>, j'ai d&eacute;velopp&eacute; des drivers bas niveau et des couches applicatives conformes aux normes <span class="norm">DO-178</span> et <span class="norm">MISRA C</span> &mdash; plus de 6 ans dans ce secteur.</p>
+
+  <p>Dans le <span class="sector">m&eacute;dical</span>, chez <span class="company">GE Healthcare</span> et <span class="company">Sorin</span>, j'ai int&eacute;gr&eacute; des stacks CANOpen et d&eacute;velopp&eacute; des modules BLE pour pacemaker, conformes &agrave; l'<span class="norm">IEC 62304</span>.</p>
+
+  <p>En <span class="sector">cybers&eacute;curit&eacute; IoT</span>, chez <span class="company">Enedis</span>, j'ai men&eacute; des audits de s&eacute;curit&eacute; et des tests d'intrusion sur les concentrateurs Linky.</p>
+
+  <p>Et plus r&eacute;cemment, en <span class="sector">recharge de v&eacute;hicules &eacute;lectriques</span> chez <span class="company">E2-CAD</span>, je travaille sur l'int&eacute;gration <span class="norm">ISO 15118</span>, le protocole V2G et la mise en service de bornes de recharge.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Au-del&agrave; de la technique, j'ai fond&eacute; <strong>Workshop-DIY</strong>, une association qui propose des ateliers de robotique et d'&eacute;lectronique pour les jeunes. &Ccedil;a illustre ma passion pour la transmission et l'innovation.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Ce qui m'attire au <strong>Luxembourg</strong>, c'est son &eacute;cosyst&egrave;me unique qui r&eacute;unit satellites, automobile, industrie et fintech dans un environnement <strong>international et multiculturel</strong>. Mon profil trilingue fran&ccedil;ais-anglais-arabe et mon exp&eacute;rience multisectorielle s'inscrivent naturellement dans cette dynamique.</p>
+
+  <p>Je suis bas&eacute; en <strong>Lorraine</strong>, pr&ecirc;t &agrave; travailler en tant que <strong>frontalier</strong>, et disponible imm&eacute;diatement.</p>
+
+  <p><strong>C'est avec plaisir que je vous en dis plus sur mes r&eacute;alisations.</strong></p>
+</div>
+
+<!-- CONSEILS -->
+<h2>Conseils de Delivery</h2>
+<ul class="tip-list">
+  <li>Parler &agrave; un <strong>rythme naturel</strong> &mdash; ni trop rapide ni trop lent</li>
+  <li>Regarder dans les yeux (ou la cam&eacute;ra en visio)</li>
+  <li>Ton <strong>confiant et direct</strong> &mdash; valoriser son parcours sans arrogance</li>
+  <li>Les <strong>PAUSES</strong> sont essentielles &mdash; elles montrent la ma&icirc;trise</li>
+  <li>Ne PAS r&eacute;citer &mdash; conna&icirc;tre les blocs, pas le texte mot &agrave; mot</li>
+  <li>Si l'interlocuteur r&eacute;agit, s'adapter et dialoguer</li>
+  <li>Avoir 3 anecdotes pr&ecirc;tes pour approfondir chaque secteur</li>
+  <li>Au Luxembourg, valoriser le <strong>multilinguisme</strong> et l'ouverture internationale</li>
+  <li>Mentionner le statut <strong>frontalier</strong> naturellement, sans insister</li>
+</ul>
+
+<!-- VARIANTES -->
+<h2>Variantes selon l'entreprise (Luxembourg)</h2>
+
+<div class="variant">
+  <div class="variant-title">SES (satellites)</div>
+  <div class="variant-focus">&rarr; Insister sur Safran + Thales + Zodiac = 6+ ans en a&eacute;ro/spatial &bull; DO-178, MISRA C, syst&egrave;mes critiques, RTOS</div>
+  <div class="variant-quote">&laquo; J'ai travaill&eacute; 6 ans dans l'a&eacute;ronautique, de Zodiac &agrave; Safran, sur des syst&egrave;mes embarqu&eacute;s critiques conformes DO-178. L'ing&eacute;nierie spatiale chez SES serait la continuit&eacute; naturelle de ce parcours. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">IEE (capteurs automobiles)</div>
+  <div class="variant-focus">&rarr; Insister sur stacks de communication, CAN, capteurs, drivers &bull; bare metal, RTOS, int&eacute;gration v&eacute;hicule</div>
+  <div class="variant-quote">&laquo; Mon exp&eacute;rience en communication embarqu&eacute;e et en d&eacute;veloppement de drivers pour capteurs s'applique directement aux syst&egrave;mes de d&eacute;tection intelligents d'IEE. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">POST Luxembourg (IoT / t&eacute;l&eacute;com)</div>
+  <div class="variant-focus">&rarr; Insister sur cybers&eacute;curit&eacute; IoT, Linky, stacks de communication &bull; Linux embarqu&eacute;, protocoles r&eacute;seau, s&eacute;curit&eacute;</div>
+  <div class="variant-quote">&laquo; Mon exp&eacute;rience en audit de s&eacute;curit&eacute; IoT chez Enedis et en stacks de communication embarqu&eacute;es correspond parfaitement aux enjeux t&eacute;l&eacute;com et IoT de POST Luxembourg. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">INCERT (cybers&eacute;curit&eacute;)</div>
+  <div class="variant-focus">&rarr; Insister sur Enedis, pentest, audit de s&eacute;curit&eacute;, Kali Linux &bull; analyse de vuln&eacute;rabilit&eacute;s, tests d'intrusion, IoT</div>
+  <div class="variant-quote">&laquo; Les audits de s&eacute;curit&eacute; et tests d'intrusion que j'ai men&eacute;s sur les concentrateurs Linky illustrent mon expertise en cybers&eacute;curit&eacute; embarqu&eacute;e, directement applicable chez INCERT. &raquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">ArcelorMittal (Industrie 4.0)</div>
+  <div class="variant-focus">&rarr; Insister sur Linux embarqu&eacute;, IoT industriel, communication &bull; capteurs, RTOS, protocoles industriels</div>
+  <div class="variant-quote">&laquo; Mon exp&eacute;rience multisectorielle en syst&egrave;mes embarqu&eacute;s critiques et en IoT est directement applicable &agrave; la transformation Industrie 4.0 d'ArcelorMittal. &raquo;</div>
+</div>
+
+</body>
+</html>

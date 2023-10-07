@@ -1,0 +1,215 @@
+================================================================================
+     LINKEDIN SEARCH QUERIES — JOB SEARCH IN SWITZERLAND
+     Senior Embedded Software Engineer — Abdelhak Bourdim
+     Date: March 2026
+================================================================================
+
+
+================================================================================
+PART 1 — MAIN SEARCHES (JOBS TAB)
+================================================================================
+
+IN ENGLISH (more results in Switzerland)
+------------------------------------------
+1. embedded software engineer
+2. firmware engineer
+3. embedded C C++ engineer
+4. RTOS engineer
+5. embedded Linux developer
+6. senior firmware developer
+7. embedded systems engineer
+
+IN FRENCH (Western Switzerland / Romandie specifically)
+--------------------------------------------------------
+1. ingenieur logiciel embarque
+2. developpeur embarque
+3. ingenieur firmware
+4. ingenieur systemes embarques
+5. developpeur C C++ embarque
+
+
+================================================================================
+PART 2 — TARGETED SEARCHES BY INDUSTRY
+================================================================================
+
+MEDICAL
+--------
+- embedded medical device engineer
+- firmware engineer medical
+- embedded engineer medical devices
+- IEC 62304 engineer
+
+AEROSPACE / DEFENSE
+-----------------------
+- embedded aerospace engineer
+- firmware engineer DO-178
+- embedded avionics engineer
+- embedded engineer aerospace
+
+CYBERSECURITY IoT
+------------------
+- embedded security engineer
+- IoT security engineer
+- cybersecurity embedded systems
+- embedded systems security engineer
+
+ELECTRIC VEHICLES / V2G / CLEANTECH
+-----------------------------------------
+- embedded engineer EV charging
+- V2G engineer
+- ISO 15118 engineer
+- firmware engineer electric vehicle
+
+WATCHMAKING / PRECISION
+-----------------------
+- firmware engineer microcontroller
+- embedded engineer precision
+- firmware engineer watchmaking
+- embedded C microcontroller Switzerland
+
+CONSULTING FIRMS / ESN
+---------------------------
+- embedded consultant engineer
+- embedded engineer consultant
+- embedded engineer consulting Switzerland
+
+
+================================================================================
+PART 3 — ADVANCED BOOLEAN SEARCH
+================================================================================
+
+LinkedIn accepts the operators AND, OR and quotation marks "..." in the
+search bar. Here are the optimized queries:
+
+GENERAL QUERY
+-----------------
+"embedded" AND ("C++" OR "firmware") AND ("Switzerland" OR "Suisse")
+
+BY TECHNOLOGY
+----------------
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Geneva" OR "Lausanne")
+("ARM Cortex" OR "STM32" OR "NXP") AND "Switzerland"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "Switzerland"
+
+BY INDUSTRY
+-------------
+"embedded" AND ("medical" OR "IEC 62304") AND "Switzerland"
+"embedded" AND ("aerospace" OR "DO-178") AND "Switzerland"
+"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND "Switzerland"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "Switzerland"
+("firmware" OR "embedded") AND ("watchmaking" OR "precision" OR "horlogerie") AND "Suisse"
+
+
+================================================================================
+PART 4 — ESSENTIAL FILTERS TO APPLY
+================================================================================
+
+After each search, apply these filters:
+
+1. LOCATION
+   - "Switzerland" or "Suisse"
+   - Or more specific: "Lausanne", "Geneva", "Vaud", "Neuchatel", "Fribourg"
+   - Radius: 50 km (covers all of Western Switzerland / Romandie)
+
+2. DATE POSTED
+   - "Past week" (fresh postings, less competition)
+   - "Past month" if few results
+
+3. EXPERIENCE LEVEL
+   - "Mid-Senior level"
+   - "Director" (for lead/architect positions)
+
+4. JOB TYPE
+   - "Full-time"
+
+5. WORK MODE
+   - "On-site" or "Hybrid"
+   - "Remote" if available
+
+6. COMPANY (optional)
+   - Filter by target company: Medtronic, Kudelski, CSEM, Logitech,
+     ABB, Ellisys, Bobst, Rolex, etc.
+
+
+================================================================================
+PART 5 — ALERTS TO CREATE (5 PRIORITY ALERTS)
+================================================================================
+
+Create an alert for each of these searches:
+(Click "Set alert" after each search)
+
+ALERT 1: embedded software engineer — Location: Switzerland
+ALERT 2: firmware engineer — Location: Switzerland
+ALERT 3: ingenieur logiciel embarque — Location: Suisse romande
+ALERT 4: embedded C++ RTOS — Location: Switzerland
+ALERT 5: embedded Linux engineer — Location: Switzerland
+
+Recommended frequency: daily (to react quickly)
+
+
+================================================================================
+PART 6 — PEOPLE SEARCH (NETWORKING)
+================================================================================
+
+Use the "People" tab to find strategic contacts:
+
+ENGINEERS / PEERS
+--------------------
+- embedded engineer Switzerland
+- firmware developer Lausanne
+- embedded engineer Western Switzerland
+
+RECRUITERS
+-----------
+- recruiter embedded Switzerland
+- talent acquisition engineer Switzerland
+- technical recruiter engineering Switzerland
+
+MANAGERS / DECISION-MAKERS
+---------------------
+- hiring manager firmware Lausanne
+- VP engineering Switzerland
+- head of embedded Geneva
+- CTO embedded Lausanne
+- engineering manager Switzerland
+
+Then use LinkedIn messages (file 71_prompts_job_search_CH.txt,
+prompts 3-6) to reach out to them.
+
+
+================================================================================
+PART 7 — LINKEDIN GROUPS TO JOIN
+================================================================================
+
+Search for and join these groups (Groups tab):
+
+1. Embedded Systems Switzerland
+2. Swiss Engineering
+3. Suisse Romande Tech
+4. Embedded Software Engineers
+5. RTOS and Embedded Systems
+6. Swiss IT Jobs
+7. IoT Switzerland
+8. Swiss Startups & Tech
+9. Automotive Embedded Systems
+10. Medical Device Engineers
+
+
+================================================================================
+PART 8 — PRACTICAL TIPS
+================================================================================
+
+1. FREQUENCY: check LinkedIn 2x per day (morning + evening)
+2. ACT FAST: apply within 48h (job postings in Switzerland close quickly)
+3. VARY LANGUAGES: search in English AND in French
+4. COMBINE: job boards + direct/spontaneous applications + networking
+5. CUSTOMIZE: tailor each application (do not send generic ones)
+6. ENABLE "Open to Work": visible to recruiters only
+   - Titles: Embedded Software Engineer, Firmware Engineer
+   - Location: Switzerland, Lausanne, Geneva
+   - Type: Full-time
+   - Start date: Immediately
+7. FOLLOW COMPANIES: follow the pages of target companies
+   to see their publications and job postings early
+8. PUBLISH CONTENT: share technical embedded articles
+   to increase your visibility with Swiss recruiters

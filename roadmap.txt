@@ -1,0 +1,115 @@
+ROADMAP — Remaining Tasks
+==========================
+Last updated: 2026-03-02
+
+Legend:  [x] = done   [ ] = missing
+
+
+=== LUXEMBOURG (files 90-100) ===
+
+CV (done):
+  [x] 90_cv_lu_FR.html
+  [x] 91_cv_lu_EN.html
+  [x] 92_cv_lu_AR.html
+
+Plan (done):
+  [x] 93_plan_lu.txt (FR)
+  [x] 93_plan_lu.html (FR)
+  [x] 93_plan_lu_EN.txt
+  [x] 93_plan_lu_EN.html
+  [x] 94_plan_lu_AR.txt
+  [x] 94_plan_lu_AR.html
+
+Pitch (done):
+  [x] 95_pitch_lu.txt (FR)
+  [x] 95_pitch_lu.html (FR)
+  [x] 95_pitch_lu_EN.txt
+  [x] 95_pitch_lu_EN.html
+  [x] 95_pitch_lu_AR.txt
+  [x] 95_pitch_lu_AR.html
+
+Letter (done):
+  [x] 96_lettre_lu.html (FR)
+  [x] 97_lettre_lu_EN.html
+  [x] 98_lettre_lu_AR.html
+
+Prompts (partial):
+  [x] 99_prompts_lu.txt (FR)
+  [x] 99_prompts_lu.html (FR)
+  [x] 99_prompts_lu_EN.txt
+  [x] 99_prompts_lu_EN.html
+  [ ] 99_prompts_lu_AR.txt          <<< STEP 1
+  [ ] 99_prompts_lu_AR.html         <<< STEP 1
+
+Queries (missing):
+  [ ] 100_queries_lu.txt (FR)       <<< STEP 2
+  [ ] 100_queries_lu.html (FR)      <<< STEP 2
+  [ ] 100_queries_lu_EN.txt         <<< STEP 2
+  [ ] 100_queries_lu_EN.html        <<< STEP 2
+  [ ] 100_queries_lu_AR.txt         <<< STEP 2
+  [ ] 100_queries_lu_AR.html        <<< STEP 2
+
+
+=== GULF / GCC (files 101-111) ===
+
+CV (done):
+  [x] 101_cv_gulf_FR.html
+  [x] 102_cv_gulf_EN.html
+  [x] 103_cv_gulf_AR.html
+
+Plan (partial):
+  [x] 104_plan_gulf.txt (FR)
+  [x] 104_plan_gulf.html (FR)
+  [x] 104_plan_gulf_EN.txt
+  [x] 104_plan_gulf_EN.html
+  [ ] 105_plan_gulf_AR.txt          <<< STEP 3
+  [ ] 105_plan_gulf_AR.html         <<< STEP 3
+
+Pitch (missing):
+  [ ] 106_pitch_gulf.txt (FR)       <<< STEP 4
+  [ ] 106_pitch_gulf.html (FR)      <<< STEP 4
+  [ ] 106_pitch_gulf_EN.txt         <<< STEP 4
+  [ ] 106_pitch_gulf_EN.html        <<< STEP 4
+  [ ] 106_pitch_gulf_AR.txt         <<< STEP 4
+  [ ] 106_pitch_gulf_AR.html        <<< STEP 4
+
+Letter (missing):
+  [ ] 107_lettre_gulf.html (FR)     <<< STEP 5
+  [ ] 108_lettre_gulf_EN.html       <<< STEP 5
+  [ ] 109_lettre_gulf_AR.html       <<< STEP 5
+
+Prompts (missing):
+  [ ] 110_prompts_gulf.txt (FR)     <<< STEP 6
+  [ ] 110_prompts_gulf.html (FR)    <<< STEP 6
+  [ ] 110_prompts_gulf_EN.txt       <<< STEP 6
+  [ ] 110_prompts_gulf_EN.html      <<< STEP 6
+  [ ] 110_prompts_gulf_AR.txt       <<< STEP 6
+  [ ] 110_prompts_gulf_AR.html      <<< STEP 6
+
+Queries (missing):
+  [ ] 111_queries_gulf.txt (FR)     <<< STEP 7
+  [ ] 111_queries_gulf.html (FR)    <<< STEP 7
+  [ ] 111_queries_gulf_EN.txt       <<< STEP 7
+  [ ] 111_queries_gulf_EN.html      <<< STEP 7
+  [ ] 111_queries_gulf_AR.txt       <<< STEP 7
+  [ ] 111_queries_gulf_AR.html      <<< STEP 7
+
+
+=== APP INTEGRATION ===
+
+  [ ] Update app.js: wire Luxembourg file paths (replace comingSoon: true)   <<< STEP 8
+  [ ] Update app.js: wire Gulf file paths (replace comingSoon: true)         <<< STEP 8
+
+
+=== STEP SUMMARY ===
+
+Step 1:  LU prompts AR (2 files)
+Step 2:  LU queries FR/EN/AR (6 files)
+Step 3:  Gulf plan AR (2 files)
+Step 4:  Gulf pitch FR/EN/AR (6 files)
+Step 5:  Gulf letter FR/EN/AR (3 files)
+Step 6:  Gulf prompts FR/EN/AR (6 files)
+Step 7:  Gulf queries FR/EN/AR (6 files)
+Step 8:  Update app.js with all LU + Gulf file paths
+
+Total remaining: 31 files + 1 code update

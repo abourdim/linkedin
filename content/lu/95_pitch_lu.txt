@@ -1,0 +1,136 @@
+================================================================================
+        PITCH 2 MINUTES — RECHERCHE D'EMPLOI AU LUXEMBOURG
+        "Parlez-moi de vous" / "Presentez-vous"
+        Abdelhak Bourdim — Ingenieur Logiciel Embarque Senior
+================================================================================
+
+TIMING : ~2 minutes (280 mots) — rythme dynamique, professionnel
+CONTEXTE : entretien pour un poste embedded au Luxembourg (frontalier depuis la Lorraine)
+
+
+================================================================================
+SCRIPT (a apprendre, pas a lire)
+================================================================================
+
+Bonjour, je suis Abdelhak Bourdim, ingenieur logiciel embarque senior
+avec plus de 20 ans d'experience.
+
+                        [PAUSE — 5 sec]
+
+Mon metier, c'est de developper du logiciel embarque bas niveau —
+firmware, drivers, stacks de communication — en C/C++ sur des
+architectures ARM Cortex, STM32, Microchip et NXP, aussi bien en
+bare metal qu'avec des RTOS comme FreeRTOS et VxWorks, ou sous
+Linux embarque.
+
+                        [PAUSE — 3 sec]
+
+Ce qui fait la particularite de mon parcours, c'est la diversite
+des secteurs critiques dans lesquels j'ai travaille :
+
+En aeronautique, chez Safran, Thales et Zodiac, j'ai developpe des
+drivers bas niveau et des couches applicatives conformes a la norme
+DO-178 et MISRA C — plus de 6 ans dans ce secteur.
+
+Dans le medical, chez GE Healthcare et Sorin, j'ai integre des
+stacks CANOpen et developpe des modules BLE pour pacemaker,
+conformes a l'IEC 62304.
+
+En cybersecurite IoT, chez Enedis, j'ai mene des audits de securite
+et des tests d'intrusion sur les concentrateurs Linky.
+
+Et plus recemment, en recharge de vehicules electriques chez E2-CAD,
+je travaille sur l'integration ISO 15118, le protocole V2G et la
+mise en service de bornes de recharge.
+
+                        [PAUSE — 3 sec]
+
+Au-dela de la technique, j'ai fonde Workshop-DIY, une association
+qui propose des ateliers de robotique et d'electronique pour les
+jeunes. Ca illustre ma passion pour la transmission et l'innovation.
+
+                        [PAUSE — 3 sec]
+
+Ce qui m'attire au Luxembourg, c'est son ecosysteme unique qui
+reunit satellites, automobile, industrie et fintech dans un
+environnement international et multiculturel. Mon profil trilingue
+francais-anglais-arabe et mon experience multisectorielle
+s'inscrivent naturellement dans cette dynamique.
+
+Je suis base en Lorraine, pret a travailler en tant que frontalier,
+et disponible immediatement.
+
+C'est avec plaisir que je vous en dis plus sur mes realisations.
+
+
+================================================================================
+STRUCTURE DU PITCH (aide-memoire)
+================================================================================
+
+  1. QUI JE SUIS          -> Nom + titre + 20 ans           [10 sec]
+  2. CE QUE JE FAIS       -> C/C++, RTOS, Linux, MCU        [15 sec]
+  3. MES PREUVES (4 secteurs) :                              [60 sec]
+     * Aero    -> Safran, Thales, Zodiac (DO-178, MISRA C)
+     * Medical -> GE Healthcare, Sorin (IEC 62304)
+     * Cyber   -> Enedis, Linky (pentest, audit)
+     * V2G     -> E2-CAD (ISO 15118, OCPP)
+  4. CE QUI ME DIFFERENCIE -> Workshop-DIY, passion           [15 sec]
+  5. POURQUOI LE LUXEMBOURG -> Ecosysteme, multiculturel      [15 sec]
+  6. OUVERTURE             -> Frontalier, disponible           [5 sec]
+
+                                            TOTAL = 2 min
+
+
+================================================================================
+CONSEILS DE DELIVERY
+================================================================================
+
+* Parler a un rythme naturel — ni trop rapide ni trop lent
+* Regarder dans les yeux (ou la camera en visio)
+* Ton confiant et direct — valoriser son parcours sans arrogance
+* Les PAUSES sont essentielles — elles montrent la maitrise
+* Ne PAS reciter — connaitre les blocs, pas le texte mot a mot
+* Si l'interlocuteur reagit, s'adapter et dialoguer
+* Avoir 3 anecdotes pretes pour approfondir chaque secteur
+* Au Luxembourg, valoriser le multilinguisme et l'ouverture internationale
+* Mentionner le statut frontalier naturellement, sans insister
+
+
+================================================================================
+VARIANTES SELON L'ENTREPRISE (LUXEMBOURG)
+================================================================================
+
+SI SES (satellites) :
+  -> Insister sur Safran + Thales + Zodiac = 6+ ans en aero/spatial
+  -> Mentionner DO-178, MISRA C, systemes critiques, RTOS
+  -> "J'ai travaille 6 ans dans l'aeronautique, de Zodiac a Safran,
+     sur des systemes embarques critiques conformes DO-178. L'ingenierie
+     spatiale chez SES serait la continuite naturelle de ce parcours."
+
+SI IEE (capteurs automobiles) :
+  -> Insister sur les stacks de communication, CAN, capteurs, drivers
+  -> Mentionner ISO 15118, integration vehicule, bare metal, RTOS
+  -> "Mon experience en communication embarquee et en developpement
+     de drivers pour capteurs s'applique directement aux systemes
+     de detection intelligents d'IEE."
+
+SI POST Luxembourg (IoT / telecom) :
+  -> Insister sur cybersecurite IoT, Linky, stacks de communication
+  -> Mentionner Linux embarque, protocoles reseau, securite
+  -> "Mon experience en audit de securite IoT chez Enedis et en
+     stacks de communication embarquees correspond parfaitement
+     aux enjeux telecom et IoT de POST Luxembourg."
+
+SI INCERT (cybersecurite) :
+  -> Insister sur Enedis, pentest, audit de securite, Kali Linux
+  -> Mentionner analyse de vulnerabilites, tests d'intrusion, IoT
+  -> "Les audits de securite et tests d'intrusion que j'ai menes
+     sur les concentrateurs Linky illustrent mon expertise en
+     cybersecurite embarquee, directement applicable chez INCERT."
+
+SI ArcelorMittal (Industrie 4.0) :
+  -> Insister sur Linux embarque, IoT industriel, communication
+  -> Mentionner capteurs, RTOS, protocoles industriels
+  -> "Mon experience multisectorielle en systemes embarques critiques
+     et en IoT est directement applicable a la transformation
+     Industrie 4.0 d'ArcelorMittal."

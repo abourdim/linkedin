@@ -1,0 +1,163 @@
+ACTION PLAN — JOB SEARCH IN LUXEMBOURG
+Senior Embedded Software Engineer — Abdelhak Bourdim — March 2026
+
+============================================================
+PART 1 — UNDERSTANDING THE LUXEMBOURG MARKET
+============================================================
+
+Embedded Sector in Luxembourg
+Luxembourg is a fast-growing tech hub with a diverse ecosystem: satellites
+(SES), heavy industry (ArcelorMittal), automotive (Goodyear), fintech and
+data centers (Amazon Luxembourg).
+
+Key sectors: space/satellites, automotive, Industry 4.0, fintech,
+cybersecurity, HPC/supercomputing (MeluXina), IoT, cleantech.
+
+Your 20+ year profile with aerospace + medical + cybersecurity is rare
+and highly valued in this market.
+
+Expected Salary
+- Junior (1-3 years): EUR 50,000 - 65,000
+- Mid-level (5-10 years): EUR 70,000 - 85,000
+- Senior (your profile, 10+ years): EUR 85,000 - 105,000
+- Very senior / Lead (15+ years): EUR 100,000 - 130,000+
+
+Note: 13th month salary is common. Generous social benefits (26 days
+leave, meal vouchers, complementary pension plan). As a cross-border
+worker from France: same gross salary, advantageous taxation.
+
+============================================================
+PART 2 — CROSS-BORDER WORKER STATUS
+============================================================
+
+Recommended option: cross-border worker from Lorraine/Metz
+
+You currently live in the Paris region. Three possible strategies:
+
+Option A — Relocate near Luxembourg (cross-border)
+- Settle in Lorraine (Metz, Thionville, Longwy) or Belgium
+- Daily commute: Metz-Luxembourg ~60 min, Thionville ~30 min
+- No work permit required for EU/French citizens
+- Taxation: Luxembourg tax (favorable rates), bilateral agreement
+- Advantage: Luxembourg salary + French cost of living
+
+Option B — Settle directly in Luxembourg
+- High rents (EUR 1,500 - 2,500 for an apartment)
+- But no daily commute constraint
+- Better local integration
+
+Option C — Start remotely then relocate
+- Some employers accept partial remote work
+- Start the job, then relocate after 2-3 months
+
+Procedures (EU citizen)
+1. No work permit required for French citizens
+2. As cross-border worker: no administrative procedures on Luxembourg side
+3. Automatic affiliation to Luxembourg social security
+4. If resident: arrival declaration within 3 days, residence card within 3 months
+
+============================================================
+PART 3 — TARGET COMPANIES IN LUXEMBOURG
+============================================================
+
+Space / Satellites
+- SES (Betzdorf) — Global satellite operator, embedded systems
+- OQ Technology (Luxembourg) — 5G IoT satellites
+- Euro-Composites (Echternach) — Aeronautical composites
+
+Industry / Automotive
+- Goodyear (Colmar-Berg) — Tires, factory embedded systems
+- ArcelorMittal (Luxembourg) — Steel, industrial automation
+- Ceratizit (Mamer) — Cutting tools, Industry 4.0
+- Paul Wurth / SMS Group (Luxembourg) — Industrial engineering
+- IEE (Contern) — Automotive sensors, embedded systems
+
+Tech / Data / HPC
+- Amazon Luxembourg — Data centers, infrastructure
+- LuxProvide / MeluXina (Bissen) — HPC supercomputer
+- Talkwalker (Luxembourg) — Analytics, tech
+- POST Luxembourg (Luxembourg) — National telecom, IoT
+- SIX Payment Services (Luxembourg) — Fintech/payment
+
+Cybersecurity / Fintech
+- INCERT (Luxembourg) — PKI, digital security
+- Clearstream (Luxembourg) — Finance, critical systems
+- Docler Holding (Luxembourg) — Tech
+
+Consulting / IT Services
+- Alter Solutions (Luxembourg) — Engineering consulting
+- Devoteam (Luxembourg) — IT consulting
+- CGI (Luxembourg) — IT services
+- Sogeti / Capgemini (Luxembourg) — Engineering
+
+============================================================
+PART 4 — WEEK-BY-WEEK ACTION PLAN
+============================================================
+
+Week 1-2: Preparation
+[ ] Update CV to Luxembourg format
+[ ] Prepare 2 versions: FR + EN
+[ ] Update LinkedIn profile, target Luxembourg
+[ ] Add "Open to work" on LinkedIn
+[ ] Draft adaptable cover letter template
+
+Week 2-3: Register on Job Boards
+[ ] jobs.lu — #1 portal in Luxembourg
+[ ] moovijob.com — specializing in Greater Region
+[ ] indeed.lu — general
+[ ] ictjob.lu — IT specialized Luxembourg
+[ ] linkedin.com — activate alerts "embedded" + "Luxembourg"
+
+Week 2-4: Spontaneous Applications
+[ ] Identify 15-20 target companies
+[ ] Send spontaneous applications to HR + technical manager
+[ ] Priority targets: SES, IEE, POST Luxembourg, Ceratizit, INCERT
+
+Week 3-5: Networking
+[ ] Connect on LinkedIn with engineers in Luxembourg
+[ ] Join LinkedIn groups: "Luxembourg Tech", "ICT Luxembourg"
+[ ] Contact recruiters: Hays, Michael Page, Robert Half Luxembourg
+[ ] Attend Moovijob.lu job fair
+
+Week 4-8: Interviews
+[ ] Prepare technical interviews
+[ ] Negotiate: 13th month, meal vouchers, pension plan, leave, remote work
+
+Week 8-12: Finalization
+[ ] Sign the contract
+[ ] If cross-border: find housing in Lorraine (Metz, Thionville)
+[ ] Open Luxembourg bank account (BGL BNP Paribas, ING)
+[ ] Affiliate to Luxembourg social security
+
+============================================================
+PART 5 — USEFUL RESOURCES
+============================================================
+
+Job Boards
+- jobs.lu — #1 portal in Luxembourg
+- moovijob.com — Greater Region specialized
+- indeed.lu — general
+- ictjob.lu — IT specialized
+- linkedin.com — job alerts
+
+Salary
+- jobs.lu/salary — salary calculator
+- glassdoor.lu — ranges by company
+- statistiques.public.lu — official statistics
+
+Cross-border
+- frontaliers.lu — official cross-border portal
+- lesfrontaliers.lu — community and info
+- guichet.public.lu — Luxembourg administrative portal
+
+============================================================
+PART 6 — KEY STRENGTHS
+============================================================
+
+1. 20+ years in safety-critical embedded (aerospace, medical)
+2. Mastery of C/C++ bare metal + RTOS + Embedded Linux
+3. Embedded cybersecurity experience (IoT pentesting, Linky audit)
+4. Certifying standards: DO-178, IEC 62304, MISRA C, ISO 15118
+5. Trilingual French / English / Arabic
+6. Workshop-DIY founder (social engagement)
+7. Cross-sector versatility: aerospace, medical, automotive, IoT, V2G, payment

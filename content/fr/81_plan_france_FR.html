@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Plan d'Action — Recherche d'Emploi en France — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 16pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.55;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .entry {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .entry-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0a66c2;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+  ul { margin: 4pt 0 4pt 16pt; }
+  li { font-size: 9pt; margin-bottom: 2pt; color: #333; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt 0;
+    font-size: 9pt;
+  }
+  table thead th {
+    background: #0a66c2;
+    color: #fff;
+    padding: 5pt 8pt;
+    text-align: left;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+  }
+  table tbody td {
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #d0e3f3;
+    vertical-align: top;
+  }
+  table tbody tr:nth-child(even) { background: #f8fbfe; }
+  table tbody tr:hover { background: #e8f0fe; }
+  .salary-table td:last-child {
+    font-weight: 600;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+  .checklist {
+    list-style: none;
+    margin: 6pt 0 10pt 0;
+    padding: 0;
+  }
+  .checklist li {
+    position: relative;
+    padding: 4pt 0 4pt 22pt;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #0a66c2;
+    border-radius: 2pt;
+    background: #fff;
+  }
+  .option-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin-bottom: 8pt;
+  }
+  .option-box .option-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9.5pt;
+    margin-bottom: 4pt;
+  }
+  .option-box ul { margin-top: 4pt; }
+  .week-header {
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+    margin: 10pt 0 6pt 0;
+    border-left: 3pt solid #0a66c2;
+  }
+  .highlight-box {
+    background: #fff9e6;
+    border: 1pt solid #f0d060;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin: 8pt 0;
+    font-size: 9pt;
+    color: #5a4a00;
+  }
+  .highlight-box strong { color: #7a6200; }
+  .strengths-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: strength-counter;
+  }
+  .strengths-list li {
+    counter-increment: strength-counter;
+    padding: 4pt 0 4pt 28pt;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .strengths-list li::before {
+    content: counter(strength-counter);
+    position: absolute;
+    left: 0;
+    top: 3pt;
+    width: 18pt;
+    height: 18pt;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 18pt;
+  }
+  .warning-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+  }
+  .warning-list li {
+    padding: 4pt 0 4pt 20pt;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .warning-list li:last-child { border-bottom: none; }
+  .warning-list li::before {
+    content: '\2716';
+    position: absolute;
+    left: 2pt;
+    top: 4pt;
+    color: #c0392b;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt;
+    margin: 6pt 0 10pt 0;
+  }
+  .resource-card {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+  }
+  .resource-card .resource-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+  .resource-card ul { margin: 2pt 0 0 14pt; }
+  .resource-card li { font-size: 8.5pt; margin-bottom: 2pt; }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .status-badge {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 10pt;
+    margin-left: 6pt;
+    vertical-align: middle;
+  }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .entry { break-inside: avoid; }
+    .option-box { break-inside: avoid; }
+    table { break-inside: avoid; }
+    .week-header { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Plan d'Action — Recherche d'Emploi en France</h1>
+<div class="subtitle">Ingenieur Logiciel Embarque Senior &bull; Abdelhak Bourdim &bull; Mars 2026</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 1 -->
+<!-- ============================================================== -->
+<h2>Partie 1 — Comprendre le Marche Francais</h2>
+
+<h3>Secteur Embarque en France</h3>
+<div class="copy-box">
+  Le marche embarque francais est <strong>tres actif</strong> avec des milliers de postes ouverts en permanence.<br><br>
+  <strong>Toulouse</strong> = hub aeronautique et spatial mondial (Airbus, Thales, Safran)<br>
+  <strong>Grenoble</strong> = hub semiconducteurs et microelectronique (STMicroelectronics, Schneider)<br>
+  <strong>Paris / Ile-de-France</strong> = le plus grand bassin d'emploi embarque en France<br>
+  <strong>Autres poles</strong> : Bordeaux (defense, aero), Nantes, Lyon, Sophia Antipolis<br><br>
+  <strong>Secteurs porteurs :</strong> aeronautique, defense, automobile, medical, IoT, energie, telecom.<br><br>
+  Votre profil <strong>20+ ans</strong> avec aeronautique + medical + cybersecurite est <strong>tres recherche</strong>.
+</div>
+
+<h3>Salaire Attendu</h3>
+<table class="salary-table">
+  <thead>
+    <tr>
+      <th>Niveau</th>
+      <th>Experience</th>
+      <th>IDF (EUR/an)</th>
+      <th>Province (EUR/an)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Junior</td><td>1 - 5 ans</td><td>35 000 - 45 000</td><td>30 000 - 40 000</td></tr>
+    <tr><td>Confirme</td><td>5 - 10 ans</td><td>50 000 - 65 000</td><td>42 000 - 55 000</td></tr>
+    <tr><td><strong>Senior (votre profil)</strong></td><td><strong>10 - 20+ ans</strong></td><td><strong>60 000 - 80 000</strong></td><td><strong>50 000 - 65 000</strong></td></tr>
+    <tr><td>Expert / Lead technique</td><td>15+ ans</td><td>75 000 - 90 000+</td><td>60 000 - 75 000</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">
+  <strong>Note :</strong> le 13eme mois n'est pas standard en France — il depend de la convention collective. Avantages courants : mutuelle, tickets restaurant, prime de vacances, interessement/participation, RTT, teletravail partiel (2-3 jours/semaine).
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 2 -->
+<!-- ============================================================== -->
+<h2>Partie 2 — Statut et Droit au Travail</h2>
+
+<h3>Votre Situation <span class="status-badge">OPTIMALE</span></h3>
+<div class="copy-box">
+  <ul>
+    <li><strong>Nationalite francaise</strong> → aucun permis de travail necessaire</li>
+    <li><strong>Deja base en Ile-de-France</strong> → pas de demenagement necessaire</li>
+    <li>Acces a <strong>tout le territoire national</strong> sans restriction</li>
+    <li>Couverture sociale complete : securite sociale, retraite, chomage</li>
+    <li>Eligible aux aides <strong>France Travail</strong> (ex Pole Emploi) si en recherche d'emploi</li>
+  </ul>
+</div>
+
+<h3>Types de Contrats Courants</h3>
+<div class="option-box">
+  <div class="option-title">CDI — Contrat a Duree Indeterminee <span class="status-badge">RECOMMANDE</span></div>
+  <ul>
+    <li>Le contrat standard en France</li>
+    <li>Periode d'essai : 4 mois (cadre), renouvelable une fois</li>
+    <li>Protection sociale complete</li>
+    <li>Preavis de depart : 3 mois (cadre)</li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">CDI de Chantier / CDI de Mission</div>
+  <ul>
+    <li>Courant dans les ESN (societes de conseil en ingenierie)</li>
+    <li>CDI lie a une mission chez un client final</li>
+    <li>Avantage : stabilite du CDI + diversite des missions</li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">CDD / Mission Freelance</div>
+  <ul>
+    <li>Moins courant pour les profils seniors</li>
+    <li>Peut etre un bon moyen d'entrer chez un client final</li>
+    <li>Portage salarial possible pour les missions freelance</li>
+  </ul>
+</div>
+
+<h3>Convention Collective</h3>
+<div class="entry">
+  <ul style="font-size: 9.5pt;">
+    <li><strong>Convention Syntec</strong> : applicable dans les ESN / societes de conseil — grille de salaires, RTT, prime vacances</li>
+    <li><strong>Convention de la Metallurgie</strong> : applicable dans l'industrie (aero, auto, defense) — nouvelle grille 2024, avantages par branche</li>
+  </ul>
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 3 -->
+<!-- ============================================================== -->
+<h2>Partie 3 — Entreprises Cibles en France (35+)</h2>
+
+<h3>Aeronautique &amp; Defense</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience Safran, Thales, Zodiac</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Safran</td><td>Paris, Massy, Villaroche</td><td>Moteurs, systemes embarques avioniques</td></tr>
+    <tr><td>Thales</td><td>Velizy, Gennevilliers, Toulouse</td><td>Avionique, defense, spatial</td></tr>
+    <tr><td>Dassault Aviation</td><td>Saint-Cloud, Merignac</td><td>Avions de combat, Falcon</td></tr>
+    <tr><td>Naval Group</td><td>Paris, Toulon, Lorient</td><td>Systemes navals, sous-marins</td></tr>
+    <tr><td>MBDA</td><td>Le Plessis-Robinson, Bourges</td><td>Missiles, systemes de defense</td></tr>
+    <tr><td>Airbus Defence &amp; Space</td><td>Toulouse, Elancourt</td><td>Spatial, defense</td></tr>
+    <tr><td>Zodiac / Safran Seats</td><td>Issoudun, Plaisir</td><td>Equipements aeronautiques</td></tr>
+  </tbody>
+</table>
+
+<h3>Automobile &amp; Mobilite</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience E2-CAD, ISO 15118</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Valeo</td><td>Creteil, La Verriere</td><td>ADAS, eclairage, electrification</td></tr>
+    <tr><td>Stellantis (PSA+FCA)</td><td>Velizy, Poissy</td><td>Vehicules, embedded ECU</td></tr>
+    <tr><td>Renault</td><td>Guyancourt, Lardy</td><td>Vehicules electriques, ADAS</td></tr>
+    <tr><td>Forvia / Faurecia</td><td>Nanterre</td><td>Equipementier, cockpit du futur</td></tr>
+    <tr><td>Continental</td><td>Toulouse, Rambouillet</td><td>ADAS, pneus connectes</td></tr>
+    <tr><td>Vitesco Technologies</td><td>Toulouse, Cergy</td><td>Electrification, powertrain</td></tr>
+  </tbody>
+</table>
+
+<h3>Medical &amp; Sante</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience GE Healthcare, Sorin, PK Vitality</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>bioMerieux</td><td>Marcy-l'Etoile (Lyon)</td><td>Diagnostic in vitro, instruments</td></tr>
+    <tr><td>Air Liquide Medical Systems</td><td>Paris</td><td>Equipements medicaux, respirateurs</td></tr>
+    <tr><td>Essilor / EssilorLuxottica</td><td>Charenton</td><td>Dispositifs optiques, R&amp;D embarquee</td></tr>
+  </tbody>
+</table>
+
+<h3>IoT &amp; Tech</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience Enedis, Linky</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Parrot</td><td>Paris</td><td>Drones, systemes embarques, camera</td></tr>
+    <tr><td>Schneider Electric</td><td>Rueil-Malmaison, Grenoble</td><td>Automatisme, IoT industriel</td></tr>
+    <tr><td>Legrand</td><td>Limoges</td><td>Domotique, objets connectes</td></tr>
+    <tr><td>Devialet</td><td>Paris</td><td>Audio haute fidelite, firmware</td></tr>
+    <tr><td>STMicroelectronics</td><td>Grenoble, Crolles</td><td>Semiconducteurs, microcontroleurs</td></tr>
+  </tbody>
+</table>
+
+<h3>Energie &amp; Utilities</h3>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>EDF</td><td>Paris, Saclay</td><td>Systemes de controle, nucleaire</td></tr>
+    <tr><td>Enedis</td><td>Paris, Lyon</td><td>Compteurs intelligents, IoT (Linky)</td></tr>
+    <tr><td>TotalEnergies</td><td>La Defense, Pau</td><td>Systemes embarques industriels</td></tr>
+    <tr><td>Schneider Electric</td><td>Rueil-Malmaison</td><td>Gestion d'energie, automatisme</td></tr>
+  </tbody>
+</table>
+
+<h3>Telecom</h3>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Orange</td><td>Paris, Chatillon</td><td>Reseaux, IoT, objets connectes</td></tr>
+    <tr><td>Nokia (Paris-Saclay)</td><td>Nozay</td><td>Infrastructure telecom, 5G</td></tr>
+  </tbody>
+</table>
+
+<h3>ESN / Societes de Conseil en Ingenierie</h3>
+<div class="note" style="margin-bottom: 6pt;">Acces rapide au marche — missions chez les grands groupes</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Specialite</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Capgemini Engineering (ex-Altran)</td><td>Paris, Toulouse, toute la France</td><td>Conseil en ingenierie, N1 mondial</td></tr>
+    <tr><td>Alten</td><td>Boulogne-Billancourt</td><td>N1 du conseil en ingenierie en France</td></tr>
+    <tr><td>Akkodis (ex-Akka Technologies)</td><td>Paris, Lyon, Toulouse</td><td>Conseil en technologies</td></tr>
+    <tr><td>Assystem</td><td>Paris, Lyon</td><td>Nucleaire, aero, defense</td></tr>
+    <tr><td>Segula Technologies</td><td>Nanterre</td><td>Automobile, aero, energie</td></tr>
+    <tr><td>Ausy (groupe Randstad)</td><td>Paris, Lyon</td><td>IT et ingenierie</td></tr>
+    <tr><td>SII</td><td>Paris, Toulouse, Rennes</td><td>Systemes embarques, IT</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================== -->
+<!-- PARTIE 4 -->
+<!-- ============================================================== -->
+<h2>Partie 4 — Sites d'Emploi et Job Boards</h2>
+
+<h3>Sites Generalistes</h3>
+<div class="copy-box">
+  <ul>
+    <li><a href="https://www.linkedin.com" target="_blank"><strong>linkedin.com</strong></a> — le plus important, activer "Open to work"</li>
+    <li><a href="https://www.indeed.fr" target="_blank"><strong>indeed.fr</strong></a> — grand volume d'offres, alertes email</li>
+    <li><a href="https://www.apec.fr" target="_blank"><strong>apec.fr</strong></a> — specifique cadres, tres utilise en France</li>
+    <li><a href="https://www.francetravail.fr" target="_blank"><strong>francetravail.fr</strong></a> (ex Pole Emploi) — offres + aides + accompagnement</li>
+    <li><a href="https://www.monster.fr" target="_blank"><strong>monster.fr</strong></a> — offres generalistes</li>
+  </ul>
+</div>
+
+<h3>Sites Specialises Tech / Embarque</h3>
+<div class="copy-box">
+  <ul>
+    <li><a href="https://www.welcometothejungle.com" target="_blank"><strong>welcometothejungle.com</strong></a> — startups et ETI tech, culture d'entreprise</li>
+    <li><a href="https://www.frenchweb.fr" target="_blank"><strong>frenchweb.fr</strong></a> — ecosysteme tech francais, offres</li>
+    <li><a href="https://www.lesjeudis.com" target="_blank"><strong>lesjeudis.com</strong></a> — specialise IT et ingenierie</li>
+    <li><a href="https://www.chooseyourboss.com" target="_blank"><strong>chooseyourboss.com</strong></a> — offres tech avec details sur l'equipe</li>
+  </ul>
+</div>
+
+<h3>Alertes Recommandees</h3>
+<div class="highlight-box">
+  Configurer des alertes sur LinkedIn et Indeed avec ces mots-cles :<br><br>
+  <strong>"ingenieur logiciel embarque"</strong> &bull; <strong>"embedded software engineer"</strong> &bull; <strong>"developpeur firmware"</strong><br>
+  <strong>"C/C++ embarque"</strong> &bull; <strong>"RTOS embedded"</strong> &bull; <strong>"ingenieur systemes embarques"</strong><br><br>
+  Localisation : <strong>Paris, Ile-de-France, Toulouse, Grenoble</strong>
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 5 -->
+<!-- ============================================================== -->
+<h2>Partie 5 — Plan d'Action Semaine par Semaine (8 semaines)</h2>
+
+<div class="week-header">Semaine 1 : Preparation des Documents</div>
+<ul class="checklist">
+  <li>Mettre a jour le CV au format francais (2 pages, PDF, sobre)</li>
+  <li>Preparer 2 versions : FR (standard) + EN (multinationales, ESN internationales)</li>
+  <li>Mettre a jour le profil LinkedIn (utiliser les fichiers 64-67 deja crees)</li>
+  <li>Activer "Open to work" sur LinkedIn, cibler France entiere + IDF</li>
+  <li>Rediger un modele de lettre de motivation adaptable</li>
+  <li>Preparer une liste de references professionnelles</li>
+</ul>
+
+<div class="week-header">Semaine 2 : Inscription sur les Job Boards</div>
+<ul class="checklist">
+  <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — profil optimise + alertes "embedded" + "IDF"</li>
+  <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — creer un profil, deposer le CV, activer alertes</li>
+  <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — creer un espace cadre, deposer le CV</li>
+  <li><a href="https://www.francetravail.fr" target="_blank">francetravail.fr</a> — actualiser le dossier si inscrit</li>
+  <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — creer un profil, suivre les entreprises cibles</li>
+  <li><a href="https://www.lesjeudis.com" target="_blank">lesjeudis.com</a> — deposer le CV, activer alertes</li>
+  <li><a href="https://www.monster.fr" target="_blank">monster.fr</a> — deposer le CV</li>
+</ul>
+
+<div class="week-header">Semaine 3 : Candidatures Directes (Vague 1)</div>
+<ul class="checklist">
+  <li>Identifier les 15 entreprises cibles prioritaires (voir Partie 3)</li>
+  <li>Postuler directement sur les sites carrieres : <strong>Safran, Thales, Dassault Aviation, Naval Group, Valeo, Stellantis</strong></li>
+  <li>Candidature spontanee par email aux RH + managers techniques</li>
+  <li>Adapter chaque lettre de motivation a l'entreprise</li>
+  <li>Cibler en priorite les groupes du secteur aero/defense (votre experience forte)</li>
+</ul>
+
+<div class="week-header">Semaine 4 : ESN et Candidatures (Vague 2)</div>
+<ul class="checklist">
+  <li>Postuler aupres des ESN : <strong>Capgemini Engineering, Alten, Akkodis, Assystem, SII</strong></li>
+  <li>Contacter les recruteurs ESN directement sur LinkedIn</li>
+  <li>Postuler pour les offres IoT/energie : Schneider, EDF, Enedis, STMicroelectronics</li>
+  <li>Elargir aux entreprises medical : bioMerieux, Air Liquide Medical</li>
+  <li>Relancer les candidatures de la semaine 3 si pas de reponse</li>
+</ul>
+
+<div class="week-header">Semaine 5 : Networking Intensif</div>
+<ul class="checklist">
+  <li>Connecter sur LinkedIn avec des ingenieurs embarques en France</li>
+  <li>Rejoindre des groupes LinkedIn : "Embedded France", "Systemes Embarques", "Ingenieurs Aeronautique France"</li>
+  <li>Contacter les recruteurs specialises : <strong>Hays, Michael Page, Robert Half, Spring, Expectra</strong></li>
+  <li>Participer a des meetups tech en IDF (meetup.com)</li>
+  <li>Visiter des salons : Embedded World (Nuremberg), Salon du Bourget (si saison)</li>
+</ul>
+
+<div class="week-header">Semaine 6 : Entretiens (Debut)</div>
+<ul class="checklist">
+  <li>Preparer les entretiens techniques (C/C++, RTOS, protocols, architecture)</li>
+  <li>Preparer les questions sur le poste, l'equipe, les projets</li>
+  <li>Reviser les normes : DO-178, IEC 62304, MISRA C, ISO 15118</li>
+  <li>Preparer des exemples concrets de realisations (methode STAR)</li>
+  <li>S'entrainer aux entretiens en anglais (pour les multinationales)</li>
+</ul>
+
+<div class="week-header">Semaine 7 : Entretiens et Negociation</div>
+<ul class="checklist">
+  <li>Passer les entretiens techniques et RH</li>
+  <li>Connaitre les salaires du marche (ne pas sous-estimer sa valeur)</li>
+  <li>Negocier : salaire, teletravail (2-3j/semaine), RTT, formation, mutuelle, tickets restaurant</li>
+  <li>Verifier la convention collective applicable</li>
+  <li>Demander les details : equipe, stack technique, projets en cours</li>
+</ul>
+
+<div class="week-header">Semaine 8 : Finalisation</div>
+<ul class="checklist">
+  <li>Comparer les offres recues</li>
+  <li>Negocier les conditions finales</li>
+  <li>Signer le contrat (CDI de preference)</li>
+  <li>Organiser la transition (preavis si en poste, demarches France Travail si non)</li>
+  <li>Preparer l'integration : outils, documentation, onboarding</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- PARTIE 6 -->
+<!-- ============================================================== -->
+<h2>Partie 6 — Sites et Ressources Utiles</h2>
+
+<div class="resource-grid">
+  <div class="resource-card">
+    <div class="resource-title">Job Boards</div>
+    <ul>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — reseau pro N1</li>
+      <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — grand volume d'offres</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — specifique cadres</li>
+      <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — startups tech</li>
+      <li><a href="https://www.lesjeudis.com" target="_blank">lesjeudis.com</a> — IT et ingenierie</li>
+      <li><a href="https://www.francetravail.fr" target="_blank">francetravail.fr</a> — offres + accompagnement</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Salaires</div>
+    <ul>
+      <li><a href="https://www.glassdoor.fr" target="_blank">glassdoor.fr</a> — fourchettes par entreprise</li>
+      <li><a href="https://fr.talent.com/salary" target="_blank">talent.com/salary</a> — estimations salaire</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — etudes remuneration cadres</li>
+      <li><a href="https://www.journaldunet.com/business/salaire" target="_blank">journaldunet.com</a> — barometre salaires</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Droit du Travail</div>
+    <ul>
+      <li><a href="https://www.service-public.fr" target="_blank">service-public.fr</a> — informations officielles</li>
+      <li><a href="https://www.legifrance.gouv.fr" target="_blank">legifrance.gouv.fr</a> — textes de loi</li>
+      <li><a href="https://www.syntec.fr" target="_blank">syntec.fr</a> — convention Syntec (ESN)</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Formation Continue</div>
+    <ul>
+      <li><a href="https://www.moncompteformation.gouv.fr" target="_blank">moncompteformation.gouv.fr</a> — CPF</li>
+      <li><a href="https://www.opco-atlas.fr" target="_blank">opco-atlas.fr</a> — OPCO pour ESN</li>
+    </ul>
+  </div>
+  <div class="resource-card" style="grid-column: 1 / -1;">
+    <div class="resource-title">Networking</div>
+    <ul style="columns: 2;">
+      <li><a href="https://www.meetup.com" target="_blank">meetup.com</a> — meetups tech Paris/IDF, Toulouse, Grenoble</li>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — groupes "Embedded France", "Systemes Embarques"</li>
+      <li><a href="https://www.frenchweb.fr" target="_blank">frenchweb.fr</a> — actualites tech francais</li>
+      <li><a href="https://www.embedded-france.org" target="_blank">embedded-france.org</a> — association professionnelle</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 7 -->
+<!-- ============================================================== -->
+<h2>Partie 7 — Checklist Recapitulative</h2>
+
+<h3>Documents a Preparer</h3>
+<ul class="checklist">
+  <li>CV format francais (FR) — 2 pages, PDF, sobre et professionnel</li>
+  <li>CV format anglais (EN) — pour multinationales et ESN internationales</li>
+  <li>Lettre de motivation modele (FR + EN)</li>
+  <li>Profil LinkedIn a jour (deja fait : fichiers 64-67)</li>
+  <li>Copies des diplomes et attestations</li>
+  <li>Certificats de travail / attestations employeurs</li>
+  <li>References professionnelles (3-4 contacts)</li>
+  <li>Portfolio / liens vers projets (<a href="https://workshop-diy.org" target="_blank">workshop-diy.org</a>)</li>
+</ul>
+
+<h3>Points Forts a Mettre en Avant</h3>
+<ol class="strengths-list">
+  <li>+20 ans d'experience en embarque critique (aero, medical, defense)</li>
+  <li>Maitrise C/C++ bare metal + RTOS + Linux embarque</li>
+  <li>Experience cybersecurite embarquee (pentest IoT, audit Linky/Enedis)</li>
+  <li>Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118</li>
+  <li>Trilinguisme francais / anglais / arabe</li>
+  <li>Fondateur Workshop-DIY (engagement associatif)</li>
+  <li>Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement</li>
+  <li>Nationalite francaise, base en IDF — disponibilite immediate</li>
+</ol>
+
+<h3>Erreurs a Eviter</h3>
+<ul class="warning-list">
+  <li>Ne pas postuler avec un CV generique (adapter a chaque poste)</li>
+  <li>Ne pas negliger la lettre de motivation (encore importante en France)</li>
+  <li>Ne pas sous-estimer son salaire (vous valez 65-80K EUR en IDF)</li>
+  <li>Ne pas attendre une reponse : relancer apres 10-15 jours</li>
+  <li>Ne pas negliger les ESN (acces rapide aux grands groupes)</li>
+  <li>Ne pas oublier le reseau : beaucoup de postes ne sont jamais publies</li>
+  <li>Ne pas ignorer les offres en province (Toulouse, Grenoble = hubs majeurs)</li>
+  <li>Ne pas refuser le teletravail partiel (tres courant en France, 2-3j/semaine)</li>
+</ul>
+
+</body>
+</html>

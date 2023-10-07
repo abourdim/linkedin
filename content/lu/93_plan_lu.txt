@@ -1,0 +1,217 @@
+PLAN D'ACTION — RECHERCHE D'EMPLOI AU LUXEMBOURG
+Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim — Mars 2026
+
+============================================================
+PARTIE 1 — COMPRENDRE LE MARCHE LUXEMBOURGEOIS
+============================================================
+
+Secteur Embarque au Luxembourg
+Le Luxembourg est un hub technologique en pleine croissance avec un ecosysteme
+diversifie : satellites (SES), industrie lourde (ArcelorMittal), automobile
+(Goodyear), fintech et data centers (Amazon Luxembourg).
+
+Secteurs porteurs : spatial/satellites, automobile, industrie 4.0, fintech,
+cybersecurite, HPC/supercalcul (MeluXina), IoT, cleantech.
+
+Votre profil 20+ ans avec aeronautique + medical + cybersecurite est rare
+et recherche dans ce marche.
+
+Salaire Attendu
+- Junior (1-3 ans) : 50 000 - 65 000 EUR
+- Confirme (5-10 ans) : 70 000 - 85 000 EUR
+- Senior (votre profil, 10+ ans) : 85 000 - 105 000 EUR
+- Tres senior / Lead (15+ ans) : 100 000 - 130 000+ EUR
+
+Note : 13eme mois courant. Avantages sociaux genereux (26 jours conges,
+cheques-repas, plan de pension complementaire). En frontalier depuis la
+France : meme salaire brut, fiscalite avantageuse.
+
+============================================================
+PARTIE 2 — STATUT FRONTALIER
+============================================================
+
+Option recommandee : frontalier depuis la Lorraine/Metz
+
+Vous habitez en region parisienne. Trois strategies possibles :
+
+Option A — Demenager pres du Luxembourg (frontalier)
+- S'installer en Lorraine (Metz, Thionville, Longwy) ou en Belgique
+- Trajet quotidien : Metz-Luxembourg ~60 min, Thionville ~30 min
+- Pas de permis de travail necessaire pour les citoyens UE/francais
+- Fiscalite : impot au Luxembourg (plus avantageux), convention bilaterale
+- Avantage : salaire luxembourgeois + cout de vie francais
+
+Option B — S'installer directement au Luxembourg
+- Loyers eleves (1 500 - 2 500 EUR pour un appartement)
+- Mais pas de contrainte de trajet quotidien
+- Meilleure integration dans la vie locale
+
+Option C — Commencer a distance puis demenager
+- Certains employeurs acceptent du remote partiel
+- Commencer le poste, puis demenager apres 2-3 mois
+
+Demarches pour travailler au Luxembourg (citoyen UE)
+1. Pas de permis de travail requis pour les citoyens francais
+2. Declaration d'arrivee si resident au Luxembourg (dans les 3 jours)
+3. Demande de carte de sejour si resident (dans les 3 mois)
+4. En frontalier : aucune demarche administrative cote luxembourgeois
+5. Affiliation a la securite sociale luxembourgeoise automatique
+
+============================================================
+PARTIE 3 — ADAPTER SON CV AU MARCHE LUXEMBOURGEOIS
+============================================================
+
+Differences clefs du CV luxembourgeois
+1. FORMAT STANDARD EU : sobre, professionnel, 2 pages max
+2. PHOTO : acceptee mais non obligatoire
+3. LANGUES : mettre en avant le multilinguisme (FR/EN/DE tres valorise)
+4. STATUT FRONTALIER : mentionner la mobilite vers le Luxembourg
+5. LANGUE DU CV : francais pour postes FR, anglais pour multinationales
+6. TON : professionnel, factuel, pas d'autopromotion excessive
+7. REFERENCES : "Sur demande" est acceptable
+8. COMPETENCES TECHNIQUES : tres valorisees dans le detail
+
+Vos atouts specifiques pour le Luxembourg
+- Francais natif + anglais professionnel + arabe = trilinguisme tres valorise
+- 20+ ans d'experience = profil senior recherche
+- Secteurs critiques (aero DO-178, medical IEC 62304) = gage de rigueur
+- Cybersecurite embarquee = competence rare et en demande
+- Experience V2G/ISO 15118 = secteur en croissance au Luxembourg
+- Association Workshop-DIY = engagement social apprecie
+
+============================================================
+PARTIE 4 — ENTREPRISES CIBLES AU LUXEMBOURG
+============================================================
+
+Spatial / Satellites
+- SES (Betzdorf) — Operateur satellite mondial, systemes embarques
+- OQ Technology (Luxembourg) — Satellites IoT 5G
+- Euro-Composites (Echternach) — Composites aeronautiques
+
+Industrie / Automobile
+- Goodyear (Colmar-Berg) — Pneus, systemes embarques usine
+- ArcelorMittal (Luxembourg) — Acier, automatisation industrielle
+- Ceratizit (Mamer) — Outils de coupe, industrie 4.0
+- Paul Wurth / SMS Group (Luxembourg) — Ingenierie industrielle
+- IEE (Contern) — Capteurs automobiles, systemes embarques
+
+Tech / Data / HPC
+- Amazon Luxembourg — Data centers, systemes embarques infra
+- LuxProvide / MeluXina (Bissen) — Supercalculateur HPC
+- Talkwalker (Luxembourg) — Analytics, tech
+- POST Luxembourg (Luxembourg) — Telecom national, IoT
+- SIX Payment Services (Luxembourg) — Fintech/paiement
+
+Cybersecurite / Fintech
+- INCERT (Luxembourg) — PKI, securite digitale
+- Clearstream (Luxembourg) — Finance, systemes critiques
+- Docler Holding (Luxembourg) — Tech
+
+ESN / Conseil
+- Alter Solutions (Luxembourg) — Conseil en ingenierie
+- Devoteam (Luxembourg) — Conseil IT
+- CGI (Luxembourg) — Services IT
+- KPMG / Deloitte / PwC Luxembourg — Conseil tech
+- Sogeti / Capgemini (Luxembourg) — Ingenierie
+
+============================================================
+PARTIE 5 — PLAN D'ACTION SEMAINE PAR SEMAINE
+============================================================
+
+Semaine 1-2 : Preparation
+[ ] Mettre a jour le CV au format luxembourgeois
+[ ] Preparer 2 versions : FR + EN
+[ ] Mettre a jour le profil LinkedIn
+[ ] Ajouter "Open to work" cibler Luxembourg
+[ ] Rediger un modele de lettre de motivation
+[ ] Photo professionnelle (si pas deja faite)
+
+Semaine 2-3 : Inscription sur les Job Boards
+[ ] jobs.lu — portail N1 au Luxembourg
+[ ] moovijob.com — specialise Luxembourg / Grande Region
+[ ] indeed.lu — general
+[ ] monster.lu — general
+[ ] linkedin.com — activer alertes "embedded" + "Luxembourg"
+[ ] ictjob.lu — specialise IT Luxembourg
+[ ] optioncarriere.lu — agregateur
+
+Semaine 2-4 : Candidatures Spontanees
+[ ] Identifier 15-20 entreprises cibles (voir liste Partie 4)
+[ ] Candidature spontanee par email aux RH + manager technique
+[ ] Adapter chaque lettre de motivation a l'entreprise
+[ ] Cibler en priorite : SES, IEE, POST Luxembourg, Ceratizit, INCERT
+
+Semaine 3-5 : Networking
+[ ] Connecter sur LinkedIn avec des ingenieurs au Luxembourg
+[ ] Rejoindre des groupes LinkedIn : "Luxembourg Tech", "ICT Luxembourg"
+[ ] Contacter les recruteurs specialises : Hays, Michael Page, Robert Half
+[ ] Participer aux salons : Moovijob.lu (salon de l'emploi)
+[ ] Participer a des meetups tech au Luxembourg
+
+Semaine 4-8 : Entretiens
+[ ] Preparer les entretiens techniques
+[ ] Connaitre les salaires du marche
+[ ] Negocier : 13eme mois, cheques-repas, plan pension, conges, teletravail
+
+Semaine 8-12 : Finalisation
+[ ] Signer le contrat
+[ ] Si frontalier : chercher logement en Lorraine (Metz, Thionville)
+[ ] Ouvrir un compte bancaire luxembourgeois (BGL BNP Paribas, ING)
+[ ] S'affilier a la securite sociale luxembourgeoise
+
+============================================================
+PARTIE 6 — SITES ET RESSOURCES UTILES
+============================================================
+
+Job Boards
+- jobs.lu — portail N1 au Luxembourg
+- moovijob.com — specialise Grande Region
+- indeed.lu — general
+- ictjob.lu — specialise IT
+- linkedin.com — alertes emploi
+
+Salaires
+- jobs.lu/salary — calculateur de salaire
+- glassdoor.lu — fourchettes par entreprise
+- statistiques.public.lu — statistiques officielles
+
+Frontalier
+- frontaliers.lu — portail officiel frontaliers
+- lesfrontaliers.lu — communaute et info
+- guichet.public.lu — portail administratif Luxembourg
+
+Networking
+- meetup.com — meetups tech Luxembourg
+- silicon.lu — actualites tech Luxembourg
+- paperjam.lu — actualites business Luxembourg
+
+============================================================
+PARTIE 7 — CHECKLIST RECAPITULATIVE
+============================================================
+
+Documents a Preparer
+[ ] CV format luxembourgeois (FR) — sobre, professionnel
+[ ] CV format luxembourgeois (EN) — pour multinationales
+[ ] Lettre de motivation modele (FR + EN)
+[ ] Profil LinkedIn a jour
+[ ] Copies des diplomes
+[ ] Attestations employeurs
+[ ] Photo professionnelle HD
+[ ] Portfolio / liens vers projets (workshop-diy.org)
+
+Points Forts a Mettre en Avant
+1. +20 ans d'experience en embarque critique (aero, medical)
+2. Maitrise C/C++ bare metal + RTOS + Linux embarque
+3. Experience cybersecurite embarquee (pentest IoT, audit Linky)
+4. Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118
+5. Trilinguisme francais / anglais / arabe
+6. Fondateur Workshop-DIY (engagement social)
+7. Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement
+
+Erreurs a Eviter
+- Ne pas postuler sans adapter le CV
+- Ne pas exagerer ou se survendre
+- Ne pas ignorer la lettre de motivation
+- Ne pas sous-estimer son salaire (vous valez 90K+ EUR)
+- Ne pas attendre une reponse : relancer apres 10 jours
+- Ne pas negliger le reseau

@@ -1,0 +1,170 @@
+=====================================================================
+  استعلامات البحث في LinkedIn — البحث عن عمل في لوكسمبورغ
+  مهندس برمجيات مدمجة أول — عبد الحق بورديم
+  مارس 2026
+=====================================================================
+
+
+=== القسم 1: البحث عن أشخاص (LinkedIn — تبويب "People") ===
+
+--- المهندسون / الزملاء ---
+1. embedded engineer Luxembourg
+2. firmware developer Luxembourg
+3. embedded software engineer Luxembourg
+4. embedded systems Luxembourg
+5. C++ developer Luxembourg
+
+--- المسؤولون عن التوظيف ---
+6. recruiter embedded Luxembourg
+7. talent acquisition engineer Luxembourg
+8. IT recruiter Luxembourg
+9. tech recruiter Luxembourg
+
+--- المديرون / صناع القرار ---
+10. hiring manager firmware Luxembourg
+11. VP engineering Luxembourg
+12. head of embedded Luxembourg
+13. CTO embedded Luxembourg
+14. engineering manager Luxembourg
+15. R&D director Luxembourg
+
+
+=== القسم 2: البحث عن وظائف (LinkedIn — تبويب "Jobs") ===
+
+--- بالإنجليزية ---
+1. embedded software engineer Luxembourg
+2. firmware engineer Luxembourg
+3. embedded C C++ engineer Luxembourg
+4. RTOS engineer Luxembourg
+5. embedded Linux developer Luxembourg
+6. senior firmware developer Luxembourg
+7. embedded systems engineer Luxembourg
+
+--- بالفرنسية (كثير من وظائف لوكسمبورغ بالفرنسية) ---
+8. ingenieur logiciel embarque Luxembourg
+9. developpeur embarque Luxembourg
+10. ingenieur firmware Luxembourg
+11. ingenieur systemes embarques Luxembourg
+12. developpeur C C++ embarque Luxembourg
+
+--- حسب الشركة المستهدفة ---
+13. embedded engineer SES
+14. firmware engineer IEE Luxembourg
+15. embedded engineer POST Luxembourg
+16. software engineer Goodyear Luxembourg
+17. embedded engineer ArcelorMittal
+18. cybersecurity engineer INCERT
+
+
+=== القسم 3: البحث عن شركات (LinkedIn — تبويب "Companies") ===
+
+1. SES satellites Luxembourg
+2. IEE sensing Luxembourg
+3. POST Luxembourg telecom
+4. Goodyear Luxembourg
+5. ArcelorMittal Luxembourg
+6. INCERT Luxembourg cybersecurity
+7. Ceratizit Luxembourg
+8. OQ Technology Luxembourg
+9. LuxProvide MeluXina
+10. Alter Solutions Luxembourg
+11. Devoteam Luxembourg
+12. CGI Luxembourg
+
+
+=== القسم 4: مواقع التوظيف المتخصصة ===
+
+--- jobs.lu (البوابة رقم 1) ---
+1. https://www.jobs.lu — ابحث عن: embedded engineer
+2. https://www.jobs.lu — ابحث عن: firmware engineer
+3. https://www.jobs.lu — ابحث عن: C++ developer
+4. https://www.jobs.lu — ابحث عن: ingenieur embarque
+
+--- moovijob.com (المنطقة الكبرى) ---
+5. https://www.moovijob.com — ابحث عن: embedded Luxembourg
+6. https://www.moovijob.com — ابحث عن: firmware Luxembourg
+7. https://www.moovijob.com — ابحث عن: ingenieur embarque Luxembourg
+
+--- ictjob.lu (متخصص في تكنولوجيا المعلومات) ---
+8. https://www.ictjob.lu — ابحث عن: embedded
+9. https://www.ictjob.lu — ابحث عن: firmware
+10. https://www.ictjob.lu — ابحث عن: C++ embedded
+
+--- indeed.lu ---
+11. https://lu.indeed.com — ابحث عن: embedded software engineer
+12. https://lu.indeed.com — ابحث عن: firmware engineer Luxembourg
+
+
+=== القسم 5: البحث في Google ===
+
+1. site:linkedin.com/jobs "embedded" "Luxembourg"
+2. site:jobs.lu "embedded engineer"
+3. "embedded software engineer" Luxembourg -staffing
+4. "firmware engineer" Luxembourg job 2026
+5. "embedded engineer" Luxembourg recruitment
+6. "embedded" "C++" Luxembourg site:moovijob.com
+7. "RTOS" OR "embedded Linux" Luxembourg job
+8. "DO-178" OR "IEC 62304" Luxembourg engineer
+9. "IoT" "embedded" Luxembourg POST
+10. "cross-border" OR "frontalier" "embedded" Luxembourg
+
+
+=== القسم 6: GitHub / المجتمع التقني ===
+
+1. github.com/topics/embedded-systems — ابحث عن مساهمين من لوكسمبورغ
+2. meetup.com Luxembourg embedded systems
+3. meetup.com Luxembourg IoT
+4. silicon.lu — أخبار التكنولوجيا في لوكسمبورغ
+5. paperjam.lu — أخبار الأعمال في لوكسمبورغ
+6. انضم إلى: Luxembourg Tech Community (Slack/Discord)
+7. انضم إلى: Embedded Systems Luxembourg (مجموعة LinkedIn)
+8. شارك في: فعاليات Moovijob Night
+
+
+=== القسم 7: المستقطبون المتخصصون ===
+
+1. Hays Luxembourg — أنظمة مدمجة / تكنولوجيا المعلومات
+2. Michael Page Luxembourg — هندسة
+3. Robert Half Luxembourg — تكنولوجيا المعلومات / تقنية
+4. Adecco Luxembourg — تقنية
+5. Randstad Luxembourg — هندسة
+6. Alter Solutions Luxembourg — استشارات أنظمة مدمجة
+7. Devoteam Luxembourg — استشارات تكنولوجيا المعلومات
+8. CGI Luxembourg — خدمات تكنولوجيا المعلومات
+9. Sogeti / Capgemini Luxembourg
+
+نصيحة: تواصل مع كل مستقطب برسالة مخصصة.
+أبرز: +20 سنة أنظمة مدمجة، C/C++، RTOS، Linux، DO-178، MISRA C، IEC 62304، ISO 15118.
+
+
+=== القسم 8: البحث المتقدم بالعوامل المنطقية ===
+
+--- استعلام عام ---
+"embedded" AND ("C++" OR "firmware") AND ("Luxembourg" OR "frontalier")
+
+--- حسب التقنية ---
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND "Luxembourg"
+("ARM Cortex" OR "STM32" OR "NXP") AND "Luxembourg"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "Luxembourg"
+("MISRA C" OR "DO-178" OR "IEC 62304") AND "Luxembourg"
+
+--- حسب الشركة ---
+("SES" OR "satellite") AND "embedded" AND "Luxembourg"
+("IEE" OR "sensor") AND "embedded" AND "Luxembourg"
+("POST Luxembourg" OR "IoT") AND "embedded"
+("INCERT" OR "cybersecurity") AND "embedded" AND "Luxembourg"
+("Goodyear" OR "ArcelorMittal") AND ("embedded" OR "automation") AND "Luxembourg"
+
+--- حسب القطاع ---
+"embedded" AND ("satellite" OR "aerospace") AND "Luxembourg"
+"embedded" AND ("automotive" OR "sensor") AND "Luxembourg"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "Luxembourg"
+"embedded" AND ("industry 4.0" OR "automation") AND "Luxembourg"
+
+ملاحظة: يدعم LinkedIn العوامل المنطقية AND و OR وعلامات الاقتباس "..." في شريط البحث.
+اجمع هذه الاستعلامات مع الفلاتر: الموقع=Luxembourg، الخبرة=Mid-Senior، النوع=Full-time.
+
+
+=====================================================================
+  عبد الحق بورديم — abdelhak.bourdim@gmail.com — مارس 2026
+=====================================================================

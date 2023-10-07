@@ -1,0 +1,165 @@
+PLAN D'ACTION — RECHERCHE D'EMPLOI DANS LE GOLFE / GCC
+Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim — Mars 2026
+
+=================================================================
+PARTIE 1 — COMPRENDRE LE MARCHE DU GOLFE
+=================================================================
+
+Secteur Embarque dans le Golfe (EAU, Arabie Saoudite, Qatar) :
+- Marche en pleine expansion : defense, energie, smart cities, Vision 2030
+- L'anglais est la langue dominante des affaires
+- L'arabe natif est un avantage MAJEUR (rare chez les ingenieurs occidentaux)
+- Salaires attractifs et exoneres d'impots
+- Packages incluant logement, transport, vols annuels, education
+
+Salaire attendu (USD, exonere d'impots) :
+- Junior (1-3 ans) : 40 000 - 60 000
+- Confirme (5-10 ans) : 60 000 - 90 000
+- Senior (votre profil, 10+ ans) : 80 000 - 120 000+
+- Tres senior / Lead : 100 000 - 150 000+
+
+Note : En plus du salaire, les packages incluent generalement :
+- Allocation logement (ou logement fourni)
+- Allocation transport
+- Vols aller-retour annuels (famille incluse)
+- Allocation education pour les enfants
+- Assurance sante complete
+
+=================================================================
+PARTIE 2 — VISA ET STATUT
+=================================================================
+
+Visa de travail (sponsoring employeur) :
+- L'employeur sponsorise le visa de travail
+- Duree : 1-3 ans, renouvelable
+- L'employeur gere toutes les demarches administratives
+- Pas de limitation pour les ressortissants francais
+
+Demarches :
+1. Trouver un emploi (l'employeur doit avoir un contrat pret)
+2. L'employeur depose la demande de visa de travail
+3. Delai : 2 a 8 semaines selon le pays
+4. Examen medical obligatoire a l'arrivee
+5. Carte d'identite locale (Emirates ID, Iqama, etc.)
+
+=================================================================
+PARTIE 3 — ENTREPRISES CIBLES
+=================================================================
+
+Defense et Aeronautique :
+- EDGE Group (Abu Dhabi) — defense, technologie avancee
+- Raytheon Arabia (Riyad) — defense, systemes embarques
+- BAE Systems Saudi (Riyad) — defense
+- Thales Middle East (Dubai/Abu Dhabi) — defense, aeronautique
+- SAMI (Saudi Arabian Military Industries) — defense nationale
+
+Energie et Petrole/Gaz :
+- Saudi Aramco (Dhahran) — petrole, technologie
+- ADNOC (Abu Dhabi) — petrole, gaz, technologie
+- QatarEnergy (Doha) — gaz, energie
+- Siemens Energy ME (Dubai) — energie industrielle
+- Schneider Electric ME (Dubai) — automatisation, energie
+
+Mega-Projets et Smart Cities :
+- NEOM (Arabie Saoudite) — ville du futur, IoT, IA
+- Masdar City (Abu Dhabi) — ville durable
+- Lusail City (Qatar) — ville intelligente
+
+Technologie et IoT :
+- Honeywell Middle East (Dubai) — automatisation, IoT
+- Emerson ME (Dubai) — automatisation industrielle
+- ABB Middle East (Dubai) — energie, automatisation
+- Etisalat / e& (Abu Dhabi) — telecoms, IoT
+- STC (Riyad) — telecoms, technologie
+
+EV Charging / Energie Propre :
+- DEWA (Dubai) — electricite, eau, EV
+- EWEC (Abu Dhabi) — eau et electricite
+- Saudi Electricity Company (Riyad) — electricite
+
+Societes de Conseil / ESN :
+- Capgemini Engineering ME — conseil en ingenierie
+- Alten ME — conseil en technologies
+- Worley — ingenierie, energie
+- Wood — ingenierie, technologies
+
+=================================================================
+PARTIE 4 — JOB BOARDS SPECIFIQUES GOLFE
+=================================================================
+
+- Bayt.com — N1 dans le Golfe
+- GulfTalent.com — specialise GCC
+- Naukrigulf.com — populaire aux EAU
+- Indeed.ae / Indeed.sa — general
+- LinkedIn.com — essentiel, activer "Open to Work"
+- Dubizzle.com — EAU
+- Hays Middle East — recrutement specialise
+- Michael Page Middle East — recrutement
+- Robert Half ME — recrutement tech
+
+=================================================================
+PARTIE 5 — PLAN D'ACTION SEMAINE PAR SEMAINE
+=================================================================
+
+Semaine 1-2 : Preparation
+[ ] Mettre a jour le CV au format Golfe (photo, DOB, nationalite, visa)
+[ ] Preparer 2 versions : EN (principal) + AR (atout)
+[ ] Mettre a jour le profil LinkedIn en anglais
+[ ] Ajouter "Open to Work" ciblant UAE, Saudi Arabia, Qatar
+[ ] Photo professionnelle (costume, fond neutre)
+
+Semaine 2-3 : Inscription Job Boards
+[ ] Bayt.com — creer un profil complet
+[ ] GulfTalent.com — s'inscrire
+[ ] Naukrigulf.com — s'inscrire
+[ ] LinkedIn — activer alertes "embedded" + "UAE" + "Saudi" + "Qatar"
+[ ] Indeed.ae et Indeed.sa — s'inscrire
+
+Semaine 2-4 : Candidatures
+[ ] Identifier 20-30 entreprises cibles
+[ ] Candidature directe via les sites carriere des entreprises
+[ ] Candidature spontanee aux RH + managers techniques
+[ ] Adapter chaque lettre de motivation au pays et a l'entreprise
+[ ] Cibler en priorite : EDGE Group, NEOM, Saudi Aramco, Thales ME, Honeywell ME
+
+Semaine 3-5 : Networking
+[ ] Connecter sur LinkedIn avec des ingenieurs dans le Golfe
+[ ] Rejoindre des groupes : "Engineers in UAE", "Saudi Tech", "Qatar Engineering"
+[ ] Contacter les recruteurs specialises : Hays ME, Michael Page ME, Robert Half ME
+[ ] Contacter les agences de recrutement locales
+
+Semaine 4-8 : Entretiens
+[ ] Preparer les entretiens techniques (C/C++, RTOS, protocols)
+[ ] Se renseigner sur les packages de compensation (logement, transport, vols)
+[ ] Negocier : salaire + logement + transport + vols + education enfants
+[ ] Preparer des questions sur la culture de travail locale
+
+Semaine 8-12 : Finalisation
+[ ] Signer le contrat
+[ ] L'employeur sponsorise le visa
+[ ] Preparer les documents (passeport, diplomes attestes, certificats de travail)
+[ ] Examen medical
+[ ] Organiser le demenagement
+
+=================================================================
+PARTIE 6 — VOS ATOUTS POUR LE GOLFE
+=================================================================
+
+1. Arabe natif — avantage ENORME (communication avec les equipes locales, clients gouvernementaux)
+2. +20 ans d'experience en embarque critique (aero, medical)
+3. Experience defense (Safran, Thales) — secteur en plein essor dans le Golfe
+4. Cybersecurite embarquee (Enedis) — competence tres demandee
+5. Normes certifiantes : DO-178, IEC 62304, MISRA C
+6. Nationalite francaise — relations France-Golfe excellentes
+7. Fondateur Workshop-DIY — engagement social valorise
+
+=================================================================
+PARTIE 7 — ERREURS A EVITER
+=================================================================
+
+- Ne pas negliger l'arabe dans le CV et les entretiens
+- Ne pas sous-estimer les packages (negocier logement, transport, vols)
+- Ne pas ignorer la culture locale (respect, ponctualite, dress code)
+- Ne pas postuler uniquement aux grandes entreprises (PME tech aussi)
+- Ne pas ignorer les recruteurs locaux (ils connaissent le marche)
+- Ne pas envoyer un CV generique (adapter au pays et au secteur)

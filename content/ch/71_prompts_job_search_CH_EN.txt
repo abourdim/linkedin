@@ -1,0 +1,336 @@
+================================================================================
+       PROMPTS FOR JOB SEARCH IN SWITZERLAND — EMBEDDED SOFTWARE ENGINEER
+       To be used with ChatGPT, Claude, or any other AI assistant
+================================================================================
+
+
+================================================================================
+PROMPT 1 — GENERATE A COVER LETTER (FR)
+================================================================================
+Use this prompt replacing fields [IN BRACKETS]:
+
+---START PROMPT---
+
+Tu es un expert en redaction de lettres de motivation pour le marche suisse.
+Redige une lettre de motivation en francais pour le poste suivant :
+
+**Poste :** [JOB TITLE — e.g., Embedded Software Engineer]
+**Entreprise :** [COMPANY NAME — e.g., Kudelski Group]
+**Lieu :** [CITY — e.g., Cheseaux-sur-Lausanne]
+**Source de l'offre :** [jobs.ch / LinkedIn / candidature spontanee]
+
+Voici mon profil :
+- Abdelhak Bourdim, ingenieur logiciel embarque senior, 20+ ans d'experience
+- Nationalite francaise, eligible permis G frontalier, mobilite Suisse romande
+- Competences cles : C/C++, RTOS (FreeRTOS, VxWorks), Linux embarque, ARM Cortex, STM32
+- Protocols : CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Normes : DO-178 (aeronautique), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Secteurs : aeronautique (Safran, Thales), medical (GE Healthcare, Sorin), automobile (Valeo), cybersecurite IoT (Enedis/Linky), recharge EV/V2G (E2-CAD)
+- Fondateur de Workshop-DIY (association robotique pour jeunes)
+- Langues : francais (bilingue), anglais (professionnel), arabe (bilingue)
+
+Consignes pour la lettre :
+1. Format suisse : sobre, professionnel, factuel, pas d'autopromotion excessive
+2. Maximum 1 page (300-400 mots)
+3. Mettre en avant les competences qui correspondent specifiquement a l'offre
+4. Expliquer brievement pourquoi la Suisse et cette entreprise en particulier
+5. Mentionner la disponibilite et le statut frontalier
+6. Terminer par une formule de politesse suisse appropriee
+7. Ton : professionnel mais humain, pas de cliches
+
+Si c'est une candidature spontanee, adapter le ton en consequence (montrer la curiosite pour l'entreprise et proposer de la valeur).
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 2 — GENERATE A COVER LETTER (EN)
+================================================================================
+Use this prompt replacing fields [IN BRACKETS]:
+
+---START PROMPT---
+
+You are an expert at writing cover letters for the Swiss job market.
+Write a cover letter in English for the following position:
+
+**Position:** [JOB TITLE — e.g., Senior Embedded Software Engineer]
+**Company:** [COMPANY NAME — e.g., Medtronic]
+**Location:** [CITY — e.g., Tolochenaz, Switzerland]
+**Source:** [jobs.ch / LinkedIn / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French nationality, eligible for Swiss G permit (cross-border), mobile to Western Switzerland
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Swiss style: sober, professional, factual, no boasting
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in Switzerland and this company
+5. Mention availability and cross-border worker status
+6. End with an appropriate Swiss-style closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 3 — LINKEDIN MESSAGE TO A RECRUITER (FR)
+================================================================================
+
+---START PROMPT---
+
+Redige un message LinkedIn court (100-150 mots) en francais pour contacter un recruteur en Suisse romande.
+
+**Destinataire :** [RECRUITER NAME — e.g., Sophie Dupont]
+**Entreprise :** [NAME — e.g., Zuhlke Engineering]
+**Contexte :** [internal recruiter / recruitment agency / technical manager]
+
+Mon profil en resume :
+- Ingenieur logiciel embarque senior, 20+ ans (C/C++, RTOS, Linux embarque)
+- Experience aeronautique (Safran, Thales — DO-178) et medical (GE Healthcare — IEC 62304)
+- Actuellement en poste, cherche une opportunite en Suisse romande
+- Nationalite francaise, eligible permis G frontalier
+
+Consignes :
+1. Ton professionnel mais humain, pas de copier-coller generique
+2. Montrer un interet specifique pour l'entreprise (pas juste "je cherche un job")
+3. Etre concis et direct (les recruteurs recoivent des dizaines de messages)
+4. Proposer un echange sans etre insistant
+5. Pas de flatterie excessive (culture suisse = modestie)
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 4 — LINKEDIN MESSAGE TO A HIRING MANAGER (EN)
+================================================================================
+
+---START PROMPT---
+
+Write a short LinkedIn message (100-150 words) in English to reach out to a hiring manager in Switzerland.
+
+**Recipient:** [NAME — e.g., Marc Keller]
+**Company:** [NAME — e.g., Ellisys SA]
+**Their role:** [e.g., VP Engineering / Head of Firmware]
+**Context:** [saw a job posting / spontaneous outreach / mutual connection]
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- Currently employed, looking for opportunities in Western Switzerland
+- French nationality, eligible for Swiss G permit (cross-border)
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company or team
+3. Be concise and direct (managers are busy)
+4. Propose a brief conversation without being pushy
+5. No excessive flattery (Swiss culture = modesty)
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 5 — LINKEDIN CONNECTION REQUEST (SHORT — FR)
+================================================================================
+Ready to copy-paste (max 300 characters for a connection request):
+
+---VERSION 1 — Recruiter---
+Bonjour [PRENOM], je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded en Suisse romande. Serait-il possible d'echanger ? Cordialement, Abdelhak
+
+---VERSION 2 — Technical manager---
+Bonjour [PRENOM], ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez [ENTREPRISE] m'interesse beaucoup. Au plaisir d'echanger. Abdelhak
+
+---VERSION 3 — Peer / potential colleague---
+Bonjour [PRENOM], ingenieur embarque ici aussi. Je suis votre travail chez [ENTREPRISE] avec interet. J'explore des opportunites en Suisse romande. Ce serait un plaisir de connecter. Abdelhak
+
+
+================================================================================
+PROMPT 6 — LINKEDIN CONNECTION REQUEST (SHORT — EN)
+================================================================================
+
+---VERSION 1 — Recruiter---
+Hi [FIRST NAME], I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). I'm exploring embedded roles in Western Switzerland. Would love to connect. Best, Abdelhak
+
+---VERSION 2 — Hiring manager---
+Hi [FIRST NAME], senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at [COMPANY] caught my interest. Happy to connect. Abdelhak
+
+---VERSION 3 — Peer---
+Hi [FIRST NAME], fellow embedded engineer here. I've been following [COMPANY]'s work with interest. Exploring opportunities in Western Switzerland. Would be great to connect. Abdelhak
+
+
+================================================================================
+PROMPT 7 — TECHNICAL INTERVIEW PREPARATION (FR)
+================================================================================
+
+---START PROMPT---
+
+Tu es un expert en entretiens techniques pour postes d'ingenieur logiciel embarque en Suisse.
+Prepare-moi pour un entretien chez [COMPANY] pour le poste [JOB TITLE].
+
+Mon profil :
+- 20+ ans en logiciel embarque (C/C++, RTOS, Linux embarque, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols : CAN, BLE, USB, TCP/IP, SPI, I2C
+- Normes : DO-178, IEC 62304, MISRA C, ISO 15118
+- Secteurs : aeronautique, medical, automotive, cybersecurite IoT, V2G
+
+Genere :
+1. **10 likely technical questions** for this type of role, with detailed answers based on my experience
+2. **5 behavioural questions** (STAR format) with example answers based on my career
+3. **5 questions I should ask** the company (showing my interest and seniority)
+4. **3 questions about the Swiss context** (culture, team, organisation)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay factual and modest (Swiss culture)
+- Mention specific tools and methods
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 8 — TECHNICAL INTERVIEW PREPARATION (EN)
+================================================================================
+
+---START PROMPT---
+
+You are an expert in technical interviews for embedded software engineer positions in Switzerland.
+Prepare me for an interview at [COMPANY] for the [JOB TITLE] position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. **10 likely technical questions** for this role, with detailed answers based on my experience
+2. **5 behavioral questions** (STAR format) with example answers from my career
+3. **5 questions I should ask** the company (showing interest and seniority)
+4. **3 questions about the Swiss context** (culture, team, organization)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay factual and modest (Swiss culture)
+- Mention specific tools and methods
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 9 — ANALYSE A JOB POSTING AND ADAPT MY APPLICATION
+================================================================================
+
+---START PROMPT---
+
+You are an expert in embedded recruitment in Switzerland.
+Here is a job posting. Analyse it and help me prepare my application.
+
+**Job posting:**
+[PASTE THE FULL JOB POSTING TEXT HERE]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis), V2G (E2-CAD)
+- Native French, professional English, native Arabic
+- Eligible for G cross-border permit
+
+Perform the following tasks:
+1. **Position analysis**: identify the required skills, nice-to-haves, and target profile
+2. **Match score**: rate my fit for the position from 1 to 10, with justification
+3. **Strengths**: list my assets that best match this posting
+4. **Gaps**: identify any potential gaps and how to address or present them positively
+5. **Cover letter**: write a cover letter tailored to this specific posting (300-400 words, Swiss tone)
+6. **CV keywords**: list the keywords to highlight in my CV for this posting
+7. **Estimated salary**: likely salary range for this position in Switzerland
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 10 — POST-INTERVIEW FOLLOW-UP
+================================================================================
+
+---START PROMPT---
+
+Write a thank-you/follow-up email after a job interview in Switzerland.
+
+**Company:** [NAME]
+**Contact:** [NAME + TITLE — e.g., Dr. Marc Weber, Head of Firmware]
+**Interview date:** [DATE]
+**Key topics discussed:** [NOTE 2-3 IMPORTANT TOPICS — e.g., RTOS migration, DO-178 testing, team of 5 engineers]
+**Language:** [FR / EN]
+
+Guidelines:
+1. Short (150-200 words maximum)
+2. Thank them for their time
+3. Reference a specific point from the discussion (show active listening)
+4. Reaffirm interest in the position without being pushy
+5. Tone: professional, sober, Swiss (no flattery)
+6. Offer to provide additional information if needed
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 11 — SALARY NEGOTIATION
+================================================================================
+
+---START PROMPT---
+
+You are an expert in salary negotiation for the Swiss embedded market.
+
+**Proposed position:** [TITLE]
+**Company:** [NAME]
+**Location:** [CANTON — e.g., Vaud]
+**Salary offer:** [AMOUNT — e.g., 115,000 CHF/year]
+**My status:** cross-border worker from France / Swiss resident
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR
+
+Help me with:
+1. **Evaluate the offer**: is it within the market range? (compare with Swiss data)
+2. **Negotiation points**: what elements to negotiate beyond salary (13th month, vacation, training, remote work, bonus)
+3. **Negotiation script**: write 3 key phrases for professional negotiation
+4. **Net calculation**: estimated net salary as cross-border vs. resident (taxes, deductions)
+5. **Things to avoid**: common negotiation mistakes in Switzerland
+
+---END PROMPT---
+
+
+================================================================================
+HOW TO USE THESE PROMPTS
+================================================================================
+
+1. Copy the prompt you are interested in
+2. Replace the fields [IN BRACKETS] with your information
+3. Paste into ChatGPT, Claude, or any other AI
+4. Adapt the response to your personal style
+5. IMPORTANT: never send AI-generated text without reviewing and personalising it
+
+RECOMMENDED ORDER:
+1. Prompt 9 (analyse the posting) -> understand what the company is looking for
+2. Prompt 1 or 2 (cover letter) -> apply
+3. Prompt 3 or 4 (LinkedIn message) -> networking in parallel
+4. Prompt 7 or 8 (interview preparation) -> before each interview
+5. Prompt 10 (follow-up) -> after each interview
+6. Prompt 11 (negotiation) -> when you receive an offer

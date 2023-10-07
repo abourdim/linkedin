@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>خطة العمل — البحث عن عمل في لوكسمبورغ — عبد الحق بورديم</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', 'Tahoma', 'Noto Sans Arabic', sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.7;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+    direction: rtl;
+    text-align: right;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 16pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .entry {
+    background: #fafafa;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 4pt 0 0 4pt;
+  }
+  .entry-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0a66c2;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+  ul { margin: 4pt 16pt 4pt 0; }
+  li { font-size: 9pt; margin-bottom: 2pt; color: #333; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt 0;
+    font-size: 9pt;
+  }
+  table thead th {
+    background: #0a66c2;
+    color: #fff;
+    padding: 5pt 8pt;
+    text-align: right;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+  }
+  table tbody td {
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #d0e3f3;
+    vertical-align: top;
+    text-align: right;
+  }
+  table tbody tr:nth-child(even) { background: #f8fbfe; }
+  table tbody tr:hover { background: #e8f0fe; }
+  .salary-table td:last-child {
+    font-weight: 600;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+  .highlight-box {
+    background: #fff9e6;
+    border: 1pt solid #f0d060;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin: 8pt 0;
+    font-size: 9pt;
+    color: #5a4a00;
+  }
+  .highlight-box strong { color: #7a6200; }
+  .checklist {
+    list-style: none;
+    margin: 6pt 0 10pt 0;
+    padding: 0;
+  }
+  .checklist li {
+    position: relative;
+    padding: 4pt 22pt 4pt 0;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #0a66c2;
+    border-radius: 2pt;
+    background: #fff;
+  }
+  .option-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin-bottom: 8pt;
+  }
+  .option-box .option-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9.5pt;
+    margin-bottom: 4pt;
+  }
+  .option-box ul { margin-top: 4pt; }
+  .week-header {
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+    margin: 10pt 0 6pt 0;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+  }
+  .strengths-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: strength-counter;
+  }
+  .strengths-list li {
+    counter-increment: strength-counter;
+    padding: 4pt 28pt 4pt 0;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .strengths-list li::before {
+    content: counter(strength-counter);
+    position: absolute;
+    right: 0;
+    top: 3pt;
+    width: 18pt;
+    height: 18pt;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 18pt;
+  }
+  .warning-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+  }
+  .warning-list li {
+    padding: 4pt 20pt 4pt 0;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .warning-list li:last-child { border-bottom: none; }
+  .warning-list li::before {
+    content: '\2716';
+    position: absolute;
+    right: 2pt;
+    top: 4pt;
+    color: #c0392b;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt;
+    margin: 6pt 0 10pt 0;
+  }
+  .resource-card {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+  }
+  .resource-card .resource-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+  .resource-card ul { margin: 2pt 14pt 0 0; }
+  .resource-card li { font-size: 8.5pt; margin-bottom: 2pt; }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .latin {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .entry { break-inside: avoid; }
+    .option-box { break-inside: avoid; }
+    table { break-inside: avoid; }
+    .week-header { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>خطة العمل — البحث عن عمل في لوكسمبورغ</h1>
+<div class="subtitle">مهندس برمجيات مدمجة أول &bull; عبد الحق بورديم &bull; مارس 2026</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 1 -->
+<!-- ============================================================== -->
+<h2>الجزء 1 — فهم سوق لوكسمبورغ</h2>
+
+<h3>قطاع الأنظمة المدمجة في لوكسمبورغ</h3>
+<div class="copy-box">
+  لوكسمبورغ مركز تكنولوجي سريع النمو: <strong>الأقمار الصناعية (<span class="latin">SES</span>)</strong>، الصناعة الثقيلة (<span class="latin">ArcelorMittal</span>)، السيارات (<span class="latin">Goodyear</span>)، التكنولوجيا المالية ومراكز البيانات (<span class="latin">Amazon</span>).<br><br>
+  <strong>القطاعات الواعدة:</strong> الفضاء/الأقمار الصناعية، السيارات، الصناعة 4.0، التكنولوجيا المالية، الأمن السيبراني، الحوسبة الفائقة (<span class="latin">MeluXina</span>)، إنترنت الأشياء، التكنولوجيا النظيفة.<br><br>
+  ملفك المهني <strong>بخبرة +20 سنة</strong> في الطيران + الطب + الأمن السيبراني <strong>نادر ومطلوب جداً</strong> في هذا السوق متعدد اللغات.
+</div>
+
+<h3>الراتب المتوقع</h3>
+<table class="salary-table">
+  <thead>
+    <tr>
+      <th>المستوى</th>
+      <th>الخبرة</th>
+      <th>الراتب الإجمالي السنوي (يورو)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>مبتدئ</td><td>1 - 3 سنوات</td><td>50,000 - 65,000</td></tr>
+    <tr><td>متوسط الخبرة</td><td>5 - 10 سنوات</td><td>70,000 - 85,000</td></tr>
+    <tr><td><strong>أول (ملفك الشخصي)</strong></td><td><strong>+10 سنوات</strong></td><td><strong>85,000 - 105,000</strong></td></tr>
+    <tr><td>خبير / قائد تقني</td><td>+15 سنة</td><td>100,000 - 130,000+</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">
+  <strong>ملاحظة:</strong> الشهر 13 شائع في لوكسمبورغ. مزايا اجتماعية سخية: 26 يوم إجازة قانونية، قسائم وجبات، خطة تقاعد تكميلية. كعامل عابر للحدود من فرنسا: نفس الراتب الإجمالي، ضرائب مواتية بفضل الاتفاقية الثنائية.
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 2 -->
+<!-- ============================================================== -->
+<h2>الجزء 2 — وضع العامل العابر للحدود</h2>
+
+<h3>الخيار الموصى به: عابر للحدود من لورين</h3>
+<div class="copy-box">أنت تقيم حالياً في منطقة باريس. ثلاث استراتيجيات ممكنة:</div>
+
+<div class="option-box">
+  <div class="option-title">الخيار أ — الانتقال قرب لوكسمبورغ (عابر للحدود)</div>
+  <ul>
+    <li>الاستقرار في لورين (ميتز، تيونفيل، لونغوي) أو بلجيكا</li>
+    <li>التنقل اليومي: ميتز-لوكسمبورغ ~60 دقيقة، تيونفيل ~30 دقيقة</li>
+    <li>لا حاجة لتصريح عمل للمواطنين الفرنسيين/الأوروبيين</li>
+    <li>الضرائب: ضريبة لوكسمبورغ (معدلات مواتية)، اتفاقية ثنائية</li>
+    <li><strong>الميزة: راتب لوكسمبورغ + تكلفة المعيشة الفرنسية = قوة شرائية مثالية</strong></li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">الخيار ب — الاستقرار مباشرة في لوكسمبورغ</div>
+  <ul>
+    <li>إيجارات مرتفعة (1,500 - 2,500 يورو لشقة)</li>
+    <li>لكن بدون قيود التنقل اليومي</li>
+    <li>اندماج أفضل في الحياة المحلية</li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">الخيار ج — البدء عن بعد ثم الانتقال</div>
+  <ul>
+    <li>بعض أرباب العمل يقبلون العمل عن بعد الجزئي</li>
+    <li>البدء في المنصب، ثم الانتقال بعد 2-3 أشهر</li>
+  </ul>
+</div>
+
+<h3>الإجراءات (مواطن أوروبي)</h3>
+<div class="entry">
+  <ol style="margin-right: 16pt; font-size: 9.5pt;">
+    <li style="margin-bottom: 3pt;">لا حاجة لتصريح عمل للمواطنين الفرنسيين</li>
+    <li style="margin-bottom: 3pt;">كعامل عابر للحدود: لا إجراءات إدارية من الجانب اللوكسمبورغي</li>
+    <li style="margin-bottom: 3pt;">انتساب تلقائي للضمان الاجتماعي اللوكسمبورغي</li>
+    <li style="margin-bottom: 3pt;">إذا مقيم: إعلان الوصول خلال 3 أيام، بطاقة إقامة خلال 3 أشهر</li>
+  </ol>
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 3 -->
+<!-- ============================================================== -->
+<h2>الجزء 3 — الشركات المستهدفة في لوكسمبورغ</h2>
+
+<h3>الفضاء / الأقمار الصناعية</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في <span class="latin">Safran</span>، <span class="latin">Thales</span>، <span class="latin">Zodiac</span></div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="latin">SES</span></td><td>بيتزدورف</td><td>مشغل أقمار صناعية عالمي، أنظمة مدمجة</td></tr>
+    <tr><td><span class="latin">OQ Technology</span></td><td>لوكسمبورغ</td><td>أقمار صناعية <span class="latin">IoT 5G</span></td></tr>
+    <tr><td><span class="latin">Euro-Composites</span></td><td>إشترناخ</td><td>مركبات طيران</td></tr>
+  </tbody>
+</table>
+
+<h3>الصناعة / السيارات</h3>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="latin">Goodyear</span></td><td>كولمار-بيرغ</td><td>إطارات، أنظمة مدمجة صناعية</td></tr>
+    <tr><td><span class="latin">ArcelorMittal</span></td><td>لوكسمبورغ</td><td>فولاذ، أتمتة صناعية</td></tr>
+    <tr><td><span class="latin">Ceratizit</span></td><td>مامر</td><td>أدوات قطع، الصناعة 4.0</td></tr>
+    <tr><td><span class="latin">Paul Wurth / SMS Group</span></td><td>لوكسمبورغ</td><td>هندسة صناعية</td></tr>
+    <tr><td><span class="latin">IEE</span></td><td>كونترن</td><td>مستشعرات سيارات، أنظمة مدمجة</td></tr>
+  </tbody>
+</table>
+
+<h3>التكنولوجيا / البيانات / الحوسبة الفائقة</h3>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="latin">Amazon Luxembourg</span></td><td>لوكسمبورغ</td><td>مراكز بيانات، بنية تحتية</td></tr>
+    <tr><td><span class="latin">LuxProvide / MeluXina</span></td><td>بيسن</td><td>حاسوب فائق <span class="latin">HPC</span></td></tr>
+    <tr><td><span class="latin">Talkwalker</span></td><td>لوكسمبورغ</td><td>تحليلات، تكنولوجيا</td></tr>
+    <tr><td><span class="latin">POST Luxembourg</span></td><td>لوكسمبورغ</td><td>اتصالات وطنية، <span class="latin">IoT</span></td></tr>
+    <tr><td><span class="latin">SIX Payment Services</span></td><td>لوكسمبورغ</td><td>تكنولوجيا مالية / دفع</td></tr>
+  </tbody>
+</table>
+
+<h3>الأمن السيبراني / التكنولوجيا المالية</h3>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="latin">INCERT</span></td><td>لوكسمبورغ</td><td><span class="latin">PKI</span>، أمن رقمي</td></tr>
+    <tr><td><span class="latin">Clearstream</span></td><td>لوكسمبورغ</td><td>تمويل، أنظمة حرجة</td></tr>
+    <tr><td><span class="latin">Docler Holding</span></td><td>لوكسمبورغ</td><td>تكنولوجيا</td></tr>
+  </tbody>
+</table>
+
+<h3>الاستشارات / خدمات تكنولوجيا المعلومات</h3>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>التخصص</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><span class="latin">Alter Solutions</span></td><td>لوكسمبورغ</td><td>استشارات هندسية</td></tr>
+    <tr><td><span class="latin">Devoteam</span></td><td>لوكسمبورغ</td><td>استشارات <span class="latin">IT</span></td></tr>
+    <tr><td><span class="latin">CGI</span></td><td>لوكسمبورغ</td><td>خدمات <span class="latin">IT</span></td></tr>
+    <tr><td><span class="latin">Sogeti / Capgemini</span></td><td>لوكسمبورغ</td><td>هندسة</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================== -->
+<!-- الجزء 4 -->
+<!-- ============================================================== -->
+<h2>الجزء 4 — خطة العمل أسبوعاً بأسبوع</h2>
+
+<div class="week-header">الأسبوع 1-2: التحضير</div>
+<ul class="checklist">
+  <li>تحديث السيرة الذاتية بالصيغة اللوكسمبورغية</li>
+  <li>إعداد نسختين: فرنسية + إنجليزية</li>
+  <li>تحديث ملف <span class="latin">LinkedIn</span>، استهداف لوكسمبورغ</li>
+  <li>إضافة "<span class="latin">Open to work</span>" على <span class="latin">LinkedIn</span></li>
+  <li>إعداد نموذج رسالة تحفيز قابل للتكييف</li>
+</ul>
+
+<div class="week-header">الأسبوع 2-3: التسجيل في مواقع التوظيف</div>
+<ul class="checklist">
+  <li><a href="https://www.jobs.lu"><span class="latin">jobs.lu</span></a> — البوابة رقم 1 في لوكسمبورغ</li>
+  <li><a href="https://www.moovijob.com"><span class="latin">moovijob.com</span></a> — متخصص في المنطقة الكبرى</li>
+  <li><a href="https://www.indeed.lu"><span class="latin">indeed.lu</span></a> — عام</li>
+  <li><a href="https://www.ictjob.lu"><span class="latin">ictjob.lu</span></a> — متخصص <span class="latin">IT</span> لوكسمبورغ</li>
+  <li><a href="https://www.linkedin.com"><span class="latin">linkedin.com</span></a> — تفعيل التنبيهات "<span class="latin">embedded</span>" + "<span class="latin">Luxembourg</span>"</li>
+</ul>
+
+<div class="week-header">الأسبوع 2-4: الترشحات التلقائية</div>
+<ul class="checklist">
+  <li>تحديد 15-20 شركة مستهدفة (انظر القائمة)</li>
+  <li>إرسال ترشحات تلقائية بالبريد الإلكتروني للموارد البشرية + المدير التقني</li>
+  <li>الأولويات: <strong><span class="latin">SES</span>، <span class="latin">IEE</span>، <span class="latin">POST Luxembourg</span>، <span class="latin">Ceratizit</span>، <span class="latin">INCERT</span></strong></li>
+</ul>
+
+<div class="week-header">الأسبوع 3-5: التواصل المهني</div>
+<ul class="checklist">
+  <li>التواصل على <span class="latin">LinkedIn</span> مع مهندسين في لوكسمبورغ</li>
+  <li>الانضمام لمجموعات <span class="latin">LinkedIn</span>: "<span class="latin">Luxembourg Tech</span>"، "<span class="latin">ICT Luxembourg</span>"</li>
+  <li>الاتصال بالمستقطبين: <span class="latin">Hays</span>، <span class="latin">Michael Page</span>، <span class="latin">Robert Half Luxembourg</span></li>
+  <li>حضور معرض <span class="latin">Moovijob.lu</span> للتوظيف</li>
+</ul>
+
+<div class="week-header">الأسبوع 4-8: المقابلات</div>
+<ul class="checklist">
+  <li>التحضير للمقابلات التقنية</li>
+  <li>التفاوض: الشهر 13، قسائم الوجبات، خطة التقاعد، الإجازات، العمل عن بعد</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- الجزء 5 -->
+<!-- ============================================================== -->
+<h2>الجزء 5 — المواقع والموارد المفيدة</h2>
+<div class="resource-grid">
+  <div class="resource-card">
+    <div class="resource-title">مواقع التوظيف</div>
+    <ul>
+      <li><a href="https://www.jobs.lu"><span class="latin">jobs.lu</span></a> — البوابة رقم 1</li>
+      <li><a href="https://www.moovijob.com"><span class="latin">moovijob.com</span></a> — المنطقة الكبرى</li>
+      <li><a href="https://www.ictjob.lu"><span class="latin">ictjob.lu</span></a> — متخصص <span class="latin">IT</span></li>
+      <li><a href="https://www.indeed.lu"><span class="latin">indeed.lu</span></a> — عام</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">الرواتب</div>
+    <ul>
+      <li><a href="https://www.jobs.lu"><span class="latin">jobs.lu/salary</span></a> — حاسبة الرواتب</li>
+      <li><a href="https://www.glassdoor.lu"><span class="latin">glassdoor.lu</span></a> — نطاقات الرواتب</li>
+      <li><a href="https://statistiques.public.lu"><span class="latin">statistiques.public.lu</span></a> — إحصائيات رسمية</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">العمال العابرون للحدود</div>
+    <ul>
+      <li><a href="https://www.frontaliers.lu"><span class="latin">frontaliers.lu</span></a> — البوابة الرسمية</li>
+      <li><a href="https://www.lesfrontaliers.lu"><span class="latin">lesfrontaliers.lu</span></a> — مجتمع ومعلومات</li>
+      <li><a href="https://guichet.public.lu"><span class="latin">guichet.public.lu</span></a> — البوابة الإدارية</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">التواصل المهني</div>
+    <ul>
+      <li><a href="https://www.meetup.com"><span class="latin">meetup.com</span></a> — لقاءات تقنية في لوكسمبورغ</li>
+      <li><a href="https://www.silicon.lu"><span class="latin">silicon.lu</span></a> — أخبار التكنولوجيا</li>
+      <li><a href="https://www.paperjam.lu"><span class="latin">paperjam.lu</span></a> — أخبار الأعمال</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 6 -->
+<!-- ============================================================== -->
+<h2>الجزء 6 — الملخص النهائي</h2>
+
+<h3>نقاط القوة الرئيسية للإبراز</h3>
+<ol class="strengths-list">
+  <li>+20 سنة في الأنظمة المدمجة الحرجة (طيران، طب)</li>
+  <li>إتقان <span class="latin">C/C++ bare metal + RTOS + Linux</span> مدمج</li>
+  <li>خبرة الأمن السيبراني المدمج (اختبار اختراق <span class="latin">IoT</span>، تدقيق <span class="latin">Linky</span>)</li>
+  <li>المعايير التأهيلية: <span class="latin">DO-178</span>، <span class="latin">IEC 62304</span>، <span class="latin">MISRA C</span>، <span class="latin">ISO 15118</span></li>
+  <li>ثلاثي اللغات: فرنسية / إنجليزية / عربية</li>
+  <li>مؤسس <span class="latin">Workshop-DIY</span> (التزام اجتماعي)</li>
+  <li>تعدد القطاعات: طيران، طب، سيارات، <span class="latin">IoT</span>، <span class="latin">V2G</span>، دفع</li>
+</ol>
+
+<h3>أخطاء يجب تجنبها</h3>
+<ul class="warning-list">
+  <li>لا تتقدم بدون تكييف السيرة الذاتية للصيغة اللوكسمبورغية</li>
+  <li>لا تبالغ أو تسوّق لنفسك بشكل مفرط</li>
+  <li>لا تتجاهل رسالة التحفيز</li>
+  <li>لا تقلل من قيمة راتبك (أنت تستحق +90,000 يورو)</li>
+  <li>لا تنتظر الرد: تابع بعد 10 أيام</li>
+  <li>لا تهمل التواصل المهني</li>
+</ul>
+
+</body>
+</html>

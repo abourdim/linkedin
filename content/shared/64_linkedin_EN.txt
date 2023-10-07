@@ -1,0 +1,384 @@
+================================================================================
+                    LINKEDIN PROFILE — ENGLISH VERSION
+              Ready to copy-paste into each LinkedIn section
+================================================================================
+
+
+================================================================================
+1. HEADLINE (max 220 characters)
+================================================================================
+
+Senior Embedded Software Engineer | C/C++ | RTOS | Embedded Linux | ARM Cortex | STM32 | 20+ Years | Aerospace, Medical, Automotive, IoT, V2G
+
+
+================================================================================
+2. ABOUT (copy this entire block)
+================================================================================
+
+Embedded software specialist with over 20 years of hands-on experience developing firmware, middleware, and application layers — bare metal, RTOS, and Embedded Linux — for critical and industrial systems.
+
+I design and deliver low-level drivers, communication stacks (CAN, BLE, USB, TCP/IP), and embedded applications on ARM Cortex, STM32, Microchip, and NXP architectures.
+
+My track record spans high-stakes industries:
+- Aerospace: Safran, Thales, Zodiac — DO-178 certified embedded solutions
+- Medical devices: GE Healthcare, Sorin — IEC 62304 compliant development
+- Automotive: Valeo, Arkamys — GStreamer audio, test audits
+- IoT cybersecurity: Enedis — Linky smart meter penetration testing and audit
+- EV smart charging: E2-CAD — ISO 15118, V2G, OCPP integration
+- Payment systems: Cartadis — 8 years building access control and payment terminals
+
+Core expertise:
+C/C++ | Embedded Linux | FreeRTOS | VxWorks | ARM Cortex (M0, M4, A8) | STM32 | CAN/CANOpen | BLE | USB | TCP/IP | MISRA C | DO-178 | IEC 62304 | ISO 15118
+
+Beyond engineering, I founded Workshop-DIY, a non-profit delivering robotics and STEM workshops for youth (Arduino, ESP32, AI, 3D printing) — 18+ workshops and counting.
+
+Open to new challenges in embedded systems, cybersecurity, and V2G/smart charging.
+
+
+================================================================================
+3. EXPERIENCE (copy each entry separately)
+================================================================================
+
+--- ENTRY 1 ---
+Title:         Embedded Software Engineer — EV Charging / V2G
+Company:       E2-CAD
+Location:      Eragny, France
+Start date:    May 2025
+End date:      Present (check "I currently work here")
+
+Description:
+Product takeover and test bench setup for EV charging stations (Iotecha IP).
+
+- Reverse engineering and source code analysis (static and dynamic architecture)
+- Embedded code review on 3 boards (Microchip PIC, STM32), debug and programming tools setup (ST-Link, nsprog)
+- Communication protocol analysis between Linux modules and embedded boards (RS232, I2C, frame extraction with Saleae)
+- Python extension development and real-time HTML web report generation
+- Test bench design and setup: Chargebyte tools integration, EV simulator
+- Charging station debug and commissioning (PLC, HomePlug Green PHY, ISO 15118, OCPP)
+
+Skills: Embedded Linux, C/C++, Microchip PIC, STM32, PLC, ISO 15118, OCPP, CAN, TCP/IP, Python, Bash
+
+--- ENTRY 2 ---
+Title:         Embedded Software Engineer — Aerospace (SSPC)
+Company:       Safran
+Location:      Creteil, France
+Start date:    March 2024
+End date:      May 2025
+
+Description:
+Low-level driver development for the Solid State Power Controller (SSPC) system.
+
+- Development and update of low-level C drivers for the SSPC system
+- Implementation of logging tools for diagnostics and exchange traceability
+- Writing and execution of on-target validation tests with Lauterbach TRACE32
+- Bash/Awk scripting for test process automation
+
+Skills: C, Lauterbach TRACE32, Bash, Awk
+
+--- ENTRY 3 ---
+Title:         Embedded Software Engineer — Aerospace (SOM Testing)
+Company:       Asterios Technologies
+Location:      Massy, France
+Start date:    August 2023
+End date:      February 2024
+
+Description:
+Software test procedure writing for the T1042SOM module.
+
+- C development of validation tests for the SOM module (T1042 processor)
+- Processor errata analysis and software workaround identification
+- Test documentation writing compliant with project requirements
+
+Skills: C, Bash, Python, Lauterbach TRACE32, Polarion
+
+--- ENTRY 4 ---
+Title:         Embedded Software Engineer — Defense Radio
+Company:       Thales
+Location:      Gennevilliers, France
+Start date:    May 2022
+End date:      July 2023
+
+Description:
+Application layer development for mission preparation software and New Multi Mode Receiver (N-MMR) projects.
+
+- Application layer development under Embedded Linux in C/C++ for 2 projects
+- Configuration management and automation scripts (Bash, Curl, Tshark)
+- Development and execution of HLT (High Level Tests)
+- Bug fixing and network protocol analysis (Websockets)
+
+Skills: Embedded Linux, C/C++, Bash, Websockets, Python
+
+--- ENTRY 5 ---
+Title:         Embedded Software Engineer — Test Audit
+Company:       Valeo
+Location:      Creteil, France
+Start date:    March 2022
+End date:      April 2022
+
+Description:
+Unit test, integration test, and tools audit for Valeo Egypt.
+
+- Audit of test processes and tools (NI Mastre, Vector CANoe)
+- Automation and execution time improvement proposals
+- Client/system requirements review, audit report writing
+
+Skills: NI Mastre, Vector CANoe, Test Audit
+
+--- ENTRY 6 ---
+Title:         Embedded Software Engineer — Automotive Audio
+Company:       Arkamys
+Location:      Levallois-Perret, France
+Start date:    July 2021
+End date:      February 2022
+
+Description:
+GStreamer plugin development and testing for embedded automotive audio framework.
+
+- GStreamer plugin and CAN driver (ELM327) development, diagnostic tools
+- Unit and integration testing (Valgrind), build system Buildroot
+
+Skills: Embedded Linux, C/C++, Buildroot, GStreamer, Valgrind, CAN, Python
+
+--- ENTRY 7 ---
+Title:         Embedded Software Engineer — Autonomous Train
+Company:       Thales
+Location:      Velizy-Villacoublay, France
+Start date:    November 2020
+End date:      June 2021
+
+Description:
+IPC communication and socket programming for Autonomous Train Operation (ATO).
+
+- Application migration from 32-bit to 64-bit on Embedded Linux platform
+- IPC communication protocol definition and implementation
+- Network diagnostic tools development and integration testing
+- Frame analysis with Wireshark, Tshark, Pscapy and Pyshark
+
+Skills: Embedded Linux, C, UDP, TCP, Wireshark, Python
+
+--- ENTRY 8 ---
+Title:         Embedded Software Engineer — Medical Device (CGM)
+Company:       PK Vitality
+Location:      Paris, France
+Start date:    June 2020
+End date:      September 2020
+
+Description:
+BLE drivers, FreeRTOS, and STM32 TouchGFX development for K'Watch Continuous Glucose Monitor.
+
+- HAL development (AFE AD5940, PMIC DA9070), QSPI driver, BLE NRF52840
+- STM32 TouchGFX touchscreen, FreeRTOS, low power mode
+- In vitro testing and Doxygen documentation (IEC 62304 compliant)
+
+Skills: STM32, NRF52840, C, C++, FreeRTOS, BLE, TouchGFX, IEC 62304
+
+--- ENTRY 9 ---
+Title:         Embedded Software Engineer — Aerospace (SSPC A350)
+Company:       Zodiac Aerospace (Safran)
+Location:      Montreuil, France
+Start date:    February 2017
+End date:      March 2020
+
+Description:
+Low-level drivers, diagnostics, and application layers for GENOME/CORAC/SSPC A350 AC9 projects.
+
+- Low-level layer adaptation: CAN, RS485 drivers, thermal memory (dsPIC33)
+- uAFDX to CAN gateway implementation and diagnostic functions
+- SSPC A350 application layer development and optimization
+- Validation testing and aerospace standards-compliant documentation
+
+Skills: Microchip dsPIC33, MPLAB, TI Concerto, CCS Studio, C
+
+--- ENTRY 10 ---
+Title:         Embedded Cybersecurity Engineer — Smart Grid
+Company:       Enedis
+Location:      Nanterre, France
+Start date:    May 2015
+End date:      September 2016
+
+Description:
+Cybersecurity audit and penetration testing on Linky smart meter concentrators.
+
+- Linky concentrator security diagnostics and audit
+- Penetration testing on Embedded Linux systems (Kali Linux, Nmap)
+- Protocol sniffing and fuzzing (Wireshark, Tshark, Scapy, SDR)
+- Log analysis and batch firmware update tool development
+- Code audit and review with manufacturers (Sonar, PC Lint)
+
+Skills: Kali Linux, Embedded Linux, Nmap, Wireshark, Scapy, SDR, Python, Bash
+
+--- ENTRY 11 ---
+Title:         Embedded Software Engineer — Medical Device (BLE Pacemaker)
+Company:       Sorin
+Location:      Clamart, France
+Start date:    November 2014
+End date:      April 2015
+
+Description:
+Bluetooth integration feasibility study for cardiac implant (Platinium project).
+
+- Bluetooth Smart module validation, Serial Port Service Profile development
+- Smartphone communication protocol development and Android application
+- Hardware interface design and sample preparation for implantation
+
+Skills: Cortex M0, Keil, C, BLE, Android
+
+--- ENTRY 12 ---
+Title:         Embedded Software Engineer — Medical Imaging (X-Ray)
+Company:       General Electric Healthcare
+Location:      Buc, France
+Start date:    January 2012
+End date:      December 2014
+
+Description:
+CANOpen integration on RCB and CORTYX boards for ZYX X-Ray Generator.
+
+- CANOpen stack integration (slave/master), CAN driver and service development
+- CMX-RTX kernel porting, file management, TCL test scripts
+- USA team technical support and on-site visits in the United States
+
+Skills: TI TMS320, ARM Cortex A8, VxWorks, C, C++, CANOpen
+
+--- ENTRY 13 ---
+Title:         Embedded Software Engineer — Payment & IoT Systems
+Company:       Photomaton / BCM / Vertical M2M / PGS
+Location:      Paris, France
+Start date:    January 2010
+End date:      December 2012
+
+Description:
+Payment systems and remote metering — Full embedded + PC development on NXP LPC (USB, RFID, GSM/GPRS, Bluetooth).
+
+Skills: NXP LPC, USB, RFID, GSM/GPRS, Bluetooth, C
+
+--- ENTRY 14 ---
+Title:         Embedded Software Engineer — Payment Terminals
+Company:       Cartadis
+Location:      Fontenay-sous-Bois, France
+Start date:    October 2001
+End date:      December 2009
+
+Description:
+8 years — Access control and payment terminals: drivers, embedded applications, USB/TCP/IP stacks, DES/RC4 encryption.
+
+- Full embedded development on NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91
+- USB Host/Device/HID and TCP/IP stack development
+- Smart card, RFID Mifare integration, DES/RC4 encryption
+
+Skills: C, NXP LPC, USB, TCP/IP, Smart Card, RFID, DES, ATMEL AT91
+
+
+================================================================================
+4. SKILLS (Top 50 — add these in your LinkedIn Skills section)
+================================================================================
+
+Embedded Systems
+Embedded Linux
+C Programming
+C++
+RTOS
+FreeRTOS
+VxWorks
+ARM Cortex
+STM32
+Microcontrollers
+Firmware Development
+Embedded Software
+Device Drivers
+CAN Bus
+CANOpen
+BLE (Bluetooth Low Energy)
+USB
+TCP/IP
+SPI
+I2C
+RS232
+RS485
+AFDX
+ISO 15118
+OCPP
+V2G
+MISRA C
+DO-178
+IEC 62304
+Cybersecurity
+Penetration Testing
+IoT Security
+Python
+Bash Scripting
+GStreamer
+Buildroot
+Lauterbach TRACE32
+Wireshark
+Git
+Jira
+Agile Methodologies
+Scrum
+Test Validation
+RFID
+Smart Card
+Debugging
+Reverse Engineering
+Hardware-Software Integration
+Technical Documentation
+Linux Kernel
+
+
+================================================================================
+5. EDUCATION
+================================================================================
+
+--- Degree 1 ---
+School:        AFPA
+Degree:        Engineer — Electronic and Computer Systems Design
+Field:         Embedded Systems / Electronics
+Location:      Champs-sur-Marne, France
+
+--- Degree 2 ---
+School:        Tenon Hospital, Paris
+Degree:        Postgraduate Diploma — Biomedical Instrumentation
+Field:         Biomedical Engineering
+
+--- Degree 3 ---
+School:        University of Boumerdes
+Degree:        Engineer — Electronics, Communication
+Field:         Electronics / Telecommunications
+Location:      Boumerdes, Algeria
+
+
+================================================================================
+6. VOLUNTEER EXPERIENCE
+================================================================================
+
+Title:         Founder
+Organization:  Workshop-DIY
+Cause:         Education / Science and Technology
+Start date:    2020
+End date:      Present (ongoing)
+
+Description:
+Non-profit association delivering robotics and STEM workshops for youth (ages 6-12+) in Chelles (77), France.
+
+- Designed an ESP32-based robot kit (WiFi, BLE, servos, sensors)
+- Led 18+ workshops: Arduino, micro:bit, AI, 3D printing, laser cutting
+- Teaching embedded systems, programming, and electronics to young people
+
+Website: workshop-diy.org
+
+
+================================================================================
+7. LANGUAGES
+================================================================================
+
+French        — Native or bilingual proficiency
+English       — Professional working proficiency
+Arabic        — Native or bilingual proficiency
+
+
+================================================================================
+8. FEATURED SECTION (optional — add a link)
+================================================================================
+
+Title:         Workshop-DIY — Robotics & STEM for Youth
+Link:          https://workshop-diy.org
+Description:   Founder of an educational robotics non-profit. ESP32 robot kits, Arduino workshops, AI and 3D printing for young makers.

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Plan d'Action — Recherche d'Emploi en Suisse Romande — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 16pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.55;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .entry {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .entry-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0a66c2;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+  .field { margin-bottom: 3pt; font-size: 9.5pt; }
+  .field-name { font-weight: 600; color: #444; }
+  .field-value { color: #222; }
+  ul { margin: 4pt 0 4pt 16pt; }
+  li { font-size: 9pt; margin-bottom: 2pt; color: #333; }
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5pt;
+    margin: 6pt 0;
+  }
+  .skill-tag {
+    background: #e8f0fe;
+    color: #0a66c2;
+    padding: 3pt 10pt;
+    border-radius: 12pt;
+    font-size: 8.5pt;
+    font-weight: 600;
+  }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .env { font-size: 8pt; color: #888; margin-top: 3pt; }
+  .env strong { color: #666; }
+
+  /* Tables for company lists */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt 0;
+    font-size: 9pt;
+  }
+  table thead th {
+    background: #0a66c2;
+    color: #fff;
+    padding: 5pt 8pt;
+    text-align: left;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+  }
+  table tbody td {
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #d0e3f3;
+    vertical-align: top;
+  }
+  table tbody tr:nth-child(even) { background: #f8fbfe; }
+  table tbody tr:hover { background: #e8f0fe; }
+
+  /* Salary table */
+  .salary-table td:last-child {
+    font-weight: 600;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+
+  /* Styled checkboxes for action items */
+  .checklist {
+    list-style: none;
+    margin: 6pt 0 10pt 0;
+    padding: 0;
+  }
+  .checklist li {
+    position: relative;
+    padding: 4pt 0 4pt 22pt;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #0a66c2;
+    border-radius: 2pt;
+    background: #fff;
+  }
+
+  /* Option boxes */
+  .option-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin-bottom: 8pt;
+  }
+  .option-box .option-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9.5pt;
+    margin-bottom: 4pt;
+  }
+  .option-box ul { margin-top: 4pt; }
+
+  /* Timeline week headers */
+  .week-header {
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+    margin: 10pt 0 6pt 0;
+    border-left: 3pt solid #0a66c2;
+  }
+
+  /* Highlight box for important notes */
+  .highlight-box {
+    background: #fff9e6;
+    border: 1pt solid #f0d060;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin: 8pt 0;
+    font-size: 9pt;
+    color: #5a4a00;
+  }
+  .highlight-box strong { color: #7a6200; }
+
+  /* Strengths numbered list */
+  .strengths-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: strength-counter;
+  }
+  .strengths-list li {
+    counter-increment: strength-counter;
+    padding: 4pt 0 4pt 28pt;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .strengths-list li::before {
+    content: counter(strength-counter);
+    position: absolute;
+    left: 0;
+    top: 3pt;
+    width: 18pt;
+    height: 18pt;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 18pt;
+  }
+
+  /* Warning / mistakes to avoid */
+  .warning-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+  }
+  .warning-list li {
+    padding: 4pt 0 4pt 20pt;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .warning-list li:last-child { border-bottom: none; }
+  .warning-list li::before {
+    content: '\2716';
+    position: absolute;
+    left: 2pt;
+    top: 4pt;
+    color: #c0392b;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+
+  /* Links styling */
+  a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+
+  /* Resource grid */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt;
+    margin: 6pt 0 10pt 0;
+  }
+  .resource-card {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+  }
+  .resource-card .resource-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+  .resource-card ul {
+    margin: 2pt 0 0 14pt;
+  }
+  .resource-card li {
+    font-size: 8.5pt;
+    margin-bottom: 2pt;
+  }
+
+  /* Swiss CV differences numbered */
+  .cv-rules {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: cv-counter;
+  }
+  .cv-rules li {
+    counter-increment: cv-counter;
+    padding: 4pt 0 4pt 26pt;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt solid #e8f0fe;
+  }
+  .cv-rules li:last-child { border-bottom: none; }
+  .cv-rules li::before {
+    content: counter(cv-counter);
+    position: absolute;
+    left: 0;
+    top: 4pt;
+    width: 16pt;
+    height: 16pt;
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 3pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 16pt;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .entry { break-inside: avoid; }
+    .option-box { break-inside: avoid; }
+    table { break-inside: avoid; }
+    .week-header { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Plan d'Action — Recherche d'Emploi en Suisse Romande</h1>
+<div class="subtitle">Ingenieur Logiciel Embarque Senior &bull; Abdelhak Bourdim &bull; Mars 2026</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 1 -->
+<!-- ============================================================== -->
+<h2>Partie 1 — Comprendre le Marche</h2>
+
+<h3>Secteur Embarque en Suisse Romande</h3>
+<div class="copy-box">
+  Le marche est actif : <strong>100+ postes embedded</strong> ouverts en permanence en Suisse.
+  Lausanne et Geneve sont des hubs technologiques majeurs.<br><br>
+  <strong>Secteurs porteurs :</strong> medical devices, horlogerie/precision, aerospace, automotive, cleantech/energy, IoT, defense.<br><br>
+  Votre profil <strong>20+ ans</strong> avec aeronautique + medical + cybersecurite est <strong>rare et recherche</strong>.
+</div>
+
+<h3>Salaire Attendu</h3>
+<table class="salary-table">
+  <thead>
+    <tr>
+      <th>Niveau</th>
+      <th>Experience</th>
+      <th>Salaire brut annuel (CHF)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Junior</td><td>1 - 3 ans</td><td>65 000 - 85 000</td></tr>
+    <tr><td>Confirme</td><td>5 - 10 ans</td><td>95 000 - 110 000</td></tr>
+    <tr><td><strong>Senior (votre profil)</strong></td><td><strong>10+ ans</strong></td><td><strong>110 000 - 140 000</strong></td></tr>
+    <tr><td>Tres senior / Lead</td><td>15+ ans</td><td>130 000 - 160 000+</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">
+  <strong>Note :</strong> ces chiffres sont bruts annuels. En Suisse, il y a generalement 13 mois de salaire (le 13eme mois est standard). En frontalier depuis la France : meme salaire brut, cout de vie reduit.
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 2 -->
+<!-- ============================================================== -->
+<h2>Partie 2 — Statut Frontalier (Permis G)</h2>
+
+<h3>Option recommandee : frontalier depuis la Haute-Savoie</h3>
+<div class="copy-box" style="margin-bottom: 10pt;">
+  Vous habitez en region parisienne. Trois strategies possibles :
+</div>
+
+<div class="option-box">
+  <div class="option-title">Option A — Demenager pres de Geneve (frontalier)</div>
+  <ul>
+    <li>S'installer en Haute-Savoie (Annemasse, Annecy, Thonon, Gex)</li>
+    <li>Permis G frontalier : travail en Suisse, residence en France</li>
+    <li>Obligation de rentrer au domicile 1x par semaine minimum</li>
+    <li>Pas de quota pour les francais (accord UE/CH)</li>
+    <li>L'employeur fait la demande de permis G (2-6 semaines)</li>
+    <li>Fiscalite : impot a la source en Suisse + impot en France (avec credit d'impot)</li>
+    <li><strong>Avantage : salaire suisse + cout de vie francais = pouvoir d'achat optimal</strong></li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">Option B — S'installer directement en Suisse</div>
+  <ul>
+    <li>Permis B (resident) : demande par l'employeur</li>
+    <li>Plus couteux (loyers Geneve ~2 000 - 3 000 CHF pour un appartement)</li>
+    <li>Mais pas de contrainte de retour hebdomadaire</li>
+  </ul>
+</div>
+
+<div class="option-box">
+  <div class="option-title">Option C — Commencer a distance puis demenager</div>
+  <ul>
+    <li>Certains employeurs acceptent du remote partiel</li>
+    <li>Commencer le poste, puis demenager apres 2-3 mois</li>
+  </ul>
+</div>
+
+<h3>Demarches Permis G</h3>
+<div class="entry">
+  <ol style="margin-left: 16pt; font-size: 9.5pt;">
+    <li style="margin-bottom: 3pt;">Trouver un emploi (l'employeur doit avoir un contrat pret)</li>
+    <li style="margin-bottom: 3pt;">L'employeur depose la demande de permis G au canton</li>
+    <li style="margin-bottom: 3pt;">Delai : 2 a 6 semaines selon le canton</li>
+    <li style="margin-bottom: 3pt;">Le permis G est valide 5 ans (contrat permanent) ou duree du contrat</li>
+    <li style="margin-bottom: 3pt;">Renouvelable automatiquement tant que vous avez un emploi</li>
+  </ol>
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 3 -->
+<!-- ============================================================== -->
+<h2>Partie 3 — Adapter son CV au Marche Suisse</h2>
+
+<h3>Differences clefs du CV suisse</h3>
+<ol class="cv-rules">
+  <li><strong>PHOTO obligatoire</strong> (professionnelle, fond neutre)</li>
+  <li><strong>DATE DE NAISSANCE</strong> a inclure</li>
+  <li><strong>NATIONALITE</strong> a mentionner</li>
+  <li><strong>SITUATION FAMILIALE</strong> (optionnel mais courant)</li>
+  <li><strong>PERMIS :</strong> mentionner "Permis B" (voiture) et "Eligible permis G frontalier"</li>
+  <li><strong>FORMAT :</strong> 2 pages max, PDF, anti-chronologique</li>
+  <li><strong>LANGUE :</strong> rediger dans la langue de l'annonce (francais pour Romandie)</li>
+  <li><strong>TON :</strong> modeste, factuel, precis — eviter l'autopromotion excessive</li>
+  <li><strong>REFERENCES :</strong> "Sur demande" est acceptable</li>
+  <li><strong>PAS de titre "CV"</strong> en haut — commencer par le nom</li>
+</ol>
+
+<h3>Vos atouts specifiques pour la Suisse</h3>
+<div class="copy-box">
+  <ul>
+    <li>Francais natif + anglais professionnel + arabe = <strong>trilinguisme tres valorise</strong></li>
+    <li>20+ ans d'experience = <strong>profil senior recherche</strong></li>
+    <li>Secteurs critiques (aero DO-178, medical IEC 62304) = <strong>gage de rigueur</strong></li>
+    <li>Cybersecurite embarquee = <strong>competence rare et en demande</strong></li>
+    <li>Association Workshop-DIY = <strong>engagement social apprecie en Suisse</strong></li>
+  </ul>
+</div>
+
+<h3>Actions CV</h3>
+<ul class="checklist">
+  <li>Ajouter une photo professionnelle</li>
+  <li>Ajouter date de naissance, nationalite, situation familiale</li>
+  <li>Mentionner "Eligible permis G frontalier" ou "Permis B eligible"</li>
+  <li>Adapter le format au standard suisse (sobre, professionnel)</li>
+  <li>Preparer une version francaise (pour Romandie) et anglaise (pour multinationales)</li>
+  <li>Rediger une lettre de motivation personnalisee par entreprise ciblee</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- PARTIE 4 -->
+<!-- ============================================================== -->
+<h2>Partie 4 — Entreprises Cibles en Suisse Romande</h2>
+
+<h3>Medical Devices</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience GE Healthcare, Sorin, PK Vitality</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Medtronic</td><td>Tolochenaz (VD)</td><td>Implants, dispositifs medicaux</td></tr>
+    <tr><td>Stryker</td><td>Geneve</td><td>Chirurgie, orthopedie</td></tr>
+    <tr><td>Johnson &amp; Johnson / DePuy Synthes</td><td>Le Locle, Zuchwil</td><td>Dispositifs medicaux</td></tr>
+    <tr><td>MPS Micro Precision Systems</td><td>Bienne</td><td>Micro-mecanique, medical</td></tr>
+    <tr><td>Distalmotion</td><td>Lausanne</td><td>Robotique chirurgicale</td></tr>
+    <tr><td>Implantica</td><td>Lausanne</td><td>Implants connectes</td></tr>
+    <tr><td>Sophia Genetics</td><td>Lausanne / Saint-Sulpice</td><td>Genomique, IA medicale</td></tr>
+    <tr><td>Mindmaze</td><td>Lausanne</td><td>Neurotechnologie</td></tr>
+  </tbody>
+</table>
+
+<h3>Horlogerie &amp; Precision</h3>
+<div class="note" style="margin-bottom: 6pt;">Embedded C/C++ tres demande dans ce secteur</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Rolex</td><td>Geneve</td><td>Electronique embarquee, R&amp;D</td></tr>
+    <tr><td>Patek Philippe</td><td>Geneve</td><td>Horlogerie de luxe</td></tr>
+    <tr><td>Omega / Swatch Group</td><td>Bienne</td><td>Horlogerie</td></tr>
+    <tr><td>TAG Heuer</td><td>La Chaux-de-Fonds</td><td>Horlogerie connectee</td></tr>
+    <tr><td>Audemars Piguet</td><td>Le Brassus</td><td>Haute horlogerie</td></tr>
+  </tbody>
+</table>
+
+<h3>Aerospace &amp; Defense</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience Safran, Thales, Zodiac</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>RUAG Space</td><td>Zurich / Nyon</td><td>Spatial</td></tr>
+    <tr><td>BEYOND GRAVITY (ex-RUAG Space)</td><td>Zurich / Nyon</td><td>Spatial</td></tr>
+    <tr><td>Pilatus Aircraft</td><td>Stans</td><td>Aviation (hors Romandie mais recrute)</td></tr>
+    <tr><td>CSEM</td><td>Neuchatel</td><td>R&amp;D, capteurs, systemes embarques</td></tr>
+  </tbody>
+</table>
+
+<h3>Automotive &amp; Cleantech / V2G</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience E2-CAD, ISO 15118</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>ABB E-mobility</td><td>Geneve / Zurich</td><td>Bornes de recharge</td></tr>
+    <tr><td>Bcomp</td><td>Fribourg</td><td>Materiaux composites auto</td></tr>
+    <tr><td>GreenMotion (rachete par Eaton)</td><td>Lausanne</td><td>Bornes EV</td></tr>
+    <tr><td>H55</td><td>Sion</td><td>Avions electriques</td></tr>
+    <tr><td>Leclanché</td><td>Yverdon</td><td>Batteries / stockage energie</td></tr>
+  </tbody>
+</table>
+
+<h3>IoT &amp; Cybersecurite</h3>
+<div class="note" style="margin-bottom: 6pt;">Votre experience Enedis, Linky</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Kudelski Group</td><td>Cheseaux-sur-Lausanne</td><td>Cybersecurite leader mondial</td></tr>
+    <tr><td>ID Quantique</td><td>Geneve</td><td>Securite quantique</td></tr>
+    <tr><td>WISeKey</td><td>Geneve</td><td>Cybersecurite IoT</td></tr>
+    <tr><td>Nagravision (Kudelski)</td><td>Cheseaux</td><td>Securite digitale</td></tr>
+  </tbody>
+</table>
+
+<h3>Electronique &amp; Systemes Embarques</h3>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Domaine</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ellisys</td><td>Lausanne</td><td>Analyseurs de protocoles (USB, BLE, WiFi)</td></tr>
+    <tr><td>Sensirion</td><td>Staefa (ZH) + bureaux romands</td><td>Capteurs</td></tr>
+    <tr><td>EM Microelectronic</td><td>Marin (NE)</td><td>Microcontroleurs (Swatch Group)</td></tr>
+    <tr><td>CSEM</td><td>Neuchatel</td><td>Centre de recherche en microtechnologie</td></tr>
+    <tr><td>Bobst</td><td>Lausanne</td><td>Machines industrielles, systemes embarques</td></tr>
+    <tr><td>Logitech</td><td>Lausanne</td><td>Peripheriques, embedded firmware</td></tr>
+  </tbody>
+</table>
+
+<h3>Societes de Conseil / ESN</h3>
+<div class="note" style="margin-bottom: 6pt;">Acces rapide au marche</div>
+<table>
+  <thead>
+    <tr><th>Entreprise</th><th>Localisation</th><th>Specialite</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zuhlke</td><td>Lausanne</td><td>Conseil en ingenierie</td></tr>
+    <tr><td>Altran (Capgemini Engineering)</td><td>Geneve, Lausanne</td><td>Conseil en ingenierie</td></tr>
+    <tr><td>Akkodis (ex Modis)</td><td>Geneve</td><td>Conseil en technologies</td></tr>
+    <tr><td>Alten</td><td>Geneve</td><td>Conseil en ingenierie</td></tr>
+    <tr><td>Auctae</td><td>Romandie</td><td>Recrutement tech embarque</td></tr>
+    <tr><td>EYRA Group</td><td>Geneve, Lausanne</td><td>Conseil en ingenierie</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================== -->
+<!-- PARTIE 5 -->
+<!-- ============================================================== -->
+<h2>Partie 5 — Plan d'Action Semaine par Semaine</h2>
+
+<div class="week-header">Semaine 1-2 : Preparation</div>
+<ul class="checklist">
+  <li>Mettre a jour le CV au format suisse (photo, infos perso, format sobre)</li>
+  <li>Preparer 2 versions : FR (Romandie) + EN (multinationales)</li>
+  <li>Mettre a jour le profil LinkedIn (utiliser les fichiers 64-67 deja crees)</li>
+  <li>Ajouter "Open to work" sur LinkedIn, cibler Suisse romande</li>
+  <li>Rediger un modele de lettre de motivation adaptable</li>
+  <li>Photo professionnelle (si pas deja faite)</li>
+</ul>
+
+<div class="week-header">Semaine 2-3 : Inscription sur les Job Boards</div>
+<ul class="checklist">
+  <li><a href="https://www.jobs.ch" target="_blank">jobs.ch</a> — le plus grand portail suisse</li>
+  <li><a href="https://www.jobup.ch" target="_blank">jobup.ch</a> — specifique Romandie</li>
+  <li><a href="https://www.indeed.ch" target="_blank">indeed.ch</a> — general</li>
+  <li><a href="https://swissdevjobs.ch" target="_blank">swissdevjobs.ch</a> — specialise IT/dev</li>
+  <li><a href="https://www.it-jobs-switzerland.ch" target="_blank">it-jobs-switzerland.ch</a> — specialise IT</li>
+  <li><a href="https://www.glassdoor.ch" target="_blank">glassdoor.ch</a> — offres + avis entreprises</li>
+  <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — activer alertes "embedded" + "Lausanne" + "Geneve"</li>
+</ul>
+
+<div class="week-header">Semaine 2-4 : Candidatures Spontanees</div>
+<ul class="checklist">
+  <li>Identifier 15-20 entreprises cibles (voir liste Partie 4)</li>
+  <li>Candidature spontanee par email aux RH + manager technique</li>
+  <li>Adapter chaque lettre de motivation a l'entreprise</li>
+  <li>Cibler en priorite : <strong>Kudelski, Ellisys, CSEM, Medtronic, Bobst, Logitech, ABB</strong></li>
+</ul>
+
+<div class="week-header">Semaine 3-5 : Networking</div>
+<ul class="checklist">
+  <li>Connecter sur LinkedIn avec des ingenieurs embarques en Suisse romande</li>
+  <li>Rejoindre des groupes LinkedIn : "Embedded Systems Switzerland", "Swiss Engineering", "Suisse Romande Tech"</li>
+  <li>Contacter les recruteurs specialises embarque en Suisse : Zuhlke, Auctae, Hays, Michael Page, Robert Walters</li>
+  <li>Participer a des meetups tech a Geneve/Lausanne (meetup.com)</li>
+  <li>Si possible, visiter le salon "EPHJ" (Geneve, juin) — horlogerie / medical / precision</li>
+</ul>
+
+<div class="week-header">Semaine 4-8 : Entretiens</div>
+<ul class="checklist">
+  <li>Preparer les entretiens techniques (C/C++, RTOS, protocols, architecture)</li>
+  <li>Preparer des questions sur le statut frontalier / permis G</li>
+  <li>Connaitre les salaires du marche (ne pas sous-estimer sa valeur)</li>
+  <li>Negocier : 13eme mois, jours de conges (20-25 jours standard en CH), formation continue, teletravail partiel</li>
+</ul>
+
+<div class="week-header">Semaine 8-12 : Finalisation</div>
+<ul class="checklist">
+  <li>Signer le contrat</li>
+  <li>L'employeur demande le permis G</li>
+  <li>Chercher un logement en Haute-Savoie si frontalier (Annemasse, Saint-Julien-en-Genevois, Gex, Ferney-Voltaire)</li>
+  <li>Ouvrir un compte bancaire suisse (ou utiliser Wise/Revolut)</li>
+  <li>Souscrire une assurance maladie (LAMal ou CMU pour frontaliers)</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- PARTIE 6 -->
+<!-- ============================================================== -->
+<h2>Partie 6 — Sites et Ressources Utiles</h2>
+
+<div class="resource-grid">
+  <div class="resource-card">
+    <div class="resource-title">Job Boards</div>
+    <ul>
+      <li><a href="https://www.jobs.ch" target="_blank">jobs.ch</a> — portail N1 en Suisse</li>
+      <li><a href="https://www.jobup.ch" target="_blank">jobup.ch</a> — specialise Romandie</li>
+      <li><a href="https://swissdevjobs.ch" target="_blank">swissdevjobs.ch</a> — jobs dev/IT</li>
+      <li><a href="https://www.it-jobs-switzerland.ch" target="_blank">it-jobs-switzerland.ch</a> — jobs IT</li>
+      <li><a href="https://www.indeed.ch" target="_blank">indeed.ch</a> — general</li>
+      <li><a href="https://www.glassdoor.ch" target="_blank">glassdoor.ch</a> — offres + salaires + avis</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Salaires</div>
+    <ul>
+      <li><a href="https://www.jobs.ch/en/salary/" target="_blank">jobs.ch/salary</a> — calculateur de salaire</li>
+      <li><a href="https://www.glassdoor.ch" target="_blank">glassdoor.ch</a> — fourchettes par entreprise</li>
+      <li><a href="https://www.lohncheck.ch" target="_blank">lohncheck.ch</a> — comparateur de salaires</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Frontalier</div>
+    <ul>
+      <li><a href="https://www.guidedufrontalier.com" target="_blank">guidedufrontalier.com</a> — guide complet</li>
+      <li><a href="https://www.frontaliers-grandest.eu" target="_blank">frontaliers-grandest.eu</a> — ressources</li>
+      <li><a href="https://www.travailler-en-suisse.ch" target="_blank">travailler-en-suisse.ch</a> — guide general</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Permis de Travail</div>
+    <ul>
+      <li><a href="https://www.sem.admin.ch" target="_blank">sem.admin.ch</a> — Secretariat d'Etat aux migrations</li>
+      <li><a href="https://www.ibani.com" target="_blank">ibani.com</a> — guide permis G</li>
+    </ul>
+  </div>
+  <div class="resource-card" style="grid-column: 1 / -1;">
+    <div class="resource-title">Networking</div>
+    <ul style="columns: 2;">
+      <li><a href="https://www.meetup.com" target="_blank">meetup.com</a> — meetups tech Geneve/Lausanne</li>
+      <li><a href="https://swissdevjobs.ch/blog" target="_blank">swissdevjobs.ch/blog</a> — actualites tech Suisse</li>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — groupes "Swiss Engineering", "Embedded Switzerland"</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- PARTIE 7 -->
+<!-- ============================================================== -->
+<h2>Partie 7 — Checklist Recapitulative</h2>
+
+<h3>Documents a Preparer</h3>
+<ul class="checklist">
+  <li>CV format suisse (FR) — avec photo, date naissance, nationalite</li>
+  <li>CV format suisse (EN) — pour multinationales</li>
+  <li>Lettre de motivation modele (FR + EN)</li>
+  <li>Profil LinkedIn a jour (deja fait : fichiers 64-67)</li>
+  <li>Copies des diplomes</li>
+  <li>Attestations employeurs / certificats de travail</li>
+  <li>Photo professionnelle HD</li>
+  <li>Portfolio / liens vers projets (<a href="https://workshop-diy.org" target="_blank">workshop-diy.org</a>)</li>
+</ul>
+
+<h3>Points Forts a Mettre en Avant</h3>
+<ol class="strengths-list">
+  <li>+20 ans d'experience en embarque critique (aero, medical)</li>
+  <li>Maitrise C/C++ bare metal + RTOS + Linux embarque</li>
+  <li>Experience cybersecurite embarquee (pentest IoT, audit Linky)</li>
+  <li>Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118</li>
+  <li>Trilinguisme francais / anglais / arabe</li>
+  <li>Fondateur Workshop-DIY (engagement social)</li>
+  <li>Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement</li>
+</ol>
+
+<h3>Erreurs a Eviter</h3>
+<ul class="warning-list">
+  <li>Ne pas postuler sans adapter le CV au format suisse</li>
+  <li>Ne pas exagerer ou se survendre (culture suisse = modestie)</li>
+  <li>Ne pas ignorer la lettre de motivation (importante en Suisse)</li>
+  <li>Ne pas sous-estimer son salaire (vous valez 120K+ CHF)</li>
+  <li>Ne pas attendre une reponse : relancer apres 10 jours</li>
+  <li>Ne pas negliger le reseau : beaucoup de postes ne sont jamais publies</li>
+</ul>
+
+</body>
+</html>

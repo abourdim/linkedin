@@ -1,0 +1,136 @@
+================================================================================
+        2-MINUTE PITCH — JOB SEARCH IN LUXEMBOURG
+        "Tell me about yourself"
+        Abdelhak Bourdim — Senior Embedded Software Engineer
+================================================================================
+
+TIMING: ~2 minutes (280 words) — dynamic, professional pace
+CONTEXT: interview for an embedded position in Luxembourg (cross-border worker from Lorraine)
+
+
+================================================================================
+SCRIPT (learn it, don't read it)
+================================================================================
+
+Hello, I'm Abdelhak Bourdim, a senior embedded software engineer
+with over 20 years of experience.
+
+                        [PAUSE — 5 sec]
+
+My core expertise is developing low-level embedded software —
+firmware, drivers, communication stacks — in C/C++ on ARM Cortex,
+STM32, Microchip and NXP architectures, from bare metal to RTOS
+such as FreeRTOS and VxWorks, and embedded Linux.
+
+                        [PAUSE — 3 sec]
+
+What makes my background distinctive is the diversity of
+safety-critical sectors I've worked in:
+
+In aerospace, at Safran, Thales and Zodiac, I developed low-level
+drivers and application layers compliant with DO-178 and MISRA C —
+over 6 years in this sector.
+
+In medical devices, at GE Healthcare and Sorin, I integrated
+CANOpen stacks and developed BLE modules for pacemakers,
+compliant with IEC 62304.
+
+In IoT cybersecurity, at Enedis, I led security audits and
+penetration testing on Linky smart meter concentrators.
+
+And most recently, in EV charging at E2-CAD, I work on
+ISO 15118 integration, the V2G protocol and commissioning
+of charging stations.
+
+                        [PAUSE — 3 sec]
+
+Beyond the technical side, I founded Workshop-DIY, a nonprofit
+offering robotics and electronics workshops for young people.
+It reflects my passion for knowledge sharing and innovation.
+
+                        [PAUSE — 3 sec]
+
+What attracts me to Luxembourg is its unique ecosystem that brings
+together satellites, automotive, industry and fintech in an
+international and multicultural environment. My trilingual profile
+— French, English and Arabic — and my cross-sector experience
+fit naturally into this dynamic.
+
+I'm based in Lorraine, ready to work as a cross-border commuter,
+and available immediately.
+
+I'd be happy to go into more detail about any of my projects.
+
+
+================================================================================
+PITCH STRUCTURE (cheat sheet)
+================================================================================
+
+  1. WHO I AM              -> Name + title + 20 years          [10 sec]
+  2. WHAT I DO             -> C/C++, RTOS, Linux, MCU          [15 sec]
+  3. MY PROOF (4 sectors):                                      [60 sec]
+     * Aerospace  -> Safran, Thales, Zodiac (DO-178, MISRA C)
+     * Medical    -> GE Healthcare, Sorin (IEC 62304)
+     * Cyber      -> Enedis, Linky (pentest, audit)
+     * EV         -> E2-CAD (ISO 15118, OCPP)
+  4. WHAT SETS ME APART    -> Workshop-DIY, passion             [15 sec]
+  5. WHY LUXEMBOURG        -> Ecosystem, multicultural          [15 sec]
+  6. CLOSE                 -> Cross-border, available            [5 sec]
+
+                                            TOTAL = 2 min
+
+
+================================================================================
+DELIVERY TIPS
+================================================================================
+
+* Speak at a natural pace — not too fast, not too slow
+* Maintain eye contact (or look at the camera in video calls)
+* Confident and direct tone — highlight your track record without arrogance
+* PAUSES are essential — they show mastery and confidence
+* Do NOT recite — know the blocks, not the text word for word
+* If the interviewer reacts, adapt and engage in dialogue
+* Have 3 anecdotes ready to elaborate on each sector
+* In Luxembourg, emphasize multilingualism and international openness
+* Mention cross-border worker status naturally, without overdoing it
+
+
+================================================================================
+COMPANY-SPECIFIC VARIANTS (LUXEMBOURG)
+================================================================================
+
+IF SES (satellites):
+  -> Emphasize Safran + Thales + Zodiac = 6+ years in aerospace
+  -> Mention DO-178, MISRA C, safety-critical systems, RTOS
+  -> "I spent 6 years in aerospace, from Zodiac to Safran,
+     working on safety-critical embedded systems compliant with
+     DO-178. Satellite engineering at SES would be the natural
+     continuation of this career path."
+
+IF IEE (automotive sensors):
+  -> Emphasize communication stacks, CAN, sensors, drivers
+  -> Mention bare metal, RTOS, vehicle integration
+  -> "My experience in embedded communication and driver
+     development for sensors directly applies to IEE's
+     intelligent detection systems."
+
+IF POST Luxembourg (IoT / telecom):
+  -> Emphasize IoT cybersecurity, Linky, communication stacks
+  -> Mention embedded Linux, network protocols, security
+  -> "My experience in IoT security audits at Enedis and in
+     embedded communication stacks is a perfect match for
+     POST Luxembourg's telecom and IoT challenges."
+
+IF INCERT (cybersecurity):
+  -> Emphasize Enedis, pentest, security audit, Kali Linux
+  -> Mention vulnerability analysis, penetration testing, IoT
+  -> "The security audits and penetration tests I conducted
+     on Linky concentrators demonstrate my embedded cybersecurity
+     expertise, directly applicable at INCERT."
+
+IF ArcelorMittal (Industry 4.0):
+  -> Emphasize embedded Linux, industrial IoT, communication
+  -> Mention sensors, RTOS, industrial protocols
+  -> "My cross-sector experience in safety-critical embedded
+     systems and IoT is directly applicable to ArcelorMittal's
+     Industry 4.0 transformation."

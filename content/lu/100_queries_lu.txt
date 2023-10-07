@@ -1,0 +1,171 @@
+=====================================================================
+  REQUETES DE RECHERCHE — EMPLOI AU LUXEMBOURG
+  Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim
+  Mars 2026
+=====================================================================
+
+
+=== SECTION 1 : RECHERCHE DE PERSONNES (LinkedIn — onglet "Personnes") ===
+
+--- Ingenieurs / Pairs ---
+1. embedded engineer Luxembourg
+2. firmware developer Luxembourg
+3. ingenieur logiciel embarque Luxembourg
+4. embedded systems Luxembourg
+5. C++ developer Luxembourg
+
+--- Recruteurs ---
+6. recruiter embedded Luxembourg
+7. talent acquisition engineer Luxembourg
+8. recruteur ingenieur Luxembourg
+9. IT recruiter Luxembourg
+
+--- Managers / Decideurs ---
+10. hiring manager firmware Luxembourg
+11. VP engineering Luxembourg
+12. head of embedded Luxembourg
+13. CTO embedded Luxembourg
+14. engineering manager Luxembourg
+15. R&D director Luxembourg
+
+
+=== SECTION 2 : RECHERCHE D'EMPLOIS (LinkedIn — onglet "Emplois") ===
+
+--- En anglais ---
+1. embedded software engineer Luxembourg
+2. firmware engineer Luxembourg
+3. embedded C C++ engineer Luxembourg
+4. RTOS engineer Luxembourg
+5. embedded Linux developer Luxembourg
+6. senior firmware developer Luxembourg
+7. embedded systems engineer Luxembourg
+
+--- En francais ---
+8. ingenieur logiciel embarque Luxembourg
+9. developpeur embarque Luxembourg
+10. ingenieur firmware Luxembourg
+11. ingenieur systemes embarques Luxembourg
+12. developpeur C C++ embarque Luxembourg
+
+--- Par entreprise ---
+13. embedded engineer SES
+14. firmware engineer IEE Luxembourg
+15. embedded engineer POST Luxembourg
+16. software engineer Goodyear Luxembourg
+17. embedded engineer ArcelorMittal
+18. cybersecurity engineer INCERT
+
+
+=== SECTION 3 : RECHERCHE D'ENTREPRISES (LinkedIn — onglet "Entreprises") ===
+
+1. SES satellites Luxembourg
+2. IEE sensing Luxembourg
+3. POST Luxembourg telecom
+4. Goodyear Luxembourg
+5. ArcelorMittal Luxembourg
+6. INCERT Luxembourg cybersecurity
+7. Ceratizit Luxembourg
+8. OQ Technology Luxembourg
+9. LuxProvide MeluXina
+10. Alter Solutions Luxembourg
+11. Devoteam Luxembourg
+12. CGI Luxembourg
+
+
+=== SECTION 4 : JOB BOARDS SPECIALISES ===
+
+--- jobs.lu (portail N1) ---
+1. https://www.jobs.lu — rechercher : embedded engineer
+2. https://www.jobs.lu — rechercher : ingenieur embarque
+3. https://www.jobs.lu — rechercher : firmware
+4. https://www.jobs.lu — rechercher : C++ developer
+
+--- moovijob.com (Grande Region) ---
+5. https://www.moovijob.com — rechercher : embedded Luxembourg
+6. https://www.moovijob.com — rechercher : ingenieur embarque Luxembourg
+7. https://www.moovijob.com — rechercher : firmware Luxembourg
+
+--- ictjob.lu (specialise IT) ---
+8. https://www.ictjob.lu — rechercher : embedded
+9. https://www.ictjob.lu — rechercher : firmware
+10. https://www.ictjob.lu — rechercher : C++ embedded
+
+--- indeed.lu ---
+11. https://lu.indeed.com — rechercher : embedded software engineer
+12. https://lu.indeed.com — rechercher : firmware engineer Luxembourg
+
+
+=== SECTION 5 : RECHERCHE GOOGLE ===
+
+1. site:linkedin.com/jobs "embedded" "Luxembourg"
+2. site:jobs.lu "embedded engineer"
+3. "embedded software engineer" Luxembourg -staffing
+4. "firmware engineer" Luxembourg emploi 2026
+5. "ingenieur embarque" Luxembourg recrutement
+6. "embedded" "C++" Luxembourg site:moovijob.com
+7. "RTOS" OR "embedded Linux" Luxembourg emploi
+8. "DO-178" OR "IEC 62304" Luxembourg engineer
+9. "IoT" "embedded" Luxembourg POST
+10. "frontalier" "embedded" Luxembourg
+
+
+=== SECTION 6 : GITHUB / COMMUNAUTE TECHNIQUE ===
+
+1. github.com/topics/embedded-systems — chercher contributeurs Luxembourg
+2. meetup.com Luxembourg embedded systems
+3. meetup.com Luxembourg IoT
+4. silicon.lu — actualites tech Luxembourg
+5. paperjam.lu — actualites business Luxembourg
+6. Rejoindre : Luxembourg Tech Community (Slack/Discord)
+7. Rejoindre : Embedded Systems Luxembourg (LinkedIn Group)
+8. Participer aux evenements Moovijob Night
+
+
+=== SECTION 7 : RECRUTEURS SPECIALISES ===
+
+1. Hays Luxembourg — embedded / IT
+2. Michael Page Luxembourg — ingenierie
+3. Robert Half Luxembourg — IT / tech
+4. Adecco Luxembourg — tech
+5. Randstad Luxembourg — ingenierie
+6. Alter Solutions Luxembourg — consulting embarque
+7. Devoteam Luxembourg — consulting IT
+8. CGI Luxembourg — services IT
+9. Sogeti / Capgemini Luxembourg
+
+Conseil : Contacter chaque recruteur avec un message personnalise.
+Mentionner : +20 ans embarque, C/C++, RTOS, Linux, DO-178, MISRA C, IEC 62304, ISO 15118.
+
+
+=== SECTION 8 : RECHERCHE BOOLEENNE AVANCEE ===
+
+--- Requete generale ---
+"embedded" AND ("C++" OR "firmware") AND ("Luxembourg" OR "frontalier")
+
+--- Par technologie ---
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND "Luxembourg"
+("ARM Cortex" OR "STM32" OR "NXP") AND "Luxembourg"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "Luxembourg"
+("MISRA C" OR "DO-178" OR "IEC 62304") AND "Luxembourg"
+
+--- Par entreprise ---
+("SES" OR "satellite") AND "embedded" AND "Luxembourg"
+("IEE" OR "sensor") AND "embedded" AND "Luxembourg"
+("POST Luxembourg" OR "IoT") AND "embedded"
+("INCERT" OR "cybersecurity") AND "embedded" AND "Luxembourg"
+("Goodyear" OR "ArcelorMittal") AND ("embedded" OR "automation") AND "Luxembourg"
+("NEOM" OR "smart city") AND "embedded" AND "Luxembourg"
+
+--- Par secteur ---
+"embedded" AND ("satellite" OR "aerospace") AND "Luxembourg"
+"embedded" AND ("automotive" OR "sensor") AND "Luxembourg"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "Luxembourg"
+"embedded" AND ("industry 4.0" OR "automation") AND "Luxembourg"
+
+Note : LinkedIn accepte AND, OR et "..." dans la barre de recherche.
+Combiner ces requetes avec les filtres : Lieu=Luxembourg, Experience=Mid-Senior, Type=Full-time.
+
+
+=====================================================================
+  Abdelhak Bourdim — abdelhak.bourdim@gmail.com — Mars 2026
+=====================================================================

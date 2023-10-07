@@ -1,0 +1,67 @@
+Abdelhak BOURDIM
+Ingénieur Logiciel Embarqué Senior
+abdelhak.bourdim@gmail.com
++33 6 19 51 51 73
+Région parisienne, France
+LinkedIn : linkedin.com/in/abdelhak-bourdim-96416122
+Web : workshop-diy.org
+
+
+                                        [NOM DE L'ENTREPRISE]
+                                        [Service / Direction concerné(e)]
+                                        [Adresse]
+                                        [Code postal, Ville]
+
+
+                                        [Ville], le [Date]
+
+
+Objet : Candidature au poste de [INTITULÉ DU POSTE]
+________________________________________________________________________
+
+
+Madame, Monsieur,
+
+Votre offre pour le poste de [INTITULÉ DU POSTE] au sein de [ENTREPRISE]
+a immédiatement retenu mon attention. Fort de plus de 20 ans d'expérience
+en développement logiciel embarqué, je suis convaincu que mon parcours et
+mes compétences correspondent pleinement aux exigences de cette mission.
+
+Spécialisé en firmware, middleware et couches applicatives — en bare metal,
+sous RTOS (FreeRTOS, VxWorks) ou Linux embarqué — j'ai développé des
+drivers et des stacks de communication (CAN, BLE, USB, TCP/IP) sur des
+architectures ARM Cortex, STM32, Microchip et NXP, dans des environnements
+soumis à de fortes contraintes de qualité et de certification.
+
+Mon parcours m'a conduit à intervenir dans des secteurs exigeants et variés :
+aéronautique chez Safran et Thales (conformité DO-178C), médical chez
+GE Healthcare et PK Vitality (IEC 62304), cybersécurité IoT chez Enedis
+(audit et pentest des concentrateurs Linky), et plus récemment recharge
+véhicule électrique chez E2-CAD (ISO 15118, OCPP). Chez Cartadis, 8 années
+m'ont forgé une base solide en développement embarqué complet, des drivers
+jusqu'aux stacks de communication. Mon code est conforme aux standards
+MISRA C et mes livrables respectent les exigences de traçabilité du
+cycle en V.
+
+Ce qui m'attire chez [ENTREPRISE], c'est [raison : ex. votre engagement
+dans l'innovation embarquée / la dimension critique de vos projets /
+l'environnement technique stimulant]. Je suis persuadé que mon expérience
+dans [domaine pertinent : ex. les systèmes avioniques / le médical embarqué /
+la recharge intelligente] apporterait une réelle valeur ajoutée à votre
+équipe.
+
+En parallèle de mon activité professionnelle, je suis fondateur de
+Workshop-DIY, une association de robotique éducative où j'anime des ateliers
+pour jeunes (Arduino, ESP32, IA, impression 3D), ce qui reflète ma passion
+pour la transmission et l'innovation.
+
+Disponible [immédiatement / à partir du JJ/MM/AAAA], je serais ravi
+d'échanger avec vous lors d'un entretien pour vous présenter plus en détail
+mon parcours et discuter de ma contribution à vos projets.
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations
+distinguées.
+
+
+Abdelhak BOURDIM
+Ingénieur Logiciel Embarqué Senior

@@ -1,0 +1,474 @@
+===============================================================================
+ PRÉPARATION ENTRETIEN — BOURDIM Abdelhak
+ Ingénieur Logiciel Embarqué Senior — +20 ans d'expérience
+===============================================================================
+
+
+=====================================
+1. PITCH DE PRÉSENTATION
+=====================================
+
+--- Version courte (30 secondes) ---
+
+Bonjour, je suis Abdelhak BOURDIM, ingénieur logiciel embarqué avec plus de
+20 ans d'expérience. Je suis spécialisé dans le développement firmware,
+middleware et couches applicatives, en bare metal, sous RTOS ou Linux embarqué,
+pour des systèmes critiques et industriels. J'ai travaillé dans l'aéronautique,
+le médical, l'automobile, l'énergie et les systèmes de paiement, avec des
+acteurs comme Safran, Thales, GE Healthcare et Valeo.
+
+
+--- Version développée (1–2 minutes) ---
+
+Bonjour, je suis Abdelhak BOURDIM, ingénieur logiciel embarqué senior.
+
+Le cœur de mon expertise, c'est le développement de logiciels embarqués :
+firmware, middleware et couches applicatives, que ce soit en bare metal,
+sous RTOS (FreeRTOS, VxWorks, UCOSII) ou Linux embarqué.
+
+J'ai plus de 20 ans d'expérience dans le développement de drivers et de stacks
+de communication — CAN, BLE, USB, TCP/IP — sur des architectures ARM Cortex,
+STM32, Microchip et NXP.
+
+J'ai eu l'opportunité de travailler dans des secteurs variés et exigeants :
+
+  - Aéronautique : chez Safran sur un contrôleur de puissance SSPC, chez Thales
+    sur un récepteur multimode N-MMR et un logiciel de préparation de mission,
+    et chez Zodiac Aerospace sur des projets SSPC pour l'A350.
+
+  - Médical : chez GE Healthcare sur un générateur de rayons X avec intégration
+    CANOpen, et chez Sorin sur un module Bluetooth pour pacemaker.
+
+  - Automobile et audio : chez Valeo pour un audit de tests, et chez Arkamys
+    pour du développement de plugins GStreamer audio embarqué.
+
+  - Énergie et IoT : chez Enedis sur la cybersécurité des concentrateurs Linky,
+    et actuellement chez E2-CAD sur des bornes de recharge EV avec ISO 15118.
+
+  - Systèmes de paiement : 8 ans chez Cartadis sur des terminaux de contrôle
+    d'accès avec stacks USB, TCP/IP, RFID et cryptage DES/RC4.
+
+Je maîtrise l'ensemble du cycle de développement embarqué : de la validation
+du prototype hardware jusqu'aux tests d'intégration, en passant par
+l'architecture logicielle, le développement des drivers, la rédaction des
+spécifications et la documentation.
+
+Je suis également fondateur de Workshop-DIY, une association de robotique
+éducative où j'ai animé plus de 18 ateliers pour jeunes sur Arduino, ESP32,
+IA et impression 3D.
+
+
+=====================================
+2. PARCOURS — POINTS CLÉS PAR MISSION
+=====================================
+
+--- E2-CAD (Mai 2025 – Présent) — Borne de recharge EV ---
+  Contexte : Reprise en main d'un produit de recharge EV (IP Iotecha)
+  Réalisations :
+  - Reverse engineering complet du code source (architecture statique et dynamique)
+  - Analyse des 3 cartes embarquées (Microchip PIC, STM32), mise en place debug
+  - Analyse des protocoles inter-modules (RS232, I2C, extraction de trames Saleae)
+  - Design et mise en place du banc de test (Chargebyte, simulateur EV)
+  - Debug et mise en service (PLC, HomePlug Green PHY, ISO 15118, OCPP)
+  Mots clés : Linux embarqué, C/C++, ISO 15118, OCPP, PLC, Wireshark, Python
+
+--- Safran (Mars 2024 – Mai 2025) — SSPC ---
+  Contexte : Solid State Power Controller pour l'aéronautique
+  Réalisations :
+  - Développement et mise à jour de drivers bas niveau en C
+  - Outils de logging pour diagnostic et traçabilité
+  - Tests de validation sur cible avec Lauterbach TRACE32
+  - Scripting Bash/Awk pour automatisation des tests
+  Mots clés : C, TRACE32, Bash, Awk, DO-178
+
+--- Asterios Technologies (Août 2023 – Fév. 2024) — T1042SOM ---
+  Contexte : Tests logiciels pour module SOM (processeur T1042)
+  Réalisations :
+  - Développement des tests de validation en C
+  - Analyse des errata processeur et contournements logiciels
+  - Documentation de test conforme aux exigences projet
+  Mots clés : C, Bash, Python, TRACE32, Polarion
+
+--- Thales Gennevilliers (Mai 2022 – Juil. 2023) — LPM + N-MMR ---
+  Contexte : Radio défense — logiciel de préparation de mission + récepteur multimode
+  Réalisations :
+  - Développement couches applicatives Linux embarqué en C/C++
+  - Scripts de gestion de configuration (Bash, Curl, Tshark)
+  - Développement et exécution de tests HLT
+  - Correction de bugs et analyse protocoles réseau (Websockets)
+  Mots clés : Linux embarqué, C/C++, Bash, Websockets, DO-178
+
+--- Thales Vélizy (Nov. 2020 – Juin 2021) — ATO ---
+  Contexte : Train autonome — communication IPC et socket programming
+  Réalisations :
+  - Migration de l'application de 32 bits vers 64 bits sous Linux embarqué
+  - Implémentation des protocoles de communication IPC (UDP, TCP)
+  - Outils de diagnostic réseau et tests d'intégration
+  - Analyse de trames avec Wireshark, Tshark, Pscapy, Pyshark
+  Mots clés : Linux embarqué, C, UDP, TCP, Wireshark, Python
+
+--- PK Vitality (Juin – Sept. 2020) — K'Watch CGM ---
+  Contexte : Montre de mesure continue du glucose (dispositif médical)
+  Réalisations :
+  - Développement HAL (AFE AD5940, PMIC DA9070), driver QSPI, BLE NRF52840
+  - Écran tactile STM32 TouchGFX, FreeRTOS, mode low power
+  - Tests in vitro et documentation Doxygen (conforme IEC 62304)
+  Mots clés : STM32, NRF52840, FreeRTOS, BLE, TouchGFX, IEC 62304
+
+--- Zodiac Aerospace / Safran (Fév. 2017 – Mars 2020) — GENOME / SSPC A350 ---
+  Contexte : Contrôleurs de puissance pour l'A350 (aéronautique)
+  Réalisations :
+  - Adaptation des drivers CAN, RS485, mémoire thermique (dsPIC33)
+  - Passerelle uAFDX vers CAN et fonctions de diagnostic
+  - Optimisation des couches applicatives SSPC A350
+  - Tests de validation et documentation conforme aux standards aéronautiques
+  Mots clés : Microchip dsPIC33, MPLAB, TI Concerto, C, DO-178
+
+--- Enedis (Mai 2015 – Sept. 2016) — Compteurs Linky ---
+  Contexte : Cybersécurité et audit des concentrateurs Smart Grid
+  Réalisations :
+  - Audit de sécurité des concentrateurs Linky
+  - Tests d'intrusion sur systèmes embarqués Linux (Kali, Nmap)
+  - Sniffing et fuzzing de protocoles (Wireshark, Scapy, SDR)
+  - Outils d'analyse de logs et mise à jour firmware en batch
+  - Revue de code avec constructeurs (Sonar, PC Lint)
+  Mots clés : Kali Linux, Nmap, Wireshark, Scapy, SDR, Python
+
+--- Sorin (Nov. 2014 – Avr. 2015) — Module BLE Pacemaker ---
+  Contexte : Étude de faisabilité Bluetooth pour implant cardiaque
+  Réalisations :
+  - Validation du choix du module Bluetooth Smart
+  - Développement Serial Port Service Profile et protocole smartphone
+  - Application Android et interface hardware
+  Mots clés : Cortex M0, Keil, C, BLE, Android
+
+--- GE Healthcare (2012 – 2014) — Générateur Rayons X ---
+  Contexte : Intégration CANOpen sur cartes RCB et CORTYX
+  Réalisations :
+  - Intégration pile CANOpen (slave/master), drivers et service CAN
+  - Portage du noyau CMX-RTX, gestion fichiers, scripts TCL de test
+  - Support technique équipe USA, déplacements sur site aux États-Unis
+  Mots clés : TI TMS320, ARM Cortex A8, VxWorks, C, C++, CANOpen
+
+--- Cartadis (Oct. 2001 – Déc. 2009) — 8 ans ---
+  Contexte : Terminaux de contrôle d'accès et systèmes de paiement (PME de 30 employés)
+  Réalisations :
+  - Développement complet : drivers, applicatifs embarqués
+  - Stacks USB/TCP/IP, cryptage DES/RC4
+  - RFID Mifare, carte à puce, USB CCID
+  Mots clés : NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91, C
+
+
+=====================================
+3. COMPÉTENCES TECHNIQUES
+=====================================
+
+Langages :
+  C, C++, Python, Bash, Assembleur, Perl, AWK
+
+OS / RTOS :
+  Linux embarqué, VxWorks, FreeRTOS, UCOSII, Tnkernel
+
+Microcontrôleurs / Processeurs :
+  ARM Cortex (M0, M4, A8), STM32, NRF52, ESP32,
+  Microchip PIC/dsPIC, NXP LPC, TI DSP/Concerto, Arduino
+
+Protocoles / Bus :
+  CAN, CANOpen, SPI, I2C, RS232, RS485, UART, USB,
+  BLE, AFDX, Ethernet, TCP/UDP
+
+Stacks :
+  TCP/IP, USB Host/Device/HID, BLE, CANOpen, RFID, GStreamer
+
+Sécurité / Paiement :
+  Carte à puce, RFID Mifare, DES, RC4, USB CCID
+
+Outils de développement :
+  Lauterbach TRACE32, IAR, Keil, MPLAB, CCS Studio,
+  Green Hills, Buildroot, CubeMx, TouchGFX
+
+Gestion / Traçabilité :
+  Git, Synergy, Jira, Polarion, Doxygen
+
+Couches logicielles embarquées :
+  Startup files → Bootloader → BSP → Drivers → Libraries → Application
+
+Outils réseau / Debug :
+  Telnet, SSH, NFS, Wireshark, Tshark, Saleae, HackRF One
+
+
+=====================================
+4. CONNAISSANCES NORMATIVES
+=====================================
+
+--- DO-178C (Aéronautique) ---
+
+Norme d'orientation pour le développement des logiciels de l'aviation civile.
+
+Conditions de défaillance et niveaux DAL :
+  * Niveau A — Catastrophique → perte de vies humaines
+  * Niveau B — Dangereux (Hazardous) → blessures graves
+  * Niveau C — Majeur → panne affectant le confort des passagers (ex. : climatisation)
+  * Niveau D — Mineur → système de divertissement
+  * Niveau E — Aucun effet → distributeur automatique
+
+Le niveau DAL est défini par la nature de la défaillance du système.
+
+Stratégies de vérification :
+  * Examen (revue)
+  * Analyse
+  * Test
+
+Documents clés du cycle DO-178C :
+  * PSAC — Plan for Software Aspects of Certification
+  * SDP — Software Development Plan
+  * SSS — System/Segment Specification
+  * SRS — Software Requirements Specification (exigences haut niveau)
+  * SDD — Software Design Document
+  * LLR — Low Level Requirements (exigences bas niveau)
+  * Source Code
+  * STD — Software Tests Description Document
+  * STR — Software Test Results
+  * BDD — BITE Description Document (Built-In Test)
+  * ICD — Interface Control Document
+
+Processus de vérification :
+  - Tests haut niveau (HLT) en face des SRS
+  - Tests bas niveau (unitaires) en face des LLR
+  - Couverture MC/DC (Modified Condition/Decision Coverage)
+  - Couverture sur les décisions et sur les instructions
+  - Traçabilité des exigences du système vers les tests
+
+Pour chaque document rédigé, une revue est prévue pour validation.
+
+
+--- IEC 62304 (Médical) ---
+
+Norme pour le cycle de vie du logiciel des dispositifs médicaux.
+
+Classification par classe de sécurité :
+  * Classe A — Pas de blessure ou atteinte à la santé
+  * Classe B — Blessure possible mais non grave
+  * Classe C — Mort ou blessure grave possible
+
+Appliquée chez : GE Healthcare, Sorin, PK Vitality.
+
+
+--- MISRA C ---
+
+Norme de programmation en langage C pour les systèmes critiques.
+Elle spécifie des règles de programmation pour plus de sûreté.
+
+Objectifs :
+  - Éviter des erreurs d'exécution provoquées par des constructions C incertaines
+  - Éviter les faiblesses de structure dues aux malentendus entre programmeurs
+  - Garantir la validité des expressions
+
+Règles : obligatoires (required), conseillées (advisory), directives.
+Outils de vérification : PC Lint, Sonar, Polyspace.
+
+
+--- ISO 15118 (V2G — Vehicle-to-Grid) ---
+
+Norme pour la communication entre véhicule électrique et borne de recharge.
+  * Communication via PLC (Power Line Communication) / HomePlug Green PHY
+  * Protocole de charge intelligent (Smart Charging)
+  * Échange d'énergie bidirectionnel (V2G)
+
+Appliquée chez : E2-CAD (mission actuelle).
+
+
+--- OCPP (Open Charge Point Protocol) ---
+
+Protocole de communication entre bornes de recharge et système de gestion central.
+Permet le monitoring, la configuration et le contrôle à distance des bornes.
+
+
+--- Autres normes ---
+
+  * ISO 14443 — Communication sans contact (Smart Card)
+  * ISO 15693 — RFID longue distance
+  * JSF — Joint Strike Fighter C++ Coding Standard (aéronautique)
+
+
+=====================================
+5. MÉTHODOLOGIES ET BONNES PRATIQUES
+=====================================
+
+--- Cycle en V ---
+
+Processus de développement séquentiel :
+  Spécifications → Architecture → Conception → Codage
+  → Tests unitaires → Tests d'intégration → Validation
+
+Chaque phase de test correspond à une phase de conception.
+Largement utilisé dans l'aéronautique et le médical.
+
+
+--- Agile / Scrum ---
+
+Méthodologie itérative avec sprints courts (2-4 semaines).
+Daily standups, sprint reviews, rétrospectives.
+Outils : Jira, Polarion.
+
+
+--- Jenkins (Intégration continue) ---
+
+Outil logiciel d'intégration continue.
+  - Build automatique après chaque commit
+  - Exécution automatique des tests
+  - Détection rapide des régressions
+
+
+--- Clean Code ---
+
+Un code compréhensible de façon intuitive et facile à modifier :
+  * Le processus d'exécution est logique et structuré simplement
+  * Le rapport entre les différentes parties du code est transparent
+  * Le rôle de chaque classe, fonction, méthode et variable est immédiatement compréhensible
+  * La maintenance est facilitée : les bugs sont trouvés et corrigés facilement
+
+Principes :
+  * KISS — Keep It Simple, Stupid (un code aussi simple que possible)
+  * DRY — Don't Repeat Yourself (éviter les répétitions inutiles)
+  * YAGNI — You Aren't Gonna Need It (supprimer ce qui est inutile)
+  * La lisibilité avant la concision
+
+
+=====================================
+6. CONTEXTE AÉRONAUTIQUE
+=====================================
+
+--- Processus typique en aéronautique embarquée ---
+
+Les architectes conçoivent les planches logiques en Matlab/Simulink/SCADE.
+Traduction en langage embarquable, surcouche de C (ex. : psyC).
+
+Compréhension des tâches, du multi-cœur, du fonctionnement d'un noyau.
+→ Il faut avoir une culture embarquée solide.
+
+Vérification :
+  - Revue documentaire (SRS, architecture, design et code)
+  - Tests haut niveau (HLT) en face du SRS
+  - Tests unitaires en face du LLR
+  - Rédaction des scénarios de test (gestion des exigences via Polarion)
+  - Procédures de test implémentant les cas de test (framework Python)
+  - Utilisation de Trace32 pour le debug sur cible
+  - Utilisation de Jenkins pour l'intégration continue
+
+
+--- Projet N-MMR (Thales) — Détail ---
+
+N-MMR : New Multi-Mode Receiver
+Le composant GPS est devenu obsolète.
+
+Travaux réalisés :
+  * Rédaction de la SRS du nouveau mode en se basant sur le mode legacy
+  * Points d'entrée : SSS, BDD, ICD, SDD
+  * Mise à jour du SDD (Software Design Document)
+  * Mise à jour du code :
+    - SPD (Software Development Plan)
+    - Architecture logicielle
+    - Exigences bas niveau (LLR)
+    - Normes de codage
+  * Création du STD (Software Tests Description Document) :
+    - Identification des test cases pour couvrir chaque exigence
+    - Identification des tests automatiques et manuels
+    - Rédaction des procédures de test pour chaque test case
+    - Développement du code des procédures de test en Python
+  * Mise à jour du STR (Software Test Results)
+  * Revue de validation pour chaque document rédigé
+  * Création d'un outil de vérification des SRS et traçabilité
+
+
+=====================================
+7. QUESTIONS D'ENTRETIEN FRÉQUENTES
+=====================================
+
+--- Questions techniques ---
+
+Q : Connaissez-vous les règles MISRA, JSF, Embedded C ?
+R : Oui, j'ai appliqué MISRA C chez Safran, Zodiac et Enedis. Les règles JSF
+    sont similaires mais pour C++ en contexte aéronautique. Je connais également
+    les standards Embedded C. Chez Enedis, j'ai utilisé Sonar et PC Lint pour
+    vérifier la compliance du code.
+
+Q : Qu'est-ce que la couverture MC/DC ?
+R : Modified Condition/Decision Coverage. Chaque condition d'une décision doit
+    indépendamment affecter le résultat de la décision. C'est le niveau de
+    couverture le plus exigeant, requis pour le DAL A en DO-178C. J'ai travaillé
+    avec la couverture sur les décisions et sur les instructions.
+
+Q : Avez-vous participé aux revues d'exigences ?
+R : Oui, chez Thales et Zodiac. J'utilise des check-lists structurées pour
+    vérifier la complétude, la cohérence, la traçabilité et la testabilité
+    des exigences. Même processus pour les revues de code.
+
+Q : Comment debuggez-vous sur cible ?
+R : Avec Lauterbach TRACE32, je pose des points d'arrêt (breakpoints), j'inspecte
+    la structure mémoire, les registres et les variables. Je complète avec des
+    outils de logging maison et de l'analyse de trames (Wireshark, Saleae).
+
+Q : Quelle est votre expérience avec les RTOS ?
+R : FreeRTOS chez PK Vitality (K'Watch), VxWorks chez GE Healthcare (générateur
+    rayons X), UCOSII et Tnkernel sur d'autres projets. Je maîtrise la gestion
+    des tâches, sémaphores, mutex, files de messages et les contraintes temps réel.
+
+Q : Quelle est votre expérience Linux embarqué ?
+R : Thales (ATO, LPM, N-MMR), Arkamys (GStreamer), Enedis (Linky), E2-CAD
+    (bornes de recharge). Je maîtrise le développement applicatif, les scripts
+    Bash, le debug réseau et la cross-compilation avec Buildroot.
+
+
+--- Questions comportementales ---
+
+Q : Qu'est-ce qui vous plaît et ne vous plaît pas dans votre métier ?
+R : Ce qui me plaît : la diversité des projets, le contact direct avec le
+    hardware, résoudre des problèmes complexes et voir un système fonctionner.
+    Ce qui me plaît moins : les lourdeurs administratives excessives, mais je
+    comprends leur nécessité dans les environnements certifiés.
+
+Q : Est-ce que ça vous est arrivé de critiquer le travail de collègues ?
+R : Je pratique les revues de code de manière constructive. Mon objectif est
+    toujours d'améliorer la qualité du livrable, jamais de critiquer la personne.
+    Je m'appuie sur les standards et les check-lists pour rester objectif.
+
+Q : Est-ce qu'on peut vous faire des remarques ?
+R : Absolument. Les retours sont essentiels pour progresser. En revue de code,
+    j'accueille les remarques comme des opportunités d'amélioration. C'est le
+    principe même de la revue par les pairs.
+
+Q : Pourquoi ce poste vous intéresse ?
+R : [Adapter selon le poste] Le projet correspond à mon cœur de compétence
+    et me permet d'apporter mon expérience tout en continuant à évoluer
+    techniquement. L'environnement technique et les challenges proposés sont
+    exactement ce qui me motive.
+
+
+=====================================
+8. QUESTIONS À POSER AU RECRUTEUR
+=====================================
+
+  - Quelle est la taille de l'équipe embarquée ?
+  - Quel est le processus de développement utilisé (Cycle en V, Agile) ?
+  - Quels sont les outils de debug et d'intégration continue en place ?
+  - Y a-t-il des normes ou certifications à respecter ?
+  - Quelle est la part de développement versus tests/validation ?
+  - Comment sont gérées les revues de code et les revues d'exigences ?
+  - Quel est le planning prévu pour la mission ?
+  - Y a-t-il des déplacements à prévoir ?
+
+
+=====================================
+9. PHRASES DE CONCLUSION
+=====================================
+
+Je reste à votre écoute pour tout renseignement complémentaire.
+
+Je tenais à vous dire que le projet qui m'a été présenté est très intéressant
+et correspond parfaitement à mon profil et à mes aspirations techniques.
+
+D'après ce que j'ai compris de votre projet, je pense pouvoir apporter une
+réelle valeur ajoutée grâce à mon expérience dans [adapter au contexte].
+
+Je suis disponible immédiatement / à partir du [date].

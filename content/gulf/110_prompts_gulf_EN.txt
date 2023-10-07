@@ -1,0 +1,366 @@
+==============================================================================
+AI PROMPTS FOR JOB SEARCH — GULF / GCC
+Embedded Software Engineer | Abdelhak Bourdim | March 2026
+To use with ChatGPT, Claude, or any other AI assistant
+==============================================================================
+
+TABLE OF CONTENTS
+-----------------
+1.  Cover letter FR for Gulf company
+2.  Cover letter EN for Gulf company
+3.  LinkedIn connection requests (5 versions)
+4.  LinkedIn recruiter message
+5.  Technical interview preparation (visa, relocation, tax-free salary)
+6.  Job posting analysis (salary estimates AED/SAR)
+7.  Salary negotiation (housing, flight tickets, health insurance, schooling)
+8.  Visa & relocation guide (UAE/Saudi Arabia/Qatar comparison)
+9.  CV adaptation for the Gulf (photo, DOB, nationality, marital status)
+10. Networking message
+11. Company research before interview (ADNOC, Aramco, EDGE, NEOM, Thales ME)
+
+
+==============================================================================
+PROMPT 1 — Generate a cover letter FR for a Gulf company
+==============================================================================
+
+You are an expert at writing cover letters for the Gulf/GCC job market.
+Write a cover letter in French for the following position:
+
+Position: [JOB TITLE — e.g., Senior Embedded Software Engineer]
+Company: [COMPANY NAME — e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]
+Location: [CITY — e.g., Abu Dhabi, Dubai, Riyadh, Doha, Jeddah]
+Source: [LinkedIn / Bayt.com / GulfTalent / Naukrigulf / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, immediately available, open to relocation to the Gulf region
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Format adapted to Gulf market: professional, respectful, highlighting international experience
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Show motivation for working in the Gulf region
+5. Mention availability for relocation and work visa
+6. Emphasize trilingualism FR/EN/AR (major asset in the Gulf)
+7. Reference experience with international industrial groups
+8. Tone: professional, confident, results-oriented
+
+
+==============================================================================
+PROMPT 2 — Generate a cover letter EN for a Gulf company
+==============================================================================
+
+You are an expert at writing cover letters for the Gulf/GCC job market.
+Write a cover letter in English for the following position:
+
+Position: [JOB TITLE — e.g., Senior Embedded Software Engineer]
+Company: [COMPANY NAME — e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]
+Location: [CITY — e.g., Abu Dhabi, Dubai, Riyadh, Doha, Jeddah]
+Source: [LinkedIn / Bayt.com / GulfTalent / Naukrigulf / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, immediately available, open to relocation to the Gulf region
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Format adapted to Gulf market: professional, confident, results-oriented
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Show genuine motivation for working in the Gulf region
+5. Mention availability for relocation and work visa sponsorship readiness
+6. Emphasize trilingualism FR/EN/AR (major asset in the Gulf)
+7. Reference experience with international industrial groups
+8. Tone: professional, confident, results-driven, no cliches
+
+If spontaneous application, show awareness of the company's role in Gulf economic diversification (Vision 2030, NEOM, etc.).
+
+
+==============================================================================
+PROMPT 3 — LinkedIn connection requests (5 versions)
+==============================================================================
+
+Copy-paste directly (max 300 characters).
+Replace fields [IN BRACKETS].
+
+--- Version 1: Recruiter (FR) ---
+Bonjour [PRENOM], je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded dans le Golfe. Serait-il possible d'echanger ? Cordialement, Abdelhak
+
+--- Version 2: Technical manager (FR) ---
+Bonjour [PRENOM], ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez [ENTREPRISE] m'interesse beaucoup. Trilingue FR/EN/AR. Au plaisir d'echanger. Abdelhak
+
+--- Version 3: Peer (EN) ---
+Hi [FIRST NAME], senior embedded engineer here (20+ years, C/C++, RTOS, DO-178). Exploring embedded roles in the GCC region. Trilingual FR/EN/AR. Would love to connect. Best, Abdelhak
+
+--- Version 4: Recruiter (EN) ---
+Hi [FIRST NAME], I'm a senior embedded software engineer (20+ years, C/C++, RTOS, Embedded Linux). Interested in opportunities in [UAE/Saudi Arabia/Qatar]. Happy to connect. Abdelhak
+
+--- Version 5: Hiring manager (EN) ---
+Hi [FIRST NAME], senior embedded engineer with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at [COMPANY] in [CITY] caught my interest. Native Arabic speaker. Happy to connect. Abdelhak
+
+
+==============================================================================
+PROMPT 4 — LinkedIn message to a Gulf recruiter
+==============================================================================
+
+Write a short LinkedIn message (100-150 words) to contact a recruiter in the Gulf.
+
+Recipient: [RECRUITER NAME — e.g., Ahmed Al-Rashid, Sophie Martin]
+Company: [NAME — e.g., ADNOC, Aramco, EDGE Group, Hays Middle East, Michael Page Gulf]
+Context: [internal recruiter / recruitment agency / technical manager]
+
+My profile summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- French citizen, immediately available, open to relocation
+- Trilingual: French, English, native Arabic (major asset in the Gulf)
+- International experience with major industrial groups
+
+Guidelines:
+1. Professional and respectful tone, adapted to Gulf culture
+2. Show specific interest in the company and the region
+3. Be concise and direct
+4. Mention trilingualism and native Arabic as added value
+5. Suggest an exchange without being pushy
+
+
+==============================================================================
+PROMPT 5 — Technical interview preparation for the Gulf
+==============================================================================
+
+You are an expert in technical interviews for embedded software engineer positions in the Gulf (GCC).
+Prepare me for an interview at [COMPANY] for the position [JOB TITLE].
+
+My profile:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. 10 probable technical questions for this type of position, with detailed answers based on my experience
+2. 5 behavioral questions (STAR style) with example answers from my career
+3. 5 questions I should ask the company (showing my interest and seniority)
+4. 5 Gulf-specific questions:
+   - Work visa process and residence permit
+   - Relocation package (housing, flight tickets, insurance)
+   - Taxation (tax-free salary, benefits in kind)
+   - Contract duration and renewal
+   - Company culture and multicultural environment
+5. How to approach the relocation package topic professionally
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Adapt to the multicultural context of the Gulf
+- Mention specific tools and methodologies
+
+
+==============================================================================
+PROMPT 6 — Analyze a Gulf job posting (AED/SAR estimates)
+==============================================================================
+
+You are an expert in embedded recruitment in the Gulf (GCC).
+Here is a job posting. Analyze it and help me prepare my application.
+
+Job posting:
+[PASTE THE FULL JOB POSTING TEXT HERE]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, immediately available
+
+Perform the following tasks:
+1. Position analysis: identify required skills, nice-to-haves, and desired profile
+2. Match score: rate my match with the position from 1 to 10, with justification
+3. Strengths: list my assets that best match this offer
+4. Gaps: identify potential gaps and how to present them positively
+5. Cover letter: write a letter tailored to this specific offer (300-400 words)
+6. CV keywords: list keywords to highlight (ATS optimization)
+7. Estimated salary: probable salary range in AED/SAR/QAR depending on country, including benefits (housing, transport, flight tickets)
+8. Gulf specifics: visa, relocation package, company culture, contract duration
+
+
+==============================================================================
+PROMPT 7 — Salary negotiation in the Gulf
+==============================================================================
+
+You are an expert in salary negotiation for the Gulf/GCC market.
+
+Proposed position: [TITLE]
+Company: [NAME]
+Location: [CITY AND COUNTRY — e.g., Abu Dhabi UAE, Riyadh Saudi Arabia, Doha Qatar]
+Contract type: [2-year renewable / permanent]
+Salary offer: [AMOUNT — e.g., 25,000 AED/month or 30,000 SAR/month]
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR (native Arabic)
+
+Help me to:
+1. Evaluate the offer: is it within the Gulf market range for this profile and country?
+2. Full package to negotiate:
+   - Housing allowance (typical amount per city)
+   - Annual flight tickets (round-trip home country, family included)
+   - Health insurance (employee + family, international coverage)
+   - Children's schooling allowance (international schools)
+   - Transport allowance / company car
+   - End-of-service gratuity
+   - Annual leave (standard number of days)
+   - Repatriation ticket at end of contract
+3. Negotiation points: what to negotiate beyond base salary
+4. Tax comparison: tax-free Gulf salary vs gross salary in France (net simulation)
+5. Negotiation script: write 3 key phrases for professional negotiation
+6. Mistakes to avoid: common pitfalls in Gulf negotiations
+7. Legal aspects: local labor law, probation period, non-compete clause
+
+
+==============================================================================
+PROMPT 8 — Visa & relocation guide (UAE/Saudi Arabia/Qatar comparison)
+==============================================================================
+
+You are an expert in international mobility and relocation to the Gulf.
+
+My situation:
+- French citizenship
+- Senior embedded software engineer
+- Family situation: [single / married / children]
+- Target country: [UAE / Saudi Arabia / Qatar / all three]
+
+Compare in detail for the three countries:
+1. Work visa: visa types, application process, duration, conditions, sponsor
+2. Cost of living: housing, transport, food, schooling (by city: Dubai, Abu Dhabi, Riyadh, Jeddah, Doha)
+3. Taxation: income tax (0% UAE and Qatar, flat tax Saudi Arabia for expats?), VAT, social contributions
+4. Healthcare: mandatory coverage, quality of care, costs
+5. Housing: recommended neighborhoods for expats, rental ranges
+6. Transport: driving license, car, public transport
+7. Culture and lifestyle: social rules, freedom, leisure, French/Francophone community
+8. Safety: global ranking, environment for families
+9. Schooling: French/international schools, costs, availability
+10. Pros and cons: comparative table of the 3 countries
+11. Recommendation: which country suits me best given my situation?
+
+Provide concrete and up-to-date figures.
+
+
+==============================================================================
+PROMPT 9 — Adapt CV for the Gulf (photo, DOB, nationality, marital status)
+==============================================================================
+
+You are an expert in CV optimization for the Gulf/GCC market.
+
+Target company: [NAME — e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East]
+Target position: [TITLE — e.g., Senior Embedded Software Engineer]
+Job description: [PASTE THE JOB POSTING OR KEY POINTS]
+
+My full profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), V2G (E2-CAD)
+- Founder Workshop-DIY (robotics for youth)
+- Languages: FR native, EN professional, AR native
+
+Perform:
+1. Gulf CV specifics: professional photo (required?), date of birth, nationality, marital status, passport number
+2. Priority keywords: terms to place at the top of the CV to pass ATS filters
+3. Experience reordering: in what order to present my assignments for maximum impact
+4. Professional summary: write a 3-4 line summary adapted to the Gulf market
+5. Skills to highlight: ranked by relevance for this position
+6. Languages section: how to present trilingualism (native Arabic = major asset)
+7. References: should references be included? Expected format?
+8. Cultural adaptation: Gulf-specific presentation of the CV (length, format, personal information)
+
+
+==============================================================================
+PROMPT 10 — Professional networking message in the Gulf
+==============================================================================
+
+Write a short message to introduce myself at a tech event / conference in the Gulf.
+
+Event: [NAME — e.g., GITEX Dubai, LEAP Riyadh, Qatar IT Conference, ADIPEC Abu Dhabi]
+Format: [LinkedIn message / email / 30-second oral presentation]
+Context: [networking / job search / knowledge sharing]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- Specialties: C/C++, RTOS, Embedded Linux, embedded cybersecurity
+- Critical standards: DO-178 (aerospace), IEC 62304 (medical), ISO 15118 (V2G)
+- Founder Workshop-DIY (robotics for youth)
+- Trilingual FR/EN/AR (native Arabic)
+
+Guidelines:
+1. Short and impactful (50-100 words for message, 30 seconds for oral)
+2. Mention what I can bring to the Gulf tech ecosystem
+3. Professional and respectful tone, adapted to Gulf culture
+4. Show interest in major projects (Vision 2030, NEOM, Smart Cities)
+5. Propose a concrete exchange (coffee, video call, collaboration)
+6. Adapt according to the requested format (3 versions: LinkedIn, email, elevator pitch)
+
+
+==============================================================================
+PROMPT 11 — Research Gulf company before interview
+==============================================================================
+
+You are an expert in strategic intelligence and interview preparation in the Gulf (GCC).
+
+Company: [NAME — e.g., ADNOC, Aramco, EDGE Group, NEOM, Thales Middle East, Honeywell ME]
+Target position: [TITLE]
+Interview date: [DATE]
+
+Research and summarize:
+1. General information: headquarters, size, revenue, number of employees, founding year, ownership (state/private)
+2. Core business: sector, products/services, key clients, market positioning, role in national economy
+3. Technical team: technologies used, tech stack, recent projects, patents, technology partnerships
+4. Company culture: stated values, atmosphere (Glassdoor), diversity, nationalization policy (Emiratization/Saudization)
+5. Recent news: acquisitions, partnerships, funding rounds, new projects (last 6 months)
+6. Link to national visions: Vision 2030, economic diversification, digital transformation
+7. Competitors: main direct competitors in the region and internationally
+8. Relevant questions: 5 smart questions to ask during the interview based on this research
+9. Talking points: elements from my profile that resonate with the company's projects
+10. Red flags: potential warning signs (turnover, negative reviews, working conditions)
+11. Typical package: salary range and typical benefits for this company
+
+Goal: arrive at the interview with in-depth knowledge of the company and regional context.
+
+
+==============================================================================
+HOW TO USE THESE PROMPTS
+==============================================================================
+
+1. Copy the prompt you need
+2. Replace fields [IN BRACKETS] with your information
+3. Paste into ChatGPT, Claude, or any other AI
+4. Adapt the response to your personal style
+
+IMPORTANT: Never send AI-generated text without reviewing and personalizing it.
+AI is a support tool, not a replacement for your judgment.
+
+Recommended order for an application:
+1. Prompt 6  — Analyze the offer -> understand what the company is looking for
+2. Prompt 11 — Research the company -> understand the context
+3. Prompt 9  — Adapt the CV -> customize for the Gulf
+4. Prompt 1 or 2 — Cover letter -> apply
+5. Prompt 4  — LinkedIn message -> networking in parallel
+6. Prompt 5  — Interview preparation -> before each interview
+7. Prompt 7  — Salary negotiation -> when you receive an offer
+8. Prompt 8  — Relocation guide -> to prepare your move

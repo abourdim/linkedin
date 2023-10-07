@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>التحضير للمقابلة — عبد الحق بورديم</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Noto Sans Arabic', 'Tahoma', 'Arial', sans-serif;
+    font-size: 8.5pt;
+    color: #2d2d2d;
+    line-height: 1.45;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a2a4a 0%, #0f1c33 100%);
+    color: #ffffff;
+    padding: 16pt 24pt 14pt;
+    text-align: center;
+    border-bottom: 4pt solid #2e6db4;
+  }
+  .header h1 { font-size: 16pt; font-weight: 800; letter-spacing: 2pt; text-transform: uppercase; }
+  .header .name { font-size: 12pt; color: #7eb3e0; margin-top: 4pt; font-weight: 400; }
+  .header .tag {
+    display: inline-block; margin-top: 6pt;
+    background: rgba(74,143,212,0.2); border: 1pt solid #3a5a8a;
+    color: #8ab8e8; font-size: 8pt; font-weight: 600;
+    padding: 3pt 14pt; border-radius: 12pt; letter-spacing: 0.5pt;
+  }
+
+  .content { padding: 12pt 24pt; }
+
+  /* SECTION */
+  .section-title {
+    font-size: 9.5pt; font-weight: 800; color: #1a2a4a;
+    text-transform: uppercase; letter-spacing: 1.5pt;
+    margin-top: 10pt; margin-bottom: 4pt;
+    padding-bottom: 3pt; border-bottom: 2.5pt solid #2e6db4;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  /* PITCH 2 MIN */
+  .pitch {
+    background: #f7f9fc;
+    border: 1.5pt solid #d0ddef;
+    border-radius: 6pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+  }
+  .pitch p {
+    font-size: 9pt;
+    color: #2d2d2d;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .pitch .timer {
+    text-align: left; font-size: 7pt; color: #4a8fd4;
+    font-weight: 700; margin-bottom: 4pt; letter-spacing: 0.5pt;
+  }
+  .pitch strong { color: #1e3a5f; }
+  .highlight { background: #e8f0fa; padding: 1pt 4pt; border-radius: 2pt; }
+
+  /* KEY FACTS */
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6pt;
+    margin-bottom: 8pt;
+  }
+  .fact {
+    text-align: center;
+    background: linear-gradient(135deg, #1a2a4a, #0f1c33);
+    color: #ffffff;
+    border-radius: 5pt;
+    padding: 8pt 6pt;
+  }
+  .fact .number { font-size: 18pt; font-weight: 800; color: #4a8fd4; }
+  .fact .label { font-size: 7pt; color: #a0b8d0; text-transform: uppercase; letter-spacing: 0.5pt; margin-top: 2pt; }
+
+  /* SECTORS LINE */
+  .sectors {
+    display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 4pt;
+    margin-bottom: 8pt;
+  }
+  .sector-tag {
+    background: rgba(74,143,212,0.1); border: 1pt solid #c0d4ea;
+    color: #1e3a5f; font-size: 7.5pt; font-weight: 600;
+    padding: 3pt 10pt; border-radius: 12pt;
+  }
+
+  /* TIMELINE */
+  .timeline { margin-bottom: 6pt; }
+  .tl-row {
+    display: flex; flex-direction: row-reverse; align-items: baseline;
+    padding: 2.5pt 0;
+    border-bottom: 0.5pt solid #eef1f5;
+  }
+  .tl-date { width: 72pt; font-size: 6.8pt; color: #7a8a9a; font-style: italic; flex-shrink: 0; text-align: right; }
+  .tl-company { width: 80pt; font-size: 7.5pt; font-weight: 700; color: #1e3a5f; flex-shrink: 0; text-align: right; padding-right: 6pt; }
+  .tl-desc { font-size: 7.2pt; color: #3a3a3a; flex: 1; text-align: right; padding-right: 6pt; }
+
+  /* RÉPONSES FLASH */
+  .flash-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5pt;
+  }
+  .flash-card {
+    background: #f7f9fc;
+    border: 1pt solid #d8e2ee;
+    border-radius: 4pt;
+    padding: 5pt 8pt;
+  }
+  .flash-card .flash-q {
+    font-size: 7.2pt; font-weight: 700; color: #2e6db4;
+    margin-bottom: 2pt; text-transform: uppercase; letter-spacing: 0.3pt;
+  }
+  .flash-card .flash-a { font-size: 7pt; color: #3a3a3a; line-height: 1.35; }
+
+  /* FOOTER */
+  .footer {
+    background: linear-gradient(135deg, #1a2a4a, #0f1c33);
+    border-radius: 5pt;
+    padding: 8pt 14pt;
+    margin-top: 6pt;
+    display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center;
+  }
+  .footer p { font-size: 7.5pt; color: #a0b8d0; }
+  .footer strong { color: #7eb3e0; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <h1>بطاقة المقابلة السريعة</h1>
+    <div class="name">عبد الحق بورديم</div>
+    <div class="tag">مهندس برمجيات مدمجة أول &mdash; <span class="latin">Firmware</span> &bull; <span class="latin">RTOS</span> &bull; <span class="latin">Linux</span> المدمج</div>
+  </div>
+
+  <div class="content">
+
+    <!-- الأرقام الرئيسية -->
+    <div class="section-title" style="margin-top: 0;">الأرقام الرئيسية</div>
+    <div class="facts">
+      <div class="fact"><div class="number">+20</div><div class="label">سنة خبرة</div></div>
+      <div class="fact"><div class="number">+12</div><div class="label">شركة</div></div>
+      <div class="fact"><div class="number">6</div><div class="label">قطاعات نشاط</div></div>
+      <div class="fact"><div class="number">5</div><div class="label">معايير متقنة</div></div>
+      <div class="fact"><div class="number">3</div><div class="label"><span class="latin">RTOS</span> (<span class="latin">FreeRTOS, VxWorks, UCOSII</span>)</div></div>
+      <div class="fact"><div class="number">+18</div><div class="label">ورشة عمل <span class="latin">Workshop-DIY</span></div></div>
+    </div>
+
+    <div class="sectors">
+      <span class="sector-tag">الطيران</span>
+      <span class="sector-tag">الطب</span>
+      <span class="sector-tag">السيارات</span>
+      <span class="sector-tag">الطاقة / <span class="latin">V2G</span></span>
+      <span class="sector-tag">الأمن السيبراني / إنترنت الأشياء</span>
+      <span class="sector-tag">أنظمة الدفع</span>
+      <span class="sector-tag">السكك الحديدية</span>
+    </div>
+
+    <!-- العرض التقديمي — دقيقتان -->
+    <div class="section-title">العرض التقديمي — دقيقتان بالضبط</div>
+    <div class="pitch">
+      <div class="timer">~2 دقيقة</div>
+      <p>
+        مرحبًا، أنا <strong>عبد الحق بورديم</strong>، مهندس برمجيات مدمجة أول.
+      </p>
+      <p style="margin-top: 4pt;">
+        جوهر مهنتي: تطوير <strong><span class="latin">firmware</span> و<span class="latin">middleware</span> والطبقات التطبيقية</strong>،
+        في بيئة <span class="highlight"><span class="latin">bare metal</span></span>، تحت أنظمة <span class="highlight"><span class="latin">RTOS</span></span> أو
+        <span class="highlight"><span class="latin">Linux</span> المدمج</span>، <strong>للأنظمة الحرجة والصناعية</strong>.
+        خلال <strong>أكثر من 20 سنة</strong>، طوّرت مشغّلات وحزم اتصالات
+        &mdash; <span class="latin">CAN</span>، <span class="latin">BLE</span>، <span class="latin">USB</span>، <span class="latin">TCP/IP</span> &mdash; على <span class="latin">ARM Cortex</span>، <span class="latin">STM32</span>، <span class="latin">Microchip</span> و<span class="latin">NXP</span>.
+      </p>
+      <p style="margin-top: 4pt;">
+        في مجال <strong>الطيران</strong>: في <strong><span class="latin">Safran</span></strong> على متحكم طاقة <span class="latin">SSPC</span>،
+        في <strong><span class="latin">Thales</span></strong> على جهاز استقبال متعدد الأوضاع <span class="latin">N-MMR</span> ونظام قيادة ذاتية للقطارات <span class="latin">ATO</span>،
+        وفي <strong><span class="latin">Zodiac</span></strong> على وحدات <span class="latin">SSPC</span> لطائرة <span class="latin">A350</span>. جميعها وفق معيار <span class="latin">DO-178C</span>.
+      </p>
+      <p style="margin-top: 4pt;">
+        في مجال <strong>الطب</strong>: في <strong><span class="latin">GE Healthcare</span></strong> على مولّد أشعة سينية
+        مع دمج <span class="latin">CANOpen</span>، في <strong><span class="latin">Sorin</span></strong> على وحدة <span class="latin">Bluetooth</span> لمنظم ضربات القلب،
+        وفي <strong><span class="latin">PK Vitality</span></strong> على ساعة لقياس الجلوكوز &mdash; الكل وفق معيار <span class="latin">IEC 62304</span>.
+      </p>
+      <p style="margin-top: 4pt;">
+        مؤخرًا، في <strong><span class="latin">Enedis</span></strong> أجريت تدقيق الأمن السيبراني لمجمّعات
+        <span class="latin">Linky</span> (اختبار اختراق، التقاط <span class="latin">SDR</span>)، وحاليًا في <strong><span class="latin">E2-CAD</span></strong> أعمل على
+        محطات شحن المركبات الكهربائية مع <strong><span class="latin">ISO 15118</span></strong> و<span class="latin">OCPP</span>.
+      </p>
+      <p style="margin-top: 4pt;">
+        قبل كل ذلك، <strong>8 سنوات في <span class="latin">Cartadis</span></strong> أعطتني قاعدة صلبة في التطوير
+        المدمج الشامل: مشغّلات، حزم <span class="latin">USB/TCP/IP</span>، <span class="latin">RFID</span>، تشفير.
+      </p>
+      <p style="margin-top: 4pt;">
+        بالتوازي، أنا مؤسس <strong><span class="latin">Workshop-DIY</span></strong>، جمعية للروبوتات التعليمية
+        حيث أقدّم ورشات للشباب حول <span class="latin">Arduino</span>، <span class="latin">ESP32</span>، الذكاء الاصطناعي والطباعة ثلاثية الأبعاد.
+      </p>
+    </div>
+
+    <!-- المسار المهني السريع -->
+    <div class="section-title">المسار المهني السريع</div>
+    <div class="timeline">
+      <div class="tl-row"><span class="tl-date">2025 – الحاضر</span><span class="tl-company"><span class="latin">E2-CAD</span></span><span class="tl-desc">محطة شحن، <span class="latin">ISO 15118</span>، <span class="latin">OCPP</span>، هندسة عكسية، منصة اختبار</span></div>
+      <div class="tl-row"><span class="tl-date">2024 – 2025</span><span class="tl-company"><span class="latin">Safran</span></span><span class="tl-desc"><span class="latin">SSPC</span>، مشغّلات <span class="latin">C</span>، <span class="latin">TRACE32</span>، <span class="latin">DO-178</span></span></div>
+      <div class="tl-row"><span class="tl-date">2023 – 2024</span><span class="tl-company"><span class="latin">Asterios</span></span><span class="tl-desc">اختبارات تحقق <span class="latin">T1042SOM</span>، أخطاء المعالج</span></div>
+      <div class="tl-row"><span class="tl-date">2022 – 2023</span><span class="tl-company"><span class="latin">Thales</span></span><span class="tl-desc"><span class="latin">N-MMR</span> + <span class="latin">LPM</span>، <span class="latin">Linux C/C++</span>، اختبارات <span class="latin">HLT</span>، <span class="latin">DO-178</span></span></div>
+      <div class="tl-row"><span class="tl-date">2020 – 2021</span><span class="tl-company"><span class="latin">Thales</span></span><span class="tl-desc"><span class="latin">ATO</span> القطار الذاتي، ترحيل 32←64 بت، <span class="latin">IPC</span></span></div>
+      <div class="tl-row"><span class="tl-date">2020</span><span class="tl-company"><span class="latin">PK Vitality</span></span><span class="tl-desc"><span class="latin">CGM</span>، <span class="latin">BLE NRF52</span>، <span class="latin">FreeRTOS</span>، <span class="latin">TouchGFX</span>، <span class="latin">IEC 62304</span></span></div>
+      <div class="tl-row"><span class="tl-date">2017 – 2020</span><span class="tl-company"><span class="latin">Zodiac/Safran</span></span><span class="tl-desc"><span class="latin">SSPC A350</span>، <span class="latin">CAN</span>، <span class="latin">dsPIC33</span>، <span class="latin">uAFDX</span>، <span class="latin">DO-178</span></span></div>
+      <div class="tl-row"><span class="tl-date">2015 – 2016</span><span class="tl-company"><span class="latin">Enedis</span></span><span class="tl-desc"><span class="latin">Linky</span> أمن سيبراني، اختبار اختراق، <span class="latin">SDR</span>، <span class="latin">Scapy</span></span></div>
+      <div class="tl-row"><span class="tl-date">2014 – 2015</span><span class="tl-company"><span class="latin">Sorin</span></span><span class="tl-desc"><span class="latin">BLE</span> منظم ضربات القلب، <span class="latin">Cortex M0</span>، <span class="latin">Android</span></span></div>
+      <div class="tl-row"><span class="tl-date">2012 – 2014</span><span class="tl-company"><span class="latin">GE Healthcare</span></span><span class="tl-desc">أشعة سينية، <span class="latin">CANOpen</span>، <span class="latin">VxWorks</span>، دعم الولايات المتحدة</span></div>
+      <div class="tl-row"><span class="tl-date">2001 – 2009</span><span class="tl-company"><span class="latin">Cartadis</span></span><span class="tl-desc">8 سنوات — أجهزة الدفع، <span class="latin">USB</span>، <span class="latin">TCP/IP</span>، <span class="latin">RFID</span>، <span class="latin">DES</span></span></div>
+    </div>
+
+    <!-- الإجابات السريعة -->
+    <div class="section-title">الإجابات السريعة</div>
+    <div class="flash-grid">
+      <div class="flash-card">
+        <div class="flash-q">التصحيح على الهدف؟</div>
+        <div class="flash-a"><span class="latin">TRACE32</span>: نقاط توقف، ذاكرة، سجلات + <span class="latin">Wireshark</span>، <span class="latin">Saleae</span>، تسجيل مخصص.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q"><span class="latin">RTOS</span>؟</div>
+        <div class="flash-a"><span class="latin">FreeRTOS</span>، <span class="latin">VxWorks</span>، <span class="latin">UCOSII</span>. مهام، مقاطع محمية، إشارات، قيود الزمن الحقيقي.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q"><span class="latin">DO-178C</span>؟</div>
+        <div class="flash-a"><span class="latin">DAL A←E</span>. <span class="latin">MC/DC</span> لمستوى <span class="latin">DAL A</span>. <span class="latin">SRS←LLR←STD←STR</span>. مراجعة + تتبع.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q"><span class="latin">MISRA C</span>؟</div>
+        <div class="flash-a">قواعد سلامة <span class="latin">C</span>. <span class="latin">Required</span> + <span class="latin">advisory</span>. <span class="latin">PC Lint</span>، <span class="latin">Sonar</span>، <span class="latin">Polyspace</span>.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">لماذا هذا المنصب؟</div>
+        <div class="flash-a">يتوافق مع صميم كفاءتي. الرغبة في المساهمة والاستمرار في التطور.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">مراجعات المتطلبات؟</div>
+        <div class="flash-a">نعم (<span class="latin">Thales</span>، <span class="latin">Zodiac</span>). قوائم تحقق: الاكتمال، الاتساق، التتبع، قابلية الاختبار.</div>
+      </div>
+    </div>
+
+    <!-- التذييل -->
+    <div class="footer">
+      <p><strong><span class="latin">abdelhak.bourdim@gmail.com</span></strong> &nbsp;|&nbsp; <span class="latin">+33 6 19 51 51 73</span> &nbsp;|&nbsp; منطقة باريس</p>
+      <p>متاح <strong>فورًا</strong></p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

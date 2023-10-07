@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV Luxembourg — Abdelhak Bourdim — FR</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #222;
+    line-height: 1.42;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 16mm 18mm 14mm 18mm;
+    page-break-after: always;
+    position: relative;
+  }
+
+  /* -- HEADER -- */
+  .header {
+    display: flex;
+    gap: 18pt;
+    margin-bottom: 12pt;
+    padding-bottom: 10pt;
+    border-bottom: 2.5pt solid #1a5276;
+  }
+
+  .photo-placeholder {
+    width: 80pt;
+    height: 100pt;
+    border: 1.5pt solid #bbb;
+    border-radius: 4pt;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #999;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .header-info {
+    flex: 1;
+  }
+
+  .header-name {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1a5276;
+    letter-spacing: 1pt;
+    margin-bottom: 3pt;
+  }
+
+  .header-title {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 8pt;
+  }
+
+  .header-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4pt 20pt;
+    font-size: 8pt;
+    color: #444;
+  }
+
+  .header-details .detail {
+    display: flex;
+    align-items: center;
+    gap: 4pt;
+  }
+
+  .detail-label {
+    font-weight: 600;
+    color: #1a5276;
+  }
+
+  .header-tagline {
+    margin-top: 8pt;
+    font-size: 8pt;
+    color: #2980b9;
+    font-weight: 600;
+    padding: 4pt 8pt;
+    background: #eaf2f8;
+    border-radius: 3pt;
+    display: inline-block;
+  }
+
+  /* -- SECTIONS -- */
+  .section {
+    margin-bottom: 9pt;
+  }
+
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1a5276;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    padding-bottom: 3pt;
+    border-bottom: 1.5pt solid #2980b9;
+    margin-bottom: 7pt;
+  }
+
+  /* -- PROFILE -- */
+  .profile-text {
+    font-size: 8.2pt;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  /* -- EXPERIENCE -- */
+  .exp-block {
+    margin-bottom: 7pt;
+    page-break-inside: avoid;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .exp-company {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .exp-dates {
+    font-size: 7.5pt;
+    color: #777;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .exp-role {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 1pt;
+  }
+
+  .exp-subtitle {
+    font-size: 7.5pt;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 2pt;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .exp-bullets li {
+    font-size: 7.8pt;
+    color: #333;
+    padding-left: 10pt;
+    position: relative;
+    margin-bottom: 1.5pt;
+    line-height: 1.35;
+  }
+
+  .exp-bullets li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2980b9;
+    font-size: 7pt;
+  }
+
+  .exp-env {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 2pt;
+  }
+
+  .exp-env strong {
+    color: #666;
+  }
+
+  /* -- SKILLS GRID -- */
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.8pt;
+  }
+
+  .skills-table td {
+    padding: 2pt 6pt;
+    vertical-align: top;
+    border-bottom: 0.5pt solid #eee;
+  }
+
+  .skills-table .sk-label {
+    width: 28%;
+    font-weight: 600;
+    color: #1a5276;
+    font-size: 7.5pt;
+  }
+
+  .skills-table .sk-value {
+    color: #333;
+  }
+
+  /* -- TAGS -- */
+  .tag {
+    display: inline-block;
+    background: #eaf2f8;
+    border: 0.5pt solid #bdd7ee;
+    color: #1a5276;
+    font-size: 7pt;
+    padding: 2pt 6pt;
+    border-radius: 3pt;
+    margin: 0 3pt 3pt 0;
+    font-weight: 600;
+  }
+
+  /* -- EDUCATION -- */
+  .edu-item {
+    margin-bottom: 5pt;
+  }
+
+  .edu-school {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .edu-degree {
+    font-size: 8pt;
+    color: #333;
+  }
+
+  .edu-location {
+    font-size: 7pt;
+    color: #888;
+  }
+
+  /* -- LANGUAGES -- */
+  .lang-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2pt 0;
+    font-size: 8pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+
+  .lang-row:last-child {
+    border-bottom: none;
+  }
+
+  .lang-name {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .lang-level {
+    color: #2980b9;
+    font-style: italic;
+  }
+
+  /* -- TWO COLUMNS -- */
+  .two-col {
+    display: flex;
+    gap: 20pt;
+  }
+
+  .two-col .col-left {
+    flex: 1;
+  }
+
+  .two-col .col-right {
+    flex: 1;
+  }
+
+  /* -- OLDER EXPERIENCE -- */
+  .old-exp {
+    margin-bottom: 4pt;
+  }
+
+  .old-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .old-exp-company {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .old-exp-dates {
+    font-size: 7pt;
+    color: #888;
+    font-style: italic;
+  }
+
+  .old-exp-desc {
+    font-size: 7.5pt;
+    color: #555;
+    line-height: 1.3;
+  }
+
+  /* -- ASSOCIATION -- */
+  .asso-box {
+    background: #f8fbfe;
+    border: 1pt solid #d4e6f1;
+    border-radius: 4pt;
+    padding: 6pt 10pt;
+    margin-top: 4pt;
+  }
+
+  .asso-name {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .asso-role {
+    font-size: 7pt;
+    color: #2980b9;
+    font-weight: 600;
+    margin-bottom: 3pt;
+  }
+
+  .asso-desc {
+    font-size: 7.2pt;
+    color: #555;
+    line-height: 1.35;
+    margin-bottom: 2pt;
+  }
+
+  /* -- FOOTER -- */
+  .footer-note {
+    margin-top: 8pt;
+    font-size: 7pt;
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="photo-placeholder">
+      Votre photo<br>professionnelle<br>(a remplacer)
+    </div>
+    <div class="header-info">
+      <div class="header-name">Abdelhak Bourdim</div>
+      <div class="header-title">Ingenieur Logiciel Embarque Senior &mdash; C/C++ &bull; RTOS &bull; Linux Embarque</div>
+      <div class="header-details">
+        <div class="detail"><span class="detail-label">Naissance :</span> 20 aout 1969</div>
+        <div class="detail"><span class="detail-label">Nationalite :</span> Francaise</div>
+        <div class="detail"><span class="detail-label">Situation :</span> Marie</div>
+        <div class="detail"><span class="detail-label">Permis :</span> B (vehicule) &bull; Eligible Permis G frontalier Luxembourg</div>
+        <div class="detail"><span class="detail-label">Email :</span> abdelhak.bourdim@gmail.com</div>
+        <div class="detail"><span class="detail-label">Tel :</span> +33 6 19 51 51 73</div>
+        <div class="detail"><span class="detail-label">Domicile :</span> Region parisienne, France</div>
+        <div class="detail"><span class="detail-label">LinkedIn :</span> linkedin.com/in/abdelhak-bourdim-96416122</div>
+        <div class="detail"><span class="detail-label">Site :</span> workshop-diy.org</div>
+      </div>
+      <div class="header-tagline">Mobilite : Luxembourg (frontalier depuis la France) &mdash; Disponible immediatement</div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section">
+    <div class="section-title">Profil</div>
+    <p class="profile-text">
+      Specialiste en logiciel embarque avec <strong>plus de 20 ans d'experience</strong> dans le developpement firmware, middleware et couches applicatives &mdash; bare metal, RTOS et Linux embarque &mdash; pour systemes critiques et industriels. Conception de drivers bas niveau, stacks de communication (CAN, BLE, USB, TCP/IP) et applications embarquees sur architectures ARM Cortex, STM32, Microchip et NXP.
+    </p>
+    <p class="profile-text" style="margin-top: 3pt;">
+      Solutions certifiees pour l'<strong>aeronautique</strong> (Safran, Thales &mdash; DO-178), le <strong>medical</strong> (GE Healthcare, Sorin &mdash; IEC 62304), l'<strong>automobile</strong> (Valeo, Arkamys), la <strong>cybersecurite IoT</strong> (Enedis &mdash; Linky), les <strong>systemes de paiement</strong> (Cartadis) et la <strong>recharge intelligente V2G</strong> (E2-CAD &mdash; ISO 15118). Trilinguisme francais / anglais / arabe, un atout pour le marche multilingue luxembourgeois.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experience professionnelle</div>
+
+    <!-- E2-CAD -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">E2-CAD &mdash; Eragny (95)</span>
+        <span class="exp-dates">Mai 2025 &ndash; Present</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Recharge EV / V2G</div>
+      <div class="exp-subtitle">Borne de recharge EV &mdash; IP Iotecha</div>
+      <ul class="exp-bullets">
+        <li>Reverse engineering et analyse du code source (architecture statique et dynamique)</li>
+        <li>Revue du code embarque sur 3 cartes (Microchip PIC, STM32), outils de debug (ST-Link, nsprog)</li>
+        <li>Analyse des protocoles de communication entre modules Linux et cartes embarquees (RS232, I2C, Saleae)</li>
+        <li>Developpement d'extensions Python et generation de rapports web HTML en temps reel</li>
+        <li>Design et mise en place du banc de test : integration outils Chargebyte, simulateur EV</li>
+        <li>Debug et mise en service des bornes (PLC, HomePlug Green PHY, ISO 15118, OCPP)</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Linux embarque, C/C++, Microchip PIC, STM32, PLC, HomePlug Green PHY, ISO 15118, OCPP, CAN, TCP/IP, Saleae, HackRF One, Python, Bash</div>
+    </div>
+
+    <!-- SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Safran &mdash; Creteil (94)</span>
+        <span class="exp-dates">Mars 2024 &ndash; Mai 2025</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Aeronautique (SSPC)</div>
+      <div class="exp-subtitle">Solid State Power Controller &mdash; Drivers bas niveau</div>
+      <ul class="exp-bullets">
+        <li>Developpement et mise a jour des drivers bas niveau en C pour le systeme SSPC</li>
+        <li>Mise en place d'outils de logging pour le diagnostic et la tracabilite des echanges</li>
+        <li>Redaction et execution des tests de validation sur cible avec Lauterbach TRACE32</li>
+        <li>Scripting Bash/Awk pour l'automatisation des processus de test</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> C, Lauterbach TRACE32, Bash, Awk</div>
+    </div>
+
+    <!-- ASTERIOS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Asterios Technologies &mdash; Massy (91)</span>
+        <span class="exp-dates">Aout 2023 &ndash; Fev. 2024</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Aeronautique (Tests SOM)</div>
+      <ul class="exp-bullets">
+        <li>Developpement en C des tests de validation pour le module SOM (processeur T1042)</li>
+        <li>Analyse des errata du processeur et identification des contournements logiciels</li>
+        <li>Redaction de la documentation de test conforme aux exigences du projet</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> C, Bash, Python, Lauterbach TRACE32, Polarion</div>
+    </div>
+
+    <!-- THALES GENNEVILLIERS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Gennevilliers (92)</span>
+        <span class="exp-dates">Mai 2022 &ndash; Juil. 2023</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Radio Defense</div>
+      <div class="exp-subtitle">Projets LPM + N-MMR &mdash; Preparation de mission &amp; Multi Mode Receiver</div>
+      <ul class="exp-bullets">
+        <li>Developpement des couches applicatives sous Linux embarque en C/C++ pour 2 projets</li>
+        <li>Scripts de gestion de configuration et automatisation (Bash, Curl, Tshark)</li>
+        <li>Developpement et execution des tests HLT (High Level Tests)</li>
+        <li>Correction de bugs et analyse des protocoles reseau (Websockets)</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Linux embarque, C/C++, Bash, Websockets, Curl, Tshark, Python</div>
+    </div>
+
+    <!-- VALEO -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Valeo &mdash; Creteil (94)</span>
+        <span class="exp-dates">Mars &ndash; Avril 2022</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Audit de Tests</div>
+      <ul class="exp-bullets">
+        <li>Audit des processus de tests et des outils (NI Mastre, Vector CANoe)</li>
+        <li>Propositions d'automatisation et revue des exigences client/systeme</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> NI Mastre, Vector CANoe</div>
+    </div>
+
+    <!-- ARKAMYS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Arkamys &mdash; Levallois-Perret (92)</span>
+        <span class="exp-dates">Juil. 2021 &ndash; Fev. 2022</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Audio Automobile</div>
+      <ul class="exp-bullets">
+        <li>Developpement de plugins GStreamer et drivers CAN (ELM327), outils de diagnostic</li>
+        <li>Tests unitaires &amp; d'integration (Valgrind), build system Buildroot</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Linux embarque, C/C++, Buildroot, GStreamer, Valgrind, CAN, Python, Jira</div>
+    </div>
+
+</div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+
+  <div class="section">
+    <div class="section-title">Experience professionnelle <span style="font-size: 7.5pt; font-weight: 400; color: #999;">(suite)</span></div>
+
+    <!-- THALES VELIZY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Velizy-Villacoublay (78)</span>
+        <span class="exp-dates">Nov. 2020 &ndash; Juin 2021</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Train Autonome (ATO)</div>
+      <ul class="exp-bullets">
+        <li>Migration de l'application de 32 bits vers 64 bits sur plateforme Linux embarque</li>
+        <li>Definition et implementation des protocoles de communication IPC</li>
+        <li>Developpement d'outils de diagnostic reseau et tests d'integration</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Linux embarque, C, UDP, TCP, Wireshark, Tshark, Python, Jira</div>
+    </div>
+
+    <!-- PK VITALITY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">PK Vitality &mdash; Paris (75)</span>
+        <span class="exp-dates">Juin &ndash; Sept. 2020</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Dispositif Medical (CGM)</div>
+      <ul class="exp-bullets">
+        <li>Developpement HAL (AFE AD5940, PMIC DA9070), driver QSPI, BLE NRF52840</li>
+        <li>Ecran tactile STM32 TouchGFX, FreeRTOS, mode low power</li>
+        <li>Tests in vitro et documentation Doxygen (conforme IEC 62304)</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> STM32L4S9, NRF52840, C, C++, FreeRTOS, BLE, TouchGFX, Doxygen</div>
+    </div>
+
+    <!-- ZODIAC / SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Zodiac Aerospace (Safran) &mdash; Montreuil (93)</span>
+        <span class="exp-dates">Fev. 2017 &ndash; Mars 2020</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Aeronautique (SSPC A350)</div>
+      <ul class="exp-bullets">
+        <li>Adaptation des couches bas niveau : drivers CAN, RS485, memoire thermique (dsPIC33)</li>
+        <li>Implementation de la passerelle uAFDX vers CAN et fonctions de diagnostic</li>
+        <li>Developpement et optimisation des couches applicatives SSPC A350</li>
+        <li>Tests de validation et documentation conforme aux standards aeronautiques</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Microchip dsPIC33, MPLAB, TI Concerto, CCS Studio, C</div>
+    </div>
+
+    <!-- ENEDIS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Enedis &mdash; Nanterre (92)</span>
+        <span class="exp-dates">Mai 2015 &ndash; Sept. 2016</span>
+      </div>
+      <div class="exp-role">Ingenieur Cybersecurite Embarquee &mdash; Smart Grid</div>
+      <ul class="exp-bullets">
+        <li>Diagnostic et audit de securite des concentrateurs Linky</li>
+        <li>Tests d'intrusion sur systemes embarques Linux (Kali Linux, Nmap)</li>
+        <li>Sniffing et fuzzing de protocoles (Wireshark, Tshark, Scapy, SDR)</li>
+        <li>Audit et revue de code avec les constructeurs (Sonar, PC Lint)</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Kali Linux, Embedded Linux, Nmap, Wireshark, Scapy, SDR, Python, Bash</div>
+    </div>
+
+    <!-- SORIN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Sorin &mdash; Clamart (92)</span>
+        <span class="exp-dates">Nov. 2014 &ndash; Avr. 2015</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Medical (BLE Pacemaker)</div>
+      <ul class="exp-bullets">
+        <li>Validation du module Bluetooth Smart, Serial Port Service Profile</li>
+        <li>Protocole de communication smartphone et application Android</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> Cortex M0, Keil, C, BLE, Android</div>
+    </div>
+
+    <!-- GE HEALTHCARE -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">General Electric Healthcare &mdash; Buc (78)</span>
+        <span class="exp-dates">2012 &ndash; 2014</span>
+      </div>
+      <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Imagerie Medicale</div>
+      <ul class="exp-bullets">
+        <li>Integration pile CANOpen (slave/master), drivers et service CAN</li>
+        <li>Portage du noyau CMX-RTX, support technique equipe USA</li>
+      </ul>
+      <div class="exp-env"><strong>Env :</strong> TI TMS320, ARM Cortex A8, VxWorks, C, C++</div>
+    </div>
+
+    <!-- EARLIER -->
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Photomaton / BCM / Vertical M2M / PGS &mdash; Paris</span>
+        <span class="old-exp-dates">2010 &ndash; 2012</span>
+      </div>
+      <div class="old-exp-desc">Systemes de paiement et tele releve &mdash; Developpement embarque + PC sur NXP LPC (USB, RFID, GSM/GPRS, Bluetooth)</div>
+    </div>
+
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Cartadis &mdash; Fontenay-sous-Bois (94)</span>
+        <span class="old-exp-dates">Oct. 2001 &ndash; Dec. 2009</span>
+      </div>
+      <div class="old-exp-desc"><strong>8 ans</strong> &mdash; Terminaux de controle d'acces et paiement : drivers, applicatifs embarques, stacks USB/TCP/IP, cryptage DES/RC4 (NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91)</div>
+    </div>
+  </div>
+
+  <!-- COMPETENCES -->
+  <div class="section">
+    <div class="section-title">Competences techniques</div>
+    <table class="skills-table">
+      <tr><td class="sk-label">Langages</td><td class="sk-value">C, C++, Python, Bash, Assembleur, Perl, Awk</td></tr>
+      <tr><td class="sk-label">OS / RTOS</td><td class="sk-value">Linux embarque, VxWorks, FreeRTOS, UCOSII, Tnkernel</td></tr>
+      <tr><td class="sk-label">Microcontroleurs</td><td class="sk-value">ARM Cortex (M0, M4, A8), STM32, NRF52, ESP32, Microchip PIC/dsPIC, NXP LPC, TI DSP/Concerto</td></tr>
+      <tr><td class="sk-label">Protocoles / Bus</td><td class="sk-value">CAN, CANOpen, SPI, I2C, RS232, RS485, UART, USB, BLE, AFDX, Ethernet, TCP/UDP</td></tr>
+      <tr><td class="sk-label">Stacks</td><td class="sk-value">TCP/IP, USB Host/Device/HID, BLE, CANOpen, RFID, GStreamer</td></tr>
+      <tr><td class="sk-label">Securite / Paiement</td><td class="sk-value">Carte a puce, RFID Mifare, DES, RC4, USB CCID, pentest embarque</td></tr>
+      <tr><td class="sk-label">Outils</td><td class="sk-value">Lauterbach TRACE32, IAR, Keil, MPLAB, CCS Studio, Green Hills, Buildroot, CubeMx, TouchGFX</td></tr>
+      <tr><td class="sk-label">Gestion</td><td class="sk-value">Git, Synergy, Jira, Polarion, Doxygen, Wireshark, Saleae</td></tr>
+    </table>
+  </div>
+
+  <!-- NORMES -->
+  <div class="section">
+    <div class="section-title">Normes &amp; Methodes</div>
+    <span class="tag">DO-178</span>
+    <span class="tag">MISRA C</span>
+    <span class="tag">IEC 62304</span>
+    <span class="tag">ISO 15118 (V2G)</span>
+    <span class="tag">ISO 14443 (Smart Card)</span>
+    <span class="tag">ISO 15693 (RFID)</span>
+    <span class="tag">OCPP</span>
+    <span class="tag">Cycle en V</span>
+    <span class="tag">Agile / Scrum</span>
+  </div>
+
+  <!-- TWO COLUMNS: FORMATION + LANGUES + ASSO -->
+  <div class="two-col">
+    <div class="col-left">
+
+      <!-- FORMATION -->
+      <div class="section">
+        <div class="section-title">Formation</div>
+        <div class="edu-item">
+          <div class="edu-school">AFPA, Champs-sur-Marne</div>
+          <div class="edu-degree">Ingenieur de conception de systemes electroniques et informatiques</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Hopital Tenon, Paris</div>
+          <div class="edu-degree">3eme cycle &mdash; Instrumentation biomedicale</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Universite de Boumerdes, Algerie</div>
+          <div class="edu-degree">Ingenieur en electronique, option communication</div>
+        </div>
+      </div>
+
+      <!-- LANGUES -->
+      <div class="section">
+        <div class="section-title">Langues</div>
+        <div class="lang-row"><span class="lang-name">Francais</span><span class="lang-level">Courant (bilingue)</span></div>
+        <div class="lang-row"><span class="lang-name">Anglais</span><span class="lang-level">Professionnel</span></div>
+        <div class="lang-row"><span class="lang-name">Arabe</span><span class="lang-level">Courant (bilingue)</span></div>
+      </div>
+
+    </div>
+    <div class="col-right">
+
+      <!-- SECTEURS -->
+      <div class="section">
+        <div class="section-title">Secteurs d'activite</div>
+        <div style="font-size: 7.8pt; color: #333; line-height: 1.6;">
+          Aeronautique (Safran, Thales, Zodiac)<br>
+          Medical (GE Healthcare, Sorin, PK Vitality)<br>
+          Automobile (Valeo, Arkamys)<br>
+          Energie / Smart Grid (Enedis &mdash; Linky)<br>
+          Recharge EV / V2G (E2-CAD)<br>
+          IoT / M2M (Vertical M2M)<br>
+          Paiement (Cartadis, Photomaton, BCM)
+        </div>
+      </div>
+
+      <!-- ASSOCIATION -->
+      <div class="section">
+        <div class="section-title">Engagement associatif</div>
+        <div class="asso-box">
+          <div class="asso-name">Workshop-DIY</div>
+          <div class="asso-role">Fondateur &mdash; Chelles (77) &mdash; depuis 2020</div>
+          <div class="asso-desc">Association de robotique &amp; STEM pour jeunes (6-12+ ans)</div>
+          <div class="asso-desc">Conception d'un kit robot ESP32 (WiFi, BLE, servos, capteurs)</div>
+          <div class="asso-desc">18+ ateliers : Arduino, micro:bit, IA, impression 3D</div>
+          <div class="asso-desc" style="margin-top: 3pt; color: #2980b9;">workshop-diy.org</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-note">References sur demande &mdash; Statut frontalier eligible (Permis G Luxembourg)</div>
+
+</div>
+
+</body>
+</html>

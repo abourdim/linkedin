@@ -1,0 +1,117 @@
+ACTION PLAN — JOB SEARCH IN THE GULF / GCC
+Senior Embedded Software Engineer — Abdelhak Bourdim — March 2026
+
+=================================================================
+PART 1 — UNDERSTANDING THE GULF MARKET
+=================================================================
+
+Embedded Sector in the Gulf (UAE, Saudi Arabia, Qatar):
+- Rapidly expanding market: defense, energy, smart cities, Vision 2030
+- English is the dominant business language
+- Native Arabic is a MAJOR advantage (rare among Western engineers)
+- Tax-free salaries with comprehensive benefits packages
+- Packages include housing, transport, annual flights, education allowance
+
+Expected Salary (USD, tax-free):
+- Junior (1-3 years): 40,000 - 60,000
+- Mid-level (5-10 years): 60,000 - 90,000
+- Senior (your profile, 10+ years): 80,000 - 120,000+
+- Very senior / Lead: 100,000 - 150,000+
+
+Note: In addition to salary, packages typically include:
+- Housing allowance (or company-provided accommodation)
+- Transport allowance (or company car)
+- Annual return flights (family included)
+- Education allowance for children
+- Comprehensive health insurance
+
+=================================================================
+PART 2 — VISA AND STATUS
+=================================================================
+
+Work visa (employer-sponsored):
+- Employer sponsors the work visa
+- Duration: 1-3 years, renewable
+- Employer handles all administrative procedures
+- No restrictions for French nationals
+
+Process:
+1. Secure employment (employer must have contract ready)
+2. Employer submits work visa application
+3. Timeline: 2-8 weeks depending on country
+4. Mandatory medical exam upon arrival
+5. Local ID card (Emirates ID, Iqama, etc.)
+
+=================================================================
+PART 3 — TARGET COMPANIES
+=================================================================
+
+Defense and Aerospace:
+- EDGE Group (Abu Dhabi) — defense, advanced technology
+- Raytheon Arabia (Riyadh) — defense, embedded systems
+- BAE Systems Saudi (Riyadh) — defense
+- Thales Middle East (Dubai/Abu Dhabi) — defense, aerospace
+- SAMI (Saudi Arabian Military Industries) — national defense
+
+Energy and Oil/Gas:
+- Saudi Aramco (Dhahran) — oil, technology
+- ADNOC (Abu Dhabi) — oil, gas, technology
+- QatarEnergy (Doha) — gas, energy
+- Siemens Energy ME (Dubai) — industrial energy
+- Schneider Electric ME (Dubai) — automation, energy
+
+Mega-Projects and Smart Cities:
+- NEOM (Saudi Arabia) — city of the future, IoT, AI
+- Honeywell Middle East (Dubai) — automation, IoT
+- ABB Middle East (Dubai) — energy, automation
+
+=================================================================
+PART 4 — GULF-SPECIFIC JOB BOARDS
+=================================================================
+
+- Bayt.com — #1 in the Gulf
+- GulfTalent.com — GCC specialized
+- Naukrigulf.com — popular in UAE
+- Indeed.ae / Indeed.sa — general
+- LinkedIn.com — essential, activate "Open to Work"
+- Hays Middle East — specialized recruitment
+- Michael Page Middle East — recruitment
+
+=================================================================
+PART 5 — WEEKLY ACTION PLAN
+=================================================================
+
+Week 1-2: Preparation
+[ ] Update CV for Gulf format (photo, DOB, nationality, visa status)
+[ ] Prepare EN (primary) + AR (advantage) versions
+[ ] Update LinkedIn profile in English
+[ ] Add "Open to Work" targeting UAE, Saudi Arabia, Qatar
+[ ] Professional photo (suit, neutral background)
+
+Week 2-3: Job Board Registration
+[ ] Bayt.com — create complete profile
+[ ] GulfTalent.com — register
+[ ] Naukrigulf.com — register
+[ ] LinkedIn — set alerts for "embedded" + Gulf countries
+
+Week 2-4: Applications
+[ ] Identify 20-30 target companies
+[ ] Priority: EDGE Group, NEOM, Saudi Aramco, Thales ME, Honeywell ME
+[ ] Adapt each cover letter to the country and company
+
+Week 4-8: Interviews
+[ ] Prepare technical interviews (C/C++, RTOS, protocols)
+[ ] Research compensation packages (housing, transport, flights)
+[ ] Negotiate: salary + housing + transport + flights + education
+
+=================================================================
+PART 6 — YOUR STRENGTHS FOR THE GULF
+=================================================================
+
+1. Native Arabic — HUGE advantage (communicate with local teams, government clients)
+2. 20+ years in critical embedded systems (aerospace, medical)
+3. Defense experience (Safran, Thales) — booming sector in the Gulf
+4. Embedded cybersecurity (Enedis) — highly sought-after skill
+5. Certified standards: DO-178, IEC 62304, MISRA C
+6. French nationality — excellent France-Gulf relations
+7. Workshop-DIY founder — valued social engagement

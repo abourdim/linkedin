@@ -1,0 +1,157 @@
+================================================================================
+        PITCH 2 MINUTES — ENTRETIEN D'EMBAUCHE (MARCHE FRANCAIS)
+        "Parlez-moi de vous" / "Presentez-vous"
+        Abdelhak Bourdim — Ingenieur Logiciel Embarque Senior
+================================================================================
+
+TIMING : ~2 minutes (280 mots) — rythme dynamique mais pose
+CONTEXTE : entretien pour un poste embedded en France (Ile-de-France)
+
+
+================================================================================
+SCRIPT (a apprendre, pas a lire)
+================================================================================
+
+Bonjour, je suis Abdelhak Bourdim, ingenieur logiciel embarque senior
+avec plus de 20 ans d'experience.
+
+                        [PAUSE — 3 sec]
+
+Mon metier, c'est de developper du logiciel embarque bas niveau —
+firmware, drivers, stacks de communication — en C/C++ sur des
+architectures ARM Cortex, STM32, Microchip et NXP, aussi bien en
+bare metal qu'avec des RTOS comme FreeRTOS et VxWorks, ou sous
+Linux embarque.
+
+                        [PAUSE — 2 sec]
+
+Ce qui fait la particularite de mon parcours, c'est la diversite
+des secteurs critiques dans lesquels j'ai travaille :
+
+En aeronautique, chez Safran et Thales, j'ai developpe des drivers
+bas niveau et des couches applicatives conformes a la norme DO-178.
+
+Dans le medical, chez GE Healthcare et Sorin, j'ai integre des
+stacks CANOpen et developpe des modules BLE pour pacemaker,
+conformes a l'IEC 62304.
+
+En cybersecurite IoT, chez Enedis, j'ai mene des audits de securite
+et des tests d'intrusion sur les concentrateurs Linky.
+
+Et plus recemment, en recharge de vehicules electriques chez E2-CAD,
+je travaille sur l'integration ISO 15118, le protocole V2G et la
+mise en service de bornes de recharge.
+
+                        [PAUSE — 2 sec]
+
+Au-dela de la technique, j'ai fonde Workshop-DIY, une association
+qui propose des ateliers de robotique et d'electronique pour les
+jeunes. Ca illustre ma passion pour la transmission, l'innovation
+et l'esprit d'initiative.
+
+                        [PAUSE — 2 sec]
+
+Ce qui m'interesse dans votre entreprise, c'est [ADAPTER selon
+l'entreprise — voir variantes ci-dessous]. Mon experience
+multisectorielle me permet de m'integrer rapidement et d'apporter
+une vision transversale.
+
+Je suis base en Ile-de-France et disponible immediatement.
+
+C'est avec plaisir que je vous en dis plus sur mes realisations.
+
+
+================================================================================
+STRUCTURE DU PITCH (aide-memoire)
+================================================================================
+
+  1. QUI JE SUIS              → Nom + titre + 20 ans         [10 sec]
+  2. CE QUE JE FAIS           → C/C++, RTOS, Linux, MCU      [15 sec]
+  3. MES PREUVES (4 secteurs) :                                [60 sec]
+     • Aero    → Safran, Thales (DO-178)
+     • Medical → GE Healthcare, Sorin (IEC 62304)
+     • Cyber   → Enedis, Linky (pentest)
+     • V2G     → E2-CAD (ISO 15118, OCPP)
+  4. CE QUI ME DIFFERENCIE    → Workshop-DIY, initiative      [15 sec]
+  5. POURQUOI CETTE ENTREPRISE → Adapter au secteur/entreprise [15 sec]
+  6. OUVERTURE                 → Dispo IDF, immediatement      [5 sec]
+
+                                            TOTAL ≈ 2 min
+
+
+================================================================================
+CONSEILS DE DELIVERY (MARCHE FRANCAIS)
+================================================================================
+
+• Rythme naturel — plus dynamique qu'en Suisse, mais rester pose
+• Regarder dans les yeux (ou la camera en visio)
+• Montrer de l'enthousiasme — valorise en France (plus qu'en Suisse)
+• Les PAUSES restent importantes — elles structurent le discours
+• Ne PAS reciter — connaitre les blocs, pas le texte mot a mot
+• Si l'interlocuteur reagit, s'adapter et dialoguer
+• Avoir 3 anecdotes pretes pour approfondir chaque secteur
+• Ne PAS mentionner de pretentions salariales dans le pitch
+• Mettre en avant l'esprit d'equipe et la culture d'entreprise
+
+
+================================================================================
+VARIANTES SELON L'ENTREPRISE (MARCHE FRANCAIS)
+================================================================================
+
+SI ENTREPRISE AERONAUTIQUE (Safran, Thales, Dassault) :
+  → Insister sur Safran + Thales + Zodiac = 6+ ans en aero
+  → Mentionner DO-178, MISRA C, Lauterbach TRACE32
+  → "J'ai travaille 6 ans dans l'aeronautique, de Zodiac a Safran,
+     sur des systemes SSPC et des radios defense. La rigueur DO-178
+     et la traçabilite sont au coeur de ma facon de travailler."
+  → ACCROCHE : "Ce qui m'attire chez [Safran/Thales/Dassault], c'est
+     l'excellence technique et les projets a fort enjeu de surete."
+
+SI ENTREPRISE AUTOMOBILE (Valeo, Stellantis) :
+  → Insister sur l'experience Valeo, AUTOSAR, bus CAN/LIN
+  → Mentionner l'adaptabilite aux normes ISO 26262 (ASIL)
+  → "Mon experience chez Valeo m'a permis de maitriser les
+     environnements AUTOSAR et les contraintes temps reel de
+     l'automobile. Je comprends les cycles en V et les exigences
+     de qualite du secteur."
+  → ACCROCHE : "Ce qui m'interesse chez [Valeo/Stellantis], c'est
+     la transformation vers le vehicule intelligent et connecte."
+
+SI ENTREPRISE MEDICAL (bioMerieux, Air Liquide Medical) :
+  → Insister sur GE Healthcare + Sorin + PK Vitality
+  → Mentionner IEC 62304, Doxygen, tests in vitro, FDA
+  → "Le developpement medical exige une rigueur de documentation
+     et de tracabilite que j'ai pratiquee pendant plusieurs annees,
+     chez GE Healthcare comme chez Sorin pour des pacemakers."
+  → ACCROCHE : "Ce qui me motive dans le medical, c'est l'impact
+     direct sur la vie des patients et l'exigence de qualite."
+
+SI ENTREPRISE IoT / ENERGIE (Schneider Electric, EDF) :
+  → Insister sur Enedis/Linky, pentest, audit de code, securite IoT
+  → Mentionner Kali Linux, Nmap, Scapy, SDR, HackRF
+  → "L'audit de securite des concentrateurs Linky m'a donne une
+     vision complete des vulnerabilites des systemes embarques
+     communicants et des enjeux de cybersecurite dans l'energie."
+  → ACCROCHE : "Ce qui m'interesse chez [Schneider/EDF], c'est
+     l'alliance entre embarque, IoT et transition energetique."
+
+SI ENTREPRISE EV / CLEANTECH (TotalEnergies, Renault) :
+  → Insister sur E2-CAD, ISO 15118, OCPP, V2G
+  → Mentionner PLC, HomePlug Green PHY, banc de test
+  → "La mobilite electrique est un domaine qui me passionne,
+     et mon experience actuelle en V2G et ISO 15118 est
+     directement applicable a vos projets de recharge."
+  → ACCROCHE : "Ce qui me motive chez [TotalEnergies/Renault],
+     c'est de contribuer a la transition energetique par
+     l'innovation technique."
+
+SI ESN / CONSEIL (Capgemini Engineering, Alten) :
+  → Insister sur la polyvalence multi-secteurs (7 secteurs en 20 ans)
+  → Mentionner l'adaptabilite rapide a de nouveaux environnements
+  → "En 20 ans, j'ai travaille dans 7 secteurs differents —
+     aeronautique, medical, automobile, IoT, cybersecurite,
+     recharge EV et industrie — ce qui me permet de m'adapter
+     tres rapidement a tout nouveau contexte client."
+  → ACCROCHE : "Ce qui m'attire dans une ESN comme [Capgemini
+     Engineering/Alten], c'est la diversite des missions et
+     la possibilite de continuer a elargir mon expertise."

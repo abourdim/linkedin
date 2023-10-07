@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Action Plan — Job Search in France — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 16pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.55;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .entry {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  ul { margin: 4pt 0 4pt 16pt; }
+  li { font-size: 9pt; margin-bottom: 2pt; color: #333; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt 0;
+    font-size: 9pt;
+  }
+  table thead th {
+    background: #0a66c2;
+    color: #fff;
+    padding: 5pt 8pt;
+    text-align: left;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+  }
+  table tbody td {
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #d0e3f3;
+    vertical-align: top;
+  }
+  table tbody tr:nth-child(even) { background: #f8fbfe; }
+  table tbody tr:hover { background: #e8f0fe; }
+  .salary-table td:last-child {
+    font-weight: 600;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+  .checklist {
+    list-style: none;
+    margin: 6pt 0 10pt 0;
+    padding: 0;
+  }
+  .checklist li {
+    position: relative;
+    padding: 4pt 0 4pt 22pt;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #0a66c2;
+    border-radius: 2pt;
+    background: #fff;
+  }
+  .option-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin-bottom: 8pt;
+  }
+  .option-box .option-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9.5pt;
+    margin-bottom: 4pt;
+  }
+  .option-box ul { margin-top: 4pt; }
+  .week-header {
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+    margin: 10pt 0 6pt 0;
+    border-left: 3pt solid #0a66c2;
+  }
+  .highlight-box {
+    background: #fff9e6;
+    border: 1pt solid #f0d060;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin: 8pt 0;
+    font-size: 9pt;
+    color: #5a4a00;
+  }
+  .highlight-box strong { color: #7a6200; }
+  .strengths-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: strength-counter;
+  }
+  .strengths-list li {
+    counter-increment: strength-counter;
+    padding: 4pt 0 4pt 28pt;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .strengths-list li::before {
+    content: counter(strength-counter);
+    position: absolute;
+    left: 0;
+    top: 3pt;
+    width: 18pt;
+    height: 18pt;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 18pt;
+  }
+  .warning-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+  }
+  .warning-list li {
+    padding: 4pt 0 4pt 20pt;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .warning-list li:last-child { border-bottom: none; }
+  .warning-list li::before {
+    content: '\2716';
+    position: absolute;
+    left: 2pt;
+    top: 4pt;
+    color: #c0392b;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt;
+    margin: 6pt 0 10pt 0;
+  }
+  .resource-card {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+  }
+  .resource-card .resource-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+  .resource-card ul { margin: 2pt 0 0 14pt; }
+  .resource-card li { font-size: 8.5pt; margin-bottom: 2pt; }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .status-badge {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 10pt;
+    margin-left: 6pt;
+    vertical-align: middle;
+  }
+  .cv-rules {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: cv-counter;
+  }
+  .cv-rules li {
+    counter-increment: cv-counter;
+    padding: 4pt 0 4pt 26pt;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt solid #e8f0fe;
+  }
+  .cv-rules li:last-child { border-bottom: none; }
+  .cv-rules li::before {
+    content: counter(cv-counter);
+    position: absolute;
+    left: 0;
+    top: 4pt;
+    width: 16pt;
+    height: 16pt;
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 3pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 16pt;
+  }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .entry { break-inside: avoid; }
+    .option-box { break-inside: avoid; }
+    table { break-inside: avoid; }
+    .week-header { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Action Plan — Job Search in France</h1>
+<div class="subtitle">Senior Embedded Software Engineer &bull; Abdelhak Bourdim &bull; March 2026</div>
+
+<!-- ============================================================== -->
+<!-- PART 1 -->
+<!-- ============================================================== -->
+<h2>Part 1 — Understanding the Market</h2>
+
+<h3>Embedded Sector in France</h3>
+<div class="copy-box">
+  The market is very active: <strong>500+ embedded positions</strong> open at any given time in France.<br><br>
+  <strong>Paris / Ile-de-France</strong> is the main hub (majority of ESN headquarters and offices)<br>
+  <strong>Other major hubs:</strong> Toulouse (aerospace), Grenoble (semiconductors), Lyon (industry, automotive), Sophia Antipolis (telecom, IoT)<br><br>
+  <strong>Key sectors:</strong> aerospace/defense, automotive, medical, IoT, energy, semiconductors, railway, space.<br><br>
+  Your <strong>20+ year</strong> profile with aerospace + medical + cybersecurity is <strong>rare and sought-after</strong>.
+</div>
+
+<h3>Expected Salary</h3>
+<table class="salary-table">
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Experience</th>
+      <th>Gross Annual (EUR)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>Junior</td><td>1 - 3 years</td><td>35,000 - 42,000</td></tr>
+    <tr><td>Mid-level</td><td>5 - 10 years</td><td>45,000 - 55,000</td></tr>
+    <tr><td><strong>Senior (your profile) — IDF</strong></td><td><strong>10+ years</strong></td><td><strong>60,000 - 80,000</strong></td></tr>
+    <tr><td><strong>Senior — Outside Paris</strong></td><td><strong>10+ years</strong></td><td><strong>50,000 - 65,000</strong></td></tr>
+    <tr><td>Lead / Architect</td><td>15+ years</td><td>70,000 - 90,000+</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">
+  <strong>Note:</strong> These figures are gross annual. The 13th month bonus is common but not universal (depends on collective agreement and company). The Syntec collective agreement applies to most ESN (engineering consulting firms).
+</div>
+
+<!-- ============================================================== -->
+<!-- PART 2 -->
+<!-- ============================================================== -->
+<h2>Part 2 — Status and Working Conditions</h2>
+
+<h3>Your Status <span class="status-badge">FRENCH CITIZEN</span></h3>
+<div class="copy-box">
+  <ul>
+    <li><strong>French nationality</strong> — no work permit needed</li>
+    <li>You can work <strong>immediately</strong> with no administrative procedures</li>
+    <li><strong>CDI</strong> (permanent contract) is the preferred contract type</li>
+    <li>Trial period: 4 months (executive), renewable once (8 months max)</li>
+  </ul>
+</div>
+
+<h3>Syntec Collective Agreement (ESN)</h3>
+<div class="option-box">
+  <div class="option-title">Applicable to Most ESN in France</div>
+  <ul>
+    <li>Classification: position 3.1 or 3.2 for a senior profile</li>
+    <li>Paid leave: 25 working days + RTT (company-dependent, 8-12 days/year)</li>
+    <li>Mandatory company health insurance (mutuelle)</li>
+    <li>Profit-sharing (participation / interessement) depending on company</li>
+  </ul>
+</div>
+
+<h3>Benefits to Negotiate</h3>
+<div class="entry">
+  <ul style="font-size: 9.5pt;">
+    <li><strong>Remote work:</strong> 2-3 days/week has become the norm post-COVID</li>
+    <li><strong>Holiday bonus</strong> (Syntec convention)</li>
+    <li><strong>Company savings plan</strong> (PEE) / PERCO</li>
+    <li><strong>Meal vouchers</strong> (tickets restaurant)</li>
+    <li><strong>Continuing education</strong> (CPF)</li>
+    <li><strong>Company car</strong> (for some positions)</li>
+  </ul>
+</div>
+
+<!-- ============================================================== -->
+<!-- PART 3 -->
+<!-- ============================================================== -->
+<h2>Part 3 — Adapting Your CV to the French Market</h2>
+
+<h3>French CV Format</h3>
+<ol class="cv-rules">
+  <li><strong>NO PHOTO</strong> (anti-discrimination law, May 27, 2008)</li>
+  <li><strong>NO DATE OF BIRTH</strong> or age</li>
+  <li><strong>NO NATIONALITY</strong> or marital status</li>
+  <li><strong>SKILLS SECTION</strong> at the top of the CV (clearly visible)</li>
+  <li><strong>FORMAT:</strong> 2 pages max, PDF, reverse chronological</li>
+  <li><strong>CLEAR TITLE:</strong> "Senior Embedded Software Engineer — 20+ years experience"</li>
+  <li><strong>SUMMARY:</strong> 3-4 lines summarizing profile and objective</li>
+  <li><strong>LANGUAGE:</strong> French for positions in France, English for multinationals</li>
+  <li><strong>REFERENCES:</strong> "Available upon request" is acceptable</li>
+  <li><strong>KEYWORDS:</strong> adapt for ATS (automated tracking systems)</li>
+</ol>
+
+<h3>Your Specific Strengths for France</h3>
+<div class="copy-box">
+  <ul>
+    <li>20+ years in critical embedded systems = <strong>highly sought-after senior profile</strong></li>
+    <li>Experience at Safran, Thales, Valeo = <strong>references recognized by all recruiters</strong></li>
+    <li>Standards DO-178, IEC 62304, MISRA C = <strong>guarantee of rigor and quality</strong></li>
+    <li>Embedded cybersecurity (Enedis/Linky) = <strong>rare skill in high demand</strong></li>
+    <li>Trilingual French/English/Arabic = <strong>asset for international projects</strong></li>
+    <li>Founder of Workshop-DIY = <strong>valued community engagement</strong></li>
+  </ul>
+</div>
+
+<h3>CV Actions</h3>
+<ul class="checklist">
+  <li>Remove photo, date of birth, nationality from CV</li>
+  <li>Add a "Technical Skills" section at the top of the CV</li>
+  <li>Add a 3-4 line summary/objective</li>
+  <li>Adapt keywords for ATS (automated tracking systems)</li>
+  <li>Prepare a French version and an English version</li>
+  <li>Write a personalized cover letter for each target company</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- PART 4 -->
+<!-- ============================================================== -->
+<h2>Part 4 — Target Companies in France</h2>
+
+<h3>Aerospace &amp; Defense</h3>
+<div class="note" style="margin-bottom: 6pt;">Your experience at Safran, Thales, Zodiac</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Domain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Safran</td><td>Paris / Massy / Villaroche</td><td>Engines, electronics, systems</td></tr>
+    <tr><td>Thales</td><td>Velizy / Gennevilliers / Brest</td><td>Defense, avionics, cybersecurity</td></tr>
+    <tr><td>Dassault Aviation</td><td>Saint-Cloud / Merignac</td><td>Fighter jets, Falcon</td></tr>
+    <tr><td>Naval Group</td><td>Toulon / Lorient / Paris</td><td>Naval, submarines</td></tr>
+    <tr><td>MBDA</td><td>Le Plessis-Robinson / Bourges</td><td>Missiles, weapons systems</td></tr>
+    <tr><td>Airbus Defence &amp; Space</td><td>Toulouse / Elancourt</td><td>Space, defense</td></tr>
+    <tr><td>ArianeGroup</td><td>Les Mureaux / Vernon</td><td>Space launchers</td></tr>
+  </tbody>
+</table>
+
+<h3>Automotive</h3>
+<div class="note" style="margin-bottom: 6pt;">Your experience at Valeo, E2-CAD/V2G</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Domain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Valeo</td><td>Creteil / Paris region</td><td>Automotive embedded systems</td></tr>
+    <tr><td>Stellantis (ex-PSA)</td><td>Velizy / Poissy</td><td>Vehicles, ADAS</td></tr>
+    <tr><td>Renault</td><td>Guyancourt / Lardy</td><td>Electric vehicles, embedded</td></tr>
+    <tr><td>Forvia (ex-Faurecia)</td><td>Nanterre</td><td>Automotive supplier</td></tr>
+    <tr><td>Continental France</td><td>Toulouse / Rambouillet</td><td>Automotive electronics</td></tr>
+    <tr><td>Vitesco Technologies</td><td>Toulouse</td><td>Electrification, powertrain</td></tr>
+  </tbody>
+</table>
+
+<h3>Medical</h3>
+<div class="note" style="margin-bottom: 6pt;">Your experience at GE Healthcare, Sorin, PK Vitality</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Domain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>bioMerieux</td><td>Lyon / Marcy-l'Etoile</td><td>In vitro diagnostics</td></tr>
+    <tr><td>Air Liquide Medical Systems</td><td>Antony</td><td>Ventilators, medical devices</td></tr>
+    <tr><td>Essilor / EssilorLuxottica</td><td>Creteil / Charenton</td><td>Optics, devices</td></tr>
+    <tr><td>GE Healthcare France</td><td>Buc</td><td>Medical imaging</td></tr>
+    <tr><td>Guerbet</td><td>Villepinte</td><td>Medical imaging, contrast agents</td></tr>
+  </tbody>
+</table>
+
+<h3>IoT &amp; Tech</h3>
+<div class="note" style="margin-bottom: 6pt;">Your experience at Enedis/Linky</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Domain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Parrot</td><td>Paris</td><td>Drones, embedded systems</td></tr>
+    <tr><td>Schneider Electric</td><td>Rueil-Malmaison / Grenoble</td><td>Energy, industrial IoT</td></tr>
+    <tr><td>Legrand</td><td>Limoges</td><td>Home automation, connected systems</td></tr>
+    <tr><td>Devialet</td><td>Paris</td><td>High-fidelity audio, embedded</td></tr>
+    <tr><td>Sigfox / UnaBiz</td><td>Toulouse</td><td>IoT, low-power networks</td></tr>
+  </tbody>
+</table>
+
+<h3>Energy</h3>
+<div class="note" style="margin-bottom: 6pt;">Your experience in V2G, Enedis</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Domain</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>EDF</td><td>Paris / Clamart</td><td>Power generation, distribution</td></tr>
+    <tr><td>Enedis</td><td>Paris / Lyon</td><td>Smart grid, connected meters</td></tr>
+    <tr><td>TotalEnergies</td><td>Paris La Defense</td><td>Energy, transition, embedded</td></tr>
+    <tr><td>Schneider Electric</td><td>Grenoble / Rueil</td><td>Energy management</td></tr>
+    <tr><td>Alstom</td><td>Saint-Ouen</td><td>Railway, embedded systems</td></tr>
+  </tbody>
+</table>
+
+<h3>ESN / Engineering Consulting</h3>
+<div class="note" style="margin-bottom: 6pt;">Fast market entry — missions at major corporations</div>
+<table>
+  <thead>
+    <tr><th>Company</th><th>Location</th><th>Specialty</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Capgemini Engineering (ex-Altran)</td><td>All of France</td><td>Leading ESN embedded</td></tr>
+    <tr><td>Alten</td><td>Paris / all of France</td><td>Engineering consulting</td></tr>
+    <tr><td>Akkodis (ex-Modis/Akka)</td><td>Paris / Lyon / Toulouse</td><td>Technologies</td></tr>
+    <tr><td>Assystem</td><td>Paris / Lyon / Toulouse</td><td>Nuclear, defense, embedded</td></tr>
+    <tr><td>Segula Technologies</td><td>Paris / Nantes</td><td>Engineering, embedded</td></tr>
+    <tr><td>Expleo (ex-SQS)</td><td>Paris / Toulouse</td><td>Testing, embedded</td></tr>
+    <tr><td>CS Group</td><td>Paris / Toulouse</td><td>Defense, space, cybersecurity</td></tr>
+    <tr><td>Sopra Steria</td><td>Paris</td><td>Consulting, embedded systems</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================== -->
+<!-- PART 5 -->
+<!-- ============================================================== -->
+<h2>Part 5 — Week-by-Week Action Plan</h2>
+
+<div class="week-header">Week 1-2: Preparation</div>
+<ul class="checklist">
+  <li>Update CV to French format (no photo, no personal info)</li>
+  <li>Add "Technical Skills" section + summary</li>
+  <li>Prepare 2 versions: FR + EN (for multinationals)</li>
+  <li>Update LinkedIn profile</li>
+  <li>Add "Open to work" on LinkedIn, target France</li>
+  <li>Write a customizable cover letter template</li>
+  <li>Prepare a short version of the pitch (2 minutes)</li>
+</ul>
+
+<div class="week-header">Week 2-3: Register on Job Boards</div>
+<ul class="checklist">
+  <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — set up alerts for "embarque" + "embedded" + target cities</li>
+  <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — general, widely used in France</li>
+  <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — specific to executives (your profile)</li>
+  <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — startups and tech companies</li>
+  <li><a href="https://www.frenchweb.fr" target="_blank">frenchweb.fr/jobs</a> — tech/digital specialist</li>
+  <li><a href="https://www.francetravail.fr" target="_blank">pole-emploi.fr</a> — national portal</li>
+  <li><a href="https://www.monster.fr" target="_blank">monster.fr</a> — general</li>
+</ul>
+
+<div class="week-header">Week 2-4: Spontaneous Applications</div>
+<ul class="checklist">
+  <li>Identify 15-20 target companies (see Part 4 list)</li>
+  <li>Send spontaneous applications by email to HR + technical managers</li>
+  <li>Customize each cover letter for the company</li>
+  <li>Priority targets: <strong>Safran, Thales, Valeo, Capgemini Engineering, Schneider Electric</strong></li>
+  <li>Apply on career websites of target companies</li>
+</ul>
+
+<div class="week-header">Week 3-5: Networking</div>
+<ul class="checklist">
+  <li>Connect on LinkedIn with embedded engineers in France</li>
+  <li>Join LinkedIn groups: "Embedded France", "Systemes Embarques", "French Tech"</li>
+  <li>Contact specialized embedded recruiters: <strong>Hays, Michael Page, Robert Half, Expectra, Randstad Technologies</strong></li>
+  <li>Attend tech meetups (meetup.com — Paris, Lyon, Toulouse)</li>
+  <li>If possible, visit "Embedded World" or "Enova Paris" trade shows</li>
+</ul>
+
+<div class="week-header">Week 4-6: Interviews</div>
+<ul class="checklist">
+  <li>Prepare for technical interviews (C/C++, RTOS, protocols, architecture)</li>
+  <li>Prepare questions about the Syntec agreement and benefits</li>
+  <li>Know market salaries (don't undervalue yourself)</li>
+  <li>Negotiate: salary, remote work, RTT, training, meal vouchers</li>
+</ul>
+
+<div class="week-header">Week 6-8: Finalization</div>
+<ul class="checklist">
+  <li>Sign the contract (CDI preferred)</li>
+  <li>Negotiate start date (notice period if currently employed)</li>
+  <li>Organize relocation if changing region</li>
+  <li>Update health insurance and administrative documents</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- PART 6 -->
+<!-- ============================================================== -->
+<h2>Part 6 — Useful Sites and Resources</h2>
+
+<div class="resource-grid">
+  <div class="resource-card">
+    <div class="resource-title">Job Boards</div>
+    <ul>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — #1 network for executives</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — specific to executives</li>
+      <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — general, broad coverage</li>
+      <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — startups and tech</li>
+      <li><a href="https://www.monster.fr" target="_blank">monster.fr</a> — general</li>
+      <li><a href="https://www.francetravail.fr" target="_blank">pole-emploi.fr</a> — national portal</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Salaries</div>
+    <ul>
+      <li><a href="https://www.glassdoor.fr" target="_blank">glassdoor.fr</a> — salary ranges by company</li>
+      <li><a href="https://www.levels.fyi" target="_blank">levels.fyi</a> — tech salaries (large companies)</li>
+      <li><a href="https://salaires.journaldunet.com" target="_blank">salaires.journaldunet.com</a> — estimates by profession</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — executive compensation studies</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Agreements &amp; Labor Law</div>
+    <ul>
+      <li><a href="https://www.syntec.fr" target="_blank">syntec.fr</a> — Syntec collective agreement</li>
+      <li><a href="https://www.legifrance.gouv.fr" target="_blank">legifrance.gouv.fr</a> — official legal texts</li>
+      <li><a href="https://www.service-public.fr" target="_blank">service-public.fr</a> — administrative procedures</li>
+      <li><a href="https://code.travail.gouv.fr" target="_blank">code.travail.gouv.fr</a> — digital labor code</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">Networking</div>
+    <ul>
+      <li><a href="https://www.meetup.com" target="_blank">meetup.com</a> — tech meetups Paris, Lyon, Toulouse, Grenoble</li>
+      <li><a href="https://www.frenchweb.fr" target="_blank">frenchweb.fr</a> — French tech news</li>
+      <li><a href="https://www.maddyness.com" target="_blank">maddyness.com</a> — French startup ecosystem</li>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — groups "Embedded France"</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- PART 7 -->
+<!-- ============================================================== -->
+<h2>Part 7 — Summary Checklist</h2>
+
+<h3>Documents to Prepare</h3>
+<ul class="checklist">
+  <li>French-format CV (FR) — no photo, no date of birth, no nationality</li>
+  <li>English-format CV (EN) — for multinationals</li>
+  <li>Cover letter template (FR + EN)</li>
+  <li>Updated LinkedIn profile</li>
+  <li>Copies of diplomas</li>
+  <li>Employment certificates / references</li>
+  <li>Portfolio / project links (<a href="https://workshop-diy.org" target="_blank">workshop-diy.org</a>)</li>
+  <li>Valid ID card or passport</li>
+</ul>
+
+<h3>Key Strengths to Highlight</h3>
+<ol class="strengths-list">
+  <li>20+ years experience in critical embedded systems (aerospace, medical)</li>
+  <li>Mastery of C/C++ bare metal + RTOS + Embedded Linux</li>
+  <li>Embedded cybersecurity experience (IoT pentest, Linky audit)</li>
+  <li>Certification standards: DO-178, IEC 62304, MISRA C, ISO 15118</li>
+  <li>Trilingual French / English / Arabic</li>
+  <li>Founder of Workshop-DIY (community engagement)</li>
+  <li>Cross-sector versatility: aerospace, medical, auto, IoT, V2G, payment</li>
+  <li>Top-tier employer references: Safran, Thales, Valeo, GE Healthcare</li>
+</ol>
+
+<h3>Mistakes to Avoid</h3>
+<ul class="warning-list">
+  <li>Do not put a photo on your CV (anti-discrimination law in France)</li>
+  <li>Do not apply without adapting the CV to the job keywords (ATS)</li>
+  <li>Do not skip the cover letter (still expected in France)</li>
+  <li>Do not underestimate your salary (you are worth 65-80K EUR in IDF)</li>
+  <li>Do not wait for a response: follow up after 10 days</li>
+  <li>Do not neglect networking: many positions are filled through referrals</li>
+  <li>Do not forget to negotiate benefits (remote work, RTT, bonuses)</li>
+</ul>
+
+</body>
+</html>

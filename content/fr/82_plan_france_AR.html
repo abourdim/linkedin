@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>خطة العمل — البحث عن عمل في فرنسا — عبد الحق بورديم</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', 'Tahoma', 'Noto Sans Arabic', sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.7;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+    direction: rtl;
+    text-align: right;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 16pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .entry {
+    background: #fafafa;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 4pt 0 0 4pt;
+  }
+  ul { margin: 4pt 16pt 4pt 0; }
+  li { font-size: 9pt; margin-bottom: 2pt; color: #333; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 6pt 0 10pt 0;
+    font-size: 9pt;
+  }
+  table thead th {
+    background: #0a66c2;
+    color: #fff;
+    padding: 5pt 8pt;
+    text-align: right;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.3pt;
+  }
+  table tbody td {
+    padding: 4pt 8pt;
+    border-bottom: 0.5pt solid #d0e3f3;
+    vertical-align: top;
+    text-align: right;
+  }
+  table tbody tr:nth-child(even) { background: #f8fbfe; }
+  table tbody tr:hover { background: #e8f0fe; }
+  .salary-table td:last-child {
+    font-weight: 600;
+    color: #0a66c2;
+    white-space: nowrap;
+  }
+  .checklist {
+    list-style: none;
+    margin: 6pt 0 10pt 0;
+    padding: 0;
+  }
+  .checklist li {
+    position: relative;
+    padding: 4pt 22pt 4pt 0;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .checklist li:last-child { border-bottom: none; }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6pt;
+    width: 12pt;
+    height: 12pt;
+    border: 1.5pt solid #0a66c2;
+    border-radius: 2pt;
+    background: #fff;
+  }
+  .option-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin-bottom: 8pt;
+  }
+  .option-box .option-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9.5pt;
+    margin-bottom: 4pt;
+  }
+  .option-box ul { margin-top: 4pt; }
+  .week-header {
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-weight: 700;
+    font-size: 9.5pt;
+    padding: 5pt 10pt;
+    border-radius: 4pt;
+    margin: 10pt 0 6pt 0;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+  }
+  .highlight-box {
+    background: #fff9e6;
+    border: 1pt solid #f0d060;
+    border-radius: 4pt;
+    padding: 8pt 12pt;
+    margin: 8pt 0;
+    font-size: 9pt;
+    color: #5a4a00;
+  }
+  .highlight-box strong { color: #7a6200; }
+  .strengths-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: strength-counter;
+  }
+  .strengths-list li {
+    counter-increment: strength-counter;
+    padding: 4pt 28pt 4pt 0;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+  }
+  .strengths-list li::before {
+    content: counter(strength-counter);
+    position: absolute;
+    right: 0;
+    top: 3pt;
+    width: 18pt;
+    height: 18pt;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 18pt;
+  }
+  .warning-list {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+  }
+  .warning-list li {
+    padding: 4pt 20pt 4pt 0;
+    position: relative;
+    font-size: 9pt;
+    color: #333;
+    border-bottom: 0.5pt dashed #d0e3f3;
+  }
+  .warning-list li:last-child { border-bottom: none; }
+  .warning-list li::before {
+    content: '\2716';
+    position: absolute;
+    right: 2pt;
+    top: 4pt;
+    color: #c0392b;
+    font-size: 9pt;
+    font-weight: 700;
+  }
+  a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  .resource-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8pt;
+    margin: 6pt 0 10pt 0;
+  }
+  .resource-card {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+  }
+  .resource-card .resource-title {
+    font-weight: 700;
+    color: #0a66c2;
+    font-size: 9pt;
+    margin-bottom: 4pt;
+  }
+  .resource-card ul { margin: 2pt 14pt 0 0; }
+  .resource-card li { font-size: 8.5pt; margin-bottom: 2pt; }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .status-badge {
+    display: inline-block;
+    background: #27ae60;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 10pt;
+    margin-right: 6pt;
+    vertical-align: middle;
+  }
+  .cv-rules {
+    list-style: none;
+    margin: 6pt 0;
+    padding: 0;
+    counter-reset: cv-counter;
+  }
+  .cv-rules li {
+    counter-increment: cv-counter;
+    padding: 4pt 26pt 4pt 0;
+    position: relative;
+    font-size: 9.5pt;
+    color: #333;
+    border-bottom: 0.5pt solid #e8f0fe;
+  }
+  .cv-rules li:last-child { border-bottom: none; }
+  .cv-rules li::before {
+    content: counter(cv-counter);
+    position: absolute;
+    right: 0;
+    top: 4pt;
+    width: 16pt;
+    height: 16pt;
+    background: #e8f0fe;
+    color: #0a66c2;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 3pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 16pt;
+  }
+  /* LTR override for company names and technical terms */
+  .ltr { direction: ltr; text-align: left; unicode-bidi: isolate; }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .entry { break-inside: avoid; }
+    .option-box { break-inside: avoid; }
+    table { break-inside: avoid; }
+    .week-header { break-after: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>خطة العمل — البحث عن عمل في فرنسا</h1>
+<div class="subtitle">مهندس برمجيات مدمجة أول &bull; عبد الحق بورديم &bull; مارس 2026</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 1 -->
+<!-- ============================================================== -->
+<h2>الجزء 1 — فهم السوق الفرنسي</h2>
+
+<h3>قطاع الأنظمة المدمجة في فرنسا</h3>
+<div class="copy-box">
+  السوق نشط جداً: <strong>أكثر من 500 وظيفة أنظمة مدمجة</strong> مفتوحة في أي وقت في فرنسا.<br><br>
+  <strong>باريس / إيل دو فرانس</strong> = أكبر حوض توظيف (أغلبية مقرات شركات ESN ومكاتبها)<br>
+  <strong>مراكز أخرى:</strong> تولوز (طيران)، غرونوبل (أشباه الموصلات)، ليون (صناعة، سيارات)، صوفيا أنتيبوليس (اتصالات، IoT)<br><br>
+  <strong>القطاعات الرئيسية:</strong> طيران/دفاع، سيارات، طب، إنترنت الأشياء، طاقة، أشباه الموصلات، سكك حديدية، فضاء.<br><br>
+  ملفك الشخصي <strong>بخبرة 20+ سنة</strong> في الطيران + الطب + الأمن السيبراني <strong>نادر ومطلوب</strong>.
+</div>
+
+<h3>الراتب المتوقع</h3>
+<table class="salary-table">
+  <thead>
+    <tr>
+      <th>المستوى</th>
+      <th>الخبرة</th>
+      <th>الراتب الإجمالي السنوي (يورو)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>مبتدئ</td><td>1 - 3 سنوات</td><td>35,000 - 42,000</td></tr>
+    <tr><td>متوسط الخبرة</td><td>5 - 10 سنوات</td><td>45,000 - 55,000</td></tr>
+    <tr><td><strong>خبير (ملفك) — إيل دو فرانس</strong></td><td><strong>10+ سنوات</strong></td><td><strong>60,000 - 80,000</strong></td></tr>
+    <tr><td><strong>خبير — خارج باريس</strong></td><td><strong>10+ سنوات</strong></td><td><strong>50,000 - 65,000</strong></td></tr>
+    <tr><td>قائد تقني / مهندس معماري</td><td>15+ سنة</td><td>70,000 - 90,000+</td></tr>
+  </tbody>
+</table>
+<div class="highlight-box">
+  <strong>ملاحظة:</strong> هذه الأرقام إجمالية سنوية. الشهر الثالث عشر شائع لكنه ليس عالمياً (يعتمد على الاتفاقية الجماعية والشركة). اتفاقية Syntec الجماعية تنطبق على معظم شركات ESN.
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 2 -->
+<!-- ============================================================== -->
+<h2>الجزء 2 — الوضع وظروف العمل</h2>
+
+<h3>وضعك <span class="status-badge">مواطن فرنسي</span></h3>
+<div class="copy-box">
+  <ul>
+    <li><strong>الجنسية الفرنسية</strong> — لا حاجة لتصريح عمل</li>
+    <li>يمكنك العمل <strong>فوراً</strong> بدون إجراءات إدارية</li>
+    <li><strong>CDI</strong> (عقد دائم) هو نوع العقد المفضل</li>
+    <li>فترة تجريبية: 4 أشهر (إطار)، قابلة للتجديد مرة واحدة (8 أشهر كحد أقصى)</li>
+  </ul>
+</div>
+
+<h3>اتفاقية Syntec الجماعية (ESN)</h3>
+<div class="option-box">
+  <div class="option-title">تنطبق على معظم شركات ESN في فرنسا</div>
+  <ul>
+    <li>التصنيف: المنصب 3.1 أو 3.2 لملف شخصي خبير</li>
+    <li>إجازة مدفوعة: 25 يوم عمل + RTT (حسب الشركة، 8-12 يوم/سنة)</li>
+    <li>تأمين صحي إلزامي للشركة (mutuelle)</li>
+    <li>مشاركة في الأرباح حسب الشركة</li>
+  </ul>
+</div>
+
+<h3>المزايا للتفاوض عليها</h3>
+<div class="entry">
+  <ul style="font-size: 9.5pt;">
+    <li><strong>العمل عن بعد:</strong> 2-3 أيام/أسبوع أصبح المعيار بعد كوفيد</li>
+    <li><strong>مكافأة العطلات</strong> (اتفاقية Syntec)</li>
+    <li><strong>خطة ادخار الشركة</strong> (PEE) / PERCO</li>
+    <li><strong>قسائم الوجبات</strong> (tickets restaurant)</li>
+    <li><strong>التكوين المستمر</strong> (CPF)</li>
+    <li><strong>سيارة الشركة</strong> (لبعض المناصب)</li>
+  </ul>
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 3 -->
+<!-- ============================================================== -->
+<h2>الجزء 3 — تكييف السيرة الذاتية للسوق الفرنسي</h2>
+
+<h3>تنسيق السيرة الذاتية الفرنسية</h3>
+<ol class="cv-rules">
+  <li><strong>لا صورة</strong> (قانون مكافحة التمييز، 27 مايو 2008)</li>
+  <li><strong>لا تاريخ ميلاد</strong> أو عمر</li>
+  <li><strong>لا جنسية</strong> أو حالة اجتماعية</li>
+  <li><strong>قسم المهارات</strong> في أعلى السيرة الذاتية (مرئي بوضوح)</li>
+  <li><strong>التنسيق:</strong> صفحتان كحد أقصى، PDF، ترتيب زمني عكسي</li>
+  <li><strong>عنوان واضح:</strong> "مهندس برمجيات مدمجة أول — خبرة 20+ سنة"</li>
+  <li><strong>ملخص:</strong> 3-4 أسطر تلخص الملف الشخصي والهدف</li>
+  <li><strong>اللغة:</strong> الفرنسية للوظائف في فرنسا، الإنجليزية للشركات المتعددة الجنسيات</li>
+  <li><strong>المراجع:</strong> "متاحة عند الطلب" مقبول</li>
+  <li><strong>الكلمات المفتاحية:</strong> تكييفها لأنظمة ATS</li>
+</ol>
+
+<h3>نقاط قوتك الخاصة لفرنسا</h3>
+<div class="copy-box">
+  <ul>
+    <li>20+ سنة في الأنظمة المدمجة الحرجة = <strong>ملف خبير مطلوب جداً</strong></li>
+    <li>خبرة في سافران، تاليس، فاليو = <strong>مراجع معترف بها من جميع المجندين</strong></li>
+    <li>معايير DO-178، IEC 62304، MISRA C = <strong>ضمان الصرامة والجودة</strong></li>
+    <li>الأمن السيبراني المدمج (Enedis/Linky) = <strong>مهارة نادرة ومطلوبة</strong></li>
+    <li>ثلاثي اللغات فرنسي/إنجليزي/عربي = <strong>ميزة للمشاريع الدولية</strong></li>
+    <li>مؤسس Workshop-DIY = <strong>التزام مجتمعي مُقدَّر</strong></li>
+  </ul>
+</div>
+
+<h3>إجراءات السيرة الذاتية</h3>
+<ul class="checklist">
+  <li>إزالة الصورة وتاريخ الميلاد والجنسية من السيرة الذاتية</li>
+  <li>إضافة قسم "المهارات التقنية" في أعلى السيرة الذاتية</li>
+  <li>إضافة ملخص/هدف من 3-4 أسطر</li>
+  <li>تكييف الكلمات المفتاحية لأنظمة ATS</li>
+  <li>إعداد نسخة فرنسية ونسخة إنجليزية</li>
+  <li>كتابة خطاب تحفيزي مخصص لكل شركة مستهدفة</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- الجزء 4 -->
+<!-- ============================================================== -->
+<h2>الجزء 4 — الشركات المستهدفة في فرنسا</h2>
+
+<h3>الطيران والدفاع</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في سافران، تاليس، زودياك</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Safran</td><td>باريس / ماسي / فيلاروش</td><td>محركات، إلكترونيات، أنظمة</td></tr>
+    <tr><td>Thales</td><td>فيليزي / جنفيلييه / بريست</td><td>دفاع، إلكترونيات طيران، أمن سيبراني</td></tr>
+    <tr><td>Dassault Aviation</td><td>سان كلو / ميرينياك</td><td>طائرات مقاتلة، فالكون</td></tr>
+    <tr><td>Naval Group</td><td>تولون / لوريان / باريس</td><td>أنظمة بحرية، غواصات</td></tr>
+    <tr><td>MBDA</td><td>لو بليسي روبنسون / بورج</td><td>صواريخ، أنظمة أسلحة</td></tr>
+    <tr><td>Airbus Defence &amp; Space</td><td>تولوز / إيلانكور</td><td>فضاء، دفاع</td></tr>
+    <tr><td>ArianeGroup</td><td>لي ميرو / فيرنون</td><td>صواريخ فضائية</td></tr>
+  </tbody>
+</table>
+
+<h3>السيارات</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في فاليو، E2-CAD/V2G</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Valeo</td><td>كريتيل / منطقة باريس</td><td>أنظمة سيارات مدمجة</td></tr>
+    <tr><td>Stellantis (ex-PSA)</td><td>فيليزي / بواسي</td><td>مركبات، ADAS</td></tr>
+    <tr><td>Renault</td><td>غيانكور / لاردي</td><td>مركبات كهربائية، أنظمة مدمجة</td></tr>
+    <tr><td>Forvia (ex-Faurecia)</td><td>نانتير</td><td>مورد سيارات</td></tr>
+    <tr><td>Continental France</td><td>تولوز / رامبوييه</td><td>إلكترونيات سيارات</td></tr>
+    <tr><td>Vitesco Technologies</td><td>تولوز</td><td>كهربة، مجموعة نقل الحركة</td></tr>
+  </tbody>
+</table>
+
+<h3>الطب</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في GE Healthcare، سورين، PK Vitality</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>bioMerieux</td><td>ليون / مارسي لتوال</td><td>تشخيص في المختبر</td></tr>
+    <tr><td>Air Liquide Medical Systems</td><td>أنتوني</td><td>أجهزة تنفس، أجهزة طبية</td></tr>
+    <tr><td>Essilor / EssilorLuxottica</td><td>كريتيل / شارنتون</td><td>بصريات، أجهزة</td></tr>
+    <tr><td>GE Healthcare France</td><td>بوك</td><td>تصوير طبي</td></tr>
+    <tr><td>Guerbet</td><td>فيلبانت</td><td>تصوير طبي، عوامل التباين</td></tr>
+  </tbody>
+</table>
+
+<h3>إنترنت الأشياء والتقنية</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في Enedis/Linky</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Parrot</td><td>باريس</td><td>طائرات بدون طيار، أنظمة مدمجة</td></tr>
+    <tr><td>Schneider Electric</td><td>رويل مالميزون / غرونوبل</td><td>طاقة، IoT صناعي</td></tr>
+    <tr><td>Legrand</td><td>ليموج</td><td>أتمتة المنزل، أنظمة متصلة</td></tr>
+    <tr><td>Devialet</td><td>باريس</td><td>صوت عالي الدقة، أنظمة مدمجة</td></tr>
+    <tr><td>Sigfox / UnaBiz</td><td>تولوز</td><td>IoT، شبكات منخفضة الطاقة</td></tr>
+  </tbody>
+</table>
+
+<h3>الطاقة</h3>
+<div class="note" style="margin-bottom: 6pt;">خبرتك في V2G، Enedis</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>المجال</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>EDF</td><td>باريس / كلامار</td><td>توليد الطاقة، التوزيع</td></tr>
+    <tr><td>Enedis</td><td>باريس / ليون</td><td>شبكة ذكية، عدادات متصلة</td></tr>
+    <tr><td>TotalEnergies</td><td>باريس لا ديفانس</td><td>طاقة، تحول، أنظمة مدمجة</td></tr>
+    <tr><td>Schneider Electric</td><td>غرونوبل / رويل</td><td>إدارة الطاقة</td></tr>
+    <tr><td>Alstom</td><td>سان أوين</td><td>سكك حديدية، أنظمة مدمجة</td></tr>
+  </tbody>
+</table>
+
+<h3>ESN / شركات الاستشارات الهندسية</h3>
+<div class="note" style="margin-bottom: 6pt;">دخول سريع للسوق — مهمات في الشركات الكبرى</div>
+<table>
+  <thead>
+    <tr><th>الشركة</th><th>الموقع</th><th>التخصص</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Capgemini Engineering (ex-Altran)</td><td>كل فرنسا</td><td>ESN رائدة في المدمج</td></tr>
+    <tr><td>Alten</td><td>باريس / كل فرنسا</td><td>استشارات هندسية</td></tr>
+    <tr><td>Akkodis (ex-Modis/Akka)</td><td>باريس / ليون / تولوز</td><td>تقنيات</td></tr>
+    <tr><td>Assystem</td><td>باريس / ليون / تولوز</td><td>نووي، دفاع، مدمج</td></tr>
+    <tr><td>Segula Technologies</td><td>باريس / نانت</td><td>هندسة، مدمج</td></tr>
+    <tr><td>Expleo (ex-SQS)</td><td>باريس / تولوز</td><td>اختبار، مدمج</td></tr>
+    <tr><td>CS Group</td><td>باريس / تولوز</td><td>دفاع، فضاء، أمن سيبراني</td></tr>
+    <tr><td>Sopra Steria</td><td>باريس</td><td>استشارات، أنظمة مدمجة</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================================== -->
+<!-- الجزء 5 -->
+<!-- ============================================================== -->
+<h2>الجزء 5 — خطة العمل أسبوعاً بأسبوع</h2>
+
+<div class="week-header">الأسبوع 1-2: التحضير</div>
+<ul class="checklist">
+  <li>تحديث السيرة الذاتية بالتنسيق الفرنسي (بدون صورة، بدون معلومات شخصية)</li>
+  <li>إضافة قسم "المهارات التقنية" + ملخص</li>
+  <li>إعداد نسختين: فرنسية + إنجليزية (للشركات المتعددة الجنسيات)</li>
+  <li>تحديث ملف LinkedIn</li>
+  <li>تفعيل "Open to work" على LinkedIn، استهداف فرنسا</li>
+  <li>كتابة نموذج خطاب تحفيزي قابل للتخصيص</li>
+  <li>إعداد نسخة مختصرة من العرض التقديمي (دقيقتان)</li>
+</ul>
+
+<div class="week-header">الأسبوع 2-3: التسجيل في مواقع التوظيف</div>
+<ul class="checklist">
+  <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — إعداد تنبيهات "embarqué" + "embedded" + المدن المستهدفة</li>
+  <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — عام، مستخدم على نطاق واسع في فرنسا</li>
+  <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — خاص بالإطارات (ملفك الشخصي)</li>
+  <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — شركات ناشئة وشركات تقنية</li>
+  <li><a href="https://www.frenchweb.fr" target="_blank">frenchweb.fr/jobs</a> — متخصص في التقنية/الرقمي</li>
+  <li><a href="https://www.francetravail.fr" target="_blank">pole-emploi.fr</a> — البوابة الوطنية</li>
+  <li><a href="https://www.monster.fr" target="_blank">monster.fr</a> — عام</li>
+</ul>
+
+<div class="week-header">الأسبوع 2-4: الترشيحات التلقائية</div>
+<ul class="checklist">
+  <li>تحديد 15-20 شركة مستهدفة (انظر قائمة الجزء 4)</li>
+  <li>إرسال ترشيحات تلقائية بالبريد الإلكتروني لقسم الموارد البشرية + المديرين التقنيين</li>
+  <li>تخصيص كل خطاب تحفيزي للشركة</li>
+  <li>الأهداف ذات الأولوية: <strong>سافران، تاليس، فاليو، كابجيميني إنجينيرينغ، شنايدر إلكتريك</strong></li>
+  <li>التقديم على مواقع التوظيف الخاصة بالشركات المستهدفة</li>
+</ul>
+
+<div class="week-header">الأسبوع 3-5: التشبيك</div>
+<ul class="checklist">
+  <li>التواصل على LinkedIn مع مهندسي الأنظمة المدمجة في فرنسا</li>
+  <li>الانضمام لمجموعات LinkedIn: "Embedded France"، "Systèmes Embarqués"، "French Tech"</li>
+  <li>التواصل مع المجندين المتخصصين: <strong>Hays، Michael Page، Robert Half، Expectra، Randstad Technologies</strong></li>
+  <li>حضور لقاءات تقنية (meetup.com — باريس، ليون، تولوز)</li>
+  <li>إن أمكن، زيارة معارض "Embedded World" أو "Enova Paris"</li>
+</ul>
+
+<div class="week-header">الأسبوع 4-6: المقابلات</div>
+<ul class="checklist">
+  <li>الاستعداد للمقابلات التقنية (C/C++، RTOS، بروتوكولات، هندسة معمارية)</li>
+  <li>إعداد أسئلة حول اتفاقية Syntec والمزايا</li>
+  <li>معرفة رواتب السوق (لا تقلل من قيمتك)</li>
+  <li>التفاوض: الراتب، العمل عن بعد، RTT، التكوين، قسائم الوجبات</li>
+</ul>
+
+<div class="week-header">الأسبوع 6-8: الإنهاء</div>
+<ul class="checklist">
+  <li>توقيع العقد (CDI مفضل)</li>
+  <li>التفاوض على تاريخ البدء (فترة إشعار إذا كنت حالياً موظفاً)</li>
+  <li>تنظيم الانتقال إذا تغيرت المنطقة</li>
+  <li>تحديث التأمين الصحي والوثائق الإدارية</li>
+</ul>
+
+<!-- ============================================================== -->
+<!-- الجزء 6 -->
+<!-- ============================================================== -->
+<h2>الجزء 6 — مواقع وموارد مفيدة</h2>
+
+<div class="resource-grid">
+  <div class="resource-card">
+    <div class="resource-title">مواقع التوظيف</div>
+    <ul>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — الشبكة المهنية رقم 1</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — خاص بالإطارات</li>
+      <li><a href="https://www.indeed.fr" target="_blank">indeed.fr</a> — عام، تغطية واسعة</li>
+      <li><a href="https://www.welcometothejungle.com" target="_blank">welcometothejungle.com</a> — شركات ناشئة وتقنية</li>
+      <li><a href="https://www.monster.fr" target="_blank">monster.fr</a> — عام</li>
+      <li><a href="https://www.francetravail.fr" target="_blank">pole-emploi.fr</a> — البوابة الوطنية</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">الرواتب</div>
+    <ul>
+      <li><a href="https://www.glassdoor.fr" target="_blank">glassdoor.fr</a> — نطاقات الرواتب حسب الشركة</li>
+      <li><a href="https://www.levels.fyi" target="_blank">levels.fyi</a> — رواتب التقنية</li>
+      <li><a href="https://salaires.journaldunet.com" target="_blank">salaires.journaldunet.com</a> — تقديرات حسب المهنة</li>
+      <li><a href="https://www.apec.fr" target="_blank">apec.fr</a> — دراسات تعويضات الإطارات</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">الاتفاقيات وقانون العمل</div>
+    <ul>
+      <li><a href="https://www.syntec.fr" target="_blank">syntec.fr</a> — اتفاقية Syntec الجماعية</li>
+      <li><a href="https://www.legifrance.gouv.fr" target="_blank">legifrance.gouv.fr</a> — النصوص القانونية</li>
+      <li><a href="https://www.service-public.fr" target="_blank">service-public.fr</a> — الإجراءات الإدارية</li>
+      <li><a href="https://code.travail.gouv.fr" target="_blank">code.travail.gouv.fr</a> — قانون العمل الرقمي</li>
+    </ul>
+  </div>
+  <div class="resource-card">
+    <div class="resource-title">التشبيك</div>
+    <ul>
+      <li><a href="https://www.meetup.com" target="_blank">meetup.com</a> — لقاءات تقنية باريس، ليون، تولوز</li>
+      <li><a href="https://www.frenchweb.fr" target="_blank">frenchweb.fr</a> — أخبار التقنية الفرنسية</li>
+      <li><a href="https://www.maddyness.com" target="_blank">maddyness.com</a> — منظومة الشركات الناشئة</li>
+      <li><a href="https://www.linkedin.com" target="_blank">linkedin.com</a> — مجموعات "Embedded France"</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ============================================================== -->
+<!-- الجزء 7 -->
+<!-- ============================================================== -->
+<h2>الجزء 7 — قائمة المراجعة الملخصة</h2>
+
+<h3>الوثائق المطلوب تحضيرها</h3>
+<ul class="checklist">
+  <li>سيرة ذاتية بالتنسيق الفرنسي (FR) — بدون صورة، بدون تاريخ ميلاد، بدون جنسية</li>
+  <li>سيرة ذاتية بالإنجليزية (EN) — للشركات المتعددة الجنسيات</li>
+  <li>نموذج خطاب تحفيزي (FR + EN)</li>
+  <li>ملف LinkedIn محدث</li>
+  <li>نسخ من الشهادات</li>
+  <li>شهادات العمل / المراجع</li>
+  <li>محفظة أعمال / روابط المشاريع (<a href="https://workshop-diy.org" target="_blank">workshop-diy.org</a>)</li>
+  <li>بطاقة هوية أو جواز سفر صالح</li>
+</ul>
+
+<h3>نقاط القوة الرئيسية للإبراز</h3>
+<ol class="strengths-list">
+  <li>خبرة 20+ سنة في الأنظمة المدمجة الحرجة (طيران، طب)</li>
+  <li>إتقان C/C++ bare metal + RTOS + Linux مدمج</li>
+  <li>خبرة في الأمن السيبراني المدمج (اختبار اختراق IoT، تدقيق Linky)</li>
+  <li>معايير الاعتماد: DO-178، IEC 62304، MISRA C، ISO 15118</li>
+  <li>ثلاثي اللغات: فرنسي / إنجليزي / عربي</li>
+  <li>مؤسس Workshop-DIY (التزام مجتمعي)</li>
+  <li>تعدد القطاعات: طيران، طب، سيارات، IoT، V2G، دفع</li>
+  <li>مراجع من أصحاب عمل بارزين: سافران، تاليس، فاليو، GE Healthcare</li>
+</ol>
+
+<h3>أخطاء يجب تجنبها</h3>
+<ul class="warning-list">
+  <li>لا تضع صورة على سيرتك الذاتية (قانون مكافحة التمييز في فرنسا)</li>
+  <li>لا تتقدم بدون تكييف السيرة الذاتية مع كلمات الوظيفة المفتاحية (ATS)</li>
+  <li>لا تتجاهل الخطاب التحفيزي (لا يزال مطلوباً في فرنسا)</li>
+  <li>لا تقلل من قيمة راتبك (أنت تستحق 65-80 ألف يورو في إيل دو فرانس)</li>
+  <li>لا تنتظر الرد: تابع بعد 10 أيام</li>
+  <li>لا تهمل التشبيك: العديد من الوظائف تُملأ عن طريق التوصيات</li>
+  <li>لا تنسَ التفاوض على المزايا (العمل عن بعد، RTT، المكافآت)</li>
+</ul>
+
+</body>
+</html>

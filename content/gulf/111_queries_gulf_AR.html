@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>استعلامات البحث في LinkedIn — البحث عن عمل في الخليج / دول مجلس التعاون</title>
+<style>
+  @page {
+    size: A4;
+    margin: 15mm 12mm 15mm 12mm;
+  }
+
+  @media print {
+    body { background: #fff !important; }
+    .container { max-width: 100% !important; padding: 0 !important; box-shadow: none !important; }
+    .no-print { display: none !important; }
+    h2 { break-after: avoid; }
+    .search-card, .filter-block, .alert-box, .group-item, .tip-item {
+      break-inside: avoid;
+    }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Noto Sans Arabic', 'Tahoma', 'Arial', sans-serif;
+    background: #f0f2f5;
+    color: #191919;
+    line-height: 1.65;
+    font-size: 10.5pt;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .container {
+    max-width: 210mm;
+    margin: 20px auto;
+    background: #fff;
+    padding: 28px 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 8px;
+  }
+
+  /* ── Header ── */
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+
+  .subtitle {
+    text-align: center;
+    font-size: 10pt;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .date-line {
+    text-align: center;
+    font-size: 9pt;
+    color: #888;
+    margin-bottom: 22px;
+  }
+
+  .header-divider {
+    border: none;
+    border-top: 3px solid #0a66c2;
+    margin: 0 auto 24px;
+    width: 80px;
+  }
+
+  /* ── Section headers ── */
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 8px 18px;
+    border-radius: 6px;
+    margin: 26px 0 14px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 10.5pt;
+    color: #0a66c2;
+    margin: 16px 0 8px;
+    padding-right: 12px;
+    border-right: 3px solid #0a66c2;
+    font-weight: 700;
+  }
+
+  /* ── Search query cards ── */
+  .search-card {
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-right: 4px solid #0a66c2;
+  }
+
+  .search-card .card-label {
+    font-size: 9pt;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .query-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .query-list li {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+    color: #1a1a2e;
+    background: #fff;
+    border: 1px solid #e8ecf0;
+    border-radius: 4px;
+    padding: 5px 12px;
+    margin-bottom: 4px;
+    unicode-bidi: embed;
+  }
+
+  .query-list li::before {
+    content: "\1F50D ";
+  }
+
+  /* ── Boolean query box ── */
+  .boolean-box {
+    direction: ltr;
+    text-align: left;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 9.5pt;
+    color: #1a1a2e;
+    background: #fefefe;
+    border: 1px solid #d9dfe6;
+    border-radius: 5px;
+    padding: 8px 14px;
+    margin-bottom: 6px;
+    unicode-bidi: embed;
+    line-height: 1.8;
+  }
+
+  .boolean-box .op {
+    color: #d63384;
+    font-weight: 700;
+  }
+
+  /* ── Sector sub-sections ── */
+  .sector-block {
+    margin-bottom: 14px;
+  }
+
+  .sector-title {
+    font-size: 10pt;
+    color: #0a66c2;
+    font-weight: 700;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sector-title .icon {
+    font-size: 14pt;
+  }
+
+  /* ── Filter blocks ── */
+  .filter-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .filter-block {
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 12px 14px;
+    border-right: 3px solid #0a66c2;
+  }
+
+  .filter-block .filter-name {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 4px;
+  }
+
+  .filter-block .filter-desc {
+    font-size: 9pt;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .filter-block .filter-desc .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  /* ── Alert boxes ── */
+  .alert-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #edf5ff;
+    border: 1px solid #c0d8f0;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-right: 4px solid #0a66c2;
+  }
+
+  .alert-num {
+    background: #0a66c2;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .alert-text {
+    font-size: 9.5pt;
+    color: #1a1a2e;
+  }
+
+  .alert-text .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-weight: 600;
+  }
+
+  .alert-note {
+    background: #fff8e6;
+    border: 1px solid #f0d97a;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    font-size: 9pt;
+    color: #6b5900;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  /* ── People search ── */
+  .people-card {
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-right: 4px solid #0a66c2;
+  }
+
+  .people-card h4 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+
+  /* ── Group items ── */
+  .groups-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 10px;
+  }
+
+  .group-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 10px 14px;
+    border-right: 3px solid #0a66c2;
+  }
+
+  .group-num {
+    background: #0a66c2;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8.5pt;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .group-name {
+    font-size: 9.5pt;
+    color: #1a1a2e;
+    font-weight: 600;
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  /* ── Job board cards ── */
+  .jobboard-card {
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-right: 4px solid #0a66c2;
+  }
+
+  .jobboard-card h4 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+
+  .jobboard-card h4 .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  .jobboard-card .jb-desc {
+    font-size: 9pt;
+    color: #444;
+    margin-bottom: 4px;
+  }
+
+  .jobboard-card .jb-queries {
+    font-size: 8.5pt;
+    color: #666;
+  }
+
+  .jobboard-card .jb-queries .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  /* ── Recruiter cards ── */
+  .recruiter-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-right: 4px solid #0a66c2;
+  }
+
+  .recruiter-num {
+    background: #0a66c2;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9pt;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .recruiter-text {
+    font-size: 9.5pt;
+    color: #1a1a2e;
+  }
+
+  .recruiter-text .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+    font-weight: 600;
+  }
+
+  /* ── Tips ── */
+  .tip-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+
+  .tip-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    background: #f8f9fb;
+    border: 1px solid #e0e4ea;
+    border-radius: 6px;
+    border-right: 3px solid #0a66c2;
+  }
+
+  .tip-check {
+    color: #0a66c2;
+    font-size: 13pt;
+    flex-shrink: 0;
+    line-height: 1.3;
+  }
+
+  .tip-content {
+    font-size: 9.5pt;
+    color: #333;
+    line-height: 1.65;
+  }
+
+  .tip-content strong {
+    color: #0a66c2;
+  }
+
+  .tip-content .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  .tip-sub {
+    font-size: 8.5pt;
+    color: #666;
+    margin-top: 3px;
+    padding-right: 4px;
+  }
+
+  .tip-sub .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  /* ── Latin class ── */
+  .latin {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+
+  /* ── Footer ── */
+  .footer {
+    text-align: center;
+    margin-top: 24px;
+    padding-top: 14px;
+    border-top: 2px solid #e8ecf0;
+    font-size: 8.5pt;
+    color: #999;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    .container { padding: 16px; }
+    .filter-grid, .groups-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ════ Header ════ -->
+  <h1>استعلامات البحث في LinkedIn &mdash; البحث عن عمل في الخليج / دول مجلس التعاون</h1>
+  <div class="subtitle">مهندس برمجيات مدمجة أول &bull; عبد الحق بورديم</div>
+  <div class="date-line">مارس 2026</div>
+  <hr class="header-divider">
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 1 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 1: البحث عن أشخاص (التشبيك)</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    استخدم تبويب <span class="latin">"People"</span> للعثور على جهات اتصال استراتيجية:
+  </p>
+
+  <!-- Engineers -->
+  <div class="people-card">
+    <h4>المهندسون / الزملاء</h4>
+    <ol class="query-list">
+      <li>embedded engineer UAE</li>
+      <li>firmware developer Abu Dhabi</li>
+      <li>embedded software engineer Saudi Arabia</li>
+      <li>RTOS engineer Dubai</li>
+      <li>embedded Linux developer GCC</li>
+    </ol>
+  </div>
+
+  <!-- Recruiters -->
+  <div class="people-card">
+    <h4>المسؤولون عن التوظيف</h4>
+    <ol class="query-list">
+      <li>recruiter embedded UAE</li>
+      <li>talent acquisition engineer Middle East</li>
+      <li>recruiter firmware Saudi Arabia</li>
+      <li>technical recruiter Gulf</li>
+      <li>hiring embedded engineer Dubai</li>
+    </ol>
+  </div>
+
+  <!-- Managers -->
+  <div class="people-card">
+    <h4>المديرون / صناع القرار</h4>
+    <ol class="query-list">
+      <li>hiring manager firmware Abu Dhabi</li>
+      <li>VP engineering UAE</li>
+      <li>head of embedded Riyadh</li>
+      <li>CTO embedded Dubai</li>
+      <li>engineering manager Saudi Arabia</li>
+      <li>director embedded systems NEOM</li>
+    </ol>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 2 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 2: البحث الرئيسي عن الوظائف</h2>
+
+  <h3>بالإنجليزية (اللغة الأساسية لسوق الخليج)</h3>
+  <div class="search-card">
+    <div class="card-label">استعلامات البحث</div>
+    <ol class="query-list">
+      <li>embedded software engineer</li>
+      <li>firmware engineer</li>
+      <li>embedded C C++ engineer</li>
+      <li>RTOS engineer</li>
+      <li>embedded Linux developer</li>
+      <li>senior firmware developer</li>
+      <li>embedded systems engineer</li>
+      <li>embedded software developer UAE</li>
+      <li>firmware engineer Saudi Arabia</li>
+    </ol>
+  </div>
+
+  <h3>بالفرنسية (الشركات الفرنكوفونية في الخليج)</h3>
+  <div class="search-card">
+    <div class="card-label">استعلامات البحث</div>
+    <ol class="query-list">
+      <li>ingenieur logiciel embarque</li>
+      <li>developpeur embarque</li>
+      <li>ingenieur firmware</li>
+      <li>ingenieur systemes embarques</li>
+    </ol>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 3 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 3: البحث عن الشركات المستهدفة</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    ابحث عن هذه الشركات في تبويب <span class="latin">"Companies"</span>:
+  </p>
+
+  <!-- Energy / Oil & Gas -->
+  <div class="sector-block">
+    <div class="sector-title"><span class="icon">&#x26F3;</span> الطاقة / النفط والغاز</div>
+    <div class="search-card">
+      <ol class="query-list">
+        <li>ADNOC</li>
+        <li>Saudi Aramco</li>
+        <li>QatarEnergy</li>
+        <li>ENOC</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Defense / Aerospace -->
+  <div class="sector-block">
+    <div class="sector-title"><span class="icon">&#x2708;</span> الدفاع / الطيران</div>
+    <div class="search-card">
+      <ol class="query-list">
+        <li>EDGE Group</li>
+        <li>Thales Middle East</li>
+        <li>MBDA UAE</li>
+        <li>Leonardo Middle East</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Mega Projects / Smart Cities -->
+  <div class="sector-block">
+    <div class="sector-title"><span class="icon">&#x1F3D7;</span> المشاريع الكبرى / المدن الذكية</div>
+    <div class="search-card">
+      <ol class="query-list">
+        <li>NEOM</li>
+        <li>Masdar</li>
+        <li>KAEC</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Technology / Industrial -->
+  <div class="sector-block">
+    <div class="sector-title"><span class="icon">&#x2699;</span> التكنولوجيا / الصناعة</div>
+    <div class="search-card">
+      <ol class="query-list">
+        <li>Honeywell Middle East</li>
+        <li>Schneider Electric Middle East</li>
+        <li>Siemens Middle East</li>
+        <li>ABB Middle East</li>
+        <li>Bosch Middle East</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- Consulting / Recruitment -->
+  <div class="sector-block">
+    <div class="sector-title"><span class="icon">&#x1F4BC;</span> الاستشارات / التوظيف</div>
+    <div class="search-card">
+      <ol class="query-list">
+        <li>Hays Middle East</li>
+        <li>Michael Page Gulf</li>
+        <li>Robert Half UAE</li>
+        <li>Brunel Energy Middle East</li>
+      </ol>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 4 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 4: مواقع التوظيف</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    إضافة إلى <span class="latin">LinkedIn</span>، استخدم هذه المنصات:
+  </p>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">1. Bayt.com</span></h4>
+    <div class="jb-desc">أكبر موقع توظيف في الشرق الأوسط</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded engineer, firmware engineer, C++ developer</span></div>
+  </div>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">2. GulfTalent</span></h4>
+    <div class="jb-desc">متخصص في الكوادر والمهندسين في الخليج</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded software, firmware, RTOS</span></div>
+  </div>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">3. Naukrigulf</span></h4>
+    <div class="jb-desc">شائع في الإمارات والسعودية</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded engineer, C/C++ developer</span></div>
+  </div>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">4. Indeed Gulf</span> (<span class="latin">ae.indeed.com / sa.indeed.com</span>)</h4>
+    <div class="jb-desc">نسخة الخليج من محرك البحث عن الوظائف</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded software engineer, firmware</span></div>
+  </div>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">5. Glassdoor Middle East</span></h4>
+    <div class="jb-desc">تقييمات الشركات + عروض العمل</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded engineer UAE, firmware Saudi</span></div>
+  </div>
+
+  <div class="jobboard-card">
+    <h4><span class="latin">6. Dubizzle Jobs</span> (الإمارات)</h4>
+    <div class="jb-desc">منصة إماراتية للوظائف والإعلانات</div>
+    <div class="jb-queries">استعلامات: <span class="latin">embedded developer, firmware engineer Dubai</span></div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 5 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 5: البحث المستهدف في Google</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    استعلامات <span class="latin">Google</span> للعثور على عروض خارج <span class="latin">LinkedIn</span>:
+  </p>
+
+  <div class="search-card">
+    <div class="card-label">استعلامات Google</div>
+    <ol class="query-list">
+      <li>"embedded software engineer" site:bayt.com</li>
+      <li>"firmware engineer" UAE OR "Saudi Arabia" site:gulftalent.com</li>
+      <li>"embedded" "C++" "RTOS" Abu Dhabi OR Dubai OR Riyadh</li>
+      <li>ADNOC embedded engineer careers</li>
+      <li>Aramco firmware engineer jobs</li>
+      <li>EDGE Group Abu Dhabi embedded careers</li>
+      <li>NEOM embedded software engineer</li>
+      <li>"embedded engineer" "Middle East" site:indeed.com</li>
+      <li>Thales "Middle East" embedded careers</li>
+    </ol>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 6 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 6: المجتمع التقني / الملتقيات</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    المجتمعات التقنية والملتقيات للانضمام:
+  </p>
+
+  <div class="groups-grid">
+    <div class="group-item">
+      <div class="group-num">1</div>
+      <div class="group-name">GITEX Global (Dubai)</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">2</div>
+      <div class="group-name">LEAP Conference (Riyadh)</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">3</div>
+      <div class="group-name">Dubai Embedded Systems Meetup</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">4</div>
+      <div class="group-name">Saudi IoT Community</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">5</div>
+      <div class="group-name">Abu Dhabi Tech Network</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">6</div>
+      <div class="group-name">Qatar Technology Meetup</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">7</div>
+      <div class="group-name">Gulf Embedded Engineers</div>
+    </div>
+    <div class="group-item">
+      <div class="group-num">8</div>
+      <div class="group-name">Middle East Makers Community</div>
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 7 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 7: المسؤولون عن التوظيف المتخصصون في الخليج</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    وكالات التوظيف للتواصل معها:
+  </p>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">1</div>
+    <div class="recruiter-text"><span class="latin">Hays Middle East</span> &mdash; توظيف الهندسة والتكنولوجيا</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">2</div>
+    <div class="recruiter-text"><span class="latin">Michael Page Gulf</span> &mdash; الكوادر والمتخصصون</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">3</div>
+    <div class="recruiter-text"><span class="latin">Robert Half UAE</span> &mdash; التكنولوجيا والمالية</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">4</div>
+    <div class="recruiter-text"><span class="latin">Brunel Energy</span> &mdash; النفط والغاز والطاقة</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">5</div>
+    <div class="recruiter-text"><span class="latin">Airswift</span> &mdash; الطاقة والبنية التحتية</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">6</div>
+    <div class="recruiter-text"><span class="latin">JAC Recruitment Middle East</span> &mdash; التكنولوجيا والهندسة</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">7</div>
+    <div class="recruiter-text"><span class="latin">Charterhouse Middle East</span> &mdash; التوظيف التنفيذي</div>
+  </div>
+
+  <div class="recruiter-card">
+    <div class="recruiter-num">8</div>
+    <div class="recruiter-text"><span class="latin">Nadia Recruitment</span> &mdash; الإمارات، متخصصة منذ أكثر من 30 سنة</div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- PART 8 -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>الجزء 8: البحث المتقدم بالعوامل المنطقية</h2>
+
+  <p style="margin-bottom:12px; font-size:9.5pt; color:#444;">
+    يقبل <span class="latin">LinkedIn</span> العوامل المنطقية
+    <span class="latin" style="font-weight:700; color:#d63384;">AND</span> و
+    <span class="latin" style="font-weight:700; color:#d63384;">OR</span>
+    وعلامات الاقتباس <span class="latin">"..."</span> في شريط البحث. فيما يلي الاستعلامات المحسّنة:
+  </p>
+
+  <h3>استعلام عام</h3>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("C++" <span class="op">OR</span> "firmware") <span class="op">AND</span> ("UAE" <span class="op">OR</span> "Saudi Arabia" <span class="op">OR</span> "Qatar")
+  </div>
+
+  <h3>حسب التقنية</h3>
+  <div class="boolean-box">
+    ("RTOS" <span class="op">OR</span> "FreeRTOS" <span class="op">OR</span> "VxWorks") <span class="op">AND</span> ("Dubai" <span class="op">OR</span> "Abu Dhabi" <span class="op">OR</span> "Riyadh")
+  </div>
+  <div class="boolean-box">
+    ("ARM Cortex" <span class="op">OR</span> "STM32" <span class="op">OR</span> "NXP") <span class="op">AND</span> ("UAE" <span class="op">OR</span> "Saudi Arabia")
+  </div>
+  <div class="boolean-box">
+    ("embedded Linux" <span class="op">OR</span> "Yocto" <span class="op">OR</span> "Buildroot") <span class="op">AND</span> ("Middle East" <span class="op">OR</span> "Gulf")
+  </div>
+
+  <h3>حسب القطاع</h3>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("oil" <span class="op">OR</span> "gas" <span class="op">OR</span> "energy") <span class="op">AND</span> ("UAE" <span class="op">OR</span> "Saudi Arabia")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("aerospace" <span class="op">OR</span> "defense" <span class="op">OR</span> "DO-178") <span class="op">AND</span> ("Middle East")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("EV charging" <span class="op">OR</span> "V2G" <span class="op">OR</span> "ISO 15118") <span class="op">AND</span> ("Gulf" <span class="op">OR</span> "UAE")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("cybersecurity" <span class="op">OR</span> "IoT security") <span class="op">AND</span> ("Middle East")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("smart city" <span class="op">OR</span> "NEOM" <span class="op">OR</span> "IoT") <span class="op">AND</span> ("Saudi Arabia" <span class="op">OR</span> "UAE")
+  </div>
+
+  <h3>حسب الشركة</h3>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("ADNOC" <span class="op">OR</span> "Aramco" <span class="op">OR</span> "QatarEnergy")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> ("EDGE Group" <span class="op">OR</span> "Thales" <span class="op">OR</span> "MBDA") <span class="op">AND</span> ("Middle East")
+  </div>
+  <div class="boolean-box">
+    "firmware" <span class="op">AND</span> ("Honeywell" <span class="op">OR</span> "Schneider" <span class="op">OR</span> "Siemens") <span class="op">AND</span> ("Middle East")
+  </div>
+  <div class="boolean-box">
+    "embedded" <span class="op">AND</span> "NEOM"
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <!-- TIPS -->
+  <!-- ════════════════════════════════════════════════════════════════════════ -->
+  <h2>نصائح عملية</h2>
+
+  <ul class="tip-list">
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>التكرار:</strong> تحقق من <span class="latin">LinkedIn</span> و<span class="latin">Bayt.com</span> مرتين يوميًا
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>التفاعل السريع:</strong> قدّم طلبك خلال 48 ساعة
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>اللغة:</strong> ابحث بالإنجليزية أساسًا (لغة الأعمال في الخليج)
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>الجمع بين القنوات:</strong> مواقع التوظيف + الترشيحات التلقائية + التشبيك + المسؤولين عن التوظيف
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>التخصيص:</strong> كيّف كل طلب توظيف
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>تفعيل <span class="latin">"Open to Work"</span>:</strong> مرئي للمسؤولين عن التوظيف فقط
+        <div class="tip-sub">
+          المسميات: <span class="latin">Embedded Software Engineer, Firmware Engineer</span><br>
+          الموقع: <span class="latin">United Arab Emirates, Saudi Arabia, Qatar</span><br>
+          النوع: <span class="latin">Full-time</span><br>
+          البدء: فوري
+        </div>
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>متابعة الشركات:</strong> تابع <span class="latin">ADNOC</span>، <span class="latin">Aramco</span>، <span class="latin">EDGE</span>، <span class="latin">NEOM</span>، <span class="latin">Thales ME</span>
+      </div>
+    </li>
+
+    <li class="tip-item">
+      <span class="tip-check">&#x2714;</span>
+      <div class="tip-content">
+        <strong>نشر المحتوى:</strong> شارك مقالات تقنية بالإنجليزية لزيادة الظهور الإقليمي
+      </div>
+    </li>
+  </ul>
+
+
+  <!-- ════ Footer ════ -->
+  <div class="footer">
+    عبد الحق بورديم &bull; مهندس برمجيات مدمجة أول &bull; مارس 2026<br>
+    <span class="latin">linkedin.com/in/bourdim</span>
+  </div>
+
+</div>
+
+</body>
+</html>

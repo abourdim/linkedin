@@ -1,0 +1,90 @@
+2-MINUTE PITCH — GULF / GCC
+"Tell me about yourself" • Abdelhak Bourdim • Senior Embedded Software Engineer
+Target: UAE, Saudi Arabia, Qatar
+
+
+=== STRUCTURE & TIMING ===
+
+[Who I am]              10s   Name, title, 20+ years
+[What I do]             15s   C/C++, RTOS, Linux, MCU
+[My proof]              60s   5 critical sectors
+[What sets me apart]    15s   Workshop-DIY, trilingual
+[Why the Gulf]          15s   Vision, megaprojects, energy
+[Close]                  5s   Relocation, available
+
+
+=== SCRIPT ===
+
+Hello, I'm Abdelhak Bourdim, a senior embedded software engineer with over 20 years of experience.
+
+--- PAUSE ---
+
+My core expertise is developing low-level embedded software — firmware, drivers, communication stacks — in C/C++ on ARM Cortex, STM32, Microchip and NXP architectures, from bare metal to RTOS such as FreeRTOS and VxWorks, and embedded Linux.
+
+--- PAUSE ---
+
+What makes my background distinctive is the diversity of safety-critical sectors I've worked in:
+
+In aerospace, at Safran, Thales and Zodiac, I developed low-level drivers and application layers compliant with DO-178 and MISRA C — over 6 years in this sector.
+
+In medical devices, at GE Healthcare and Sorin, I integrated CANOpen stacks and developed BLE modules for pacemakers, compliant with IEC 62304.
+
+In IoT cybersecurity, at Enedis, I led security audits and penetration testing on Linky smart meter concentrators.
+
+In EV charging at E2-CAD, I worked on ISO 15118 integration, the V2G protocol and commissioning of charging stations.
+
+And in payment terminals at Cartadis, 8 years gave me a solid foundation in full-stack embedded development, from drivers to DES/RC4 encryption.
+
+--- PAUSE ---
+
+Beyond the technical side, I founded Workshop-DIY, a nonprofit offering robotics and electronics workshops for young people. It reflects my passion for knowledge sharing and innovation.
+
+--- PAUSE ---
+
+What attracts me to the Gulf region is the scale of the megaprojects — NEOM, Vision 2030, Smart City initiatives — and the commitment to investing heavily in safety-critical embedded systems, energy and defense. My trilingual profile — French, English and Arabic, with Arabic as my native language — is a natural asset in this region. My cross-sector experience in high-reliability environments directly addresses the needs of the oil & gas, defense and smart city sectors.
+
+I am ready to relocate to the UAE, Saudi Arabia or Qatar, and available immediately.
+
+I'd be happy to go into more detail about any of my projects.
+
+
+=== DELIVERY TIPS ===
+
+- Speak at a natural pace — not too fast, not too slow
+- Maintain eye contact (or look at the camera in video calls)
+- Confident and direct tone — highlight your track record without arrogance
+- PAUSES are essential — they show mastery and confidence
+- Do NOT recite — know the blocks, not the text word for word
+- If the interviewer reacts, adapt and engage in dialogue
+- Have 3 anecdotes ready to elaborate on each sector
+- Highlight native Arabic as a key advantage in the region
+- Show knowledge of local projects (Vision 2030, NEOM, etc.)
+- Express a genuine willingness to relocate to the Gulf
+
+
+=== COMPANY-SPECIFIC VARIANTS ===
+
+1. ADNOC / SAUDI ARAMCO (Oil & Gas)
+   -> Emphasize: safety-critical systems, RTOS, embedded Linux, industrial protocols
+   -> DO-178, MISRA C = rigor applicable to SCADA and control systems
+   "My 6 years of experience in DO-178 certified aerospace and my mastery of safety-critical embedded systems directly apply to SCADA and control systems in the oil & gas sector. Arabic as my native language facilitates integration within local teams."
+
+2. EDGE GROUP (Defense)
+   -> Emphasize: aerospace (Safran, Thales, Zodiac), DO-178, MISRA C, critical systems
+   -> 6+ years in defense/aerospace, RTOS, embedded security
+   "With over 6 years at Safran, Thales and Zodiac working on safety-critical embedded systems compliant with DO-178, and expertise in IoT cybersecurity, my profile is directly applicable to EDGE Group's defense programs."
+
+3. THALES ME / HONEYWELL ME (Aerospace)
+   -> Emphasize: continuity with Thales FR, DO-178, avionics, RTOS, low-level drivers
+   -> Direct experience at Thales and Safran
+   "I have already worked at Thales in France on DO-178 certified avionics systems. Joining Thales in the Middle East would be the natural continuation of this career path, with the added advantage of my native Arabic proficiency."
+
+4. NEOM / Smart City
+   -> Emphasize: IoT, cybersecurity, embedded Linux, communication protocols
+   -> Linky audit + V2G + communication stacks
+   "My experience in IoT cybersecurity (Linky audit), V2G protocols and embedded communication stacks is a perfect match for NEOM's smart infrastructure challenges."
+
+5. SCHNEIDER ELECTRIC / SIEMENS ENERGY (Energy)
+   -> Emphasize: ISO 15118, V2G, charging stations, industrial IoT, embedded Linux
+   -> Energy transition, smart grid, control systems
+   "My work on ISO 15118 integration and V2G protocols at E2-CAD, combined with my expertise in safety-critical embedded systems and embedded Linux, meets the needs of the Gulf's energy transition."

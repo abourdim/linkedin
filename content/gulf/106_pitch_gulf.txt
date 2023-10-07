@@ -1,0 +1,90 @@
+PITCH 2 MINUTES — GOLFE / GCC
+« Parlez-moi de vous » • Abdelhak Bourdim • Ingenieur Logiciel Embarque Senior
+Cible : EAU, Arabie Saoudite, Qatar
+
+
+=== STRUCTURE & TIMING ===
+
+[Qui je suis]        10s   Nom, titre, 20+ ans
+[Ce que je fais]     15s   C/C++, RTOS, Linux, MCU
+[Mes preuves]        60s   5 secteurs critiques
+[Ma difference]      15s   Workshop-DIY, trilinguisme
+[Pourquoi le Golfe]  15s   Vision, megaprojets, energie
+[Ouverture]           5s   Relocalisation, disponible
+
+
+=== SCRIPT ===
+
+Bonjour, je suis Abdelhak Bourdim, ingenieur logiciel embarque senior avec plus de 20 ans d'experience.
+
+--- PAUSE ---
+
+Mon metier, c'est de developper du logiciel embarque bas niveau — firmware, drivers, stacks de communication — en C/C++ sur des architectures ARM Cortex, STM32, Microchip et NXP, aussi bien en bare metal qu'avec des RTOS comme FreeRTOS et VxWorks, ou sous Linux embarque.
+
+--- PAUSE ---
+
+Ce qui fait la particularite de mon parcours, c'est la diversite des secteurs critiques dans lesquels j'ai travaille :
+
+En aeronautique, chez Safran, Thales et Zodiac, j'ai developpe des drivers bas niveau et des couches applicatives conformes aux normes DO-178 et MISRA C — plus de 6 ans dans ce secteur.
+
+Dans le medical, chez GE Healthcare et Sorin, j'ai integre des stacks CANOpen et developpe des modules BLE pour pacemaker, conformes a l'IEC 62304.
+
+En cybersecurite IoT, chez Enedis, j'ai mene des audits de securite et des tests d'intrusion sur les concentrateurs Linky.
+
+En recharge de vehicules electriques chez E2-CAD, j'ai travaille sur l'integration ISO 15118, le protocole V2G et la mise en service de bornes de recharge.
+
+Et en terminaux de paiement chez Cartadis, 8 annees m'ont forge une base solide en developpement embarque complet, du driver jusqu'au chiffrement DES/RC4.
+
+--- PAUSE ---
+
+Au-dela de la technique, j'ai fonde Workshop-DIY, une association qui propose des ateliers de robotique et d'electronique pour les jeunes. Ca illustre ma passion pour la transmission et l'innovation.
+
+--- PAUSE ---
+
+Ce qui m'attire dans la region du Golfe, c'est l'ampleur des megaprojets — NEOM, Vision 2030, les initiatives Smart City — et la volonte d'investir massivement dans les systemes embarques critiques, l'energie et la defense. Mon profil trilinguisme francais-anglais-arabe, avec l'arabe comme langue maternelle, est un atout naturel dans cette region. Mon experience multisectorielle dans des environnements a forte exigence de securite repond directement aux besoins des secteurs petrolier, defense et smart city.
+
+Je suis pret a me relocaliser aux EAU, en Arabie Saoudite ou au Qatar, et disponible immediatement.
+
+C'est avec plaisir que je vous en dis plus sur mes realisations.
+
+
+=== CONSEILS DE DELIVERY ===
+
+- Parler a un rythme naturel — ni trop rapide ni trop lent
+- Regarder dans les yeux (ou la camera en visio)
+- Ton confiant et direct — valoriser son parcours sans arrogance
+- Les PAUSES sont essentielles — elles montrent la maitrise
+- Ne PAS reciter — connaitre les blocs, pas le texte mot a mot
+- Si l'interlocuteur reagit, s'adapter et dialoguer
+- Avoir 3 anecdotes pretes pour approfondir chaque secteur
+- Valoriser l'arabe natif comme avantage cle dans la region
+- Montrer une connaissance des projets locaux (Vision 2030, NEOM, etc.)
+- Exprimer une volonte sincere de s'installer dans le Golfe
+
+
+=== VARIANTES SELON L'ENTREPRISE ===
+
+1. ADNOC / SAUDI ARAMCO (Petrole & Gaz)
+   -> Insister sur : systemes safety-critical, RTOS, Linux embarque, protocoles industriels
+   -> DO-178, MISRA C = rigueur applicable aux systemes SCADA et controle-commande
+   « Mon experience de 6 ans en aeronautique certifiee DO-178 et ma maitrise des systemes embarques critiques s'appliquent directement aux systemes de controle-commande et SCADA dans le secteur petrolier. L'arabe comme langue maternelle facilite l'integration dans les equipes locales. »
+
+2. EDGE GROUP (Defense)
+   -> Insister sur : aeronautique (Safran, Thales, Zodiac), DO-178, MISRA C, systemes critiques
+   -> 6+ ans en defense/aero, RTOS, securite embarquee
+   « Avec plus de 6 ans chez Safran, Thales et Zodiac sur des systemes embarques critiques conformes DO-178, et une expertise en cybersecurite IoT, mon profil est directement applicable aux programmes de defense d'EDGE Group. »
+
+3. THALES ME / HONEYWELL ME (Aerospatiale)
+   -> Insister sur : continuite avec Thales FR, DO-178, avionique, RTOS, drivers bas niveau
+   -> Experience directe chez Thales et Safran
+   « J'ai deja travaille chez Thales en France sur des systemes avioniques certifies DO-178. Rejoindre Thales au Moyen-Orient serait la continuite naturelle de ce parcours, avec l'avantage de ma maitrise native de l'arabe. »
+
+4. NEOM / Smart City
+   -> Insister sur : IoT, cybersecurite, Linux embarque, protocoles de communication
+   -> Linky audit + V2G + stacks de communication
+   « Mon experience en cybersecurite IoT (audit Linky), en protocoles V2G et en stacks de communication embarquees correspond parfaitement aux enjeux des infrastructures intelligentes de NEOM. »
+
+5. SCHNEIDER ELECTRIC / SIEMENS ENERGY (Energie)
+   -> Insister sur : ISO 15118, V2G, bornes de recharge, IoT industriel, Linux embarque
+   -> Transition energetique, smart grid, systemes de controle
+   « Mon travail sur l'integration ISO 15118 et les protocoles V2G chez E2-CAD, combine a ma maitrise des systemes embarques critiques et de Linux embarque, repond aux besoins de la transition energetique dans le Golfe. »

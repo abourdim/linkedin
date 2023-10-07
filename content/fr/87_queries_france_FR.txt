@@ -1,0 +1,244 @@
+================================================================================
+     REQUETES DE RECHERCHE LINKEDIN — EMPLOI EN FRANCE
+     Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim
+     Date : Mars 2026
+================================================================================
+
+
+================================================================================
+PARTIE 1 — RECHERCHES PRINCIPALES (ONGLET "EMPLOIS")
+================================================================================
+
+EN FRANCAIS (marche francais)
+-------------------------------
+1. ingenieur logiciel embarque
+2. developpeur embarque
+3. ingenieur firmware
+4. ingenieur systemes embarques
+5. developpeur C C++ embarque
+6. ingenieur embarque senior
+
+EN ANGLAIS (multinationales en France)
+----------------------------------------
+1. embedded software engineer
+2. firmware engineer
+3. embedded C C++ engineer
+4. RTOS engineer
+5. embedded Linux developer
+6. senior firmware developer
+7. embedded systems engineer
+
+
+================================================================================
+PARTIE 2 — RECHERCHES CIBLEES PAR SECTEUR
+================================================================================
+
+AERONAUTIQUE / DEFENSE (Safran, Thales, Dassault, Airbus, MBDA)
+-----------------------------------------------------------------
+- ingenieur embarque aeronautique DO-178
+- firmware engineer DO-178
+- embedded avionics engineer
+- ingenieur logiciel embarque defense
+- embedded aerospace engineer France
+
+AUTOMOBILE / AUTOSAR (Valeo, Stellantis, Faurecia, Continental, Renault)
+-------------------------------------------------------------------------
+- embedded automotive AUTOSAR
+- ingenieur embarque automobile
+- AUTOSAR developer France
+- embedded software engineer automotive
+- ingenieur logiciel embarque vehicule
+
+MEDICAL (Medtronic, bioMerieux, Essilor, Stryker)
+---------------------------------------------------
+- embedded medical IEC 62304
+- ingenieur embarque dispositifs medicaux
+- firmware engineer medical France
+- embedded medical device engineer
+
+IoT / OBJETS CONNECTES (Sigfox, Actility, Legrand, Schneider)
+---------------------------------------------------------------
+- IoT security engineer
+- ingenieur securite embarquee
+- embedded security engineer
+- ingenieur IoT embarque
+- firmware engineer IoT France
+
+VEHICULES ELECTRIQUES / V2G / ENERGIE
+---------------------------------------
+- embedded engineer EV charging
+- ingenieur embarque recharge electrique
+- V2G engineer France
+- ISO 15118 engineer
+- firmware engineer electric vehicle
+
+ESN / SOCIETES DE CONSEIL (Altran/Capgemini Engineering, Alten, Akkodis, Assystem)
+------------------------------------------------------------------------------------
+- ingenieur embarque consultant
+- embedded consultant engineer France
+- ingenieur embarque ESN
+- consultant firmware France
+
+
+================================================================================
+PARTIE 3 — RECHERCHE BOOLEENNE AVANCEE
+================================================================================
+
+LinkedIn accepte les operateurs AND, OR et les guillemets "..." dans la
+barre de recherche. Voici les requetes optimisees :
+
+REQUETE GENERALE
+-----------------
+"embedded" AND ("C++" OR "firmware") AND ("France" OR "Paris" OR "Ile-de-France")
+
+PAR TECHNOLOGIE
+----------------
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Paris" OR "Toulouse" OR "Grenoble")
+("ARM Cortex" OR "STM32" OR "NXP") AND "France"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "France"
+
+PAR SECTEUR
+-------------
+"embedded" AND ("aerospace" OR "DO-178" OR "aeronautique") AND "France"
+"embedded" AND ("automotive" OR "AUTOSAR" OR "ISO 26262") AND "France"
+"embedded" AND ("medical" OR "IEC 62304") AND "France"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "France"
+"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND "France"
+
+PAR VILLE / REGION
+--------------------
+("ingenieur embarque" OR "embedded engineer") AND ("Ile-de-France" OR "Paris" OR "Saclay")
+("firmware" OR "embarque") AND ("Toulouse" OR "Occitanie")
+("embedded" OR "firmware") AND ("Grenoble" OR "Isere" OR "Auvergne-Rhone-Alpes")
+("embarque" OR "embedded") AND ("Lyon" OR "Rhone")
+
+
+================================================================================
+PARTIE 4 — FILTRES ESSENTIELS A ACTIVER
+================================================================================
+
+Apres chaque recherche, appliquer ces filtres :
+
+1. LIEU
+   - "France"
+   - Ou plus precis : "Ile-de-France", "Toulouse", "Grenoble", "Lyon"
+   - Autres : "Sophia Antipolis", "Bordeaux", "Nantes", "Rennes"
+   - Rayon : 30 km (grandes agglomerations) ou 50 km (zones industrielles)
+
+2. DATE DE PUBLICATION
+   - "Semaine derniere" (offres fraiches, moins de concurrence)
+   - "Mois dernier" si peu de resultats
+
+3. NIVEAU D'EXPERIENCE
+   - "Confirme" (Mid-Senior level)
+   - "Directeur" (si postes lead/architecte)
+
+4. TYPE DE POSTE
+   - "Temps plein" (Full-time)
+   - Equivalent : CDI (contrat a duree indeterminee)
+
+5. MODE DE TRAVAIL
+   - "Sur site" ou "Hybride"
+   - "A distance" si disponible
+
+6. ENTREPRISE (optionnel)
+   - Filtrer par entreprise cible : Safran, Thales, Dassault, Airbus, Valeo,
+     Stellantis, Schneider Electric, STMicroelectronics, Alten,
+     Altran/Capgemini Engineering, Akkodis, Assystem, Sopra Steria, etc.
+
+
+================================================================================
+PARTIE 5 — ALERTES A CREER (5 PRIORITAIRES)
+================================================================================
+
+Creer une alerte pour chacune de ces recherches :
+(Cliquer sur "Definir une alerte" apres chaque recherche)
+
+ALERTE 1 : embedded software engineer — Lieu : France
+ALERTE 2 : ingenieur logiciel embarque — Lieu : Ile-de-France
+ALERTE 3 : firmware engineer — Lieu : France
+ALERTE 4 : ingenieur embarque aeronautique DO-178 — Lieu : Toulouse
+ALERTE 5 : embedded C++ RTOS — Lieu : France
+
+Frequence recommandee : quotidienne (pour reagir rapidement)
+
+
+================================================================================
+PARTIE 6 — RECHERCHE DE PERSONNES (NETWORKING)
+================================================================================
+
+Utiliser l'onglet "Personnes" pour trouver des contacts strategiques :
+
+INGENIEURS / PAIRS
+--------------------
+- embedded engineer France
+- firmware developer Toulouse
+- ingenieur embarque Paris
+- ingenieur embarque Grenoble
+
+RECRUTEURS
+-----------
+- recruiter embedded France
+- talent acquisition engineer France
+- recruteur ingenieur embarque France
+- recruteur ESN embarque
+
+MANAGERS / DECIDEURS
+---------------------
+- hiring manager firmware Paris
+- VP engineering France
+- head of embedded Paris
+- CTO embedded Toulouse
+- engineering manager Grenoble
+- responsable embarque France
+
+
+================================================================================
+PARTIE 7 — GROUPES LINKEDIN A REJOINDRE
+================================================================================
+
+Rechercher et rejoindre ces groupes (onglet "Groupes") :
+
+1. Embedded Systems France
+2. French Tech
+3. Embedded Software Engineers
+4. RTOS and Embedded Systems
+5. Ingenieur Embarque France
+6. IoT France
+7. French Aerospace & Defense
+8. Automotive Embedded Systems
+9. Emploi IT France
+10. Medical Device Engineers
+
+
+================================================================================
+PARTIE 8 — CONSEILS PRATIQUES (SPECIFIQUES FRANCE)
+================================================================================
+
+1. FREQUENCE : verifier LinkedIn 2x par jour (matin + soir)
+2. REAGIR VITE : postuler dans les 48h (forte concurrence en France)
+3. VARIER LES LANGUES : chercher en francais ET en anglais
+4. COMBINER LES PLATEFORMES :
+   - LinkedIn + APEC (cadres) + France Travail (ex Pole Emploi)
+   - Welcome to the Jungle (startups/tech)
+   - Indeed France + Monster France
+5. PERSONNALISER : adapter chaque candidature (lettre de motivation
+   souvent demandee en France, conventions collectives Syntec/Metallurgie)
+6. ACTIVER "Open to Work" : visible pour les recruteurs uniquement
+   - Titres : Embedded Software Engineer, Firmware Engineer,
+     Ingenieur Logiciel Embarque
+   - Lieu : France, Paris, Ile-de-France, Toulouse, Grenoble, Lyon
+   - Type : Full-time / CDI
+   - Demarrage : Immediat
+7. SUIVRE LES ENTREPRISES : suivre les pages des entreprises cibles
+   (Safran, Thales, Valeo, Stellantis, Schneider Electric, Alten, Akkodis)
+   pour voir leurs publications et offres en avant-premiere
+8. PUBLIER DU CONTENU : partager des articles techniques embedded
+   pour augmenter votre visibilite aupres des recruteurs francais
+9. SPECIFIQUE FRANCE :
+   - Verifier les conventions collectives (Syntec pour ESN, Metallurgie
+     pour industrie) pour connaitre les grilles salariales
+   - Les ESN (Alten, Akkodis, Assystem) recrutent massivement en embarque
+   - Toulouse = pole aeronautique, Grenoble = pole semi-conducteurs/IoT,
+     Paris/IDF = toutes industries, Sophia Antipolis = telecom/IoT
+   - Le statut cadre est standard pour les ingenieurs en France

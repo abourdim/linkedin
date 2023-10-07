@@ -1,0 +1,244 @@
+================================================================================
+     LINKEDIN SEARCH QUERIES — JOBS IN FRANCE
+     Senior Embedded Software Engineer — Abdelhak Bourdim
+     Date: March 2026
+================================================================================
+
+
+================================================================================
+PART 1 — MAIN SEARCHES ("JOBS" TAB)
+================================================================================
+
+IN ENGLISH (multinationals in France)
+---------------------------------------
+1. embedded software engineer
+2. firmware engineer
+3. embedded C C++ engineer
+4. RTOS engineer
+5. embedded Linux developer
+6. senior firmware developer
+7. embedded systems engineer
+
+IN FRENCH (French job market)
+-------------------------------
+1. ingenieur logiciel embarque
+2. developpeur embarque
+3. ingenieur firmware
+4. ingenieur systemes embarques
+5. developpeur C C++ embarque
+6. ingenieur embarque senior
+
+
+================================================================================
+PART 2 — SECTOR-SPECIFIC SEARCHES
+================================================================================
+
+AEROSPACE / DEFENSE (Safran, Thales, Dassault, Airbus, MBDA)
+--------------------------------------------------------------
+- ingenieur embarque aeronautique DO-178
+- firmware engineer DO-178
+- embedded avionics engineer
+- ingenieur logiciel embarque defense
+- embedded aerospace engineer France
+
+AUTOMOTIVE / AUTOSAR (Valeo, Stellantis, Faurecia, Continental, Renault)
+-------------------------------------------------------------------------
+- embedded automotive AUTOSAR
+- ingenieur embarque automobile
+- AUTOSAR developer France
+- embedded software engineer automotive
+- ingenieur logiciel embarque vehicule
+
+MEDICAL (Medtronic, bioMerieux, Essilor, Stryker)
+---------------------------------------------------
+- embedded medical IEC 62304
+- ingenieur embarque dispositifs medicaux
+- firmware engineer medical France
+- embedded medical device engineer
+
+IoT / CONNECTED DEVICES (Sigfox, Actility, Legrand, Schneider)
+----------------------------------------------------------------
+- IoT security engineer
+- ingenieur securite embarquee
+- embedded security engineer
+- ingenieur IoT embarque
+- firmware engineer IoT France
+
+ELECTRIC VEHICLES / V2G / ENERGY
+----------------------------------
+- embedded engineer EV charging
+- ingenieur embarque recharge electrique
+- V2G engineer France
+- ISO 15118 engineer
+- firmware engineer electric vehicle
+
+ESN / CONSULTING FIRMS (Altran/Capgemini Engineering, Alten, Akkodis, Assystem)
+---------------------------------------------------------------------------------
+- ingenieur embarque consultant
+- embedded consultant engineer France
+- ingenieur embarque ESN
+- consultant firmware France
+
+
+================================================================================
+PART 3 — ADVANCED BOOLEAN SEARCH
+================================================================================
+
+LinkedIn accepts AND, OR operators and quotation marks "..." in the
+search bar. Here are the optimized queries:
+
+GENERAL QUERY
+--------------
+"embedded" AND ("C++" OR "firmware") AND ("France" OR "Paris" OR "Ile-de-France")
+
+BY TECHNOLOGY
+--------------
+("RTOS" OR "FreeRTOS" OR "VxWorks") AND ("Paris" OR "Toulouse" OR "Grenoble")
+("ARM Cortex" OR "STM32" OR "NXP") AND "France"
+("embedded Linux" OR "Yocto" OR "Buildroot") AND "France"
+
+BY SECTOR
+----------
+"embedded" AND ("aerospace" OR "DO-178" OR "aeronautique") AND "France"
+"embedded" AND ("automotive" OR "AUTOSAR" OR "ISO 26262") AND "France"
+"embedded" AND ("medical" OR "IEC 62304") AND "France"
+"embedded" AND ("cybersecurity" OR "IoT security") AND "France"
+"embedded" AND ("EV charging" OR "V2G" OR "ISO 15118") AND "France"
+
+BY CITY / REGION
+-----------------
+("ingenieur embarque" OR "embedded engineer") AND ("Ile-de-France" OR "Paris" OR "Saclay")
+("firmware" OR "embarque") AND ("Toulouse" OR "Occitanie")
+("embedded" OR "firmware") AND ("Grenoble" OR "Isere" OR "Auvergne-Rhone-Alpes")
+("embarque" OR "embedded") AND ("Lyon" OR "Rhone")
+
+
+================================================================================
+PART 4 — ESSENTIAL FILTERS TO ACTIVATE
+================================================================================
+
+After each search, apply these filters:
+
+1. LOCATION
+   - "France"
+   - More specific: "Ile-de-France", "Toulouse", "Grenoble", "Lyon"
+   - Others: "Sophia Antipolis", "Bordeaux", "Nantes", "Rennes"
+   - Radius: 30 km (major cities) or 50 km (industrial areas)
+
+2. DATE POSTED
+   - "Past week" (fresh postings, less competition)
+   - "Past month" if few results
+
+3. EXPERIENCE LEVEL
+   - "Mid-Senior level"
+   - "Director" (for lead/architect roles)
+
+4. JOB TYPE
+   - "Full-time"
+   - French equivalent: CDI (permanent contract)
+
+5. WORK MODE
+   - "On-site" or "Hybrid"
+   - "Remote" if available
+
+6. COMPANY (optional)
+   - Filter by target company: Safran, Thales, Dassault, Airbus, Valeo,
+     Stellantis, Schneider Electric, STMicroelectronics, Alten,
+     Altran/Capgemini Engineering, Akkodis, Assystem, Sopra Steria, etc.
+
+
+================================================================================
+PART 5 — ALERTS TO CREATE (5 PRIORITY)
+================================================================================
+
+Create an alert for each of these searches:
+(Click "Set alert" after each search)
+
+ALERT 1: embedded software engineer — Location: France
+ALERT 2: ingenieur logiciel embarque — Location: Ile-de-France
+ALERT 3: firmware engineer — Location: France
+ALERT 4: ingenieur embarque aeronautique DO-178 — Location: Toulouse
+ALERT 5: embedded C++ RTOS — Location: France
+
+Recommended frequency: daily (to react quickly)
+
+
+================================================================================
+PART 6 — PEOPLE SEARCH (NETWORKING)
+================================================================================
+
+Use the "People" tab to find strategic contacts:
+
+ENGINEERS / PEERS
+------------------
+- embedded engineer France
+- firmware developer Toulouse
+- ingenieur embarque Paris
+- ingenieur embarque Grenoble
+
+RECRUITERS
+-----------
+- recruiter embedded France
+- talent acquisition engineer France
+- recruteur ingenieur embarque France
+- recruteur ESN embarque
+
+MANAGERS / DECISION-MAKERS
+----------------------------
+- hiring manager firmware Paris
+- VP engineering France
+- head of embedded Paris
+- CTO embedded Toulouse
+- engineering manager Grenoble
+- responsable embarque France
+
+
+================================================================================
+PART 7 — LINKEDIN GROUPS TO JOIN
+================================================================================
+
+Search and join these groups ("Groups" tab):
+
+1. Embedded Systems France
+2. French Tech
+3. Embedded Software Engineers
+4. RTOS and Embedded Systems
+5. Ingenieur Embarque France
+6. IoT France
+7. French Aerospace & Defense
+8. Automotive Embedded Systems
+9. Emploi IT France
+10. Medical Device Engineers
+
+
+================================================================================
+PART 8 — PRACTICAL TIPS (FRANCE-SPECIFIC)
+================================================================================
+
+1. FREQUENCY: check LinkedIn 2x per day (morning + evening)
+2. ACT FAST: apply within 48h (high competition in France)
+3. USE BOTH LANGUAGES: search in French AND English
+4. COMBINE PLATFORMS:
+   - LinkedIn + APEC (executives/engineers) + France Travail (ex Pole Emploi)
+   - Welcome to the Jungle (startups/tech)
+   - Indeed France + Monster France
+5. CUSTOMIZE: tailor each application (cover letter often required in France,
+   collective bargaining agreements Syntec/Metallurgy)
+6. ACTIVATE "Open to Work": visible to recruiters only
+   - Titles: Embedded Software Engineer, Firmware Engineer,
+     Ingenieur Logiciel Embarque
+   - Location: France, Paris, Ile-de-France, Toulouse, Grenoble, Lyon
+   - Type: Full-time / CDI
+   - Start: Immediately
+7. FOLLOW COMPANIES: follow target company pages
+   (Safran, Thales, Valeo, Stellantis, Schneider Electric, Alten, Akkodis)
+   to see their posts and job openings early
+8. PUBLISH CONTENT: share technical embedded articles
+   to increase your visibility with French recruiters
+9. FRANCE-SPECIFIC:
+   - Check collective bargaining agreements (Syntec for consulting firms,
+     Metallurgy for industry) to understand salary grids
+   - Consulting firms (Alten, Akkodis, Assystem) hire heavily in embedded
+   - Toulouse = aerospace hub, Grenoble = semiconductors/IoT hub,
+     Paris/IDF = all industries, Sophia Antipolis = telecom/IoT
+   - "Cadre" status is standard for engineers in France

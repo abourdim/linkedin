@@ -1,0 +1,287 @@
+================================================================================
+     PLAN D'ACTION — RECHERCHE D'EMPLOI EN FRANCE
+     Ingenieur Logiciel Embarque Senior — Abdelhak Bourdim
+     Date : Mars 2026
+================================================================================
+
+
+================================================================================
+PARTIE 1 — COMPRENDRE LE MARCHE
+================================================================================
+
+SECTEUR EMBARQUE EN FRANCE
+-----------------------------------
+- Le marche est tres actif : 500+ postes embedded ouverts en permanence en France
+- Paris / Ile-de-France est le hub principal (majorite des ESN et sieges sociaux)
+- Autres poles majeurs : Toulouse (aeronautique), Grenoble (semiconducteurs),
+  Lyon (industrie, automotive), Sophia Antipolis (telecom, IoT)
+- Secteurs porteurs : aeronautique/defense, automobile, medical, IoT, energie,
+  semiconducteurs, ferroviaire, spatial
+- Votre profil 20+ ans avec aeronautique + medical + cybersecurite est rare et recherche
+
+SALAIRE ATTENDU
+-----------------------------------
+- Junior (1-3 ans) : 35 000 - 42 000 EUR/an
+- Confirme (5-10 ans) : 45 000 - 55 000 EUR/an
+- Senior (10+ ans, votre profil) :
+    - Ile-de-France : 60 000 - 80 000 EUR/an
+    - Province : 50 000 - 65 000 EUR/an
+- Tres senior / Lead / Architecte : 70 000 - 90 000+ EUR/an
+
+Note : ces chiffres sont bruts annuels. Le 13eme mois est courant mais pas
+universel (depend de la convention collective et de l'entreprise).
+Convention collective Syntec applicable dans la plupart des ESN.
+
+
+================================================================================
+PARTIE 2 — STATUT ET CONDITIONS DE TRAVAIL
+================================================================================
+
+VOTRE STATUT : CITOYEN FRANCAIS
+---------------------------------
+- Nationalite francaise : aucun permis de travail necessaire
+- Vous pouvez travailler immediatement sans aucune demarche administrative
+- CDI (Contrat a Duree Indeterminee) : le type de contrat privilegie
+- Periode d'essai : 4 mois (cadre), renouvelable une fois (8 mois max)
+
+CONVENTION COLLECTIVE SYNTEC
+------------------------------
+- Applicable dans la majorite des ESN (societes de conseil en ingenierie)
+- Classification : position 3.1 ou 3.2 pour un profil senior
+- Conges payes : 25 jours ouvrables + RTT (selon accord d'entreprise, 8-12 jours/an)
+- Mutuelle d'entreprise obligatoire
+- Participation / interessement (selon l'entreprise)
+- Tickets restaurant courants
+
+AVANTAGES A NEGOCIER
+----------------------
+- Teletravail : 2-3 jours/semaine est devenu la norme post-COVID
+- Prime de vacances (convention Syntec)
+- Plan d'epargne entreprise (PEE) / PERCO
+- Formation continue (DIF/CPF)
+- Vehicule de fonction (pour certains postes)
+
+
+================================================================================
+PARTIE 3 — ADAPTER SON CV AU MARCHE FRANCAIS
+================================================================================
+
+FORMAT DU CV FRANCAIS
+-----------------------
+1. PAS DE PHOTO (discriminations, loi du 27 mai 2008)
+2. PAS DE DATE DE NAISSANCE ni d'age
+3. PAS DE NATIONALITE ni de situation familiale
+4. COMPETENCES en haut du CV (rubrique "Competences techniques" bien visible)
+5. FORMAT : 2 pages maximum, PDF, anti-chronologique
+6. TITRE clair : "Ingenieur Logiciel Embarque Senior — 20+ ans d'experience"
+7. ACCROCHE : 3-4 lignes resumant le profil et l'objectif
+8. LANGUE : francais pour les postes en France, anglais si multinationale
+9. REFERENCES : "Sur demande" est acceptable
+10. MOTS-CLES : adapter aux ATS (systemes de tri automatique des CV)
+
+VOS ATOUTS SPECIFIQUES POUR LA FRANCE
+---------------------------------------
+- 20+ ans d'experience en embarque critique = profil senior tres demande
+- Experience Safran, Thales, Valeo = references reconnues par tous les recruteurs
+- Normes DO-178, IEC 62304, MISRA C = gage de rigueur et qualite
+- Cybersecurite embarquee (Enedis/Linky) = competence rare et en forte demande
+- Trilinguisme francais/anglais/arabe = atout pour les projets internationaux
+- Fondateur Workshop-DIY = engagement associatif valorise
+
+ACTIONS CV
+-----------
+[ ] Retirer photo, date de naissance, nationalite du CV
+[ ] Ajouter une rubrique "Competences techniques" en haut du CV
+[ ] Ajouter une accroche de 3-4 lignes
+[ ] Adapter les mots-cles pour les ATS (systemes automatiques)
+[ ] Preparer une version francaise et une version anglaise
+[ ] Rediger une lettre de motivation personnalisee par entreprise ciblee
+
+
+================================================================================
+PARTIE 4 — ENTREPRISES CIBLES EN FRANCE
+================================================================================
+
+AERONAUTIQUE & DEFENSE (votre experience Safran, Thales, Zodiac)
+-----------------------------------------------------------------
+- Safran — Paris / Massy / Villaroche — moteurs, electronique, systemes
+- Thales — Velizy / Gennevilliers / Brest — defense, avionique, cybersecurite
+- Dassault Aviation — Saint-Cloud / Merignac — avions de combat, Falcon
+- Naval Group — Toulon / Lorient / Paris — naval, sous-marins
+- MBDA — Le Plessis-Robinson / Bourges — missiles, systemes d'armes
+- Airbus Defence & Space — Toulouse / Elancourt — spatial, defense
+- ArianeGroup — Les Mureaux / Vernon — lanceurs spatiaux
+
+AUTOMOBILE (votre experience Valeo, E2-CAD/V2G)
+--------------------------------------------------
+- Valeo — Creteil / Paris region — systemes embarques auto
+- Stellantis (ex-PSA) — Velizy / Poissy — vehicules, ADAS
+- Renault — Guyancourt / Lardy — vehicules electriques, embarque
+- Forvia (ex-Faurecia) — Nanterre — equipementier automobile
+- Continental France — Toulouse / Rambouillet — electronique auto
+- Vitesco Technologies — Toulouse — electrification, powertrain
+
+MEDICAL (votre experience GE Healthcare, Sorin, PK Vitality)
+--------------------------------------------------------------
+- bioMerieux — Lyon / Marcy-l'Etoile — diagnostic in vitro
+- Air Liquide Medical Systems — Antony — ventilateurs, dispositifs medicaux
+- Essilor/EssilorLuxottica — Creteil / Charenton — optique, dispositifs
+- GE Healthcare France — Buc — imagerie medicale
+- Guerbet — Villepinte — imagerie medicale, agents de contraste
+
+IoT & TECH (votre experience Enedis/Linky)
+--------------------------------------------
+- Parrot — Paris — drones, systemes embarques
+- Schneider Electric — Rueil-Malmaison / Grenoble — energie, IoT industriel
+- Legrand — Limoges — domotique, systemes connectes
+- Devialet — Paris — audio haute-fidelite, embarque
+- Sigfox/UnaBiz — Toulouse — IoT, reseaux bas debit
+
+ENERGIE (votre experience V2G, Enedis)
+-----------------------------------------
+- EDF — Paris / Clamart — production, distribution electrique
+- Enedis — Paris / Lyon — smart grid, compteurs connectes
+- TotalEnergies — Paris La Defense — energies, transition, embarque
+- Schneider Electric — Grenoble / Rueil — gestion d'energie
+- Alstom — Saint-Ouen — ferroviaire, systemes embarques
+
+ESN / SOCIETES DE CONSEIL (acces rapide au marche)
+-----------------------------------------------------
+- Capgemini Engineering (ex-Altran) — toute la France — leader ESN embarque
+- Alten — Paris / toute la France — conseil en ingenierie
+- Akkodis (ex-Modis/Akka) — Paris / Lyon / Toulouse — technologies
+- Assystem — Paris / Lyon / Toulouse — nucleaire, defense, embarque
+- Segula Technologies — Paris / Nantes — ingenierie, embarque
+- Expleo (ex-SQS/Assystem T&S) — Paris / Toulouse — test, embarque
+- CS Group — Paris / Toulouse — defense, spatial, cybersecurite
+- Sopra Steria — Paris — conseil, systemes embarques
+
+
+================================================================================
+PARTIE 5 — PLAN D'ACTION SEMAINE PAR SEMAINE
+================================================================================
+
+SEMAINE 1-2 : PREPARATION
+---------------------------
+[ ] Mettre a jour le CV au format francais (sans photo, sans infos perso)
+[ ] Ajouter rubrique "Competences techniques" + accroche
+[ ] Preparer 2 versions : FR + EN (pour multinationales)
+[ ] Mettre a jour le profil LinkedIn
+[ ] Ajouter "Open to work" sur LinkedIn, cibler France
+[ ] Rediger un modele de lettre de motivation adaptable
+[ ] Preparer une version courte du pitch (2 minutes)
+
+SEMAINE 2-3 : INSCRIPTION SUR LES JOB BOARDS
+-----------------------------------------------
+[ ] linkedin.com — activer alertes "embarque" + "embedded" + villes cibles
+[ ] indeed.fr — general, tres utilise en France
+[ ] apec.fr — specifique cadres (votre profil)
+[ ] welcometothejungle.com — startups et entreprises tech
+[ ] frenchweb.fr/jobs — specialise tech/digital
+[ ] pole-emploi.fr — portail national (obligatoire si inscrit)
+[ ] monster.fr — general
+
+SEMAINE 2-4 : CANDIDATURES SPONTANEES
+----------------------------------------
+[ ] Identifier 15-20 entreprises cibles (voir liste Partie 4)
+[ ] Candidature spontanee par email aux RH + manager technique
+[ ] Adapter chaque lettre de motivation a l'entreprise
+[ ] Cibler en priorite : Safran, Thales, Valeo, Capgemini Engineering, Schneider Electric
+[ ] Postuler sur les sites carrieres des entreprises cibles
+
+SEMAINE 3-5 : NETWORKING
+--------------------------
+[ ] Connecter sur LinkedIn avec des ingenieurs embarques en France
+[ ] Rejoindre des groupes LinkedIn : "Embedded France", "Systemes Embarques",
+    "French Tech", "Ingenieur Embarque"
+[ ] Contacter les recruteurs specialises embarque en France :
+    - Hays, Michael Page, Robert Half, Expectra, Randstad Technologies
+[ ] Participer a des meetups tech (meetup.com — Paris, Lyon, Toulouse)
+[ ] Si possible, visiter le salon "Embedded World" ou "Enova Paris"
+
+SEMAINE 4-6 : ENTRETIENS
+---------------------------
+[ ] Preparer les entretiens techniques (C/C++, RTOS, protocols, architecture)
+[ ] Preparer des questions sur la convention Syntec et les avantages
+[ ] Connaitre les salaires du marche (ne pas sous-estimer sa valeur)
+[ ] Negocier : salaire, teletravail, RTT, formation, tickets restaurant
+
+SEMAINE 6-8 : FINALISATION
+------------------------------
+[ ] Signer le contrat (CDI de preference)
+[ ] Negocier la date de debut (preavis actuel si en poste)
+[ ] Organiser le demenagement si changement de region
+[ ] Mettre a jour la mutuelle et les documents administratifs
+[ ] Inscription Pole Emploi si necessaire
+
+
+================================================================================
+PARTIE 6 — SITES ET RESSOURCES UTILES
+================================================================================
+
+JOB BOARDS
+-----------
+- linkedin.com — reseau N1 pour les cadres en France
+- apec.fr — specifique cadres, offres qualifiees
+- indeed.fr — general, tres large couverture
+- welcometothejungle.com — startups et tech
+- monster.fr — general
+- pole-emploi.fr — portail national
+
+SALAIRES
+---------
+- glassdoor.fr — fourchettes par entreprise
+- levels.fyi — salaires tech (surtout grandes entreprises)
+- salaires.journaldunet.com — estimations par metier
+- apec.fr — etudes de remuneration cadres
+
+CONVENTIONS ET DROIT DU TRAVAIL
+---------------------------------
+- syntec.fr — convention collective Syntec
+- legifrance.gouv.fr — textes officiels
+- service-public.fr — demarches administratives
+- code du travail numerique (code.travail.gouv.fr)
+
+NETWORKING
+-----------
+- meetup.com — meetups tech Paris, Lyon, Toulouse, Grenoble
+- frenchweb.fr — actualites tech francaises
+- maddyness.com — ecosysteme startup francais
+- linkedin.com — groupes "Embedded France", "Systemes Embarques"
+
+
+================================================================================
+PARTIE 7 — CHECKLIST RECAPITULATIVE
+================================================================================
+
+DOCUMENTS A PREPARER
+---------------------
+[ ] CV format francais (FR) — sans photo, sans date naissance, sans nationalite
+[ ] CV format anglais (EN) — pour multinationales
+[ ] Lettre de motivation modele (FR + EN)
+[ ] Profil LinkedIn a jour
+[ ] Copies des diplomes
+[ ] Attestations employeurs / certificats de travail
+[ ] Portfolio / liens vers projets (workshop-diy.org)
+[ ] Carte d'identite ou passeport a jour
+
+POINTS FORTS A METTRE EN AVANT
+--------------------------------
+1. +20 ans d'experience en embarque critique (aero, medical)
+2. Maitrise C/C++ bare metal + RTOS + Linux embarque
+3. Experience cybersecurite embarquee (pentest IoT, audit Linky)
+4. Normes certifiantes : DO-178, IEC 62304, MISRA C, ISO 15118
+5. Trilinguisme francais / anglais / arabe
+6. Fondateur Workshop-DIY (engagement associatif)
+7. Polyvalence sectorielle : aero, medical, auto, IoT, V2G, paiement
+8. References employeurs de premier plan : Safran, Thales, Valeo, GE Healthcare
+
+ERREURS A EVITER
+-----------------
+- Ne pas mettre de photo sur le CV (loi anti-discrimination en France)
+- Ne pas postuler sans adapter le CV aux mots-cles de l'offre (ATS)
+- Ne pas ignorer la lettre de motivation (encore attendue en France)
+- Ne pas sous-estimer son salaire (vous valez 65-80K EUR en IDF)
+- Ne pas attendre une reponse : relancer apres 10 jours
+- Ne pas negliger le reseau : beaucoup de postes passent par cooptation
+- Ne pas oublier de negocier les avantages (teletravail, RTT, primes)

@@ -1,0 +1,384 @@
+================================================================================
+                    PROFIL LINKEDIN — VERSION FRANCAISE
+             Pret a copier-coller dans chaque section LinkedIn
+================================================================================
+
+
+================================================================================
+1. TITRE (max 220 caracteres)
+================================================================================
+
+Ingenieur Logiciel Embarque Senior | C/C++ | RTOS | Linux Embarque | ARM Cortex | STM32 | 20+ ans | Aeronautique, Medical, Auto, IoT, V2G
+
+
+================================================================================
+2. INFOS / A PROPOS (copier ce bloc entier)
+================================================================================
+
+Specialiste en logiciel embarque avec plus de 20 ans d'experience dans le developpement firmware, middleware et couches applicatives — bare metal, RTOS et Linux embarque — pour systemes critiques et industriels.
+
+Je concois et livre des drivers bas niveau, des stacks de communication (CAN, BLE, USB, TCP/IP) et des applications embarquees sur architectures ARM Cortex, STM32, Microchip et NXP.
+
+Mon parcours couvre des secteurs exigeants :
+- Aeronautique : Safran, Thales, Zodiac — solutions embarquees certifiees DO-178
+- Medical : GE Healthcare, Sorin — developpement conforme IEC 62304
+- Automobile : Valeo, Arkamys — audio GStreamer, audits de tests
+- Cybersecurite IoT : Enedis — pentest et audit des compteurs Linky
+- Recharge intelligente EV : E2-CAD — integration ISO 15118, V2G, OCPP
+- Systemes de paiement : Cartadis — 8 ans de terminaux de controle d'acces et paiement
+
+Competences cles :
+C/C++ | Linux embarque | FreeRTOS | VxWorks | ARM Cortex (M0, M4, A8) | STM32 | CAN/CANOpen | BLE | USB | TCP/IP | MISRA C | DO-178 | IEC 62304 | ISO 15118
+
+Au-dela de l'ingenierie, j'ai fonde Workshop-DIY, une association delivrant des ateliers robotique et STEM pour jeunes (Arduino, ESP32, IA, impression 3D) — 18+ ateliers realises.
+
+Ouvert a de nouveaux defis en systemes embarques, cybersecurite et V2G/smart charging.
+
+
+================================================================================
+3. EXPERIENCE (copier chaque entree separement)
+================================================================================
+
+--- ENTREE 1 ---
+Titre :         Ingenieur Logiciel Embarque — Recharge EV / V2G
+Entreprise :    E2-CAD
+Lieu :          Eragny, France
+Date debut :    Mai 2025
+Date fin :      Aujourd'hui (cocher "J'occupe actuellement ce poste")
+
+Description :
+Reprise en main du produit et mise en place du banc de test pour bornes de recharge EV (IP Iotecha).
+
+- Reverse engineering et analyse du code source (architecture statique et dynamique)
+- Analyse et revue du code embarque sur 3 cartes (Microchip PIC, STM32), mise en place des outils de debug et programmation (ST-Link, nsprog)
+- Analyse des protocoles de communication entre modules Linux et cartes embarquees (RS232, I2C, extraction de trames avec Saleae)
+- Developpement d'extensions Python et generation de rapports web HTML en temps reel
+- Design et mise en place du banc de test : integration outils Chargebyte, simulateur EV
+- Debug et mise en service des bornes (PLC, HomePlug Green PHY, ISO 15118, OCPP)
+
+Competences : Linux embarque, C/C++, Microchip PIC, STM32, PLC, ISO 15118, OCPP, CAN, TCP/IP, Python, Bash
+
+--- ENTREE 2 ---
+Titre :         Ingenieur Logiciel Embarque — Aeronautique (SSPC)
+Entreprise :    Safran
+Lieu :          Creteil, France
+Date debut :    Mars 2024
+Date fin :      Mai 2025
+
+Description :
+Mise a jour des drivers bas niveau pour le systeme Solid State Power Controller (SSPC).
+
+- Developpement et mise a jour des drivers bas niveau en C pour le systeme SSPC
+- Mise en place d'outils de logging pour le diagnostic et la tracabilite des echanges
+- Redaction et execution des tests de validation sur cible avec Lauterbach TRACE32
+- Scripting Bash/Awk pour l'automatisation des processus de test
+
+Competences : C, Lauterbach TRACE32, Bash, Awk
+
+--- ENTREE 3 ---
+Titre :         Ingenieur Logiciel Embarque — Aeronautique (Tests SOM)
+Entreprise :    Asterios Technologies
+Lieu :          Massy, France
+Date debut :    Aout 2023
+Date fin :      Fevrier 2024
+
+Description :
+Redaction des procedures de tests logiciels pour le module T1042SOM.
+
+- Developpement en C des tests de validation pour le module SOM (processeur T1042)
+- Analyse des errata du processeur et identification des contournements logiciels
+- Redaction de la documentation de test conforme aux exigences du projet
+
+Competences : C, Bash, Python, Lauterbach TRACE32, Polarion
+
+--- ENTREE 4 ---
+Titre :         Ingenieur Logiciel Embarque — Radio Defense
+Entreprise :    Thales
+Lieu :          Gennevilliers, France
+Date debut :    Mai 2022
+Date fin :      Juillet 2023
+
+Description :
+Developpement des couches applicatives pour logiciel de preparation de mission et New Multi Mode Receiver (N-MMR).
+
+- Developpement des couches applicatives sous Linux embarque en C/C++ pour 2 projets
+- Scripts de gestion de configuration et automatisation (Bash, Curl, Tshark)
+- Developpement et execution des tests HLT (High Level Tests)
+- Correction de bugs et analyse des protocoles reseau (Websockets)
+
+Competences : Linux embarque, C/C++, Bash, Websockets, Python
+
+--- ENTREE 5 ---
+Titre :         Ingenieur Logiciel Embarque — Audit de Tests
+Entreprise :    Valeo
+Lieu :          Creteil, France
+Date debut :    Mars 2022
+Date fin :      Avril 2022
+
+Description :
+Audit des tests unitaires, d'integration et des outils pour Valeo Egypt.
+
+- Audit des processus de tests et des outils utilises (NI Mastre, Vector CANoe)
+- Propositions d'automatisation et d'amelioration des temps d'execution
+- Revue des exigences client/systeme, redaction du rapport d'audit
+
+Competences : NI Mastre, Vector CANoe, Audit de tests
+
+--- ENTREE 6 ---
+Titre :         Ingenieur Logiciel Embarque — Audio Automobile
+Entreprise :    Arkamys
+Lieu :          Levallois-Perret, France
+Date debut :    Juillet 2021
+Date fin :      Fevrier 2022
+
+Description :
+Developpement de plugins GStreamer et tests pour framework audio embarque automobile.
+
+- Developpement de plugins GStreamer et drivers CAN (ELM327), outils de diagnostic
+- Tests unitaires et d'integration (Valgrind), build system Buildroot
+
+Competences : Linux embarque, C/C++, Buildroot, GStreamer, Valgrind, CAN, Python
+
+--- ENTREE 7 ---
+Titre :         Ingenieur Logiciel Embarque — Train Autonome
+Entreprise :    Thales
+Lieu :          Velizy-Villacoublay, France
+Date debut :    Novembre 2020
+Date fin :      Juin 2021
+
+Description :
+Communication IPC et programmation socket pour Autonomous Train Operation (ATO).
+
+- Migration de l'application de 32 bits vers 64 bits sur plateforme Linux embarque
+- Definition et implementation des protocoles de communication IPC
+- Developpement d'outils de diagnostic reseau et tests d'integration
+- Analyse des trames avec Wireshark, Tshark, Pscapy et Pyshark
+
+Competences : Linux embarque, C, UDP, TCP, Wireshark, Python
+
+--- ENTREE 8 ---
+Titre :         Ingenieur Logiciel Embarque — Dispositif Medical (CGM)
+Entreprise :    PK Vitality
+Lieu :          Paris, France
+Date debut :    Juin 2020
+Date fin :      Septembre 2020
+
+Description :
+Developpement de drivers BLE, FreeRTOS et STM32 TouchGFX pour le K'Watch Continuous Glucose Monitor.
+
+- Developpement HAL (AFE AD5940, PMIC DA9070), driver QSPI, BLE NRF52840
+- Ecran tactile STM32 TouchGFX, FreeRTOS, mode low power
+- Tests in vitro et documentation Doxygen (conforme IEC 62304)
+
+Competences : STM32, NRF52840, C, C++, FreeRTOS, BLE, TouchGFX, IEC 62304
+
+--- ENTREE 9 ---
+Titre :         Ingenieur Logiciel Embarque — Aeronautique (SSPC A350)
+Entreprise :    Zodiac Aerospace (Safran)
+Lieu :          Montreuil, France
+Date debut :    Fevrier 2017
+Date fin :      Mars 2020
+
+Description :
+Drivers bas niveau, diagnostic et couches applicatives pour les projets GENOME/CORAC/SSPC A350 AC9.
+
+- Adaptation des couches bas niveau : drivers CAN, RS485, memoire thermique (dsPIC33)
+- Implementation de la passerelle uAFDX vers CAN et fonctions de diagnostic
+- Developpement et optimisation des couches applicatives SSPC A350
+- Tests de validation et documentation conforme aux standards aeronautiques
+
+Competences : Microchip dsPIC33, MPLAB, TI Concerto, CCS Studio, C
+
+--- ENTREE 10 ---
+Titre :         Ingenieur Cybersecurite Embarquee — Smart Grid
+Entreprise :    Enedis
+Lieu :          Nanterre, France
+Date debut :    Mai 2015
+Date fin :      Septembre 2016
+
+Description :
+Audit de cybersecurite et tests d'intrusion sur les concentrateurs Linky.
+
+- Diagnostic et audit de securite des concentrateurs Linky
+- Tests d'intrusion sur systemes embarques Linux (Kali Linux, Nmap)
+- Sniffing et fuzzing de protocoles (Wireshark, Tshark, Scapy, SDR)
+- Developpement d'outils d'analyse de logs et de mise a jour firmware en batch
+- Audit et revue de code avec les constructeurs (Sonar, PC Lint)
+
+Competences : Kali Linux, Linux embarque, Nmap, Wireshark, Scapy, SDR, Python, Bash
+
+--- ENTREE 11 ---
+Titre :         Ingenieur Logiciel Embarque — Medical (BLE Pacemaker)
+Entreprise :    Sorin
+Lieu :          Clamart, France
+Date debut :    Novembre 2014
+Date fin :      Avril 2015
+
+Description :
+Etude de faisabilite d'integration Bluetooth dans un implant cardiaque (projet Platinium).
+
+- Validation du choix du module Bluetooth Smart, developpement du Serial Port Service Profile
+- Developpement du protocole de communication smartphone et application Android
+- Realisation de l'interface hardware et preparation des echantillons pour implantation
+
+Competences : Cortex M0, Keil, C, BLE, Android
+
+--- ENTREE 12 ---
+Titre :         Ingenieur Logiciel Embarque — Imagerie Medicale (Rayons X)
+Entreprise :    General Electric Healthcare
+Lieu :          Buc, France
+Date debut :    Janvier 2012
+Date fin :      Decembre 2014
+
+Description :
+Integration CANOpen sur cartes RCB et CORTYX pour le generateur de rayons X ZYX.
+
+- Integration pile CANOpen (slave/master), developpement drivers et service CAN
+- Portage du noyau CMX-RTX, gestion fichiers, scripts TCL de test
+- Support technique equipe USA et deplacements sur site aux Etats-Unis
+
+Competences : TI TMS320, ARM Cortex A8, VxWorks, C, C++, CANOpen
+
+--- ENTREE 13 ---
+Titre :         Ingenieur Logiciel Embarque — Paiement & IoT
+Entreprise :    Photomaton / BCM / Vertical M2M / PGS
+Lieu :          Paris, France
+Date debut :    Janvier 2010
+Date fin :      Decembre 2012
+
+Description :
+Systemes de paiement et tele releve — Developpement complet embarque + PC sur NXP LPC (USB, RFID, GSM/GPRS, Bluetooth).
+
+Competences : NXP LPC, USB, RFID, GSM/GPRS, Bluetooth, C
+
+--- ENTREE 14 ---
+Titre :         Ingenieur Logiciel Embarque — Terminaux de Paiement
+Entreprise :    Cartadis
+Lieu :          Fontenay-sous-Bois, France
+Date debut :    Octobre 2001
+Date fin :      Decembre 2009
+
+Description :
+8 ans — Terminaux de controle d'acces et paiement : drivers, applicatifs embarques, stacks USB/TCP/IP, cryptage DES/RC4.
+
+- Developpement embarque complet sur NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91
+- Developpement de stacks USB Host/Device/HID et TCP/IP
+- Integration carte a puce, RFID Mifare, cryptage DES/RC4
+
+Competences : C, NXP LPC, USB, TCP/IP, Carte a puce, RFID, DES, ATMEL AT91
+
+
+================================================================================
+4. COMPETENCES (Top 50 — ajouter dans la section Competences LinkedIn)
+================================================================================
+
+Systemes embarques
+Linux embarque
+Programmation C
+C++
+RTOS
+FreeRTOS
+VxWorks
+ARM Cortex
+STM32
+Microcontroleurs
+Developpement firmware
+Logiciel embarque
+Drivers de peripheriques
+Bus CAN
+CANOpen
+BLE (Bluetooth Low Energy)
+USB
+TCP/IP
+SPI
+I2C
+RS232
+RS485
+AFDX
+ISO 15118
+OCPP
+V2G
+MISRA C
+DO-178
+IEC 62304
+Cybersecurite
+Tests d'intrusion
+Securite IoT
+Python
+Scripting Bash
+GStreamer
+Buildroot
+Lauterbach TRACE32
+Wireshark
+Git
+Jira
+Methodologies Agile
+Scrum
+Validation de tests
+RFID
+Carte a puce
+Debugging
+Reverse engineering
+Integration hardware-software
+Documentation technique
+Noyau Linux
+
+
+================================================================================
+5. FORMATION
+================================================================================
+
+--- Diplome 1 ---
+Ecole :         AFPA
+Diplome :       Ingenieur de conception de systemes electroniques et informatiques
+Domaine :       Systemes embarques / Electronique
+Lieu :          Champs-sur-Marne, France
+
+--- Diplome 2 ---
+Ecole :         Hopital Tenon, Paris
+Diplome :       3eme cycle — Instrumentation biomedicale
+Domaine :       Ingenierie biomedicale
+
+--- Diplome 3 ---
+Ecole :         Universite de Boumerdes
+Diplome :       Ingenieur en electronique, option communication
+Domaine :       Electronique / Telecommunications
+Lieu :          Boumerdes, Algerie
+
+
+================================================================================
+6. BENEVOLAT
+================================================================================
+
+Titre :         Fondateur
+Organisation :  Workshop-DIY
+Cause :         Education / Science et Technologie
+Date debut :    2020
+Date fin :      Aujourd'hui (en cours)
+
+Description :
+Association a but non lucratif proposant des ateliers robotique et STEM pour jeunes (6-12+ ans) a Chelles (77), France.
+
+- Conception d'un kit robot base sur ESP32 (WiFi, BLE, servos, capteurs)
+- Animation de 18+ ateliers : Arduino, micro:bit, IA, impression 3D, decoupe laser
+- Enseignement des systemes embarques, de la programmation et de l'electronique aux jeunes
+
+Site web : workshop-diy.org
+
+
+================================================================================
+7. LANGUES
+================================================================================
+
+Francais       — Competence bilingue ou native
+Anglais        — Competence professionnelle
+Arabe          — Competence bilingue ou native
+
+
+================================================================================
+8. SECTION EN VEDETTE (optionnel — ajouter un lien)
+================================================================================
+
+Titre :         Workshop-DIY — Robotique & STEM pour les jeunes
+Lien :          https://workshop-diy.org
+Description :   Fondateur d'une association de robotique educative. Kits robots ESP32, ateliers Arduino, IA et impression 3D pour jeunes makers.

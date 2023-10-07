@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>2-Minute Pitch — Luxembourg — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 2pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 16pt; }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 18pt 0 10pt 0; letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt; color: #0a66c2;
+    margin: 14pt 0 6pt 0; padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+
+  /* Script box */
+  .script-box {
+    background: #f8fbfe;
+    border: 1.5pt solid #d0e3f3;
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.75;
+    color: #222;
+  }
+  .script-box p { margin-bottom: 10pt; }
+  .script-box .pause {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    margin: 8pt 0;
+  }
+  .script-box .sector { color: #1a5276; font-weight: 600; }
+  .script-box .company { color: #0a66c2; font-weight: 600; }
+  .script-box .norm { color: #888; font-style: italic; }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 6pt;
+    flex-wrap: wrap;
+    margin: 8pt 0 12pt;
+  }
+  .time-block {
+    flex: 1;
+    min-width: 100pt;
+    background: #eaf2f8;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    text-align: center;
+    border-top: 3pt solid #0a66c2;
+  }
+  .time-block .time-label {
+    font-size: 8pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; letter-spacing: 0.5pt;
+  }
+  .time-block .time-sec {
+    font-size: 16pt; font-weight: 700; color: #1a5276;
+    margin: 2pt 0;
+  }
+  .time-block .time-desc {
+    font-size: 7.5pt; color: #555;
+  }
+
+  /* Tips */
+  .tip-list { list-style: none; padding: 0; }
+  .tip-list li {
+    padding: 5pt 0 5pt 20pt;
+    position: relative;
+    font-size: 9.5pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+  .tip-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  /* Variant boxes */
+  .variant {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 10pt 14pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .variant-title {
+    font-size: 9.5pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; margin-bottom: 4pt;
+  }
+  .variant-focus { font-size: 9pt; color: #333; margin-bottom: 3pt; }
+  .variant-quote {
+    font-size: 9pt; color: #555; font-style: italic;
+    border-left: 2pt solid #ddd;
+    padding-left: 8pt; margin-top: 4pt;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .variant { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>2-Minute Pitch &mdash; Luxembourg</h1>
+<div class="subtitle">&ldquo;Tell me about yourself&rdquo; &bull; Abdelhak Bourdim &bull; Senior Embedded Software Engineer &bull; Cross-border from Lorraine</div>
+
+<!-- TIMING -->
+<h2>Structure &amp; Timing</h2>
+<div class="timeline">
+  <div class="time-block">
+    <div class="time-label">Who I am</div>
+    <div class="time-sec">10s</div>
+    <div class="time-desc">Name, title, 20+ years</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">What I do</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">C/C++, RTOS, Linux, MCU</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">My proof</div>
+    <div class="time-sec">60s</div>
+    <div class="time-desc">4 critical sectors</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">What sets me apart</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Workshop-DIY</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Why Luxembourg</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Ecosystem, multicultural</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Close</div>
+    <div class="time-sec">5s</div>
+    <div class="time-desc">Cross-border, available</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<h2>Script</h2>
+<div class="script-box">
+  <p>Hello, I'm <strong>Abdelhak Bourdim</strong>, a senior embedded software engineer with <strong>over 20 years of experience</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>My core expertise is developing low-level embedded software &mdash; firmware, drivers, communication stacks &mdash; in <strong>C/C++</strong> on <strong>ARM Cortex, STM32, Microchip</strong> and <strong>NXP</strong> architectures, from bare metal to RTOS such as <strong>FreeRTOS</strong> and <strong>VxWorks</strong>, and <strong>embedded Linux</strong>.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>What makes my background distinctive is the diversity of <strong>safety-critical sectors</strong> I've worked in:</p>
+
+  <p>In <span class="sector">aerospace</span>, at <span class="company">Safran</span>, <span class="company">Thales</span> and <span class="company">Zodiac</span>, I developed low-level drivers and application layers compliant with <span class="norm">DO-178</span> and <span class="norm">MISRA C</span> &mdash; over 6 years in this sector.</p>
+
+  <p>In <span class="sector">medical devices</span>, at <span class="company">GE Healthcare</span> and <span class="company">Sorin</span>, I integrated CANOpen stacks and developed BLE modules for pacemakers, compliant with <span class="norm">IEC 62304</span>.</p>
+
+  <p>In <span class="sector">IoT cybersecurity</span>, at <span class="company">Enedis</span>, I led security audits and penetration testing on Linky smart meter concentrators.</p>
+
+  <p>And most recently, in <span class="sector">EV charging</span> at <span class="company">E2-CAD</span>, I work on <span class="norm">ISO 15118</span> integration, the V2G protocol and commissioning of charging stations.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>Beyond the technical side, I founded <strong>Workshop-DIY</strong>, a nonprofit offering robotics and electronics workshops for young people. It reflects my passion for knowledge sharing and innovation.</p>
+
+  <div class="pause">&mdash; PAUSE &mdash;</div>
+
+  <p>What attracts me to <strong>Luxembourg</strong> is its unique ecosystem that brings together satellites, automotive, industry and fintech in an <strong>international and multicultural</strong> environment. My trilingual profile &mdash; French, English and Arabic &mdash; and my cross-sector experience fit naturally into this dynamic.</p>
+
+  <p>I'm based in <strong>Lorraine</strong>, ready to work as a <strong>cross-border commuter</strong>, and available immediately.</p>
+
+  <p><strong>I'd be happy to go into more detail about any of my projects.</strong></p>
+</div>
+
+<!-- TIPS -->
+<h2>Delivery Tips</h2>
+<ul class="tip-list">
+  <li>Speak at a <strong>natural pace</strong> &mdash; not too fast, not too slow</li>
+  <li>Maintain eye contact (or look at the camera in video calls)</li>
+  <li><strong>Confident and direct</strong> tone &mdash; highlight your track record without arrogance</li>
+  <li><strong>PAUSES</strong> are essential &mdash; they show mastery and confidence</li>
+  <li>Do NOT recite &mdash; know the blocks, not the text word for word</li>
+  <li>If the interviewer reacts, adapt and engage in dialogue</li>
+  <li>Have 3 anecdotes ready to elaborate on each sector</li>
+  <li>In Luxembourg, emphasize <strong>multilingualism</strong> and international openness</li>
+  <li>Mention <strong>cross-border</strong> worker status naturally, without overdoing it</li>
+</ul>
+
+<!-- VARIANTS -->
+<h2>Company-Specific Variants (Luxembourg)</h2>
+
+<div class="variant">
+  <div class="variant-title">SES (Satellites)</div>
+  <div class="variant-focus">&rarr; Emphasize Safran + Thales + Zodiac = 6+ years in aerospace &bull; DO-178, MISRA C, safety-critical systems, RTOS</div>
+  <div class="variant-quote">&ldquo;I spent 6 years in aerospace, from Zodiac to Safran, working on safety-critical embedded systems compliant with DO-178. Satellite engineering at SES would be the natural continuation of this career path.&rdquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">IEE (Automotive Sensors)</div>
+  <div class="variant-focus">&rarr; Emphasize communication stacks, CAN, sensors, drivers &bull; bare metal, RTOS, vehicle integration</div>
+  <div class="variant-quote">&ldquo;My experience in embedded communication and driver development for sensors directly applies to IEE's intelligent detection systems.&rdquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">POST Luxembourg (IoT / Telecom)</div>
+  <div class="variant-focus">&rarr; Emphasize IoT cybersecurity, Linky, communication stacks &bull; embedded Linux, network protocols, security</div>
+  <div class="variant-quote">&ldquo;My experience in IoT security audits at Enedis and in embedded communication stacks is a perfect match for POST Luxembourg's telecom and IoT challenges.&rdquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">INCERT (Cybersecurity)</div>
+  <div class="variant-focus">&rarr; Emphasize Enedis, pentest, security audit, Kali Linux &bull; vulnerability analysis, penetration testing, IoT</div>
+  <div class="variant-quote">&ldquo;The security audits and penetration tests I conducted on Linky concentrators demonstrate my embedded cybersecurity expertise, directly applicable at INCERT.&rdquo;</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">ArcelorMittal (Industry 4.0)</div>
+  <div class="variant-focus">&rarr; Emphasize embedded Linux, industrial IoT, communication &bull; sensors, RTOS, industrial protocols</div>
+  <div class="variant-quote">&ldquo;My cross-sector experience in safety-critical embedded systems and IoT is directly applicable to ArcelorMittal's Industry 4.0 transformation.&rdquo;</div>
+</div>
+
+</body>
+</html>

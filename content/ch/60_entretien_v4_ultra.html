@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fiche Flash Entretien — Abdelhak BOURDIM</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #2d2d2d;
+    line-height: 1.45;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: #ffffff;
+    overflow: hidden;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a2a4a 0%, #0f1c33 100%);
+    color: #ffffff;
+    padding: 16pt 24pt 14pt;
+    text-align: center;
+    border-bottom: 4pt solid #2e6db4;
+  }
+  .header h1 { font-size: 16pt; font-weight: 800; letter-spacing: 2pt; text-transform: uppercase; }
+  .header .name { font-size: 12pt; color: #7eb3e0; margin-top: 4pt; font-weight: 400; }
+  .header .tag {
+    display: inline-block; margin-top: 6pt;
+    background: rgba(74,143,212,0.2); border: 1pt solid #3a5a8a;
+    color: #8ab8e8; font-size: 8pt; font-weight: 600;
+    padding: 3pt 14pt; border-radius: 12pt; letter-spacing: 0.5pt;
+  }
+
+  .content { padding: 12pt 24pt; }
+
+  /* SECTION */
+  .section-title {
+    font-size: 9.5pt; font-weight: 800; color: #1a2a4a;
+    text-transform: uppercase; letter-spacing: 1.5pt;
+    margin-top: 10pt; margin-bottom: 4pt;
+    padding-bottom: 3pt; border-bottom: 2.5pt solid #2e6db4;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  /* PITCH 2 MIN */
+  .pitch {
+    background: #f7f9fc;
+    border: 1.5pt solid #d0ddef;
+    border-radius: 6pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+  }
+  .pitch p {
+    font-size: 9pt;
+    color: #2d2d2d;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  .pitch .timer {
+    text-align: right; font-size: 7pt; color: #4a8fd4;
+    font-weight: 700; margin-bottom: 4pt; letter-spacing: 0.5pt;
+  }
+  .pitch strong { color: #1e3a5f; }
+  .highlight { background: #e8f0fa; padding: 1pt 4pt; border-radius: 2pt; }
+
+  /* KEY FACTS */
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6pt;
+    margin-bottom: 8pt;
+  }
+  .fact {
+    text-align: center;
+    background: linear-gradient(135deg, #1a2a4a, #0f1c33);
+    color: #ffffff;
+    border-radius: 5pt;
+    padding: 8pt 6pt;
+  }
+  .fact .number { font-size: 18pt; font-weight: 800; color: #4a8fd4; }
+  .fact .label { font-size: 7pt; color: #a0b8d0; text-transform: uppercase; letter-spacing: 0.5pt; margin-top: 2pt; }
+
+  /* SECTORS LINE */
+  .sectors {
+    display: flex; flex-wrap: wrap; gap: 4pt;
+    margin-bottom: 8pt;
+  }
+  .sector-tag {
+    background: rgba(74,143,212,0.1); border: 1pt solid #c0d4ea;
+    color: #1e3a5f; font-size: 7.5pt; font-weight: 600;
+    padding: 3pt 10pt; border-radius: 12pt;
+  }
+
+  /* TIMELINE */
+  .timeline { margin-bottom: 6pt; }
+  .tl-row {
+    display: flex; align-items: baseline;
+    padding: 2.5pt 0;
+    border-bottom: 0.5pt solid #eef1f5;
+  }
+  .tl-date { width: 72pt; font-size: 6.8pt; color: #7a8a9a; font-style: italic; flex-shrink: 0; }
+  .tl-company { width: 80pt; font-size: 7.5pt; font-weight: 700; color: #1e3a5f; flex-shrink: 0; }
+  .tl-desc { font-size: 7.2pt; color: #3a3a3a; flex: 1; }
+
+  /* RÉPONSES FLASH */
+  .flash-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5pt;
+  }
+  .flash-card {
+    background: #f7f9fc;
+    border: 1pt solid #d8e2ee;
+    border-radius: 4pt;
+    padding: 5pt 8pt;
+  }
+  .flash-card .flash-q {
+    font-size: 7.2pt; font-weight: 700; color: #2e6db4;
+    margin-bottom: 2pt; text-transform: uppercase; letter-spacing: 0.3pt;
+  }
+  .flash-card .flash-a { font-size: 7pt; color: #3a3a3a; line-height: 1.35; }
+
+  /* FOOTER */
+  .footer {
+    background: linear-gradient(135deg, #1a2a4a, #0f1c33);
+    border-radius: 5pt;
+    padding: 8pt 14pt;
+    margin-top: 6pt;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .footer p { font-size: 7.5pt; color: #a0b8d0; }
+  .footer strong { color: #7eb3e0; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <h1>Fiche Flash Entretien</h1>
+    <div class="name">Abdelhak BOURDIM</div>
+    <div class="tag">Ingénieur Logiciel Embarqué Senior &mdash; Firmware &bull; RTOS &bull; Linux Embarqué</div>
+  </div>
+
+  <div class="content">
+
+    <!-- CHIFFRES CLÉS -->
+    <div class="section-title" style="margin-top: 0;">Chiffres clés</div>
+    <div class="facts">
+      <div class="fact"><div class="number">20+</div><div class="label">Années d'expérience</div></div>
+      <div class="fact"><div class="number">12+</div><div class="label">Entreprises</div></div>
+      <div class="fact"><div class="number">6</div><div class="label">Secteurs d'activité</div></div>
+      <div class="fact"><div class="number">5</div><div class="label">Normes maîtrisées</div></div>
+      <div class="fact"><div class="number">3</div><div class="label">RTOS (FreeRTOS, VxWorks, UCOSII)</div></div>
+      <div class="fact"><div class="number">18+</div><div class="label">Ateliers Workshop-DIY</div></div>
+    </div>
+
+    <div class="sectors">
+      <span class="sector-tag">✈ Aéronautique</span>
+      <span class="sector-tag">⚕ Médical</span>
+      <span class="sector-tag">🚗 Automobile</span>
+      <span class="sector-tag">⚡ Énergie / V2G</span>
+      <span class="sector-tag">🔒 Cybersécurité IoT</span>
+      <span class="sector-tag">💳 Paiement</span>
+      <span class="sector-tag">🚆 Ferroviaire</span>
+    </div>
+
+    <!-- PITCH 2 MIN -->
+    <div class="section-title">Pitch — 2 minutes pile</div>
+    <div class="pitch">
+      <div class="timer">⏱ ~2 MINUTES</div>
+      <p>
+        Bonjour, je suis <strong>Abdelhak BOURDIM</strong>, ingénieur logiciel embarqué senior.
+      </p>
+      <p style="margin-top: 4pt;">
+        Mon cœur de métier : le développement de <strong>firmware, middleware et couches applicatives</strong>,
+        en <span class="highlight">bare metal</span>, sous <span class="highlight">RTOS</span> ou
+        <span class="highlight">Linux embarqué</span>, pour des <strong>systèmes critiques et industriels</strong>.
+        En <strong>plus de 20 ans</strong>, j'ai développé des drivers et des stacks de communication
+        &mdash; CAN, BLE, USB, TCP/IP &mdash; sur ARM Cortex, STM32, Microchip et NXP.
+      </p>
+      <p style="margin-top: 4pt;">
+        Côté <strong>aéronautique</strong> : chez <strong>Safran</strong> sur un contrôleur de puissance SSPC,
+        chez <strong>Thales</strong> sur un récepteur multimode N-MMR et un système de train autonome ATO,
+        et chez <strong>Zodiac</strong> sur des SSPC pour l'A350. Tous en conformité DO-178C.
+      </p>
+      <p style="margin-top: 4pt;">
+        En <strong>médical</strong> : chez <strong>GE Healthcare</strong> sur un générateur rayons X
+        avec intégration CANOpen, chez <strong>Sorin</strong> sur un module Bluetooth pour pacemaker,
+        et chez <strong>PK Vitality</strong> sur une montre de mesure du glucose &mdash; le tout conforme IEC 62304.
+      </p>
+      <p style="margin-top: 4pt;">
+        Plus récemment, chez <strong>Enedis</strong> j'ai fait l'audit de cybersécurité des concentrateurs
+        Linky (pentest, sniffing SDR), et actuellement chez <strong>E2-CAD</strong> je travaille sur des
+        bornes de recharge véhicule électrique avec <strong>ISO 15118</strong> et OCPP.
+      </p>
+      <p style="margin-top: 4pt;">
+        Avant tout ça, <strong>8 ans chez Cartadis</strong> m'ont donné une base solide en développement
+        embarqué complet : drivers, stacks USB/TCP/IP, RFID, cryptage.
+      </p>
+      <p style="margin-top: 4pt;">
+        En parallèle, je suis fondateur de <strong>Workshop-DIY</strong>, une association de robotique éducative
+        où j'anime des ateliers pour jeunes sur Arduino, ESP32, IA et impression 3D.
+      </p>
+    </div>
+
+    <!-- TIMELINE ULTRA COMPACT -->
+    <div class="section-title">Parcours express</div>
+    <div class="timeline">
+      <div class="tl-row"><span class="tl-date">2025 – Présent</span><span class="tl-company">E2-CAD</span><span class="tl-desc">Borne EV, ISO 15118, OCPP, reverse engineering, banc de test</span></div>
+      <div class="tl-row"><span class="tl-date">2024 – 2025</span><span class="tl-company">Safran</span><span class="tl-desc">SSPC, drivers C, TRACE32, DO-178</span></div>
+      <div class="tl-row"><span class="tl-date">2023 – 2024</span><span class="tl-company">Asterios</span><span class="tl-desc">Tests validation T1042SOM, errata processeur</span></div>
+      <div class="tl-row"><span class="tl-date">2022 – 2023</span><span class="tl-company">Thales</span><span class="tl-desc">N-MMR + LPM, Linux C/C++, tests HLT, DO-178</span></div>
+      <div class="tl-row"><span class="tl-date">2020 – 2021</span><span class="tl-company">Thales</span><span class="tl-desc">ATO train autonome, migration 32→64 bits, IPC</span></div>
+      <div class="tl-row"><span class="tl-date">2020</span><span class="tl-company">PK Vitality</span><span class="tl-desc">CGM, BLE NRF52, FreeRTOS, TouchGFX, IEC 62304</span></div>
+      <div class="tl-row"><span class="tl-date">2017 – 2020</span><span class="tl-company">Zodiac/Safran</span><span class="tl-desc">SSPC A350, CAN, dsPIC33, uAFDX, DO-178</span></div>
+      <div class="tl-row"><span class="tl-date">2015 – 2016</span><span class="tl-company">Enedis</span><span class="tl-desc">Linky cybersécurité, pentest, SDR, Scapy</span></div>
+      <div class="tl-row"><span class="tl-date">2014 – 2015</span><span class="tl-company">Sorin</span><span class="tl-desc">BLE pacemaker, Cortex M0, Android</span></div>
+      <div class="tl-row"><span class="tl-date">2012 – 2014</span><span class="tl-company">GE Healthcare</span><span class="tl-desc">Rayons X, CANOpen, VxWorks, support USA</span></div>
+      <div class="tl-row"><span class="tl-date">2001 – 2009</span><span class="tl-company">Cartadis</span><span class="tl-desc">8 ans — Terminaux paiement, USB, TCP/IP, RFID, DES</span></div>
+    </div>
+
+    <!-- RÉPONSES FLASH -->
+    <div class="section-title">Réponses flash</div>
+    <div class="flash-grid">
+      <div class="flash-card">
+        <div class="flash-q">Debug sur cible ?</div>
+        <div class="flash-a">TRACE32 : breakpoints, mémoire, registres + Wireshark, Saleae, logging maison.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">RTOS ?</div>
+        <div class="flash-a">FreeRTOS, VxWorks, UCOSII. Tâches, mutex, sémaphores, contraintes temps réel.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">DO-178C ?</div>
+        <div class="flash-a">DAL A→E. MC/DC pour DAL A. SRS→LLR→STD→STR. Revue + traçabilité.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">MISRA C ?</div>
+        <div class="flash-a">Règles sûreté C. Required + advisory. PC Lint, Sonar, Polyspace.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">Pourquoi ce poste ?</div>
+        <div class="flash-a">Correspond à mon cœur de compétence. Envie d'apporter et de continuer à évoluer.</div>
+      </div>
+      <div class="flash-card">
+        <div class="flash-q">Revues d'exigences ?</div>
+        <div class="flash-a">Oui (Thales, Zodiac). Check-lists : complétude, cohérence, traçabilité, testabilité.</div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <p><strong>abdelhak.bourdim@gmail.com</strong> &nbsp;|&nbsp; +33 6 19 51 51 73 &nbsp;|&nbsp; Région parisienne</p>
+      <p>Disponible <strong>immédiatement</strong></p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

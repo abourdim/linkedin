@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نماذج للبحث عن عمل في سويسرا — مهندس برمجيات مدمجة</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', 'Tahoma', sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.7;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+    direction: rtl;
+    text-align: right;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 20pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box {
+    background: #f4f7fa;
+    border: 1pt solid #d0e3f3;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+    border-radius: 4pt 0 0 4pt;
+    padding: 12pt 16pt;
+    margin-bottom: 10pt;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #222;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', 'Tahoma', sans-serif;
+  }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .entry {
+    background: #fafafa;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 4pt 0 0 4pt;
+  }
+  .entry-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0a66c2;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+  .instruction {
+    font-size: 9pt;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 6pt;
+  }
+  .version-label {
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 3pt;
+    margin-bottom: 6pt;
+    letter-spacing: 0.3pt;
+  }
+  .toc {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 12pt 18pt;
+    margin-bottom: 16pt;
+  }
+  .toc-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 6pt;
+  }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li {
+    font-size: 9pt;
+    padding: 2pt 0;
+    color: #333;
+  }
+  .toc li a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num {
+    display: inline-block;
+    width: 24pt;
+    font-weight: 700;
+    color: #0a66c2;
+  }
+  .lang-tag {
+    display: inline-block;
+    font-size: 7.5pt;
+    font-weight: 700;
+    padding: 1pt 6pt;
+    border-radius: 3pt;
+    margin-right: 4pt;
+    vertical-align: middle;
+  }
+  .lang-ar { background: #e8f5e9; color: #2e7d32; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 14pt;
+    margin-bottom: 6pt;
+    font-size: 9.5pt;
+  }
+  .guide-step strong { color: #0a66c2; }
+  .order-num {
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 9pt;
+    font-weight: 700;
+    width: 20pt;
+    height: 20pt;
+    line-height: 20pt;
+    text-align: center;
+    border-radius: 50%;
+    margin-left: 6pt;
+  }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .warning-box {
+    background: #fef9e7;
+    border: 1pt solid #f9e79f;
+    border-right: 3pt solid #f39c12;
+    border-left: none;
+    border-radius: 4pt 0 0 4pt;
+    padding: 10pt 14pt;
+    margin: 10pt 0;
+    font-size: 9pt;
+    color: #7d6608;
+  }
+  .warning-box strong { color: #b7950b; }
+  /* LTR override for technical terms */
+  .ltr-inline {
+    direction: ltr;
+    unicode-bidi: embed;
+  }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .prompt-box { break-inside: avoid; }
+    .entry { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>نماذج للبحث عن عمل — سويسرا</h1>
+<div class="subtitle">Embedded Software Engineer &bull; للاستخدام مع ChatGPT أو Claude أو أي مساعد ذكاء اصطناعي &bull; عبد الحق بورديم</div>
+
+<!-- الفهرس -->
+<div class="toc">
+  <div class="toc-title">الفهرس</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> رسالة تحفيزية <span class="lang-tag lang-ar">عربي</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> رسالة تحفيزية <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> رسالة LinkedIn لمسؤول توظيف <span class="lang-tag lang-ar">عربي</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> رسالة LinkedIn لمدير التوظيف <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> طلبات اتصال LinkedIn <span class="lang-tag lang-ar">عربي</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> طلبات اتصال LinkedIn <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> التحضير لمقابلة تقنية <span class="lang-tag lang-ar">عربي</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> التحضير لمقابلة تقنية <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> تحليل عرض وظيفي <span class="lang-tag lang-mixed">عربي/EN</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> المتابعة بعد المقابلة <span class="lang-tag lang-mixed">عربي/EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> التفاوض على الراتب <span class="lang-tag lang-ar">عربي</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&larr;</span> دليل الاستخدام</a></li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 1 -->
+<!-- ============================================================ -->
+<h2 id="prompt1">النموذج 1 — إنشاء رسالة تحفيزية <span class="lang-tag lang-ar">عربي</span></h2>
+<p class="instruction">استخدم هذا النموذج مع استبدال الحقول <span class="bracket">[بين الأقواس]</span> :</p>
+<div class="prompt-box">أنت خبير في كتابة رسائل التحفيز لسوق العمل السويسري.
+اكتب رسالة تحفيزية باللغة العربية للوظيفة التالية:
+
+<strong>الوظيفة:</strong> <span class="bracket">[عنوان الوظيفة — مثال: Embedded Software Engineer]</span>
+<strong>الشركة:</strong> <span class="bracket">[اسم الشركة — مثال: Kudelski Group]</span>
+<strong>المكان:</strong> <span class="bracket">[المدينة — مثال: Cheseaux-sur-Lausanne]</span>
+<strong>مصدر الإعلان:</strong> <span class="bracket">[jobs.ch / LinkedIn / ترشح تلقائي]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة خبرة
+- جنسية فرنسية، مؤهل لتصريح G العابر للحدود، متنقل في سويسرا الغربية (Suisse romande)
+- المهارات الأساسية: C/C++، RTOS (FreeRTOS، VxWorks)، Linux المدمج، ARM Cortex، STM32
+- البروتوكولات: CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C
+- المعايير: DO-178 (الطيران)، IEC 62304 (الطبي)، MISRA C، ISO 15118 (V2G)
+- القطاعات: الطيران (Safran، Thales)، الطبي (GE Healthcare، Sorin)، السيارات (Valeo)، الأمن السيبراني IoT (Enedis/Linky)، شحن المركبات الكهربائية/V2G (E2-CAD)
+- مؤسس Workshop-DIY (جمعية روبوتيك للشباب)
+- اللغات: الفرنسية (ثنائي اللغة)، الإنجليزية (مهني)، العربية (ثنائي اللغة)
+
+تعليمات لكتابة الرسالة:
+1. الأسلوب السويسري: رصين، مهني، واقعي، بدون مبالغة في الترويج الذاتي
+2. صفحة واحدة كحد أقصى (300-400 كلمة)
+3. إبراز المهارات المتوافقة تحديداً مع العرض الوظيفي
+4. شرح موجز لسبب الاهتمام بسويسرا وهذه الشركة بالتحديد
+5. ذكر التوفر وحالة العامل العابر للحدود
+6. الختام بصيغة مجاملة سويسرية مناسبة
+7. النبرة: مهنية لكن إنسانية، بدون عبارات مبتذلة
+
+إذا كان ترشحاً تلقائياً، يُرجى تكييف النبرة وفقاً لذلك (إظهار الفضول تجاه الشركة واقتراح قيمة مضافة).</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 2 -->
+<!-- ============================================================ -->
+<h2 id="prompt2">النموذج 2 — إنشاء رسالة تحفيزية <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">استخدم هذا النموذج مع استبدال الحقول <span class="bracket">[بين الأقواس]</span> :</p>
+<div class="prompt-box">أنت خبير في كتابة رسائل التحفيز لسوق العمل السويسري.
+اكتب رسالة تحفيزية باللغة الإنجليزية للوظيفة التالية:
+
+<strong>الوظيفة:</strong> <span class="bracket">[عنوان الوظيفة — مثال: Senior Embedded Software Engineer]</span>
+<strong>الشركة:</strong> <span class="bracket">[اسم الشركة — مثال: Medtronic]</span>
+<strong>المكان:</strong> <span class="bracket">[المدينة — مثال: Tolochenaz, Switzerland]</span>
+<strong>المصدر:</strong> <span class="bracket">[jobs.ch / LinkedIn / ترشح تلقائي]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة خبرة
+- جنسية فرنسية، مؤهل لتصريح G السويسري (عابر للحدود)، متنقل في سويسرا الغربية
+- المهارات الأساسية: C/C++، RTOS (FreeRTOS، VxWorks)، Embedded Linux، ARM Cortex، STM32
+- البروتوكولات: CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C
+- المعايير: DO-178 (الطيران)، IEC 62304 (الطبي)، MISRA C، ISO 15118 (V2G)
+- القطاعات: الطيران (Safran، Thales)، الطبي (GE Healthcare، Sorin)، السيارات (Valeo)، الأمن السيبراني IoT (Enedis/Linky)، شحن المركبات الكهربائية/V2G (E2-CAD)
+- مؤسس Workshop-DIY (جمعية روبوتيك غير ربحية للشباب)
+- اللغات: الفرنسية (لغة أم)، الإنجليزية (مهني)، العربية (لغة أم)
+
+التعليمات:
+1. الأسلوب السويسري: رصين، مهني، واقعي، بدون مفاخرة
+2. صفحة واحدة كحد أقصى (300-400 كلمة)
+3. إبراز المهارات المتوافقة تحديداً مع إعلان الوظيفة
+4. شرح موجز للاهتمام بسويسرا وهذه الشركة
+5. ذكر التوفر وحالة العامل العابر للحدود
+6. الختام بصيغة إنهاء سويسرية مناسبة
+7. النبرة: مهنية لكن ودودة، بدون كليشيهات
+
+إذا كان ترشحاً تلقائياً، يُرجى تكييف النبرة لإظهار الفضول تجاه الشركة واقتراح قيمة محددة.</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 3 -->
+<!-- ============================================================ -->
+<h2 id="prompt3">النموذج 3 — رسالة LinkedIn إلى مسؤول توظيف <span class="lang-tag lang-ar">عربي</span></h2>
+<div class="prompt-box">اكتب رسالة LinkedIn قصيرة (100-150 كلمة) باللغة العربية للتواصل مع مسؤول توظيف في سويسرا الغربية (Suisse romande).
+
+<strong>المرسل إليه:</strong> <span class="bracket">[اسم مسؤول التوظيف — مثال: Sophie Dupont]</span>
+<strong>الشركة:</strong> <span class="bracket">[الاسم — مثال: Zühlke Engineering]</span>
+<strong>السياق:</strong> <span class="bracket">[مسؤول توظيف داخلي / وكالة توظيف / مدير تقني]</span>
+
+ملخص ملفي الشخصي:
+- مهندس برمجيات مدمجة أول، أكثر من 20 سنة (C/C++، RTOS، Linux المدمج)
+- خبرة في الطيران (Safran، Thales — DO-178) والطبي (GE Healthcare — IEC 62304)
+- حالياً في منصب، أبحث عن فرصة في سويسرا الغربية
+- جنسية فرنسية، مؤهل لتصريح G العابر للحدود
+
+التعليمات:
+1. نبرة مهنية لكن إنسانية، ليست نسخاً عاماً
+2. إظهار اهتمام محدد بالشركة (ليس فقط "أبحث عن عمل")
+3. الإيجاز والمباشرة (مسؤولو التوظيف يتلقون عشرات الرسائل)
+4. اقتراح تبادل حوار دون إلحاح
+5. عدم الإطراء المفرط (الثقافة السويسرية = التواضع)</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 4 -->
+<!-- ============================================================ -->
+<h2 id="prompt4">النموذج 4 — رسالة LinkedIn إلى مدير التوظيف <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">اكتب رسالة LinkedIn قصيرة (100-150 كلمة) باللغة الإنجليزية للتواصل مع مدير توظيف في سويسرا.
+
+<strong>المرسل إليه:</strong> <span class="bracket">[الاسم — مثال: Marc Keller]</span>
+<strong>الشركة:</strong> <span class="bracket">[الاسم — مثال: Ellisys SA]</span>
+<strong>منصبه:</strong> <span class="bracket">[مثال: VP Engineering / Head of Firmware]</span>
+<strong>السياق:</strong> <span class="bracket">[رأيت إعلان وظيفة / تواصل تلقائي / معرفة مشتركة]</span>
+
+ملخص خلفيتي:
+- مهندس برمجيات مدمجة أول، أكثر من 20 سنة (C/C++، RTOS، Embedded Linux)
+- خبرة في الطيران (Safran، Thales — DO-178) والطبي (GE Healthcare — IEC 62304)
+- حالياً في منصب، أبحث عن فرص في سويسرا الغربية
+- جنسية فرنسية، مؤهل لتصريح G السويسري (عابر للحدود)
+
+التعليمات:
+1. نبرة مهنية لكن ودية، ليست قالباً عاماً
+2. إظهار اهتمام محدد بالشركة أو الفريق
+3. الإيجاز والمباشرة (المديرون مشغولون)
+4. اقتراح محادثة قصيرة دون إلحاح
+5. عدم الإطراء المفرط (الثقافة السويسرية = التواضع)</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 5 -->
+<!-- ============================================================ -->
+<h2 id="prompt5">النموذج 5 — طلبات الاتصال على LinkedIn <span class="lang-tag lang-ar">عربي</span></h2>
+<p class="instruction">للنسخ واللصق مباشرة (300 حرف كحد أقصى لطلب الاتصال). استبدل الحقول <span class="bracket">[بين الأقواس]</span>.</p>
+
+<h3><span class="version-label">النسخة 1</span> مسؤول توظيف</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، أنا مهندس برمجيات مدمجة أول (أكثر من 20 سنة، C/C++، RTOS، DO-178). أهتم بفرص البرمجيات المدمجة في سويسرا الغربية. هل يمكننا تبادل الحديث؟ مع التحية، عبد الحق</div>
+
+<h3><span class="version-label">النسخة 2</span> مدير تقني</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أول متخصص في C/C++، RTOS وLinux المدمج (Safran، Thales، GE Healthcare). فريقكم في <span class="bracket">[اسم الشركة]</span> يثير اهتمامي كثيراً. أتطلع للتواصل. عبد الحق</div>
+
+<h3><span class="version-label">النسخة 3</span> زميل / زميل محتمل</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أيضاً. أتابع عملكم في <span class="bracket">[اسم الشركة]</span> باهتمام. أستكشف فرصاً في سويسرا الغربية. سيكون من دواعي سروري التواصل. عبد الحق</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 6 -->
+<!-- ============================================================ -->
+<h2 id="prompt6">النموذج 6 — طلبات الاتصال على LinkedIn <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">للنسخ واللصق مباشرة (300 حرف كحد أقصى لطلب الاتصال). استبدل الحقول <span class="bracket">[بين الأقواس]</span>.</p>
+
+<h3><span class="version-label">النسخة 1</span> مسؤول توظيف</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، أنا مهندس برمجيات مدمجة أول (أكثر من 20 سنة، C/C++، RTOS، DO-178). أستكشف أدوار البرمجيات المدمجة في سويسرا الغربية. يسعدني التواصل. مع أطيب التحيات، عبد الحق</div>
+
+<h3><span class="version-label">النسخة 2</span> مدير التوظيف</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أول بخبرة تفوق 20 سنة في C/C++، RTOS، Embedded Linux (Safran، Thales، GE Healthcare). فريقكم في <span class="bracket">[اسم الشركة]</span> أثار اهتمامي. يسعدني التواصل. عبد الحق</div>
+
+<h3><span class="version-label">النسخة 3</span> زميل</h3>
+<div class="prompt-box">مرحباً <span class="bracket">[الاسم الأول]</span>، مهندس مدمج زميل. أتابع عمل <span class="bracket">[اسم الشركة]</span> باهتمام. أستكشف فرصاً في سويسرا الغربية. سيكون من الرائع التواصل. عبد الحق</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 7 -->
+<!-- ============================================================ -->
+<h2 id="prompt7">النموذج 7 — التحضير لمقابلة تقنية <span class="lang-tag lang-ar">عربي</span></h2>
+<div class="prompt-box">أنت خبير في المقابلات التقنية لوظائف مهندس برمجيات مدمجة في سويسرا.
+حضّرني لمقابلة في <span class="bracket">[اسم الشركة]</span> لمنصب <span class="bracket">[عنوان الوظيفة]</span>.
+
+ملفي الشخصي:
+- أكثر من 20 سنة في البرمجيات المدمجة (C/C++، RTOS، Linux المدمج، bare metal)
+- ARM Cortex، STM32، Microchip، NXP
+- البروتوكولات: CAN، BLE، USB، TCP/IP، SPI، I2C
+- المعايير: DO-178، IEC 62304، MISRA C، ISO 15118
+- القطاعات: الطيران، الطبي، السيارات، الأمن السيبراني IoT، V2G
+
+أنشئ:
+1. <strong>10 أسئلة تقنية</strong> محتملة لهذا النوع من الوظائف، مع إجابات مفصلة بناءً على خبرتي
+2. <strong>5 أسئلة سلوكية</strong> (بأسلوب STAR) مع أمثلة إجابات من مسيرتي المهنية
+3. <strong>5 أسئلة يجب أن أطرحها</strong> على الشركة (تُظهر اهتمامي وأقدميتي)
+4. <strong>3 أسئلة عن السياق السويسري</strong> (الثقافة، الفريق، التنظيم)
+
+لكل إجابة:
+- كن دقيقاً وتقنياً (لا عموميات)
+- أعطِ أمثلة ملموسة من مهامي السابقة
+- ابقَ واقعياً ومتواضعاً (الثقافة السويسرية)
+- اذكر الأدوات والمناهج المحددة</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 8 -->
+<!-- ============================================================ -->
+<h2 id="prompt8">النموذج 8 — التحضير لمقابلة تقنية <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">أنت خبير في المقابلات التقنية لوظائف مهندس برمجيات مدمجة في سويسرا.
+حضّرني لمقابلة في <span class="bracket">[اسم الشركة]</span> لمنصب <span class="bracket">[عنوان الوظيفة]</span>.
+
+خلفيتي:
+- أكثر من 20 سنة في البرمجيات المدمجة (C/C++، RTOS، Embedded Linux، bare metal)
+- ARM Cortex، STM32، Microchip، NXP
+- البروتوكولات: CAN، BLE، USB، TCP/IP، SPI، I2C
+- المعايير: DO-178، IEC 62304، MISRA C، ISO 15118
+- القطاعات: الطيران، الطبي، السيارات، الأمن السيبراني IoT، V2G
+
+أنشئ:
+1. <strong>10 أسئلة تقنية محتملة</strong> لهذا المنصب، مع إجابات مفصلة بناءً على خبرتي
+2. <strong>5 أسئلة سلوكية</strong> (بصيغة STAR) مع أمثلة إجابات من مسيرتي المهنية
+3. <strong>5 أسئلة يجب أن أطرحها</strong> على الشركة (تُظهر الاهتمام والأقدمية)
+4. <strong>3 أسئلة عن السياق السويسري</strong> (الثقافة، الفريق، التنظيم)
+
+لكل إجابة:
+- كن دقيقاً وتقنياً (لا عموميات)
+- أعطِ أمثلة ملموسة من مهامي السابقة
+- ابقَ واقعياً ومتواضعاً (الثقافة السويسرية)
+- اذكر الأدوات والمناهج المحددة</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 9 -->
+<!-- ============================================================ -->
+<h2 id="prompt9">النموذج 9 — تحليل عرض وظيفي وتكييف الترشح <span class="lang-tag lang-mixed">عربي/EN</span></h2>
+<div class="prompt-box">أنت خبير في التوظيف في مجال البرمجيات المدمجة في سويسرا.
+إليك عرضاً وظيفياً. حلّله وساعدني في تحضير ترشحي.
+
+<strong>العرض الوظيفي:</strong>
+<span class="bracket">[الصق النص الكامل للعرض هنا]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة
+- C/C++، RTOS (FreeRTOS، VxWorks)، Linux المدمج، ARM Cortex، STM32
+- CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C
+- DO-178، IEC 62304، MISRA C، ISO 15118
+- الطيران (Safran، Thales)، الطبي (GE Healthcare، Sorin)، السيارات (Valeo)، الأمن السيبراني IoT (Enedis)، V2G (E2-CAD)
+- الفرنسية لغة أم، الإنجليزية مهنية، العربية لغة أم
+- مؤهل لتصريح G العابر للحدود
+
+نفّذ المهام التالية:
+1. <strong>تحليل الوظيفة</strong>: حدّد المهارات المطلوبة، والمهارات المرغوبة (nice-to-have)، والملف المطلوب
+2. <strong>درجة التوافق</strong>: قيّم توافقي مع الوظيفة من 1 إلى 10، مع التبرير
+3. <strong>نقاط القوة</strong>: اذكر مؤهلاتي الأكثر توافقاً مع هذا العرض
+4. <strong>الثغرات</strong>: حدّد الثغرات المحتملة وكيفية سدها أو تقديمها بشكل إيجابي
+5. <strong>رسالة التحفيز</strong>: اكتب رسالة مكيفة لهذا العرض تحديداً (300-400 كلمة، بأسلوب سويسري)
+6. <strong>كلمات مفتاحية للسيرة الذاتية</strong>: اذكر الكلمات المفتاحية التي يجب إبرازها في سيرتي الذاتية لهذا العرض
+7. <strong>الراتب المقدّر</strong>: نطاق الراتب المحتمل لهذه الوظيفة في سويسرا</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 10 -->
+<!-- ============================================================ -->
+<h2 id="prompt10">النموذج 10 — المتابعة بعد المقابلة / التذكير <span class="lang-tag lang-mixed">عربي/EN</span></h2>
+<div class="prompt-box">اكتب بريداً إلكترونياً للشكر والمتابعة بعد مقابلة عمل في سويسرا.
+
+<strong>الشركة:</strong> <span class="bracket">[الاسم]</span>
+<strong>المحاور:</strong> <span class="bracket">[الاسم + المنصب — مثال: Dr. Marc Weber، Head of Firmware]</span>
+<strong>تاريخ المقابلة:</strong> <span class="bracket">[التاريخ]</span>
+<strong>النقاط الرئيسية المناقشة:</strong> <span class="bracket">[اذكر 2-3 مواضيع مهمة — مثال: ترحيل RTOS، اختبارات DO-178، فريق من 5 مهندسين]</span>
+<strong>اللغة:</strong> <span class="bracket">[العربية / الفرنسية / الإنجليزية]</span>
+
+التعليمات:
+1. قصير (150-200 كلمة كحد أقصى)
+2. شكر على الوقت الممنوح
+3. الإشارة إلى نقطة محددة من النقاش (إظهار الإصغاء)
+4. إعادة تأكيد الاهتمام بالمنصب دون إلحاح
+5. النبرة مهنية، رصينة، سويسرية (بدون إطراء)
+6. اقتراح تقديم معلومات تكميلية عند الحاجة</div>
+
+<!-- ============================================================ -->
+<!-- النموذج 11 -->
+<!-- ============================================================ -->
+<h2 id="prompt11">النموذج 11 — التفاوض على الراتب <span class="lang-tag lang-ar">عربي</span></h2>
+<div class="prompt-box">أنت خبير في التفاوض على الرواتب في سوق البرمجيات المدمجة السويسري.
+
+<strong>الوظيفة المقترحة:</strong> <span class="bracket">[العنوان]</span>
+<strong>الشركة:</strong> <span class="bracket">[الاسم]</span>
+<strong>المكان:</strong> <span class="bracket">[الكانتون — مثال: Vaud]</span>
+<strong>العرض المالي:</strong> <span class="bracket">[المبلغ — مثال: 115,000 CHF/سنة]</span>
+<strong>وضعي:</strong> عامل عابر للحدود من فرنسا / مقيم في سويسرا
+
+ملفي الشخصي:
+- أكثر من 20 سنة خبرة، مهندس برمجيات مدمجة أول
+- مهارات نادرة: DO-178، IEC 62304، الأمن السيبراني المدمج، V2G/ISO 15118
+- ثلاثي اللغات: الفرنسية/الإنجليزية/العربية
+
+ساعدني في:
+1. <strong>تقييم العرض</strong>: هل هو ضمن نطاق السوق؟ (المقارنة مع البيانات السويسرية)
+2. <strong>نقاط التفاوض</strong>: ما العناصر القابلة للتفاوض إلى جانب الراتب (الشهر الثالث عشر، الإجازات، التدريب، العمل عن بُعد، المكافآت)
+3. <strong>سيناريو التفاوض</strong>: اكتب 3 عبارات رئيسية للتفاوض بطريقة مهنية
+4. <strong>حساب صافي الراتب</strong>: تقدير الراتب الصافي كعامل عابر للحدود مقابل مقيم (الضرائب، الاشتراكات)
+5. <strong>أمور يجب تجنبها</strong>: الأخطاء الشائعة في التفاوض في سويسرا</div>
+
+<!-- ============================================================ -->
+<!-- دليل الاستخدام -->
+<!-- ============================================================ -->
+<h2 id="guide">كيفية استخدام هذه النماذج</h2>
+
+<div class="guide-step"><span class="order-num">1</span> انسخ النموذج الذي يهمك</div>
+<div class="guide-step"><span class="order-num">2</span> استبدل الحقول <span class="bracket">[بين الأقواس]</span> بمعلوماتك</div>
+<div class="guide-step"><span class="order-num">3</span> الصقه في ChatGPT أو Claude أو أي ذكاء اصطناعي آخر</div>
+<div class="guide-step"><span class="order-num">4</span> كيّف الإجابة حسب أسلوبك الشخصي</div>
+
+<div class="warning-box">
+  <strong>مهم:</strong> لا ترسل أبداً نصاً أنشأه الذكاء الاصطناعي دون مراجعته وتخصيصه. الذكاء الاصطناعي أداة مساعدة وليس بديلاً عن حكمك الشخصي.
+</div>
+
+<h3>الترتيب الموصى به للترشح</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>النموذج 9</strong> — تحليل العرض &larr; فهم ما تبحث عنه الشركة<br><br>
+  <span class="order-num">2</span> <strong>النموذج 1 أو 2</strong> — رسالة التحفيز &larr; التقديم<br><br>
+  <span class="order-num">3</span> <strong>النموذج 3 أو 4</strong> — رسالة LinkedIn &larr; التشبيك بالتوازي<br><br>
+  <span class="order-num">4</span> <strong>النموذج 7 أو 8</strong> — التحضير للمقابلة &larr; قبل كل مقابلة<br><br>
+  <span class="order-num">5</span> <strong>النموذج 10</strong> — المتابعة &larr; بعد كل مقابلة<br><br>
+  <span class="order-num">6</span> <strong>النموذج 11</strong> — التفاوض &larr; عند تلقي عرض
+</div>
+
+</body>
+</html>

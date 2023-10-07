@@ -1,0 +1,130 @@
+================================================================================
+        2-MINUTE PITCH — JOB INTERVIEW
+        "Tell me about yourself"
+        Abdelhak Bourdim — Senior Embedded Software Engineer
+================================================================================
+
+TIMING: ~2 minutes (280 words) — calm, professional pace
+CONTEXT: interview for an embedded role in Western Switzerland
+
+
+================================================================================
+SCRIPT (memorize the blocks, don't read)
+================================================================================
+
+Hello, I'm Abdelhak Bourdim, a senior embedded software engineer
+with over 20 years of experience.
+
+                        [PAUSE — 5 sec]
+
+My core expertise is developing low-level embedded software —
+firmware, drivers, communication stacks — in C/C++ on ARM Cortex,
+STM32, Microchip, and NXP architectures, from bare metal to RTOS
+like FreeRTOS and VxWorks, and Embedded Linux.
+
+                        [PAUSE — 3 sec]
+
+What sets my career apart is the range of critical industries
+I've worked in:
+
+In aerospace, at Safran and Thales, I developed low-level drivers
+and application layers compliant with DO-178.
+
+In medical devices, at GE Healthcare and Sorin, I integrated
+CANOpen stacks and developed BLE modules for a pacemaker,
+compliant with IEC 62304.
+
+In IoT cybersecurity, at Enedis, I led security audits and
+penetration tests on Linky smart meter concentrators.
+
+And most recently, in EV charging at E2-CAD, I work on ISO 15118
+integration, V2G protocols, and charging station commissioning.
+
+                        [PAUSE — 3 sec]
+
+Beyond the technical side, I founded Workshop-DIY, a non-profit
+that delivers robotics workshops for young people. It reflects
+my passion for sharing knowledge and innovation.
+
+                        [PAUSE — 3 sec]
+
+Today, I want to bring this multi-sector experience to
+Western Switzerland, where the quality standards and rigor
+match the way I work.
+
+I'm a French national, eligible for the G cross-border permit,
+and available to start quickly.
+
+I'd be happy to go into more detail about any of my projects.
+
+
+================================================================================
+PITCH STRUCTURE (cheat sheet)
+================================================================================
+
+  1. WHO I AM             → Name + title + 20 yrs      [10 sec]
+  2. WHAT I DO            → C/C++, RTOS, Linux, MCU    [15 sec]
+  3. MY PROOF (4 sectors):                              [60 sec]
+     • Aero    → Safran, Thales (DO-178)
+     • Medical → GE Healthcare, Sorin (IEC 62304)
+     • Cyber   → Enedis, Linky (pentesting)
+     • V2G     → E2-CAD (ISO 15118, OCPP)
+  4. WHAT SETS ME APART   → Workshop-DIY, passion       [15 sec]
+  5. WHY SWITZERLAND      → Quality, rigor, G permit    [15 sec]
+  6. CLOSE                → Available, eager             [5 sec]
+
+                                            TOTAL ≈ 2 min
+
+
+================================================================================
+DELIVERY TIPS
+================================================================================
+
+• Speak SLOWLY — Swiss pace is calmer than French pace
+• Maintain eye contact (or look at camera in video calls)
+• Factual and modest tone — no boasting
+• PAUSES are key — they show confidence
+• Do NOT recite — know the blocks, not word for word
+• If the interviewer reacts, adapt and engage in dialogue
+• Have 3 anecdotes ready to go deeper on each sector
+
+
+================================================================================
+COMPANY-SPECIFIC VARIANTS
+================================================================================
+
+IF MEDICAL COMPANY (Medtronic, Stryker, etc.):
+  → Emphasize GE Healthcare + Sorin + PK Vitality
+  → Mention IEC 62304, Doxygen, in vitro testing
+  → "Medical development demands rigorous documentation
+     and traceability — something I've practiced for years."
+
+IF CYBERSECURITY COMPANY (Kudelski, WISeKey, etc.):
+  → Emphasize Enedis/Linky, pentesting, code audits
+  → Mention Kali Linux, Nmap, Scapy, SDR, HackRF
+  → "Auditing Linky concentrators gave me a comprehensive
+     view of embedded system vulnerabilities."
+
+IF AEROSPACE COMPANY (RUAG, Beyond Gravity, etc.):
+  → Emphasize Safran + Thales + Zodiac = 6+ years in aero
+  → Mention DO-178, MISRA C, Lauterbach TRACE32
+  → "I spent 6 years in aerospace, from Zodiac to Safran,
+     working on SSPC systems and defense radios."
+
+IF WATCHMAKING/PRECISION (Rolex, CSEM, etc.):
+  → Emphasize precision, microcontrollers, low-level work
+  → Mention dsPIC, NXP LPC, SPI/I2C drivers, bare metal
+  → "For 8 years at Cartadis, I built complete embedded
+     systems from scratch — drivers to application protocols."
+
+IF EV/CLEANTECH (ABB, H55, etc.):
+  → Emphasize E2-CAD, ISO 15118, OCPP, V2G
+  → Mention PLC, HomePlug Green PHY, test bench
+  → "Electric mobility is a passion of mine, and my current
+     V2G experience is directly applicable."
+
+IF CONSULTING/ESN (Zuhlke, Altran, etc.):
+  → Emphasize multi-sector versatility
+  → Mention fast adaptation to new environments
+  → "Over 20 years, I've worked in 7 different sectors,
+     which allows me to adapt very quickly to any context."

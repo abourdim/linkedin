@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملف LinkedIn — النسخة العربية</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, 'Noto Sans Arabic', 'Noto Kufi Arabic', -apple-system, system-ui, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #f4f2ee;
+    color: #191919;
+    line-height: 1.55;
+    font-size: 14px;
+    direction: rtl;
+    text-align: right;
+  }
+
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 20px 16px;
+  }
+
+  .lang-switch {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .lang-switch a {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0 6px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .lang-switch a.active {
+    background: #0a66c2;
+    color: #fff;
+  }
+
+  .lang-switch a:not(.active) {
+    background: #fff;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+  }
+
+  /* Card style */
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #d6cec2;
+    margin-bottom: 8px;
+    overflow: hidden;
+  }
+
+  .card-body {
+    padding: 16px 24px;
+  }
+
+  /* Profile header */
+  .profile-banner {
+    height: 200px;
+    background: linear-gradient(135deg, #1a2a4a 0%, #2e6db4 50%, #0a66c2 100%);
+    position: relative;
+  }
+
+  .profile-header {
+    position: relative;
+    padding: 0 24px 16px;
+  }
+
+  .avatar {
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: linear-gradient(135deg, #1e3a5f, #2e6db4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+    margin-top: -88px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #191919;
+    margin-top: 12px;
+  }
+
+  .profile-headline {
+    font-size: 16px;
+    color: #191919;
+    margin-top: 4px;
+    line-height: 1.5;
+  }
+
+  .profile-location {
+    font-size: 14px;
+    color: #666;
+    margin-top: 6px;
+  }
+
+  .profile-contact {
+    font-size: 14px;
+    color: #0a66c2;
+    font-weight: 600;
+    margin-top: 6px;
+    direction: ltr;
+    text-align: right;
+  }
+
+  .profile-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    background: #0a66c2;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #191919;
+    margin-bottom: 12px;
+  }
+
+  /* About */
+  .about-text {
+    font-size: 14px;
+    color: #191919;
+    line-height: 1.7;
+    white-space: pre-line;
+  }
+
+  .about-text strong {
+    font-weight: 600;
+  }
+
+  /* Experience */
+  .exp-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e3dd;
+  }
+
+  .exp-item:last-child {
+    border-bottom: none;
+  }
+
+  .exp-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f0ece4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: #666;
+    flex-shrink: 0;
+  }
+
+  .exp-content {
+    flex: 1;
+  }
+
+  .exp-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  .exp-company-name {
+    font-size: 14px;
+    color: #191919;
+  }
+
+  .exp-dates {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  .exp-location {
+    font-size: 12px;
+    color: #666;
+  }
+
+  .exp-desc {
+    font-size: 14px;
+    color: #191919;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+  .exp-desc ul {
+    margin: 6px 18px 0 0;
+    padding: 0;
+  }
+
+  .exp-desc li {
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  .exp-skills {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .skill-badge {
+    background: #e8f0fe;
+    color: #0a66c2;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+
+  /* Skills section */
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .skill-item {
+    background: #f4f2ee;
+    border: 1px solid #d6cec2;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  /* Education */
+  .edu-item {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e8e3dd;
+  }
+
+  .edu-item:last-child {
+    border-bottom: none;
+  }
+
+  .edu-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    background: #f0ece4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .edu-school {
+    font-size: 14px;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  .edu-degree {
+    font-size: 14px;
+    color: #191919;
+  }
+
+  /* Languages */
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e8e3dd;
+  }
+
+  .lang-item:last-child {
+    border-bottom: none;
+  }
+
+  .lang-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  .lang-level {
+    font-size: 14px;
+    color: #666;
+  }
+
+  /* Volunteer */
+  .vol-item {
+    padding: 12px 0;
+  }
+
+  .vol-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #191919;
+  }
+
+  .vol-org {
+    font-size: 14px;
+    color: #191919;
+  }
+
+  .vol-dates {
+    font-size: 12px;
+    color: #666;
+    margin-top: 2px;
+  }
+
+  .vol-desc {
+    font-size: 14px;
+    color: #191919;
+    margin-top: 8px;
+    line-height: 1.6;
+  }
+
+  .vol-desc ul {
+    margin: 6px 18px 0 0;
+    padding: 0;
+  }
+
+  .vol-desc li {
+    margin-bottom: 3px;
+    font-size: 13px;
+  }
+
+  /* Print */
+  @media print {
+    body { background: #fff; }
+    .container { max-width: 100%; padding: 0; }
+    .card { border: none; box-shadow: none; break-inside: avoid; }
+    .lang-switch { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Language switch -->
+  <div class="lang-switch">
+    <a href="66_linkedin_EN.html">English</a>
+    <a href="67_linkedin_FR.html">Fran&ccedil;ais</a>
+    <a href="72_linkedin_AR.html" class="active">العربية</a>
+  </div>
+
+  <!-- ============ PROFILE HEADER ============ -->
+  <div class="card">
+    <div class="profile-banner"></div>
+    <div class="profile-header">
+      <div class="avatar">ع ب</div>
+      <div class="profile-name">عبد الحق بورديم</div>
+      <div class="profile-headline">مهندس برمجيات مدمجة أول | C/C++ | RTOS | Embedded Linux | ARM Cortex | STM32 | +20 سنة خبرة | الطيران، الطب، السيارات، إنترنت الأشياء، V2G</div>
+      <div class="profile-location">منطقة باريس، فرنسا</div>
+      <div class="profile-contact">abdelhak.bourdim@gmail.com &bull; +33 6 19 51 51 73 &bull; workshop-diy.org</div>
+      <div class="profile-links">
+        <button class="btn-primary">مفتوح للفرص</button>
+        <button class="btn-outline">إضافة قسم للملف</button>
+        <button class="btn-outline">المزيد</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ نبذة عني ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">نبذة عني</div>
+      <div class="about-text">متخصص في البرمجيات المدمجة بخبرة تتجاوز 20 عامًا في تطوير البرمجيات الثابتة (Firmware) والطبقات الوسيطة (Middleware) وطبقات التطبيقات — bare metal وRTOS وEmbedded Linux — للأنظمة الحرجة والصناعية.
+
+أقوم بتصميم وتنفيذ برامج تشغيل منخفضة المستوى، وحزم بروتوكولات الاتصال (CAN، BLE، USB، TCP/IP)، وتطبيقات مدمجة على معماريات ARM Cortex وSTM32 وMicrochip وNXP.
+
+يمتد سجلي المهني عبر قطاعات عالية المتطلبات:
+<strong>الطيران:</strong> Safran، Thales، Zodiac — حلول مدمجة معتمدة وفق DO-178
+<strong>الأجهزة الطبية:</strong> GE Healthcare، Sorin — تطوير متوافق مع IEC 62304
+<strong>السيارات:</strong> Valeo، Arkamys — صوتيات GStreamer، تدقيق الاختبارات
+<strong>الأمن السيبراني لإنترنت الأشياء:</strong> Enedis — اختبار اختراق وتدقيق عدادات Linky الذكية
+<strong>الشحن الذكي للمركبات الكهربائية:</strong> E2-CAD — ISO 15118، V2G، تكامل OCPP
+<strong>أنظمة الدفع:</strong> Cartadis — 8 سنوات في بناء محطات التحكم بالوصول والدفع
+
+الخبرات الأساسية:
+C/C++ | Embedded Linux | FreeRTOS | VxWorks | ARM Cortex (M0, M4, A8) | STM32 | CAN/CANOpen | BLE | USB | TCP/IP | MISRA C | DO-178 | IEC 62304 | ISO 15118
+
+إلى جانب الهندسة، أسستُ <strong>Workshop-DIY</strong>، جمعية غير ربحية تقدم ورشات عمل في الروبوتيك وعلوم STEM للشباب (Arduino، ESP32، ذكاء اصطناعي، طباعة ثلاثية الأبعاد) — أكثر من 18 ورشة عمل وما زال العدد يتزايد.
+
+منفتح على تحديات جديدة في الأنظمة المدمجة والأمن السيبراني وV2G/الشحن الذكي.</div>
+    </div>
+  </div>
+
+  <!-- ============ الخبرة المهنية ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">الخبرة المهنية</div>
+
+      <!-- E2-CAD -->
+      <div class="exp-item">
+        <div class="exp-logo">E2</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — شحن المركبات الكهربائية / V2G</div>
+          <div class="exp-company-name">E2-CAD</div>
+          <div class="exp-dates">مايو 2025 – حتى الآن</div>
+          <div class="exp-location">إيرانيي، فرنسا</div>
+          <div class="exp-desc">
+            استلام المنتج وإعداد منصة الاختبار لمحطات شحن المركبات الكهربائية (Iotecha IP).
+            <ul>
+              <li>هندسة عكسية وتحليل الكود المصدري (البنية الساكنة والديناميكية)</li>
+              <li>مراجعة الكود المدمج على 3 لوحات (Microchip PIC، STM32)</li>
+              <li>تحليل بروتوكولات الاتصال بين وحدات Linux واللوحات المدمجة</li>
+              <li>تصميم منصة الاختبار: تكامل أدوات Chargebyte، محاكي المركبة الكهربائية</li>
+              <li>تصحيح أخطاء محطة الشحن وتشغيلها (PLC، HomePlug Green PHY، ISO 15118، OCPP)</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">Embedded Linux</span>
+            <span class="skill-badge">C/C++</span>
+            <span class="skill-badge">STM32</span>
+            <span class="skill-badge">ISO 15118</span>
+            <span class="skill-badge">OCPP</span>
+            <span class="skill-badge">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAFRAN -->
+      <div class="exp-item">
+        <div class="exp-logo">S</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — الطيران (SSPC)</div>
+          <div class="exp-company-name">Safran</div>
+          <div class="exp-dates">مارس 2024 – مايو 2025</div>
+          <div class="exp-location">كريتاي، فرنسا</div>
+          <div class="exp-desc">
+            تطوير برامج تشغيل منخفضة المستوى لنظام التحكم في الطاقة بالحالة الصلبة (SSPC).
+            <ul>
+              <li>تطوير وتحديث برامج التشغيل منخفضة المستوى بلغة C لنظام SSPC</li>
+              <li>أدوات التسجيل للتشخيص وتتبع التبادلات</li>
+              <li>اختبارات التحقق باستخدام Lauterbach TRACE32</li>
+              <li>سكربتات Bash/Awk لأتمتة عمليات الاختبار</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">Lauterbach TRACE32</span>
+            <span class="skill-badge">Bash</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASTERIOS -->
+      <div class="exp-item">
+        <div class="exp-logo">AT</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — الطيران (اختبار SOM)</div>
+          <div class="exp-company-name">Asterios Technologies</div>
+          <div class="exp-dates">أغسطس 2023 – فبراير 2024</div>
+          <div class="exp-location">ماسي، فرنسا</div>
+          <div class="exp-desc">
+            كتابة إجراءات اختبار البرمجيات لوحدة T1042SOM.
+            <ul>
+              <li>تطوير اختبارات التحقق بلغة C (معالج T1042)</li>
+              <li>تحليل أخطاء المعالج والحلول البرمجية البديلة</li>
+              <li>كتابة وثائق الاختبار المتوافقة مع متطلبات المشروع</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Polarion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- THALES GENNEVILLIERS -->
+      <div class="exp-item">
+        <div class="exp-logo">T</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — راديو الدفاع</div>
+          <div class="exp-company-name">Thales</div>
+          <div class="exp-dates">مايو 2022 – يوليو 2023</div>
+          <div class="exp-location">جنفيلييه، فرنسا</div>
+          <div class="exp-desc">
+            تطوير طبقة التطبيقات لبرنامج إعداد المهام ومشاريع N-MMR.
+            <ul>
+              <li>تطوير تطبيقات Embedded Linux بلغة C/C++ لمشروعين</li>
+              <li>إدارة التكوين وسكربتات الأتمتة</li>
+              <li>تطوير وتنفيذ اختبارات المستوى العالي (HLT)</li>
+              <li>إصلاح الأخطاء وتحليل بروتوكولات الشبكة (Websockets)</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">Embedded Linux</span>
+            <span class="skill-badge">C/C++</span>
+            <span class="skill-badge">Websockets</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VALEO -->
+      <div class="exp-item">
+        <div class="exp-logo">V</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — تدقيق الاختبارات</div>
+          <div class="exp-company-name">Valeo</div>
+          <div class="exp-dates">مارس – أبريل 2022</div>
+          <div class="exp-location">كريتاي، فرنسا</div>
+          <div class="exp-desc">
+            تدقيق اختبارات الوحدة والتكامل والأدوات لصالح Valeo مصر.
+            <ul>
+              <li>تدقيق عمليات وأدوات الاختبار (NI Mastre، Vector CANoe)</li>
+              <li>مقترحات لتحسين الأتمتة وتقليل زمن التنفيذ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARKAMYS -->
+      <div class="exp-item">
+        <div class="exp-logo">A</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — صوتيات السيارات</div>
+          <div class="exp-company-name">Arkamys</div>
+          <div class="exp-dates">يوليو 2021 – فبراير 2022</div>
+          <div class="exp-location">لوفالوا-بيريه، فرنسا</div>
+          <div class="exp-desc">
+            تطوير واختبار إضافات GStreamer للإطار الصوتي المدمج في السيارات.
+            <ul>
+              <li>تطوير إضافات GStreamer وبرنامج تشغيل CAN (ELM327)</li>
+              <li>اختبارات الوحدة والتكامل (Valgrind)، نظام البناء Buildroot</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">GStreamer</span>
+            <span class="skill-badge">Buildroot</span>
+            <span class="skill-badge">CAN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- THALES VELIZY -->
+      <div class="exp-item">
+        <div class="exp-logo">T</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — القطار المستقل</div>
+          <div class="exp-company-name">Thales</div>
+          <div class="exp-dates">نوفمبر 2020 – يونيو 2021</div>
+          <div class="exp-location">فيليزي-فيلاكوبلاي، فرنسا</div>
+          <div class="exp-desc">
+            اتصالات IPC وبرمجة المقابس لنظام تشغيل القطار المستقل (ATO).
+            <ul>
+              <li>ترحيل من 32-بت إلى 64-بت على Embedded Linux</li>
+              <li>تعريف وتنفيذ بروتوكول اتصال IPC</li>
+              <li>أدوات تشخيص الشبكة واختبارات التكامل</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">Embedded Linux</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">TCP/UDP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- PK VITALITY -->
+      <div class="exp-item">
+        <div class="exp-logo">PK</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — جهاز طبي (CGM)</div>
+          <div class="exp-company-name">PK Vitality</div>
+          <div class="exp-dates">يونيو – سبتمبر 2020</div>
+          <div class="exp-location">باريس، فرنسا</div>
+          <div class="exp-desc">
+            تطوير برامج تشغيل BLE وFreeRTOS وSTM32 TouchGFX لجهاز K'Watch لمراقبة الجلوكوز المستمرة.
+            <ul>
+              <li>تطوير HAL (AFE AD5940، PMIC DA9070)، برنامج تشغيل QSPI، BLE NRF52840</li>
+              <li>شاشة لمس STM32 TouchGFX، FreeRTOS، وضع الطاقة المنخفضة</li>
+              <li>اختبارات مخبرية ووثائق Doxygen (متوافقة مع IEC 62304)</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">STM32</span>
+            <span class="skill-badge">FreeRTOS</span>
+            <span class="skill-badge">BLE</span>
+            <span class="skill-badge">IEC 62304</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZODIAC -->
+      <div class="exp-item">
+        <div class="exp-logo">Z</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — الطيران (SSPC A350)</div>
+          <div class="exp-company-name">Zodiac Aerospace (Safran)</div>
+          <div class="exp-dates">فبراير 2017 – مارس 2020</div>
+          <div class="exp-location">مونتروي، فرنسا</div>
+          <div class="exp-desc">
+            برامج تشغيل منخفضة المستوى، تشخيص، وطبقات تطبيقات لمشاريع GENOME/CORAC/SSPC A350 AC9.
+            <ul>
+              <li>تكييف برامج تشغيل CAN، RS485، ذاكرة حرارية (dsPIC33)</li>
+              <li>تنفيذ بوابة uAFDX إلى CAN ووظائف التشخيص</li>
+              <li>تطوير وتحسين طبقة تطبيقات SSPC A350</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">Microchip dsPIC33</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">CAN</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ENEDIS -->
+      <div class="exp-item">
+        <div class="exp-logo">E</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس أمن سيبراني مدمج — الشبكات الذكية</div>
+          <div class="exp-company-name">Enedis</div>
+          <div class="exp-dates">مايو 2015 – سبتمبر 2016</div>
+          <div class="exp-location">نانتير، فرنسا</div>
+          <div class="exp-desc">
+            تدقيق الأمن السيبراني واختبار الاختراق على مركّزات عدادات Linky الذكية.
+            <ul>
+              <li>تشخيص وتدقيق أمان مركّزات Linky</li>
+              <li>اختبار اختراق على Embedded Linux (Kali Linux، Nmap)</li>
+              <li>التنصت على البروتوكولات واختبار Fuzzing (Wireshark، Scapy، SDR)</li>
+              <li>تدقيق ومراجعة الكود مع الشركات المصنعة (Sonar، PC Lint)</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">Kali Linux</span>
+            <span class="skill-badge">Pentesting</span>
+            <span class="skill-badge">Wireshark</span>
+            <span class="skill-badge">SDR</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- SORIN -->
+      <div class="exp-item">
+        <div class="exp-logo">So</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — جهاز طبي (منظم قلب BLE)</div>
+          <div class="exp-company-name">Sorin</div>
+          <div class="exp-dates">نوفمبر 2014 – أبريل 2015</div>
+          <div class="exp-location">كلامار، فرنسا</div>
+          <div class="exp-desc">
+            دراسة جدوى تكامل البلوتوث لزراعة القلب.
+            <ul>
+              <li>التحقق من وحدة Bluetooth Smart، ملف خدمة المنفذ التسلسلي</li>
+              <li>تطوير بروتوكول الاتصال مع الهاتف الذكي وتطبيق Android</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">BLE</span>
+            <span class="skill-badge">Cortex M0</span>
+            <span class="skill-badge">Android</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GE -->
+      <div class="exp-item">
+        <div class="exp-logo">GE</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — التصوير الطبي (الأشعة السينية)</div>
+          <div class="exp-company-name">General Electric Healthcare</div>
+          <div class="exp-dates">2012 – 2014</div>
+          <div class="exp-location">بوك، فرنسا</div>
+          <div class="exp-desc">
+            تكامل CANOpen على لوحات RCB وCORTYX لمولّد الأشعة السينية ZYX.
+            <ul>
+              <li>تكامل حزمة CANOpen (تابع/رئيسي)، تطوير برنامج تشغيل CAN</li>
+              <li>نقل نواة CMX-RTX، سكربتات اختبار TCL</li>
+              <li>دعم فني للفريق الأمريكي وزيارات ميدانية</li>
+            </ul>
+          </div>
+          <div class="exp-skills">
+            <span class="skill-badge">VxWorks</span>
+            <span class="skill-badge">CANOpen</span>
+            <span class="skill-badge">C/C++</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- EARLIER -->
+      <div class="exp-item">
+        <div class="exp-logo">$</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — أنظمة الدفع وإنترنت الأشياء</div>
+          <div class="exp-company-name">Photomaton / BCM / Vertical M2M / PGS</div>
+          <div class="exp-dates">2010 – 2012</div>
+          <div class="exp-location">باريس، فرنسا</div>
+          <div class="exp-desc">أنظمة الدفع والقياس عن بعد — تطوير مدمج كامل + تطوير PC على NXP LPC (USB، RFID، GSM/GPRS، Bluetooth).</div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-logo">C</div>
+        <div class="exp-content">
+          <div class="exp-title">مهندس برمجيات مدمجة — محطات الدفع</div>
+          <div class="exp-company-name">Cartadis</div>
+          <div class="exp-dates">أكتوبر 2001 – ديسمبر 2009</div>
+          <div class="exp-location">فونتناي-سو-بوا، فرنسا</div>
+          <div class="exp-desc">8 سنوات — محطات التحكم بالوصول والدفع: برامج تشغيل، تطبيقات مدمجة، حزم USB/TCP/IP، تشفير DES/RC4 (NEC V853، Hitachi H8S، NXP LPC، ATMEL AT91).</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ المهارات ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">المهارات</div>
+      <div class="skills-grid">
+        <span class="skill-item">برمجة C</span>
+        <span class="skill-item">C++</span>
+        <span class="skill-item">Embedded Linux</span>
+        <span class="skill-item">RTOS</span>
+        <span class="skill-item">FreeRTOS</span>
+        <span class="skill-item">VxWorks</span>
+        <span class="skill-item">ARM Cortex</span>
+        <span class="skill-item">STM32</span>
+        <span class="skill-item">تطوير البرمجيات الثابتة</span>
+        <span class="skill-item">CAN Bus</span>
+        <span class="skill-item">CANOpen</span>
+        <span class="skill-item">BLE</span>
+        <span class="skill-item">USB</span>
+        <span class="skill-item">TCP/IP</span>
+        <span class="skill-item">Python</span>
+        <span class="skill-item">Bash</span>
+        <span class="skill-item">MISRA C</span>
+        <span class="skill-item">DO-178</span>
+        <span class="skill-item">IEC 62304</span>
+        <span class="skill-item">ISO 15118</span>
+        <span class="skill-item">الأمن السيبراني</span>
+        <span class="skill-item">اختبار الاختراق</span>
+        <span class="skill-item">GStreamer</span>
+        <span class="skill-item">Buildroot</span>
+        <span class="skill-item">Wireshark</span>
+        <span class="skill-item">Git</span>
+        <span class="skill-item">Jira</span>
+        <span class="skill-item">Agile / Scrum</span>
+        <span class="skill-item">RFID</span>
+        <span class="skill-item">البطاقات الذكية</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ التعليم ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">التعليم</div>
+
+      <div class="edu-item">
+        <div class="edu-logo">&#127891;</div>
+        <div>
+          <div class="edu-school">AFPA، شامب-سور-مارن</div>
+          <div class="edu-degree">مهندس — تصميم الأنظمة الإلكترونية والمعلوماتية</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-logo">&#9764;</div>
+        <div>
+          <div class="edu-school">مستشفى تينون، باريس</div>
+          <div class="edu-degree">دبلوم دراسات عليا — الأجهزة الطبية الحيوية</div>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-logo">&#127891;</div>
+        <div>
+          <div class="edu-school">جامعة بومرداس، الجزائر</div>
+          <div class="edu-degree">مهندس — إلكترونيك، اتصالات</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ العمل التطوعي ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">العمل التطوعي</div>
+
+      <div class="vol-item">
+        <div class="vol-title">مؤسس</div>
+        <div class="vol-org">Workshop-DIY</div>
+        <div class="vol-dates">2020 – حتى الآن &bull; التعليم / العلوم والتكنولوجيا</div>
+        <div class="vol-desc">
+          جمعية غير ربحية تقدم ورشات عمل في الروبوتيك وعلوم STEM للشباب (من 6 إلى 12+ سنة) في شيل (77)، فرنسا.
+          <ul>
+            <li>تصميم مجموعة روبوت قائمة على ESP32 (WiFi، BLE، محركات سيرفو، مستشعرات)</li>
+            <li>قيادة أكثر من 18 ورشة عمل: Arduino، micro:bit، ذكاء اصطناعي، طباعة ثلاثية الأبعاد، قص بالليزر</li>
+            <li>تعليم الأنظمة المدمجة والبرمجة والإلكترونيات للشباب</li>
+          </ul>
+          workshop-diy.org
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ اللغات ============ -->
+  <div class="card">
+    <div class="card-body">
+      <div class="section-title">اللغات</div>
+      <div class="lang-item">
+        <span class="lang-name">الفرنسية</span>
+        <span class="lang-level">إتقان أصلي أو ثنائي اللغة</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">الإنجليزية</span>
+        <span class="lang-level">كفاءة مهنية عملية</span>
+      </div>
+      <div class="lang-item">
+        <span class="lang-name">العربية</span>
+        <span class="lang-level">إتقان أصلي أو ثنائي اللغة</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

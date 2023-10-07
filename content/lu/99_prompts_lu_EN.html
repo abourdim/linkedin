@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Search Prompts Luxembourg — Embedded Software Engineer</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 10pt; color: #222; line-height: 1.5; background: #fff; max-width: 210mm; margin: 0 auto; padding: 20px 28px; }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 4pt; letter-spacing: 0.5pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 20pt; }
+  h2 { font-size: 12pt; color: #fff; background: #0a66c2; padding: 5pt 12pt; border-radius: 4pt; margin: 20pt 0 8pt 0; letter-spacing: 0.8pt; }
+  h3 { font-size: 10pt; color: #0a66c2; margin: 12pt 0 4pt 0; padding-bottom: 2pt; border-bottom: 1pt solid #d0e3f3; }
+  .copy-box { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 8pt; font-size: 9.5pt; line-height: 1.55; color: #222; }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box { background: #f4f7fa; border: 1pt solid #d0e3f3; border-left: 3pt solid #0a66c2; border-radius: 0 4pt 4pt 0; padding: 12pt 16pt; margin-bottom: 10pt; font-size: 9.5pt; line-height: 1.6; color: #222; white-space: pre-wrap; word-wrap: break-word; font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .instruction { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 6pt; }
+  .version-label { display: inline-block; background: #0a66c2; color: #fff; font-size: 8pt; font-weight: 700; padding: 2pt 8pt; border-radius: 3pt; margin-bottom: 6pt; letter-spacing: 0.3pt; }
+  .toc { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 12pt 18pt; margin-bottom: 16pt; }
+  .toc-title { font-size: 10pt; font-weight: 700; color: #0a66c2; margin-bottom: 6pt; }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li { font-size: 9pt; padding: 2pt 0; color: #333; }
+  .toc li a { color: #0a66c2; text-decoration: none; }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num { display: inline-block; width: 24pt; font-weight: 700; color: #0a66c2; }
+  .lang-tag { display: inline-block; font-size: 7.5pt; font-weight: 700; padding: 1pt 6pt; border-radius: 3pt; margin-left: 4pt; vertical-align: middle; }
+  .lang-fr { background: #e8f0fe; color: #0a66c2; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 8pt 14pt; margin-bottom: 6pt; font-size: 9.5pt; }
+  .guide-step strong { color: #0a66c2; }
+  .order-num { display: inline-block; background: #0a66c2; color: #fff; font-size: 9pt; font-weight: 700; width: 20pt; height: 20pt; line-height: 20pt; text-align: center; border-radius: 50%; margin-right: 6pt; }
+  .warning-box { background: #fef9e7; border: 1pt solid #f9e79f; border-left: 3pt solid #f39c12; border-radius: 0 4pt 4pt 0; padding: 10pt 14pt; margin: 10pt 0; font-size: 9pt; color: #7d6608; }
+  .warning-box strong { color: #b7950b; }
+  .note { font-size: 8pt; color: #888; font-style: italic; margin-top: 4pt; }
+  @media print { body { padding: 0; } h2 { break-after: avoid; } .prompt-box { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>Job Search Prompts &mdash; Luxembourg</h1>
+<div class="subtitle">Embedded Software Engineer &bull; For use with ChatGPT, Claude, or any AI assistant &bull; Abdelhak Bourdim</div>
+
+<div class="toc">
+  <div class="toc-title">Table of Contents</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> Cover letter <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> Cover letter <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> LinkedIn connection requests <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> LinkedIn message to recruiter <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> Technical interview preparation <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> Analyze job posting <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> Salary negotiation Luxembourg <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> Cross-border vs Resident <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> Adapt CV for Luxembourg company <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> Networking message tech meetup <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> Research company before interview <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&rarr;</span> How to use</a></li>
+  </ul>
+</div>
+
+<h2 id="prompt1">Prompt 1 &mdash; Generate Cover Letter FR for Luxembourg Company <span class="lang-tag lang-fr">FR</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the Luxembourg job market.
+Write a cover letter in French for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Ingenieur Logiciel Embarque Senior]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., SES, IEE, Cebi, Post Luxembourg]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Betzdorf, Luxembourg City, Kockelscheuer]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / jobs.lu / Moovijob / ADEM / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. French professional format adapted to Luxembourg
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific Luxembourg company
+5. Mention availability and openness to cross-border/resident status
+6. Emphasize multilingualism (major asset in Luxembourg)
+7. End with an appropriate French closing formula
+8. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about Luxembourg's tech ecosystem.</div>
+
+<h2 id="prompt2">Prompt 2 &mdash; Generate Cover Letter EN for Luxembourg Company <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">Use this prompt replacing fields <span class="bracket">[IN BRACKETS]</span>:</p>
+<div class="prompt-box">You are an expert at writing cover letters for the Luxembourg job market.
+Write a cover letter in English for the following position:
+
+<strong>Position:</strong> <span class="bracket">[JOB TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Company:</strong> <span class="bracket">[COMPANY NAME &mdash; e.g., SES, IEE, Cebi, Post Luxembourg]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Betzdorf, Luxembourg City, Kockelscheuer]</span>
+<strong>Source:</strong> <span class="bracket">[LinkedIn / jobs.lu / Moovijob / ADEM / spontaneous application]</span>
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional English format adapted to Luxembourg
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific Luxembourg company
+5. Mention availability and openness to cross-border/resident status
+6. Emphasize multilingualism (major asset in Luxembourg)
+7. End with an appropriate closing
+8. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about Luxembourg's tech ecosystem and propose specific value.</div>
+
+<h2 id="prompt3">Prompt 3 &mdash; LinkedIn Connection Requests <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<p class="instruction">Ready to copy-paste (max 300 characters). Replace fields <span class="bracket">[IN BRACKETS]</span>.</p>
+
+<h3><span class="version-label">Version 1</span> Recruiter (FR)</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[FIRST NAME]</span>, je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded au Luxembourg. Serait-il possible d'echanger ? Cordialement, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Technical manager (FR)</h3>
+<div class="prompt-box">Bonjour <span class="bracket">[FIRST NAME]</span>, ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez <span class="bracket">[COMPANY]</span> au Luxembourg m'interesse beaucoup. Au plaisir d'echanger. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Recruiter (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). Exploring embedded roles in Luxembourg. Would love to connect. Best, Abdelhak</div>
+
+<h3><span class="version-label">Version 4</span> Hiring manager (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at <span class="bracket">[COMPANY]</span> in Luxembourg caught my interest. Happy to connect. Abdelhak</div>
+
+<h3><span class="version-label">Version 5</span> Peer (EN)</h3>
+<div class="prompt-box">Hi <span class="bracket">[FIRST NAME]</span>, fellow embedded engineer here. I've been following <span class="bracket">[COMPANY]</span>'s work in Luxembourg with interest. Exploring opportunities in the Grand Duchy. Would be great to connect. Abdelhak</div>
+
+<h2 id="prompt4">Prompt 4 &mdash; LinkedIn Message to Recruiter in Luxembourg <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">Write a short LinkedIn message (100-150 words) in English to reach out to a recruiter in Luxembourg.
+
+<strong>Recipient:</strong> <span class="bracket">[RECRUITER NAME &mdash; e.g., Sophie Martin]</span>
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., CTG Luxembourg, Alter Domus, SES]</span>
+<strong>Context:</strong> <span class="bracket">[internal recruiter / recruitment agency / technical manager]</span>
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales &mdash; DO-178) and medical (GE Healthcare &mdash; IEC 62304)
+- French citizen, available for CDI (permanent contract), open to cross-border or resident status
+- Trilingual: French, English, Arabic (asset for Luxembourg)
+- Mobility: cross-border France/Luxembourg or relocation
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in the company and Luxembourg ecosystem
+3. Be concise and direct
+4. Mention multilingualism as added value for Luxembourg's multicultural environment
+5. Propose a brief conversation without being pushy</div>
+
+<h2 id="prompt5">Prompt 5 &mdash; Technical Interview Preparation Luxembourg <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in technical interviews for embedded software engineer positions in Luxembourg.
+Prepare me for an interview at <span class="bracket">[COMPANY]</span> for the <span class="bracket">[JOB TITLE]</span> position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. <strong>10 likely technical questions</strong> for this role, with detailed answers based on my experience
+2. <strong>5 behavioral questions</strong> (STAR format) with example answers from my career
+3. <strong>5 questions I should ask</strong> the company (showing interest and seniority)
+4. <strong>3 Luxembourg-specific questions</strong>: labor law, collective agreement, benefits (13th month, meal vouchers, supplementary pension plan)
+5. <strong>How to approach the cross-border vs resident topic</strong> if it comes up
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Adapt to Luxembourg's multicultural and multilingual context
+- Mention specific tools and methods</div>
+
+<h2 id="prompt6">Prompt 6 &mdash; Analyze Luxembourg Job Posting <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in embedded recruitment in Luxembourg.
+Here is a job posting. Analyze it and help me prepare my application.
+
+<strong>Job posting:</strong>
+<span class="bracket">[PASTE THE FULL JOB POSTING TEXT HERE]</span>
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, available for CDI
+
+Perform the following tasks:
+1. <strong>Job analysis</strong>: identify required skills, nice-to-haves, and target profile
+2. <strong>Match score</strong>: rate my fit from 1 to 10, with justification
+3. <strong>Strengths</strong>: list my assets that best match this posting
+4. <strong>Gaps</strong>: identify any gaps and how to present them positively
+5. <strong>Cover letter</strong>: write a letter tailored to this specific posting (300-400 words)
+6. <strong>CV keywords</strong>: list keywords to emphasize (ATS optimization)
+7. <strong>Estimated salary</strong>: likely salary range in Luxembourg for this role (including 13th month, benefits)
+8. <strong>Luxembourg specifics</strong>: required languages, cross-border/resident status, tax advantages</div>
+
+<h2 id="prompt7">Prompt 7 &mdash; Salary Negotiation Luxembourg <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in salary negotiation for the Luxembourg market.
+
+<strong>Proposed position:</strong> <span class="bracket">[TITLE]</span>
+<strong>Company:</strong> <span class="bracket">[NAME]</span>
+<strong>Location:</strong> <span class="bracket">[CITY &mdash; e.g., Luxembourg City, Kirchberg, Cloche d'Or]</span>
+<strong>Contract type:</strong> CDI (permanent)
+<strong>Salary offer:</strong> <span class="bracket">[AMOUNT &mdash; e.g., 85,000 EUR/year]</span>
+<strong>Status:</strong> <span class="bracket">[cross-border / resident]</span>
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR
+
+Help me with:
+1. <strong>Evaluate the offer</strong>: is it within Luxembourg market range for this profile?
+2. <strong>Complete package</strong>: 13th month (mandatory by agreement?), meal vouchers (cheques-repas, usual amount), supplementary pension plan, health insurance, company car, bonus
+3. <strong>Negotiation points</strong>: what to negotiate beyond gross salary (remote work, extra vacation days, training, parking, commuting allowance)
+4. <strong>Cross-border vs Resident</strong>: tax impact, social security, practical implications
+5. <strong>Negotiation script</strong>: write 3 key phrases to negotiate professionally in Luxembourg
+6. <strong>Net calculation</strong>: estimate net salary (Luxembourg taxes if resident, French taxes if cross-border, social contributions ~12-15% employee)
+7. <strong>Things to avoid</strong>: common negotiation mistakes in Luxembourg</div>
+
+<h2 id="prompt8">Prompt 8 &mdash; Compare Cross-Border vs Resident Status <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in cross-border France-Luxembourg taxation and labor law.
+
+<strong>My situation:</strong>
+- French citizen
+- Senior embedded software engineer, expected gross salary: <span class="bracket">[AMOUNT &mdash; e.g., 85,000 EUR/year]</span>
+- Family status: <span class="bracket">[single / married / children]</span>
+- Current residence: <span class="bracket">[CITY IN FRANCE &mdash; e.g., Metz, Thionville, Longwy]</span>
+- Workplace: <span class="bracket">[CITY IN LUXEMBOURG &mdash; e.g., Luxembourg City, Kirchberg]</span>
+
+Compare in detail:
+1. <strong>Taxation</strong>: income tax (Luxembourg vs France scales), Luxembourg tax class (1, 1a, 2), tax credits, bilateral convention
+2. <strong>Social security</strong>: contribution rates, health coverage (CNS vs CPAM), dependency insurance, family benefits
+3. <strong>Retirement</strong>: Luxembourg pension, portability, quarters
+4. <strong>Cross-border advantages</strong>: no relocation needed, cheaper real estate in France, meal vouchers, mileage allowance
+5. <strong>Resident advantages</strong>: tax class 2 if married, child bonuses, proximity to work, integration, no remote work limit
+6. <strong>Remote work</strong>: 34-day rule for cross-border workers (France-Luxembourg agreement), tax implications if exceeded
+7. <strong>Net simulation</strong>: calculate net salary in both scenarios
+8. <strong>Recommendation</strong>: which status suits me best given my situation?
+
+Provide concrete and up-to-date figures.</div>
+
+<h2 id="prompt9">Prompt 9 &mdash; Adapt CV for Luxembourg Company <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in CV optimization for the Luxembourg market.
+
+<strong>Target company:</strong> <span class="bracket">[NAME &mdash; e.g., SES, IEE, Cebi, Post Luxembourg, Ampacet]</span>
+<strong>Target position:</strong> <span class="bracket">[TITLE &mdash; e.g., Senior Embedded Software Engineer]</span>
+<strong>Job description:</strong> <span class="bracket">[PASTE THE JOB POSTING OR KEY POINTS]</span>
+
+My full profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), V2G (E2-CAD)
+- Founder Workshop-DIY (robotics for youth)
+- Languages: FR native, EN professional, AR native
+
+Perform:
+1. <strong>Company analysis</strong>: sector, technologies used, culture, size, recent projects
+2. <strong>Priority keywords</strong>: terms to place at the top of CV to pass ATS filters
+3. <strong>Experience reordering</strong>: in what order to present my assignments to maximize impact
+4. <strong>Professional summary</strong>: write a 3-4 line summary adapted to this company
+5. <strong>Skills to highlight</strong>: ranked by relevance for this position
+6. <strong>Skills to downplay</strong>: which ones are off-topic for this application
+7. <strong>Languages section</strong>: how to present trilingualism for the Luxembourg market
+8. <strong>Cultural adaptation</strong>: Luxembourg-specific presentation in the CV</div>
+
+<h2 id="prompt10">Prompt 10 &mdash; Networking Message for Luxembourg Tech Meetup <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">Write a short message to introduce myself at a tech event / meetup in Luxembourg.
+
+<strong>Event:</strong> <span class="bracket">[NAME &mdash; e.g., Luxembourg Tech Meetup, Embedded Systems LU, IoT Luxembourg]</span>
+<strong>Format:</strong> <span class="bracket">[LinkedIn message / email / 30-second oral introduction]</span>
+<strong>Context:</strong> <span class="bracket">[networking / job search / knowledge sharing]</span>
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- Specialties: C/C++, RTOS, Embedded Linux, embedded cybersecurity
+- Critical standards: DO-178 (aero), IEC 62304 (medical), ISO 15118 (V2G)
+- Founder of Workshop-DIY (robotics for youth)
+- Trilingual FR/EN/AR
+
+Guidelines:
+1. Short and impactful (50-100 words for message, 30 seconds for oral)
+2. Mention what I can bring to the Luxembourg tech community
+3. Accessible and collegial tone, not salesy
+4. Show curiosity about Luxembourg's tech ecosystem
+5. Propose a concrete exchange (coffee, video call, collaboration)
+6. Adapt to the requested format (3 versions: LinkedIn, email, elevator pitch)</div>
+
+<h2 id="prompt11">Prompt 11 &mdash; Research Luxembourg Company Before Interview <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in strategic intelligence and interview preparation in Luxembourg.
+
+<strong>Company:</strong> <span class="bracket">[NAME &mdash; e.g., SES, IEE, Cebi, Post Luxembourg, Ampacet]</span>
+<strong>Target position:</strong> <span class="bracket">[TITLE]</span>
+<strong>Interview date:</strong> <span class="bracket">[DATE]</span>
+
+Research and summarize:
+1. <strong>General information</strong>: headquarters, size, revenue, number of employees, founding year
+2. <strong>Core business</strong>: sector, products/services, key clients, market positioning
+3. <strong>Technical team</strong>: technologies used, tech stack, recent projects, patents
+4. <strong>Company culture</strong>: stated values, atmosphere (Glassdoor/Kununu), diversity, remote work
+5. <strong>Recent news</strong>: acquisitions, partnerships, fundraising, new products (last 6 months)
+6. <strong>Luxembourg presence</strong>: role in ecosystem, local partnerships, ties with government/LIST/SnT
+7. <strong>Competitors</strong>: main direct competitors in Luxembourg and Europe
+8. <strong>Relevant questions</strong>: 5 smart questions to ask in interview based on this research
+9. <strong>Talking points</strong>: elements of my profile that resonate with the company's projects
+10. <strong>Red flags</strong>: potential warning signs (turnover, negative reviews, restructuring)
+
+Goal: arrive at the interview with deep knowledge of the company and the Luxembourg context.</div>
+
+<h2 id="guide">How to Use These Prompts</h2>
+
+<div class="guide-step"><span class="order-num">1</span> Copy the prompt you need</div>
+<div class="guide-step"><span class="order-num">2</span> Replace fields <span class="bracket">[IN BRACKETS]</span> with your information</div>
+<div class="guide-step"><span class="order-num">3</span> Paste into ChatGPT, Claude, or any AI</div>
+<div class="guide-step"><span class="order-num">4</span> Adapt the response to your personal style</div>
+
+<div class="warning-box">
+  <strong>IMPORTANT:</strong> Never send AI-generated text without reviewing and personalizing it. AI is a support tool, not a replacement for your judgment.
+</div>
+
+<h3>Recommended order for an application</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>Prompt 6</strong> &mdash; Analyze the posting &rarr; understand what the company wants<br><br>
+  <span class="order-num">2</span> <strong>Prompt 11</strong> &mdash; Research the company &rarr; know the context<br><br>
+  <span class="order-num">3</span> <strong>Prompt 9</strong> &mdash; Adapt the CV &rarr; personalize for the posting<br><br>
+  <span class="order-num">4</span> <strong>Prompt 1 or 2</strong> &mdash; Cover letter &rarr; apply<br><br>
+  <span class="order-num">5</span> <strong>Prompt 4</strong> &mdash; LinkedIn message &rarr; network in parallel<br><br>
+  <span class="order-num">6</span> <strong>Prompt 5</strong> &mdash; Interview preparation &rarr; before each interview<br><br>
+  <span class="order-num">7</span> <strong>Prompt 7</strong> &mdash; Salary negotiation &rarr; when you receive an offer<br><br>
+  <span class="order-num">8</span> <strong>Prompt 8</strong> &mdash; Cross-border vs Resident &rarr; decide on status
+</div>
+
+</body>
+</html>

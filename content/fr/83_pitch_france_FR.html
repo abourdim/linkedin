@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pitch 2 Minutes — Marche Francais — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 2pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 16pt; }
+  .badge {
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 7.5pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 10pt;
+    letter-spacing: 0.5pt;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 18pt 0 10pt 0; letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt; color: #0a66c2;
+    margin: 14pt 0 6pt 0; padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+
+  /* Script box */
+  .script-box {
+    background: #f8fbfe;
+    border: 1.5pt solid #d0e3f3;
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.75;
+    color: #222;
+  }
+  .script-box p { margin-bottom: 10pt; }
+  .script-box .pause {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    margin: 8pt 0;
+  }
+  .script-box .sector { color: #1a5276; font-weight: 600; }
+  .script-box .company { color: #0a66c2; font-weight: 600; }
+  .script-box .norm { color: #888; font-style: italic; }
+  .script-box .adapt {
+    background: #fff3cd;
+    border: 1pt dashed #f0ad4e;
+    border-radius: 4pt;
+    padding: 6pt 10pt;
+    font-size: 9.5pt;
+    color: #856404;
+    margin: 8pt 0;
+  }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 6pt;
+    flex-wrap: wrap;
+    margin: 8pt 0 12pt;
+  }
+  .time-block {
+    flex: 1;
+    min-width: 90pt;
+    background: #eaf2f8;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    text-align: center;
+    border-top: 3pt solid #0a66c2;
+  }
+  .time-block .time-label {
+    font-size: 8pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; letter-spacing: 0.5pt;
+  }
+  .time-block .time-sec {
+    font-size: 16pt; font-weight: 700; color: #1a5276;
+    margin: 2pt 0;
+  }
+  .time-block .time-desc {
+    font-size: 7.5pt; color: #555;
+  }
+
+  /* Tips */
+  .tip-list { list-style: none; padding: 0; }
+  .tip-list li {
+    padding: 5pt 0 5pt 20pt;
+    position: relative;
+    font-size: 9.5pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+  .tip-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  /* Variant cards */
+  .variant {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 10pt 14pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .variant-title {
+    font-size: 9.5pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; margin-bottom: 4pt;
+  }
+  .variant-focus { font-size: 9pt; color: #333; margin-bottom: 3pt; }
+  .variant-quote {
+    font-size: 9pt; color: #555; font-style: italic;
+    border-left: 2pt solid #ddd;
+    padding-left: 8pt; margin-top: 4pt;
+  }
+  .variant-hook {
+    font-size: 9pt; color: #0a66c2; font-weight: 600;
+    margin-top: 4pt;
+  }
+
+  /* Diff badge */
+  .diff-fr {
+    display: inline-block;
+    background: #e8f5e9;
+    color: #2e7d32;
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 1pt 6pt;
+    border-radius: 8pt;
+    margin-left: 6pt;
+    vertical-align: middle;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .variant { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pitch 2 Minutes — Marche Francais</h1>
+<div class="subtitle">"Parlez-moi de vous" &bull; Abdelhak Bourdim &bull; Ingenieur Logiciel Embarque Senior &bull; <span class="badge">Adapte France / IDF</span></div>
+
+<!-- TIMING -->
+<h2>Structure &amp; Timing</h2>
+<div class="timeline">
+  <div class="time-block">
+    <div class="time-label">Qui je suis</div>
+    <div class="time-sec">10s</div>
+    <div class="time-desc">Nom, titre, 20+ ans</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ce que je fais</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">C/C++, RTOS, Linux, MCU</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Mes preuves</div>
+    <div class="time-sec">60s</div>
+    <div class="time-desc">4 secteurs critiques</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ma difference</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Workshop-DIY, initiative</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Pourquoi vous</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Entreprise / secteur</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ouverture</div>
+    <div class="time-sec">5s</div>
+    <div class="time-desc">Dispo IDF</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<h2>Script</h2>
+<div class="script-box">
+  <p>Bonjour, je suis <strong>Abdelhak Bourdim</strong>, ingenieur logiciel embarque senior avec <strong>plus de 20 ans d'experience</strong>.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Mon metier, c'est de developper du logiciel embarque bas niveau — firmware, drivers, stacks de communication — en <strong>C/C++</strong> sur des architectures <strong>ARM Cortex, STM32, Microchip</strong> et <strong>NXP</strong>, aussi bien en bare metal qu'avec des RTOS comme <strong>FreeRTOS</strong> et <strong>VxWorks</strong>, ou sous <strong>Linux embarque</strong>.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Ce qui fait la particularite de mon parcours, c'est la diversite des <strong>secteurs critiques</strong> dans lesquels j'ai travaille :</p>
+
+  <p>En <span class="sector">aeronautique</span>, chez <span class="company">Safran</span> et <span class="company">Thales</span>, j'ai developpe des drivers bas niveau et des couches applicatives conformes a la norme <span class="norm">DO-178</span>.</p>
+
+  <p>Dans le <span class="sector">medical</span>, chez <span class="company">GE Healthcare</span> et <span class="company">Sorin</span>, j'ai integre des stacks CANOpen et developpe des modules BLE pour pacemaker, conformes a l'<span class="norm">IEC 62304</span>.</p>
+
+  <p>En <span class="sector">cybersecurite IoT</span>, chez <span class="company">Enedis</span>, j'ai mene des audits de securite et des tests d'intrusion sur les concentrateurs Linky.</p>
+
+  <p>Et plus recemment, en <span class="sector">recharge de vehicules electriques</span> chez <span class="company">E2-CAD</span>, je travaille sur l'integration <span class="norm">ISO 15118</span>, le protocole V2G et la mise en service de bornes de recharge.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Au-dela de la technique, j'ai fonde <strong>Workshop-DIY</strong>, une association qui propose des ateliers de robotique et d'electronique pour les jeunes. Ca illustre ma passion pour la transmission, l'innovation et l'esprit d'initiative.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <div class="adapt">ADAPTER ICI : "Ce qui m'interesse dans votre entreprise, c'est..." → voir les 6 variantes ci-dessous</div>
+
+  <p>Mon experience multisectorielle me permet de m'integrer rapidement et d'apporter une <strong>vision transversale</strong>.</p>
+
+  <p>Je suis base en <strong>Ile-de-France</strong> et <strong>disponible immediatement</strong>.</p>
+
+  <p><strong>C'est avec plaisir que je vous en dis plus sur mes realisations.</strong></p>
+</div>
+
+<!-- CONSEILS -->
+<h2>Conseils de Delivery <span class="diff-fr">ADAPTE FRANCE</span></h2>
+<ul class="tip-list">
+  <li>Rythme <strong>naturel et dynamique</strong> — plus fluide qu'en Suisse, mais rester pose</li>
+  <li>Regarder dans les yeux (ou la camera en visio)</li>
+  <li>Montrer de l'<strong>enthousiasme</strong> — c'est valorise en France</li>
+  <li>Les <strong>PAUSES</strong> restent importantes — elles structurent le discours</li>
+  <li>Ne PAS reciter — connaitre les blocs, pas le texte mot a mot</li>
+  <li>Si l'interlocuteur reagit, s'adapter et dialoguer</li>
+  <li>Avoir 3 anecdotes pretes pour approfondir chaque secteur</li>
+  <li>Ne <strong>PAS</strong> mentionner de pretentions salariales dans le pitch</li>
+  <li>Mettre en avant l'<strong>esprit d'equipe</strong> et la culture d'entreprise</li>
+</ul>
+
+<!-- VARIANTES -->
+<h2>6 Variantes selon l'entreprise <span class="diff-fr">MARCHE FRANCAIS</span></h2>
+
+<div class="variant">
+  <div class="variant-title">1. Aeronautique (Safran, Thales, Dassault)</div>
+  <div class="variant-focus">&rarr; Insister sur Safran + Thales + Zodiac = 6+ ans en aero &bull; DO-178, MISRA C, TRACE32</div>
+  <div class="variant-quote">"J'ai travaille 6 ans dans l'aeronautique, de Zodiac a Safran, sur des systemes SSPC et des radios defense. La rigueur DO-178 et la tracabilite sont au coeur de ma facon de travailler."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui m'attire chez [Safran/Thales/Dassault], c'est l'excellence technique et les projets a fort enjeu de surete."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">2. Automobile (Valeo, Stellantis)</div>
+  <div class="variant-focus">&rarr; Insister sur experience Valeo, AUTOSAR, bus CAN/LIN &bull; ISO 26262 (ASIL)</div>
+  <div class="variant-quote">"Mon experience chez Valeo m'a permis de maitriser les environnements AUTOSAR et les contraintes temps reel de l'automobile. Je comprends les cycles en V et les exigences de qualite du secteur."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui m'interesse chez [Valeo/Stellantis], c'est la transformation vers le vehicule intelligent et connecte."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">3. Medical (bioMerieux, Air Liquide Medical)</div>
+  <div class="variant-focus">&rarr; Insister sur GE Healthcare + Sorin + PK Vitality &bull; IEC 62304, Doxygen, tests in vitro, FDA</div>
+  <div class="variant-quote">"Le developpement medical exige une rigueur de documentation et de tracabilite que j'ai pratiquee pendant plusieurs annees, chez GE Healthcare comme chez Sorin pour des pacemakers."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui me motive dans le medical, c'est l'impact direct sur la vie des patients et l'exigence de qualite."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">4. IoT / Energie (Schneider Electric, EDF)</div>
+  <div class="variant-focus">&rarr; Insister sur Enedis/Linky, pentest, audit de code &bull; Kali Linux, Nmap, Scapy, SDR, HackRF</div>
+  <div class="variant-quote">"L'audit de securite des concentrateurs Linky m'a donne une vision complete des vulnerabilites des systemes embarques communicants et des enjeux de cybersecurite dans l'energie."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui m'interesse chez [Schneider/EDF], c'est l'alliance entre embarque, IoT et transition energetique."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">5. EV / Cleantech (TotalEnergies, Renault)</div>
+  <div class="variant-focus">&rarr; Insister sur E2-CAD, ISO 15118, OCPP, V2G &bull; PLC, HomePlug Green PHY</div>
+  <div class="variant-quote">"La mobilite electrique est un domaine qui me passionne, et mon experience actuelle en V2G et ISO 15118 est directement applicable a vos projets de recharge."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui me motive chez [TotalEnergies/Renault], c'est de contribuer a la transition energetique par l'innovation technique."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">6. ESN / Conseil (Capgemini Engineering, Alten)</div>
+  <div class="variant-focus">&rarr; Insister sur la polyvalence multi-secteurs (7 secteurs en 20 ans) &bull; adaptabilite rapide</div>
+  <div class="variant-quote">"En 20 ans, j'ai travaille dans 7 secteurs differents — aeronautique, medical, automobile, IoT, cybersecurite, recharge EV et industrie — ce qui me permet de m'adapter tres rapidement a tout nouveau contexte client."</div>
+  <div class="variant-hook">&rarr; ACCROCHE : "Ce qui m'attire dans une ESN comme [Capgemini Engineering/Alten], c'est la diversite des missions et la possibilite de continuer a elargir mon expertise."</div>
+</div>
+
+</body>
+</html>

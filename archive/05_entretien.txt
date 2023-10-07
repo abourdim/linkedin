@@ -1,0 +1,398 @@
+###############################################################################################################
+I am genuinely excited about this position because it aligns perfectly with my skills and passion for leveraging advanced technology to solve complex problems.
+The opportunity to contribute to a team that values innovation and continuous learning is particularly appealing.
+I am impressed by the company's commitment to excellence and its forward-thinking approach in the industry.
+Being part of such an environment, where I can apply my expertise and grow professionally, is something I find highly motivating.
+
+###############################################################################################################
+
+Salam,
+
+À retravailler :
+
+Je suis BOURDIM Abdelhak, le cœur de ma compétence : Ingénieur de développement de logiciels embarqués.
+J'ai aujourd'hui plus de 20 ans d'expérience.
+J'ai travaillé dans de petites entreprises comme CARTADIS (une PME de 30 employés) ainsi que dans de grands groupes
+comme GE avec plus de 1500 employés.
+
+J'ai eu l'opportunité de m'intégrer dans différents secteurs d'activité, et notamment :
+
+Environnements d'intervention
+==============================
+Ferroviaire
+Aéronautique
+Médical
+Smart Grids
+Systèmes de paiement
+Contrôle d'accès
+
+Je maîtrise l'ensemble des activités liées au développement d'un système embarqué :
+
+Valider le prototype (carte électronique) en testant les entrées/sorties,
+vérifiant les interfaces et niveaux logiques (adaptation des niveaux 3,3 V et 5 V par exemple).
+Développer les drivers bas niveau, que ce soit pour les interfaces RS232, RS485, SPI, I2C...
+
+Domaines de compétences
+=======================
+
+Notamment :
+
+Développement logiciel embarqué : avec des contraintes temps réel ou non, drivers bas niveau et applicatifs
+Développement en langage C/C++, Python, Perl, AWK, JavaScript, Bash
+Développement logiciel Linux embarqué
+Architecture logicielle
+
+Revue de conception, débogage et optimisation du code
+
+Rédaction et analyse de spécifications et extraction des exigences
+Rédaction de plans de validation
+Tests d'intégration logicielle
+Suivi des évolutions et des corrections
+Documentation
+
+
+Startup files
+Bootloader
+BSP
+Drivers
+Libraries
+Application
+
+Telnet
+SSH
+NFS
+
+
+
+Je reste à votre écoute pour tout renseignement concernant une mission ou tâche qui aurait attiré votre attention.
+
+Je tenais à vous dire d'abord que le projet qui m'a été présenté est très intéressant.
+
+En processus de recrutement.
+
+D'après ce que j'ai compris de votre projet,
+je vous propose de présenter... [créer le lien]
+Je vais sélectionner...
+
+###############################################################################################################
+N-MMR multimode receiver
+Le composant GPS est devenu obsolète.
+
+
+
+***** Rédaction de la SRS du nouveau mode en se basant sur le mode legacy
+en prenant en compte comme point d'entrée :
+	* La SSS
+	SYSTEM/SEGMENT SPECIFICATION
+	This specification defines the requirements concerning the functional and technical characteristics, the
+	designing and execution constraints and the verification strategy (IADT) for the digital MMR (Multi-Mode
+	Receiver) equipment and GPS antenna : TLS 2060 system.
+
+	* BDD
+	BITE DESCRIPTION DOCUMENT
+	This document specifies and describes the Built In test (BIT) for the digital MMR (Multi-Mode Receiver)
+	equipment and GPS antenna
+
+	This document contains the BIT characteristics about the approach/landing phases. The BIT characteristics
+	relating to the GPS part are not including in this document.
+
+	* INTERFACE CONTROL DOCUMENT (ICD)
+
+	The present document defines the functional and physical characteristics of the interfaces between the Multi Mode Receiver (MMR) TLS 2060 and the external systems.
+
+
+
+	* SYSTEM/SEGMENT DESIGN DOCUMENT
+
+	This document acts a reference for the development of the hardware and software
+
+	1.3 DOCUMENT OVERVIEW
+	This document describes for the previously identified system/sub-System:
+	*  the operational concepts (missions, operational and logistic support environments, architecture and operational scenarios selected),
+	*  the system/sub-System design items (hardware, software, labour, internal interfaces between components),
+	*  the processing resources,
+	*  the design models and evaluation criteria,
+	*  the traceability of the specification requirements to the system/sub-System components.
+	This document acts a reference for the development of the hardware and software of the previously identified system/sub-System.
+	It defines the allocation of performance capabilities and functionalities between the various components of the system/sub-System.
+	It provides complementary system requirements to the SSS and ICD documents.
+	These requirements may establish a link with either SSS or ICD requirements and therefore details or interprets these requirements.
+	They also act as design considerations derived requirements and, consequently, no link is provided with ICD / SSS requirements.
+
+**** Mise à jour du SDD (Software Design Document)
+
+**** Mise à jour du code
+	* SPD - Software Development Plan
+	* Architecture logicielle
+	* Exigences bas niveau
+	* Normes de codage
+
+**** Création du STD (Software Tests Description Document)
+	Identification des test cases pour couvrir chaque exigence
+
+	Identification des tests automatiques et tests manuels
+
+Rédaction du document qui décrit les procédures de test pour chaque test case
+
+Développement du code des procédures de test en Python
+
+Mise à jour du document STR (Software Test Results)
+
+Pour chaque document rédigé, une revue est prévue pour valider chaque document.
+
+
+** Création d'un outil de vérification des SRS et surtout la traçabilité
+
+
+###############################################################################################################
+
+**************************************************
+DO-178C
+
+Document d'orientation et lignes directrices pour le développement des logiciels de l'aviation civile.
+
+Conditions de défaillance :
+* Catastrophique → perte de vies humaines
+* Dangereux (Hazardous) → blessures graves
+* Majeur → panne → confort des passagers (ex. : climatisation)
+* Mineur → système de divertissement
+* Aucun effet → distributeur automatique
+
+
+Stratégies de vérification :
+* Examen (revue)
+* Analyse
+* Test
+
+Le niveau est défini par la nature de la panne.
+
+**************************************************
+Jenkins est un outil logiciel d'intégration continue.
+
+MISRA C est une norme de programmation en langage C.
+Elle spécifie les règles de programmation pour plus de sûreté.
+L'objectif est d'éviter des erreurs d'exécution provoquées par une construction de C incertaine,
+des faiblesses de structure du fait de malentendus entre les programmeurs, et de garantir la validité des expressions.
+
+Clean Code :
+Un code compréhensible de façon intuitive et facile à modifier.
+	* Le processus d'exécution de l'ensemble de l'application est logique et structuré de façon simple.
+	* Le rapport entre les différentes parties du code est transparent.
+	* La tâche ou le rôle de chaque classe, fonction, méthode et variable est immédiatement compréhensible.
+	* L'entretien du logiciel s'en trouve également facilité puisque les bugs peuvent être trouvés et corrigés facilement.
+
+Un code aussi simple que possible : KISS
+Éviter les répétitions inutiles : DRY
+Supprimer ce qui est inutile : YAGNI (You aren't gonna need it)
+La lisibilité avant la concision
+
+###############################################################################################################
+
+Les architectes conçoivent en Matlab/Simulink/SCADE des planches logiques.
+
+Traduction en langage embarquable, langage surcouche de C (psyC).
+
+On rentre dans la compréhension d'une tâche, la compréhension multi-cœur, comment fonctionne un noyau.
+
+Il faut avoir une culture embarquée.
+
+Vérification par la revue documentaire (SRS, architecture, design et le code)
+Tests haut niveau en face du SRS
+Tests unitaires en face du LLR
+Rédaction des scénarios de test (gestion des exigences Polarion)
+Procédures de test qui implémentent les cas de test (utilisation d'un framework à base de Python)
+Utilisation de Trace32
+Utilisation de Jenkins.
+Questions des CP : connaissance des tables de vérité, tables de décision, couverture MC/DC (couverture totale)
+Outil de tests unitaires : test logiciel
+Couverture sur les décisions ou sur les instructions
+Compliance du code à des standards
+Avez-vous participé aux revues d'exigences ? Avez-vous des check-lists pour les revues d'exigences ?
+Revue de code avec des fiches et des check-lists ?
+Connaissez-vous les règles MISRA, JSF, Embedded C ?
+Avez-vous déjà rencontré des standards de code ?
+Point d'arrêt : fouiller dans la structure mémoire.
+Qu'est-ce qui vous plaît et ne vous plaît pas ?
+Est-ce que ça vous est arrivé de critiquer le travail des gens ?
+Est-ce qu'on peut vous faire des remarques ?
+Documents en anglais. 2 jours sur site.
+
+
+
+##############################################################################################
+
+To be revised:
+
+My name is BOURDIM Abdelhak, and at the core of my expertise lies software development engineering for embedded systems.
+I have accumulated nearly 20 years of experience in this field.
+I have worked in both small companies like CARTADIS (a SME with 30 employees) and large corporations such as GE, which had over 1500 employees.
+
+I have had the opportunity to immerse myself in various sectors, including:
+
++ Railways
++ Aeronautics
++ Medical
++ Smart Grids
++ Payment Systems
++ Access Control
+
+Areas of Expertise are Particularly:
+
+* Writing and analyzing specifications, and extracting requirements.
+* Software architecture.
+* Embedded software development: dealing with real-time constraints or not, low-level drivers, and applications.
+* Proficiency in languages like C/C++, Python, Perl, Awk, JavaScript, and Bash.
+* Embedded Linux software development.
+Start-up files, bootloader, BSP, drivers, libraries, and applications.
+Telnet, SSH, NFS.
+
+* Design review, code debugging, and optimization.
+* Drafting validation plans.
+* Software integration testing.
+* Monitoring developments and corrections.
+* Documentation.
+
+I am available to provide any further information regarding a mission or task that has caught your attention.
+
+I wanted to express how interested I am in the project presented to me.
+
+Currently in the recruitment process.
+
+From what I understood of your project,
+I propose to present... to create the link.
+I will select...
+
+###############################################################################################################
+
+N-MMR multimode receiver
+The GPS component has become obsolete.
+
+***** Drafting the SRS of the new mode based on the legacy mode,
+taking into account as an entry point:
+* SSS
+SYSTEM/SEGMENT SPECIFICATION
+This specification defines the requirements concerning the functional and technical characteristics, the
+designing and execution constraints, and the verification strategy (IADT) for the digital MMR (Multi-Mode
+Receiver) equipment and GPS antenna: TLS 2060 system.
+
+* BDD
+BITE DESCRIPTION DOCUMENT
+This document specifies and describes the Built-In Test (BIT) for the digital MMR (Multi-Mode Receiver)
+equipment and GPS antenna.
+
+This document contains the BIT characteristics about the approach/landing phases. The BIT characteristics
+relating to the GPS part are not included in this document.
+
+* INTERFACE CONTROL DOCUMENT (ICD)
+
+The present document defines the functional and physical characteristics of the interfaces between the Multi-Mode Receiver (MMR) TLS 2060 and the external systems.
+
+
+
+* SYSTEM/SEGMENT DESIGN DOCUMENT
+
+This document acts as a reference for the development of the hardware and software.
+
+1.3 DOCUMENT OVERVIEW
+This document describes for the previously identified system/sub-System:
+* the operational concepts (missions, operational and logistic support environments, architecture, and operational scenarios selected),
+* the system/sub-System design items (hardware, software, labor, internal interfaces between components),
+* the processing resources,
+* the design models and evaluation criteria,
+* the traceability of the specification requirements to the system/sub-System components.
+This document acts as a reference for the development of the hardware and software of the previously identified system/sub-System.
+It defines the allocation of performance capabilities and functionalities between the various components of the system/sub-System.
+It provides complementary system requirements to the SSS and ICD documents.
+These requirements may establish a link with either SSS or ICD requirements and therefore details or interprets these requirements.
+They also act as design considerations derived requirements and, consequently, no link is provided with ICD / SSS requirements.
+**** Update of the SDD software design document.
+
+**** Update of the code
+* SPD - Software Dev Plan
+* Software architecture
+* Low-level requirements
+* Coding standards
+
+**** Creation of the STD software tests description document
+Identification of test cases to cover each requirement.
+
+Identification of automatic tests and manual tests.
+Drafting of the document describing the test procedures for each test case.
+
+Development of the test procedure code in Python.
+
+Updating the STR - Software Test Results document.
+
+For each document written, a review is considered to validate each document.
+
+** Creation of a verification tool for SRS and especially traceability.
+
+###############################################################################################################
+
+DO-178C
+
+Guidance document and guidelines for the development of civil aviation software.
+
+Failure conditions:
+
+Catastrophic -> loss of life.
+Hazardous -> injuries.
+Major -> system failure -> passenger comfort - air conditioning.
+Minor -> entertainment system.
+No effect -> vending machine.
+Verification strategies:
+inspection
+analysis
+testing
+
+The level is defined by the nature of the failure.
+
+Jenkins is a continuous integration software tool.
+
+MISRA C is a C programming standard.
+It specifies programming rules for increased safety.
+The goal is to avoid runtime errors caused by uncertain C construction, structural weaknesses due to misunderstandings between programmers, and to ensure expression validity.
+
+Clean code:
+code that is intuitively understandable and easy to modify.
+* The execution process of the entire application is logically and simply structured.
+* The relationship between different parts of the code is transparent.
+* The task or role of each class, function, method, and variable is immediately understandable.
+
+* Software maintenance is also facilitated as bugs can be found and fixed easily.
+As simple a code as possible: KISS.
+Avoid unnecessary repetitions: DRY.
+Remove what is unnecessary: YAGNI.
+The principle of Clean Code YAGNI (You aren't gonna need it).
+Readability before conciseness.
+
+###############################################################################################################
+
+Architects design logical boards in Matlab/Simulink/SCADE.
+
+Translation into embeddable language overlay of C (psyC).
+
+Understanding multi-core processing, how a kernel works.
+
+Embedded culture is essential.
+
+Verification through document review (SRS, architecture, design, and code)
+High-level testing against SRS
+Unit testing against LLR
+Drafting test scenarios (requirement management polarion ???)
+Test procedure implementing test cases (using a Python-based framework)
+Using trace32
+Using Jenkins.
+CP questions: knowledge of Truth tables, decision tables, MCDC coverage (total coverage)
+Unit testing tool: software test
+Coverage on decisions or instructions
+Code compliance with standards
+Have you participated in requirement reviews? Do you have checklists for requirement reviews?
+Code review with cards and checklists?
+Do you know MISRA, JSF, embedded C rules?
+Have you encountered code standards before?
+Breakpoint question delve into memory structure.
+What do you like and dislike...
+Have you ever criticized people's work?
+Can people criticize you?
+Documents in English. 2 days on-site.

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Swiss CV — Abdelhak Bourdim — EN</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #222;
+    line-height: 1.42;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 16mm 18mm 14mm 18mm;
+    page-break-after: always;
+    position: relative;
+  }
+
+  .header {
+    display: flex;
+    gap: 18pt;
+    margin-bottom: 12pt;
+    padding-bottom: 10pt;
+    border-bottom: 2.5pt solid #1a5276;
+  }
+
+  .photo-placeholder {
+    width: 80pt;
+    height: 100pt;
+    border: 1.5pt solid #bbb;
+    border-radius: 4pt;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #999;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .header-info { flex: 1; }
+
+  .header-name {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1a5276;
+    letter-spacing: 1pt;
+    margin-bottom: 3pt;
+  }
+
+  .header-title {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 8pt;
+  }
+
+  .header-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4pt 20pt;
+    font-size: 8pt;
+    color: #444;
+  }
+
+  .header-details .detail {
+    display: flex;
+    align-items: center;
+    gap: 4pt;
+  }
+
+  .detail-label {
+    font-weight: 600;
+    color: #1a5276;
+  }
+
+  .header-tagline {
+    margin-top: 8pt;
+    font-size: 8pt;
+    color: #2980b9;
+    font-weight: 600;
+    padding: 4pt 8pt;
+    background: #eaf2f8;
+    border-radius: 3pt;
+    display: inline-block;
+  }
+
+  .section { margin-bottom: 9pt; }
+
+  .section-title {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1a5276;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    padding-bottom: 3pt;
+    border-bottom: 1.5pt solid #2980b9;
+    margin-bottom: 7pt;
+  }
+
+  .profile-text {
+    font-size: 8.2pt;
+    color: #333;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  .exp-block {
+    margin-bottom: 7pt;
+    page-break-inside: avoid;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .exp-company {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .exp-dates {
+    font-size: 7.5pt;
+    color: #777;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .exp-role {
+    font-size: 8.5pt;
+    font-weight: 600;
+    color: #2980b9;
+    margin-bottom: 1pt;
+  }
+
+  .exp-subtitle {
+    font-size: 7.5pt;
+    color: #888;
+    font-style: italic;
+    margin-bottom: 2pt;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .exp-bullets li {
+    font-size: 7.8pt;
+    color: #333;
+    padding-left: 10pt;
+    position: relative;
+    margin-bottom: 1.5pt;
+    line-height: 1.35;
+  }
+
+  .exp-bullets li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2980b9;
+    font-size: 7pt;
+  }
+
+  .exp-env {
+    font-size: 7pt;
+    color: #888;
+    margin-top: 2pt;
+  }
+
+  .exp-env strong { color: #666; }
+
+  .skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.8pt;
+  }
+
+  .skills-table td {
+    padding: 2pt 6pt;
+    vertical-align: top;
+    border-bottom: 0.5pt solid #eee;
+  }
+
+  .skills-table .sk-label {
+    width: 28%;
+    font-weight: 600;
+    color: #1a5276;
+    font-size: 7.5pt;
+  }
+
+  .skills-table .sk-value { color: #333; }
+
+  .tag {
+    display: inline-block;
+    background: #eaf2f8;
+    border: 0.5pt solid #bdd7ee;
+    color: #1a5276;
+    font-size: 7pt;
+    padding: 2pt 6pt;
+    border-radius: 3pt;
+    margin: 0 3pt 3pt 0;
+    font-weight: 600;
+  }
+
+  .edu-item { margin-bottom: 5pt; }
+
+  .edu-school {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .edu-degree {
+    font-size: 8pt;
+    color: #333;
+  }
+
+  .lang-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2pt 0;
+    font-size: 8pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+
+  .lang-row:last-child { border-bottom: none; }
+
+  .lang-name {
+    font-weight: 600;
+    color: #333;
+  }
+
+  .lang-level {
+    color: #2980b9;
+    font-style: italic;
+  }
+
+  .two-col {
+    display: flex;
+    gap: 20pt;
+  }
+
+  .two-col .col-left { flex: 1; }
+  .two-col .col-right { flex: 1; }
+
+  .old-exp { margin-bottom: 4pt; }
+
+  .old-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .old-exp-company {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .old-exp-dates {
+    font-size: 7pt;
+    color: #888;
+    font-style: italic;
+  }
+
+  .old-exp-desc {
+    font-size: 7.5pt;
+    color: #555;
+    line-height: 1.3;
+  }
+
+  .asso-box {
+    background: #f8fbfe;
+    border: 1pt solid #d4e6f1;
+    border-radius: 4pt;
+    padding: 6pt 10pt;
+    margin-top: 4pt;
+  }
+
+  .asso-name {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a5276;
+  }
+
+  .asso-role {
+    font-size: 7pt;
+    color: #2980b9;
+    font-weight: 600;
+    margin-bottom: 3pt;
+  }
+
+  .asso-desc {
+    font-size: 7.2pt;
+    color: #555;
+    line-height: 1.35;
+    margin-bottom: 2pt;
+  }
+
+  .footer-note {
+    margin-top: 8pt;
+    font-size: 7pt;
+    color: #aaa;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ PAGE 1 ═══════════════ -->
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="photo-placeholder">
+      Your professional<br>photo here<br>(replace this)
+    </div>
+    <div class="header-info">
+      <div class="header-name">Abdelhak Bourdim</div>
+      <div class="header-title">Senior Embedded Software Engineer &mdash; C/C++ &bull; RTOS &bull; Embedded Linux</div>
+      <div class="header-details">
+        <div class="detail"><span class="detail-label">Date of birth:</span> 20 August 1969</div>
+        <div class="detail"><span class="detail-label">Nationality:</span> French</div>
+        <div class="detail"><span class="detail-label">Status:</span> Married</div>
+        <div class="detail"><span class="detail-label">Permit:</span> Driving license B &bull; Eligible for Swiss G permit (cross-border)</div>
+        <div class="detail"><span class="detail-label">Email:</span> abdelhak.bourdim@gmail.com</div>
+        <div class="detail"><span class="detail-label">Phone:</span> +33 6 19 51 51 73</div>
+        <div class="detail"><span class="detail-label">Location:</span> Paris area, France</div>
+        <div class="detail"><span class="detail-label">LinkedIn:</span> linkedin.com/in/abdelhak-bourdim-96416122</div>
+        <div class="detail"><span class="detail-label">Website:</span> workshop-diy.org</div>
+      </div>
+      <div class="header-tagline">Mobility: Western Switzerland (Geneva / Lausanne) &mdash; Available immediately</div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="section">
+    <div class="section-title">Profile</div>
+    <p class="profile-text">
+      Embedded software specialist with <strong>over 20 years of experience</strong> developing firmware, middleware, and application layers &mdash; bare metal, RTOS, and Embedded Linux &mdash; for critical and industrial systems. Designing low-level drivers, communication stacks (CAN, BLE, USB, TCP/IP), and embedded applications on ARM Cortex, STM32, Microchip, and NXP architectures.
+    </p>
+    <p class="profile-text" style="margin-top: 3pt;">
+      Delivered certified solutions for <strong>aerospace</strong> (Safran, Thales &mdash; DO-178), <strong>medical devices</strong> (GE Healthcare, Sorin &mdash; IEC 62304), <strong>automotive</strong> (Valeo, Arkamys), <strong>IoT cybersecurity</strong> (Enedis &mdash; Linky), <strong>payment systems</strong> (Cartadis), and <strong>V2G smart charging</strong> (E2-CAD &mdash; ISO 15118). MISRA C compliant development.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+
+    <!-- E2-CAD -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">E2-CAD &mdash; Eragny, France</span>
+        <span class="exp-dates">May 2025 &ndash; Present</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; EV Charging / V2G</div>
+      <div class="exp-subtitle">EV Charging Station &mdash; Iotecha IP</div>
+      <ul class="exp-bullets">
+        <li>Reverse engineering and source code analysis (static and dynamic architecture)</li>
+        <li>Embedded code review on 3 boards (Microchip PIC, STM32), debug tools setup (ST-Link, nsprog)</li>
+        <li>Communication protocol analysis between Linux modules and embedded boards (RS232, I2C, Saleae)</li>
+        <li>Python extension development and real-time HTML web report generation</li>
+        <li>Test bench design and setup: Chargebyte tools integration, EV simulator</li>
+        <li>Charging station debug and commissioning (PLC, HomePlug Green PHY, ISO 15118, OCPP)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Microchip PIC, STM32, PLC, HomePlug Green PHY, ISO 15118, OCPP, CAN, TCP/IP, Saleae, HackRF One, Python, Bash</div>
+    </div>
+
+    <!-- SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Safran &mdash; Creteil, France</span>
+        <span class="exp-dates">Mar 2024 &ndash; May 2025</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Aerospace (SSPC)</div>
+      <div class="exp-subtitle">Solid State Power Controller &mdash; Low-level driver updates</div>
+      <ul class="exp-bullets">
+        <li>Development and update of low-level C drivers for the SSPC system</li>
+        <li>Implementation of logging tools for diagnostics and exchange traceability</li>
+        <li>Writing and execution of on-target validation tests with Lauterbach TRACE32</li>
+        <li>Bash/Awk scripting for test process automation</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> C, Lauterbach TRACE32, Bash, Awk</div>
+    </div>
+
+    <!-- ASTERIOS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Asterios Technologies &mdash; Massy, France</span>
+        <span class="exp-dates">Aug 2023 &ndash; Feb 2024</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Aerospace (SOM Testing)</div>
+      <ul class="exp-bullets">
+        <li>C development of validation tests for the SOM module (T1042 processor)</li>
+        <li>Processor errata analysis and software workaround identification</li>
+        <li>Test documentation writing compliant with project requirements</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> C, Bash, Python, Lauterbach TRACE32, Polarion</div>
+    </div>
+
+    <!-- THALES GENNEVILLIERS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Gennevilliers, France</span>
+        <span class="exp-dates">May 2022 &ndash; Jul 2023</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Defense Radio</div>
+      <div class="exp-subtitle">LPM + N-MMR Projects &mdash; Mission preparation &amp; Multi Mode Receiver</div>
+      <ul class="exp-bullets">
+        <li>Application layer development under Embedded Linux in C/C++ for 2 projects</li>
+        <li>Configuration management and automation scripts (Bash, Curl, Tshark)</li>
+        <li>Development and execution of HLT (High Level Tests)</li>
+        <li>Bug fixing and network protocol analysis (Websockets)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Bash, Websockets, Curl, Tshark, Python</div>
+    </div>
+
+    <!-- VALEO -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Valeo &mdash; Creteil, France</span>
+        <span class="exp-dates">Mar &ndash; Apr 2022</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Test Audit</div>
+      <ul class="exp-bullets">
+        <li>Audit of test processes and tools (NI Mastre, Vector CANoe)</li>
+        <li>Automation proposals and client/system requirements review</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> NI Mastre, Vector CANoe</div>
+    </div>
+
+    <!-- ARKAMYS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Arkamys &mdash; Levallois-Perret, France</span>
+        <span class="exp-dates">Jul 2021 &ndash; Feb 2022</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Automotive Audio</div>
+      <ul class="exp-bullets">
+        <li>GStreamer plugin and CAN driver (ELM327) development, diagnostic tools</li>
+        <li>Unit and integration testing (Valgrind), build system Buildroot</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Buildroot, GStreamer, Valgrind, CAN, Python, Jira</div>
+    </div>
+
+</div>
+</div>
+
+<!-- ═══════════════ PAGE 2 ═══════════════ -->
+<div class="page">
+
+  <div class="section">
+    <div class="section-title">Professional Experience <span style="font-size: 7.5pt; font-weight: 400; color: #999;">(continued)</span></div>
+
+    <!-- THALES VELIZY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Velizy-Villacoublay, France</span>
+        <span class="exp-dates">Nov 2020 &ndash; Jun 2021</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Autonomous Train (ATO)</div>
+      <ul class="exp-bullets">
+        <li>Application migration from 32-bit to 64-bit on Embedded Linux platform</li>
+        <li>IPC communication protocol definition and implementation</li>
+        <li>Network diagnostic tools development and integration testing</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C, UDP, TCP, Wireshark, Tshark, Python, Jira</div>
+    </div>
+
+    <!-- PK VITALITY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">PK Vitality &mdash; Paris, France</span>
+        <span class="exp-dates">Jun &ndash; Sep 2020</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Medical Device (CGM)</div>
+      <ul class="exp-bullets">
+        <li>HAL development (AFE AD5940, PMIC DA9070), QSPI driver, BLE NRF52840</li>
+        <li>STM32 TouchGFX touchscreen, FreeRTOS, low power mode</li>
+        <li>In vitro testing and Doxygen documentation (IEC 62304 compliant)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> STM32L4S9, NRF52840, C, C++, FreeRTOS, BLE, TouchGFX, Doxygen</div>
+    </div>
+
+    <!-- ZODIAC / SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Zodiac Aerospace (Safran) &mdash; Montreuil, France</span>
+        <span class="exp-dates">Feb 2017 &ndash; Mar 2020</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Aerospace (SSPC A350)</div>
+      <ul class="exp-bullets">
+        <li>Low-level layer adaptation: CAN, RS485 drivers, thermal memory (dsPIC33)</li>
+        <li>uAFDX to CAN gateway implementation and diagnostic functions</li>
+        <li>SSPC A350 application layer development and optimization</li>
+        <li>Validation testing and aerospace standards-compliant documentation</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Microchip dsPIC33, MPLAB, TI Concerto, CCS Studio, C</div>
+    </div>
+
+    <!-- ENEDIS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Enedis &mdash; Nanterre, France</span>
+        <span class="exp-dates">May 2015 &ndash; Sep 2016</span>
+      </div>
+      <div class="exp-role">Embedded Cybersecurity Engineer &mdash; Smart Grid</div>
+      <ul class="exp-bullets">
+        <li>Linky concentrator security diagnostics and audit</li>
+        <li>Penetration testing on Embedded Linux systems (Kali Linux, Nmap)</li>
+        <li>Protocol sniffing and fuzzing (Wireshark, Tshark, Scapy, SDR)</li>
+        <li>Code audit and review with manufacturers (Sonar, PC Lint)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Kali Linux, Embedded Linux, Nmap, Wireshark, Scapy, SDR, Python, Bash</div>
+    </div>
+
+    <!-- SORIN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Sorin &mdash; Clamart, France</span>
+        <span class="exp-dates">Nov 2014 &ndash; Apr 2015</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Medical (BLE Pacemaker)</div>
+      <ul class="exp-bullets">
+        <li>Bluetooth Smart module validation, Serial Port Service Profile development</li>
+        <li>Smartphone communication protocol development and Android application</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Cortex M0, Keil, C, BLE, Android</div>
+    </div>
+
+    <!-- GE HEALTHCARE -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">General Electric Healthcare &mdash; Buc, France</span>
+        <span class="exp-dates">2012 &ndash; 2014</span>
+      </div>
+      <div class="exp-role">Embedded Software Engineer &mdash; Medical Imaging (X-Ray)</div>
+      <ul class="exp-bullets">
+        <li>CANOpen stack integration (slave/master), CAN driver and service development</li>
+        <li>CMX-RTX kernel porting, USA team technical support and on-site visits</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> TI TMS320, ARM Cortex A8, VxWorks, C, C++</div>
+    </div>
+
+    <!-- EARLIER -->
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Photomaton / BCM / Vertical M2M / PGS &mdash; Paris</span>
+        <span class="old-exp-dates">2010 &ndash; 2012</span>
+      </div>
+      <div class="old-exp-desc">Payment systems and remote metering &mdash; Full embedded + PC development on NXP LPC (USB, RFID, GSM/GPRS, Bluetooth)</div>
+    </div>
+
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Cartadis &mdash; Fontenay-sous-Bois, France</span>
+        <span class="old-exp-dates">Oct 2001 &ndash; Dec 2009</span>
+      </div>
+      <div class="old-exp-desc"><strong>8 years</strong> &mdash; Access control and payment terminals: drivers, embedded applications, USB/TCP/IP stacks, DES/RC4 encryption (NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91)</div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <table class="skills-table">
+      <tr><td class="sk-label">Languages</td><td class="sk-value">C, C++, Python, Bash, Assembly, Perl, Awk</td></tr>
+      <tr><td class="sk-label">OS / RTOS</td><td class="sk-value">Embedded Linux, VxWorks, FreeRTOS, UCOSII, Tnkernel</td></tr>
+      <tr><td class="sk-label">Microcontrollers</td><td class="sk-value">ARM Cortex (M0, M4, A8), STM32, NRF52, ESP32, Microchip PIC/dsPIC, NXP LPC, TI DSP/Concerto</td></tr>
+      <tr><td class="sk-label">Protocols / Bus</td><td class="sk-value">CAN, CANOpen, SPI, I2C, RS232, RS485, UART, USB, BLE, AFDX, Ethernet, TCP/UDP</td></tr>
+      <tr><td class="sk-label">Stacks</td><td class="sk-value">TCP/IP, USB Host/Device/HID, BLE, CANOpen, RFID, GStreamer</td></tr>
+      <tr><td class="sk-label">Security / Payment</td><td class="sk-value">Smart Card, RFID Mifare, DES, RC4, USB CCID, embedded pentesting</td></tr>
+      <tr><td class="sk-label">Tools</td><td class="sk-value">Lauterbach TRACE32, IAR, Keil, MPLAB, CCS Studio, Green Hills, Buildroot, CubeMx, TouchGFX</td></tr>
+      <tr><td class="sk-label">Management</td><td class="sk-value">Git, Synergy, Jira, Polarion, Doxygen, Wireshark, Saleae</td></tr>
+    </table>
+  </div>
+
+  <!-- STANDARDS -->
+  <div class="section">
+    <div class="section-title">Standards &amp; Methods</div>
+    <span class="tag">DO-178</span>
+    <span class="tag">MISRA C</span>
+    <span class="tag">IEC 62304</span>
+    <span class="tag">ISO 15118 (V2G)</span>
+    <span class="tag">ISO 14443 (Smart Card)</span>
+    <span class="tag">ISO 15693 (RFID)</span>
+    <span class="tag">OCPP</span>
+    <span class="tag">V-Model</span>
+    <span class="tag">Agile / Scrum</span>
+  </div>
+
+  <!-- TWO COLUMNS -->
+  <div class="two-col">
+    <div class="col-left">
+
+      <!-- EDUCATION -->
+      <div class="section">
+        <div class="section-title">Education</div>
+        <div class="edu-item">
+          <div class="edu-school">AFPA, Champs-sur-Marne, France</div>
+          <div class="edu-degree">Engineer &mdash; Electronic and Computer Systems Design</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">Tenon Hospital, Paris, France</div>
+          <div class="edu-degree">Postgraduate Diploma &mdash; Biomedical Instrumentation</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-school">University of Boumerdes, Algeria</div>
+          <div class="edu-degree">Engineer &mdash; Electronics, Communication</div>
+        </div>
+      </div>
+
+      <!-- LANGUAGES -->
+      <div class="section">
+        <div class="section-title">Languages</div>
+        <div class="lang-row"><span class="lang-name">French</span><span class="lang-level">Native / Bilingual</span></div>
+        <div class="lang-row"><span class="lang-name">English</span><span class="lang-level">Professional working</span></div>
+        <div class="lang-row"><span class="lang-name">Arabic</span><span class="lang-level">Native / Bilingual</span></div>
+      </div>
+
+    </div>
+    <div class="col-right">
+
+      <!-- SECTORS -->
+      <div class="section">
+        <div class="section-title">Industry Sectors</div>
+        <div style="font-size: 7.8pt; color: #333; line-height: 1.6;">
+          Aerospace (Safran, Thales, Zodiac)<br>
+          Medical (GE Healthcare, Sorin, PK Vitality)<br>
+          Automotive (Valeo, Arkamys)<br>
+          Energy / Smart Grid (Enedis &mdash; Linky)<br>
+          EV Charging / V2G (E2-CAD)<br>
+          IoT / M2M (Vertical M2M)<br>
+          Payment (Cartadis, Photomaton, BCM)
+        </div>
+      </div>
+
+      <!-- VOLUNTEER -->
+      <div class="section">
+        <div class="section-title">Volunteer Work</div>
+        <div class="asso-box">
+          <div class="asso-name">Workshop-DIY</div>
+          <div class="asso-role">Founder &mdash; Chelles, France &mdash; since 2020</div>
+          <div class="asso-desc">Robotics &amp; STEM workshops for youth (ages 6-12+)</div>
+          <div class="asso-desc">ESP32 robot kit design (WiFi, BLE, servos, sensors)</div>
+          <div class="asso-desc">18+ workshops: Arduino, micro:bit, AI, 3D printing</div>
+          <div class="asso-desc" style="margin-top: 3pt; color: #2980b9;">workshop-diy.org</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-note">References available upon request</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session Report — CV Optimization</title>
+<style>
+  :root {
+    --bg: #0f1923;
+    --card: #162232;
+    --blue: #2e6db4;
+    --light-blue: #4a8fd4;
+    --cyan: #5ecfcf;
+    --green: #4caf50;
+    --orange: #ff9800;
+    --red: #e74c3c;
+    --purple: #9b59b6;
+    --text: #c8d6e5;
+    --text-dim: #7a8fa0;
+    --text-bright: #e8f0f8;
+    --border: #1e3450;
+    --code-bg: #0a1220;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    background: linear-gradient(135deg, #0d1626 0%, #1a2a4a 50%, #0d1626 100%);
+    border-bottom: 2px solid var(--blue);
+    padding: 50px 40px 40px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2em;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .hero h1 span { color: var(--light-blue); }
+
+  .hero .subtitle {
+    font-size: 1.05em;
+    color: var(--text-dim);
+    margin-bottom: 16px;
+  }
+
+  .hero .meta {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 0.85em;
+    color: var(--text-dim);
+  }
+
+  .hero .meta span { display: flex; align-items: center; gap: 6px; }
+  .hero .meta .icon { color: var(--light-blue); }
+
+  /* ── Container ── */
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 24px 60px;
+  }
+
+  /* ── Timeline ── */
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--blue), var(--cyan), var(--green));
+  }
+
+  .step {
+    position: relative;
+    margin-bottom: 36px;
+  }
+
+  .step-dot {
+    position: absolute;
+    left: -33px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid;
+    background: var(--bg);
+  }
+
+  .step-dot.analyze { border-color: var(--orange); background: rgba(255, 152, 0, 0.2); }
+  .step-dot.build { border-color: var(--blue); background: rgba(46, 109, 180, 0.2); }
+  .step-dot.fix { border-color: var(--red); background: rgba(231, 76, 60, 0.2); }
+  .step-dot.success { border-color: var(--green); background: rgba(76, 175, 80, 0.2); }
+  .step-dot.enhance { border-color: var(--cyan); background: rgba(94, 207, 207, 0.2); }
+  .step-dot.deliver { border-color: var(--purple); background: rgba(155, 89, 182, 0.2); }
+
+  .step-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .step-header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .step-header h2 {
+    font-size: 1.15em;
+    color: var(--text-bright);
+  }
+
+  .step-header .step-num {
+    font-size: 0.8em;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .step-num.analyze { background: rgba(255, 152, 0, 0.15); color: var(--orange); border: 1px solid rgba(255, 152, 0, 0.3); }
+  .step-num.build { background: rgba(46, 109, 180, 0.15); color: var(--light-blue); border: 1px solid rgba(46, 109, 180, 0.3); }
+  .step-num.fix { background: rgba(231, 76, 60, 0.15); color: var(--red); border: 1px solid rgba(231, 76, 60, 0.3); }
+  .step-num.success { background: rgba(76, 175, 80, 0.15); color: var(--green); border: 1px solid rgba(76, 175, 80, 0.3); }
+  .step-num.enhance { background: rgba(94, 207, 207, 0.15); color: var(--cyan); border: 1px solid rgba(94, 207, 207, 0.3); }
+  .step-num.deliver { background: rgba(155, 89, 182, 0.15); color: var(--purple); border: 1px solid rgba(155, 89, 182, 0.3); }
+
+  .step-body {
+    padding: 18px 20px;
+  }
+
+  .step-body p {
+    margin-bottom: 10px;
+    font-size: 0.92em;
+  }
+
+  .step-body h3 {
+    color: var(--cyan);
+    font-size: 0.95em;
+    margin: 14px 0 8px;
+  }
+
+  .step-body ul {
+    padding-left: 18px;
+    margin-bottom: 10px;
+  }
+
+  .step-body li {
+    margin-bottom: 4px;
+    font-size: 0.9em;
+  }
+
+  /* ── Code ── */
+  .code-block {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin: 10px 0 14px;
+    overflow: hidden;
+  }
+
+  .code-header {
+    background: #1a2a3e;
+    padding: 5px 12px;
+    font-size: 0.72em;
+    color: var(--text-dim);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .code-header .tag {
+    background: rgba(46, 109, 180, 0.2);
+    color: var(--light-blue);
+    padding: 1px 7px;
+    border-radius: 3px;
+    font-size: 0.95em;
+  }
+
+  pre {
+    padding: 12px 16px;
+    overflow-x: auto;
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.82em;
+    line-height: 1.5;
+    color: var(--text);
+  }
+
+  .cmd { color: #5ecfcf; }
+  .str { color: #8bc34a; }
+  .comment { color: #546e7a; font-style: italic; }
+  .output { color: #7a8fa0; }
+  .prompt { color: #4a8fd4; user-select: none; }
+  .err { color: #e74c3c; }
+  .ok { color: #4caf50; }
+
+  .inline-code {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    color: var(--cyan);
+    font-family: 'Fira Code', monospace;
+  }
+
+  /* ── Problem / Solution boxes ── */
+  .problem-box, .solution-box {
+    border-radius: 5px;
+    padding: 12px 16px;
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+
+  .problem-box {
+    background: rgba(231, 76, 60, 0.06);
+    border-left: 3px solid var(--red);
+  }
+
+  .problem-box strong { color: var(--red); }
+
+  .solution-box {
+    background: rgba(76, 175, 80, 0.06);
+    border-left: 3px solid var(--green);
+  }
+
+  .solution-box strong { color: var(--green); }
+
+  /* ── Before/After table ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px;
+    font-size: 0.88em;
+  }
+
+  thead th {
+    background: #1a2a3e;
+    color: var(--light-blue);
+    padding: 9px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.82em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--blue);
+  }
+
+  tbody td {
+    padding: 9px 14px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  tbody tr:hover { background: rgba(46, 109, 180, 0.04); }
+
+  .tag-red { color: var(--red); font-weight: 600; }
+  .tag-green { color: var(--green); font-weight: 600; }
+  .tag-blue { color: var(--light-blue); font-weight: 600; }
+  .tag-orange { color: var(--orange); font-weight: 600; }
+
+  /* ── Stats section ── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin: 20px 0;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .stat-card .number {
+    font-size: 2em;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .stat-card .label {
+    font-size: 0.78em;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── Final files section ── */
+  .file-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 16px 0;
+  }
+
+  .file-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 14px 18px;
+  }
+
+  .file-card .fname {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.82em;
+    margin-bottom: 4px;
+  }
+
+  .file-card .fdesc {
+    font-size: 0.8em;
+    color: var(--text-dim);
+  }
+
+  .pdf { color: var(--red); }
+  .docx { color: var(--green); }
+  .html { color: var(--orange); }
+  .py { color: var(--cyan); }
+  .guide { color: #ffcc02; }
+
+  /* ── Section dividers ── */
+  .section-divider {
+    text-align: center;
+    margin: 40px 0 30px;
+    position: relative;
+  }
+
+  .section-divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .section-divider span {
+    background: var(--bg);
+    padding: 0 20px;
+    position: relative;
+    color: var(--light-blue);
+    font-weight: 700;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+  }
+
+  .footer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.8em;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 700px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .file-grid { grid-template-columns: 1fr; }
+    .hero { padding: 30px 20px; }
+    .hero h1 { font-size: 1.6em; }
+    .hero .meta { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<div class="hero">
+  <h1>Session <span>Report</span></h1>
+  <p class="subtitle">CV Optimization — Abdelhak Bourdim</p>
+  <div class="meta">
+    <span><span class="icon">&#128197;</span> 26 Février 2026</span>
+    <span><span class="icon">&#9881;</span> 11 pages &rarr; 2 pages</span>
+    <span><span class="icon">&#128196;</span> 9 fichiers générés</span>
+    <span><span class="icon">&#128736;</span> 3 outils : WeasyPrint, python-docx, pandoc</span>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- ══════════ OVERVIEW STATS ══════════ -->
+<div class="stats-grid">
+  <div class="stat-card">
+    <span class="number" style="color: var(--red);">11</span>
+    <span class="label">Pages originales</span>
+  </div>
+  <div class="stat-card">
+    <span class="number" style="color: var(--green);">2</span>
+    <span class="label">Pages finales</span>
+  </div>
+  <div class="stat-card">
+    <span class="number" style="color: var(--light-blue);">4</span>
+    <span class="label">CV générés</span>
+  </div>
+  <div class="stat-card">
+    <span class="number" style="color: var(--cyan);">2</span>
+    <span class="label">Scripts créés</span>
+  </div>
+</div>
+
+<!-- ══════════ TIMELINE ══════════ -->
+<div class="section-divider"><span>Chronologie</span></div>
+
+<div class="timeline">
+
+  <!-- ── STEP 1: Analyse ── -->
+  <div class="step">
+    <div class="step-dot analyze"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Analyse du CV original</h2>
+        <span class="step-num analyze">Étape 1</span>
+      </div>
+      <div class="step-body">
+        <p>Lecture du PDF <span class="inline-code">01_cv_abdelhak_bourdim_fr_15082025.pdf</span> (11 pages, 266 KB).</p>
+
+        <h3>Problèmes identifiés</h3>
+        <table>
+          <thead>
+            <tr><th>Problème</th><th>Impact</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="tag-red">11 pages</span> — Beaucoup trop long</td><td>Recruteurs passent ~30s sur un CV</td></tr>
+            <tr><td>Pas de profil / accroche</td><td>Pas de valeur ajoutée visible immédiatement</td></tr>
+            <tr><td>Pas de section langues</td><td>Information manquante critique</td></tr>
+            <tr><td>Pas de normes (DO-178, MISRA C, IEC 62304)</td><td>Atout majeur non visible</td></tr>
+            <tr><td>Descriptions génériques ("Tests", "Documentation")</td><td>Pas d'impact / pas de différenciation</td></tr>
+            <tr><td>Toutes les missions également détaillées (2001-2025)</td><td>Missions de 2001 inutilement détaillées</td></tr>
+            <tr><td>Erreur de date GE Healthcare ("Juillet 201")</td><td>Erreur factuelle</td></tr>
+            <tr><td>Méthodologie : "Cycle en V" seul</td><td>Manque Agile/Scrum</td></tr>
+          </tbody>
+        </table>
+
+        <div class="code-block">
+          <div class="code-header">Commande pour lister les CV <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">ls -lt</span> ~/Downloads/02_cv/
+<span class="output">-rw-rw-r-- 266133 01_cv_abdelhak_bourdim_fr_15082025.pdf    (11 pages!)</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 2: V1 DOCX ── -->
+  <div class="step">
+    <div class="step-dot build"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>V1 — Premier CV DOCX (3 pages)</h2>
+        <span class="step-num build">Étape 2</span>
+      </div>
+      <div class="step-body">
+        <p>Première restructuration du CV en format DOCX classique avec python-docx.</p>
+
+        <h3>Actions</h3>
+        <ul>
+          <li>Installation de <span class="inline-code">python-docx</span></li>
+          <li>Création du script <span class="inline-code">generate_cv.py</span></li>
+          <li>Restructuration : profil + compétences + expériences récentes détaillées + anciennes condensées + formation</li>
+          <li>Ajout normes, langues, correction date GE</li>
+        </ul>
+
+        <div class="code-block">
+          <div class="code-header">Installation et génération <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">pip install</span> python-docx
+<span class="output">Successfully installed python-docx-1.2.0</span>
+
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_cv.py
+<span class="output">CV saved to: cv_abdelhak_bourdim_fr_2025_v2.docx</span></pre>
+        </div>
+
+        <h3>Résultat</h3>
+        <p><span class="tag-green">3 pages</span> au lieu de 11. Contenu restructuré mais design classique (une colonne).</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 3: Modern PDF ── -->
+  <div class="step">
+    <div class="step-dot enhance"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>V2 — Design moderne PDF (sidebar)</h2>
+        <span class="step-num enhance">Étape 3</span>
+      </div>
+      <div class="step-body">
+        <p>Demande utilisateur : <em>"peut on faire mieux comme presentation genious"</em>. Passage à HTML/CSS + WeasyPrint pour un design 2 colonnes avec sidebar bleu marine.</p>
+
+        <h3>Actions</h3>
+        <ul>
+          <li>Installation de <span class="inline-code">weasyprint</span></li>
+          <li>Création de <span class="inline-code">cv_modern.html</span> avec design sidebar</li>
+          <li>Initiales AB dans un cercle, dots de langues, tags de normes, icônes secteurs</li>
+        </ul>
+
+        <div class="code-block">
+          <div class="code-header">Installation et génération <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">pip install</span> weasyprint
+<span class="output">Successfully installed weasyprint-68.1</span>
+
+<span class="prompt">$ </span><span class="cmd">python3</span> -c "
+from weasyprint import HTML
+HTML('cv_modern.html').write_pdf('cv_abdelhak_bourdim_fr_2025_modern.pdf')
+"
+<span class="output">Done!</span></pre>
+        </div>
+
+        <h3>Résultat</h3>
+        <p><span class="tag-green">2 pages</span> avec design professionnel sidebar bleu marine.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 4: Questions user ── -->
+  <div class="step">
+    <div class="step-dot analyze"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Collecte d'informations complémentaires</h2>
+        <span class="step-num analyze">Étape 4</span>
+      </div>
+      <div class="step-body">
+        <p>Questions posées à l'utilisateur pour enrichir le CV :</p>
+        <table>
+          <thead>
+            <tr><th>Question</th><th>Réponse</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Format cible ?</td><td>DOCX</td></tr>
+            <tr><td>Type de poste ?</td><td>Freelance + ESN</td></tr>
+            <tr><td>Langues ?</td><td>Français, Anglais, Arabe</td></tr>
+            <tr><td>Normes ?</td><td>DO-178, MISRA C, IEC 62304</td></tr>
+          </tbody>
+        </table>
+
+        <p>Informations supplémentaires fournies par l'utilisateur :</p>
+        <ul>
+          <li><strong>LinkedIn :</strong> linkedin.com/in/abdelhak-bourdim-96416122</li>
+          <li><strong>Site web :</strong> workshop-diy.org (association de robotique à Chelles)</li>
+          <li><strong>Workshop-DIY :</strong> 18+ ateliers STEM, kit robot ESP32, projets IA</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 5: Fetch website ── -->
+  <div class="step">
+    <div class="step-dot analyze"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Analyse du site Workshop-DIY</h2>
+        <span class="step-num analyze">Étape 5</span>
+      </div>
+      <div class="step-body">
+        <p>Fetch et analyse de <span class="inline-code">workshop-diy.org</span> pour extraire les informations pertinentes pour le CV.</p>
+
+        <h3>Ce qui a été extrait</h3>
+        <ul>
+          <li>18+ ateliers hands-on (3 niveaux : débutant, intermédiaire, avancé)</li>
+          <li>Kit robot ESP32 (WiFi, BLE, servos, capteurs) vendu à 33&euro;</li>
+          <li>Projets GitHub : face detection, hand tracking, voice synthesis</li>
+          <li>Site multilingue (FR/EN/AR) avec multiples thèmes</li>
+          <li>Adresse : 11 Rue du Sillon, 77500 Chelles</li>
+        </ul>
+
+        <h3>Valeur ajoutée identifiée</h3>
+        <table>
+          <thead>
+            <tr><th>Sans l'association</th><th>Avec l'association</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Profil "exécutant" ESN</td><td><span class="tag-green">Entrepreneur technique</span></td></tr>
+            <tr><td>Que du C bas niveau</td><td><span class="tag-green">+ ESP32, Arduino, IA, Web</span></td></tr>
+            <tr><td>Pas de side projects</td><td><span class="tag-green">Projets actifs GitHub</span></td></tr>
+            <tr><td>Pas de soft skills visibles</td><td><span class="tag-green">Pédagogie, leadership, gestion</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 6: Version A + B ── -->
+  <div class="step">
+    <div class="step-dot build"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Création des Versions A et B (PDF)</h2>
+        <span class="step-num build">Étape 6</span>
+      </div>
+      <div class="step-body">
+        <p>Création de 2 versions HTML distinctes avec Workshop-DIY intégré différemment :</p>
+
+        <table>
+          <thead>
+            <tr><th></th><th>Version A</th><th>Version B</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Workshop-DIY</td><td>Encadré dans la sidebar p.2</td><td>1ère expérience (bloc highlight bleu)</td></tr>
+            <tr><td>Cible</td><td>ESN / Freelance</td><td>CDI / Lead technique</td></tr>
+            <tr><td>Points forts sidebar</td><td>6 items techniques</td><td>7 items (+ produit fini, pédagogie)</td></tr>
+            <tr><td>Secteurs</td><td>6 secteurs</td><td>7 secteurs (+ Éducation STEM)</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Ajouts communs aux 2 versions</h3>
+        <ul>
+          <li>LinkedIn dans la section Contact</li>
+          <li>workshop-diy.org dans la section Contact</li>
+          <li>ESP32, Arduino ajoutés aux microcontrôleurs</li>
+          <li>Mention Workshop-DIY dans le texte du profil</li>
+        </ul>
+
+        <div class="code-block">
+          <div class="code-header">Génération des 2 PDF <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">python3</span> -c "
+from weasyprint import HTML
+HTML('cv_version_A.html').write_pdf('cv_abdelhak_bourdim_VERSION_A.pdf')
+HTML('cv_version_B.html').write_pdf('cv_abdelhak_bourdim_VERSION_B.pdf')
+"
+<span class="output">Version A done
+Version B done</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 7: Problem V-B 3 pages ── -->
+  <div class="step">
+    <div class="step-dot fix"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Problème : Version B déborde sur 3 pages</h2>
+        <span class="step-num fix">Étape 7</span>
+      </div>
+      <div class="step-body">
+
+        <div class="problem-box">
+          <strong>&#9888; Problème</strong>
+          La Version B (avec Workshop-DIY en expérience complète) ajoutait trop de contenu en page 1. L'expérience Arkamys débordait seule sur une 3ème page.
+        </div>
+
+        <div class="solution-box">
+          <strong>&#10003; Solution — 6 ajustements CSS + contenu</strong>
+          <ol style="padding-left: 18px; margin-top: 6px;">
+            <li>Réduction du padding sidebar header (22pt → 18pt)</li>
+            <li>Réduction des initiales (60pt → 50pt)</li>
+            <li>Réduction du padding sections sidebar (12pt → 9pt)</li>
+            <li>Réduction du padding main (18pt → 14pt)</li>
+            <li>Workshop-DIY : 5 bullets → 4 (fusion site web dans dernière ligne)</li>
+            <li>Valeo : 3 bullets → 2 (condensé) / Arkamys : 4 bullets → 2</li>
+          </ol>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">Exemples des ajustements CSS <span class="tag">CSS</span></div>
+<pre><span class="comment">/* Avant */</span>
+.sidebar-header { padding: <span class="err">22pt</span> 14pt <span class="err">18pt</span> 14pt; }
+.sidebar-section { padding: <span class="err">12pt</span> 14pt <span class="err">8pt</span> 14pt; }
+.exp-block { margin-bottom: <span class="err">10pt</span>; }
+.main { padding: <span class="err">18pt</span> 18pt 14pt <span class="err">20pt</span>; }
+
+<span class="comment">/* Après */</span>
+.sidebar-header { padding: <span class="ok">18pt</span> 14pt <span class="ok">14pt</span> 14pt; }
+.sidebar-section { padding: <span class="ok">9pt</span> 14pt <span class="ok">6pt</span> 14pt; }
+.exp-block { margin-bottom: <span class="ok">8pt</span>; }
+.main { padding: <span class="ok">14pt</span> 16pt 10pt <span class="ok">18pt</span>; }</pre>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">Regénération et vérification <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">python3</span> -c "
+from weasyprint import HTML
+HTML('cv_version_B.html').write_pdf('cv_abdelhak_bourdim_VERSION_B.pdf')
+"
+
+<span class="comment"># Vérification : le PDF reader confirme 2 pages</span>
+<span class="output">PDF pages extracted: 2 page(s) (44.2KB)</span></pre>
+        </div>
+
+        <h3>Résultat</h3>
+        <p><span class="tag-green">2 pages exactes</span> — tout le contenu tient sans perte d'information significative.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 8: Scripts ── -->
+  <div class="step">
+    <div class="step-dot build"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Création du script de génération PDF</h2>
+        <span class="step-num build">Étape 8</span>
+      </div>
+      <div class="step-body">
+        <p>Création de <span class="inline-code">generate_pdf.py</span> — script réutilisable pour générer les PDF.</p>
+
+        <div class="code-block">
+          <div class="code-header">Utilisation <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py          <span class="comment"># 2 versions</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py <span class="str">a</span>        <span class="comment"># Version A seule</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py <span class="str">b</span>        <span class="comment"># Version B seule</span>
+
+<span class="output">CV PDF Generator
+========================================
+  [OK] Version A (sidebar) -> cv_abdelhak_bourdim_VERSION_A.pdf (43.4 KB)
+  [OK] Version B (experience) -> cv_abdelhak_bourdim_VERSION_B.pdf (44.2 KB)
+Done!</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 9: DOCX generation ── -->
+  <div class="step">
+    <div class="step-dot fix"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Génération DOCX — Problème et solution</h2>
+        <span class="step-num fix">Étape 9</span>
+      </div>
+      <div class="step-body">
+
+        <div class="problem-box">
+          <strong>&#9888; Problème 1 — LibreOffice HTML→DOCX échoue</strong>
+          <span class="inline-code">libreoffice --headless --convert-to docx cv_version_A.html</span><br>
+          Erreur : <em>"no export filter found, aborting"</em>
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">Tentative LibreOffice (échouée) <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">libreoffice</span> --headless --convert-to docx cv_version_A.html
+<span class="err">Error: no export filter for cv_version_A.docx found, aborting.</span></pre>
+        </div>
+
+        <div class="solution-box">
+          <strong>&#10003; Solution intermédiaire — Pandoc</strong>
+          Pandoc peut convertir HTML→DOCX mais perd le design sidebar (DOCX ne supporte pas CSS flexbox).
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">Conversion Pandoc (contenu OK, design perdu) <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">pandoc</span> cv_version_A.html -o cv_abdelhak_bourdim_VERSION_A.docx
+<span class="output">Version A OK</span>
+<span class="prompt">$ </span><span class="cmd">pandoc</span> cv_version_B.html -o cv_abdelhak_bourdim_VERSION_B.docx
+<span class="output">Version B OK</span></pre>
+        </div>
+
+        <div class="problem-box">
+          <strong>&#9888; Problème 2 — DOCX Pandoc sans mise en forme</strong>
+          Les fichiers DOCX générés par pandoc contiennent le texte brut sans couleurs, sans mise en forme professionnelle, sans bordures de section.
+        </div>
+
+        <div class="solution-box">
+          <strong>&#10003; Solution finale — Script python-docx dédié</strong>
+          Création de <span class="inline-code">generate_docx.py</span> avec python-docx pour générer des DOCX formatés (couleurs, bordures, tableaux) directement depuis Python.
+        </div>
+
+        <div class="code-block">
+          <div class="code-header">Script python-docx <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">python3</span> generate_docx.py
+<span class="output">CV DOCX Generator
+========================================
+  [OK] Version A -> cv_abdelhak_bourdim_VERSION_A.docx (40.3 KB)
+  [OK] Version B -> cv_abdelhak_bourdim_VERSION_B.docx (40.6 KB)
+Done!</span></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 10: howto ── -->
+  <div class="step">
+    <div class="step-dot deliver"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Documentation — howto.html</h2>
+        <span class="step-num deliver">Étape 10</span>
+      </div>
+      <div class="step-body">
+        <p>Création d'un guide complet <span class="inline-code">howto.html</span> avec 10 sections :</p>
+        <ul>
+          <li>Vue d'ensemble des versions et formats</li>
+          <li>Arborescence des fichiers</li>
+          <li>Prérequis et installation</li>
+          <li>Génération PDF et DOCX (commandes)</li>
+          <li>Modification du contenu (HTML et Python)</li>
+          <li>Modification du style CSS et DOCX</li>
+          <li>Comparaison Version A vs B</li>
+          <li>Dépannage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STEP 11: Benchmark ── -->
+  <div class="step">
+    <div class="step-dot analyze"></div>
+    <div class="step-card">
+      <div class="step-header">
+        <h2>Benchmark des performances</h2>
+        <span class="step-num analyze">Étape 11</span>
+      </div>
+      <div class="step-body">
+        <p>Question utilisateur : <em>"claude too slow?"</em> — Benchmark des scripts de génération.</p>
+
+        <div class="code-block">
+          <div class="code-header">Benchmarks <span class="tag">Bash</span></div>
+<pre><span class="prompt">$ </span><span class="cmd">time python3</span> generate_pdf.py
+<span class="output">6.07s user — WeasyPrint (parsing CSS + rendu)</span>
+
+<span class="prompt">$ </span><span class="cmd">time python3</span> generate_docx.py
+<span class="output">0.62s user — python-docx (rapide)</span></pre>
+        </div>
+
+        <table>
+          <thead>
+            <tr><th>Script</th><th>Temps</th><th>Verdict</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="inline-code">generate_pdf.py</span></td><td>6.0s</td><td><span class="tag-orange">Normal pour WeasyPrint</span></td></tr>
+            <tr><td><span class="inline-code">generate_docx.py</span></td><td>0.6s</td><td><span class="tag-green">Rapide</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /timeline -->
+
+<!-- ══════════ FINAL FILES ══════════ -->
+<div class="section-divider"><span>Livrables finaux</span></div>
+
+<h3 style="color: var(--red); margin-bottom: 12px;">&#128196; PDF (design moderne sidebar)</h3>
+<div class="file-grid">
+  <div class="file-card">
+    <div class="fname pdf">cv_abdelhak_bourdim_VERSION_A.pdf</div>
+    <div class="fdesc">2 pages — Workshop-DIY en sidebar — 43 KB</div>
+  </div>
+  <div class="file-card">
+    <div class="fname pdf">cv_abdelhak_bourdim_VERSION_B.pdf</div>
+    <div class="fdesc">2 pages — Workshop-DIY en 1ère expérience — 44 KB</div>
+  </div>
+</div>
+
+<h3 style="color: var(--green); margin: 18px 0 12px;">&#128462; DOCX (format Word éditable)</h3>
+<div class="file-grid">
+  <div class="file-card">
+    <div class="fname docx">cv_abdelhak_bourdim_VERSION_A.docx</div>
+    <div class="fdesc">Format classique — Workshop-DIY en profil — 40 KB</div>
+  </div>
+  <div class="file-card">
+    <div class="fname docx">cv_abdelhak_bourdim_VERSION_B.docx</div>
+    <div class="fdesc">Format classique — Workshop-DIY en 1ère expérience — 41 KB</div>
+  </div>
+</div>
+
+<h3 style="color: var(--cyan); margin: 18px 0 12px;">&#9881; Scripts de génération</h3>
+<div class="file-grid">
+  <div class="file-card">
+    <div class="fname py">generate_pdf.py</div>
+    <div class="fdesc">HTML → PDF via WeasyPrint — args: a, b, ou rien (les 2)</div>
+  </div>
+  <div class="file-card">
+    <div class="fname py">generate_docx.py</div>
+    <div class="fdesc">Python → DOCX via python-docx — args: a, b, ou rien (les 2)</div>
+  </div>
+</div>
+
+<h3 style="color: var(--orange); margin: 18px 0 12px;">&#128221; Sources HTML</h3>
+<div class="file-grid">
+  <div class="file-card">
+    <div class="fname html">cv_version_A.html</div>
+    <div class="fdesc">Source HTML+CSS pour PDF Version A</div>
+  </div>
+  <div class="file-card">
+    <div class="fname html">cv_version_B.html</div>
+    <div class="fdesc">Source HTML+CSS pour PDF Version B</div>
+  </div>
+</div>
+
+<h3 style="color: #ffcc02; margin: 18px 0 12px;">&#128218; Documentation</h3>
+<div class="file-grid">
+  <div class="file-card">
+    <div class="fname guide">howto.html</div>
+    <div class="fdesc">Guide complet : installation, commandes, modification, dépannage</div>
+  </div>
+  <div class="file-card">
+    <div class="fname guide">session_report.html</div>
+    <div class="fdesc">Ce rapport de session</div>
+  </div>
+</div>
+
+<!-- ══════════ QUICK REFERENCE ══════════ -->
+<div class="section-divider"><span>Aide-mémoire</span></div>
+
+<div class="code-block">
+  <div class="code-header">Commandes essentielles <span class="tag">Terminal</span></div>
+<pre><span class="comment"># 1. Installer les dépendances</span>
+<span class="prompt">$ </span><span class="cmd">pip install</span> weasyprint python-docx
+
+<span class="comment"># 2. Se placer dans le dossier</span>
+<span class="prompt">$ </span><span class="cmd">cd</span> ~/Downloads/02_cv/
+
+<span class="comment"># 3. Générer tous les PDF</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py
+
+<span class="comment"># 4. Générer tous les DOCX</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_docx.py
+
+<span class="comment"># 5. Générer une seule version</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py <span class="str">a</span>     <span class="comment"># PDF Version A</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py <span class="str">b</span>     <span class="comment"># PDF Version B</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_docx.py <span class="str">a</span>    <span class="comment"># DOCX Version A</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_docx.py <span class="str">b</span>    <span class="comment"># DOCX Version B</span>
+
+<span class="comment"># 6. Tout regénérer d'un coup</span>
+<span class="prompt">$ </span><span class="cmd">python3</span> generate_pdf.py && <span class="cmd">python3</span> generate_docx.py</pre>
+</div>
+
+<!-- ══════════ FOOTER ══════════ -->
+<div class="footer">
+  Session Report — CV Optimization — Abdelhak Bourdim — 26 Février 2026<br>
+  Generated with Claude Code
+</div>
+
+</div>
+</body>
+</html>

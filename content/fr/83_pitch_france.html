@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pitch 2 Minutes — Entretien France — Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.55;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 2pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 16pt; }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 18pt 0 10pt 0; letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt; color: #0a66c2;
+    margin: 14pt 0 6pt 0; padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+
+  /* Script box */
+  .script-box {
+    background: #f8fbfe;
+    border: 1.5pt solid #d0e3f3;
+    border-radius: 6pt;
+    padding: 16pt 20pt;
+    margin-bottom: 12pt;
+    font-size: 11pt;
+    line-height: 1.75;
+    color: #222;
+  }
+  .script-box p { margin-bottom: 10pt; }
+  .script-box .pause {
+    text-align: center;
+    color: #e74c3c;
+    font-weight: 700;
+    font-size: 9pt;
+    letter-spacing: 1pt;
+    margin: 8pt 0;
+  }
+  .script-box .sector { color: #1a5276; font-weight: 600; }
+  .script-box .company { color: #0a66c2; font-weight: 600; }
+  .script-box .norm { color: #888; font-style: italic; }
+
+  /* Timeline */
+  .timeline {
+    display: flex;
+    gap: 6pt;
+    flex-wrap: wrap;
+    margin: 8pt 0 12pt;
+  }
+  .time-block {
+    flex: 1;
+    min-width: 100pt;
+    background: #eaf2f8;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    text-align: center;
+    border-top: 3pt solid #0a66c2;
+  }
+  .time-block .time-label {
+    font-size: 8pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; letter-spacing: 0.5pt;
+  }
+  .time-block .time-sec {
+    font-size: 16pt; font-weight: 700; color: #1a5276;
+    margin: 2pt 0;
+  }
+  .time-block .time-desc {
+    font-size: 7.5pt; color: #555;
+  }
+
+  /* Tips */
+  .tip-list { list-style: none; padding: 0; }
+  .tip-list li {
+    padding: 5pt 0 5pt 20pt;
+    position: relative;
+    font-size: 9.5pt;
+    border-bottom: 0.5pt solid #eee;
+  }
+  .tip-list li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 11pt;
+  }
+
+  /* Variant boxes */
+  .variant {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 10pt 14pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .variant-title {
+    font-size: 9.5pt; font-weight: 700; color: #0a66c2;
+    text-transform: uppercase; margin-bottom: 4pt;
+  }
+  .variant-focus { font-size: 9pt; color: #333; margin-bottom: 3pt; }
+  .variant-quote {
+    font-size: 9pt; color: #555; font-style: italic;
+    border-left: 2pt solid #ddd;
+    padding-left: 8pt; margin-top: 4pt;
+  }
+
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .variant { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Pitch 2 Minutes — Entretien France</h1>
+<div class="subtitle">"Parlez-moi de vous" &bull; Abdelhak Bourdim &bull; Ingenieur Logiciel Embarque Senior</div>
+
+<!-- TIMING -->
+<h2>Structure &amp; Timing</h2>
+<div class="timeline">
+  <div class="time-block">
+    <div class="time-label">Qui je suis</div>
+    <div class="time-sec">10s</div>
+    <div class="time-desc">Nom, titre, 20+ ans</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ce que je fais</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">C/C++, RTOS, Linux, MCU</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Mes preuves</div>
+    <div class="time-sec">60s</div>
+    <div class="time-desc">4 secteurs critiques</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ma difference</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Workshop-DIY</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Cette opportunite</div>
+    <div class="time-sec">15s</div>
+    <div class="time-desc">Projets ambitieux</div>
+  </div>
+  <div class="time-block">
+    <div class="time-label">Ouverture</div>
+    <div class="time-sec">5s</div>
+    <div class="time-desc">Disponible, mobile</div>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<h2>Script</h2>
+<div class="script-box">
+  <p>Bonjour, je suis <strong>Abdelhak Bourdim</strong>, ingenieur logiciel embarque senior avec <strong>plus de 20 ans d'experience</strong>.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Mon metier, c'est de developper du logiciel embarque bas niveau — firmware, drivers, stacks de communication — en <strong>C/C++</strong> sur des architectures <strong>ARM Cortex, STM32, Microchip</strong> et <strong>NXP</strong>, aussi bien en bare metal qu'avec des RTOS comme <strong>FreeRTOS</strong> et <strong>VxWorks</strong>, ou sous <strong>Linux embarque</strong>.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Ce qui fait la particularite de mon parcours, c'est la diversite des <strong>secteurs critiques</strong> dans lesquels j'ai travaille :</p>
+
+  <p>En <span class="sector">aeronautique</span>, chez <span class="company">Safran</span> et <span class="company">Thales</span>, j'ai developpe des drivers bas niveau et des couches applicatives conformes a la norme <span class="norm">DO-178</span>.</p>
+
+  <p>Dans le <span class="sector">medical</span>, chez <span class="company">GE Healthcare</span> et <span class="company">Sorin</span>, j'ai integre des stacks CANOpen et developpe des modules BLE pour pacemaker, conformes a l'<span class="norm">IEC 62304</span>.</p>
+
+  <p>En <span class="sector">cybersecurite IoT</span>, chez <span class="company">Enedis</span>, j'ai mene des audits de securite et des tests d'intrusion sur les concentrateurs Linky.</p>
+
+  <p>Et plus recemment, en <span class="sector">recharge de vehicules electriques</span> chez <span class="company">E2-CAD</span>, je travaille sur l'integration <span class="norm">ISO 15118</span>, le protocole V2G et la mise en service de bornes de recharge.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Au-dela de la technique, j'ai fonde <strong>Workshop-DIY</strong>, une association qui propose des ateliers de robotique pour les jeunes. Ca illustre ma passion pour la transmission et l'innovation.</p>
+
+  <div class="pause">— PAUSE —</div>
+
+  <p>Ce qui m'interesse dans cette opportunite, c'est de mettre cette experience multisectorielle au service de <strong>projets ambitieux</strong>, dans un environnement ou l'exigence technique est forte.</p>
+
+  <p>Je suis base en <strong>region parisienne</strong>, disponible immediatement, et mobile sur toute la France.</p>
+
+  <p><strong>C'est avec plaisir que je vous en dis plus sur mes realisations.</strong></p>
+</div>
+
+<!-- CONSEILS -->
+<h2>Conseils de Delivery</h2>
+<ul class="tip-list">
+  <li>Parler a un <strong>rythme naturel</strong> — ni trop rapide ni trop lent</li>
+  <li>Regarder dans les yeux (ou la camera en visio)</li>
+  <li>Ton <strong>confiant et direct</strong> — valoriser son parcours sans arrogance</li>
+  <li>Les <strong>PAUSES</strong> sont essentielles — elles montrent la maitrise</li>
+  <li>Ne PAS reciter — connaitre les blocs, pas le texte mot a mot</li>
+  <li>Si l'interlocuteur reagit, s'adapter et dialoguer</li>
+  <li>Avoir 3 anecdotes pretes pour approfondir chaque secteur</li>
+  <li>En France, on peut etre un peu plus <strong>affirmatif</strong> qu'en Suisse</li>
+</ul>
+
+<!-- VARIANTES -->
+<h2>Variantes selon l'entreprise</h2>
+
+<div class="variant">
+  <div class="variant-title">Aeronautique (Safran, Thales, Dassault, Airbus...)</div>
+  <div class="variant-focus">&rarr; Insister sur Safran + Thales + Zodiac = 6+ ans en aero &bull; DO-178, MISRA C, TRACE32</div>
+  <div class="variant-quote">"J'ai travaille 6 ans dans l'aeronautique, de Zodiac a Safran, sur des systemes SSPC et des radios defense."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Automobile (Valeo, Stellantis, Renault...)</div>
+  <div class="variant-focus">&rarr; Insister sur stacks de communication, AUTOSAR, CAN &bull; ISO 15118, V2G, integration vehicule</div>
+  <div class="variant-quote">"Mon experience en recharge V2G et en communication embarquee est directement applicable au monde de l'automobile connectee."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Medical (Medtronic, bioMerieux...)</div>
+  <div class="variant-focus">&rarr; Insister sur GE Healthcare + Sorin + PK Vitality &bull; IEC 62304, Doxygen, tests in vitro</div>
+  <div class="variant-quote">"Le developpement medical exige une rigueur de documentation et de tracabilite que j'ai pratiquee pendant plusieurs annees."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Defense / Securite (Thales, MBDA, Naval Group...)</div>
+  <div class="variant-focus">&rarr; Insister sur Thales + Safran, systemes critiques, radio defense &bull; DO-178, MISRA C</div>
+  <div class="variant-quote">"J'ai une experience solide des environnements classifies et des contraintes de certification propres au secteur defense."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">Energie / Cleantech (Schneider Electric, EDF, TotalEnergies...)</div>
+  <div class="variant-focus">&rarr; Insister sur E2-CAD, ISO 15118, OCPP, V2G, Enedis &bull; PLC, HomePlug Green PHY, Linky</div>
+  <div class="variant-quote">"De la recharge electrique a l'audit des concentrateurs Linky, j'ai une vision complete de la chaine energetique embarquee."</div>
+</div>
+
+<div class="variant">
+  <div class="variant-title">ESN / Conseil (Capgemini Engineering, Alten, Akkodis, Segula...)</div>
+  <div class="variant-focus">&rarr; Insister sur la polyvalence multi-secteurs &bull; adaptabilite rapide</div>
+  <div class="variant-quote">"En 20 ans, j'ai travaille dans 7 secteurs differents, ce qui me permet de m'adapter tres rapidement a tout contexte."</div>
+</div>
+
+</body>
+</html>

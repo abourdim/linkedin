@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Entretien Court — Abdelhak BOURDIM</title>
+<style>
+  @page { size: A4; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #2d2d2d;
+    line-height: 1.45;
+  }
+  .page {
+    width: 210mm;
+    height: 297mm;
+    background: #ffffff;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* HEADER */
+  .page-header {
+    background: linear-gradient(135deg, #1a2a4a 0%, #0f1c33 100%);
+    color: #ffffff;
+    padding: 12pt 20pt 10pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3pt solid #2e6db4;
+  }
+  .page-header h1 { font-size: 13pt; font-weight: 700; letter-spacing: 1pt; }
+  .page-header .subtitle { font-size: 7.5pt; color: #7eb3e0; margin-top: 2pt; }
+  .page-header .page-num {
+    font-size: 8pt; color: #4a8fd4; font-weight: 600;
+    background: rgba(74,143,212,0.15); border: 1pt solid #3a5a8a;
+    border-radius: 4pt; padding: 3pt 8pt;
+  }
+
+  .content { padding: 10pt 20pt 8pt; }
+
+  /* SECTIONS */
+  .section-title {
+    font-size: 10pt; font-weight: 700; color: #1a2a4a;
+    text-transform: uppercase; letter-spacing: 1pt;
+    margin-top: 8pt; margin-bottom: 5pt;
+    padding-bottom: 3pt; border-bottom: 2pt solid #2e6db4;
+  }
+  .section-title:first-child { margin-top: 0; }
+
+  .sub-title {
+    font-size: 8.5pt; font-weight: 700; color: #2e6db4;
+    margin-top: 6pt; margin-bottom: 3pt;
+    border-left: 3pt solid #2e6db4; padding-left: 8pt;
+  }
+
+  /* PITCH */
+  .pitch-box {
+    background: #f7f9fc; border: 1pt solid #d8e2ee;
+    border-radius: 5pt; padding: 8pt 12pt; margin-bottom: 6pt;
+  }
+  .pitch-label {
+    font-size: 7pt; font-weight: 700; color: #4a8fd4;
+    text-transform: uppercase; letter-spacing: 1pt; margin-bottom: 4pt;
+  }
+  .pitch-box p { font-size: 8pt; color: #3a3a3a; line-height: 1.5; text-align: justify; }
+
+  /* MISSIONS */
+  .mission { margin-bottom: 4pt; }
+  .mission-header { display: flex; justify-content: space-between; align-items: baseline; }
+  .mission-company { font-size: 8.5pt; font-weight: 700; color: #1e3a5f; }
+  .mission-dates { font-size: 6.8pt; color: #7a8a9a; font-style: italic; }
+  .mission-project { font-size: 7.5pt; color: #2e6db4; font-weight: 600; }
+  .mission-desc { font-size: 7.2pt; color: #3a3a3a; line-height: 1.35; padding-left: 6pt; }
+  .mission-tags { font-size: 6.5pt; color: #8a9aaa; margin-top: 1pt; }
+  .mission-tags strong { color: #5a7a9a; }
+
+  /* SKILLS */
+  .skills-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4pt; margin-bottom: 6pt;
+  }
+  .skill-box {
+    background: #f7f9fc; border: 1pt solid #d8e2ee;
+    border-radius: 3pt; padding: 4pt 8pt;
+  }
+  .skill-box .skill-label {
+    font-size: 6.5pt; font-weight: 700; color: #4a8fd4;
+    text-transform: uppercase; letter-spacing: 0.5pt; margin-bottom: 2pt;
+  }
+  .skill-box .skill-value { font-size: 7pt; color: #3a3a3a; line-height: 1.35; }
+
+  /* DAL TABLE */
+  .dal-table { width: 100%; border-collapse: collapse; font-size: 7pt; margin: 4pt 0; }
+  .dal-table th {
+    background: #1a2a4a; color: #fff; padding: 3pt 6pt;
+    text-align: left; font-size: 6.5pt; text-transform: uppercase;
+  }
+  .dal-table td { padding: 2pt 6pt; border-bottom: 0.5pt solid #e0e5ec; }
+  .dal-table tr:nth-child(even) td { background: #f7f9fc; }
+  .dal-a { color: #c0392b; font-weight: 700; }
+  .dal-b { color: #e67e22; font-weight: 700; }
+  .dal-c { color: #f39c12; font-weight: 700; }
+  .dal-d { color: #2980b9; font-weight: 700; }
+  .dal-e { color: #7f8c8d; font-weight: 700; }
+
+  /* NORMES */
+  .norme-inline { font-size: 7.5pt; color: #3a3a3a; line-height: 1.4; margin-bottom: 4pt; }
+  .norme-inline strong { color: #1e3a5f; }
+
+  /* TWO COLS */
+  .two-cols { display: flex; gap: 12pt; }
+  .two-cols .col { flex: 1; }
+
+  /* Q&A */
+  .qa-block { margin-bottom: 5pt; }
+  .qa-q { font-size: 7.8pt; font-weight: 700; color: #1e3a5f; margin-bottom: 1pt; }
+  .qa-a { font-size: 7.5pt; color: #3a3a3a; line-height: 1.4; text-align: justify; }
+
+  /* CHECKLIST */
+  .checklist { list-style: none; padding: 0; }
+  .checklist li {
+    font-size: 7.5pt; color: #3a3a3a; padding: 2pt 0 2pt 14pt;
+    position: relative; border-bottom: 0.5pt solid #eef1f5;
+  }
+  .checklist li::before { content: "☐"; position: absolute; left: 0; color: #2e6db4; font-size: 8pt; }
+
+  /* CONCLUSION */
+  .conclusion-box {
+    background: linear-gradient(135deg, #1a2a4a, #0f1c33);
+    border-radius: 5pt; padding: 10pt 14pt; margin-top: 6pt;
+  }
+  .conclusion-box p { font-size: 7.5pt; color: #c0cce0; line-height: 1.45; margin-bottom: 4pt; }
+  .conclusion-box p:last-child { margin-bottom: 0; }
+  .conclusion-box strong { color: #7eb3e0; }
+
+  /* METHOD BOX */
+  .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4pt; margin-bottom: 4pt; }
+  .method-box {
+    background: #f7f9fc; border: 1pt solid #d8e2ee;
+    border-radius: 3pt; padding: 5pt 8pt;
+  }
+  .method-box .method-name { font-size: 7.5pt; font-weight: 700; color: #1e3a5f; margin-bottom: 2pt; }
+  .method-box p { font-size: 7pt; color: #3a3a3a; line-height: 1.35; }
+
+  /* DOC GRID */
+  .doc-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 1pt 10pt; font-size: 7pt; color: #3a3a3a; margin: 3pt 0;
+  }
+  .doc-grid span strong { color: #2e6db4; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ PAGE 1 ═══════════════ -->
+<div class="page">
+  <div class="page-header">
+    <div>
+      <h1>Entretien &mdash; Version Courte</h1>
+      <div class="subtitle">BOURDIM Abdelhak &mdash; Ingénieur Logiciel Embarqué Senior &mdash; +20 ans</div>
+    </div>
+    <div class="page-num">1 / 2</div>
+  </div>
+
+  <div class="content">
+
+    <div class="section-title" style="margin-top: 0;">Pitch (1 min)</div>
+
+    <div class="pitch-box">
+      <p>
+        Bonjour, je suis Abdelhak BOURDIM, ingénieur logiciel embarqué senior avec <strong>plus de 20 ans d'expérience</strong>.
+        Spécialisé en firmware, middleware et couches applicatives &mdash; bare metal, RTOS (FreeRTOS, VxWorks) ou Linux embarqué &mdash;
+        pour systèmes critiques et industriels.
+        Développement de drivers et stacks de communication (CAN, BLE, USB, TCP/IP) sur ARM Cortex, STM32, Microchip et NXP.
+      </p>
+      <p style="margin-top: 4pt;">
+        <strong>Aéro</strong> : Safran (SSPC), Thales (N-MMR, ATO), Zodiac (A350) &bull;
+        <strong>Médical</strong> : GE Healthcare, Sorin, PK Vitality &bull;
+        <strong>Auto</strong> : Valeo, Arkamys &bull;
+        <strong>Énergie</strong> : Enedis (Linky), E2-CAD (EV, ISO 15118) &bull;
+        <strong>Paiement</strong> : 8 ans Cartadis.
+        Fondateur de <strong>Workshop-DIY</strong> (robotique éducative, 18+ ateliers).
+      </p>
+    </div>
+
+    <div class="section-title">Parcours — Résumé</div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">E2-CAD</span>
+        <span class="mission-dates">Mai 2025 &ndash; Présent</span>
+      </div>
+      <div class="mission-project">Borne de recharge EV &mdash; ISO 15118, OCPP</div>
+      <div class="mission-desc">Reverse engineering, banc de test, debug PLC/HomePlug, 3 cartes (PIC, STM32)</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Safran &mdash; Créteil</span>
+        <span class="mission-dates">Mars 2024 &ndash; Mai 2025</span>
+      </div>
+      <div class="mission-project">SSPC &mdash; Solid State Power Controller</div>
+      <div class="mission-desc">Drivers bas niveau C, logging/diagnostic, validation TRACE32, scripts Bash/Awk</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Asterios Technologies</span>
+        <span class="mission-dates">Août 2023 &ndash; Fév. 2024</span>
+      </div>
+      <div class="mission-project">T1042SOM &mdash; Tests logiciels</div>
+      <div class="mission-desc">Tests validation C, analyse errata processeur, documentation conforme</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Thales &mdash; Gennevilliers</span>
+        <span class="mission-dates">Mai 2022 &ndash; Juil. 2023</span>
+      </div>
+      <div class="mission-project">LPM + N-MMR &mdash; Radio Défense</div>
+      <div class="mission-desc">Couches applicatives Linux C/C++, tests HLT, Websockets</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Thales &mdash; Vélizy</span>
+        <span class="mission-dates">Nov. 2020 &ndash; Juin 2021</span>
+      </div>
+      <div class="mission-project">ATO &mdash; Train Autonome</div>
+      <div class="mission-desc">Migration 32→64 bits Linux, protocoles IPC (UDP/TCP), diagnostic réseau</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">PK Vitality &mdash; Paris</span>
+        <span class="mission-dates">Juin &ndash; Sept. 2020</span>
+      </div>
+      <div class="mission-project">K'Watch CGM &mdash; Glucose Monitor</div>
+      <div class="mission-desc">HAL, BLE NRF52840, FreeRTOS, TouchGFX, IEC 62304</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Zodiac Aerospace (Safran)</span>
+        <span class="mission-dates">Fév. 2017 &ndash; Mars 2020</span>
+      </div>
+      <div class="mission-project">GENOME / SSPC A350</div>
+      <div class="mission-desc">Drivers CAN/RS485 dsPIC33, passerelle uAFDX→CAN, couches applicatives</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Enedis &mdash; Nanterre</span>
+        <span class="mission-dates">Mai 2015 &ndash; Sept. 2016</span>
+      </div>
+      <div class="mission-project">Compteurs Linky &mdash; Cybersécurité</div>
+      <div class="mission-desc">Audit sécurité, pentest Linux (Kali, Nmap), sniffing/fuzzing (Wireshark, Scapy, SDR)</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Sorin &mdash; Clamart</span>
+        <span class="mission-dates">Nov. 2014 &ndash; Avr. 2015</span>
+      </div>
+      <div class="mission-project">Module BLE Pacemaker</div>
+      <div class="mission-desc">Bluetooth Smart, Serial Port Service, app Android, Cortex M0</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">GE Healthcare &mdash; Buc</span>
+        <span class="mission-dates">2012 &ndash; 2014</span>
+      </div>
+      <div class="mission-project">Générateur Rayons X &mdash; CANOpen</div>
+      <div class="mission-desc">Pile CANOpen slave/master, portage CMX-RTX, VxWorks, support USA</div>
+    </div>
+
+    <div class="mission">
+      <div class="mission-header">
+        <span class="mission-company">Cartadis &mdash; Fontenay-sous-Bois</span>
+        <span class="mission-dates">Oct. 2001 &ndash; Déc. 2009</span>
+      </div>
+      <div class="mission-project">Terminaux contrôle d'accès &amp; paiement &mdash; 8 ans</div>
+      <div class="mission-desc">Drivers, applicatifs, stacks USB/TCP/IP, RFID Mifare, DES/RC4</div>
+    </div>
+
+    <div class="section-title">Compétences clés</div>
+
+    <div class="skills-grid">
+      <div class="skill-box">
+        <div class="skill-label">Langages</div>
+        <div class="skill-value">C, C++, Python, Bash, Assembleur, Perl, AWK</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-label">OS / RTOS</div>
+        <div class="skill-value">Linux embarqué, VxWorks, FreeRTOS, UCOSII</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-label">MCU / Processeurs</div>
+        <div class="skill-value">ARM Cortex, STM32, NRF52, ESP32, PIC/dsPIC, NXP, TI</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-label">Protocoles / Stacks</div>
+        <div class="skill-value">CAN, CANOpen, SPI, I2C, RS232/485, USB, BLE, AFDX, TCP/IP</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-label">Outils</div>
+        <div class="skill-value">TRACE32, IAR, Keil, MPLAB, Buildroot, CubeMx, Wireshark, Saleae</div>
+      </div>
+      <div class="skill-box">
+        <div class="skill-label">Normes</div>
+        <div class="skill-value">DO-178C, MISRA C, IEC 62304, ISO 15118, OCPP, JSF</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════ PAGE 2 ═══════════════ -->
+<div class="page">
+  <div class="page-header">
+    <div>
+      <h1>Entretien &mdash; Version Courte</h1>
+      <div class="subtitle">BOURDIM Abdelhak &mdash; Ingénieur Logiciel Embarqué Senior &mdash; +20 ans</div>
+    </div>
+    <div class="page-num">2 / 2</div>
+  </div>
+
+  <div class="content">
+
+    <div class="section-title" style="margin-top: 0;">DO-178C — Essentiel</div>
+
+    <table class="dal-table">
+      <tr><th>DAL</th><th>Défaillance</th><th>Couverture</th></tr>
+      <tr><td class="dal-a">A — Catastrophique</td><td>Perte de vies</td><td>MC/DC</td></tr>
+      <tr><td class="dal-b">B — Dangereux</td><td>Blessures graves</td><td>Décision</td></tr>
+      <tr><td class="dal-c">C — Majeur</td><td>Confort passagers</td><td>Instruction</td></tr>
+      <tr><td class="dal-d">D — Mineur</td><td>Divertissement</td><td>Limitée</td></tr>
+      <tr><td class="dal-e">E — Aucun effet</td><td>—</td><td>Aucune</td></tr>
+    </table>
+
+    <div class="norme-inline">
+      <strong>Vérification :</strong> Examen (revue) &bull; Analyse &bull; Test &nbsp;|&nbsp;
+      <strong>Documents :</strong> PSAC, SDP, SSS, SRS, SDD, LLR, STD, STR, BDD, ICD
+    </div>
+
+    <div class="two-cols">
+      <div class="col">
+        <div class="norme-inline">
+          <strong>IEC 62304 (Médical) :</strong> Classe A (pas de blessure), B (non grave), C (grave/mort).
+          Appliquée chez GE, Sorin, PK Vitality.
+        </div>
+        <div class="norme-inline">
+          <strong>MISRA C :</strong> Règles de sûreté C pour systèmes critiques. Outils : PC Lint, Sonar, Polyspace.
+        </div>
+      </div>
+      <div class="col">
+        <div class="norme-inline">
+          <strong>ISO 15118 (V2G) :</strong> Communication EV↔borne via PLC/HomePlug. Smart Charging, V2G.
+        </div>
+        <div class="norme-inline">
+          <strong>Autres :</strong> OCPP, ISO 14443 (Smart Card), ISO 15693 (RFID), JSF (C++ aéro).
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title">Méthodologies</div>
+
+    <div class="method-grid">
+      <div class="method-box">
+        <div class="method-name">Cycle en V</div>
+        <p>Spéc → Archi → Code → TU → Intégration → Validation. Aéro &amp; médical.</p>
+      </div>
+      <div class="method-box">
+        <div class="method-name">Agile / Scrum</div>
+        <p>Sprints 2-4 sem., daily, reviews, rétro. Jira, Polarion.</p>
+      </div>
+      <div class="method-box">
+        <div class="method-name">Jenkins (CI)</div>
+        <p>Build auto, tests auto, détection régressions.</p>
+      </div>
+      <div class="method-box">
+        <div class="method-name">Clean Code</div>
+        <p>KISS, DRY, YAGNI. Lisibilité avant concision.</p>
+      </div>
+    </div>
+
+    <div class="section-title">Questions fréquentes</div>
+
+    <div class="qa-block">
+      <div class="qa-q">MISRA, JSF, Embedded C ?</div>
+      <div class="qa-a">Appliqué MISRA C chez Safran, Zodiac, Enedis. Sonar et PC Lint pour compliance.</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Couverture MC/DC ?</div>
+      <div class="qa-a">Chaque condition affecte indépendamment le résultat. Requis DAL A. Travaillé couverture décisions et instructions.</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Debug sur cible ?</div>
+      <div class="qa-a">TRACE32 : breakpoints, mémoire, registres. Complété par logging maison, Wireshark, Saleae.</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Expérience RTOS ?</div>
+      <div class="qa-a">FreeRTOS (PK Vitality), VxWorks (GE), UCOSII. Tâches, sémaphores, mutex, temps réel.</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Linux embarqué ?</div>
+      <div class="qa-a">Thales (ATO, N-MMR), Arkamys (GStreamer), Enedis (Linky), E2-CAD (EV). Buildroot, Bash, debug réseau.</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Qu'est-ce qui vous plaît / déplaît ?</div>
+      <div class="qa-a">Diversité projets, contact hardware, résolution problèmes. Moins : lourdeurs admin (mais nécessaires en certifié).</div>
+    </div>
+    <div class="qa-block">
+      <div class="qa-q">Critiquer le travail des collègues ?</div>
+      <div class="qa-a">Revues constructives basées sur standards et check-lists. Améliorer le livrable, pas critiquer la personne.</div>
+    </div>
+
+    <div class="section-title">À poser au recruteur</div>
+    <ul class="checklist">
+      <li>Taille de l'équipe embarquée ?</li>
+      <li>Processus de développement (Cycle en V, Agile) ?</li>
+      <li>Outils de debug et CI en place ?</li>
+      <li>Normes / certifications à respecter ?</li>
+      <li>Part développement vs tests/validation ?</li>
+      <li>Planning et déplacements ?</li>
+    </ul>
+
+    <div class="conclusion-box">
+      <p>Je reste à votre écoute pour tout renseignement complémentaire.</p>
+      <p>Le projet présenté est <strong>très intéressant</strong> et correspond à mon profil. Je pense apporter une <strong>réelle valeur ajoutée</strong> grâce à mon expérience dans <strong>[adapter]</strong>.</p>
+      <p>Disponible <strong>immédiatement / à partir du [date]</strong>.</p>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

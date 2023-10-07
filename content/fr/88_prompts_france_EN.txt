@@ -1,0 +1,338 @@
+================================================================================
+       PROMPTS FOR JOB SEARCH IN FRANCE — EMBEDDED SOFTWARE ENGINEER
+       To use with ChatGPT, Claude, or any other AI assistant
+       Abdelhak Bourdim — March 2026
+================================================================================
+
+
+================================================================================
+PROMPT 1 — GENERATE A COVER LETTER (FR)
+================================================================================
+Use this prompt replacing fields [IN BRACKETS]:
+
+---START PROMPT---
+
+You are an expert at writing cover letters for the French job market.
+Write a cover letter in French for the following position:
+
+**Position:** [JOB TITLE — e.g., Senior Embedded Software Engineer]
+**Company:** [COMPANY NAME — e.g., Safran Electronics & Defense]
+**Location:** [CITY — e.g., Massy, Ile-de-France]
+**Source:** [LinkedIn / APEC / Indeed / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), mobile across France
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional French style: structured, engaging, factual
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific company
+5. Mention availability and mobility
+6. End with an appropriate French-style closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 2 — GENERATE A COVER LETTER (EN)
+================================================================================
+Use this prompt replacing fields [IN BRACKETS]:
+
+---START PROMPT---
+
+You are an expert at writing cover letters for the French job market.
+Write a cover letter in English for the following position:
+
+**Position:** [JOB TITLE — e.g., Senior Embedded Software Engineer]
+**Company:** [COMPANY NAME — e.g., Thales]
+**Location:** [CITY — e.g., Velizy, France]
+**Source:** [LinkedIn / APEC / Indeed / spontaneous application]
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- French citizen, available for CDI (permanent contract), mobile across France
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional style: structured, engaging, factual
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this specific company
+5. Mention availability and mobility
+6. End with an appropriate closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 3 — LINKEDIN MESSAGE TO A RECRUITER (FR)
+================================================================================
+
+---START PROMPT---
+
+Write a short LinkedIn message (100-150 words) in French to contact a recruiter in France.
+
+**Recipient:** [RECRUITER NAME — e.g., Sophie Martin]
+**Company:** [NAME — e.g., Capgemini Engineering]
+**Context:** [internal recruiter / recruitment agency / technical manager]
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- French citizen, available for CDI (permanent contract)
+- Mobile: Ile-de-France and all of France
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company
+3. Be concise and direct (recruiters receive dozens of messages)
+4. Propose an exchange without being pushy
+5. Highlight the value you can bring
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 4 — LINKEDIN MESSAGE TO A HIRING MANAGER (EN)
+================================================================================
+
+---START PROMPT---
+
+Write a short LinkedIn message (100-150 words) in English to reach out to a hiring manager in France.
+
+**Recipient:** [NAME — e.g., Jean-Pierre Dupont]
+**Company:** [NAME — e.g., Schneider Electric]
+**Their role:** [e.g., VP Engineering / Head of Embedded Systems]
+**Context:** [saw a job posting / spontaneous outreach / mutual connection]
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- French citizen, available for CDI (permanent contract)
+- Mobile: Ile-de-France and all of France
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company or team
+3. Be concise and direct (managers are busy)
+4. Propose a brief conversation without being pushy
+5. Highlight the value you can bring
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 5 — LINKEDIN CONNECTION REQUESTS (FR)
+================================================================================
+Ready to copy-paste (max 300 characters for a connection request). Replace fields [IN BRACKETS].
+
+---VERSION 1 — Recruiter---
+Bonjour [PRENOM], je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded en France. Serait-il possible d'echanger ? Cordialement, Abdelhak
+
+---VERSION 2 — Hiring manager---
+Bonjour [PRENOM], ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez [ENTREPRISE] m'interesse beaucoup. Au plaisir d'echanger. Abdelhak
+
+---VERSION 3 — Peer---
+Bonjour [PRENOM], ingenieur embarque ici aussi. Je suis votre travail chez [ENTREPRISE] avec interet. J'explore des opportunites en France. Ce serait un plaisir de connecter. Abdelhak
+
+
+================================================================================
+PROMPT 6 — LINKEDIN CONNECTION REQUESTS (EN)
+================================================================================
+
+---VERSION 1 — Recruiter---
+Hi [FIRST NAME], I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). I'm exploring embedded roles in France. Would love to connect. Best, Abdelhak
+
+---VERSION 2 — Hiring manager---
+Hi [FIRST NAME], senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at [COMPANY] caught my interest. Happy to connect. Abdelhak
+
+---VERSION 3 — Peer---
+Hi [FIRST NAME], fellow embedded engineer here. I've been following [COMPANY]'s work with interest. Exploring opportunities in France. Would be great to connect. Abdelhak
+
+
+================================================================================
+PROMPT 7 — TECHNICAL INTERVIEW PREPARATION (FR)
+================================================================================
+
+---START PROMPT---
+
+You are an expert in technical interviews for embedded software engineer positions in France.
+Prepare me for an interview at [COMPANY] for the [JOB TITLE] position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. **10 likely technical questions** for this role, with detailed answers based on my experience
+2. **5 behavioral questions** (STAR format) with example answers from my career
+3. **5 questions I should ask** the company (showing interest and seniority)
+4. **3 questions about working conditions** (Syntec agreement, RTT, remote work)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay professional and factual
+- Mention specific tools and methods
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 8 — TECHNICAL INTERVIEW PREPARATION (EN)
+================================================================================
+
+---START PROMPT---
+
+You are an expert in technical interviews for embedded software engineer positions in France.
+Prepare me for an interview at [COMPANY] for the [JOB TITLE] position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. **10 likely technical questions** for this role, with detailed answers based on my experience
+2. **5 behavioral questions** (STAR format) with example answers from my career
+3. **5 questions I should ask** the company (showing interest and seniority)
+4. **3 questions about working conditions** (Syntec agreement, RTT, remote work)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay professional and factual
+- Mention specific tools and methods
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 9 — ANALYZE A JOB POSTING AND ADAPT MY APPLICATION
+================================================================================
+
+---START PROMPT---
+
+You are an expert in embedded recruitment in France.
+Here is a job posting. Analyze it and help me prepare my application.
+
+**Job posting:**
+[PASTE THE COMPLETE JOB POSTING TEXT HERE]
+
+My profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years
+- C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aerospace (Safran, Thales), medical (GE Healthcare, Sorin), auto (Valeo), IoT cyber (Enedis), V2G (E2-CAD)
+- French native, English professional, Arabic native
+- French citizen, available for CDI
+
+Perform the following tasks:
+1. **Job analysis**: identify required skills, nice-to-haves, and target profile
+2. **Match score**: rate my fit from 1 to 10, with justification
+3. **Strengths**: list my assets that best match this posting
+4. **Gaps**: identify potential gaps and how to address or present them positively
+5. **Cover letter**: write a letter tailored to this specific posting (300-400 words)
+6. **CV keywords**: list keywords to highlight in my CV for this posting (ATS optimization)
+7. **Estimated salary**: probable salary range for this position in France (IDF vs province)
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 10 — POST-INTERVIEW FOLLOW-UP
+================================================================================
+
+---START PROMPT---
+
+Write a thank-you/follow-up email after an interview in France.
+
+**Company:** [NAME]
+**Contact:** [NAME + TITLE — e.g., Marc Dupont, Embedded Team Lead]
+**Interview date:** [DATE]
+**Key topics discussed:** [NOTE 2-3 IMPORTANT TOPICS — e.g., RTOS migration, DO-178 testing, team of 8 engineers]
+**Language:** [FR / EN]
+
+Guidelines:
+1. Short (150-200 words maximum)
+2. Thank them for their time
+3. Reference a specific point from the discussion (show you listened)
+4. Reaffirm interest in the position without being pushy
+5. Professional, engaging tone (no excessive flattery)
+6. Offer to provide additional information if needed
+
+---END PROMPT---
+
+
+================================================================================
+PROMPT 11 — SALARY NEGOTIATION
+================================================================================
+
+---START PROMPT---
+
+You are an expert in salary negotiation for the French embedded systems market.
+
+**Proposed position:** [TITLE]
+**Company:** [NAME]
+**Location:** [CITY / REGION — e.g., Massy, Ile-de-France]
+**Contract type:** CDI
+**Salary offer:** [AMOUNT — e.g., 65,000 EUR/year]
+**Collective agreement:** [Syntec / Metallurgy / other]
+
+My profile:
+- 20+ years of experience, senior embedded software engineer
+- Rare skills: DO-178, IEC 62304, embedded cybersecurity, V2G/ISO 15118
+- Trilingual FR/EN/AR
+
+Help me:
+1. **Evaluate the offer**: is it within market range? (compare IDF vs province)
+2. **Negotiation points**: what to negotiate beyond salary (remote work, RTT, training, meal vouchers, profit-sharing, PEE, company car)
+3. **Negotiation script**: write 3 key phrases to negotiate professionally
+4. **Net calculation**: estimate net salary from gross (social charges in France ~22-25%)
+5. **Things to avoid**: common negotiation mistakes in France
+
+---END PROMPT---
+
+
+================================================================================
+HOW TO USE THESE PROMPTS
+================================================================================
+
+1. Copy the prompt you need
+2. Replace fields [IN BRACKETS] with your information
+3. Paste into ChatGPT, Claude, or any other AI
+4. Adapt the response to your personal style
+5. IMPORTANT: never send an AI-generated text without reviewing and personalizing it
+
+RECOMMENDED ORDER:
+1. Prompt 9 (analyze the posting) -> understand what the company is looking for
+2. Prompt 1 or 2 (cover letter) -> apply
+3. Prompt 3 or 4 (LinkedIn message) -> networking in parallel
+4. Prompt 7 or 8 (interview preparation) -> before each interview
+5. Prompt 10 (follow-up) -> after each interview
+6. Prompt 11 (negotiation) -> when you receive an offer

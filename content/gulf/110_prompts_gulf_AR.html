@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>نماذج للبحث عن عمل في الخليج — مهندس برمجيات مدمجة</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', 'Tahoma', sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.7;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+    direction: rtl;
+    text-align: right;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 4pt; letter-spacing: 0.5pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 20pt; }
+  h2 { font-size: 12pt; color: #fff; background: #0a66c2; padding: 5pt 12pt; border-radius: 4pt; margin: 20pt 0 8pt 0; letter-spacing: 0.8pt; }
+  h3 { font-size: 10pt; color: #0a66c2; margin: 12pt 0 4pt 0; padding-bottom: 2pt; border-bottom: 1pt solid #d0e3f3; }
+  .copy-box { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 10pt 14pt; margin-bottom: 8pt; font-size: 9.5pt; line-height: 1.65; color: #222; }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box {
+    background: #f4f7fa;
+    border: 1pt solid #d0e3f3;
+    border-right: 3pt solid #0a66c2;
+    border-left: none;
+    border-radius: 4pt 0 0 4pt;
+    padding: 12pt 16pt;
+    margin-bottom: 10pt;
+    font-size: 9.5pt;
+    line-height: 1.7;
+    color: #222;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans Arabic', 'Tahoma', sans-serif;
+  }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .instruction { font-size: 9pt; color: #555; font-style: italic; margin-bottom: 6pt; }
+  .version-label { display: inline-block; background: #0a66c2; color: #fff; font-size: 8pt; font-weight: 700; padding: 2pt 8pt; border-radius: 3pt; margin-bottom: 6pt; letter-spacing: 0.3pt; }
+  .toc { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 12pt 18pt; margin-bottom: 16pt; }
+  .toc-title { font-size: 10pt; font-weight: 700; color: #0a66c2; margin-bottom: 6pt; }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li { font-size: 9pt; padding: 2pt 0; color: #333; }
+  .toc li a { color: #0a66c2; text-decoration: none; }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num { display: inline-block; width: 24pt; font-weight: 700; color: #0a66c2; }
+  .lang-tag { display: inline-block; font-size: 7.5pt; font-weight: 700; padding: 1pt 6pt; border-radius: 3pt; margin-right: 4pt; vertical-align: middle; }
+  .lang-fr { background: #e8f0fe; color: #0a66c2; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step { background: #f8fbfe; border: 1pt solid #d0e3f3; border-radius: 4pt; padding: 8pt 14pt; margin-bottom: 6pt; font-size: 9.5pt; }
+  .guide-step strong { color: #0a66c2; }
+  .order-num { display: inline-block; background: #0a66c2; color: #fff; font-size: 9pt; font-weight: 700; width: 20pt; height: 20pt; line-height: 20pt; text-align: center; border-radius: 50%; margin-left: 6pt; }
+  .note { font-size: 8pt; color: #888; font-style: italic; margin-top: 4pt; }
+  .warning-box {
+    background: #fef9e7;
+    border: 1pt solid #f9e79f;
+    border-right: 3pt solid #f39c12;
+    border-left: none;
+    border-radius: 4pt 0 0 4pt;
+    padding: 10pt 14pt;
+    margin: 10pt 0;
+    font-size: 9pt;
+    color: #7d6608;
+  }
+  .warning-box strong { color: #b7950b; }
+  .latin { direction: ltr; unicode-bidi: embed; }
+  @media print { body { padding: 0; } h2 { break-after: avoid; } .prompt-box { break-inside: avoid; } }
+</style>
+</head>
+<body>
+
+<h1>نماذج للبحث عن عمل &mdash; الخليج / دول مجلس التعاون</h1>
+<div class="subtitle"><span class="latin">Embedded Software Engineer</span> &bull; للاستخدام مع <span class="latin">ChatGPT</span> أو <span class="latin">Claude</span> أو أي مساعد ذكاء اصطناعي &bull; عبد الحق بورديم &bull; مارس 2026</div>
+
+<div class="toc">
+  <div class="toc-title">الفهرس</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> رسالة تحفيزية بالفرنسية <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> رسالة تحفيزية بالإنجليزية <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> طلبات اتصال <span class="latin">LinkedIn</span> <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> رسالة <span class="latin">LinkedIn</span> لمسؤول توظيف <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> التحضير لمقابلة تقنية (تأشيرة، انتقال) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> تحليل عرض وظيفي (درهم/ريال) <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> التفاوض على الراتب (سكن، تذاكر، تأمين) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> دليل التأشيرة والانتقال (الإمارات/السعودية/قطر) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> تكييف السيرة الذاتية للخليج <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> رسالة تشبيك مهنية <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> البحث عن شركة قبل المقابلة <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&larr;</span> دليل الاستخدام</a></li>
+  </ul>
+</div>
+
+<h2 id="prompt1">النموذج 1 &mdash; رسالة تحفيزية بالفرنسية لشركة خليجية <span class="lang-tag lang-fr">FR</span></h2>
+<p class="instruction">استخدم هذا النموذج مع استبدال الحقول <span class="bracket">[بين الأقواس]</span> :</p>
+<div class="prompt-box">أنت خبير في كتابة رسائل التحفيز لسوق العمل الخليجي (دول مجلس التعاون).
+اكتب رسالة تحفيزية بالفرنسية للوظيفة التالية:
+
+<strong>الوظيفة:</strong> <span class="bracket">[المسمى الوظيفي &mdash; مثال: <span class="latin">Ingenieur Logiciel Embarque Senior</span>]</span>
+<strong>الشركة:</strong> <span class="bracket">[اسم الشركة &mdash; مثال: <span class="latin">ADNOC، Aramco، EDGE Group، NEOM، Thales Middle East</span>]</span>
+<strong>المكان:</strong> <span class="bracket">[المدينة &mdash; مثال: أبو ظبي، دبي، الرياض، الدوحة، جدة]</span>
+<strong>مصدر الإعلان:</strong> <span class="bracket">[<span class="latin">LinkedIn / Bayt.com / GulfTalent / Naukrigulf</span> / ترشح تلقائي]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة خبرة
+- جنسية فرنسية، متاح فوراً، منفتح على الانتقال إلى منطقة الخليج
+- المهارات الأساسية: <span class="latin">C/C++</span>، <span class="latin">RTOS</span> (<span class="latin">FreeRTOS</span>، <span class="latin">VxWorks</span>)، <span class="latin">Linux</span> المدمج، <span class="latin">ARM Cortex</span>، <span class="latin">STM32</span>
+- البروتوكولات: <span class="latin">CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C</span>
+- المعايير: <span class="latin">DO-178</span> (الطيران)، <span class="latin">IEC 62304</span> (الطبي)، <span class="latin">MISRA C</span>، <span class="latin">ISO 15118</span> (<span class="latin">V2G</span>)
+- القطاعات: الطيران (<span class="latin">Safran، Thales</span>)، الطبي (<span class="latin">GE Healthcare، Sorin</span>)، السيارات (<span class="latin">Valeo</span>)، الأمن السيبراني <span class="latin">IoT</span> (<span class="latin">Enedis/Linky</span>)، شحن المركبات الكهربائية/<span class="latin">V2G</span> (<span class="latin">E2-CAD</span>)
+- مؤسس <span class="latin">Workshop-DIY</span> (جمعية روبوتيك للشباب)
+- اللغات: الفرنسية (لغة أم)، الإنجليزية (مهني)، العربية (لغة أم)
+
+تعليمات لكتابة الرسالة:
+1. أسلوب مناسب للخليج: مهني، محترم، يبرز الخبرة الدولية
+2. صفحة واحدة كحد أقصى (300-400 كلمة)
+3. إبراز المهارات المتوافقة تحديداً مع العرض الوظيفي
+4. إظهار الدافع للعمل في منطقة الخليج
+5. ذكر التوفر للانتقال وتأشيرة العمل
+6. تثمين التعدد اللغوي (ميزة كبرى في الخليج)
+7. ذكر الخبرة مع المجموعات الصناعية الدولية
+8. النبرة: مهنية، واثقة، موجهة نحو النتائج</div>
+
+<h2 id="prompt2">النموذج 2 &mdash; رسالة تحفيزية بالإنجليزية لشركة خليجية <span class="lang-tag lang-en">EN</span></h2>
+<p class="instruction">استخدم هذا النموذج مع استبدال الحقول <span class="bracket">[بين الأقواس]</span> :</p>
+<div class="prompt-box">أنت خبير في كتابة رسائل التحفيز لسوق العمل الخليجي.
+اكتب رسالة تحفيزية بالإنجليزية للوظيفة التالية:
+
+<strong>الوظيفة:</strong> <span class="bracket">[المسمى الوظيفي &mdash; مثال: <span class="latin">Senior Embedded Software Engineer</span>]</span>
+<strong>الشركة:</strong> <span class="bracket">[اسم الشركة &mdash; مثال: <span class="latin">ADNOC، Aramco، EDGE Group، NEOM، Thales Middle East</span>]</span>
+<strong>المكان:</strong> <span class="bracket">[المدينة &mdash; مثال: <span class="latin">Abu Dhabi، Dubai، Riyadh، Doha، Jeddah</span>]</span>
+<strong>المصدر:</strong> <span class="bracket">[<span class="latin">LinkedIn / Bayt.com / GulfTalent / Naukrigulf</span> / ترشح تلقائي]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة خبرة
+- جنسية فرنسية، متاح فوراً، منفتح على الانتقال إلى منطقة الخليج
+- المهارات الأساسية: <span class="latin">C/C++</span>، <span class="latin">RTOS</span> (<span class="latin">FreeRTOS</span>، <span class="latin">VxWorks</span>)، <span class="latin">Embedded Linux</span>، <span class="latin">ARM Cortex</span>، <span class="latin">STM32</span>
+- البروتوكولات: <span class="latin">CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C</span>
+- المعايير: <span class="latin">DO-178</span> (الطيران)، <span class="latin">IEC 62304</span> (الطبي)، <span class="latin">MISRA C</span>، <span class="latin">ISO 15118</span> (<span class="latin">V2G</span>)
+- القطاعات: الطيران (<span class="latin">Safran، Thales</span>)، الطبي (<span class="latin">GE Healthcare، Sorin</span>)، السيارات (<span class="latin">Valeo</span>)، الأمن السيبراني <span class="latin">IoT</span> (<span class="latin">Enedis/Linky</span>)، شحن المركبات الكهربائية/<span class="latin">V2G</span> (<span class="latin">E2-CAD</span>)
+- مؤسس <span class="latin">Workshop-DIY</span> (جمعية روبوتيك غير ربحية للشباب)
+- اللغات: الفرنسية (لغة أم)، الإنجليزية (مهني)، العربية (لغة أم)
+
+التعليمات:
+1. أسلوب مناسب للخليج: مهني، واثق، موجه نحو النتائج
+2. صفحة واحدة كحد أقصى (300-400 كلمة)
+3. إبراز المهارات المتوافقة تحديداً مع إعلان الوظيفة
+4. إظهار دافع حقيقي للعمل في منطقة الخليج
+5. ذكر التوفر للانتقال والاستعداد لكفالة تأشيرة العمل
+6. التأكيد على التعدد اللغوي (ميزة كبرى في الخليج)
+7. الإشارة إلى الخبرة مع المجموعات الصناعية الدولية
+8. النبرة: مهنية، واثقة، بدون كليشيهات
+
+إذا كان ترشحاً تلقائياً، أظهر الوعي بدور الشركة في التنويع الاقتصادي الخليجي (رؤية 2030، نيوم، إلخ).</div>
+
+<h2 id="prompt3">النموذج 3 &mdash; طلبات اتصال <span class="latin">LinkedIn</span> <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<p class="instruction">للنسخ واللصق مباشرة (300 حرف كحد أقصى). استبدل الحقول <span class="bracket">[بين الأقواس]</span>.</p>
+
+<h3><span class="version-label">النسخة 1</span> مسؤول توظيف (فرنسية)</h3>
+<div class="prompt-box"><span class="latin">Bonjour</span> <span class="bracket">[الاسم الأول]</span>، أنا مهندس برمجيات مدمجة أول (أكثر من 20 سنة، <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">DO-178</span>). أهتم بفرص البرمجيات المدمجة في الخليج. هل يمكننا تبادل الحديث؟ مع التحية، عبد الحق</div>
+
+<h3><span class="version-label">النسخة 2</span> مدير تقني (فرنسية)</h3>
+<div class="prompt-box"><span class="latin">Bonjour</span> <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أول متخصص في <span class="latin">C/C++</span>، <span class="latin">RTOS</span> و<span class="latin">Linux</span> المدمج (<span class="latin">Safran، Thales، GE Healthcare</span>). فريقكم في <span class="bracket">[اسم الشركة]</span> يثير اهتمامي كثيراً. ثلاثي اللغات. أتطلع للتواصل. عبد الحق</div>
+
+<h3><span class="version-label">النسخة 3</span> زميل (إنجليزية)</h3>
+<div class="prompt-box"><span class="latin">Hi</span> <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أول (أكثر من 20 سنة، <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">DO-178</span>). أستكشف أدوار البرمجيات المدمجة في دول مجلس التعاون. ثلاثي اللغات. يسعدني التواصل. مع أطيب التحيات، عبد الحق</div>
+
+<h3><span class="version-label">النسخة 4</span> مسؤول توظيف (إنجليزية)</h3>
+<div class="prompt-box"><span class="latin">Hi</span> <span class="bracket">[الاسم الأول]</span>، أنا مهندس برمجيات مدمجة أول (أكثر من 20 سنة، <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Embedded Linux</span>). مهتم بالفرص في <span class="bracket">[الإمارات/السعودية/قطر]</span>. يسعدني التواصل. عبد الحق</div>
+
+<h3><span class="version-label">النسخة 5</span> مدير التوظيف (إنجليزية)</h3>
+<div class="prompt-box"><span class="latin">Hi</span> <span class="bracket">[الاسم الأول]</span>، مهندس مدمج أول بخبرة تفوق 20 سنة في <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Embedded Linux</span> (<span class="latin">Safran، Thales، GE Healthcare</span>). فريقكم في <span class="bracket">[اسم الشركة]</span> في <span class="bracket">[المدينة]</span> أثار اهتمامي. متحدث أصلي بالعربية. يسعدني التواصل. عبد الحق</div>
+
+<h2 id="prompt4">النموذج 4 &mdash; رسالة <span class="latin">LinkedIn</span> لمسؤول توظيف في الخليج <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">اكتب رسالة <span class="latin">LinkedIn</span> قصيرة (100-150 كلمة) للتواصل مع مسؤول توظيف في الخليج.
+
+<strong>المرسل إليه:</strong> <span class="bracket">[اسم مسؤول التوظيف &mdash; مثال: أحمد الراشد، <span class="latin">Sophie Martin</span>]</span>
+<strong>الشركة:</strong> <span class="bracket">[الاسم &mdash; مثال: <span class="latin">ADNOC، Aramco، EDGE Group، Hays Middle East، Michael Page Gulf</span>]</span>
+<strong>السياق:</strong> <span class="bracket">[مسؤول توظيف داخلي / وكالة توظيف / مدير تقني]</span>
+
+ملخص ملفي الشخصي:
+- مهندس برمجيات مدمجة أول، أكثر من 20 سنة (<span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Linux</span> المدمج)
+- خبرة في الطيران (<span class="latin">Safran، Thales</span> &mdash; <span class="latin">DO-178</span>) والطبي (<span class="latin">GE Healthcare</span> &mdash; <span class="latin">IEC 62304</span>)
+- جنسية فرنسية، متاح فوراً، منفتح على الانتقال
+- ثلاثي اللغات: الفرنسية، الإنجليزية، العربية الأم (ميزة كبرى في الخليج)
+- خبرة دولية مع مجموعات صناعية كبرى
+
+التعليمات:
+1. نبرة مهنية ومحترمة، مكيفة مع ثقافة الخليج
+2. إظهار اهتمام محدد بالشركة والمنطقة
+3. الإيجاز والمباشرة
+4. ذكر التعدد اللغوي والعربية الأم كقيمة مضافة
+5. اقتراح تبادل حوار دون إلحاح</div>
+
+<h2 id="prompt5">النموذج 5 &mdash; التحضير لمقابلة تقنية في الخليج <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">أنت خبير في المقابلات التقنية لوظائف مهندس برمجيات مدمجة في الخليج (دول مجلس التعاون).
+حضّرني لمقابلة في <span class="bracket">[اسم الشركة]</span> لمنصب <span class="bracket">[المسمى الوظيفي]</span>.
+
+ملفي الشخصي:
+- أكثر من 20 سنة في البرمجيات المدمجة (<span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Linux</span> المدمج، <span class="latin">bare metal</span>)
+- <span class="latin">ARM Cortex، STM32، Microchip، NXP</span>
+- البروتوكولات: <span class="latin">CAN، BLE، USB، TCP/IP، SPI، I2C</span>
+- المعايير: <span class="latin">DO-178، IEC 62304، MISRA C، ISO 15118</span>
+- القطاعات: الطيران، الطبي، السيارات، الأمن السيبراني <span class="latin">IoT</span>، <span class="latin">V2G</span>
+
+أنشئ:
+1. <strong>10 أسئلة تقنية</strong> محتملة مع إجابات مفصلة بناءً على خبرتي
+2. <strong>5 أسئلة سلوكية</strong> (بأسلوب <span class="latin">STAR</span>) مع أمثلة إجابات من مسيرتي
+3. <strong>5 أسئلة يجب أن أطرحها</strong> على الشركة
+4. <strong>5 أسئلة خاصة بالخليج</strong>:
+   - إجراءات تأشيرة العمل وتصريح الإقامة
+   - حزمة الانتقال (سكن، تذاكر طيران، تأمين)
+   - الضرائب (راتب معفى، مزايا عينية)
+   - مدة العقد والتجديد
+   - ثقافة الشركة والبيئة متعددة الثقافات
+5. <strong>كيفية التطرق لموضوع حزمة الانتقال</strong> بطريقة مهنية
+
+لكل إجابة:
+- كن دقيقاً وتقنياً
+- أعطِ أمثلة ملموسة من مهامي السابقة
+- تكييف مع السياق متعدد الثقافات في الخليج
+- اذكر الأدوات والمناهج المحددة</div>
+
+<h2 id="prompt6">النموذج 6 &mdash; تحليل عرض وظيفي خليجي <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">أنت خبير في التوظيف في مجال البرمجيات المدمجة في الخليج.
+إليك عرضاً وظيفياً. حلّله وساعدني في تحضير ترشحي.
+
+<strong>العرض الوظيفي:</strong>
+<span class="bracket">[الصق النص الكامل للعرض هنا]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة
+- <span class="latin">C/C++</span>، <span class="latin">RTOS</span> (<span class="latin">FreeRTOS</span>، <span class="latin">VxWorks</span>)، <span class="latin">Linux</span> المدمج، <span class="latin">ARM Cortex</span>، <span class="latin">STM32</span>
+- <span class="latin">CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C</span>
+- <span class="latin">DO-178، IEC 62304، MISRA C، ISO 15118</span>
+- الطيران (<span class="latin">Safran، Thales</span>)، الطبي (<span class="latin">GE Healthcare، Sorin</span>)، السيارات (<span class="latin">Valeo</span>)، الأمن السيبراني <span class="latin">IoT</span> (<span class="latin">Enedis</span>)، <span class="latin">V2G</span> (<span class="latin">E2-CAD</span>)
+- الفرنسية لغة أم، الإنجليزية مهنية، العربية لغة أم
+- جنسية فرنسية، متاح فوراً
+
+نفّذ المهام التالية:
+1. <strong>تحليل الوظيفة</strong>: المهارات المطلوبة، المرغوبة، والملف المطلوب
+2. <strong>درجة التوافق</strong>: من 1 إلى 10 مع التبرير
+3. <strong>نقاط القوة</strong>: مؤهلاتي الأكثر توافقاً
+4. <strong>الثغرات</strong>: كيفية تقديمها بشكل إيجابي
+5. <strong>رسالة التحفيز</strong>: مكيفة لهذا العرض (300-400 كلمة)
+6. <strong>كلمات مفتاحية</strong>: لتحسين <span class="latin">ATS</span>
+7. <strong>الراتب المقدّر</strong>: بالدرهم/الريال حسب البلد، شاملاً المزايا
+8. <strong>خصوصيات الخليج</strong>: تأشيرة، حزمة الانتقال، ثقافة الشركة، مدة العقد</div>
+
+<h2 id="prompt7">النموذج 7 &mdash; التفاوض على الراتب في الخليج <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">أنت خبير في التفاوض على الرواتب في سوق العمل الخليجي.
+
+<strong>الوظيفة المقترحة:</strong> <span class="bracket">[المسمى]</span>
+<strong>الشركة:</strong> <span class="bracket">[الاسم]</span>
+<strong>المكان:</strong> <span class="bracket">[المدينة والبلد &mdash; مثال: أبو ظبي الإمارات، الرياض السعودية، الدوحة قطر]</span>
+<strong>نوع العقد:</strong> <span class="bracket">[محدد المدة سنتان / دائم]</span>
+<strong>العرض المالي:</strong> <span class="bracket">[المبلغ &mdash; مثال: <span class="latin">25,000 AED</span>/شهر أو <span class="latin">30,000 SAR</span>/شهر]</span>
+
+ملفي الشخصي:
+- أكثر من 20 سنة خبرة، مهندس برمجيات مدمجة أول
+- مهارات نادرة: <span class="latin">DO-178، IEC 62304</span>، الأمن السيبراني المدمج، <span class="latin">V2G/ISO 15118</span>
+- ثلاثي اللغات (العربية لغة أم)
+
+ساعدني في:
+1. <strong>تقييم العرض</strong>: هل هو ضمن نطاق السوق؟
+2. <strong>الحزمة الكاملة</strong>: بدل السكن، تذاكر الطيران، التأمين الصحي، بدل التعليم، النقل، مكافأة نهاية الخدمة، الإجازات، تذكرة العودة
+3. <strong>نقاط التفاوض</strong>: ما يُتفاوض عليه إلى جانب الراتب
+4. <strong>المقارنة الضريبية</strong>: راتب معفى مقابل إجمالي فرنسا
+5. <strong>سيناريو التفاوض</strong>: 3 عبارات مهنية
+6. <strong>أخطاء يجب تجنبها</strong>: المزالق الشائعة
+7. <strong>الجوانب القانونية</strong>: قانون العمل المحلي</div>
+
+<h2 id="prompt8">النموذج 8 &mdash; دليل التأشيرة والانتقال (الإمارات/السعودية/قطر) <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">أنت خبير في التنقل الدولي والانتقال إلى الخليج.
+
+<strong>وضعي:</strong>
+- جنسية فرنسية
+- مهندس برمجيات مدمجة أول
+- الوضع العائلي: <span class="bracket">[أعزب / متزوج / لديه أطفال]</span>
+- البلد المستهدف: <span class="bracket">[الإمارات / السعودية / قطر / الثلاثة]</span>
+
+قارن بالتفصيل للبلدان الثلاثة:
+1. <strong>تأشيرة العمل</strong>: الأنواع، الإجراءات، المدة، الشروط، الكفيل
+2. <strong>تكلفة المعيشة</strong>: السكن، النقل، الطعام، التعليم حسب المدينة
+3. <strong>الضرائب</strong>: ضريبة الدخل، ضريبة القيمة المضافة
+4. <strong>النظام الصحي</strong>: التغطية، الجودة، التكاليف
+5. <strong>السكن</strong>: الأحياء الموصى بها، نطاقات الإيجار
+6. <strong>النقل</strong>: رخصة القيادة، وسائل النقل العام
+7. <strong>الثقافة ونمط الحياة</strong>: القواعد، الحريات، المجتمع الفرنكوفوني
+8. <strong>الأمان</strong>: التصنيف العالمي، البيئة للعائلات
+9. <strong>التعليم</strong>: المدارس الفرنسية/الدولية
+10. <strong>المزايا والعيوب</strong>: جدول مقارن
+11. <strong>التوصية</strong>: أي بلد يناسبني أفضل؟
+
+أعطِ أرقاماً ملموسة ومحدّثة.</div>
+
+<h2 id="prompt9">النموذج 9 &mdash; تكييف السيرة الذاتية للخليج <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">أنت خبير في تحسين السير الذاتية لسوق العمل الخليجي.
+
+<strong>الشركة المستهدفة:</strong> <span class="bracket">[الاسم &mdash; مثال: <span class="latin">ADNOC، Aramco، EDGE Group، NEOM، Thales Middle East</span>]</span>
+<strong>الوظيفة المستهدفة:</strong> <span class="bracket">[المسمى &mdash; مثال: <span class="latin">Senior Embedded Software Engineer</span>]</span>
+<strong>وصف الوظيفة:</strong> <span class="bracket">[الصق العرض أو النقاط الرئيسية]</span>
+
+ملفي الشخصي الكامل:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة
+- <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Linux</span> المدمج، <span class="latin">ARM Cortex</span>، <span class="latin">STM32</span>
+- البروتوكولات: <span class="latin">CAN، CANOpen، BLE، USB، TCP/IP، SPI، I2C</span>
+- المعايير: <span class="latin">DO-178، IEC 62304، MISRA C، ISO 15118</span>
+- مؤسس <span class="latin">Workshop-DIY</span> (روبوتيك للشباب)
+- اللغات: الفرنسية لغة أم، الإنجليزية مهنية، العربية لغة أم
+
+نفّذ:
+1. <strong>خصوصيات السيرة الذاتية في الخليج</strong>: الصورة، تاريخ الميلاد، الجنسية، الحالة الاجتماعية، رقم جواز السفر
+2. <strong>الكلمات المفتاحية</strong>: لاجتياز مرشحات <span class="latin">ATS</span>
+3. <strong>إعادة ترتيب الخبرات</strong>: لتحقيق أقصى تأثير
+4. <strong>الملخص المهني</strong>: 3-4 أسطر مكيفة للخليج
+5. <strong>المهارات التي يجب إبرازها</strong>: حسب الصلة بالوظيفة
+6. <strong>قسم اللغات</strong>: العربية الأم = ميزة كبرى
+7. <strong>المراجع</strong>: هل يجب تضمينها؟
+8. <strong>التكييف الثقافي</strong>: خصوصيات الخليج في العرض</div>
+
+<h2 id="prompt10">النموذج 10 &mdash; رسالة تشبيك مهنية في الخليج <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">اكتب رسالة قصيرة لتقديم نفسي في فعالية تقنية / مؤتمر في الخليج.
+
+<strong>الفعالية:</strong> <span class="bracket">[الاسم &mdash; مثال: <span class="latin">GITEX Dubai، LEAP Riyadh، Qatar IT Conference، ADIPEC Abu Dhabi</span>]</span>
+<strong>الصيغة:</strong> <span class="bracket">[رسالة <span class="latin">LinkedIn</span> / بريد إلكتروني / تقديم شفهي 30 ثانية]</span>
+<strong>السياق:</strong> <span class="bracket">[تشبيك / بحث عن عمل / تبادل معرفي]</span>
+
+ملفي الشخصي:
+- عبد الحق بورديم، مهندس برمجيات مدمجة أول، أكثر من 20 سنة
+- التخصصات: <span class="latin">C/C++</span>، <span class="latin">RTOS</span>، <span class="latin">Linux</span> المدمج، الأمن السيبراني المدمج
+- المعايير الحرجة: <span class="latin">DO-178</span> (الطيران)، <span class="latin">IEC 62304</span> (الطبي)، <span class="latin">ISO 15118</span> (<span class="latin">V2G</span>)
+- مؤسس <span class="latin">Workshop-DIY</span> (روبوتيك للشباب)
+- ثلاثي اللغات (العربية لغة أم)
+
+التعليمات:
+1. قصير ومؤثر (50-100 كلمة للرسالة، 30 ثانية للشفهي)
+2. ذكر ما يمكنني تقديمه للمنظومة التقنية الخليجية
+3. نبرة مهنية ومحترمة، مكيفة مع ثقافة الخليج
+4. إظهار اهتمام بالمشاريع الكبرى (رؤية 2030، نيوم، المدن الذكية)
+5. اقتراح تبادل ملموس (قهوة، مكالمة فيديو، تعاون)
+6. 3 نسخ: <span class="latin">LinkedIn</span>، بريد إلكتروني، عرض سريع</div>
+
+<h2 id="prompt11">النموذج 11 &mdash; البحث عن شركة خليجية قبل المقابلة <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">أنت خبير في الاستخبارات الاستراتيجية والتحضير للمقابلات في الخليج.
+
+<strong>الشركة:</strong> <span class="bracket">[الاسم &mdash; مثال: <span class="latin">ADNOC، Aramco، EDGE Group، NEOM، Thales Middle East، Honeywell ME</span>]</span>
+<strong>الوظيفة المستهدفة:</strong> <span class="bracket">[المسمى]</span>
+<strong>تاريخ المقابلة:</strong> <span class="bracket">[التاريخ]</span>
+
+ابحث ولخّص:
+1. <strong>معلومات عامة</strong>: المقر، الحجم، الإيرادات، عدد الموظفين، التأسيس، الملكية
+2. <strong>النشاط الرئيسي</strong>: القطاع، المنتجات، العملاء، الموقع في السوق، الدور الاقتصادي
+3. <strong>الفريق التقني</strong>: التقنيات، المشاريع الأخيرة، براءات الاختراع
+4. <strong>ثقافة الشركة</strong>: القيم، الأجواء، التنوع، سياسة التوطين
+5. <strong>الأخبار الأخيرة</strong>: استحواذات، شراكات، مشاريع جديدة
+6. <strong>الارتباط بالرؤى الوطنية</strong>: رؤية 2030، التنويع الاقتصادي، التحول الرقمي
+7. <strong>المنافسون</strong>: في المنطقة وعلى المستوى الدولي
+8. <strong>أسئلة مناسبة</strong>: 5 أسئلة ذكية للمقابلة
+9. <strong>نقاط الربط</strong>: عناصر من ملفي تتوافق مع مشاريع الشركة
+10. <strong>إشارات تحذيرية</strong>: علامات تحذير محتملة
+11. <strong>الحزمة النموذجية</strong>: نطاق الراتب والمزايا المعتادة
+
+الهدف: الوصول إلى المقابلة بمعرفة عميقة بالشركة والسياق الإقليمي.</div>
+
+<h2 id="guide">كيفية استخدام هذه النماذج</h2>
+
+<div class="guide-step"><span class="order-num">1</span> انسخ النموذج الذي يهمك</div>
+<div class="guide-step"><span class="order-num">2</span> استبدل الحقول <span class="bracket">[بين الأقواس]</span> بمعلوماتك</div>
+<div class="guide-step"><span class="order-num">3</span> الصقه في <span class="latin">ChatGPT</span> أو <span class="latin">Claude</span> أو أي ذكاء اصطناعي آخر</div>
+<div class="guide-step"><span class="order-num">4</span> كيّف الإجابة حسب أسلوبك الشخصي</div>
+
+<div class="warning-box">
+  <strong>مهم:</strong> لا ترسل أبداً نصاً أنشأه الذكاء الاصطناعي دون مراجعته وتخصيصه. الذكاء الاصطناعي أداة مساعدة وليس بديلاً عن حكمك الشخصي.
+</div>
+
+<h3>الترتيب الموصى به للترشح</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>النموذج 6</strong> &mdash; تحليل العرض &larr; فهم ما تبحث عنه الشركة<br><br>
+  <span class="order-num">2</span> <strong>النموذج 11</strong> &mdash; البحث عن الشركة &larr; معرفة السياق<br><br>
+  <span class="order-num">3</span> <strong>النموذج 9</strong> &mdash; تكييف السيرة الذاتية &larr; تخصيص للخليج<br><br>
+  <span class="order-num">4</span> <strong>النموذج 1 أو 2</strong> &mdash; رسالة التحفيز &larr; التقديم<br><br>
+  <span class="order-num">5</span> <strong>النموذج 4</strong> &mdash; رسالة <span class="latin">LinkedIn</span> &larr; التشبيك بالتوازي<br><br>
+  <span class="order-num">6</span> <strong>النموذج 5</strong> &mdash; التحضير للمقابلة &larr; قبل كل مقابلة<br><br>
+  <span class="order-num">7</span> <strong>النموذج 7</strong> &mdash; التفاوض على الراتب &larr; عند تلقي عرض<br><br>
+  <span class="order-num">8</span> <strong>النموذج 8</strong> &mdash; دليل الانتقال &larr; للتحضير للاستقرار
+</div>
+
+</body>
+</html>

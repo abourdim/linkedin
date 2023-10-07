@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Job Search Portfolio v1.0</title>
+<style>
+  :root {
+    --bg: #0f1923;
+    --card: #162232;
+    --blue: #2e6db4;
+    --cyan: #5ecfcf;
+    --green: #4caf50;
+    --orange: #ff9800;
+    --red: #e74c3c;
+    --text: #c8d6e5;
+    --text-dim: #7a8fa0;
+    --text-bright: #e8f0f8;
+    --border: #1e3450;
+    --code-bg: #0a1220;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Segoe UI', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; padding: 40px 20px; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1 { color: var(--cyan); font-size: 28px; text-align: center; margin-bottom: 8px; }
+  .subtitle { text-align: center; color: var(--text-dim); font-size: 14px; margin-bottom: 40px; }
+  h2 { color: var(--cyan); font-size: 20px; margin: 36px 0 16px 0; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { color: var(--blue); font-size: 16px; margin: 20px 0 8px 0; }
+  p { margin-bottom: 12px; font-size: 15px; }
+  code { background: var(--code-bg); color: var(--cyan); padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; padding: 16px; margin: 12px 0; overflow-x: auto; font-size: 13px; line-height: 1.6; color: var(--text); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin: 16px 0; }
+  .card-title { color: var(--orange); font-weight: 700; font-size: 14px; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+  ul, ol { margin: 8px 0 12px 24px; }
+  li { margin-bottom: 6px; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th { background: var(--blue); color: #fff; padding: 8px 12px; text-align: left; font-size: 13px; }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--border); }
+  tr:nth-child(even) { background: rgba(46,109,180,0.08); }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 3px; font-size: 11px; font-weight: 600; }
+  .badge-green { background: rgba(76,175,80,0.2); color: var(--green); }
+  .badge-blue { background: rgba(46,109,180,0.2); color: var(--blue); }
+  .badge-orange { background: rgba(255,152,0,0.2); color: var(--orange); }
+  .badge-cyan { background: rgba(94,207,207,0.2); color: var(--cyan); }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .grid-2 { grid-template-columns: 1fr; } }
+  .toc { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 20px; margin-bottom: 30px; }
+  .toc a { color: var(--cyan); text-decoration: none; font-size: 14px; }
+  .toc a:hover { text-decoration: underline; }
+  .toc ol { margin-left: 20px; }
+  .toc li { margin-bottom: 4px; }
+  .shortcut { display: inline-block; background: var(--code-bg); border: 1px solid var(--border); padding: 2px 8px; border-radius: 4px; font-family: monospace; font-size: 12px; color: var(--orange); }
+  a { color: var(--cyan); }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>How It Works</h1>
+<div class="subtitle">Job Search Portfolio v1.0 — Abdelhak Bourdim — March 2026</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <strong style="color:var(--orange);">Table of Contents</strong>
+  <ol>
+    <li><a href="#quickstart">Quick Start</a></li>
+    <li><a href="#architecture">Architecture</a></li>
+    <li><a href="#countries">Countries &amp; Content</a></li>
+    <li><a href="#languages">Languages &amp; RTL</a></li>
+    <li><a href="#themes">Themes</a></li>
+    <li><a href="#pin">PIN Access</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#files">File Structure</a></li>
+    <li><a href="#keyboard">Keyboard Shortcuts</a></li>
+    <li><a href="#api">Live Job Listings (Adzuna API)</a></li>
+    <li><a href="#deploy">Deployment (GitHub Pages)</a></li>
+    <li><a href="#customize">How to Customize</a></li>
+  </ol>
+</div>
+
+<!-- 1. QUICK START -->
+<h2 id="quickstart">1. Quick Start</h2>
+<pre>
+# Option A: use the launcher script
+chmod +x start_here.sh
+./start_here.sh
+
+# Option B: use Python directly
+python3 serve.py
+
+# Option C: custom port
+python3 serve.py 3000
+</pre>
+<p>The browser opens automatically at <code>http://localhost:8000/jobs/</code>.</p>
+<p>Default PIN: <code>123456</code></p>
+
+<!-- 2. ARCHITECTURE -->
+<h2 id="architecture">2. Architecture</h2>
+<div class="card">
+  <div class="card-title">Single Page Application (SPA)</div>
+  <ul>
+    <li><strong>Zero dependencies</strong> — pure vanilla HTML, CSS, JavaScript</li>
+    <li><strong>No build step</strong> — no Node.js, no npm, no webpack</li>
+    <li><strong>Hash-based routing</strong> — <code>#/ch/cv</code>, <code>#/fr/plan</code>, <code>#/lu/pitch</code>, etc.</li>
+    <li><strong>iframe content loading</strong> — each document preserves its own CSS styling</li>
+    <li><strong>localStorage persistence</strong> — theme, language, PIN session, edited documents</li>
+  </ul>
+</div>
+<pre>
+jobs/
+  index.html          Main SPA entry point
+  css/
+    spa.css           Layout, sidebar, content area
+    themes.css        7 visual themes (CSS custom properties)
+  js/
+    app.js            Core SPA + content map + routing
+    pin.js            6-digit PIN with SHA-256 hashing
+    i18n.js           FR/EN/AR language switcher + RTL
+    themes.js         7-theme switcher
+    editor.js         Edit mode (contenteditable + localStorage)
+    downloads.js      Download HTML/TXT/PDF + copy text/link
+    jobs.js           Live job listings via Adzuna API
+</pre>
+
+<!-- 3. COUNTRIES -->
+<h2 id="countries">3. Countries &amp; Content</h2>
+<p>Each country has the same 8 document sections, each available in 3 languages:</p>
+<table>
+  <thead>
+    <tr><th>Section</th><th>Description</th><th>File Types</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>CV</td><td>Formatted resume adapted to country norms</td><td>.html</td></tr>
+    <tr><td>LinkedIn</td><td>LinkedIn profile content</td><td>.html, .txt</td></tr>
+    <tr><td>Cover Letter</td><td>Motivation letter with placeholders</td><td>.html</td></tr>
+    <tr><td>Pitch</td><td>2-minute elevator pitch with company variants</td><td>.html, .txt</td></tr>
+    <tr><td>Interview Prep</td><td>Technical &amp; behavioral question bank</td><td>.html</td></tr>
+    <tr><td>Action Plan</td><td>Week-by-week job search strategy</td><td>.html, .txt</td></tr>
+    <tr><td>AI Prompts</td><td>11 ChatGPT/Claude prompts for job search</td><td>.html, .txt</td></tr>
+    <tr><td>Search Queries</td><td>LinkedIn/Google/job board queries</td><td>.html, .txt</td></tr>
+  </tbody>
+</table>
+
+<div class="grid-2">
+  <div class="card">
+    <div class="card-title">Switzerland (CH)</div>
+    <p>Files 48-77. Swiss format CV (photo optional), Suisse Romande focus, CHF salaries, permit B/L info.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">France (FR)</div>
+    <p>Files 78-89. French format CV (no photo, no DOB, no nationality per anti-discrimination law), Paris/IDF focus.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Luxembourg (LU)</div>
+    <p>Files 90-100. EU format, frontalier (cross-border) status, SES/IEE/POST targets, 13th month salary.</p>
+  </div>
+  <div class="card">
+    <div class="card-title">Gulf / GCC</div>
+    <p>Files 101-111. Gulf format CV (photo, DOB, nationality, visa status required), ADNOC/Aramco/EDGE/NEOM targets, tax-free salaries.</p>
+  </div>
+</div>
+
+<!-- 4. LANGUAGES -->
+<h2 id="languages">4. Languages &amp; RTL</h2>
+<div class="card">
+  <div class="card-title">Three Languages</div>
+  <ul>
+    <li><span class="badge badge-blue">FR</span> French — default language</li>
+    <li><span class="badge badge-green">EN</span> English — full translation</li>
+    <li><span class="badge badge-orange">AR</span> Arabic — full RTL support (<code>dir="rtl"</code>, <code>direction: rtl</code>, <code>text-align: right</code>)</li>
+  </ul>
+  <p style="margin-top:10px;">Arabic files use <code>.latin</code> CSS class (<code>direction: ltr; unicode-bidi: isolate</code>) to keep company names and technical terms in Latin script inline.</p>
+  <p>Language switcher in the top-right of the sidebar. Persists in <code>localStorage</code>.</p>
+</div>
+
+<!-- 5. THEMES -->
+<h2 id="themes">5. Themes</h2>
+<p>7 visual themes, switchable from the sidebar. Persists in <code>localStorage</code>.</p>
+<table>
+  <thead><tr><th>Theme</th><th>Description</th></tr></thead>
+  <tbody>
+    <tr><td>Light</td><td>Clean white default</td></tr>
+    <tr><td>Dark</td><td>Dark background, light text</td></tr>
+    <tr><td>Blue</td><td>Professional blue tones</td></tr>
+    <tr><td>High Contrast</td><td>Accessibility-focused, black &amp; yellow</td></tr>
+    <tr><td>Golden Age</td><td>Warm sepia tones, paper texture</td></tr>
+    <tr><td>Alhambra</td><td>Islamic geometric patterns, green &amp; gold</td></tr>
+    <tr><td>Medina</td><td>Moroccan blue &amp; terracotta, arabesque SVG patterns</td></tr>
+  </tbody>
+</table>
+
+<!-- 6. PIN -->
+<h2 id="pin">6. PIN Access</h2>
+<div class="card">
+  <div class="card-title">Security</div>
+  <ul>
+    <li>Default PIN: <code>123456</code></li>
+    <li>PIN is hashed with <strong>SHA-256</strong> via Web Crypto API — never stored in clear text</li>
+    <li>Session persists for <strong>24 hours</strong> in localStorage</li>
+    <li>3 failed attempts = 30-second lockout</li>
+  </ul>
+  <h3 style="margin-top:14px;">Change the PIN</h3>
+  <p>Open the browser console and run:</p>
+  <pre>PIN.generateHash('your-new-pin')</pre>
+  <p>Copy the hash and replace <code>HASH</code> in <code>jobs/js/pin.js</code> line 10.</p>
+</div>
+
+<!-- 7. FEATURES -->
+<h2 id="features">7. Features</h2>
+
+<h3>Edit Mode</h3>
+<p>Click the <strong>Edit</strong> button on any document to enable <code>contenteditable</code>. Changes are saved to <code>localStorage</code> and persist across sessions. Click <strong>Reset</strong> to restore the original.</p>
+
+<h3>Downloads</h3>
+<p>Each document can be downloaded in multiple formats:</p>
+<ul>
+  <li><strong>HTML</strong> — original formatted file</li>
+  <li><strong>TXT</strong> — plain text version (when available)</li>
+  <li><strong>PDF</strong> — generated via browser print (Ctrl+P)</li>
+  <li><strong>Copy Text</strong> — copies content to clipboard</li>
+  <li><strong>Copy Link</strong> — copies direct URL to document</li>
+</ul>
+
+<h3>Command Palette</h3>
+<p>Press <span class="shortcut">Ctrl+K</span> to open the command palette. Search for any country, section, or action. Fuzzy matching supported.</p>
+
+<!-- 8. FILE STRUCTURE -->
+<h2 id="files">8. File Structure</h2>
+<pre>
+cv_updated/
+  start_here.sh           Launcher script
+  serve.py                Local dev server (Python)
+  howto.html              This documentation
+  README.md               Project overview
+  .nojekyll               GitHub Pages config
+  .gitignore              Git exclusions
+
+  jobs/                   SPA application
+    index.html            Entry point
+    css/spa.css           Layout styles
+    css/themes.css        7 theme definitions
+    js/app.js             Core app + content map
+    js/pin.js             PIN access control
+    js/i18n.js            Language switcher
+    js/themes.js          Theme switcher
+    js/editor.js          Edit mode
+    js/downloads.js       Download manager
+    js/jobs.js            Adzuna API integration
+
+  01-19_*                 Legacy CV files (v1, v2)
+  48-56_*                 CV v2.4 (FR/EN/AR, HTML/PDF/DOCX)
+  57-63_*                 Interview prep + cover letters (CH)
+  64-77_*                 Switzerland content (all sections)
+  78-89_*                 France content (all sections)
+  90-100_*                Luxembourg content (all sections)
+  101-111_*               Gulf/GCC content (all sections)
+</pre>
+
+<!-- 9. KEYBOARD SHORTCUTS -->
+<h2 id="keyboard">9. Keyboard Shortcuts</h2>
+<table>
+  <thead><tr><th>Shortcut</th><th>Action</th></tr></thead>
+  <tbody>
+    <tr><td><span class="shortcut">Ctrl+K</span></td><td>Open command palette</td></tr>
+    <tr><td><span class="shortcut">Escape</span></td><td>Close command palette / modal</td></tr>
+    <tr><td><span class="shortcut">1-4</span></td><td>Switch country (in sidebar)</td></tr>
+  </tbody>
+</table>
+
+<!-- 10. API -->
+<h2 id="api">10. Live Job Listings (Adzuna API)</h2>
+<div class="card">
+  <div class="card-title">Configuration</div>
+  <p>The "Jobs" section in each country fetches live listings from the <a href="https://developer.adzuna.com/" target="_blank">Adzuna API</a>.</p>
+  <p>To configure, edit the API credentials in <code>jobs/js/jobs.js</code>:</p>
+  <pre>
+APP_ID: 'your-app-id',
+APP_KEY: 'your-app-key'</pre>
+  <p>Free tier: 250 requests/month. Regions supported: <code>gb</code>, <code>us</code>, <code>fr</code>, <code>de</code>, <code>at</code>, <code>ch</code>, etc.</p>
+</div>
+
+<!-- 11. DEPLOY -->
+<h2 id="deploy">11. Deployment (GitHub Pages)</h2>
+<pre>
+# 1. Create GitHub repo
+gh repo create cv_updated --public --source=. --push
+
+# 2. Enable GitHub Pages
+#    Settings > Pages > Source: main branch, / (root)
+
+# 3. Access at:
+#    https://your-username.github.io/cv_updated/jobs/
+</pre>
+<p>The <code>.nojekyll</code> file is already included to prevent Jekyll processing.</p>
+
+<!-- 12. CUSTOMIZE -->
+<h2 id="customize">12. How to Customize</h2>
+
+<h3>Add a new country</h3>
+<ol>
+  <li>Create content files (CV, plan, pitch, letter, prompts, queries) in FR/EN/AR</li>
+  <li>Add the country to the <code>CONTENT</code> map in <code>jobs/js/app.js</code></li>
+  <li>Add country label translations in <code>jobs/js/i18n.js</code></li>
+</ol>
+
+<h3>Change the PIN</h3>
+<ol>
+  <li>Open browser console on the app</li>
+  <li>Run <code>PIN.generateHash('newpin')</code></li>
+  <li>Copy the hash into <code>jobs/js/pin.js</code> line 10</li>
+</ol>
+
+<h3>Add a new theme</h3>
+<ol>
+  <li>Add a new <code>[data-theme="mytheme"]</code> block in <code>jobs/css/themes.css</code></li>
+  <li>Register it in the <code>THEMES</code> array in <code>jobs/js/themes.js</code></li>
+</ol>
+
+<h3>Edit document content</h3>
+<p>Either edit the source HTML files directly, or use the built-in Edit Mode in the app (changes saved to localStorage).</p>
+
+<div style="text-align:center; margin-top:40px; padding:20px; color:var(--text-dim); font-size:13px;">
+  Abdelhak Bourdim &bull; Senior Embedded Software Engineer &bull; v1.0 &bull; March 2026
+</div>
+
+</div>
+</body>
+</html>
