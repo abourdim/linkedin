@@ -14,7 +14,9 @@
   h1 { font-size: 32px; color: #fff; margin-bottom: 4px; font-weight: 300; letter-spacing: 2px; }
   .title { font-size: 13px; color: #5ecfcf; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 36px; }
   .flags { display: flex; justify-content: center; gap: 28px; margin-bottom: 32px; }
-  .flag { width: 48px; height: 32px; border-radius: 4px; object-fit: cover; animation: popIn 0.4s ease-out backwards; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+  .flag-item { text-align: center; animation: popIn 0.4s ease-out backwards; }
+  .flag { width: 48px; height: 32px; border-radius: 4px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+  .flag-label { font-size: 10px; color: #5a7a9a; margin-top: 6px; letter-spacing: 0.5px; }
   .flag:nth-child(1) { animation-delay: 0.1s; }
   .flag:nth-child(2) { animation-delay: 0.2s; }
   .flag:nth-child(3) { animation-delay: 0.3s; }
@@ -37,10 +39,10 @@
   <h1>Abdelhak Bourdim</h1>
   <div class="title">Senior Embedded Software Engineer</div>
   <div class="flags">
-    <img class="flag" src="https://flagcdn.com/w80/ch.png" alt="Switzerland" style="animation-delay:0.1s">
-    <img class="flag" src="https://flagcdn.com/w80/fr.png" alt="France" style="animation-delay:0.2s">
-    <img class="flag" src="https://flagcdn.com/w80/lu.png" alt="Luxembourg" style="animation-delay:0.3s">
-    <img class="flag" src="https://flagcdn.com/w80/ae.png" alt="UAE" style="animation-delay:0.4s">
+    <div class="flag-item" style="animation-delay:0.1s"><img class="flag" src="https://flagcdn.com/w80/ch.png" alt="Switzerland"><div class="flag-label">Suisse</div></div>
+    <div class="flag-item" style="animation-delay:0.2s"><img class="flag" src="https://flagcdn.com/w80/fr.png" alt="France"><div class="flag-label">France</div></div>
+    <div class="flag-item" style="animation-delay:0.3s"><img class="flag" src="https://flagcdn.com/w80/lu.png" alt="Luxembourg"><div class="flag-label">Luxembourg</div></div>
+    <div class="flag-item" style="animation-delay:0.4s"><img class="flag" src="https://flagcdn.com/w80/ae.png" alt="UAE"><div class="flag-label">Golfe</div></div>
   </div>
   <div class="bar"><div class="bar-fill"></div></div>
   <a href="jobs/index.html" class="enter">Enter</a>
