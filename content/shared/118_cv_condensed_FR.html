@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>CV Condense — Abdelhak Bourdim — FR</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8pt;
+    color: #222;
+    line-height: 1.35;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 30%;
+    background: #1a2a4a;
+    color: #e8eef5;
+    padding: 14mm 5mm 8mm 5mm;
+    display: flex;
+    flex-direction: column;
+    gap: 7pt;
+  }
+
+  .sidebar .name {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.8pt;
+    line-height: 1.2;
+    margin-bottom: 2pt;
+  }
+
+  .sidebar .title {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #7fb3e0;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 4pt;
+  }
+
+  .sidebar .sep {
+    border: none;
+    border-top: 0.5pt solid rgba(255,255,255,0.2);
+    margin: 2pt 0;
+  }
+
+  .sidebar .sec-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #7fb3e0;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    margin-bottom: 3pt;
+  }
+
+  .sidebar .contact-item {
+    font-size: 7pt;
+    line-height: 1.5;
+    color: #d0dbe8;
+  }
+
+  .sidebar .contact-item strong {
+    color: #fff;
+  }
+
+  .sidebar .skill-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar .skill-list li {
+    font-size: 7pt;
+    color: #d0dbe8;
+    padding: 1pt 0;
+    padding-left: 8pt;
+    position: relative;
+  }
+
+  .sidebar .skill-list li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #7fb3e0;
+    font-size: 6pt;
+  }
+
+  .sidebar .tag-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2pt;
+  }
+
+  .sidebar .tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    border: 0.5pt solid rgba(255,255,255,0.2);
+    color: #d0dbe8;
+    font-size: 6.5pt;
+    padding: 1.5pt 4pt;
+    border-radius: 2pt;
+    font-weight: 600;
+  }
+
+  .sidebar .lang-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7pt;
+    padding: 1pt 0;
+  }
+
+  .sidebar .lang-name {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .sidebar .lang-level {
+    color: #7fb3e0;
+    font-style: italic;
+    font-size: 6.5pt;
+  }
+
+  .sidebar .avail {
+    background: rgba(46,109,180,0.3);
+    border: 0.5pt solid rgba(127,179,224,0.4);
+    border-radius: 3pt;
+    padding: 4pt 5pt;
+    text-align: center;
+    font-size: 7pt;
+    font-weight: 600;
+    color: #7fb3e0;
+    line-height: 1.4;
+  }
+
+  /* ── MAIN ── */
+  .main {
+    width: 70%;
+    padding: 12mm 10mm 8mm 10mm;
+    display: flex;
+    flex-direction: column;
+    gap: 6pt;
+  }
+
+  .main .sec-title {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    padding-bottom: 2pt;
+    border-bottom: 1.5pt solid #2e6db4;
+    margin-bottom: 4pt;
+  }
+
+  /* Profile */
+  .profile-text {
+    font-size: 8pt;
+    color: #333;
+    line-height: 1.45;
+    text-align: justify;
+  }
+
+  /* Experience */
+  .exp-item {
+    margin-bottom: 4pt;
+    page-break-inside: avoid;
+  }
+
+  .exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .exp-company {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a2a4a;
+  }
+
+  .exp-dates {
+    font-size: 7pt;
+    color: #888;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .exp-role {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #2e6db4;
+  }
+
+  .exp-desc {
+    font-size: 7.5pt;
+    color: #444;
+    line-height: 1.35;
+    margin-top: 1pt;
+  }
+
+  /* Older exp */
+  .old-section {
+    margin-top: 2pt;
+  }
+
+  .old-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    margin-bottom: 3pt;
+  }
+
+  .old-item {
+    font-size: 7pt;
+    color: #444;
+    line-height: 1.4;
+    padding-left: 8pt;
+    position: relative;
+    margin-bottom: 2pt;
+  }
+
+  .old-item::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2e6db4;
+    font-size: 6pt;
+  }
+
+  .old-item strong {
+    color: #1a2a4a;
+  }
+
+  /* Education */
+  .edu-line {
+    font-size: 7.5pt;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .edu-line strong {
+    color: #1a2a4a;
+  }
+
+  /* International */
+  .intl {
+    font-size: 7.5pt;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .footer-note {
+    margin-top: auto;
+    font-size: 6.5pt;
+    color: #bbb;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ SIDEBAR ══ -->
+  <div class="sidebar">
+    <div class="name">Abdelhak<br>BOURDIM</div>
+    <div class="title">Ingenieur Logiciel<br>Embarque Senior</div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Contact</div>
+      <div class="contact-item"><strong>Email :</strong> abdelhak.bourdim@gmail.com</div>
+      <div class="contact-item"><strong>Tel :</strong> +33 6 19 51 51 73</div>
+      <div class="contact-item"><strong>Lieu :</strong> Region parisienne</div>
+      <div class="contact-item"><strong>LinkedIn :</strong> linkedin.com/in/abdelhak-bourdim-96416122</div>
+      <div class="contact-item"><strong>Web :</strong> workshop-diy.org</div>
+      <div style="text-align:center;margin-top:10pt;">
+        <img src="qr_portfolio.svg" alt="QR Portfolio" style="width:60pt;height:60pt;">
+        <div style="font-size:6pt;color:#6a7a9a;margin-top:2pt;">Portfolio en ligne</div>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Competences cles</div>
+      <div class="tag-area">
+        <span class="tag">C/C++</span>
+        <span class="tag">Embedded Linux</span>
+        <span class="tag">RTOS</span>
+        <span class="tag">ARM Cortex</span>
+        <span class="tag">STM32</span>
+        <span class="tag">CAN</span>
+        <span class="tag">BLE</span>
+        <span class="tag">USB</span>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">Python</span>
+        <span class="tag">Bash</span>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Normes</div>
+      <div class="tag-area">
+        <span class="tag">DO-178</span>
+        <span class="tag">IEC 62304</span>
+        <span class="tag">MISRA C</span>
+        <span class="tag">ISO 15118</span>
+        <span class="tag">OCPP</span>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Langues</div>
+      <div class="lang-row"><span class="lang-name">Francais</span><span class="lang-level">Bilingue</span></div>
+      <div class="lang-row"><span class="lang-name">Anglais</span><span class="lang-level">Professionnel</span></div>
+      <div class="lang-row"><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span><span class="lang-level">Bilingue</span></div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="avail">Disponible<br>immediatement</div>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <div class="main">
+
+    <!-- PROFILE -->
+    <div>
+      <div class="sec-title">Profil</div>
+      <p class="profile-text">
+        Specialiste en logiciel embarque avec <strong>plus de 20 ans d'experience</strong> en developpement firmware, middleware et applicatifs &mdash; bare metal, RTOS et Linux embarque &mdash; pour systemes critiques multi-secteurs : aeronautique (Safran, Thales), medical (GE Healthcare), automobile (Valeo), cybersecurite IoT (Enedis) et recharge V2G (E2-CAD).
+      </p>
+    </div>
+
+    <!-- EXPERIENCE RECENTE -->
+    <div>
+      <div class="sec-title">Experience recente</div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">E2-CAD &mdash; Eragny (95)</span>
+          <span class="exp-dates">Mai 2025 &ndash; Mars 2026</span>
+        </div>
+        <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Recharge EV / V2G</div>
+        <div class="exp-desc">Reverse engineering, debug et mise en service de bornes de recharge EV (PLC, HomePlug Green PHY, ISO 15118, OCPP). Banc de test, analyse protocoles, scripting Python.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Safran &mdash; Creteil (94)</span>
+          <span class="exp-dates">Mars 2024 &ndash; Mai 2025</span>
+        </div>
+        <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Aeronautique (SSPC A350)</div>
+        <div class="exp-desc">Developpement et mise a jour des drivers bas niveau en C pour le systeme SSPC. Tests de validation sur cible avec Lauterbach TRACE32.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Asterios Technologies &mdash; Massy (91)</span>
+          <span class="exp-dates">Aout 2023 &ndash; Fev. 2024</span>
+        </div>
+        <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Tests SOM aeronautique</div>
+        <div class="exp-desc">Developpement des tests de validation pour module SOM (T1042). Analyse des errata processeur et documentation de test.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Thales &mdash; Gennevilliers (92)</span>
+          <span class="exp-dates">Mai 2022 &ndash; Juil. 2023</span>
+        </div>
+        <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Radio Defense</div>
+        <div class="exp-desc">Developpement couches applicatives sous Linux embarque en C/C++ (projets LPM + N-MMR). Tests HLT, analyse protocoles reseau.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Valeo &mdash; Creteil / Egypte</span>
+          <span class="exp-dates">Mars &ndash; Avril 2022</span>
+        </div>
+        <div class="exp-role">Ingenieur Logiciel Embarque &mdash; Audit de Tests</div>
+        <div class="exp-desc">Audit des processus de tests automobile (NI Mastre, Vector CANoe). Propositions d'automatisation.</div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCES ANTERIEURES -->
+    <div class="old-section">
+      <div class="sec-title">Experiences anterieures</div>
+      <div class="old-item"><strong>Arkamys</strong> (2021&ndash;2022, Levallois-Perret) &mdash; Audio automobile, plugins GStreamer, drivers CAN</div>
+      <div class="old-item"><strong>Thales</strong> (2020&ndash;2021, Velizy) &mdash; Train autonome ATO, migration 64-bit Linux embarque</div>
+      <div class="old-item"><strong>PK Vitality</strong> (2020, Paris) &mdash; Dispositif medical CGM, BLE NRF52840, FreeRTOS</div>
+      <div class="old-item"><strong>Zodiac/Safran</strong> (2017&ndash;2020, Montreuil / Vancouver, Canada) &mdash; SSPC A350, DO-178, tests en vol</div>
+      <div class="old-item"><strong>Enedis</strong> (2015&ndash;2016, Nanterre) &mdash; Cybersecurite Smart Grid, audit concentrateurs Linky</div>
+      <div class="old-item"><strong>Sorin</strong> (2014&ndash;2015, Clamart) &mdash; BLE Pacemaker, IEC 62304</div>
+      <div class="old-item"><strong>GE Healthcare</strong> (2012&ndash;2014, Buc / USA) &mdash; Imagerie medicale, CANOpen, VxWorks</div>
+      <div class="old-item"><strong>Cartadis</strong> (2001&ndash;2009, Fontenay) &mdash; 8 ans, terminaux paiement, USB/TCP/IP, cryptage</div>
+    </div>
+
+    <!-- FORMATION -->
+    <div>
+      <div class="sec-title">Formation</div>
+      <div class="edu-line"><strong>AFPA, Champs-sur-Marne</strong> &mdash; Ingenieur de conception systemes electroniques et informatiques</div>
+      <div class="edu-line"><strong>Universite de Boumerdes, Algerie</strong> &mdash; Ingenieur en electronique, option communication</div>
+    </div>
+
+    <!-- INTERNATIONAL -->
+    <div>
+      <div class="sec-title">Rayonnement international</div>
+      <div class="intl"><strong>France</strong> (base principale) &bull; <strong>USA</strong> (GE Healthcare) &bull; <strong>Canada</strong> (Zodiac/Safran, Vancouver) &bull; <strong>Egypte</strong> (Valeo, audit)</div>
+    </div>
+
+    <div class="footer-note">References sur demande</div>
+
+  </div>
+
+</div>
+
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

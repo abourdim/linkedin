@@ -8,7 +8,7 @@
 1. HEADLINE (max 220 characters)
 ================================================================================
 
-Senior Embedded Software Engineer | C/C++ | RTOS | Embedded Linux | ARM Cortex | STM32 | 20+ Years | Aerospace, Medical, Automotive, IoT, V2G
+Senior Embedded Software Engineer | C/C++ • RTOS • Embedded Linux | France • USA • Canada
 
 
 ================================================================================
@@ -44,7 +44,7 @@ Title:         Embedded Software Engineer — EV Charging / V2G
 Company:       E2-CAD
 Location:      Eragny, France
 Start date:    May 2025
-End date:      Present (check "I currently work here")
+End date:      March 2026
 
 Description:
 Product takeover and test bench setup for EV charging stations (Iotecha IP).

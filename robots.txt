@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abourdim.github.io/linkedin/sitemap.xml

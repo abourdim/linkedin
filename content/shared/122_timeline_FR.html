@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Parcours professionnel — Abdelhak Bourdim</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;background:#f0f2f5;color:#2d2d2d;line-height:1.6}
+
+  /* Header */
+  .header{background:linear-gradient(135deg,#1a2a4a 0%,#0a66c2 100%);color:#fff;text-align:center;padding:48px 20px 40px;position:relative;overflow:hidden}
+  .header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#2e6db4,#0a66c2,#2e6db4)}
+  .header h1{font-size:2.2rem;font-weight:700;letter-spacing:2px;margin-bottom:8px;text-transform:uppercase}
+  .header .subtitle{font-size:1rem;color:#b8d4f0;letter-spacing:0.5px;max-width:600px;margin:0 auto}
+  .header .initials{width:80px;height:80px;border-radius:50%;border:3px solid #4a8fd4;background:linear-gradient(135deg,#1e3a5f,#2e6db4);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;font-weight:700;letter-spacing:3px}
+
+  /* Legend */
+  .legend{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 24px;padding:20px;background:#fff;border-bottom:1px solid #e0e0e0}
+  .legend-item{display:flex;align-items:center;gap:6px;font-size:0.82rem;color:#555}
+  .legend-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+
+  /* Timeline */
+  .timeline-container{max-width:960px;margin:0 auto;padding:40px 20px 60px;position:relative}
+  .timeline-line{position:absolute;left:50%;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#0a66c2,#2e6db4,#1a2a4a);transform:translateX(-50%)}
+
+  .timeline-entry{position:relative;width:50%;padding:0 40px 40px;opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+  .timeline-entry.visible{opacity:1;transform:translateY(0)}
+  .timeline-entry.left{left:0;text-align:right}
+  .timeline-entry.right{left:50%;text-align:left}
+
+  /* Connector dot */
+  .timeline-entry::after{content:'';position:absolute;top:12px;width:16px;height:16px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 2px #0a66c2;z-index:2}
+  .timeline-entry.left::after{right:-8px}
+  .timeline-entry.right::after{left:-8px}
+
+  /* Connector line */
+  .timeline-entry::before{content:'';position:absolute;top:19px;width:32px;height:2px;background:#c0c8d4}
+  .timeline-entry.left::before{right:0}
+  .timeline-entry.right::before{left:0}
+
+  /* Card */
+  .card{background:#fff;border-radius:10px;padding:20px 22px;box-shadow:0 2px 12px rgba(0,0,0,0.08);border-left:4px solid #ccc;position:relative;transition:box-shadow 0.3s,transform 0.3s}
+  .card:hover{box-shadow:0 6px 24px rgba(0,0,0,0.14);transform:translateY(-2px)}
+  .timeline-entry.left .card{border-left:none;border-right:4px solid #ccc}
+
+  .card-date{font-size:0.78rem;font-weight:600;color:#7a8a9a;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .card-company{font-size:1.15rem;font-weight:700;color:#1a2a4a;margin-bottom:2px}
+  .card-role{font-size:0.92rem;font-weight:600;margin-bottom:4px}
+  .card-location{font-size:0.8rem;color:#8a9aaa;margin-bottom:6px;font-style:italic}
+  .card-desc{font-size:0.85rem;color:#555;line-height:1.5}
+
+  /* Sector colors */
+  .sector-aero .card{border-color:#2563eb}.sector-aero .card-role{color:#2563eb}.sector-aero::after{background:#2563eb}
+  .sector-medical .card{border-color:#16a34a}.sector-medical .card-role{color:#16a34a}.sector-medical::after{background:#16a34a}
+  .sector-auto .card{border-color:#ea580c}.sector-auto .card-role{color:#ea580c}.sector-auto::after{background:#ea580c}
+  .sector-iot .card{border-color:#dc2626}.sector-iot .card-role{color:#dc2626}.sector-iot::after{background:#dc2626}
+  .sector-payment .card{border-color:#7c3aed}.sector-payment .card-role{color:#7c3aed}.sector-payment::after{background:#7c3aed}
+  .sector-ev .card{border-color:#0d9488}.sector-ev .card-role{color:#0d9488}.sector-ev::after{background:#0d9488}
+
+  .timeline-entry.left .sector-aero .card,.timeline-entry.left.sector-aero .card{border-right-color:#2563eb;border-left-color:transparent}
+  .timeline-entry.left .sector-medical .card,.timeline-entry.left.sector-medical .card{border-right-color:#16a34a;border-left-color:transparent}
+  .timeline-entry.left .sector-auto .card,.timeline-entry.left.sector-auto .card{border-right-color:#ea580c;border-left-color:transparent}
+  .timeline-entry.left .sector-iot .card,.timeline-entry.left.sector-iot .card{border-right-color:#dc2626;border-left-color:transparent}
+  .timeline-entry.left .sector-payment .card,.timeline-entry.left.sector-payment .card{border-right-color:#7c3aed;border-left-color:transparent}
+  .timeline-entry.left .sector-ev .card,.timeline-entry.left.sector-ev .card{border-right-color:#0d9488;border-left-color:transparent}
+
+  /* Footer */
+  .footer{text-align:center;padding:30px 20px;background:#1a2a4a;color:#8ab8e8;font-size:0.82rem}
+
+  /* Responsive */
+  @media(max-width:768px){
+    .header h1{font-size:1.5rem}
+    .header .subtitle{font-size:0.85rem}
+    .timeline-line{left:20px}
+    .timeline-entry{width:100%;left:0!important;text-align:left!important;padding:0 20px 30px 50px}
+    .timeline-entry::after{left:12px!important;right:auto!important}
+    .timeline-entry::before{left:28px!important;right:auto!important;width:14px}
+    .timeline-entry.left .card{border-right:none;border-left:4px solid #ccc}
+    .timeline-entry.left.sector-aero .card{border-left-color:#2563eb;border-right-color:transparent}
+    .timeline-entry.left.sector-medical .card{border-left-color:#16a34a;border-right-color:transparent}
+    .timeline-entry.left.sector-auto .card{border-left-color:#ea580c;border-right-color:transparent}
+    .timeline-entry.left.sector-iot .card{border-left-color:#dc2626;border-right-color:transparent}
+    .timeline-entry.left.sector-payment .card{border-left-color:#7c3aed;border-right-color:transparent}
+    .timeline-entry.left.sector-ev .card{border-left-color:#0d9488;border-right-color:transparent}
+    .legend{gap:8px 16px;padding:14px}
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="initials">AB</div>
+  <h1>Abdelhak Bourdim</h1>
+  <div class="subtitle">20+ ans d'exp&eacute;rience internationale &mdash; France, USA, Canada, &Eacute;gypte</div>
+</div>
+
+<div class="legend">
+  <div class="legend-item"><span class="legend-dot" style="background:#2563eb"></span> A&eacute;ronautique / D&eacute;fense</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#16a34a"></span> M&eacute;dical</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#ea580c"></span> Automobile</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#dc2626"></span> IoT / &Eacute;nergie</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#7c3aed"></span> Paiement</div>
+  <div class="legend-item"><span class="legend-dot" style="background:#0d9488"></span> Recharge EV / V2G</div>
+</div>
+
+<div class="timeline-container">
+  <div class="timeline-line"></div>
+
+  <!-- 1. E2-CAD -->
+  <div class="timeline-entry left sector-ev">
+    <div class="card">
+      <div class="card-date">2025 &ndash; 2026</div>
+      <div class="card-company">E2-CAD</div>
+      <div class="card-role">Recharge EV / V2G &mdash; Borne de recharge IP Iotecha</div>
+      <div class="card-location">Eragny, France</div>
+      <div class="card-desc">Reprise en main du produit et mise en place du banc de test V2G</div>
+    </div>
+  </div>
+
+  <!-- 2. Safran -->
+  <div class="timeline-entry right sector-aero">
+    <div class="card">
+      <div class="card-date">2024 &ndash; 2025</div>
+      <div class="card-company">Safran</div>
+      <div class="card-role">A&eacute;ronautique &mdash; SSPC Solid State Power Controller</div>
+      <div class="card-location">Cr&eacute;teil, France</div>
+      <div class="card-desc">Mise &agrave; jour des drivers bas niveau pour contr&ocirc;leur de puissance a&eacute;ronautique</div>
+    </div>
+  </div>
+
+  <!-- 3. Asterios -->
+  <div class="timeline-entry left sector-aero">
+    <div class="card">
+      <div class="card-date">2023 &ndash; 2024</div>
+      <div class="card-company">Asterios Technologies</div>
+      <div class="card-role">A&eacute;ronautique &mdash; Tests logiciels T1042SOM</div>
+      <div class="card-location">Massy, France</div>
+      <div class="card-desc">R&eacute;daction des proc&eacute;dures de tests logiciels pour module SOM a&eacute;ronautique</div>
+    </div>
+  </div>
+
+  <!-- 4. Thales Gennevilliers -->
+  <div class="timeline-entry right sector-aero">
+    <div class="card">
+      <div class="card-date">2022 &ndash; 2023</div>
+      <div class="card-company">Thales</div>
+      <div class="card-role">D&eacute;fense &mdash; Radio LPM &amp; N-MMR</div>
+      <div class="card-location">Gennevilliers, France</div>
+      <div class="card-desc">Logiciel de pr&eacute;paration de mission et New Multi Mode Receiver</div>
+    </div>
+  </div>
+
+  <!-- 5. Valeo -->
+  <div class="timeline-entry left sector-auto">
+    <div class="card">
+      <div class="card-date">2022</div>
+      <div class="card-company">Valeo</div>
+      <div class="card-role">Automobile &mdash; Audit des tests</div>
+      <div class="card-location">Cr&eacute;teil, France / &Eacute;gypte</div>
+      <div class="card-desc">Audit des tests unitaires, d'int&eacute;gration et des outils de test en &Eacute;gypte</div>
+    </div>
+  </div>
+
+  <!-- 6. Vertical M2M -->
+  <div class="timeline-entry right sector-iot">
+    <div class="card">
+      <div class="card-date">2021 &ndash; 2022</div>
+      <div class="card-company">Vertical M2M</div>
+      <div class="card-role">IoT &mdash; Linux Embarqu&eacute;</div>
+      <div class="card-location">Boulogne-Billancourt, France</div>
+      <div class="card-desc">D&eacute;veloppement de passerelles IoT sur Linux embarqu&eacute;</div>
+    </div>
+  </div>
+
+  <!-- 7. Thales Velizy -->
+  <div class="timeline-entry left sector-aero">
+    <div class="card">
+      <div class="card-date">2020 &ndash; 2021</div>
+      <div class="card-company">Thales</div>
+      <div class="card-role">Transport &mdash; ATO M&eacute;tro Automatique</div>
+      <div class="card-location">V&eacute;lizy-Villacoublay, France</div>
+      <div class="card-desc">Communication IPC et socket programming pour m&eacute;tro autonome</div>
+    </div>
+  </div>
+
+  <!-- 8. Arkamys -->
+  <div class="timeline-entry right sector-auto">
+    <div class="card">
+      <div class="card-date">2021 &ndash; 2022</div>
+      <div class="card-company">Arkamys</div>
+      <div class="card-role">Automobile &mdash; GStreamer Audio Embarqu&eacute;</div>
+      <div class="card-location">Levallois-Perret, France</div>
+      <div class="card-desc">Plugins audio GStreamer, tests unitaires et d'int&eacute;gration End-to-End</div>
+    </div>
+  </div>
+
+  <!-- 9. PK Vitality -->
+  <div class="timeline-entry left sector-medical">
+    <div class="card">
+      <div class="card-date">2020</div>
+      <div class="card-company">PK Vitality</div>
+      <div class="card-role">M&eacute;dical &mdash; K'Watch CGM Wearable</div>
+      <div class="card-location">Paris, France</div>
+      <div class="card-desc">Drivers BLE, FreeRTOS et interface TouchGFX pour moniteur de glucose</div>
+    </div>
+  </div>
+
+  <!-- 10. Zodiac/Safran -->
+  <div class="timeline-entry right sector-aero">
+    <div class="card">
+      <div class="card-date">2017 &ndash; 2020</div>
+      <div class="card-company">Zodiac Aerospace (Safran)</div>
+      <div class="card-role">A&eacute;ronautique &mdash; SSPC A350 / GENOME / CORAC</div>
+      <div class="card-location">Montreuil, France / Vancouver, Canada</div>
+      <div class="card-desc">Drivers bas niveau, diagnostic et couches applicatives pour A350</div>
+    </div>
+  </div>
+
+  <!-- 11. Enedis -->
+  <div class="timeline-entry left sector-iot">
+    <div class="card">
+      <div class="card-date">2015 &ndash; 2016</div>
+      <div class="card-company">Enedis</div>
+      <div class="card-role">&Eacute;nergie &mdash; Cybers&eacute;curit&eacute; Linky Smart Grids</div>
+      <div class="card-location">Nanterre, France</div>
+      <div class="card-desc">Cybers&eacute;curit&eacute; et audit des concentrateurs Linky</div>
+    </div>
+  </div>
+
+  <!-- 12. Sorin -->
+  <div class="timeline-entry right sector-medical">
+    <div class="card">
+      <div class="card-date">2014 &ndash; 2015</div>
+      <div class="card-company">Sorin</div>
+      <div class="card-role">M&eacute;dical &mdash; Module BLE pour Pacemaker</div>
+      <div class="card-location">Clamart, France</div>
+      <div class="card-desc">&Eacute;tude de faisabilit&eacute; d'int&eacute;gration Bluetooth dans un implant cardiaque</div>
+    </div>
+  </div>
+
+  <!-- 13. GE Healthcare -->
+  <div class="timeline-entry left sector-medical">
+    <div class="card">
+      <div class="card-date">2012 &ndash; 2014</div>
+      <div class="card-company">General Electric Healthcare</div>
+      <div class="card-role">M&eacute;dical &mdash; G&eacute;n&eacute;rateur Rayons X</div>
+      <div class="card-location">Buc, France / USA</div>
+      <div class="card-desc">Int&eacute;gration CANOpen sur cartes RCB et CORTYX pour g&eacute;n&eacute;rateur X-Ray</div>
+    </div>
+  </div>
+
+  <!-- 14. Cartadis -->
+  <div class="timeline-entry right sector-payment">
+    <div class="card">
+      <div class="card-date">2001 &ndash; 2009</div>
+      <div class="card-company">Cartadis</div>
+      <div class="card-role">Paiement &mdash; Syst&egrave;mes de paiement embarqu&eacute;</div>
+      <div class="card-location">Fontenay-sous-Bois, France</div>
+      <div class="card-desc">D&eacute;veloppement de terminaux de paiement embarqu&eacute;s et lecteurs de cartes</div>
+    </div>
+  </div>
+
+</div>
+
+<div class="footer">
+  Abdelhak Bourdim &mdash; Ing&eacute;nieur Logiciel Embarqu&eacute; &mdash; 20+ ans d'exp&eacute;rience
+</div>
+
+<script>
+(function(){
+  var entries = document.querySelectorAll('.timeline-entry');
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(items) {
+      items.forEach(function(item) {
+        if (item.isIntersecting) {
+          item.target.classList.add('visible');
+          observer.unobserve(item.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    entries.forEach(function(entry) { observer.observe(entry); });
+  } else {
+    entries.forEach(function(entry) { entry.classList.add('visible'); });
+  }
+})();
+</script>
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

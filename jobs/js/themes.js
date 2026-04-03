@@ -8,9 +8,11 @@ const Themes = {
   STORAGE_KEY: 'portfolio-theme',
 
   init() {
-    // Load saved theme or detect system preference
+    // Load saved theme, detect system preference, or auto dark at night (20h-7h)
     const saved = localStorage.getItem(this.STORAGE_KEY);
-    const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const hour = new Date().getHours();
+    const isNight = hour >= 20 || hour < 7;
+    const preferred = window.matchMedia('(prefers-color-scheme: dark)').matches || isNight ? 'dark' : 'light';
     this.set(saved || preferred);
 
     // Bind theme dot clicks

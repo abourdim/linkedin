@@ -1,0 +1,16 @@
+{
+  "name": "linkedin",
+  "version": "1.0.0",
+  "description": "**Abdelhak Bourdim** — Senior Embedded Software Engineer — 20+ years",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  }
+}

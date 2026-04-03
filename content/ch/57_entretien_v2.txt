@@ -62,7 +62,7 @@ IA et impression 3D.
 2. PARCOURS — POINTS CLÉS PAR MISSION
 =====================================
 
---- E2-CAD (Mai 2025 – Présent) — Borne de recharge EV ---
+--- E2-CAD (Mai 2025 – Mars 2026) — Borne de recharge EV ---
   Contexte : Reprise en main d'un produit de recharge EV (IP Iotecha)
   Réalisations :
   - Reverse engineering complet du code source (architecture statique et dynamique)

@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr" data-theme="light">
 <head>
+  <!-- Google Analytics — replace G-H9LXFRS78Z with your ID from analytics.google.com -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H9LXFRS78Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-H9LXFRS78Z');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abdelhak Bourdim — Job Search Portfolio</title>
-  <meta name="description" content="Senior Embedded Software Engineer — 20+ years — Job search toolkit for Switzerland, France, Luxembourg & Gulf">
+  <meta name="description" content="Portfolio de recherche d'emploi d'Abdelhak Bourdim — Ingénieur Logiciel Embarqué Senior avec 20+ ans d'expérience. CV, lettres de motivation, prompts IA en FR/EN/AR pour Suisse, France, Luxembourg et Golfe.">
+  <meta name="keywords" content="Abdelhak Bourdim, embedded software engineer, ingénieur logiciel embarqué, CV, cover letter, lettre de motivation, job search, recherche emploi, Switzerland, France, Luxembourg, Gulf, C, C++, AUTOSAR, ASPICE">
+  <link rel="canonical" href="https://abourdim.github.io/linkedin/jobs/index.html">
+  <meta name="theme-color" content="#0a66c2">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Abdelhak Bourdim — Senior Embedded Software Engineer">
+  <meta property="og:description" content="20+ years embedded software experience. CV, cover letters, AI prompts in FR/EN/AR for Switzerland, France, Luxembourg & Gulf.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abourdim.github.io/linkedin/jobs/index.html">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="ar_SA">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abdelhak Bourdim — Senior Embedded Software Engineer">
+  <meta name="twitter:description" content="20+ years embedded software experience. CV, cover letters, AI prompts in FR/EN/AR for Switzerland, France, Luxembourg & Gulf.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/themes.css">
   <link rel="stylesheet" href="css/spa.css">
   <style>
@@ -15,11 +44,19 @@
 </head>
 <body>
 
+  <div style="text-align:center;padding:8px 0 0;font-size:14px;color:#c8b06e;opacity:0.35;font-family:'Amiri','Scheherazade New','Noto Naskh Arabic','Traditional Arabic',serif;letter-spacing:1px;">بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ · وَقُل رَّبِّ زِدْنِي عِلْمًا</div>
+
   <!-- ═══════════════════════════════════════════════════════
        PIN SCREEN — 6-digit access code
        ═══════════════════════════════════════════════════════ -->
   <div class="pin-screen" id="pin-screen">
-    <div class="pin-lock-icon">&#128274;</div>
+    <div style="margin-bottom:20px;">
+      <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#0a66c2,#2e6db4);color:#fff;font-size:24px;font-weight:800;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">AB</div>
+      <div style="font-size:20px;font-weight:700;color:#1a2a4a;">Abdelhak Bourdim</div>
+      <div style="font-size:12px;color:#5a6a7a;margin-top:4px;">Senior Embedded Software Engineer</div>
+      <div style="font-size:11px;color:#888;margin-top:2px;">France &bull; USA &bull; Canada &bull; 20+ years</div>
+    </div>
+    <div class="pin-lock-icon" style="font-size:28px;">&#128274;</div>
     <div class="pin-title" data-i18n="pin.title">Accès Sécurisé</div>
     <div class="pin-subtitle" data-i18n="pin.subtitle">Entrez votre code PIN à 6 chiffres</div>
     <div class="pin-dots" id="pin-dots">
@@ -45,6 +82,7 @@
       <button class="pin-key fn" data-key="enter">&#10003;</button>
     </div>
     <div class="pin-error" id="pin-error"></div>
+    <div id="pin-countdown" style="margin-top:16px;font-size:12px;color:#888;"></div>
   </div>
 
   <!-- ═══════════════════════════════════════════════════════
@@ -105,6 +143,7 @@
           <button class="lang-btn" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="ar">AR</button>
         </div>
+        <div style="text-align:center;font-size:9px;color:var(--text-secondary,#999);opacity:0.5;margin-top:8px;">v1.0</div>
       </div>
 
     </aside>
@@ -127,6 +166,7 @@
         </div>
         <div class="header-actions">
           <div class="edit-toggle">
+            <button class="edit-toggle-btn" id="fullscreen-btn" title="Fullscreen" onclick="document.getElementById('content-frame').requestFullscreen?.()">&#9974;</button>
             <button class="edit-toggle-btn" id="edit-btn" title="Edit mode">&#9998;</button>
           </div>
           <div class="download-bar" id="download-bar">
@@ -140,7 +180,7 @@
 
       <!-- Content Area -->
       <div class="content-area" id="content-area">
-        <iframe class="content-frame" id="content-frame" title="Document viewer" sandbox="allow-same-origin"></iframe>
+        <iframe class="content-frame" id="content-frame" title="Document viewer" sandbox="allow-same-origin allow-scripts" allow="clipboard-write"></iframe>
         <div class="jobs-panel" id="jobs-panel">
           <!-- Dynamic job listings -->
         </div>
@@ -169,5 +209,10 @@
   <script src="js/downloads.js"></script>
   <script src="js/editor.js"></script>
   <script src="js/jobs.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+  }
+  </script>
 </body>
 </html>

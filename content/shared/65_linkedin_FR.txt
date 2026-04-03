@@ -8,7 +8,7 @@
 1. TITRE (max 220 caracteres)
 ================================================================================
 
-Ingenieur Logiciel Embarque Senior | C/C++ | RTOS | Linux Embarque | ARM Cortex | STM32 | 20+ ans | Aeronautique, Medical, Auto, IoT, V2G
+Ingénieur Logiciel Embarqué Senior | C/C++ • RTOS • Linux Embarqué | France • USA • Canada
 
 
 ================================================================================
@@ -44,7 +44,7 @@ Titre :         Ingenieur Logiciel Embarque — Recharge EV / V2G
 Entreprise :    E2-CAD
 Lieu :          Eragny, France
 Date debut :    Mai 2025
-Date fin :      Aujourd'hui (cocher "J'occupe actuellement ce poste")
+Date fin :      Mars 2026
 
 Description :
 Reprise en main du produit et mise en place du banc de test pour bornes de recharge EV (IP Iotecha).

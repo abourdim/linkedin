@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Generic Job Search Prompts — Embedded Software Engineer</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 {
+    font-size: 18pt;
+    color: #0a66c2;
+    text-align: center;
+    margin-bottom: 4pt;
+    letter-spacing: 0.5pt;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 20pt;
+  }
+  h2 {
+    font-size: 12pt;
+    color: #fff;
+    background: #0a66c2;
+    padding: 5pt 12pt;
+    border-radius: 4pt;
+    margin: 20pt 0 8pt 0;
+    letter-spacing: 0.8pt;
+  }
+  h3 {
+    font-size: 10pt;
+    color: #0a66c2;
+    margin: 12pt 0 4pt 0;
+    padding-bottom: 2pt;
+    border-bottom: 1pt solid #d0e3f3;
+  }
+  .copy-box {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 10pt 14pt;
+    margin-bottom: 8pt;
+    font-size: 9.5pt;
+    line-height: 1.55;
+    color: #222;
+  }
+  .copy-box strong { color: #1a5276; }
+  .prompt-box {
+    background: #f4f7fa;
+    border: 1pt solid #d0e3f3;
+    border-left: 3pt solid #0a66c2;
+    border-radius: 0 4pt 4pt 0;
+    padding: 12pt 16pt;
+    padding-top: 28pt;
+    margin-bottom: 10pt;
+    font-size: 9.5pt;
+    line-height: 1.6;
+    color: #222;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    position: relative;
+  }
+.copy-btn {    position: absolute;    top: 6pt;    right: 6pt;    background: #0a66c2;    color: #fff;    border: none;    border-radius: 3pt;    padding: 3pt 10pt;    font-size: 7.5pt;    font-weight: 600;    cursor: pointer;    letter-spacing: 0.3pt;  }  .copy-btn:hover { background: #084e96; }  .copy-btn.copied { background: #27ae60; }  @media print { .copy-btn { display: none; } }
+  .prompt-box strong { color: #1a5276; }
+  .bracket { color: #e74c3c; font-weight: 600; }
+  .entry {
+    background: #fafafa;
+    border-left: 3pt solid #0a66c2;
+    padding: 8pt 12pt;
+    margin-bottom: 10pt;
+    border-radius: 0 4pt 4pt 0;
+  }
+  .entry-label {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #0a66c2;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+  .instruction {
+    font-size: 9pt;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 6pt;
+  }
+  .version-label {
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    padding: 2pt 8pt;
+    border-radius: 3pt;
+    margin-bottom: 6pt;
+    letter-spacing: 0.3pt;
+  }
+  .toc {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 12pt 18pt;
+    margin-bottom: 16pt;
+  }
+  .toc-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #0a66c2;
+    margin-bottom: 6pt;
+  }
+  .toc ul { margin: 0; padding: 0; list-style: none; }
+  .toc li {
+    font-size: 9pt;
+    padding: 2pt 0;
+    color: #333;
+  }
+  .toc li a {
+    color: #0a66c2;
+    text-decoration: none;
+  }
+  .toc li a:hover { text-decoration: underline; }
+  .toc .toc-num {
+    display: inline-block;
+    width: 24pt;
+    font-weight: 700;
+    color: #0a66c2;
+  }
+  .lang-tag {
+    display: inline-block;
+    font-size: 7.5pt;
+    font-weight: 700;
+    padding: 1pt 6pt;
+    border-radius: 3pt;
+    margin-left: 4pt;
+    vertical-align: middle;
+  }
+  .lang-fr { background: #e8f0fe; color: #0a66c2; }
+  .lang-en { background: #fdf2e9; color: #b7510d; }
+  .lang-mixed { background: #f0e8fe; color: #6c3483; }
+  .guide-step {
+    background: #f8fbfe;
+    border: 1pt solid #d0e3f3;
+    border-radius: 4pt;
+    padding: 8pt 14pt;
+    margin-bottom: 6pt;
+    font-size: 9.5pt;
+  }
+  .guide-step strong { color: #0a66c2; }
+  .order-num {
+    display: inline-block;
+    background: #0a66c2;
+    color: #fff;
+    font-size: 9pt;
+    font-weight: 700;
+    width: 20pt;
+    height: 20pt;
+    line-height: 20pt;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 6pt;
+  }
+  .note {
+    font-size: 8pt;
+    color: #888;
+    font-style: italic;
+    margin-top: 4pt;
+  }
+  .warning-box {
+    background: #fef9e7;
+    border: 1pt solid #f9e79f;
+    border-left: 3pt solid #f39c12;
+    border-radius: 0 4pt 4pt 0;
+    padding: 10pt 14pt;
+    margin: 10pt 0;
+    font-size: 9pt;
+    color: #7d6608;
+  }
+  .warning-box strong { color: #b7950b; }
+  @media print {
+    body { padding: 0; }
+    h2 { break-after: avoid; }
+    .prompt-box { break-inside: avoid; }
+    .entry { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Generic Job Search Prompts — Embedded Software Engineer</h1>
+<div class="subtitle">Embedded Software Engineer &bull; For use with ChatGPT, Claude, or any AI assistant &bull; Abdelhak Bourdim</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+  <div class="toc-title">Table of Contents</div>
+  <ul>
+    <li><a href="#prompt1"><span class="toc-num">1.</span> Cover letter (French) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt2"><span class="toc-num">2.</span> Cover letter (English) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt3"><span class="toc-num">3.</span> LinkedIn message to recruiter <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt4"><span class="toc-num">4.</span> LinkedIn message to hiring manager <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt5"><span class="toc-num">5.</span> LinkedIn connection requests (French) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt6"><span class="toc-num">6.</span> LinkedIn connection requests (English) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt7"><span class="toc-num">7.</span> Technical interview preparation (French) <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#prompt8"><span class="toc-num">8.</span> Technical interview preparation (English) <span class="lang-tag lang-en">EN</span></a></li>
+    <li><a href="#prompt9"><span class="toc-num">9.</span> Analyze a job posting <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt10"><span class="toc-num">10.</span> Post-interview follow-up <span class="lang-tag lang-mixed">FR/EN</span></a></li>
+    <li><a href="#prompt11"><span class="toc-num">11.</span> Salary negotiation <span class="lang-tag lang-fr">FR</span></a></li>
+    <li><a href="#guide"><span class="toc-num">&rarr;</span> Usage guide</a></li>
+  </ul>
+</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 1 -->
+<!-- ============================================================ -->
+<h2 id="prompt1">Prompt 1 — Generate a cover letter (French) <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">Tu es un expert en redaction de lettres de motivation pour le marche international.
+Redige une lettre de motivation en francais pour le poste suivant :
+
+<strong>Poste :</strong> Ingenieur Logiciel Embarque Senior
+<strong>Entreprise :</strong> une entreprise du secteur embarque
+<strong>Lieu :</strong> France / international
+<strong>Source de l'offre :</strong> candidature spontanee
+
+Voici mon profil :
+- Abdelhak Bourdim, ingenieur logiciel embarque senior, 20+ ans d'experience
+- Base en region parisienne, mobile internationalement
+- Competences cles : C/C++, RTOS (FreeRTOS, VxWorks), Linux embarque, ARM Cortex, STM32
+- Protocols : CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Normes : DO-178 (aeronautique), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Secteurs : aeronautique (Safran, Thales), medical (GE Healthcare, Sorin), automobile (Valeo), cybersecurite IoT (Enedis/Linky), recharge EV/V2G (E2-CAD)
+- Fondateur de Workshop-DIY (association robotique pour jeunes)
+- Langues : francais (bilingue), anglais (professionnel), arabe (bilingue)
+
+Consignes pour la lettre :
+1. Format professionnel : sobre, factuel, pas d'autopromotion excessive
+2. Maximum 1 page (300-400 mots)
+3. Mettre en avant les competences qui correspondent specifiquement a l'offre
+4. Expliquer brievement pourquoi cette entreprise en particulier
+5. Mentionner la disponibilite et la mobilite
+6. Terminer par une formule de politesse appropriee
+7. Ton : professionnel mais humain, pas de cliches
+
+Si c'est une candidature spontanee, adapter le ton en consequence (montrer la curiosite pour l'entreprise et proposer de la valeur).</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 2 -->
+<!-- ============================================================ -->
+<h2 id="prompt2">Prompt 2 — Generate a cover letter (English) <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert at writing cover letters for the international job market.
+Write a cover letter in English for the following position:
+
+<strong>Position:</strong> Senior Embedded Software Engineer
+<strong>Company:</strong> an embedded systems company
+<strong>Location:</strong> France / international
+<strong>Source:</strong> spontaneous application
+
+Here is my profile:
+- Abdelhak Bourdim, senior embedded software engineer, 20+ years of experience
+- Based in the Paris area, internationally mobile
+- Core skills: C/C++, RTOS (FreeRTOS, VxWorks), Embedded Linux, ARM Cortex, STM32
+- Protocols: CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178 (aerospace), IEC 62304 (medical), MISRA C, ISO 15118 (V2G)
+- Industries: aerospace (Safran, Thales), medical (GE Healthcare, Sorin), automotive (Valeo), IoT cybersecurity (Enedis/Linky), EV charging/V2G (E2-CAD)
+- Founder of Workshop-DIY (robotics non-profit for youth)
+- Languages: French (native), English (professional), Arabic (native)
+
+Guidelines:
+1. Professional format: sober, factual, no boasting
+2. Maximum 1 page (300-400 words)
+3. Highlight skills that specifically match the job posting
+4. Briefly explain interest in this company
+5. Mention availability and mobility
+6. End with an appropriate professional closing
+7. Tone: professional yet personable, no cliches
+
+If spontaneous application, adjust tone to show curiosity about the company and propose specific value.</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 3 -->
+<!-- ============================================================ -->
+<h2 id="prompt3">Prompt 3 — LinkedIn message to a recruiter (French) <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">Redige un message LinkedIn court (100-150 mots) en francais pour contacter un recruteur specialise embarque.
+
+<strong>Destinataire :</strong> un recruteur specialise embarque
+<strong>Contexte :</strong> recruteur interne
+
+Mon profil en resume :
+- Ingenieur logiciel embarque senior, 20+ ans (C/C++, RTOS, Linux embarque)
+- Experience aeronautique (Safran, Thales — DO-178) et medical (GE Healthcare — IEC 62304)
+- Actuellement en poste, cherche une nouvelle opportunite
+- Base en region parisienne, mobile internationalement
+
+Consignes :
+1. Ton professionnel mais humain, pas de copier-coller generique
+2. Montrer un interet specifique pour l'entreprise (pas juste "je cherche un job")
+3. Etre concis et direct (les recruteurs recoivent des dizaines de messages)
+4. Proposer un echange sans etre insistant
+5. Pas de flatterie excessive</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 4 -->
+<!-- ============================================================ -->
+<h2 id="prompt4">Prompt 4 — LinkedIn message to a hiring manager (English) <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">Write a short LinkedIn message (100-150 words) in English to reach out to a hiring manager.
+
+<strong>Recipient:</strong> a hiring manager in embedded systems
+<strong>Their role:</strong> VP Engineering
+<strong>Context:</strong> spontaneous outreach
+
+My background summary:
+- Senior embedded software engineer, 20+ years (C/C++, RTOS, Embedded Linux)
+- Aerospace experience (Safran, Thales — DO-178) and medical (GE Healthcare — IEC 62304)
+- Currently employed, looking for new opportunities
+- Based in the Paris area, internationally mobile
+
+Guidelines:
+1. Professional but warm tone, not a generic template
+2. Show specific interest in their company or team
+3. Be concise and direct (managers are busy)
+4. Propose a brief conversation without being pushy
+5. No excessive flattery</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 5 -->
+<!-- ============================================================ -->
+<h2 id="prompt5">Prompt 5 — LinkedIn connection requests (French) <span class="lang-tag lang-fr">FR</span></h2>
+
+<h3><span class="version-label">Version 1</span> Recruiter</h3>
+<div class="prompt-box">Bonjour ..., je suis ingenieur logiciel embarque senior (20+ ans, C/C++, RTOS, DO-178). Je m'interesse aux opportunites embedded dans votre entreprise. Serait-il possible d'echanger ? Cordialement, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Technical manager</h3>
+<div class="prompt-box">Bonjour ..., ingenieur embarque senior specialise C/C++, RTOS et Linux embarque (Safran, Thales, GE Healthcare). Votre equipe chez votre entreprise m'interesse beaucoup. Au plaisir d'echanger. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Peer / potential colleague</h3>
+<div class="prompt-box">Bonjour ..., ingenieur embarque ici aussi. Je suis votre travail chez votre entreprise avec interet. J'explore de nouvelles opportunites. Ce serait un plaisir de connecter. Abdelhak</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 6 -->
+<!-- ============================================================ -->
+<h2 id="prompt6">Prompt 6 — LinkedIn connection requests (English) <span class="lang-tag lang-en">EN</span></h2>
+
+<h3><span class="version-label">Version 1</span> Recruiter</h3>
+<div class="prompt-box">Hi ..., I'm a senior embedded software engineer (20+ years, C/C++, RTOS, DO-178). I'm exploring embedded roles at your company. Would love to connect. Best, Abdelhak</div>
+
+<h3><span class="version-label">Version 2</span> Hiring manager</h3>
+<div class="prompt-box">Hi ..., senior embedded engineer here with 20+ years in C/C++, RTOS, Embedded Linux (Safran, Thales, GE Healthcare). Your team at your company caught my interest. Happy to connect. Abdelhak</div>
+
+<h3><span class="version-label">Version 3</span> Peer</h3>
+<div class="prompt-box">Hi ..., fellow embedded engineer here. I've been following your company's work with interest. Exploring new opportunities. Would be great to connect. Abdelhak</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 7 -->
+<!-- ============================================================ -->
+<h2 id="prompt7">Prompt 7 — Technical interview preparation (French) <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">Tu es un expert en entretiens techniques pour postes d'ingenieur logiciel embarque.
+Prepare-moi pour un entretien chez une entreprise du secteur embarque pour le poste Ingenieur Logiciel Embarque Senior.
+
+Mon profil :
+- 20+ ans en logiciel embarque (C/C++, RTOS, Linux embarque, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols : CAN, BLE, USB, TCP/IP, SPI, I2C
+- Normes : DO-178, IEC 62304, MISRA C, ISO 15118
+- Secteurs : aeronautique, medical, automotive, cybersecurite IoT, V2G
+
+Genere :
+1. <strong>10 questions techniques</strong> probables pour ce type de poste, avec des reponses detaillees basees sur mon experience
+2. <strong>5 questions comportementales</strong> (style STAR) avec des exemples de reponses bases sur mon parcours
+3. <strong>5 questions que je devrais poser</strong> a l'entreprise (montrant mon interet et ma seniority)
+4. <strong>3 questions sur le contexte de l'entreprise</strong> (culture, equipe, organisation)
+
+Pour chaque reponse :
+- Etre precis et technique (pas de generalites)
+- Donner des exemples concrets de mes missions passees
+- Rester factuel et modeste
+- Mentionner les outils et methodes specifiques</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 8 -->
+<!-- ============================================================ -->
+<h2 id="prompt8">Prompt 8 — Technical interview preparation (English) <span class="lang-tag lang-en">EN</span></h2>
+<div class="prompt-box">You are an expert in technical interviews for embedded software engineer positions.
+Prepare me for an interview at an embedded systems company for the Senior Embedded Software Engineer position.
+
+My background:
+- 20+ years in embedded software (C/C++, RTOS, Embedded Linux, bare metal)
+- ARM Cortex, STM32, Microchip, NXP
+- Protocols: CAN, BLE, USB, TCP/IP, SPI, I2C
+- Standards: DO-178, IEC 62304, MISRA C, ISO 15118
+- Industries: aerospace, medical, automotive, IoT cybersecurity, V2G
+
+Generate:
+1. <strong>10 likely technical questions</strong> for this role, with detailed answers based on my experience
+2. <strong>5 behavioral questions</strong> (STAR format) with example answers from my career
+3. <strong>5 questions I should ask</strong> the company (showing interest and seniority)
+4. <strong>3 questions about the company context</strong> (culture, team, organization)
+
+For each answer:
+- Be precise and technical (no generalities)
+- Give concrete examples from my past assignments
+- Stay factual and modest
+- Mention specific tools and methods</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 9 -->
+<!-- ============================================================ -->
+<h2 id="prompt9">Prompt 9 — Analyze a job posting and adapt your application <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">Tu es un expert en recrutement embarque.
+Voici une offre d'emploi. Analyse-la et aide-moi a preparer ma candidature.
+
+<strong>Offre d'emploi :</strong>
+<em>COLLER LE TEXTE COMPLET DE L'OFFRE ICI</em>
+
+Mon profil :
+- Abdelhak Bourdim, ingenieur logiciel embarque senior, 20+ ans
+- C/C++, RTOS (FreeRTOS, VxWorks), Linux embarque, ARM Cortex, STM32
+- CAN, CANOpen, BLE, USB, TCP/IP, SPI, I2C
+- DO-178, IEC 62304, MISRA C, ISO 15118
+- Aeronautique (Safran, Thales), medical (GE Healthcare, Sorin), auto (Valeo), cyber IoT (Enedis), V2G (E2-CAD)
+- Francais natif, anglais professionnel, arabe natif
+- Base en region parisienne, mobile internationalement
+
+Effectue les taches suivantes :
+1. <strong>Analyse du poste</strong> : identifie les competences requises, les nice-to-have, et le profil recherche
+2. <strong>Score de correspondance</strong> : note de 1 a 10 ma correspondance avec le poste, avec justification
+3. <strong>Points forts</strong> : liste mes atouts qui correspondent le mieux a cette offre
+4. <strong>Lacunes</strong> : identifie les eventuelles lacunes et comment les combler ou les presenter positivement
+5. <strong>Lettre de motivation</strong> : redige une lettre adaptee a cette offre specifique (300-400 mots)
+6. <strong>Mots-cles CV</strong> : liste les mots-cles a mettre en avant dans mon CV pour cette offre
+7. <strong>Salaire estime</strong> : fourchette salariale probable pour ce poste</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 10 -->
+<!-- ============================================================ -->
+<h2 id="prompt10">Prompt 10 — Post-interview follow-up <span class="lang-tag lang-mixed">FR/EN</span></h2>
+<div class="prompt-box">Redige un email de remerciement/suivi apres un entretien.
+
+<strong>Entreprise :</strong> l'entreprise
+<strong>Interlocuteur :</strong> le responsable technique
+<strong>Date de l'entretien :</strong> recemment
+<strong>Points cles discutes :</strong> architecture embarquee, migration RTOS, roadmap technique
+<strong>Langue :</strong> FR
+
+Consignes :
+1. Court (150-200 mots maximum)
+2. Remercier pour le temps accorde
+3. Faire reference a un point precis de la discussion (montrer l'ecoute)
+4. Reaffirmer l'interet pour le poste sans etre insistant
+5. Ton professionnel, sobre (pas de flatterie)
+6. Proposer de fournir des informations complementaires si necessaire</div>
+
+<!-- ============================================================ -->
+<!-- PROMPT 11 -->
+<!-- ============================================================ -->
+<h2 id="prompt11">Prompt 11 — Salary negotiation <span class="lang-tag lang-fr">FR</span></h2>
+<div class="prompt-box">Tu es un expert en negociation salariale pour le marche de l'embarque.
+
+<strong>Poste propose :</strong> Ingenieur Logiciel Embarque Senior
+<strong>Entreprise :</strong> une entreprise
+<strong>Lieu :</strong> Ile-de-France
+<strong>Offre salariale :</strong> 55 000-70 000 EUR/an
+
+Mon profil :
+- 20+ ans d'experience, ingenieur logiciel embarque senior
+- Competences rares : DO-178, IEC 62304, cybersecurite embarquee, V2G/ISO 15118
+- Trilinguisme FR/EN/AR
+
+Aide-moi a :
+1. <strong>Evaluer l'offre</strong> : est-ce dans la fourchette du marche ? (comparer avec les donnees du secteur)
+2. <strong>Points de negociation</strong> : quels elements negocier au-dela du salaire (vacances, formation, teletravail, bonus, avantages)
+3. <strong>Script de negociation</strong> : redige 3 phrases cles pour negocier de maniere professionnelle
+4. <strong>Calcul net</strong> : estimation du salaire net (impots, charges)
+5. <strong>Elements a eviter</strong> : erreurs courantes en negociation salariale</div>
+
+<!-- ============================================================ -->
+<!-- USAGE GUIDE -->
+<!-- ============================================================ -->
+<h2 id="guide">How to use these prompts</h2>
+
+<div class="guide-step"><span class="order-num">1</span> Copy the prompt you need</div>
+<div class="guide-step"><span class="order-num">2</span> Adapt the details (company name, position, location) to your situation</div>
+<div class="guide-step"><span class="order-num">3</span> Paste into ChatGPT, Claude, or any AI assistant</div>
+<div class="guide-step"><span class="order-num">4</span> Personalize the output to match your own style</div>
+
+<div class="warning-box">
+  <strong>IMPORTANT:</strong> Never send AI-generated text without reviewing and personalizing it first. AI is a tool to help you, not a replacement for your own judgment.
+</div>
+
+<h3>Recommended order for an application</h3>
+<div class="copy-box">
+  <span class="order-num">1</span> <strong>Prompt 9</strong> — Analyze the posting &rarr; understand what the company is looking for<br><br>
+  <span class="order-num">2</span> <strong>Prompt 1 or 2</strong> — Cover letter &rarr; apply<br><br>
+  <span class="order-num">3</span> <strong>Prompt 3 or 4</strong> — LinkedIn message &rarr; network in parallel<br><br>
+  <span class="order-num">4</span> <strong>Prompt 7 or 8</strong> — Interview preparation &rarr; before each interview<br><br>
+  <span class="order-num">5</span> <strong>Prompt 10</strong> — Follow-up &rarr; after each interview<br><br>
+  <span class="order-num">6</span> <strong>Prompt 11</strong> — Negotiation &rarr; when you receive an offer
+</div>
+
+<script>
+(function() {
+  document.querySelectorAll('.prompt-box').forEach(function(box) {
+    var btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = 'Copy';
+    btn.addEventListener('click', function() {
+      navigator.clipboard.writeText(box.innerText.replace(/^Copy
+?/, '')).then(function() {
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(function() { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 1500);
+      });
+    });
+    box.appendChild(btn);
+  });
+})();
+</script>
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

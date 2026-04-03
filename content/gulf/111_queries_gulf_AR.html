@@ -941,5 +941,21 @@
 
 </div>
 
+<script>
+(function() {
+  document.querySelectorAll(".query-box").forEach(function(box) {
+    box.title = "Cliquer pour copier";
+    box.addEventListener("click", function() {
+      navigator.clipboard.writeText(box.innerText).then(function() {
+        box.classList.add("query-box-copied");
+        var orig = box.innerText;
+        box.dataset.orig = orig;
+        setTimeout(function() { box.classList.remove("query-box-copied"); }, 1000);
+      });
+    });
+  });
+})();
+</script>
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
 </body>
 </html>

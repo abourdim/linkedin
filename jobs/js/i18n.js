@@ -90,7 +90,11 @@ const I18n = {
     plan: { fr: 'Plan de Recherche', en: 'Job Search Plan', ar: 'خطة البحث' },
     prompts: { fr: 'Prompts IA', en: 'AI Prompts', ar: 'أوامر الذكاء الاصطناعي' },
     queries: { fr: 'Requêtes LinkedIn', en: 'LinkedIn Queries', ar: 'استعلامات LinkedIn' },
-    jobs: { fr: 'Offres d\'Emploi', en: 'Job Listings', ar: 'عروض العمل' }
+    jobs: { fr: 'Offres d\'Emploi', en: 'Job Listings', ar: 'عروض العمل' },
+    portfolio: { fr: 'Portfolio', en: 'Portfolio', ar: 'معرض المشاريع' },
+    timeline: { fr: 'Timeline', en: 'Timeline', ar: 'المسار المهني' },
+    skills: { fr: 'Compétences', en: 'Skills', ar: 'المهارات' },
+    help: { fr: 'Aide', en: 'Help', ar: 'مساعدة' }
   },
 
   countryLabels: {

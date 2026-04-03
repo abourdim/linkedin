@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Guide d'utilisation — Portfolio Abdelhak Bourdim</title>
+<style>
+  @page { size: A4; margin: 12mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #222;
+    line-height: 1.6;
+    background: #fff;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 20px 28px;
+  }
+  h1 { font-size: 18pt; color: #0a66c2; text-align: center; margin-bottom: 4pt; }
+  .subtitle { text-align: center; font-size: 9pt; color: #666; margin-bottom: 20pt; }
+  h2 {
+    font-size: 12pt; color: #fff; background: #0a66c2;
+    padding: 5pt 12pt; border-radius: 4pt;
+    margin: 20pt 0 8pt 0; letter-spacing: 0.5pt;
+  }
+  h3 { font-size: 10pt; color: #0a66c2; margin: 12pt 0 4pt 0; padding-bottom: 2pt; border-bottom: 1pt solid #d0e3f3; }
+  p { margin-bottom: 8pt; font-size: 9.5pt; }
+  ul, ol { margin: 4pt 0 8pt 18pt; font-size: 9.5pt; }
+  li { margin-bottom: 4pt; }
+  code { background: #f0f6fc; color: #1a3a5c; padding: 1pt 4pt; border-radius: 2pt; font-size: 9pt; }
+  .step-box {
+    background: #f8fbfe; border: 1pt solid #d0e3f3; border-left: 3pt solid #0a66c2;
+    border-radius: 0 4pt 4pt 0; padding: 8pt 12pt; margin-bottom: 8pt;
+  }
+  .step-num {
+    display: inline-block; background: #0a66c2; color: #fff;
+    font-size: 9pt; font-weight: 700; width: 20pt; height: 20pt;
+    line-height: 20pt; text-align: center; border-radius: 50%; margin-right: 6pt;
+  }
+  .tip {
+    background: #e8f5e9; border-left: 3pt solid #4caf50;
+    border-radius: 0 4pt 4pt 0; padding: 8pt 12pt; margin: 8pt 0;
+    font-size: 9pt; color: #2e7d32;
+  }
+  .warning {
+    background: #fef9e7; border-left: 3pt solid #f39c12;
+    border-radius: 0 4pt 4pt 0; padding: 8pt 12pt; margin: 8pt 0;
+    font-size: 9pt; color: #7d6608;
+  }
+  .link { color: #0a66c2; text-decoration: none; }
+  .link:hover { text-decoration: underline; }
+  table { width: 100%; border-collapse: collapse; margin: 8pt 0; font-size: 9pt; }
+  th { background: #0a66c2; color: #fff; padding: 4pt 8pt; text-align: left; }
+  td { border: 1pt solid #d0e3f3; padding: 4pt 8pt; }
+  tr:nth-child(even) { background: #f8fbfe; }
+  .kbd { background: #e8e8e8; border: 1pt solid #ccc; border-radius: 3pt; padding: 1pt 4pt; font-size: 8pt; font-family: monospace; }
+</style>
+</head>
+<body>
+
+<h1>Guide d'utilisation du Portfolio</h1>
+<div class="subtitle">Comment utiliser le site, les documents, et les outils disponibles</div>
+
+<!-- ============================================ -->
+<h2>1. Acceder au portfolio</h2>
+
+<div class="step-box">
+  <span class="step-num">1</span> Ouvrez <a href="https://abourdim.github.io/linkedin/jobs/" class="link">abourdim.github.io/linkedin/jobs/</a>
+</div>
+<div class="step-box">
+  <span class="step-num">2</span> Entrez le code PIN : <code>123456</code> (clavier ou clic)
+</div>
+<div class="step-box">
+  <span class="step-num">3</span> Le portfolio s'ouvre sur le CV Format Suisse par defaut
+</div>
+
+<div class="tip">
+  <strong>Astuce :</strong> Le PIN est memorise 24h — pas besoin de le retaper a chaque visite.
+</div>
+
+<!-- ============================================ -->
+<h2>2. Navigation</h2>
+
+<h3>Pays</h3>
+<p>Cliquez sur les onglets en haut de la sidebar :</p>
+<table>
+  <tr><th>Onglet</th><th>Pays</th><th>Documents adaptes</th></tr>
+  <tr><td>CH</td><td>Suisse</td><td>CV format suisse, permis G, Suisse romande</td></tr>
+  <tr><td>FR</td><td>France</td><td>CV format francais, Ile-de-France</td></tr>
+  <tr><td>LU</td><td>Luxembourg</td><td>CV frontalier, Grande Region</td></tr>
+  <tr><td>AE</td><td>Golfe / GCC</td><td>CV international, Dubai, Abu Dhabi, Qatar</td></tr>
+</table>
+
+<h3>Sections</h3>
+<p>Chaque pays contient les memes sections :</p>
+<table>
+  <tr><th>Section</th><th>Contenu</th></tr>
+  <tr><td>CV / Resume</td><td>CV format pays + CV detaille + CV 1 page</td></tr>
+  <tr><td>Profil LinkedIn</td><td>Contenu copier-coller + apercu visuel</td></tr>
+  <tr><td>Lettre de Motivation</td><td>Lettre ciblee pays + lettre generique (sans placeholders)</td></tr>
+  <tr><td>Pitch 2 Minutes</td><td>Pitch entretien avec structure et timing</td></tr>
+  <tr><td>Prepa Entretien</td><td>Preparation complete + condensee + flash + flash cards interactives</td></tr>
+  <tr><td>Plan de Recherche</td><td>Plan d'action par pays avec entreprises cibles</td></tr>
+  <tr><td>Prompts IA</td><td>11 prompts pour ChatGPT/Claude + version generique</td></tr>
+  <tr><td>Requetes LinkedIn</td><td>Requetes de recherche booleennes optimisees</td></tr>
+  <tr><td>Offres d'Emploi</td><td>Liens vers job boards + recherche API</td></tr>
+</table>
+
+<h3>Langues</h3>
+<p>Cliquez sur <code>FR</code> <code>EN</code> <code>AR</code> en bas de la sidebar. Tous les documents sont disponibles dans les 3 langues. L'arabe active automatiquement le mode RTL.</p>
+
+<!-- ============================================ -->
+<h2>3. Telecharger des documents</h2>
+
+<p>Les boutons en haut a droite permettent de telecharger :</p>
+<table>
+  <tr><th>Bouton</th><th>Format</th><th>Usage</th></tr>
+  <tr><td>PDF</td><td>PDF</td><td>Envoyer aux recruteurs, imprimer</td></tr>
+  <tr><td>TXT</td><td>Texte brut</td><td>Copier-coller dans LinkedIn, emails</td></tr>
+  <tr><td>HTML</td><td>Page web</td><td>Ouvrir dans un navigateur, modifier</td></tr>
+  <tr><td>Clipboard</td><td>Copie texte</td><td>Copie tout le contenu dans le presse-papier</td></tr>
+  <tr><td>Lien</td><td>URL</td><td>Copie le lien direct vers cette page</td></tr>
+</table>
+
+<!-- ============================================ -->
+<h2>4. Fonctionnalites avancees</h2>
+
+<h3>Raccourcis clavier</h3>
+<table>
+  <tr><th>Raccourci</th><th>Action</th></tr>
+  <tr><td><span class="kbd">Ctrl</span> + <span class="kbd">K</span></td><td>Ouvrir la palette de commandes (recherche rapide)</td></tr>
+  <tr><td><span class="kbd">Echap</span></td><td>Fermer la palette / sidebar mobile</td></tr>
+</table>
+
+<h3>Themes</h3>
+<p>7 themes disponibles — cliquez sur les ronds colores en bas de la sidebar :</p>
+<p>Light, Dark, Blue, Contraste, Golden Age, Alhambra, Medina</p>
+
+<h3>Mode edition</h3>
+<p>Cliquez sur le bouton crayon dans la barre d'outils pour activer le mode edition. Modifiez directement le contenu — vos modifications sont sauvegardees localement (localStorage).</p>
+
+<h3>Flash Cards</h3>
+<p>Dans "Prepa Entretien > Flash Cards" — 30 cartes interactives a cliquer pour reviser :</p>
+<ul>
+  <li><strong>TECH</strong> (bleu) — 10 cartes competences techniques</li>
+  <li><strong>Q&amp;A</strong> (orange) — 10 cartes questions d'entretien</li>
+  <li><strong>VOCAB</strong> (vert) — 10 cartes vocabulaire FR/EN</li>
+</ul>
+<p>Utilisez les filtres en haut pour cibler une categorie.</p>
+
+<h3>Copier les prompts et requetes</h3>
+<p>Dans les pages "Prompts IA" et "Requetes LinkedIn" :</p>
+<ul>
+  <li><strong>Prompts</strong> : cliquez sur le bouton <code>Copier</code> en haut a droite de chaque prompt</li>
+  <li><strong>Requetes</strong> : cliquez directement sur la requete (elle devient verte = copiee)</li>
+</ul>
+
+<!-- ============================================ -->
+<h2>5. Dossier Delivery</h2>
+
+<p>Le dossier <code>delivery/</code> contient tous les PDFs prets a envoyer, organises par pays et langue :</p>
+<pre style="background:#f0f6fc;padding:8pt;border-radius:4pt;font-size:8pt;overflow-x:auto;">
+delivery/
+  01_ch/   01_FR/  02_EN/  03_AR/
+  02_fr/   01_FR/  02_EN/  03_AR/
+  03_lu/   01_FR/  02_EN/  03_AR/
+  04_gulf/ 01_FR/  02_EN/  03_AR/
+  05_shared/ (generiques)
+</pre>
+<p>Les fichiers sont numerotes pour un reperage facile (00 = CV 1 page, 01 = CV, 02 = Lettre, etc.)</p>
+
+<!-- ============================================ -->
+<h2>6. Google Analytics</h2>
+
+<p>Le site est connecte a Google Analytics. Pour voir les statistiques :</p>
+<div class="step-box">
+  <span class="step-num">1</span> Allez sur <a href="https://analytics.google.com" class="link">analytics.google.com</a>
+</div>
+<div class="step-box">
+  <span class="step-num">2</span> Selectionnez la propriete "Portfolio Abdelhak"
+</div>
+<div class="step-box">
+  <span class="step-num">3</span> <strong>Temps reel</strong> : voir qui est en ligne maintenant
+</div>
+<div class="step-box">
+  <span class="step-num">4</span> <strong>Rapports > Engagement > Pages</strong> : pages les plus vues
+</div>
+<div class="step-box">
+  <span class="step-num">5</span> <strong>Rapports > Acquisition</strong> : d'ou viennent les visiteurs
+</div>
+
+<div class="tip">
+  <strong>Astuce recruteur :</strong> Quand vous envoyez votre lien portfolio a un recruteur, verifiez le rapport "Temps reel" pour voir s'il l'a ouvert.
+</div>
+
+<!-- ============================================ -->
+<h2>7. Hors ligne (PWA)</h2>
+
+<p>Le site fonctionne hors connexion grace au service worker. Apres une premiere visite, les pages sont mises en cache automatiquement.</p>
+
+<!-- ============================================ -->
+<h2>8. Lien a partager</h2>
+
+<div class="step-box" style="text-align:center;font-size:12pt;">
+  <strong>https://abourdim.github.io/linkedin/jobs/</strong>
+</div>
+
+<p>Ce lien est aussi encode dans le QR code present sur le CV 1 Page.</p>
+
+<div class="warning">
+  <strong>PIN :</strong> Pensez a communiquer le code PIN (<code>123456</code>) aux personnes a qui vous partagez le lien.
+</div>
+
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

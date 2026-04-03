@@ -114,7 +114,7 @@ AEROSPACE & DEFENSE (your experience at Safran, Thales, Zodiac)
 
 AUTOMOTIVE (your experience at Valeo, E2-CAD/V2G)
 ----------------------------------------------------
-- Valeo — Creteil / Paris region — automotive embedded systems
+- Valeo — Creteil / Egypt / Paris region — automotive embedded systems
 - Stellantis (ex-PSA) — Velizy / Poissy — vehicles, ADAS
 - Renault — Guyancourt / Lardy — electric vehicles, embedded
 - Forvia (ex-Faurecia) — Nanterre — automotive supplier

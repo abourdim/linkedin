@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Matrix — Abdelhak Bourdim</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;background:#f0f2f5;color:#2d2d2d;line-height:1.6}
+
+  .header{background:linear-gradient(135deg,#1a2a4a 0%,#0a66c2 100%);color:#fff;text-align:center;padding:48px 20px 40px;position:relative;overflow:hidden}
+  .header::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#2e6db4,#0a66c2,#2e6db4)}
+  .header h1{font-size:2.2rem;font-weight:700;letter-spacing:2px;margin-bottom:8px;text-transform:uppercase}
+  .header .subtitle{font-size:1rem;color:#b8d4f0;letter-spacing:0.5px;max-width:600px;margin:0 auto}
+  .header .initials{width:80px;height:80px;border-radius:50%;border:3px solid #4a8fd4;background:linear-gradient(135deg,#1e3a5f,#2e6db4);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:28px;font-weight:700;letter-spacing:3px}
+
+  .legend-bar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 28px;padding:18px 20px;background:#fff;border-bottom:1px solid #e0e0e0}
+  .legend-item{display:flex;align-items:center;gap:6px;font-size:0.85rem;color:#555}
+  .legend-item .circle{font-size:1.1rem;line-height:1}
+
+  .controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;padding:18px 20px;background:#f8f9fb;border-bottom:1px solid #e0e0e0}
+  .filter-btn{padding:7px 18px;border:1.5px solid #c0c8d4;border-radius:20px;background:#fff;color:#555;font-size:0.82rem;font-weight:600;cursor:pointer;transition:all .25s}
+  .filter-btn:hover{border-color:#0a66c2;color:#0a66c2}
+  .filter-btn.active{background:#0a66c2;color:#fff;border-color:#0a66c2}
+
+  .table-wrap{max-width:1200px;margin:24px auto;padding:0 16px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+  table{width:100%;border-collapse:separate;border-spacing:0;background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.08);overflow:hidden;min-width:820px}
+
+  thead th{background:linear-gradient(135deg,#1a2a4a,#0a66c2);color:#fff;font-size:0.72rem;font-weight:600;padding:12px 6px;text-align:center;letter-spacing:0.5px;position:sticky;top:0;z-index:2;white-space:nowrap}
+  thead th:first-child{text-align:left;padding-left:16px;min-width:140px;position:sticky;left:0;z-index:3;background:linear-gradient(135deg,#1a2a4a,#0a66c2)}
+
+  tbody tr{transition:background .2s}
+  tbody tr:hover{background:#eef4fb}
+  tbody td{padding:10px 6px;text-align:center;border-bottom:1px solid #eee;font-size:0.92rem;position:relative}
+  tbody td:first-child{text-align:left;padding-left:16px;font-weight:600;color:#1a2a4a;white-space:nowrap;position:sticky;left:0;background:#fff;z-index:1}
+  tbody tr:hover td:first-child{background:#eef4fb}
+
+  .cat-row td{background:#f0f4f9;font-weight:700;color:#0a66c2;font-size:0.78rem;text-transform:uppercase;letter-spacing:1.5px;padding:8px 16px;border-bottom:2px solid #d0dbe8}
+  .cat-row td:first-child{background:#f0f4f9}
+
+  .c3{color:#0a66c2;font-size:1.15rem;cursor:default}
+  .c2{color:#2e6db4;font-size:1.15rem;cursor:default}
+  .c1{color:#8aadc8;font-size:1.15rem;cursor:default}
+  .c0{color:#ddd;font-size:0.85rem;cursor:default}
+
+  td .tip{display:none;position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);background:#1a2a4a;color:#fff;padding:4px 10px;border-radius:6px;font-size:0.72rem;white-space:nowrap;z-index:10;pointer-events:none}
+  td .tip::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:#1a2a4a}
+  td:hover .tip{display:block}
+
+  .footer{text-align:center;padding:32px 20px;font-size:0.78rem;color:#8a9aaa}
+
+  @media(max-width:700px){
+    .header h1{font-size:1.5rem}
+    thead th,tbody td{font-size:0.72rem;padding:8px 4px}
+    .table-wrap{padding:0 8px}
+  }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="initials">CM</div>
+  <h1>Skills Matrix</h1>
+  <div class="subtitle">Technical skills by mission and company</div>
+</div>
+
+<div class="legend-bar">
+  <div class="legend-item"><span class="circle" style="color:#0a66c2">&#9679;</span> Expert (3)</div>
+  <div class="legend-item"><span class="circle" style="color:#2e6db4">&#9680;</span> Advanced (2)</div>
+  <div class="legend-item"><span class="circle" style="color:#8aadc8">&#9675;</span> Used (1)</div>
+</div>
+
+<div class="controls">
+  <button class="filter-btn active" data-cat="all">All</button>
+  <button class="filter-btn" data-cat="LANG">Languages</button>
+  <button class="filter-btn" data-cat="OS">Systems</button>
+  <button class="filter-btn" data-cat="MCU">Microcontrollers</button>
+  <button class="filter-btn" data-cat="PROTO">Protocols</button>
+  <button class="filter-btn" data-cat="STANDARDS">Standards</button>
+</div>
+
+<div class="table-wrap">
+  <table id="matrix">
+    <thead>
+      <tr>
+        <th>Skill</th>
+        <th>E2-CAD</th><th>Safran</th><th>Asterios</th><th>Thales</th><th>Valeo</th><th>V-M2M</th><th>Arkamys</th><th>PK Vitality</th><th>Zodiac</th><th>Enedis</th><th>Sorin</th><th>GE</th><th>Cartadis</th>
+      </tr>
+    </thead>
+    <tbody id="mtbody"></tbody>
+  </table>
+</div>
+
+<div class="footer">Abdelhak Bourdim — Technical Skills Matrix</div>
+
+<script>
+(function(){
+  var labels = {LANG:'Languages',OS:'Systems',MCU:'Microcontrollers',PROTO:'Protocols',STANDARDS:'Standards'};
+  var lvlLabel = {3:'Expert',2:'Advanced',1:'Used',0:'Not used'};
+  var companies = ['E2-CAD','Safran','Asterios','Thales','Valeo','V-M2M','Arkamys','PK Vitality','Zodiac','Enedis','Sorin','GE','Cartadis'];
+  var data = [
+    {cat:'LANG',skill:'C',v:[3,3,3,3,2,3,3,3,3,2,3,3,3]},
+    {cat:'LANG',skill:'C++',v:[2,1,0,3,0,3,3,3,1,0,0,3,2]},
+    {cat:'LANG',skill:'Python',v:[3,0,2,0,0,0,0,0,0,3,0,0,0]},
+    {cat:'LANG',skill:'Bash',v:[2,2,0,2,0,2,0,0,0,2,0,0,0]},
+    {cat:'OS',skill:'Embedded Linux',v:[3,0,0,3,0,3,0,0,0,3,0,0,0]},
+    {cat:'OS',skill:'FreeRTOS',v:[0,0,0,0,0,0,0,3,0,0,0,0,2]},
+    {cat:'OS',skill:'VxWorks',v:[0,0,0,0,0,0,0,0,0,0,0,3,0]},
+    {cat:'OS',skill:'Bare Metal',v:[3,3,3,0,0,0,0,2,3,0,3,2,3]},
+    {cat:'MCU',skill:'ARM Cortex',v:[3,3,0,3,0,0,0,3,0,0,3,3,0]},
+    {cat:'MCU',skill:'STM32',v:[3,3,0,0,0,0,0,3,0,0,0,0,2]},
+    {cat:'MCU',skill:'Microchip PIC',v:[3,0,0,0,0,0,0,0,3,0,0,0,0]},
+    {cat:'MCU',skill:'NXP/TI',v:[0,0,0,0,0,0,0,0,1,0,0,3,3]},
+    {cat:'PROTO',skill:'CAN/CANOpen',v:[2,0,0,0,2,0,0,0,3,0,0,3,3]},
+    {cat:'PROTO',skill:'BLE',v:[0,0,0,0,0,0,0,3,0,0,3,0,0]},
+    {cat:'PROTO',skill:'USB',v:[0,0,0,0,0,0,0,0,0,0,0,2,3]},
+    {cat:'PROTO',skill:'TCP/IP',v:[2,0,0,2,0,2,0,0,0,2,0,0,2]},
+    {cat:'PROTO',skill:'SPI/I2C',v:[3,3,2,0,0,0,0,3,2,0,2,2,2]},
+    {cat:'STANDARDS',skill:'DO-178',v:[0,3,2,0,0,0,0,0,3,0,0,0,0]},
+    {cat:'STANDARDS',skill:'IEC 62304',v:[0,0,0,0,0,0,0,3,0,0,3,0,0]},
+    {cat:'STANDARDS',skill:'MISRA C',v:[2,3,2,2,0,0,0,2,3,0,2,2,2]},
+    {cat:'STANDARDS',skill:'ISO 15118',v:[3,0,0,0,0,0,0,0,0,0,0,0,0]}
+  ];
+
+  var sym = {3:'\u25CF',2:'\u25D0',1:'\u25CB',0:'\u2014'};
+  var cls = {3:'c3',2:'c2',1:'c1',0:'c0'};
+
+  function render(filter){
+    var tb = document.getElementById('mtbody');
+    tb.innerHTML = '';
+    var prevCat = '';
+    for(var i=0;i<data.length;i++){
+      var d = data[i];
+      if(filter!=='all' && d.cat!==filter) continue;
+      if(d.cat!==prevCat){
+        prevCat = d.cat;
+        var cr = document.createElement('tr');
+        cr.className = 'cat-row';
+        cr.setAttribute('data-cat',d.cat);
+        var cd = document.createElement('td');
+        cd.colSpan = companies.length+1;
+        cd.textContent = labels[d.cat]||d.cat;
+        cr.appendChild(cd);
+        tb.appendChild(cr);
+      }
+      var tr = document.createElement('tr');
+      tr.setAttribute('data-cat',d.cat);
+      var td0 = document.createElement('td');
+      td0.textContent = d.skill;
+      tr.appendChild(td0);
+      for(var j=0;j<d.v.length;j++){
+        var td = document.createElement('td');
+        var lv = d.v[j];
+        td.innerHTML = '<span class="'+cls[lv]+'">'+sym[lv]+'</span>'+(lv>0?'<span class="tip">'+d.skill+' @ '+companies[j]+' : '+lvlLabel[lv]+'</span>':'');
+        tr.appendChild(td);
+      }
+      tb.appendChild(tr);
+    }
+  }
+
+  render('all');
+
+  var btns = document.querySelectorAll('.filter-btn');
+  for(var b=0;b<btns.length;b++){
+    btns[b].addEventListener('click',function(){
+      for(var k=0;k<btns.length;k++) btns[k].classList.remove('active');
+      this.classList.add('active');
+      render(this.getAttribute('data-cat'));
+    });
+  }
+})();
+</script>
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

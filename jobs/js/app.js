@@ -19,7 +19,7 @@ const App = {
             labels: { fr: 'CV Format Suisse', en: 'Swiss Format CV', ar: 'السيرة الذاتية السويسرية' },
             files: { fr: '../content/ch/69_cv_suisse_FR.html', en: '../content/ch/70_cv_suisse_EN.html', ar: '../content/ch/73_cv_suisse_AR.html' },
             downloads: {
-              pdf: { fr: '../content/ch/53_cv_version_A_v2.4.pdf', en: '../content/ch/51_cv_version_A_v2.4_EN.pdf', ar: '../content/ch/52_cv_version_A_v2.4_AR.pdf' }
+              pdf: { fr: '../content/ch/69_cv_suisse_FR.pdf', en: '../content/ch/70_cv_suisse_EN.pdf', ar: '../content/ch/73_cv_suisse_AR.pdf' }
             },
             default: true
           },
@@ -29,6 +29,14 @@ const App = {
             files: { fr: '../content/ch/48_cv_version_A_v2.4.html', en: '../content/ch/49_cv_version_A_v2.4_EN.html', ar: '../content/ch/50_cv_version_A_v2.4_AR.html' },
             downloads: {
               pdf: { fr: '../content/ch/53_cv_version_A_v2.4.pdf', en: '../content/ch/51_cv_version_A_v2.4_EN.pdf', ar: '../content/ch/52_cv_version_A_v2.4_AR.pdf' }
+            }
+          },
+          {
+            id: 'cv-condensed',
+            labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
+            files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/118_cv_condensed_FR.pdf', en: '../content/shared/119_cv_condensed_EN.pdf', ar: '../content/shared/118_cv_condensed_FR.pdf' }
             }
           }
         ]
@@ -59,6 +67,14 @@ const App = {
             downloads: {
               pdf: { fr: '../content/ch/61_lettre_motivation.pdf', en: '../content/ch/62_lettre_motivation_EN.pdf', ar: '../content/ch/63_lettre_motivation_AR.pdf' },
               txt: { fr: '../content/ch/61_lettre_motivation.txt' }
+            }
+          },
+          {
+            id: 'letter-generic',
+            labels: { fr: 'Lettre Générique', en: 'Generic Letter', ar: 'رسالة عامة' },
+            files: { fr: '../content/shared/111_lettre_generique_FR.html', en: '../content/shared/112_lettre_generique_EN.html', ar: '../content/shared/113_lettre_generique_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/111_lettre_generique_FR.pdf', en: '../content/shared/112_lettre_generique_EN.pdf', ar: '../content/shared/113_lettre_generique_AR.pdf' }
             }
           }
         ]
@@ -94,6 +110,14 @@ const App = {
             labels: { fr: 'Fiche Flash', en: 'Flash Card', ar: 'البطاقة السريعة' },
             files: { fr: '../content/ch/60_entretien_v4_ultra.html', en: '../content/ch/60_entretien_v4_ultra_EN.html', ar: '../content/ch/60_entretien_v4_ultra_AR.html' },
             downloads: { pdf: { fr: '../content/ch/60_entretien_v4_ultra.pdf' } }
+          },
+          {
+            id: 'flashcards',
+            labels: { fr: 'Flash Cards', en: 'Flash Cards', ar: 'بطاقات المراجعة' },
+            files: { fr: '../content/shared/116_flashcards_FR.html', en: '../content/shared/117_flashcards_EN.html', ar: '../content/shared/116_flashcards_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/116_flashcards_FR.pdf', en: '../content/shared/117_flashcards_EN.pdf', ar: '../content/shared/116_flashcards_FR.pdf' }
+            }
           }
         ]
       },
@@ -117,6 +141,14 @@ const App = {
             files: { fr: '../content/ch/71_prompts_job_search_CH.html', en: '../content/ch/71_prompts_job_search_CH_EN.html', ar: '../content/ch/75_prompts_job_search_CH_AR.html' },
             downloads: {
               txt: { fr: '../content/ch/71_prompts_job_search_CH.txt', en: '../content/ch/71_prompts_job_search_CH_EN.txt', ar: '../content/ch/75_prompts_job_search_CH_AR.txt' }
+            }
+          },
+          {
+            id: 'prompts-generic',
+            labels: { fr: 'Prompts Génériques', en: 'Generic Prompts', ar: 'أوامر عامة' },
+            files: { fr: '../content/shared/114_prompts_generique_FR.html', en: '../content/shared/115_prompts_generique_EN.html', ar: '../content/shared/114_prompts_generique_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/114_prompts_generique_FR.pdf', en: '../content/shared/115_prompts_generique_EN.pdf', ar: '../content/shared/114_prompts_generique_FR.pdf' }
             }
           }
         ]
@@ -142,6 +174,42 @@ const App = {
             region: 'ch'
           }
         ]
+      },
+      skills: {
+        items: [
+          {
+            id: 'skills-matrix',
+            labels: { fr: 'Matrice Compétences', en: 'Skills Matrix', ar: 'مصفوفة المهارات' },
+            files: { fr: '../content/shared/124_skills_matrix_FR.html', en: '../content/shared/125_skills_matrix_EN.html', ar: '../content/shared/124_skills_matrix_FR.html' }
+          }
+        ]
+      },
+      portfolio: {
+        items: [
+          {
+            id: 'portfolio',
+            labels: { fr: 'Portfolio Projets', en: 'Project Portfolio', ar: 'معرض المشاريع' },
+            files: { fr: '../content/shared/126_portfolio_FR.html', en: '../content/shared/127_portfolio_EN.html', ar: '../content/shared/126_portfolio_FR.html' }
+          }
+        ]
+      },
+      timeline: {
+        items: [
+          {
+            id: 'timeline',
+            labels: { fr: 'Timeline Carrière', en: 'Career Timeline', ar: 'المسار المهني' },
+            files: { fr: '../content/shared/122_timeline_FR.html', en: '../content/shared/123_timeline_EN.html', ar: '../content/shared/122_timeline_FR.html' }
+          }
+        ]
+      },
+      help: {
+        items: [
+          {
+            id: 'help',
+            labels: { fr: "Guide d'utilisation", en: 'User Guide', ar: 'دليل الاستخدام' },
+            files: { fr: '../content/shared/120_help_FR.html', en: '../content/shared/121_help_EN.html', ar: '../content/shared/120_help_FR.html' }
+          }
+        ]
       }
     },
 
@@ -153,7 +221,18 @@ const App = {
             id: 'cv-fr',
             labels: { fr: 'CV Format Français', en: 'French Format CV', ar: 'السيرة الذاتية - النسق الفرنسي' },
             files: { fr: '../content/fr/78_cv_france_FR.html', en: '../content/fr/79_cv_france_EN.html', ar: '../content/fr/80_cv_france_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/fr/78_cv_france_FR.pdf', en: '../content/fr/79_cv_france_EN.pdf', ar: '../content/fr/80_cv_france_AR.pdf' }
+            },
             default: true
+          },
+          {
+            id: 'cv-condensed',
+            labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
+            files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/118_cv_condensed_FR.pdf', en: '../content/shared/119_cv_condensed_EN.pdf', ar: '../content/shared/118_cv_condensed_FR.pdf' }
+            }
           }
         ]
       },
@@ -164,6 +243,11 @@ const App = {
             labels: { fr: 'Contenu du Profil', en: 'Profile Content', ar: 'محتوى الملف' },
             files: { fr: '../content/shared/65_linkedin_FR.html', en: '../content/shared/64_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' },
             downloads: { txt: { fr: '../content/shared/65_linkedin_FR.txt', en: '../content/shared/64_linkedin_EN.txt', ar: '../content/shared/72_linkedin_AR.txt' } }
+          },
+          {
+            id: 'linkedin-fr-visual',
+            labels: { fr: 'Aperçu Visuel', en: 'Visual Preview', ar: 'معاينة مرئية' },
+            files: { fr: '../content/shared/67_linkedin_FR.html', en: '../content/shared/66_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' }
           }
         ]
       },
@@ -172,7 +256,19 @@ const App = {
           {
             id: 'letter-fr',
             labels: { fr: 'Lettre de Motivation', en: 'Cover Letter', ar: 'رسالة التحفيز' },
-            files: { fr: '../content/fr/84_lettre_france.html', en: '../content/fr/85_lettre_france_EN.html', ar: '../content/fr/86_lettre_france_AR.html' }
+            files: { fr: '../content/fr/84_lettre_france.html', en: '../content/fr/85_lettre_france_EN.html', ar: '../content/fr/86_lettre_france_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/fr/84_lettre_france.pdf', en: '../content/fr/85_lettre_france_EN.pdf', ar: '../content/fr/86_lettre_france_AR.pdf' }
+            },
+            default: true
+          },
+          {
+            id: 'letter-generic',
+            labels: { fr: 'Lettre Générique', en: 'Generic Letter', ar: 'رسالة عامة' },
+            files: { fr: '../content/shared/111_lettre_generique_FR.html', en: '../content/shared/112_lettre_generique_EN.html', ar: '../content/shared/113_lettre_generique_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/111_lettre_generique_FR.pdf', en: '../content/shared/112_lettre_generique_EN.pdf', ar: '../content/shared/113_lettre_generique_AR.pdf' }
+            }
           }
         ]
       },
@@ -191,12 +287,28 @@ const App = {
           {
             id: 'interview-fr-full',
             labels: { fr: 'Préparation Complète', en: 'Full Preparation', ar: 'التحضير الكامل' },
-            files: { fr: '../content/ch/58_entretien_v2.html', en: '../content/ch/58_entretien_v2_EN.html', ar: '../content/ch/58_entretien_v2_AR.html' }
+            files: { fr: '../content/ch/58_entretien_v2.html', en: '../content/ch/58_entretien_v2_EN.html', ar: '../content/ch/58_entretien_v2_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/58_entretien_v2.pdf' } }
           },
           {
             id: 'interview-fr-short',
             labels: { fr: 'Version Condensée', en: 'Condensed Version', ar: 'النسخة المختصرة' },
-            files: { fr: '../content/ch/59_entretien_v3_court.html', en: '../content/ch/59_entretien_v3_court_EN.html', ar: '../content/ch/59_entretien_v3_court_AR.html' }
+            files: { fr: '../content/ch/59_entretien_v3_court.html', en: '../content/ch/59_entretien_v3_court_EN.html', ar: '../content/ch/59_entretien_v3_court_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/59_entretien_v3_court.pdf' } }
+          },
+          {
+            id: 'interview-fr-ultra',
+            labels: { fr: 'Fiche Flash', en: 'Flash Card', ar: 'البطاقة السريعة' },
+            files: { fr: '../content/ch/60_entretien_v4_ultra.html', en: '../content/ch/60_entretien_v4_ultra_EN.html', ar: '../content/ch/60_entretien_v4_ultra_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/60_entretien_v4_ultra.pdf' } }
+          },
+          {
+            id: 'flashcards',
+            labels: { fr: 'Flash Cards', en: 'Flash Cards', ar: 'بطاقات المراجعة' },
+            files: { fr: '../content/shared/116_flashcards_FR.html', en: '../content/shared/117_flashcards_EN.html', ar: '../content/shared/116_flashcards_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/116_flashcards_FR.pdf', en: '../content/shared/117_flashcards_EN.pdf', ar: '../content/shared/116_flashcards_FR.pdf' }
+            }
           }
         ]
       },
@@ -217,6 +329,14 @@ const App = {
             labels: { fr: 'Prompts Recherche', en: 'Search Prompts', ar: 'أوامر البحث' },
             files: { fr: '../content/fr/88_prompts_france.html', en: '../content/fr/88_prompts_france_EN.html', ar: '../content/fr/89_prompts_france_AR.html' },
             downloads: { txt: { fr: '../content/fr/88_prompts_france.txt', en: '../content/fr/88_prompts_france_EN.txt', ar: '../content/fr/89_prompts_france_AR.txt' } }
+          },
+          {
+            id: 'prompts-generic',
+            labels: { fr: 'Prompts Génériques', en: 'Generic Prompts', ar: 'أوامر عامة' },
+            files: { fr: '../content/shared/114_prompts_generique_FR.html', en: '../content/shared/115_prompts_generique_EN.html', ar: '../content/shared/114_prompts_generique_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/114_prompts_generique_FR.pdf', en: '../content/shared/115_prompts_generique_EN.pdf', ar: '../content/shared/114_prompts_generique_FR.pdf' }
+            }
           }
         ]
       },
@@ -230,7 +350,44 @@ const App = {
           }
         ]
       },
-      jobs: { items: [{ id: 'jobs-fr', labels: { fr: 'Offres France', en: 'French Jobs', ar: 'وظائف فرنسا' }, type: 'jobs', region: 'fr' }] }
+      jobs: { items: [{ id: 'jobs-fr', labels: { fr: 'Offres France', en: 'French Jobs', ar: 'وظائف فرنسا' }, type: 'jobs', region: 'fr' }] },
+
+      skills: {
+        items: [
+          {
+            id: 'skills-matrix',
+            labels: { fr: 'Matrice Compétences', en: 'Skills Matrix', ar: 'مصفوفة المهارات' },
+            files: { fr: '../content/shared/124_skills_matrix_FR.html', en: '../content/shared/125_skills_matrix_EN.html', ar: '../content/shared/124_skills_matrix_FR.html' }
+          }
+        ]
+      },
+      portfolio: {
+        items: [
+          {
+            id: 'portfolio',
+            labels: { fr: 'Portfolio Projets', en: 'Project Portfolio', ar: 'معرض المشاريع' },
+            files: { fr: '../content/shared/126_portfolio_FR.html', en: '../content/shared/127_portfolio_EN.html', ar: '../content/shared/126_portfolio_FR.html' }
+          }
+        ]
+      },
+      timeline: {
+        items: [
+          {
+            id: 'timeline',
+            labels: { fr: 'Timeline Carrière', en: 'Career Timeline', ar: 'المسار المهني' },
+            files: { fr: '../content/shared/122_timeline_FR.html', en: '../content/shared/123_timeline_EN.html', ar: '../content/shared/122_timeline_FR.html' }
+          }
+        ]
+      },
+      help: {
+        items: [
+          {
+            id: 'help',
+            labels: { fr: "Guide d'utilisation", en: 'User Guide', ar: 'دليل الاستخدام' },
+            files: { fr: '../content/shared/120_help_FR.html', en: '../content/shared/121_help_EN.html', ar: '../content/shared/120_help_FR.html' }
+          }
+        ]
+      }
     },
     lu: {
       cv: {
@@ -239,17 +396,33 @@ const App = {
             id: 'cv-lu',
             labels: { fr: 'CV Luxembourg', en: 'Luxembourg CV', ar: 'السيرة الذاتية - لوكسمبورغ' },
             files: { fr: '../content/lu/90_cv_lu_FR.html', en: '../content/lu/91_cv_lu_EN.html', ar: '../content/lu/92_cv_lu_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/lu/90_cv_lu_FR.pdf', en: '../content/lu/91_cv_lu_EN.pdf', ar: '../content/lu/92_cv_lu_AR.pdf' }
+            },
             default: true
+          },
+          {
+            id: 'cv-condensed',
+            labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
+            files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/118_cv_condensed_FR.pdf', en: '../content/shared/119_cv_condensed_EN.pdf', ar: '../content/shared/118_cv_condensed_FR.pdf' }
+            }
           }
         ]
       },
       linkedin: {
         items: [
           {
-            id: 'linkedin-lu',
-            labels: { fr: 'Profil LinkedIn', en: 'LinkedIn Profile', ar: 'ملف LinkedIn' },
-            files: { fr: '../content/shared/67_linkedin_FR.html', en: '../content/shared/66_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' },
+            id: 'linkedin-lu-content',
+            labels: { fr: 'Contenu du Profil', en: 'Profile Content', ar: 'محتوى الملف' },
+            files: { fr: '../content/shared/65_linkedin_FR.html', en: '../content/shared/64_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' },
             downloads: { txt: { fr: '../content/shared/65_linkedin_FR.txt', en: '../content/shared/64_linkedin_EN.txt', ar: '../content/shared/72_linkedin_AR.txt' } }
+          },
+          {
+            id: 'linkedin-lu-visual',
+            labels: { fr: 'Aperçu Visuel', en: 'Visual Preview', ar: 'معاينة مرئية' },
+            files: { fr: '../content/shared/67_linkedin_FR.html', en: '../content/shared/66_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' }
           }
         ]
       },
@@ -257,8 +430,20 @@ const App = {
         items: [
           {
             id: 'letter-lu',
-            labels: { fr: 'Lettre de Motivation', en: 'Cover Letter', ar: 'رسالة التحفيز' },
-            files: { fr: '../content/lu/96_lettre_lu.html', en: '../content/lu/97_lettre_lu_EN.html', ar: '../content/lu/98_lettre_lu_AR.html' }
+            labels: { fr: 'Lettre Luxembourg', en: 'Luxembourg Letter', ar: 'رسالة لوكسمبورغ' },
+            files: { fr: '../content/lu/96_lettre_lu.html', en: '../content/lu/97_lettre_lu_EN.html', ar: '../content/lu/98_lettre_lu_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/lu/96_lettre_lu.pdf', en: '../content/lu/97_lettre_lu_EN.pdf', ar: '../content/lu/98_lettre_lu_AR.pdf' }
+            }
+          },
+          {
+            id: 'letter-generic',
+            labels: { fr: 'Lettre Générique', en: 'Generic Letter', ar: 'رسالة عامة' },
+            files: { fr: '../content/shared/111_lettre_generique_FR.html', en: '../content/shared/112_lettre_generique_EN.html', ar: '../content/shared/113_lettre_generique_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/111_lettre_generique_FR.pdf', en: '../content/shared/112_lettre_generique_EN.pdf', ar: '../content/shared/113_lettre_generique_AR.pdf' }
+            },
+            default: true
           }
         ]
       },
@@ -275,9 +460,30 @@ const App = {
       interview: {
         items: [
           {
-            id: 'interview-lu',
-            labels: { fr: 'Prépa Entretien', en: 'Interview Prep', ar: 'التحضير للمقابلة' },
-            files: { fr: '../content/ch/58_entretien_v2.html', en: '../content/ch/58_entretien_v2_EN.html', ar: '../content/ch/58_entretien_v2_AR.html' }
+            id: 'interview-lu-full',
+            labels: { fr: 'Préparation Complète', en: 'Full Preparation', ar: 'التحضير الكامل' },
+            files: { fr: '../content/ch/58_entretien_v2.html', en: '../content/ch/58_entretien_v2_EN.html', ar: '../content/ch/58_entretien_v2_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/58_entretien_v2.pdf' } }
+          },
+          {
+            id: 'interview-lu-short',
+            labels: { fr: 'Version Condensée', en: 'Condensed Version', ar: 'النسخة المختصرة' },
+            files: { fr: '../content/ch/59_entretien_v3_court.html', en: '../content/ch/59_entretien_v3_court_EN.html', ar: '../content/ch/59_entretien_v3_court_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/59_entretien_v3_court.pdf' } }
+          },
+          {
+            id: 'interview-lu-ultra',
+            labels: { fr: 'Fiche Flash', en: 'Flash Card', ar: 'البطاقة السريعة' },
+            files: { fr: '../content/ch/60_entretien_v4_ultra.html', en: '../content/ch/60_entretien_v4_ultra_EN.html', ar: '../content/ch/60_entretien_v4_ultra_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/60_entretien_v4_ultra.pdf' } }
+          },
+          {
+            id: 'flashcards',
+            labels: { fr: 'Flash Cards', en: 'Flash Cards', ar: 'بطاقات المراجعة' },
+            files: { fr: '../content/shared/116_flashcards_FR.html', en: '../content/shared/117_flashcards_EN.html', ar: '../content/shared/116_flashcards_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/116_flashcards_FR.pdf', en: '../content/shared/117_flashcards_EN.pdf', ar: '../content/shared/116_flashcards_FR.pdf' }
+            }
           }
         ]
       },
@@ -298,6 +504,14 @@ const App = {
             labels: { fr: 'Prompts IA', en: 'AI Prompts', ar: 'أوامر الذكاء الاصطناعي' },
             files: { fr: '../content/lu/99_prompts_lu.html', en: '../content/lu/99_prompts_lu_EN.html', ar: '../content/lu/99_prompts_lu_AR.html' },
             downloads: { txt: { fr: '../content/lu/99_prompts_lu.txt', en: '../content/lu/99_prompts_lu_EN.txt', ar: '../content/lu/99_prompts_lu_AR.txt' } }
+          },
+          {
+            id: 'prompts-generic',
+            labels: { fr: 'Prompts Génériques', en: 'Generic Prompts', ar: 'أوامر عامة' },
+            files: { fr: '../content/shared/114_prompts_generique_FR.html', en: '../content/shared/115_prompts_generique_EN.html', ar: '../content/shared/114_prompts_generique_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/114_prompts_generique_FR.pdf', en: '../content/shared/115_prompts_generique_EN.pdf', ar: '../content/shared/114_prompts_generique_FR.pdf' }
+            }
           }
         ]
       },
@@ -311,7 +525,44 @@ const App = {
           }
         ]
       },
-      jobs: { items: [{ id: 'jobs-lu', labels: { fr: 'Offres Luxembourg', en: 'Luxembourg Jobs', ar: 'وظائف لوكسمبورغ' }, type: 'jobs', region: 'lu' }] }
+      jobs: { items: [{ id: 'jobs-lu', labels: { fr: 'Offres Luxembourg', en: 'Luxembourg Jobs', ar: 'وظائف لوكسمبورغ' }, type: 'jobs', region: 'lu' }] },
+
+      skills: {
+        items: [
+          {
+            id: 'skills-matrix',
+            labels: { fr: 'Matrice Compétences', en: 'Skills Matrix', ar: 'مصفوفة المهارات' },
+            files: { fr: '../content/shared/124_skills_matrix_FR.html', en: '../content/shared/125_skills_matrix_EN.html', ar: '../content/shared/124_skills_matrix_FR.html' }
+          }
+        ]
+      },
+      portfolio: {
+        items: [
+          {
+            id: 'portfolio',
+            labels: { fr: 'Portfolio Projets', en: 'Project Portfolio', ar: 'معرض المشاريع' },
+            files: { fr: '../content/shared/126_portfolio_FR.html', en: '../content/shared/127_portfolio_EN.html', ar: '../content/shared/126_portfolio_FR.html' }
+          }
+        ]
+      },
+      timeline: {
+        items: [
+          {
+            id: 'timeline',
+            labels: { fr: 'Timeline Carrière', en: 'Career Timeline', ar: 'المسار المهني' },
+            files: { fr: '../content/shared/122_timeline_FR.html', en: '../content/shared/123_timeline_EN.html', ar: '../content/shared/122_timeline_FR.html' }
+          }
+        ]
+      },
+      help: {
+        items: [
+          {
+            id: 'help',
+            labels: { fr: "Guide d'utilisation", en: 'User Guide', ar: 'دليل الاستخدام' },
+            files: { fr: '../content/shared/120_help_FR.html', en: '../content/shared/121_help_EN.html', ar: '../content/shared/120_help_FR.html' }
+          }
+        ]
+      }
     },
     gulf: {
       cv: {
@@ -320,17 +571,33 @@ const App = {
             id: 'cv-gulf',
             labels: { fr: 'CV Golfe', en: 'Gulf CV', ar: 'السيرة الذاتية - الخليج' },
             files: { fr: '../content/gulf/101_cv_gulf_FR.html', en: '../content/gulf/102_cv_gulf_EN.html', ar: '../content/gulf/103_cv_gulf_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/gulf/101_cv_gulf_FR.pdf', en: '../content/gulf/102_cv_gulf_EN.pdf', ar: '../content/gulf/103_cv_gulf_AR.pdf' }
+            },
             default: true
+          },
+          {
+            id: 'cv-condensed',
+            labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
+            files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/118_cv_condensed_FR.pdf', en: '../content/shared/119_cv_condensed_EN.pdf', ar: '../content/shared/118_cv_condensed_FR.pdf' }
+            }
           }
         ]
       },
       linkedin: {
         items: [
           {
-            id: 'linkedin-gulf',
-            labels: { fr: 'Profil LinkedIn', en: 'LinkedIn Profile', ar: 'ملف LinkedIn' },
-            files: { fr: '../content/shared/67_linkedin_FR.html', en: '../content/shared/66_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' },
+            id: 'linkedin-gulf-content',
+            labels: { fr: 'Contenu du Profil', en: 'Profile Content', ar: 'محتوى الملف' },
+            files: { fr: '../content/shared/65_linkedin_FR.html', en: '../content/shared/64_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' },
             downloads: { txt: { fr: '../content/shared/65_linkedin_FR.txt', en: '../content/shared/64_linkedin_EN.txt', ar: '../content/shared/72_linkedin_AR.txt' } }
+          },
+          {
+            id: 'linkedin-gulf-visual',
+            labels: { fr: 'Aperçu Visuel', en: 'Visual Preview', ar: 'معاينة مرئية' },
+            files: { fr: '../content/shared/67_linkedin_FR.html', en: '../content/shared/66_linkedin_EN.html', ar: '../content/shared/72_linkedin_AR.html' }
           }
         ]
       },
@@ -338,8 +605,20 @@ const App = {
         items: [
           {
             id: 'letter-gulf',
-            labels: { fr: 'Lettre de Motivation', en: 'Cover Letter', ar: 'رسالة التحفيز' },
-            files: { fr: '../content/gulf/107_lettre_gulf.html', en: '../content/gulf/108_lettre_gulf_EN.html', ar: '../content/gulf/109_lettre_gulf_AR.html' }
+            labels: { fr: 'Lettre Golfe', en: 'Gulf Letter', ar: 'رسالة الخليج' },
+            files: { fr: '../content/gulf/107_lettre_gulf.html', en: '../content/gulf/108_lettre_gulf_EN.html', ar: '../content/gulf/109_lettre_gulf_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/gulf/107_lettre_gulf.pdf', en: '../content/gulf/108_lettre_gulf_EN.pdf', ar: '../content/gulf/109_lettre_gulf_AR.pdf' }
+            }
+          },
+          {
+            id: 'letter-generic',
+            labels: { fr: 'Lettre Générique', en: 'Generic Letter', ar: 'رسالة عامة' },
+            files: { fr: '../content/shared/111_lettre_generique_FR.html', en: '../content/shared/112_lettre_generique_EN.html', ar: '../content/shared/113_lettre_generique_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/111_lettre_generique_FR.pdf', en: '../content/shared/112_lettre_generique_EN.pdf', ar: '../content/shared/113_lettre_generique_AR.pdf' }
+            },
+            default: true
           }
         ]
       },
@@ -356,9 +635,30 @@ const App = {
       interview: {
         items: [
           {
-            id: 'interview-gulf',
-            labels: { fr: 'Prépa Entretien', en: 'Interview Prep', ar: 'التحضير للمقابلة' },
-            files: { fr: '../content/ch/60_entretien_v4_ultra.html', en: '../content/ch/60_entretien_v4_ultra_EN.html', ar: '../content/ch/60_entretien_v4_ultra_AR.html' }
+            id: 'interview-gulf-full',
+            labels: { fr: 'Préparation Complète', en: 'Full Preparation', ar: 'التحضير الكامل' },
+            files: { fr: '../content/ch/58_entretien_v2.html', en: '../content/ch/58_entretien_v2_EN.html', ar: '../content/ch/58_entretien_v2_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/58_entretien_v2.pdf' } }
+          },
+          {
+            id: 'interview-gulf-short',
+            labels: { fr: 'Version Condensée', en: 'Condensed Version', ar: 'النسخة المختصرة' },
+            files: { fr: '../content/ch/59_entretien_v3_court.html', en: '../content/ch/59_entretien_v3_court_EN.html', ar: '../content/ch/59_entretien_v3_court_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/59_entretien_v3_court.pdf' } }
+          },
+          {
+            id: 'interview-gulf-ultra',
+            labels: { fr: 'Fiche Flash', en: 'Flash Card', ar: 'البطاقة السريعة' },
+            files: { fr: '../content/ch/60_entretien_v4_ultra.html', en: '../content/ch/60_entretien_v4_ultra_EN.html', ar: '../content/ch/60_entretien_v4_ultra_AR.html' },
+            downloads: { pdf: { fr: '../content/ch/60_entretien_v4_ultra.pdf' } }
+          },
+          {
+            id: 'flashcards',
+            labels: { fr: 'Flash Cards', en: 'Flash Cards', ar: 'بطاقات المراجعة' },
+            files: { fr: '../content/shared/116_flashcards_FR.html', en: '../content/shared/117_flashcards_EN.html', ar: '../content/shared/116_flashcards_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/116_flashcards_FR.pdf', en: '../content/shared/117_flashcards_EN.pdf', ar: '../content/shared/116_flashcards_FR.pdf' }
+            }
           }
         ]
       },
@@ -379,6 +679,14 @@ const App = {
             labels: { fr: 'Prompts IA', en: 'AI Prompts', ar: 'أوامر الذكاء الاصطناعي' },
             files: { fr: '../content/gulf/110_prompts_gulf.html', en: '../content/gulf/110_prompts_gulf_EN.html', ar: '../content/gulf/110_prompts_gulf_AR.html' },
             downloads: { txt: { fr: '../content/gulf/110_prompts_gulf.txt', en: '../content/gulf/110_prompts_gulf_EN.txt', ar: '../content/gulf/110_prompts_gulf_AR.txt' } }
+          },
+          {
+            id: 'prompts-generic',
+            labels: { fr: 'Prompts Génériques', en: 'Generic Prompts', ar: 'أوامر عامة' },
+            files: { fr: '../content/shared/114_prompts_generique_FR.html', en: '../content/shared/115_prompts_generique_EN.html', ar: '../content/shared/114_prompts_generique_FR.html' },
+            downloads: {
+              pdf: { fr: '../content/shared/114_prompts_generique_FR.pdf', en: '../content/shared/115_prompts_generique_EN.pdf', ar: '../content/shared/114_prompts_generique_FR.pdf' }
+            }
           }
         ]
       },
@@ -392,7 +700,44 @@ const App = {
           }
         ]
       },
-      jobs: { items: [{ id: 'jobs-gulf', labels: { fr: 'Offres Golfe', en: 'Gulf Jobs', ar: 'وظائف الخليج' }, type: 'jobs', region: 'gulf' }] }
+      jobs: { items: [{ id: 'jobs-gulf', labels: { fr: 'Offres Golfe', en: 'Gulf Jobs', ar: 'وظائف الخليج' }, type: 'jobs', region: 'gulf' }] },
+
+      skills: {
+        items: [
+          {
+            id: 'skills-matrix',
+            labels: { fr: 'Matrice Compétences', en: 'Skills Matrix', ar: 'مصفوفة المهارات' },
+            files: { fr: '../content/shared/124_skills_matrix_FR.html', en: '../content/shared/125_skills_matrix_EN.html', ar: '../content/shared/124_skills_matrix_FR.html' }
+          }
+        ]
+      },
+      portfolio: {
+        items: [
+          {
+            id: 'portfolio',
+            labels: { fr: 'Portfolio Projets', en: 'Project Portfolio', ar: 'معرض المشاريع' },
+            files: { fr: '../content/shared/126_portfolio_FR.html', en: '../content/shared/127_portfolio_EN.html', ar: '../content/shared/126_portfolio_FR.html' }
+          }
+        ]
+      },
+      timeline: {
+        items: [
+          {
+            id: 'timeline',
+            labels: { fr: 'Timeline Carrière', en: 'Career Timeline', ar: 'المسار المهني' },
+            files: { fr: '../content/shared/122_timeline_FR.html', en: '../content/shared/123_timeline_EN.html', ar: '../content/shared/122_timeline_FR.html' }
+          }
+        ]
+      },
+      help: {
+        items: [
+          {
+            id: 'help',
+            labels: { fr: "Guide d'utilisation", en: 'User Guide', ar: 'دليل الاستخدام' },
+            files: { fr: '../content/shared/120_help_FR.html', en: '../content/shared/121_help_EN.html', ar: '../content/shared/120_help_FR.html' }
+          }
+        ]
+      }
     }
   },
 
@@ -406,7 +751,11 @@ const App = {
     plan: '&#128506;',
     prompts: '&#129302;',
     queries: '&#128269;',
-    jobs: '&#128188;'
+    jobs: '&#128188;',
+    help: '&#10067;',
+    portfolio: '&#128188;',
+    timeline: '&#128197;',
+    skills: '&#128202;'
   },
 
   // ── INITIALIZATION ──
@@ -486,6 +835,15 @@ const App = {
 
     // Hash routing
     window.addEventListener('hashchange', () => this.handleRoute());
+
+    // Mobile: swipe left to close sidebar
+    let touchStartX = 0;
+    const sidebar = document.getElementById('sidebar');
+    sidebar.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    sidebar.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (dx < -60) sidebar.classList.remove('open');
+    }, { passive: true });
 
     // Hamburger
     document.getElementById('hamburger-btn').addEventListener('click', () => {
@@ -609,6 +967,9 @@ const App = {
       }
     }
 
+    // Inject copy buttons into iframe content after load
+    iframe.onload = () => this.injectCopyButtons(iframe);
+
     // Update download buttons
     if (typeof Downloads !== 'undefined') Downloads.update(item, lang);
 
@@ -638,6 +999,52 @@ const App = {
       if (localStorage.getItem(`edit-${itemId}-${lang}`)) return true;
     }
     return false;
+  },
+
+  // ── INJECT COPY BUTTONS ──
+  injectCopyButtons(iframe) {
+    try {
+      const doc = iframe.contentDocument;
+      if (!doc) return;
+      const lang = I18n.get();
+      const labels = { fr: ['Copier', 'Copié !'], en: ['Copy', 'Copied!'], ar: ['نسخ', 'تم !'] };
+      const [label, labelDone] = labels[lang] || labels['en'];
+
+      // Copy buttons for prompt boxes
+      doc.querySelectorAll('.prompt-box').forEach(box => {
+        if (box.querySelector('.copy-btn')) return;
+        box.style.position = 'relative';
+        box.style.paddingTop = '28pt';
+        const btn = doc.createElement('button');
+        btn.className = 'copy-btn';
+        btn.textContent = label;
+        btn.style.cssText = 'position:absolute;top:6pt;right:6pt;background:#0a66c2;color:#fff;border:none;border-radius:3pt;padding:3pt 10pt;font-size:7.5pt;font-weight:600;cursor:pointer;letter-spacing:0.3pt;';
+        btn.addEventListener('click', () => {
+          const text = box.innerText.replace(new RegExp('^' + label + '\\n?'), '');
+          navigator.clipboard.writeText(text).then(() => {
+            btn.textContent = labelDone;
+            btn.style.background = '#27ae60';
+            setTimeout(() => { btn.textContent = label; btn.style.background = '#0a66c2'; }, 1500);
+          });
+        });
+        box.appendChild(btn);
+      });
+
+      // Click-to-copy for query boxes
+      doc.querySelectorAll('.query-box').forEach(box => {
+        if (box.dataset.copyBound) return;
+        box.dataset.copyBound = '1';
+        box.style.cursor = 'pointer';
+        box.title = lang === 'ar' ? 'انقر للنسخ' : lang === 'en' ? 'Click to copy' : 'Cliquer pour copier';
+        box.addEventListener('click', () => {
+          navigator.clipboard.writeText(box.innerText).then(() => {
+            box.style.background = '#d4edda';
+            box.style.borderColor = '#27ae60';
+            setTimeout(() => { box.style.background = ''; box.style.borderColor = ''; }, 1000);
+          });
+        });
+      });
+    } catch (e) { /* cross-origin or sandbox restriction */ }
   },
 
   // ── COMMAND PALETTE ──

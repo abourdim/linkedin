@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interview Flashcards — Embedded Software Engineer</title>
+<style>
+  @page { size: A4; margin: 10mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10pt;
+    color: #2d2d2d;
+    line-height: 1.5;
+    background: #f0f4f8;
+    padding: 20px;
+  }
+
+  /* HEADER */
+  .header {
+    background: linear-gradient(135deg, #1a2a4a 0%, #0f1c33 100%);
+    color: #ffffff;
+    padding: 20px 28px 16px;
+    text-align: center;
+    border-bottom: 4px solid #2e6db4;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 0;
+  }
+  .header h1 {
+    font-size: 17pt;
+    font-weight: 800;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+  }
+  .header .subtitle {
+    font-size: 10pt;
+    color: #7eb3e0;
+    margin-top: 4px;
+    font-weight: 400;
+  }
+  .header .card-count {
+    display: inline-block;
+    margin-top: 8px;
+    background: rgba(74,143,212,0.2);
+    border: 1px solid #3a5a8a;
+    color: #8ab8e8;
+    font-size: 8.5pt;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 12px;
+    letter-spacing: 0.5pt;
+  }
+
+  /* FILTER BAR */
+  .filter-bar {
+    background: #ffffff;
+    padding: 12px 20px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #d0ddef;
+    margin-bottom: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .filter-bar span {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 4px;
+  }
+  .filter-btn {
+    border: 1.5px solid #c0d4ea;
+    background: #f7f9fc;
+    color: #1a2a4a;
+    font-size: 9pt;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .filter-btn:hover { background: #e8f0fa; border-color: #2e6db4; }
+  .filter-btn.active {
+    background: #0a66c2;
+    color: #ffffff;
+    border-color: #0a66c2;
+  }
+
+  /* GRID */
+  .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* FLASHCARD */
+  .flashcard {
+    perspective: 1000px;
+    height: 220px;
+    cursor: pointer;
+  }
+  .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+  }
+  .flashcard.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  .card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  }
+
+  /* FRONT */
+  .card-front {
+    background: #ffffff;
+    border: 1.5px solid #d0ddef;
+  }
+  .card-front .card-category {
+    display: inline-block;
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 1.2pt;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 0 0 8px 0;
+    color: #ffffff;
+    align-self: flex-start;
+  }
+  .card-category.tech { background: #0a66c2; }
+  .card-category.qa { background: #e67e22; }
+  .card-category.vocab { background: #27ae60; }
+  .card-front .card-question {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 20px;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    line-height: 1.4;
+  }
+  .card-front .flip-hint {
+    text-align: center;
+    font-size: 7pt;
+    color: #a0b0c0;
+    padding-bottom: 8px;
+    letter-spacing: 0.5pt;
+  }
+
+  /* BACK */
+  .card-back {
+    background: linear-gradient(135deg, #1a2a4a 0%, #0f1c33 100%);
+    transform: rotateY(180deg);
+    padding: 18px 20px;
+    justify-content: center;
+  }
+  .card-back .card-answer {
+    color: #d8e6f3;
+    font-size: 9.5pt;
+    line-height: 1.6;
+    text-align: left;
+  }
+  .card-back .card-answer strong {
+    color: #7eb3e0;
+  }
+
+  /* SECTION DIVIDER */
+  .section-divider {
+    grid-column: 1 / -1;
+    font-size: 10pt;
+    font-weight: 800;
+    color: #1a2a4a;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    padding: 10px 0 4px;
+    border-bottom: 2.5px solid #2e6db4;
+    margin-top: 8px;
+  }
+
+  /* PRINT */
+  @media print {
+    body { background: #fff; padding: 0; }
+    .filter-bar { display: none; }
+    .header { border-radius: 0; }
+    .cards-grid { gap: 10px; }
+    .flashcard {
+      height: auto;
+      min-height: 100px;
+      page-break-inside: avoid;
+    }
+    .card-inner {
+      transform: none !important;
+      transform-style: flat;
+      position: relative;
+    }
+    .card-front, .card-back {
+      position: relative;
+      backface-visibility: visible;
+      -webkit-backface-visibility: visible;
+      transform: none !important;
+      height: auto;
+      box-shadow: none;
+      border: 1px solid #ccc;
+    }
+    .card-back {
+      background: #f0f4f8 !important;
+      margin-top: 4px;
+      border-radius: 8px;
+    }
+    .card-back .card-answer { color: #2d2d2d; }
+    .card-back .card-answer strong { color: #1a2a4a; }
+    .flip-hint { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Embedded Interview Flashcards</h1>
+  <div class="subtitle">Embedded software engineer interview preparation</div>
+  <div class="card-count">30 cards — 3 categories</div>
+</div>
+
+<!-- FILTERS -->
+<div class="filter-bar">
+  <span>Filter:</span>
+  <button class="filter-btn active" data-filter="all">All (30)</button>
+  <button class="filter-btn" data-filter="tech">TECH (10)</button>
+  <button class="filter-btn" data-filter="qa">Q&amp;A (10)</button>
+  <button class="filter-btn" data-filter="vocab">VOCAB (10)</button>
+</div>
+
+<!-- CARDS GRID -->
+<div class="cards-grid">
+
+  <!-- ===== SECTION 1: TECHNICAL SKILLS ===== -->
+  <div class="section-divider" data-section="tech">Technical Skills</div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">RTOS vs Bare Metal</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>RTOS</strong> (FreeRTOS, VxWorks): scheduling, multitasking, priorities.<br><strong>Bare metal</strong>: infinite loop, ISR, full control.<br>Choice depends on complexity, real-time needs, certification.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">ARM Cortex M0 vs M4</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>M0</strong>: low cost, low power, 2-stage pipeline.<br><strong>M4</strong>: DSP, FPU, 3-stage pipeline, higher performance.<br>Both use Thumb-2 instruction set.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">CAN Bus — Principle</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Differential bus, priority-based arbitration (non-destructive CSMA/CD), standard 11-bit / extended 29-bit frames, max 1 Mbps. Used in automotive, aerospace, industrial.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">BLE vs Bluetooth Classic</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>BLE</strong>: low power, short packets, fast connection.<br><strong>Classic</strong>: higher throughput, audio streaming.<br>BLE dominates IoT/medical/wearables.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">I2C vs SPI</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>I2C</strong>: 2 wires (SDA/SCL), addressing, multi-master.<br><strong>SPI</strong>: 4 wires (MOSI/MISO/SCK/CS), faster, full-duplex.<br>SPI for speed, I2C for simplicity.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">MISRA C — Purpose</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">C coding rules for safety-critical software (automotive, aerospace, medical). Prevents undefined behavior, improves reliability. ~143 mandatory + advisory rules.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">DO-178C — Levels</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Aerospace standard for embedded software. 5 levels (A-E). <strong>Level A</strong> = catastrophic (most stringent). Full traceability: requirements &rarr; code &rarr; tests.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">IEC 62304 — Classes</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Medical device software standard. <strong>Class A</strong>: no injury. <strong>Class B</strong>: non-serious injury. <strong>Class C</strong>: death/serious injury. Higher class = more documentation required.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">ISO 15118 — V2G</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Vehicle-to-grid charging communication standard. Plug &amp; Charge, PLC (HomePlug Green PHY), TLS authentication, bidirectional energy management.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="tech" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category tech">TECH</span>
+        <div class="card-question">Watchdog Timer</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Hardware timer that resets the MCU if software fails to refresh it periodically. Protects against hangs and infinite loops. Essential in safety-critical embedded systems.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 2: INTERVIEW QUESTIONS ===== -->
+  <div class="section-divider" data-section="qa">Interview Questions</div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Tell me about your background</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">20+ years in embedded. Aerospace (Safran, Thales — DO-178), medical (GE Healthcare — IEC 62304), automotive (Valeo), IoT cybersecurity (Enedis/Linky), V2G (E2-CAD — ISO 15118). C/C++, RTOS, embedded Linux.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">How do you debug a crash on target?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">1) Reproduce (logs, watchdog). 2) JTAG/Lauterbach TRACE32 for stack trace. 3) Analyze registers, PC, LR. 4) Memory dump + fault handler. 5) Valgrind if Linux.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Experience with embedded testing?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Unit tests (Unity, CUnit), HLT on target, MC/DC coverage (aerospace), integration tests, fuzzing (Enedis), Lauterbach TRACE32 for step-by-step execution.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">How do you manage memory in embedded?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Static allocation preferred. Memory pools. No malloc in critical code. Separate stack/heap. MPU for protection. Worst-case stack usage analysis.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Difference between interrupt and polling?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Interrupt</strong>: reactive, low latency, but complex (priorities, reentrancy).<br><strong>Polling</strong>: simple, deterministic, but wastes CPU.<br>Keep ISRs short &rarr; set flag + process in task.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Embedded cybersecurity experience?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Enedis: pentest on Linky concentrators, code audit, protocol sniffing (Wireshark, SDR), fuzzing. Security reviews with manufacturers. Kali Linux, Nmap, Scapy.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">What do you bring to the team?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Cross-sector versatility, fast autonomy, certification rigor, reverse engineering ability. Founder of Workshop-DIY: knowledge sharing, maker mindset.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">How do you work in a team?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">Systematic code reviews, Doxygen documentation, Jira/Polarion for traceability. Clear communication with hardware and system teams. Occasional pair programming.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Why are you leaving your current position?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer">E2-CAD contract completed (March 2026). Looking for a new technical challenge in a demanding environment. Interest in [target company's sector].</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="qa" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category qa">Q&amp;A</span>
+        <div class="card-question">Your salary expectations?</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>France</strong>: 55-70K EUR/year.<br><strong>Switzerland</strong>: 110-140K CHF/year.<br><strong>Luxembourg</strong>: 75-95K EUR/year.<br>Open to discussion based on total package.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SECTION 3: VOCABULARY EN/FR ===== -->
+  <div class="section-divider" data-section="vocab">Vocabulary EN / FR</div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Embedded software / Firmware</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Logiciel embarque</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">PCB — Printed Circuit Board</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Carte electronique</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">HAL — Hardware Abstraction Layer</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Couche d'abstraction materielle</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Device driver</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Pilote (driver)</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Scheduler</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Ordonnanceur</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Hard real-time</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Temps reel dur</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Test bench / Test rig</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Banc de test</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Commissioning</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Mise en service</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">Requirements specification</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Cahier des charges</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard" data-cat="vocab" onclick="this.classList.toggle('flipped')">
+    <div class="card-inner">
+      <div class="card-front">
+        <span class="card-category vocab">VOCAB</span>
+        <div class="card-question">V-model (development lifecycle)</div>
+        <div class="flip-hint">Click to flip</div>
+      </div>
+      <div class="card-back">
+        <div class="card-answer"><strong>Cycle en V</strong></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /cards-grid -->
+
+<script>
+(function(){
+  var btns = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.flashcard');
+  var dividers = document.querySelectorAll('.section-divider');
+
+  function filterCards(cat) {
+    btns.forEach(function(b){ b.classList.remove('active'); });
+    event.target.classList.add('active');
+
+    cards.forEach(function(c){
+      if (cat === 'all' || c.getAttribute('data-cat') === cat) {
+        c.style.display = '';
+      } else {
+        c.style.display = 'none';
+      }
+    });
+
+    dividers.forEach(function(d){
+      if (cat === 'all' || d.getAttribute('data-section') === cat) {
+        d.style.display = '';
+      } else {
+        d.style.display = 'none';
+      }
+    });
+  }
+
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      filterCards(this.getAttribute('data-filter'));
+    });
+  });
+})();
+</script>
+
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

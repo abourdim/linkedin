@@ -114,7 +114,7 @@ AERONAUTIQUE & DEFENSE (votre experience Safran, Thales, Zodiac)
 
 AUTOMOBILE (votre experience Valeo, E2-CAD/V2G)
 --------------------------------------------------
-- Valeo — Creteil / Paris region — systemes embarques auto
+- Valeo — Creteil / Egypte / Paris region — systemes embarques auto
 - Stellantis (ex-PSA) — Velizy / Poissy — vehicules, ADAS
 - Renault — Guyancourt / Lardy — vehicules electriques, embarque
 - Forvia (ex-Faurecia) — Nanterre — equipementier automobile

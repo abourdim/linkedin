@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Condensed CV — Abdelhak Bourdim — EN</title>
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8pt;
+    color: #222;
+    line-height: 1.35;
+    background: #fff;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    overflow: hidden;
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 30%;
+    background: #1a2a4a;
+    color: #e8eef5;
+    padding: 14mm 5mm 8mm 5mm;
+    display: flex;
+    flex-direction: column;
+    gap: 7pt;
+  }
+
+  .sidebar .name {
+    font-size: 14pt;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.8pt;
+    line-height: 1.2;
+    margin-bottom: 2pt;
+  }
+
+  .sidebar .title {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #7fb3e0;
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 4pt;
+  }
+
+  .sidebar .sep {
+    border: none;
+    border-top: 0.5pt solid rgba(255,255,255,0.2);
+    margin: 2pt 0;
+  }
+
+  .sidebar .sec-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #7fb3e0;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    margin-bottom: 3pt;
+  }
+
+  .sidebar .contact-item {
+    font-size: 7pt;
+    line-height: 1.5;
+    color: #d0dbe8;
+  }
+
+  .sidebar .contact-item strong {
+    color: #fff;
+  }
+
+  .sidebar .skill-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .sidebar .skill-list li {
+    font-size: 7pt;
+    color: #d0dbe8;
+    padding: 1pt 0;
+    padding-left: 8pt;
+    position: relative;
+  }
+
+  .sidebar .skill-list li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #7fb3e0;
+    font-size: 6pt;
+  }
+
+  .sidebar .tag-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2pt;
+  }
+
+  .sidebar .tag {
+    display: inline-block;
+    background: rgba(255,255,255,0.1);
+    border: 0.5pt solid rgba(255,255,255,0.2);
+    color: #d0dbe8;
+    font-size: 6.5pt;
+    padding: 1.5pt 4pt;
+    border-radius: 2pt;
+    font-weight: 600;
+  }
+
+  .sidebar .lang-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 7pt;
+    padding: 1pt 0;
+  }
+
+  .sidebar .lang-name {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .sidebar .lang-level {
+    color: #7fb3e0;
+    font-style: italic;
+    font-size: 6.5pt;
+  }
+
+  .sidebar .avail {
+    background: rgba(46,109,180,0.3);
+    border: 0.5pt solid rgba(127,179,224,0.4);
+    border-radius: 3pt;
+    padding: 4pt 5pt;
+    text-align: center;
+    font-size: 7pt;
+    font-weight: 600;
+    color: #7fb3e0;
+    line-height: 1.4;
+  }
+
+  /* ── MAIN ── */
+  .main {
+    width: 70%;
+    padding: 12mm 10mm 8mm 10mm;
+    display: flex;
+    flex-direction: column;
+    gap: 6pt;
+  }
+
+  .main .sec-title {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    padding-bottom: 2pt;
+    border-bottom: 1.5pt solid #2e6db4;
+    margin-bottom: 4pt;
+  }
+
+  /* Profile */
+  .profile-text {
+    font-size: 8pt;
+    color: #333;
+    line-height: 1.45;
+    text-align: justify;
+  }
+
+  /* Experience */
+  .exp-item {
+    margin-bottom: 4pt;
+    page-break-inside: avoid;
+  }
+
+  .exp-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .exp-company {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #1a2a4a;
+  }
+
+  .exp-dates {
+    font-size: 7pt;
+    color: #888;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .exp-role {
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: #2e6db4;
+  }
+
+  .exp-desc {
+    font-size: 7.5pt;
+    color: #444;
+    line-height: 1.35;
+    margin-top: 1pt;
+  }
+
+  /* Older exp */
+  .old-section {
+    margin-top: 2pt;
+  }
+
+  .old-title {
+    font-size: 7.5pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    margin-bottom: 3pt;
+  }
+
+  .old-item {
+    font-size: 7pt;
+    color: #444;
+    line-height: 1.4;
+    padding-left: 8pt;
+    position: relative;
+    margin-bottom: 2pt;
+  }
+
+  .old-item::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2e6db4;
+    font-size: 6pt;
+  }
+
+  .old-item strong {
+    color: #1a2a4a;
+  }
+
+  /* Education */
+  .edu-line {
+    font-size: 7.5pt;
+    color: #333;
+    line-height: 1.4;
+  }
+
+  .edu-line strong {
+    color: #1a2a4a;
+  }
+
+  /* International */
+  .intl {
+    font-size: 7.5pt;
+    color: #444;
+    line-height: 1.4;
+  }
+
+  .footer-note {
+    margin-top: auto;
+    font-size: 6.5pt;
+    color: #bbb;
+    text-align: center;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ══ SIDEBAR ══ -->
+  <div class="sidebar">
+    <div class="name">Abdelhak<br>BOURDIM</div>
+    <div class="title">Senior Embedded<br>Software Engineer</div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Contact</div>
+      <div class="contact-item"><strong>Email:</strong> abdelhak.bourdim@gmail.com</div>
+      <div class="contact-item"><strong>Phone:</strong> +33 6 19 51 51 73</div>
+      <div class="contact-item"><strong>Location:</strong> Paris area, France</div>
+      <div class="contact-item"><strong>LinkedIn:</strong> linkedin.com/in/abdelhak-bourdim-96416122</div>
+      <div class="contact-item"><strong>Web:</strong> workshop-diy.org</div>
+      <div style="text-align:center;margin-top:10pt;">
+        <img src="qr_portfolio.svg" alt="QR Portfolio" style="width:60pt;height:60pt;">
+        <div style="font-size:6pt;color:#6a7a9a;margin-top:2pt;">Online portfolio</div>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Key Skills</div>
+      <div class="tag-area">
+        <span class="tag">C/C++</span>
+        <span class="tag">Embedded Linux</span>
+        <span class="tag">RTOS</span>
+        <span class="tag">ARM Cortex</span>
+        <span class="tag">STM32</span>
+        <span class="tag">CAN</span>
+        <span class="tag">BLE</span>
+        <span class="tag">USB</span>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">Python</span>
+        <span class="tag">Bash</span>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Standards</div>
+      <div class="tag-area">
+        <span class="tag">DO-178</span>
+        <span class="tag">IEC 62304</span>
+        <span class="tag">MISRA C</span>
+        <span class="tag">ISO 15118</span>
+        <span class="tag">OCPP</span>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div>
+      <div class="sec-title">Languages</div>
+      <div class="lang-row"><span class="lang-name">French</span><span class="lang-level">Bilingual</span></div>
+      <div class="lang-row"><span class="lang-name">English</span><span class="lang-level">Professional</span></div>
+      <div class="lang-row"><span class="lang-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span><span class="lang-level">Bilingual</span></div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="avail">Available<br>immediately</div>
+  </div>
+
+  <!-- ══ MAIN CONTENT ══ -->
+  <div class="main">
+
+    <!-- PROFILE -->
+    <div>
+      <div class="sec-title">Profile</div>
+      <p class="profile-text">
+        Embedded software specialist with <strong>20+ years of experience</strong> in firmware, middleware and application development &mdash; bare metal, RTOS and embedded Linux &mdash; for safety-critical multi-sector systems: aerospace (Safran, Thales), medical (GE Healthcare), automotive (Valeo), IoT cybersecurity (Enedis) and V2G EV charging (E2-CAD).
+      </p>
+    </div>
+
+    <!-- RECENT EXPERIENCE -->
+    <div>
+      <div class="sec-title">Recent Experience</div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">E2-CAD &mdash; Eragny, France</span>
+          <span class="exp-dates">May 2025 &ndash; Mar. 2026</span>
+        </div>
+        <div class="exp-role">Embedded Software Engineer &mdash; EV Charging / V2G</div>
+        <div class="exp-desc">Reverse engineering, debug and commissioning of EV charging stations (PLC, HomePlug Green PHY, ISO 15118, OCPP). Test bench design, protocol analysis, Python scripting.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Safran &mdash; Creteil, France</span>
+          <span class="exp-dates">Mar. 2024 &ndash; May 2025</span>
+        </div>
+        <div class="exp-role">Embedded Software Engineer &mdash; Aerospace (SSPC A350)</div>
+        <div class="exp-desc">Development and update of low-level C drivers for the SSPC system. On-target validation testing with Lauterbach TRACE32.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Asterios Technologies &mdash; Massy, France</span>
+          <span class="exp-dates">Aug. 2023 &ndash; Feb. 2024</span>
+        </div>
+        <div class="exp-role">Embedded Software Engineer &mdash; Aerospace SOM Testing</div>
+        <div class="exp-desc">Validation test development for SOM module (T1042 processor). Processor errata analysis and test documentation.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Thales &mdash; Gennevilliers, France</span>
+          <span class="exp-dates">May 2022 &ndash; Jul. 2023</span>
+        </div>
+        <div class="exp-role">Embedded Software Engineer &mdash; Defense Radio</div>
+        <div class="exp-desc">Application layer development on embedded Linux in C/C++ (LPM + N-MMR projects). HLT testing, network protocol analysis.</div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <span class="exp-company">Valeo &mdash; Creteil, France / Egypt</span>
+          <span class="exp-dates">Mar. &ndash; Apr. 2022</span>
+        </div>
+        <div class="exp-role">Embedded Software Engineer &mdash; Test Audit</div>
+        <div class="exp-desc">Automotive test process audit (NI Mastre, Vector CANoe). Automation improvement proposals.</div>
+      </div>
+    </div>
+
+    <!-- EARLIER EXPERIENCE -->
+    <div class="old-section">
+      <div class="sec-title">Earlier Experience</div>
+      <div class="old-item"><strong>Arkamys</strong> (2021&ndash;2022, Levallois-Perret) &mdash; Automotive audio, GStreamer plugins, CAN drivers</div>
+      <div class="old-item"><strong>Thales</strong> (2020&ndash;2021, Velizy) &mdash; Autonomous train ATO, 64-bit embedded Linux migration</div>
+      <div class="old-item"><strong>PK Vitality</strong> (2020, Paris) &mdash; Medical CGM device, BLE NRF52840, FreeRTOS</div>
+      <div class="old-item"><strong>Zodiac/Safran</strong> (2017&ndash;2020, Montreuil / Vancouver, Canada) &mdash; SSPC A350, DO-178, flight testing</div>
+      <div class="old-item"><strong>Enedis</strong> (2015&ndash;2016, Nanterre) &mdash; Smart Grid cybersecurity, Linky concentrator audit</div>
+      <div class="old-item"><strong>Sorin</strong> (2014&ndash;2015, Clamart) &mdash; BLE Pacemaker, IEC 62304</div>
+      <div class="old-item"><strong>GE Healthcare</strong> (2012&ndash;2014, Buc / USA) &mdash; Medical imaging, CANOpen, VxWorks</div>
+      <div class="old-item"><strong>Cartadis</strong> (2001&ndash;2009, Fontenay) &mdash; 8 years, payment terminals, USB/TCP/IP, encryption</div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div>
+      <div class="sec-title">Education</div>
+      <div class="edu-line"><strong>AFPA, Champs-sur-Marne</strong> &mdash; Electronic &amp; Computer Systems Design Engineer</div>
+      <div class="edu-line"><strong>University of Boumerdes, Algeria</strong> &mdash; Electronics Engineering, Communication specialization</div>
+    </div>
+
+    <!-- INTERNATIONAL -->
+    <div>
+      <div class="sec-title">International Reach</div>
+      <div class="intl"><strong>France</strong> (home base) &bull; <strong>USA</strong> (GE Healthcare) &bull; <strong>Canada</strong> (Zodiac/Safran, Vancouver) &bull; <strong>Egypt</strong> (Valeo, audit)</div>
+    </div>
+
+    <div class="footer-note">References available upon request</div>
+
+  </div>
+
+</div>
+
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

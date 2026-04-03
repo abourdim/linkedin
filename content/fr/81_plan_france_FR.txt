@@ -92,7 +92,7 @@ AERONAUTIQUE & DEFENSE (votre experience Safran, Thales, Zodiac)
 
 AUTOMOBILE & MOBILITE (votre experience E2-CAD, ISO 15118)
 ----------------------------------------------------------
-- Valeo — Creteil, La Verriere — ADAS, eclairage, electrification
+- Valeo — Creteil, La Verriere / Egypte — ADAS, eclairage, electrification
 - Stellantis (PSA+FCA) — Velizy, Poissy — vehicules, embedded ECU
 - Renault — Guyancourt, Lardy — vehicules electriques, ADAS
 - Forvia / Faurecia — Nanterre — equipementier, cockpit du futur

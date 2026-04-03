@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Projets — Abdelhak Bourdim</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;background:#f0f2f5;color:#222;line-height:1.5}
+
+  /* ── HEADER ── */
+  .hero{background:linear-gradient(135deg,#1a2a4a 0%,#0a66c2 100%);color:#fff;padding:48px 24px 40px;text-align:center}
+  .hero h1{font-size:2rem;font-weight:700;letter-spacing:.5px}
+  .hero p{margin-top:8px;font-size:1.05rem;opacity:.88}
+
+  /* ── FILTERS ── */
+  .filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:24px 24px 0}
+  .filters button{border:none;padding:8px 18px;border-radius:20px;font-size:.85rem;font-weight:600;cursor:pointer;transition:all .25s;background:#dde4ed;color:#1a2a4a}
+  .filters button:hover{transform:translateY(-1px);box-shadow:0 2px 8px rgba(0,0,0,.12)}
+  .filters button.active{background:#0a66c2;color:#fff}
+
+  /* ── GRID ── */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;padding:24px;max-width:1200px;margin:0 auto}
+
+  /* ── CARD ── */
+  .card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.08);transition:transform .25s,box-shadow .25s;cursor:pointer;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,.14)}
+  .card-band{height:6px}
+  .card-body{padding:20px 22px 16px}
+  .card-company{font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;font-weight:700;opacity:.7}
+  .card-title{font-size:1.15rem;font-weight:700;margin:4px 0 2px;color:#1a2a4a}
+  .card-date{font-size:.8rem;color:#666;margin-bottom:10px}
+  .card-desc{font-size:.88rem;color:#444;line-height:1.55}
+  .card-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+  .card-tags span{background:#e8eef5;color:#1a2a4a;padding:3px 10px;border-radius:12px;font-size:.75rem;font-weight:600}
+
+  /* ── EXPANDED DETAIL ── */
+  .card-detail{max-height:0;overflow:hidden;transition:max-height .4s ease;padding:0 22px}
+  .card-detail.open{max-height:300px;padding:0 22px 18px}
+  .card-detail p{font-size:.85rem;color:#555;line-height:1.6;margin-top:6px}
+  .detail-label{font-weight:700;color:#1a2a4a;font-size:.82rem;margin-top:10px}
+
+  /* ── SECTOR COLORS ── */
+  .band-blue{background:#0a66c2}
+  .band-teal{background:#0d9488}
+  .band-red{background:#dc2626}
+  .band-green{background:#16a34a}
+  .band-orange{background:#ea580c}
+  .band-purple{background:#7c3aed}
+
+  .tag-blue{border-left:3px solid #0a66c2}
+  .tag-teal{border-left:3px solid #0d9488}
+  .tag-red{border-left:3px solid #dc2626}
+  .tag-green{border-left:3px solid #16a34a}
+  .tag-orange{border-left:3px solid #ea580c}
+  .tag-purple{border-left:3px solid #7c3aed}
+
+  /* ── FOOTER ── */
+  .footer{text-align:center;padding:32px 24px;font-size:.82rem;color:#888}
+  .footer a{color:#0a66c2;text-decoration:none;font-weight:600}
+
+  /* ── RESPONSIVE ── */
+  @media(max-width:760px){.grid{grid-template-columns:1fr;padding:16px}.hero h1{font-size:1.5rem}}
+
+  /* ── PRINT ── */
+  @media print{
+    body{background:#fff}
+    .hero{padding:24px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .filters{display:none}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding:14px}
+    .card{break-inside:avoid;box-shadow:0 0 0 1px #ddd}
+    .card-detail{max-height:none!important;padding:0 22px 12px!important}
+    .footer{padding:16px}
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Portfolio Projets</h1>
+  <p>Systemes Embarques &middot; Aeronautique &middot; Automobile &middot; Cybersecurite &middot; Medical</p>
+</div>
+
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+
+<div class="footer">
+  Abdelhak Bourdim &mdash; Ingenieur Systemes Embarques<br>
+  <a href="https://www.linkedin.com/in/bourdim" target="_blank">linkedin.com/in/bourdim</a>
+</div>
+
+<script>
+(function(){
+  /* ── DATA ── */
+  var projects=[
+    {id:1,name:"Borne de Recharge EV / V2G",company:"E2-CAD",date:"2025 - 2026",sector:"Energie",color:"teal",
+     tags:["ISO 15118","OCPP","PLC","HomePlug","Linux","Python"],
+     desc:"Reverse engineering et analyse du code embarque sur 3 cartes (Microchip PIC, STM32). Design et mise en place du banc de test. Debug des bornes de recharge.",
+     detail:"Projet V2G (Vehicle-to-Grid). Protocole ISO 15118 et OCPP 1.6/2.0. Analyse de la communication PLC HomePlug Green PHY entre le vehicule et la borne. Developpement d'outils de diagnostic en Python sous Linux."},
+    {id:2,name:"SSPC A350 — Solid State Power Controller",company:"Safran",date:"2024 - 2025",sector:"Aeronautique",color:"blue",
+     tags:["C","Lauterbach TRACE32","DO-178"],
+     desc:"Developpement drivers bas niveau pour le controleur de puissance du programme A350. Tests de validation sur cible.",
+     detail:"Contexte DO-178C DAL-A. Developpement en C sur microcontroleur temps reel. Debug avance avec sonde Lauterbach TRACE32. Tests unitaires et de validation sur carte cible."},
+    {id:3,name:"Radio Defense LPM + N-MMR",company:"Thales",date:"2022 - 2023",sector:"Defense",color:"blue",
+     tags:["Linux","C/C++","Websockets","Bash"],
+     desc:"Developpement couches applicatives sous Linux embarque pour 2 projets radio militaire. Tests HLT.",
+     detail:"Deux projets radio defense : LPM (Loi de Programmation Militaire) et N-MMR. Developpement C/C++ sous Linux embarque. Communication Websockets temps reel. Scripts Bash pour automatisation des tests HLT (High Level Tests)."},
+    {id:4,name:"Audit Valeo Egypt",company:"Valeo",date:"2022",sector:"Automobile",color:"orange",
+     tags:["NI Mastre","Vector CANoe"],
+     desc:"Audit des processus de tests unitaires et d'integration sur site en Egypte. Propositions d'amelioration.",
+     detail:"Mission d'audit sur le site Valeo au Caire. Evaluation des outils de test (NI Mastre, Vector CANoe). Analyse des processus qualite et propositions d'amelioration pour les equipes de validation."},
+    {id:5,name:"GENOME / CORAC — SSPC A350",company:"Zodiac / Safran",date:"2017 - 2020",sector:"Aeronautique",color:"blue",
+     tags:["Microchip dsPIC","CAN","RS485","DO-178"],
+     desc:"Drivers bas niveau, passerelle uAFDX vers CAN, diagnostic. Campagne de tests en vol a UBC Vancouver, Canada.",
+     detail:"Programme de recherche CORAC/GENOME. Developpement drivers Microchip dsPIC. Passerelle de communication uAFDX vers CAN bus. Protocole RS485. Campagne de tests en vol a l'Universite de Colombie-Britannique (UBC), Vancouver."},
+    {id:6,name:"Cybersecurite Linky",company:"Enedis",date:"2015 - 2016",sector:"Cybersecurite",color:"red",
+     tags:["Kali Linux","Nmap","Wireshark","Scapy","SDR","Python"],
+     desc:"Pentest et audit de securite des concentrateurs Linky. Tests d'intrusion sur systemes embarques Linux.",
+     detail:"Tests de penetration sur les concentrateurs de donnees du compteur intelligent Linky. Analyse reseau avec Nmap, Wireshark, Scapy. Radio SDR. Audit de securite systeme sous Kali Linux. Rapport de vulnerabilites."},
+    {id:7,name:"Platinium — BLE Pacemaker",company:"Sorin",date:"2014 - 2015",sector:"Medical",color:"green",
+     tags:["Cortex M0","BLE","Android","IEC 62304"],
+     desc:"Etude de faisabilite integration Bluetooth Smart dans un implant cardiaque. Protocole smartphone.",
+     detail:"Contexte IEC 62304 (logiciel medical). Etude de faisabilite pour l'integration du Bluetooth Low Energy dans un pacemaker. Developpement firmware Cortex M0 et application Android de communication."},
+    {id:8,name:"Workshop-DIY",company:"Association",date:"2020 - present",sector:"Education",color:"purple",
+     tags:["Arduino","ESP32","IA","Impression 3D","Robotique"],
+     desc:"Fondateur. 18+ ateliers pour jeunes. Education STEM. Projets Arduino, ESP32, drones, IA.",
+     detail:"Fondateur de l'association Workshop-DIY. Organisation de plus de 18 ateliers educatifs pour jeunes (8-18 ans). Projets pratiques : Arduino, ESP32, impression 3D, drones, intelligence artificielle, robotique."}
+  ];
+
+  /* ── SECTORS ── */
+  var sectors=["Tous"];
+  projects.forEach(function(p){if(sectors.indexOf(p.sector)===-1)sectors.push(p.sector)});
+
+  /* ── RENDER FILTERS ── */
+  var filtersEl=document.getElementById("filters");
+  sectors.forEach(function(s){
+    var btn=document.createElement("button");
+    btn.textContent=s;
+    if(s==="Tous")btn.classList.add("active");
+    btn.addEventListener("click",function(){
+      document.querySelectorAll(".filters button").forEach(function(b){b.classList.remove("active")});
+      btn.classList.add("active");
+      filterCards(s);
+    });
+    filtersEl.appendChild(btn);
+  });
+
+  /* ── RENDER CARDS ── */
+  var gridEl=document.getElementById("grid");
+  projects.forEach(function(p){
+    var card=document.createElement("div");
+    card.className="card tag-"+p.color;
+    card.setAttribute("data-sector",p.sector);
+    card.innerHTML=
+      '<div class="card-band band-'+p.color+'"></div>'+
+      '<div class="card-body">'+
+        '<div class="card-company">'+p.company+'</div>'+
+        '<div class="card-title">'+p.name+'</div>'+
+        '<div class="card-date">'+p.date+'</div>'+
+        '<div class="card-desc">'+p.desc+'</div>'+
+        '<div class="card-tags">'+p.tags.map(function(t){return '<span>'+t+'</span>'}).join("")+'</div>'+
+      '</div>'+
+      '<div class="card-detail">'+
+        '<p class="detail-label">Details</p>'+
+        '<p>'+p.detail+'</p>'+
+      '</div>';
+    card.addEventListener("click",function(){
+      card.querySelector(".card-detail").classList.toggle("open");
+    });
+    gridEl.appendChild(card);
+  });
+
+  /* ── FILTER ── */
+  function filterCards(sector){
+    document.querySelectorAll(".card").forEach(function(c){
+      if(sector==="Tous"||c.getAttribute("data-sector")===sector){
+        c.style.display="flex";
+      }else{
+        c.style.display="none";
+      }
+    });
+  }
+})();
+</script>
+<div style="text-align:right;font-size:6pt;color:#ccc;padding:2pt 8pt;opacity:0.4;">v1.0</div>
+</body>
+</html>

@@ -29,6 +29,27 @@ const PIN = {
     }
 
     this.bindEvents();
+
+    // Auto-unlock countdown (13 seconds) with progress bar
+    let seconds = 13;
+    const countdownEl = document.getElementById('pin-countdown');
+    if (countdownEl) {
+      countdownEl.innerHTML = `<div style="margin-bottom:6px">Ou patientez <span id="pin-secs">${seconds}</span>s pour l'accès libre</div><div style="width:200px;height:4px;background:#ddd;border-radius:2px;margin:0 auto;overflow:hidden"><div id="pin-bar" style="width:0%;height:100%;background:linear-gradient(90deg,#0a66c2,#2e6db4);border-radius:2px;transition:width 1s linear"></div></div>`;
+    }
+    this.countdownInterval = setInterval(() => {
+      seconds--;
+      const secs = document.getElementById('pin-secs');
+      const bar = document.getElementById('pin-bar');
+      if (secs) secs.textContent = seconds;
+      if (bar) bar.style.width = `${((13 - seconds) / 13) * 100}%`;
+      if (seconds <= 0 && countdownEl) countdownEl.innerHTML = '';
+    }, 1000);
+    this.autoUnlockTimer = setTimeout(() => {
+      clearInterval(this.countdownInterval);
+      if (!document.getElementById('pin-screen').classList.contains('hidden')) {
+        this.unlock();
+      }
+    }, 13000);
   },
 
   bindEvents() {
@@ -131,6 +152,8 @@ const PIN = {
   },
 
   unlock() {
+    if (this.autoUnlockTimer) clearTimeout(this.autoUnlockTimer);
+    if (this.countdownInterval) clearInterval(this.countdownInterval);
     const screen = document.getElementById('pin-screen');
     const shell = document.getElementById('app-shell');
     screen.classList.add('hidden');
