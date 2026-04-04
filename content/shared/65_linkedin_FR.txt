@@ -341,7 +341,7 @@ Domaine :       Ingenierie biomedicale
 
 --- Diplome 3 ---
 Ecole :         Universite de Boumerdes
-Diplome :       Ingenieur en electronique, option communication
+Diplome :       Ingenieur en electronique, option communication et telecommunication
 Domaine :       Electronique / Telecommunications
 Lieu :          Boumerdes, Algerie
 

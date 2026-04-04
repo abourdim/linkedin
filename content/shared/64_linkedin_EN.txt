@@ -341,7 +341,7 @@ Field:         Biomedical Engineering
 
 --- Degree 3 ---
 School:        University of Boumerdes
-Degree:        Engineer — Electronics, Communication
+Degree:        Engineer — Electronics, Communication & Telecommunications
 Field:         Electronics / Telecommunications
 Location:      Boumerdes, Algeria
 
