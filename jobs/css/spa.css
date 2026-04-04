@@ -939,19 +939,114 @@ body {
     width: 95vw;
   }
 
+  /* Hide Ctrl+K button on mobile */
+  #cmd-trigger {
+    display: none !important;
+  }
+
   .download-bar {
     flex-wrap: wrap;
   }
 
+  /* Larger download buttons for touch */
+  .header-btn {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 16px;
+  }
+
+  /* Compact sidebar header on mobile */
+  .sidebar-profile {
+    padding: 12px 12px 8px;
+  }
+
+  .sidebar-avatar {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  .sidebar-name {
+    font-size: 13px;
+  }
+
+  .sidebar-title {
+    font-size: 10px;
+  }
+
+  /* Country tabs: flags only, no text on small screens */
+  .country-label {
+    font-size: 9px;
+  }
+
+  .country-tab {
+    padding: 6px 10px;
+  }
+
+  .country-tab img {
+    width: 18px !important;
+    height: 13px !important;
+  }
+
+  /* Breadcrumb truncate */
+  .breadcrumb {
+    max-width: 50vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .breadcrumb-section {
+    display: none;
+  }
+
+  .breadcrumb-separator {
+    display: none;
+  }
+
+  /* Smaller bismillah on mobile */
+  .pin-bismillah div:first-child span {
+    font-size: 16px !important;
+  }
+
+  .pin-bismillah div:last-child {
+    font-size: 10px !important;
+  }
+
+  /* PIN screen mobile */
   .pin-keypad {
-    grid-template-columns: repeat(3, 64px);
-    gap: 8px;
+    grid-template-columns: repeat(3, 72px);
+    gap: 10px;
   }
 
   .pin-key {
-    width: 64px;
+    width: 72px;
+    height: 54px;
+    font-size: 22px;
+  }
+
+  .pin-screen {
+    padding-top: 20px;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (< 380px)
+   ═══════════════════════════════════════════════════════════ */
+@media (max-width: 379px) {
+  .pin-keypad {
+    grid-template-columns: repeat(3, 60px);
+    gap: 6px;
+  }
+
+  .pin-key {
+    width: 60px;
     height: 48px;
     font-size: 20px;
+  }
+
+  .country-label {
+    display: none;
   }
 }
 
