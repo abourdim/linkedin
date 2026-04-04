@@ -1,7 +1,7 @@
 ==============================================================================
 JOB SEARCH PROMPTS — LUXEMBOURG
 Embedded Software Engineer | Abdelhak Bourdim | March 2026
-For use with ChatGPT, Claude, or any AI assistant
+For use with ChatGPT or any AI assistant
 ==============================================================================
 
 TABLE OF CONTENTS
@@ -336,7 +336,7 @@ HOW TO USE THESE PROMPTS
 
 1. Copy the prompt you need
 2. Replace fields [IN BRACKETS] with your information
-3. Paste into ChatGPT, Claude, or any AI
+3. Paste into ChatGPT or any AI
 4. Adapt the response to your personal style
 
 IMPORTANT: Never send AI-generated text without reviewing and personalizing it.

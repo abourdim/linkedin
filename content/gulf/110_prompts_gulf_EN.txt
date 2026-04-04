@@ -1,7 +1,7 @@
 ==============================================================================
 AI PROMPTS FOR JOB SEARCH — GULF / GCC
 Embedded Software Engineer | Abdelhak Bourdim | March 2026
-To use with ChatGPT, Claude, or any other AI assistant
+To use with ChatGPT or any other AI assistant
 ==============================================================================
 
 TABLE OF CONTENTS
@@ -349,7 +349,7 @@ HOW TO USE THESE PROMPTS
 
 1. Copy the prompt you need
 2. Replace fields [IN BRACKETS] with your information
-3. Paste into ChatGPT, Claude, or any other AI
+3. Paste into ChatGPT or any other AI
 4. Adapt the response to your personal style
 
 IMPORTANT: Never send AI-generated text without reviewing and personalizing it.

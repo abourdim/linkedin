@@ -1,6 +1,6 @@
 ================================================================================
        PROMPTS POUR RECHERCHE D'EMPLOI EN SUISSE — EMBEDDED SOFTWARE ENGINEER
-       A utiliser avec ChatGPT, Claude, ou tout autre assistant IA
+       A utiliser avec ChatGPT ou tout autre assistant IA
 ================================================================================
 
 
@@ -323,7 +323,7 @@ COMMENT UTILISER CES PROMPTS
 
 1. Copiez le prompt qui vous interesse
 2. Remplacez les champs [ENTRE CROCHETS] avec vos informations
-3. Collez dans ChatGPT, Claude, ou tout autre IA
+3. Collez dans ChatGPT ou tout autre IA
 4. Adaptez la reponse a votre style personnel
 5. IMPORTANT : ne jamais envoyer un texte genere par IA sans le relire et le personnaliser
 

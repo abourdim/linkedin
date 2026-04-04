@@ -1,6 +1,6 @@
 ================================================================================
        PROMPTS FOR JOB SEARCH IN SWITZERLAND — EMBEDDED SOFTWARE ENGINEER
-       To be used with ChatGPT, Claude, or any other AI assistant
+       To be used with ChatGPT or any other AI assistant
 ================================================================================
 
 
@@ -323,7 +323,7 @@ HOW TO USE THESE PROMPTS
 
 1. Copy the prompt you are interested in
 2. Replace the fields [IN BRACKETS] with your information
-3. Paste into ChatGPT, Claude, or any other AI
+3. Paste into ChatGPT or any other AI
 4. Adapt the response to your personal style
 5. IMPORTANT: never send AI-generated text without reviewing and personalising it
 
