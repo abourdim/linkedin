@@ -31,7 +31,7 @@ const PIN = {
     this.bindEvents();
 
     // Auto-unlock countdown (13 seconds) with animated circle
-    let seconds = 13;
+    let seconds = 7;
     const countdownEl = document.getElementById('pin-countdown');
     if (countdownEl) {
       countdownEl.innerHTML = `<svg width="48" height="48" viewBox="0 0 48 48" style="display:block;margin:0 auto;">
@@ -47,7 +47,7 @@ const PIN = {
       const secs = document.getElementById('pin-secs');
       const ring = document.getElementById('pin-ring');
       if (secs) secs.textContent = seconds > 0 ? seconds : '';
-      if (ring) ring.style.strokeDashoffset = 125.66 * (seconds / 13);
+      if (ring) ring.style.strokeDashoffset = 125.66 * (seconds / 7);
       if (seconds <= 0 && countdownEl) countdownEl.innerHTML = '';
     }, 1000);
     this.autoUnlockTimer = setTimeout(() => {
@@ -55,7 +55,7 @@ const PIN = {
       if (!document.getElementById('pin-screen').classList.contains('hidden')) {
         this.unlock();
       }
-    }, 13000);
+    }, 7000);
   },
 
   bindEvents() {
