@@ -30,18 +30,24 @@ const PIN = {
 
     this.bindEvents();
 
-    // Auto-unlock countdown (13 seconds) with progress bar
+    // Auto-unlock countdown (13 seconds) with animated circle
     let seconds = 13;
     const countdownEl = document.getElementById('pin-countdown');
     if (countdownEl) {
-      countdownEl.innerHTML = `<div style="margin-bottom:6px">Ou patientez <span id="pin-secs">${seconds}</span>s pour l'accès libre</div><div style="width:200px;height:4px;background:#ddd;border-radius:2px;margin:0 auto;overflow:hidden"><div id="pin-bar" style="width:0%;height:100%;background:linear-gradient(90deg,#0a66c2,#2e6db4);border-radius:2px;transition:width 1s linear"></div></div>`;
+      countdownEl.innerHTML = `<svg width="48" height="48" viewBox="0 0 48 48" style="display:block;margin:0 auto;">
+        <circle cx="24" cy="24" r="20" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+        <circle id="pin-ring" cx="24" cy="24" r="20" fill="none" stroke="#0a66c2" stroke-width="2.5"
+          stroke-dasharray="125.66" stroke-dashoffset="125.66" stroke-linecap="round"
+          transform="rotate(-90 24 24)" style="transition:stroke-dashoffset 1s linear;"/>
+        <text id="pin-secs" x="24" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#0a66c2" font-family="Segoe UI,Arial">${seconds}</text>
+      </svg>`;
     }
     this.countdownInterval = setInterval(() => {
       seconds--;
       const secs = document.getElementById('pin-secs');
-      const bar = document.getElementById('pin-bar');
-      if (secs) secs.textContent = seconds;
-      if (bar) bar.style.width = `${((13 - seconds) / 13) * 100}%`;
+      const ring = document.getElementById('pin-ring');
+      if (secs) secs.textContent = seconds > 0 ? seconds : '';
+      if (ring) ring.style.strokeDashoffset = 125.66 * (seconds / 13);
       if (seconds <= 0 && countdownEl) countdownEl.innerHTML = '';
     }, 1000);
     this.autoUnlockTimer = setTimeout(() => {
