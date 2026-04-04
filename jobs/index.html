@@ -77,7 +77,8 @@
       <div style="text-align:center"><img src="https://flagcdn.com/w80/ae.png" alt="AE" style="width:42px;height:28px;border-radius:3px;box-shadow:0 2px 6px rgba(0,0,0,0.3);"><div style="font-size:9px;color:#7a9aba;margin-top:4px;">الخليج</div></div>
     </div>
     <!-- Countdown + PIN -->
-    <div id="pin-countdown" style="margin-bottom:6px;"></div>
+    <div id="pin-countdown" style="margin-bottom:4px;"></div>
+    <button onclick="PIN.unlock()" style="margin-bottom:12px;padding:8px 32px;background:transparent;border:1px solid #5ecfcf;color:#5ecfcf;border-radius:6px;font-size:13px;cursor:pointer;letter-spacing:1px;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='#5ecfcf';this.style.color='#0a1628'" onmouseout="this.style.background='transparent';this.style.color='#5ecfcf'">Enter &#8599;</button>
     <div class="pin-lock-icon" style="font-size:24px;">&#128274;</div>
     <div class="pin-title" data-i18n="pin.title" style="color:#fff;">Accès Sécurisé</div>
     <div class="pin-subtitle" data-i18n="pin.subtitle" style="color:#7a9aba;">Entrez votre code PIN à 6 chiffres</div>
@@ -105,7 +106,6 @@
       <button class="pin-key fn" data-key="enter">&#10003;</button>
     </div>
     <div class="pin-error" id="pin-error"></div>
-    <button onclick="PIN.unlock()" style="margin-top:16px;padding:8px 32px;background:transparent;border:1px solid #5ecfcf;color:#5ecfcf;border-radius:6px;font-size:13px;cursor:pointer;letter-spacing:1px;transition:background 0.2s,color 0.2s;" onmouseover="this.style.background='#5ecfcf';this.style.color='#0a1628'" onmouseout="this.style.background='transparent';this.style.color='#5ecfcf'">Enter &#8599;</button>
   </div>
 
   <!-- ═══════════════════════════════════════════════════════
