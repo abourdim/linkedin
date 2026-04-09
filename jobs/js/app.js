@@ -25,10 +25,10 @@ const App = {
           },
           {
             id: 'cv-detailed',
-            labels: { fr: 'CV Détaillé v2.4', en: 'Detailed CV v2.4', ar: 'السيرة المفصلة' },
-            files: { fr: '../content/ch/48_cv_version_A_v2.4.html', en: '../content/ch/49_cv_version_A_v2.4_EN.html', ar: '../content/ch/50_cv_version_A_v2.4_AR.html' },
+            labels: { fr: 'CV Détaillé v3.0', en: 'Detailed CV v3.0', ar: 'السيرة المفصلة' },
+            files: { fr: '../content/ch/48_cv_version_A_v3.0.html', en: '../content/ch/49_cv_version_A_v3.0_EN.html', ar: '../content/ch/50_cv_version_A_v3.0_AR.html' },
             downloads: {
-              pdf: { fr: '../content/ch/53_cv_version_A_v2.4.pdf', en: '../content/ch/51_cv_version_A_v2.4_EN.pdf', ar: '../content/ch/52_cv_version_A_v2.4_AR.pdf' }
+              pdf: { fr: '../content/ch/53_cv_version_A_v3.0.pdf', en: '../content/ch/51_cv_version_A_v3.0_EN.pdf', ar: '../content/ch/52_cv_version_A_v3.0_AR.pdf' }
             }
           },
           {

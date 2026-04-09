@@ -1,4 +1,4 @@
-# Job Search Portfolio v2.0
+# Job Search Portfolio v3.0
 
 **Abdelhak Bourdim** — Senior Embedded Software Engineer — 20+ years
 France | USA | Canada | Egypt
