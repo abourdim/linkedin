@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 8.5pt;
+    color: #2d2d2d;
+    line-height: 1.4;
+  }
+
+  .page {
+    width: 210mm;
+    
+    display: flex;
+    overflow: visible;
+    
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar {
+    width: 68mm;
+    background: linear-gradient(180deg, #1a2a4a 0%, #0f1c33 100%);
+    color: #d0d8e8;
+    padding: 0;
+    flex-shrink: 0;
+  }
+
+  .sidebar-header {
+    background: #0d1626;
+    padding: 18pt 14pt 14pt 14pt;
+    text-align: center;
+    border-bottom: 2pt solid #2e6db4;
+  }
+
+  .sidebar-header .initials {
+    width: 60pt;
+    height: 60pt;
+    border-radius: 50%;
+    border: 2.5pt solid #4a8fd4;
+    background: linear-gradient(135deg, #1e3a5f, #2e6db4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10pt;
+    font-size: 22pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2pt;
+  }
+
+  .sidebar-header h1 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1pt;
+    margin-bottom: 4pt;
+    text-transform: uppercase;
+  }
+
+  .sidebar-header .subtitle {
+    font-size: 7.5pt;
+    color: #7eb3e0;
+    letter-spacing: 0.5pt;
+    line-height: 1.3;
+  }
+
+  .sidebar-section {
+    padding: 9pt 14pt 6pt 14pt;
+  }
+
+  .sidebar-section-title {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #4a8fd4;
+    text-transform: uppercase;
+    letter-spacing: 1.5pt;
+    margin-bottom: 8pt;
+    padding-bottom: 4pt;
+    border-bottom: 1pt solid #2a3a5a;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 6pt;
+    font-size: 7.8pt;
+    color: #c0cce0;
+  }
+
+  .contact-icon {
+    width: 14pt;
+    flex-shrink: 0;
+    font-size: 9pt;
+    color: #4a8fd4;
+    margin-right: 6pt;
+    text-align: center;
+  }
+
+  .contact-link {
+    color: #8ab8e8;
+    text-decoration: none;
+    font-size: 7.5pt;
+  }
+
+  .skill-category {
+    margin-bottom: 7pt;
+  }
+
+  .skill-label {
+    font-size: 7.2pt;
+    font-weight: 600;
+    color: #7eb3e0;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 2pt;
+  }
+
+  .skill-value {
+    font-size: 7.5pt;
+    color: #b8c8e0;
+    line-height: 1.35;
+  }
+
+  .lang-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5pt;
+  }
+
+  .lang-name {
+    font-size: 8pt;
+    color: #d0d8e8;
+  }
+
+  .lang-level {
+    font-size: 7pt;
+    color: #7eb3e0;
+    font-style: italic;
+  }
+
+  .lang-dots {
+    display: flex;
+    gap: 3pt;
+    margin-top: 2pt;
+  }
+
+  .dot {
+    width: 6pt;
+    height: 6pt;
+    border-radius: 50%;
+    background: #2a3a5a;
+  }
+
+  .dot.filled {
+    background: #4a8fd4;
+  }
+
+  .norm-tag {
+    display: inline-block;
+    background: rgba(74, 143, 212, 0.15);
+    border: 0.5pt solid #3a5a8a;
+    color: #8ab8e8;
+    font-size: 7pt;
+    padding: 2pt 6pt;
+    border-radius: 3pt;
+    margin: 0 3pt 4pt 0;
+    font-weight: 600;
+  }
+
+  /* Association box */
+  .asso-box {
+    background: rgba(74, 143, 212, 0.08);
+    border: 1pt solid #2a4a6a;
+    border-radius: 4pt;
+    padding: 8pt 10pt;
+    margin-top: 4pt;
+  }
+
+  .asso-name {
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #7eb3e0;
+    margin-bottom: 3pt;
+  }
+
+  .asso-role {
+    font-size: 7pt;
+    color: #4a8fd4;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    margin-bottom: 4pt;
+  }
+
+  .asso-desc {
+    font-size: 7.2pt;
+    color: #a0b8d0;
+    line-height: 1.35;
+    margin-bottom: 2pt;
+  }
+
+  .asso-link {
+    font-size: 7pt;
+    color: #4a8fd4;
+    text-decoration: none;
+  }
+
+  /* ── MAIN CONTENT ── */
+  .main {
+    flex: 1;
+    padding: 14pt 16pt 10pt 18pt;
+    background: #ffffff;
+  }
+
+  .main-title {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #1a2a4a;
+    text-transform: uppercase;
+    letter-spacing: 1.2pt;
+    margin-bottom: 4pt;
+    padding-bottom: 4pt;
+    border-bottom: 2pt solid #2e6db4;
+    margin-top: 9pt;
+  }
+
+  .main-title:first-child {
+    margin-top: 0;
+  }
+
+  .profile-text {
+    font-size: 8.2pt;
+    color: #3a3a3a;
+    line-height: 1.45;
+    margin-bottom: 4pt;
+    text-align: justify;
+  }
+
+  .exp-block {
+    margin-bottom: 7pt;
+    page-break-inside: avoid;
+  }
+
+  .exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1pt;
+  }
+
+  .exp-company {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #1e3a5f;
+  }
+
+  .exp-dates {
+    font-size: 7.5pt;
+    color: #7a8a9a;
+    font-style: italic;
+    white-space: nowrap;
+  }
+
+  .exp-project {
+    font-size: 8pt;
+    color: #2e6db4;
+    font-weight: 600;
+    margin-bottom: 1pt;
+  }
+
+  .exp-intervention {
+    font-size: 7.5pt;
+    color: #7a8a9a;
+    font-style: italic;
+    margin-bottom: 3pt;
+  }
+
+  .exp-bullets {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .exp-bullets li {
+    font-size: 7.8pt;
+    color: #3a3a3a;
+    padding-left: 10pt;
+    position: relative;
+    margin-bottom: 1.5pt;
+    line-height: 1.35;
+  }
+
+  .exp-bullets li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #2e6db4;
+    font-size: 7pt;
+  }
+
+  .exp-env {
+    font-size: 7pt;
+    color: #8a9aaa;
+    margin-top: 2pt;
+  }
+
+  .exp-env strong {
+    color: #5a7a9a;
+  }
+
+  .old-exp {
+    margin-bottom: 5pt;
+    page-break-inside: avoid;
+  }
+
+  .old-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .old-exp-company {
+    font-size: 8pt;
+    font-weight: 700;
+    color: #1e3a5f;
+  }
+
+  .old-exp-dates {
+    font-size: 7pt;
+    color: #8a9aaa;
+    font-style: italic;
+  }
+
+  .old-exp-desc {
+    font-size: 7.5pt;
+    color: #5a6a7a;
+    padding-left: 0;
+    line-height: 1.3;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ PAGE 1 ═══════════════ -->
+<div class="page">
+  <div class="sidebar">
+
+    <div class="sidebar-header">
+      <div class="initials">AB</div>
+      <h1>Abdelhak<br>Bourdim</h1>
+      <div class="subtitle">Senior Embedded Software Engineer<br>C/C++ &bull; RTOS &bull; Embedded Linux</div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Contact</div>
+      <div class="contact-item">
+        <span class="contact-icon">&#9993;</span>
+        <span>abdelhak.bourdim@gmail.com</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">&#9742;</span>
+        <span>+33 6 19 51 51 73</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">&#9873;</span>
+        <span>Paris area, France</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">in</span>
+        <span class="contact-link">linkedin.com/in/abdelhak-bourdim-96416122</span>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">&#9881;</span>
+        <span class="contact-link">workshop-diy.org</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Languages</div>
+      <div class="lang-item">
+        <div>
+          <div class="lang-name">French</div>
+          <div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div>
+        </div>
+        <span class="lang-level">Fluent</span>
+      </div>
+      <div class="lang-item">
+        <div>
+          <div class="lang-name">English</div>
+          <div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot"></span></div>
+        </div>
+        <span class="lang-level">Professional</span>
+      </div>
+      <div class="lang-item">
+        <div>
+          <div class="lang-name">Arabic</div>
+          <div class="lang-dots"><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span></div>
+        </div>
+        <span class="lang-level">Fluent</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Standards &amp; Methods</div>
+      <span class="norm-tag">DO-178</span>
+      <span class="norm-tag">MISRA C</span>
+      <span class="norm-tag">IEC 62304</span>
+      <span class="norm-tag">ISO 15118 (V2G)</span>
+      <span class="norm-tag">ISO 14443 (Smart Card)</span>
+      <span class="norm-tag">ISO 15693 (RFID)</span>
+      <span class="norm-tag">OCPP</span>
+      <span class="norm-tag">V-Model</span>
+      <span class="norm-tag">Agile / Scrum</span>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Skills</div>
+
+      <div class="skill-category">
+        <div class="skill-label">Languages</div>
+        <div class="skill-value">C, C++, Python, Bash, Assembly, Perl, Awk</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">OS / RTOS</div>
+        <div class="skill-value">Embedded Linux, VxWorks, FreeRTOS, UCOSII, Tnkernel</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Microcontrollers</div>
+        <div class="skill-value">ARM Cortex (M0, M4, A8), STM32, NRF52, ESP32, Microchip PIC/dsPIC, NXP LPC, TI DSP/Concerto, Arduino</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Protocols / Bus</div>
+        <div class="skill-value">CAN, CANOpen, SPI, I2C, RS232, RS485, UART, USB, BLE, AFDX, Ethernet, TCP/UDP</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Stacks</div>
+        <div class="skill-value">TCP/IP, USB Host/Device/HID, BLE, CANOpen, RFID, GStreamer</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Security / Payment</div>
+        <div class="skill-value">Smart Card, RFID Mifare, DES, RC4, USB CCID</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Tools</div>
+        <div class="skill-value">Lauterbach TRACE32, IAR, Keil, MPLAB, CCS Studio, Green Hills, Buildroot, CubeMx, TouchGFX</div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-label">Management</div>
+        <div class="skill-value">Git, Synergy, Jira, Polarion, Doxygen</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="main">
+
+    <div class="main-title" style="margin-top: 0;">Profile</div>
+    <p class="profile-text">
+      Embedded software specialist &mdash; firmware, middleware and application layers, bare metal, RTOS or Embedded Linux &mdash; for critical and industrial systems, with <strong>over 20 years of experience</strong> in driver development, communication stacks (CAN, BLE, USB, TCP/IP), RTOS and Embedded Linux on ARM Cortex, STM32, Microchip and NXP architectures.
+    </p>
+    <p class="profile-text">
+      Delivered certified embedded solutions for <strong>aerospace</strong> (Safran, Thales &mdash; DO-178),
+      <strong>medical</strong> (GE Healthcare, Sorin &mdash; IEC 62304), <strong>automotive</strong> (Valeo, Arkamys),
+      <strong>IoT cybersecurity</strong> (Enedis &mdash; Linky smart meters), <strong>payment systems</strong> (Cartadis)
+      and <strong>V2G smart charging</strong> (E2-CAD &mdash; ISO 15118). MISRA C compliant development.
+      Founder of <strong>Workshop-DIY</strong>, an educational robotics non-profit having led 18+ workshops for youth (Arduino, ESP32, AI, 3D printing).
+    </p>
+
+    <div class="main-title">Professional Experience</div>
+
+    <!-- E2-CAD -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">E2-CAD &mdash; Eragny</span>
+        <span class="exp-dates">May 2025 &ndash; Mar. 2026</span>
+      </div>
+      <div class="exp-project">EV Charging Station &mdash; Iotecha IP</div>
+      <div class="exp-intervention">Product takeover and test bench setup</div>
+      <ul class="exp-bullets">
+        <li>Reverse engineering and source code analysis (static and dynamic architecture)</li>
+        <li>Embedded code review on 3 boards (Microchip PIC, STM32), setup of debug and programming tools (ST-Link, nsprog)</li>
+        <li>Communication protocol analysis between Linux modules and embedded boards (RS232, I2C, frame extraction with Saleae)</li>
+        <li>Python extension development and real-time HTML web report generation</li>
+        <li>Test bench design and setup: Chargebyte tools integration, EV simulator</li>
+        <li>Charging station debug and commissioning (PLC, HomePlug Green PHY, ISO 15118, OCPP)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Microchip PIC, STM32, PLC, HomePlug Green PHY, ISO 15118, OCPP, Chargebyte, RS232, I2C, CAN, TCP/IP, Saleae, HackRF One, SSH, SCP, Wireshark, Python, Bash, HTML</div>
+    </div>
+
+    <!-- SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Safran &mdash; Créteil</span>
+        <span class="exp-dates">Mar. 2024 &ndash; May 2025</span>
+      </div>
+      <div class="exp-project">SSPC Project &mdash; Solid State Power Controller</div>
+      <div class="exp-intervention">Low-level driver updates</div>
+      <ul class="exp-bullets">
+        <li>Development and update of low-level C drivers for the SSPC system</li>
+        <li>Implementation of logging tools for diagnostics and exchange traceability</li>
+        <li>Writing and execution of on-target validation tests with Lauterbach TRACE32</li>
+        <li>Bash/Awk scripting for test process automation</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> C, Lauterbach TRACE32, Bash, Awk</div>
+    </div>
+
+    <!-- ASTERIOS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Asterios Technologies &mdash; Massy</span>
+        <span class="exp-dates">Aug. 2023 &ndash; Feb. 2024</span>
+      </div>
+      <div class="exp-project">T1042SOM Project &mdash; Software Tests</div>
+      <div class="exp-intervention">Software test procedure writing</div>
+      <ul class="exp-bullets">
+        <li>C development of validation tests for the SOM module (T1042 processor)</li>
+        <li>Processor errata analysis and software workaround identification</li>
+        <li>Test documentation writing compliant with project requirements</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> C, Bash, Python, Lauterbach TRACE32, Polarion</div>
+    </div>
+
+    <!-- THALES GENNEVILLIERS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Gennevilliers</span>
+        <span class="exp-dates">May 2022 &ndash; Jul. 2023</span>
+      </div>
+      <div class="exp-project">LPM + N-MMR Projects &mdash; Defense Radio</div>
+      <div class="exp-intervention">Mission preparation software &amp; New Multi Mode Receiver</div>
+      <ul class="exp-bullets">
+        <li>Application layer development under Embedded Linux in C/C++ for 2 projects</li>
+        <li>Configuration management and automation scripts (Bash, Curl, Tshark)</li>
+        <li>Development and execution of HLT (High Level Tests)</li>
+        <li>Bug fixing and network protocol analysis (Websockets)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Bash, Websockets, Curl, Tshark, Python</div>
+    </div>
+
+    <!-- VALEO -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Valeo &mdash; Créteil / Egypt</span>
+        <span class="exp-dates">Mar. &ndash; Apr. 2022</span>
+      </div>
+      <div class="exp-project">Test Audit &mdash; Valeo Egypt</div>
+      <div class="exp-intervention">Unit test, integration test and tools audit</div>
+      <ul class="exp-bullets">
+        <li>Audit of test processes and tools (NI Mastre, Vector CANoe)</li>
+        <li>Automation and execution time improvement proposals</li>
+        <li>Client/system requirements review, audit report writing</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> NI Mastre, Vector CANoe</div>
+    </div>
+
+    <!-- ARKAMYS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Arkamys &mdash; Levallois-Perret</span>
+        <span class="exp-dates">Jul. 2021 &ndash; Feb. 2022</span>
+      </div>
+      <div class="exp-project">GStreamer Framework &mdash; Embedded Audio</div>
+      <div class="exp-intervention">Audio plugins, unit &amp; integration tests, End-to-End tests</div>
+      <ul class="exp-bullets">
+        <li>GStreamer plugin and CAN driver (ELM327) development, diagnostic tools</li>
+        <li>Unit &amp; integration testing (Valgrind), build system Buildroot</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C/C++, Buildroot, GStreamer, Valgrind, CAN, Python, Jira</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════ PAGE 2 ═══════════════ -->
+<div class="page">
+  <div class="sidebar" style="padding-top: 14pt;">
+
+    <div class="sidebar-section" style="padding-top: 18pt;">
+      <div class="sidebar-section-title">Industry Sectors</div>
+      <div class="skill-category">
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9992; Aerospace &mdash; Safran, Thales, Zodiac</div>
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9764; Medical &mdash; GE Healthcare, Sorin</div>
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9881; Automotive &mdash; Valeo, Arkamys</div>
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9889; Energy &mdash; Enedis (Linky)</div>
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9889; EV Charging / V2G &mdash; E2-CAD</div>
+        <div class="skill-value" style="margin-bottom: 4pt;">&#9881; IoT / M2M &mdash; Vertical M2M</div>
+        <div class="skill-value">&#9634; Payment &mdash; Cartadis, Photomaton, BCM</div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Key Strengths</div>
+      <div class="skill-value" style="margin-bottom: 4pt;">&#10003; Embedded Linux &amp; RTOS</div>
+      <div class="skill-value" style="margin-bottom: 4pt;">&#10003; Embedded cybersecurity (pentest, audit)</div>
+      <div class="skill-value" style="margin-bottom: 4pt;">&#10003; Embedded software development</div>
+      <div class="skill-value" style="margin-bottom: 4pt;">&#10003; Communication protocols</div>
+      <div class="skill-value" style="margin-bottom: 4pt;">&#10003; Testing &amp; validation</div>
+      <div class="skill-value">&#10003; Diagnostics &amp; debugging</div>
+    </div>
+
+    <!-- ASSOCIATION WORKSHOP-DIY -->
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Non-profit Project</div>
+      <div class="asso-box">
+        <div class="asso-name">Workshop-DIY</div>
+        <div class="asso-role">Founder &mdash; Chelles (77)</div>
+        <div class="asso-desc">Robotics &amp; STEM workshops for youth (ages 6-12+)</div>
+        <div class="asso-desc">ESP32 robot kit design (WiFi, BLE, servos, sensors)</div>
+        <div class="asso-desc">18+ workshops: Arduino, micro:bit, AI, 3D printing, laser</div>
+        <div class="asso-desc" style="margin-top: 3pt;">
+          <span class="asso-link">workshop-diy.org</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-section">
+      <div class="sidebar-section-title">Education &amp; Tech Watch</div>
+
+      <div style="margin-bottom: 6pt;">
+        <div class="skill-value">Electronic &amp; Computer Systems Design Engineer</div>
+        <div style="font-size: 7pt; color: #6a7a9a;">AFPA, Champs-sur-Marne</div>
+      </div>
+
+      <div style="margin-bottom: 6pt;">
+        <div class="skill-value">Biomedical Instrumentation (Postgraduate)</div>
+        <div style="font-size: 7pt; color: #6a7a9a;">Tenon Hospital, Paris</div>
+      </div>
+
+      <div style="margin-bottom: 8pt;">
+        <div class="skill-value">Electronics Engineer, Communication &amp; Telecommunications</div>
+        <div style="font-size: 7pt; color: #6a7a9a;">Boumerdès, Algeria</div>
+      </div>
+
+      <div style="border-top: 1pt solid #2a3a5a; padding-top: 6pt;">
+        <div class="skill-label" style="margin-bottom: 4pt;">Technology Watch</div>
+        <div class="skill-value" style="margin-bottom: 3pt;">&#9656; Embedded cybersecurity &amp; IoT pentest</div>
+        <div class="skill-value" style="margin-bottom: 3pt;">&#9656; V2G / ISO 15118 / Smart Charging</div>
+        <div class="skill-value" style="margin-bottom: 3pt;">&#9656; SDR &amp; RF protocol analysis</div>
+        <div class="skill-value">&#9656; Embedded AI &amp; Edge Computing</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="main-title" style="margin-top: 0;">Professional Experience</div>
+
+    <!-- THALES VELIZY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Thales &mdash; Vélizy-Villacoublay</span>
+        <span class="exp-dates">Nov. 2020 &ndash; Jun. 2021</span>
+      </div>
+      <div class="exp-project">ATO &mdash; Autonomous Train Operation</div>
+      <div class="exp-intervention">IPC communication &amp; socket programming</div>
+      <ul class="exp-bullets">
+        <li>Application migration from 32-bit to 64-bit on Embedded Linux platform</li>
+        <li>IPC communication protocol definition and implementation</li>
+        <li>Network diagnostic tools development and integration testing</li>
+        <li>Frame analysis with Wireshark, Tshark, Pscapy and Pyshark</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Embedded Linux, C, UDP, TCP, Wireshark, Tshark, Pscapy, Python, Jira</div>
+    </div>
+
+    <!-- PK VITALITY -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">PK Vitality &mdash; Paris</span>
+        <span class="exp-dates">Jun. &ndash; Sep. 2020</span>
+      </div>
+      <div class="exp-project">K'Watch CGM &mdash; Continuous Glucose Monitor</div>
+      <div class="exp-intervention">BLE drivers, FreeRTOS, STM32 TouchGFX</div>
+      <ul class="exp-bullets">
+        <li>HAL development (AFE AD5940, PMIC DA9070), QSPI driver, BLE NRF52840</li>
+        <li>STM32 TouchGFX touchscreen, FreeRTOS, low power mode</li>
+        <li>In vitro testing and Doxygen documentation (IEC 62304 compliant)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> STM32L4S9, NRF52840, C, C++, FreeRTOS, BLE, TouchGFX, Doxygen</div>
+    </div>
+
+    <!-- ZODIAC / SAFRAN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Zodiac Aerospace (Safran) &mdash; Montreuil / Vancouver, Canada</span>
+        <span class="exp-dates">Feb. 2017 &ndash; Mar. 2020</span>
+      </div>
+      <div class="exp-project">GENOME / CORAC / SSPC A350 AC9</div>
+      <div class="exp-intervention">Low-level drivers, diagnostics, application layers</div>
+      <ul class="exp-bullets">
+        <li>Low-level layer adaptation: CAN, RS485 drivers, thermal memory (dsPIC33)</li>
+        <li>uAFDX to CAN gateway implementation and diagnostic functions</li>
+        <li>SSPC A350 application layer development and optimization</li>
+        <li>Validation testing and aerospace standards-compliant documentation</li>
+        <li>Flight test campaign at UBC Vancouver, Canada (DO-178 certification)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Microchip dsPIC33, MPLAB, TI Concerto, CCS Studio, C</div>
+    </div>
+
+    <!-- SORIN -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Sorin &mdash; Clamart</span>
+        <span class="exp-dates">Nov. 2014 &ndash; Apr. 2015</span>
+      </div>
+      <div class="exp-project">Platinium &mdash; BLE Module for Pacemaker</div>
+      <div class="exp-intervention">Bluetooth integration feasibility study for cardiac implant</div>
+      <ul class="exp-bullets">
+        <li>Bluetooth Smart module validation, Serial Port Service Profile development</li>
+        <li>Smartphone communication protocol development and Android application</li>
+        <li>Hardware interface design and sample preparation for implantation</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Cortex M0, Keil, C, Android (Eclipse)</div>
+    </div>
+
+    <!-- GE HEALTHCARE -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">General Electric Healthcare &mdash; Buc / USA</span>
+        <span class="exp-dates">2012 &ndash; 2014</span>
+      </div>
+      <div class="exp-project">ZYX &mdash; X-Ray Generator</div>
+      <div class="exp-intervention">CANOpen integration on RCB and CORTYX boards</div>
+      <ul class="exp-bullets">
+        <li>CANOpen stack integration (slave/master), CAN driver and service development</li>
+        <li>CMX-RTX kernel porting, file management, TCL test scripts</li>
+        <li>USA team technical support and on-site visits in the United States</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> TI TMS320, XE167, ARM Cortex A8, VxWorks, C, C++</div>
+    </div>
+
+    <div class="main-title">Previous Experience</div>
+
+    <!-- ENEDIS -->
+    <div class="exp-block">
+      <div class="exp-header">
+        <span class="exp-company">Enedis &mdash; Nanterre</span>
+        <span class="exp-dates">May 2015 &ndash; Sep. 2016</span>
+      </div>
+      <div class="exp-project">Linky Smart Meters &mdash; Smart Grids</div>
+      <div class="exp-intervention">Cybersecurity and Linky concentrator audit</div>
+      <ul class="exp-bullets">
+        <li>Linky concentrator security diagnostics and audit</li>
+        <li>Penetration testing on Embedded Linux systems (Kali Linux, Nmap)</li>
+        <li>Protocol sniffing and fuzzing (Wireshark, Tshark, Scapy, SDR)</li>
+        <li>Log analysis and batch firmware update tool development</li>
+        <li>Code audit and review with manufacturers (Sonar, PC Lint)</li>
+      </ul>
+      <div class="exp-env"><strong>Env:</strong> Kali Linux, Embedded Linux, Nmap, Wireshark, Tshark, Scapy, SDR, Saleae, Python, Bash, Arduino, Raspberry Pi</div>
+    </div>
+
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Photomaton / BCM / Vertical M2M / PGS &mdash; Paris</span>
+        <span class="old-exp-dates">2010 &ndash; 2012</span>
+      </div>
+      <div class="old-exp-desc">Payment systems and remote metering &mdash; Full embedded + PC development on NXP LPC (USB, RFID, GSM/GPRS, Bluetooth)</div>
+    </div>
+
+    <div class="old-exp">
+      <div class="old-exp-header">
+        <span class="old-exp-company">Cartadis &mdash; Fontenay-sous-Bois</span>
+        <span class="old-exp-dates">Oct. 2001 &ndash; Dec. 2009</span>
+      </div>
+      <div class="old-exp-desc"><strong>8 years</strong> &mdash; Access control and payment terminals: drivers, embedded applications, USB/TCP/IP stacks, DES/RC4 encryption (NEC V853, Hitachi H8S, NXP LPC, ATMEL AT91)</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

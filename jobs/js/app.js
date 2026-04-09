@@ -227,6 +227,14 @@ const App = {
             default: true
           },
           {
+            id: 'cv-detailed',
+            labels: { fr: 'CV Détaillé v3.0', en: 'Detailed CV v3.0', ar: 'السيرة المفصلة' },
+            files: { fr: '../content/fr/128_cv_detaille_france_FR.html', en: '../content/fr/129_cv_detaille_france_EN.html', ar: '../content/fr/130_cv_detaille_france_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/fr/128_cv_detaille_france_FR.pdf', en: '../content/fr/129_cv_detaille_france_EN.pdf', ar: '../content/fr/130_cv_detaille_france_AR.pdf' }
+            }
+          },
+          {
             id: 'cv-condensed',
             labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
             files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
@@ -402,6 +410,14 @@ const App = {
             default: true
           },
           {
+            id: 'cv-detailed',
+            labels: { fr: 'CV Détaillé v3.0', en: 'Detailed CV v3.0', ar: 'السيرة المفصلة' },
+            files: { fr: '../content/lu/128_cv_detaille_lu_FR.html', en: '../content/lu/129_cv_detaille_lu_EN.html', ar: '../content/lu/130_cv_detaille_lu_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/lu/128_cv_detaille_lu_FR.pdf', en: '../content/lu/129_cv_detaille_lu_EN.pdf', ar: '../content/lu/130_cv_detaille_lu_AR.pdf' }
+            }
+          },
+          {
             id: 'cv-condensed',
             labels: { fr: 'CV 1 Page', en: '1-Page CV', ar: 'سيرة ذاتية صفحة واحدة' },
             files: { fr: '../content/shared/118_cv_condensed_FR.html', en: '../content/shared/119_cv_condensed_EN.html', ar: '../content/shared/118_cv_condensed_FR.html' },
@@ -575,6 +591,14 @@ const App = {
               pdf: { fr: '../content/gulf/101_cv_gulf_FR.pdf', en: '../content/gulf/102_cv_gulf_EN.pdf', ar: '../content/gulf/103_cv_gulf_AR.pdf' }
             },
             default: true
+          },
+          {
+            id: 'cv-detailed',
+            labels: { fr: 'CV Détaillé v3.0', en: 'Detailed CV v3.0', ar: 'السيرة المفصلة' },
+            files: { fr: '../content/gulf/131_cv_detaille_gulf_FR.html', en: '../content/gulf/132_cv_detaille_gulf_EN.html', ar: '../content/gulf/133_cv_detaille_gulf_AR.html' },
+            downloads: {
+              pdf: { fr: '../content/gulf/131_cv_detaille_gulf_FR.pdf', en: '../content/gulf/132_cv_detaille_gulf_EN.pdf', ar: '../content/gulf/133_cv_detaille_gulf_AR.pdf' }
+            }
           },
           {
             id: 'cv-condensed',
